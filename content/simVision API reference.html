@@ -1,0 +1,2174 @@
+<!DOCTYPE html><html>
+        <head>
+        <title>cmsite</title>
+        <meta charset="utf-8">
+<meta property="head" content="H2">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/icomoon/style.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/magnific-popup.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/jquery-ui.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap-datepicker.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/flaticon/font/flaticon.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/aos.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/style.css">
+        <link rel="shortcut icon" href="./../cmsimde/static/favicons.png">
+        
+        <style type='text/css'>
+            .site-section {
+            background-color: #FFFF;
+            padding: 40px 40px;
+            }
+            body > div > div.dropdown.open {
+                display: block;
+            }
+        </style>
+    
+        <!-- <script src="./../cmsimde/static/jquery.js"></script> -->
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+        <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/normalize.min.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch_set.js"></script>
+        <script src="tipuesearch_content.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/tipuesearch.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch.js"></script>
+        <!-- for Wink3 客製化關閉 -->
+        <!--
+        <link rel="stylesheet" type="text/css" href="./../cmsimde/static/winkPlayer.css" />
+        <script type="text/javascript" src="./../cmsimde/static/winkPlayer.js"></script>
+        -->
+        <script>
+            /* original tipuesearch
+            $(document).ready(function() {
+                 $('#tipue_search_input').tipuesearch();
+            });
+            */
+            // customed doSearch
+            function doSearch() {
+                $('#tipue_search_input').tipuesearch({
+                    newWindow: true, 
+                    minimumLength: 2,
+                    wholeWords: false, // for search 中文
+                });
+            }
+            $(document).ready(doSearch);
+        </script>
+        
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shCore.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushBash.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDiff.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJScript.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJava.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPython.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushSql.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushHaxe.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushXml.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPhp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPowerShell.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushLua.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCpp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCss.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCSharp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDart.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushRust.js"></script>
+<link type="text/css" rel="stylesheet" href="./../cmsimde/static/syntaxhighlighter/css/shCoreDefault.css"/>
+<script type="text/javascript">SyntaxHighlighter.all();</script>
+<!-- 暫時不用
+<script src="./../cmsimde/static/fengari-web.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/Cango-13v08-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/CangoAxes-4v01-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/gearUtils-05.js"></script>
+-->
+<!-- for Brython 暫時不用
+<script src="https://scrum-3.github.io/web/brython/brython.js"></script>
+<script src="https://scrum-3.github.io/web/brython/brython_stdlib.js"></script>
+-->
+<style>
+img.add_border {
+    border: 3px solid blue;
+}
+</style>
+
+</head>
+<body>
+<div class='container'><nav>
+        
+    <div class="site-wrap">
+
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+    
+            <header class="site-navbar py-4 bg-white" role="banner">
+              <div class="container">
+                <div class="row align-items-center">
+                <h1>cmsite</h1>
+                <div class="pl-4">
+                    <form>
+                    <input type="text" placeholder="Search" name="q" id="tipue_search_input" pattern=".{2,}" title="At least 2 characters" required>
+                    </form>
+                </div>
+                  <!-- <div class="col-11 col-xl-2">
+                    <h1 class="mb-0 site-logo"><a href="index.html" class="text-black h2 mb-0">cmsite</a></h1> 
+                  </div>
+                  -->
+                  <div class="col-12 col-md-10 d-none d-xl-block">
+                    <nav class="site-navigation position-relative text-right" role="navigation">
+    <ul class='site-menu js-clone-nav mr-auto d-none d-lg-block'>
+                        <li class="active has-children"><a href="index.html">Home</a>
+                        <ul class="dropdown">
+                            <li><a href="sitemap.html">Site Map</a></li>
+                            <li><a href="./../reveal/index.html">reveal</a></li>
+                            <li><a href="./../blog/index.html">blog</a></li>
+                        </ul>
+                      </li>
+                     <li><a href='CoppeliaSim User Manual.html'>CoppeliaSim User Manual</a><li class='has-children'><a href='User interface.html'>User interface</a><ul class='dropdown'><li><a href='Pages and views.html'>Pages and views</a><li><a href='Positionorientation manipulation.html'>Positionorientation manipulation</a><li><a href='Position dialog.html'>Position dialog</a><li><a href='Orientation dialog.html'>Orientation dialog</a><li><a href='Object movement via the mouse.html'>Object movement via the mouse</a><li><a href='On positions, orientations and transformations.html'>On positions, orientations and transformations</a><li><a href='User settings.html'>User settings</a><li><a href='Shortcuts.html'>Shortcuts</a></li></ul><li class='has-children'><a href='Scenes and models.html'>Scenes and models</a><ul class='dropdown'><li><a href='Scenes.html'>Scenes</a><li><a href='Models.html'>Models</a><li><a href='Model dialog.html'>Model dialog</a></li></ul><li class='has-children'><a href='Environment.html'>Environment</a><ul class='dropdown'><li><a href='Environment dialog.html'>Environment dialog</a><li><a href='Texture dialog.html'>Texture dialog</a></li></ul><li class='has-children'><a href='Entities.html'>Entities</a><ul class='dropdown'><li><a href='Collections.html'>Collections</a><li class='has-children'><a href='Scene objects.html'>Scene objects</a><ul class='dropdown'><li><a href='Object properties.html'>Object properties</a><li><a href='Object common properties.html'>Object common properties</a></li></ul><li><a href='Collidable objects.html'>Collidable objects</a><li><a href='Measurable objects.html'>Measurable objects</a><li><a href='Detectable objects.html'>Detectable objects</a><li><a href='Viewable objects.html'>Viewable objects</a><li><a href='Convex hull.html'>Convex hull</a><li class='has-children'><a href='Layer selection dialog.html'>Layer selection dialog</a><ul class='dropdown'><li><a href='Cameras.html'>Cameras</a><li><a href='Camera properties.html'>Camera properties</a><li><a href='Lights.html'>Lights</a><li><a href='Light properties.html'>Light properties</a><li><a href='Shapes.html'>Shapes</a><li><a href='Shape coordinate frame.html'>Shape coordinate frame</a><li><a href='Primitive shapes.html'>Primitive shapes</a><li><a href='Convex decomposition.html'>Convex decomposition</a><li><a href='Shape properties.html'>Shape properties</a><li><a href='Shape dynamics properties.html'>Shape dynamics properties</a><li><a href='Material properties.html'>Material properties</a><li><a href='Shape geometry dialog.html'>Shape geometry dialog</a><li><a href='Shape edit modes.html'>Shape edit modes</a><li><a href='Triangle edit mode.html'>Triangle edit mode</a><li><a href='Vertex edit mode.html'>Vertex edit mode</a><li><a href='Edge edit mode.html'>Edge edit mode</a><li><a href='Edit mode for compound shapes.html'>Edit mode for compound shapes</a><li><a href='Joints.html'>Joints</a><li><a href='Joint modes.html'>Joint modes</a><li><a href='Joint properties.html'>Joint properties</a><li><a href='Joint dynamics properties.html'>Joint dynamics properties</a><li><a href='Dynamics engines properties related to joints.html'>Dynamics engines properties related to joints</a><li><a href='Dummies.html'>Dummies</a><li><a href='Dummy properties.html'>Dummy properties</a><li><a href='Graphs.html'>Graphs</a><li><a href='Graph properties.html'>Graph properties</a><li><a href='Proximity sensors.html'>Proximity sensors</a><li><a href='Proximity sensor types and mode of operation.html'>Proximity sensor types and mode of operation</a><li><a href='Proximity sensor properties.html'>Proximity sensor properties</a><li><a href='Proximity sensor volume dialog.html'>Proximity sensor volume dialog</a><li><a href='Proximity sensor detection parameter dialog.html'>Proximity sensor detection parameter dialog</a><li><a href='Vision sensors.html'>Vision sensors</a><li><a href='Vision sensor types and mode of operation.html'>Vision sensor types and mode of operation</a><li><a href='Vision sensor properties.html'>Vision sensor properties</a><li><a href='Force sensors.html'>Force sensors</a><li><a href='Force sensor property.html'>Force sensor property</a><li><a href='OC trees.html'>OC trees</a><li><a href='OC tree properties.html'>OC tree properties</a><li><a href='Point clouds.html'>Point clouds</a><li><a href='Point cloud properties.html'>Point cloud properties</a></li></ul><li><a href='Paths.html'>Paths</a></li></ul><li class='has-children'><a href='Functionality.html'>Functionality</a><ul class='dropdown'><li><a href='Geometric calculations.html'>Geometric calculations</a><li><a href='Collision detection.html'>Collision detection</a><li class='has-children'><a href='Distance calculation.html'>Distance calculation</a><ul class='dropdown'><li><a href='Geometric plugin.html'>Geometric plugin</a><li><a href='simGeom API reference.html'>simGeom API reference</a><li><a href='Coppelia geometric routines.html'>Coppelia geometric routines</a><li><a href='API reference-1.html'>API reference-1</a></li></ul><li><a href='simIGL API reference.html'>simIGL API reference</a><li><a href='Kinematics.html'>Kinematics</a><li><a href='Basics on IK groups and IK elements.html'>Basics on IK groups and IK elements</a><li class='has-children'><a href='Solving IK and FK for any type of mechanism.html'>Solving IK and FK for any type of mechanism</a><ul class='dropdown'><li><a href='Kinematics plugin.html'>Kinematics plugin</a><li><a href='simIK API reference.html'>simIK API reference</a><li><a href='Coppelia kinematics routines.html'>Coppelia kinematics routines</a><li><a href='API reference-2.html'>API reference-2</a></li></ul><li><a href='Dynamics.html'>Dynamics</a><li class='has-children'><a href='Designing dynamic simulations.html'>Designing dynamic simulations</a><ul class='dropdown'><li><a href='General dynamics properties.html'>General dynamics properties</a><li><a href='Dynamics engines general properties.html'>Dynamics engines general properties</a></li></ul><li><a href='Data visualizationoutput.html'>Data visualizationoutput</a><li><a href='Web-browser based front-end.html'>Web-browser based front-end</a></li></ul><li class='has-children'><a href='Data manipulationtransformation.html'>Data manipulationtransformation</a><ul class='dropdown'><li class='has-children'><a href='Messaginginterfacesconnectivity.html'>Messaginginterfacesconnectivity</a><ul class='dropdown'><li><a href='Remote API.html'>Remote API</a><li><a href='ZeroMQ remote API.html'>ZeroMQ remote API</a><li><a href='WebSocket remote API.html'>WebSocket remote API</a><li><a href='ROS Interfaces.html'>ROS Interfaces</a><li><a href='ROS Interface.html'>ROS Interface</a><li><a href='simROS API reference.html'>simROS API reference</a><li><a href='ROS 2 Interface.html'>ROS 2 Interface</a><li><a href='simROS2 API reference.html'>simROS2 API reference</a></li></ul><li><a href='simZMQ API reference.html'>simZMQ API reference</a><li><a href='simWS API reference.html'>simWS API reference</a></li></ul><li class='has-children'><a href='Pathstrajectories.html'>Pathstrajectories</a><ul class='dropdown'><li><a href='Path planning.html'>Path planning</a><li><a href='simOMPL API reference.html'>simOMPL API reference</a><li><a href='Synthetic vision.html'>Synthetic vision</a><li><a href='simIM API reference.html'>simIM API reference</a><li><a href='simVision API reference.html'>simVision API reference</a><li><a href='Custom user interfaces.html'>Custom user interfaces</a><li><a href='simUI API reference.html'>simUI API reference</a><li><a href='simUI XML syntax.html'>simUI XML syntax</a><li><a href='simQML API reference.html'>simQML API reference</a><li><a href='Importexport.html'>Importexport</a><li class='has-children'><a href='XML format.html'>XML format</a><ul class='dropdown'><li><a href='URDF format.html'>URDF format</a><li><a href='simURDF API reference.html'>simURDF API reference</a><li><a href='SDF format.html'>SDF format</a><li><a href='simSDF API reference.html'>simSDF API reference</a></li></ul><li><a href='Video exporter.html'>Video exporter</a><li><a href='simAssimp API reference.html'>simAssimp API reference</a><li class='has-children'><a href='simGLTF API reference.html'>simGLTF API reference</a><ul class='dropdown'><li><a href='Commandssetting.html'>Commandssetting</a><li><a href='simLuaCmd API reference.html'>simLuaCmd API reference</a><li><a href='Miscellaneous.html'>Miscellaneous</a><li><a href='simSurfRec API reference.html'>simSurfRec API reference</a><li><a href='simICP API reference.html'>simICP API reference</a><li><a href='simSubprocess API reference.html'>simSubprocess API reference</a></li></li></ul></ul><li class='has-children'><a href='Writing code in and around CoppeliaSim.html'>Writing code in and around CoppeliaSim</a><ul class='dropdown'><li class='has-children'><a href='Scripts.html'>Scripts</a><ul class='dropdown'><li><a href='Embedded scripts.html'>Embedded scripts</a><li><a href='Simulation scripts.html'>Simulation scripts</a><li><a href='The main script.html'>The main script</a><li><a href='Child scripts.html'>Child scripts</a><li><a href='Customization scripts.html'>Customization scripts</a><li><a href='Script dialog.html'>Script dialog</a><li><a href='Script editor.html'>Script editor</a></li></ul><li><a href='Add-ons.html'>Add-ons</a><li><a href='The sandbox script.html'>The sandbox script</a><li><a href='Script execution order.html'>Script execution order</a><li class='has-children'><a href='Threaded and non-threaded script code.html'>Threaded and non-threaded script code</a><ul class='dropdown'><li><a href='Callback functions.html'>Callback functions</a><li><a href='Dynamics callback functions.html'>Dynamics callback functions</a><li><a href='Joint callback functions.html'>Joint callback functions</a><li><a href='Contact callback function.html'>Contact callback function</a><li><a href='Vision callback functions.html'>Vision callback functions</a><li><a href='Trigger callback functions.html'>Trigger callback functions</a><li><a href='User config callback functions.html'>User config callback functions</a></li></ul><li><a href='Lua vs Python scripts.html'>Lua vs Python scripts</a><li><a href='Lua crash course.html'>Lua crash course</a><li><a href='Plugins.html'>Plugins</a><li><a href='The main client application.html'>The main client application</a><li><a href='Accessing scene objects programmatically.html'>Accessing scene objects programmatically</a><li><a href='Explicit and non-explicit calls.html'>Explicit and non-explicit calls</a><li><a href='CoppeliaSim API framework.html'>CoppeliaSim API framework</a><li><a href='Regular API reference.html'>Regular API reference</a><li><a href='Regular API constants.html'>Regular API constants</a><li><a href='Object parameter IDs.html'>Object parameter IDs</a></li></ul><li class='has-children'><a href='Simulation.html'>Simulation</a><ul class='dropdown'><li><a href='Simulation settings dialog.html'>Simulation settings dialog</a></li></ul><li class='has-children'><a href='Tutorials.html'>Tutorials</a><ul class='dropdown'><li><a href='BubbleRob tutorial.html'>BubbleRob tutorial</a><li><a href='Building a clean model tutorial.html'>Building a clean model tutorial</a><li><a href='Line following BubbleRob tutorial.html'>Line following BubbleRob tutorial</a><li><a href='Inverse kinematics tutorial.html'>Inverse kinematics tutorial</a><li><a href='External controller tutorial.html'>External controller tutorial</a><li><a href='Plugin tutorial.html'>Plugin tutorial</a><li><a href='Robot language interpreter integration tutorial.html'>Robot language interpreter integration tutorial</a><li><a href='ROS tutorials.html'>ROS tutorials</a><li><a href='ROS tutorial.html'>ROS tutorial</a><li><a href='ROS 2 tutorial.html'>ROS 2 tutorial</a><li><a href='Compiling CoppeliaSim.html'>Compiling CoppeliaSim</a></li>
+                      </ul>
+                </nav>
+              </div>
+              <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
+              </div>
+
+            </div>
+          </div>
+          
+        </header>
+    <div id="tipue_search_content">simIM API reference << <a href='simIM API reference.html'>Previous</a> <a href='Custom user interfaces.html'>Next</a> >> Custom user interfaces<br /><h1>simVision API reference</h1><div align="center"><table class="allEncompassingTable">
+<tbody><tr><td class="section" id="title"><h4>Vision plugin API reference</h4></td></tr>
+<tr><td class="section" id="info"><p class="warningBox">API functions for performing simple image processing, and handling special types of vision algorithms.</p></td></tr>
+<tr><td class="section" id="alphabetical" style="display: none;"><pre class="apiList"><a href="https://mde.tw/copsimdoc/en/simVision.htm?#simVision.addBuffer1ToWorkImg">simVision.addBuffer1ToWorkImg</a>
+<a href="https://mde.tw/copsimdoc/en/simVision.htm?#simVision.addWorkImgToBuffer1">simVision.addWorkImgToBuffer1</a>
+<a href="https://mde.tw/copsimdoc/en/simVision.htm?#simVision.binaryWorkImg">simVision.binaryWorkImg</a>
+<a href="https://mde.tw/copsimdoc/en/simVision.htm?#simVision.blobDetectionOnWorkImg">simVision.blobDetectionOnWorkImg</a>
+<a href="https://mde.tw/copsimdoc/en/simVision.htm?#simVision.buffer1ToWorkImg">simVision.buffer1ToWorkImg</a>
+<a href="https://mde.tw/copsimdoc/en/simVision.htm?#simVision.buffer2ToWorkImg">simVision.buffer2ToWorkImg</a>
+<a href="https://mde.tw/copsimdoc/en/simVision.htm?#simVision.changedPixelsOnWorkImg">simVision.changedPixelsOnWorkImg</a>
+<a href="https://mde.tw/copsimdoc/en/simVision.htm?#simVision.circularCutWorkImg">simVision.circularCutWorkImg</a>
+<a href="https://mde.tw/copsimdoc/en/simVision.htm?#simVision.colorSegmentationOnWorkImg">simVision.colorSegmentationOnWorkImg</a>
+<a href="https://mde.tw/copsimdoc/en/simVision.htm?#simVision.coordinatesFromWorkImg">simVision.coordinatesFromWorkImg</a>
+<a href="https://mde.tw/copsimdoc/en/simVision.htm?#simVision.createVelodyneHDL64E">simVision.createVelodyneHDL64E</a>
+<a href="https://mde.tw/copsimdoc/en/simVision.htm?#simVision.createVelodyneVPL16">simVision.createVelodyneVPL16</a>
+<a href="https://mde.tw/copsimdoc/en/simVision.htm?#simVision.destroyVelodyneHDL64E">simVision.destroyVelodyneHDL64E</a>
+<a href="https://mde.tw/copsimdoc/en/simVision.htm?#simVision.destroyVelodyneVPL16">simVision.destroyVelodyneVPL16</a>
+<a href="https://mde.tw/copsimdoc/en/simVision.htm?#simVision.distort">simVision.distort</a>
+<a href="https://mde.tw/copsimdoc/en/simVision.htm?#simVision.edgeDetectionOnWorkImg">simVision.edgeDetectionOnWorkImg</a>
+<a href="https://mde.tw/copsimdoc/en/simVision.htm?#simVision.handleAnaglyphStereo">simVision.handleAnaglyphStereo</a>
+<a href="https://mde.tw/copsimdoc/en/simVision.htm?#simVision.handleSpherical">simVision.handleSpherical</a>
+<a href="https://mde.tw/copsimdoc/en/simVision.htm?#simVision.handleVelodyneHDL64E">simVision.handleVelodyneHDL64E</a>
+<a href="https://mde.tw/copsimdoc/en/simVision.htm?#simVision.handleVelodyneVPL16">simVision.handleVelodyneVPL16</a>
+<a href="https://mde.tw/copsimdoc/en/simVision.htm?#simVision.horizontalFlipWorkImg">simVision.horizontalFlipWorkImg</a>
+<a href="https://mde.tw/copsimdoc/en/simVision.htm?#simVision.intensityScaleOnWorkImg">simVision.intensityScaleOnWorkImg</a>
+<a href="https://mde.tw/copsimdoc/en/simVision.htm?#simVision.matrix3x3OnWorkImg">simVision.matrix3x3OnWorkImg</a>
+<a href="https://mde.tw/copsimdoc/en/simVision.htm?#simVision.matrix5x5OnWorkImg">simVision.matrix5x5OnWorkImg</a>
+<a href="https://mde.tw/copsimdoc/en/simVision.htm?#simVision.multiplyWorkImgWithBuffer1">simVision.multiplyWorkImgWithBuffer1</a>
+<a href="https://mde.tw/copsimdoc/en/simVision.htm?#simVision.normalizeWorkImg">simVision.normalizeWorkImg</a>
+<a href="https://mde.tw/copsimdoc/en/simVision.htm?#simVision.rectangularCutWorkImg">simVision.rectangularCutWorkImg</a>
+<a href="https://mde.tw/copsimdoc/en/simVision.htm?#simVision.resizeWorkImg">simVision.resizeWorkImg</a>
+<a href="https://mde.tw/copsimdoc/en/simVision.htm?#simVision.rotateWorkImg">simVision.rotateWorkImg</a>
+<a href="https://mde.tw/copsimdoc/en/simVision.htm?#simVision.scaleAndOffsetWorkImg">simVision.scaleAndOffsetWorkImg</a>
+<a href="https://mde.tw/copsimdoc/en/simVision.htm?#simVision.selectiveColorOnWorkImg">simVision.selectiveColorOnWorkImg</a>
+<a href="https://mde.tw/copsimdoc/en/simVision.htm?#simVision.sensorDepthMapToWorkImg">simVision.sensorDepthMapToWorkImg</a>
+<a href="https://mde.tw/copsimdoc/en/simVision.htm?#simVision.sensorImgToWorkImg">simVision.sensorImgToWorkImg</a>
+<a href="https://mde.tw/copsimdoc/en/simVision.htm?#simVision.sharpenWorkImg">simVision.sharpenWorkImg</a>
+<a href="https://mde.tw/copsimdoc/en/simVision.htm?#simVision.shiftWorkImg">simVision.shiftWorkImg</a>
+<a href="https://mde.tw/copsimdoc/en/simVision.htm?#simVision.subtractBuffer1FromWorkImg">simVision.subtractBuffer1FromWorkImg</a>
+<a href="https://mde.tw/copsimdoc/en/simVision.htm?#simVision.subtractWorkImgFromBuffer1">simVision.subtractWorkImgFromBuffer1</a>
+<a href="https://mde.tw/copsimdoc/en/simVision.htm?#simVision.swapBuffers">simVision.swapBuffers</a>
+<a href="https://mde.tw/copsimdoc/en/simVision.htm?#simVision.swapWorkImgWithBuffer1">simVision.swapWorkImgWithBuffer1</a>
+<a href="https://mde.tw/copsimdoc/en/simVision.htm?#simVision.uniformImgToWorkImg">simVision.uniformImgToWorkImg</a>
+<a href="https://mde.tw/copsimdoc/en/simVision.htm?#simVision.velodyneDataFromWorkImg">simVision.velodyneDataFromWorkImg</a>
+<a href="https://mde.tw/copsimdoc/en/simVision.htm?#simVision.verticalFlipWorkImg">simVision.verticalFlipWorkImg</a>
+<a href="https://mde.tw/copsimdoc/en/simVision.htm?#simVision.workImgToBuffer1">simVision.workImgToBuffer1</a>
+<a href="https://mde.tw/copsimdoc/en/simVision.htm?#simVision.workImgToBuffer2">simVision.workImgToBuffer2</a>
+<a href="https://mde.tw/copsimdoc/en/simVision.htm?#simVision.workImgToSensorDepthMap">simVision.workImgToSensorDepthMap</a>
+<a href="https://mde.tw/copsimdoc/en/simVision.htm?#simVision.workImgToSensorImg">simVision.workImgToSensorImg</a></pre>
+<br/>
+</td></tr>
+<tr><td class="section" id="category" style="display: table-cell;">
+<h4><a name="environment"></a>Handling special types of sensors</h4>
+<pre class="apiList"><a href="https://mde.tw/copsimdoc/en/simVision.htm?#simVision.createVelodyneHDL64E">simVision.createVelodyneHDL64E</a>
+<a href="https://mde.tw/copsimdoc/en/simVision.htm?#simVision.createVelodyneVPL16">simVision.createVelodyneVPL16</a>
+<a href="https://mde.tw/copsimdoc/en/simVision.htm?#simVision.destroyVelodyneHDL64E">simVision.destroyVelodyneHDL64E</a>
+<a href="https://mde.tw/copsimdoc/en/simVision.htm?#simVision.destroyVelodyneVPL16">simVision.destroyVelodyneVPL16</a>
+<a href="https://mde.tw/copsimdoc/en/simVision.htm?#simVision.distort">simVision.distort</a>
+<a href="https://mde.tw/copsimdoc/en/simVision.htm?#simVision.handleAnaglyphStereo">simVision.handleAnaglyphStereo</a>
+<a href="https://mde.tw/copsimdoc/en/simVision.htm?#simVision.handleSpherical">simVision.handleSpherical</a>
+<a href="https://mde.tw/copsimdoc/en/simVision.htm?#simVision.handleVelodyneHDL64E">simVision.handleVelodyneHDL64E</a>
+<a href="https://mde.tw/copsimdoc/en/simVision.htm?#simVision.handleVelodyneVPL16">simVision.handleVelodyneVPL16</a>
+</pre>
+<h4><a name="simpleProcessing"></a>Simple image handling and processing</h4>
+<pre class="apiList"><a href="https://mde.tw/copsimdoc/en/simVision.htm?#simVision.addBuffer1ToWorkImg">simVision.addBuffer1ToWorkImg</a>
+<a href="https://mde.tw/copsimdoc/en/simVision.htm?#simVision.addWorkImgToBuffer1">simVision.addWorkImgToBuffer1</a>
+<a href="https://mde.tw/copsimdoc/en/simVision.htm?#simVision.binaryWorkImg">simVision.binaryWorkImg</a>
+<a href="https://mde.tw/copsimdoc/en/simVision.htm?#simVision.blobDetectionOnWorkImg">simVision.blobDetectionOnWorkImg</a>
+<a href="https://mde.tw/copsimdoc/en/simVision.htm?#simVision.buffer1ToWorkImg">simVision.buffer1ToWorkImg</a>
+<a href="https://mde.tw/copsimdoc/en/simVision.htm?#simVision.buffer2ToWorkImg">simVision.buffer2ToWorkImg</a>
+<a href="https://mde.tw/copsimdoc/en/simVision.htm?#simVision.changedPixelsOnWorkImg">simVision.changedPixelsOnWorkImg</a>
+<a href="https://mde.tw/copsimdoc/en/simVision.htm?#simVision.circularCutWorkImg">simVision.circularCutWorkImg</a>
+<a href="https://mde.tw/copsimdoc/en/simVision.htm?#simVision.colorSegmentationOnWorkImg">simVision.colorSegmentationOnWorkImg</a>
+<a href="https://mde.tw/copsimdoc/en/simVision.htm?#simVision.coordinatesFromWorkImg">simVision.coordinatesFromWorkImg</a>
+<a href="https://mde.tw/copsimdoc/en/simVision.htm?#simVision.edgeDetectionOnWorkImg">simVision.edgeDetectionOnWorkImg</a>
+<a href="https://mde.tw/copsimdoc/en/simVision.htm?#simVision.horizontalFlipWorkImg">simVision.horizontalFlipWorkImg</a>
+<a href="https://mde.tw/copsimdoc/en/simVision.htm?#simVision.intensityScaleOnWorkImg">simVision.intensityScaleOnWorkImg</a>
+<a href="https://mde.tw/copsimdoc/en/simVision.htm?#simVision.matrix3x3OnWorkImg">simVision.matrix3x3OnWorkImg</a>
+<a href="https://mde.tw/copsimdoc/en/simVision.htm?#simVision.matrix5x5OnWorkImg">simVision.matrix5x5OnWorkImg</a>
+<a href="https://mde.tw/copsimdoc/en/simVision.htm?#simVision.multiplyWorkImgWithBuffer1">simVision.multiplyWorkImgWithBuffer1</a>
+<a href="https://mde.tw/copsimdoc/en/simVision.htm?#simVision.normalizeWorkImg">simVision.normalizeWorkImg</a>
+<a href="https://mde.tw/copsimdoc/en/simVision.htm?#simVision.rectangularCutWorkImg">simVision.rectangularCutWorkImg</a>
+<a href="https://mde.tw/copsimdoc/en/simVision.htm?#simVision.resizeWorkImg">simVision.resizeWorkImg</a>
+<a href="https://mde.tw/copsimdoc/en/simVision.htm?#simVision.rotateWorkImg">simVision.rotateWorkImg</a>
+<a href="https://mde.tw/copsimdoc/en/simVision.htm?#simVision.scaleAndOffsetWorkImg">simVision.scaleAndOffsetWorkImg</a>
+<a href="https://mde.tw/copsimdoc/en/simVision.htm?#simVision.selectiveColorOnWorkImg">simVision.selectiveColorOnWorkImg</a>
+<a href="https://mde.tw/copsimdoc/en/simVision.htm?#simVision.sensorDepthMapToWorkImg">simVision.sensorDepthMapToWorkImg</a>
+<a href="https://mde.tw/copsimdoc/en/simVision.htm?#simVision.sensorImgToWorkImg">simVision.sensorImgToWorkImg</a>
+<a href="https://mde.tw/copsimdoc/en/simVision.htm?#simVision.sharpenWorkImg">simVision.sharpenWorkImg</a>
+<a href="https://mde.tw/copsimdoc/en/simVision.htm?#simVision.shiftWorkImg">simVision.shiftWorkImg</a>
+<a href="https://mde.tw/copsimdoc/en/simVision.htm?#simVision.subtractBuffer1FromWorkImg">simVision.subtractBuffer1FromWorkImg</a>
+<a href="https://mde.tw/copsimdoc/en/simVision.htm?#simVision.subtractWorkImgFromBuffer1">simVision.subtractWorkImgFromBuffer1</a>
+<a href="https://mde.tw/copsimdoc/en/simVision.htm?#simVision.swapBuffers">simVision.swapBuffers</a>
+<a href="https://mde.tw/copsimdoc/en/simVision.htm?#simVision.swapWorkImgWithBuffer1">simVision.swapWorkImgWithBuffer1</a>
+<a href="https://mde.tw/copsimdoc/en/simVision.htm?#simVision.uniformImgToWorkImg">simVision.uniformImgToWorkImg</a>
+<a href="https://mde.tw/copsimdoc/en/simVision.htm?#simVision.velodyneDataFromWorkImg">simVision.velodyneDataFromWorkImg</a>
+<a href="https://mde.tw/copsimdoc/en/simVision.htm?#simVision.verticalFlipWorkImg">simVision.verticalFlipWorkImg</a>
+<a href="https://mde.tw/copsimdoc/en/simVision.htm?#simVision.workImgToBuffer1">simVision.workImgToBuffer1</a>
+<a href="https://mde.tw/copsimdoc/en/simVision.htm?#simVision.workImgToBuffer2">simVision.workImgToBuffer2</a>
+<a href="https://mde.tw/copsimdoc/en/simVision.htm?#simVision.workImgToSensorDepthMap">simVision.workImgToSensorDepthMap</a>
+<a href="https://mde.tw/copsimdoc/en/simVision.htm?#simVision.workImgToSensorImg">simVision.workImgToSensorImg</a>
+</pre>
+</td></tr>
+<tr><td class="section" id="commands" style="display: none;">
+<p class="subsectionBar"><a id="simVision.createVelodyneHDL64E" name="simVision.createVelodyneHDL64E"></a>simVision.createVelodyneHDL64E</p>
+<table class="apiTable">
+<tbody><tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+Description 
+</td>
+<td class="apiTableRightDescr">
+Creates a handle for generating data similar to a Velodyne HDL64E. See also <a href="#simVision.destroyVelodyneHDL64E">simVision.destroyVelodyneHDL64E</a> and <a href="#simVision.handleVelodyneHDL64E">simVision.handleVelodyneHDL64E</a>.</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLSyn">
+Lua synopsis
+</td>
+<td class="apiTableRightLSyn">int 
+handle=simVision.createVelodyneHDL64E(int[4] visionSensorHandles,float 
+frequency,int options=0,int pointSize=2,float[2] 
+coloring_closeFarDist={1,5},float displayScalingFactor=1,int 
+pointCloudHandle=-1)</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLParam">Lua parameters</td>
+<td class="apiTableRightLParam">
+<div><strong>rgbVisionSensorHandle</strong>: handle of a passive vision sensor, receiving the computed RGB image.</div>
+<div><strong>visionSensorHandles</strong>: the handles of 4 active vision sensors, looking to the front, left, rear and right.</div>
+<div><strong>frequency</strong>: the rotation frequency.</div>
+<div><strong>options</strong>: bit-coded options:</div>
+<div class="tab">bit0 set (i.e. 1): do not display points</div>
+<div class="tab">bit1 set( i.e. 2): display only current points.</div>
+<div class="tab">bit2 set( i.e. 4): returned data is polar (otherwise cartesian).</div>
+<div class="tab">bit3 set( i.e. 8): displayed points are emissive.</div>
+<div><strong>pointSize</strong>: the size of the displayed points, in pixels.</div>
+<div><strong>coloring_closeFarDist</strong>: the close and far distances, used to adjust intensity coloring.</div>
+<div><strong>displayScalingFactor</strong>: a scaling factor applied 
+radially to each point. Can be used to bring points slightly closer to 
+the sensor, to avoid points being hidden behind surfaces due to depth 
+map resolution.</div>
+<div><strong>pointCloudHandle</strong>: the optional handle of a point cloud object (that will be in charge of displaying the detected points.</div>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLRet">
+Lua return values
+</td>
+<td class="apiTableRightLRet">
+<div><strong>handle</strong>: the created Velodyne HDL64E handle.</div></td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftPSyn">
+Python synopsis
+</td>
+<td class="apiTableRightPSyn">int 
+handle=simVision.createVelodyneHDL64E(list visionSensorHandles,float 
+frequency,int options=0,int pointSize=2,list 
+coloring_closeFarDist=[1,5],float displayScalingFactor=1,int 
+pointCloudHandle=-1)</td>
+</tr>
+</tbody></table>
+<br/>
+<p class="subsectionBar"><a id="simVision.createVelodyneVPL16" name="simVision.createVelodyneVPL16"></a>simVision.createVelodyneVPL16</p>
+<table class="apiTable">
+<tbody><tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+Description 
+</td>
+<td class="apiTableRightDescr">
+Creates a handle for generating data similar to a Velodyne VPL16. See also <a href="#simVision.destroyVelodyneVPL16">simVision.destroyVelodyneVPL16</a> and <a href="#simVision.handleVelodyneVPL16">simVision.handleVelodyneVPL16</a>.</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLSyn">
+Lua synopsis
+</td>
+<td class="apiTableRightLSyn">int 
+handle=simVision.createVelodyneVPL16(int[4] visionSensorHandles,float 
+frequency,int options=0,int pointSize=2,float[2] 
+coloring_closeFarDist={1,5},float displayScalingFactor=1,int 
+pointCloudHandle=-1)</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLParam">Lua parameters</td>
+<td class="apiTableRightLParam">
+<div><strong>rgbVisionSensorHandle</strong>: handle of a passive vision sensor, receiving the computed RGB image.</div>
+<div><strong>visionSensorHandles</strong>: the handles of 4 active vision sensors, looking to the front, left, rear and right.</div>
+<div><strong>frequency</strong>: the rotation frequency.</div>
+<div><strong>options</strong>: bit-coded options:</div>
+<div class="tab">bit0 set (i.e. 1): do not display points</div>
+<div class="tab">bit1 set( i.e. 2): display only current points.</div>
+<div class="tab">bit2 set( i.e. 4): returned data is polar (otherwise cartesian).</div>
+<div class="tab">bit3 set( i.e. 8): displayed points are emissive.</div>
+<div><strong>pointSize</strong>: the size of the displayed points, in pixels.</div>
+<div><strong>coloring_closeFarDist</strong>: the close and far distances, used to adjust intensity coloring.</div>
+<div><strong>displayScalingFactor</strong>: a scaling factor applied 
+radially to each point. Can be used to bring points slightly closer to 
+the sensor, to avoid points being hidden behind surfaces due to depth 
+map resolution.</div>
+<div><strong>pointCloudHandle</strong>: the optional handle of a point cloud object (that will be in charge of displaying the detected points.</div>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLRet">
+Lua return values
+</td>
+<td class="apiTableRightLRet">
+<div><strong>handle</strong>: the created Velodyne VPL16 handle.</div></td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftPSyn">
+Python synopsis
+</td>
+<td class="apiTableRightPSyn">int 
+handle=simVision.createVelodyneVPL16(list visionSensorHandles,float 
+frequency,int options=0,int pointSize=2,list 
+coloring_closeFarDist=[1,5],float displayScalingFactor=1,int 
+pointCloudHandle=-1)</td>
+</tr>
+</tbody></table>
+<br/>
+<p class="subsectionBar"><a id="simVision.destroyVelodyneHDL64E" name="simVision.destroyVelodyneHDL64E"></a>simVision.destroyVelodyneHDL64E</p>
+<table class="apiTable">
+<tbody><tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+Description 
+</td>
+<td class="apiTableRightDescr">
+Deletes a Velodyne HDL64E handle previously created with <a href="#simVision.createVelodyneHDL64E">simVision.createVelodyneHDL64E</a>.</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLSyn">
+Lua synopsis
+</td>
+<td class="apiTableRightLSyn">simVision.destroyVelodyneHDL64E(int velodyneHandle)</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLParam">Lua parameters</td>
+<td class="apiTableRightLParam">
+<div><strong>velodyneHandle</strong>: a handle previously returned by <a href="#simVision.createVelodyneHDL64E">simVision.createVelodyneHDL64E</a>.</div>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLRet">
+Lua return values
+</td>
+<td class="apiTableRightLRet">
+<div></div></td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftPSyn">
+Python synopsis
+</td>
+<td class="apiTableRightPSyn">simVision.destroyVelodyneHDL64E(int velodyneHandle)</td>
+</tr>
+</tbody></table>
+<br/>
+<p class="subsectionBar"><a id="simVision.destroyVelodyneVPL16" name="simVision.destroyVelodyneVPL16"></a>simVision.destroyVelodyneVPL16</p>
+<table class="apiTable">
+<tbody><tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+Description 
+</td>
+<td class="apiTableRightDescr">
+Deletes a Velodyne VPL16 handle previously created with <a href="#simVision.createVelodyneVPL16">simVision.createVelodyneVPL16</a>.</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLSyn">
+Lua synopsis
+</td>
+<td class="apiTableRightLSyn">simVision.destroyVelodyneVPL16(int velodyneHandle)</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLParam">Lua parameters</td>
+<td class="apiTableRightLParam">
+<div><strong>velodyneHandle</strong>: a handle previously returned by <a href="#simVision.createVelodyneVPL16">simVision.createVelodyneVPL16</a>.</div>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLRet">
+Lua return values
+</td>
+<td class="apiTableRightLRet">
+<div></div></td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftPSyn">
+Python synopsis
+</td>
+<td class="apiTableRightPSyn">simVision.destroyVelodyneVPL16(int velodyneHandle)</td>
+</tr>
+</tbody></table>
+<br/>
+<p class="subsectionBar"><a id="simVision.distort" name="simVision.distort"></a>simVision.distort</p>
+<table class="apiTable">
+<tbody><tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+Description 
+</td>
+<td class="apiTableRightDescr">
+Transforms (distorts) a vision sensor image via pixel remapping.</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLSyn">
+Lua synopsis
+</td>
+<td class="apiTableRightLSyn">simVision.distort(int visionSensorHandle,int[] pixelMap=nil,float[] depthScalings=nil)</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLParam">Lua parameters</td>
+<td class="apiTableRightLParam">
+<div><strong>visionSensorHandle</strong>: the handle of the vision sensor.</div>
+<div><strong>pixelMap</strong>: a table containing indices to new pixel 
+positions. Should be of size resX*resY. Consecutive, incremental indices
+ (starting at 0) represents the identity transformation. Can be omitted 
+if a map was previously provided and doesn't need change.</div>
+<div><strong>depthScaling</strong>: an optional table containing scaling factors for each depth value.</div>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLRet">
+Lua return values
+</td>
+<td class="apiTableRightLRet">
+<div></div>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftPSyn">
+Python synopsis
+</td>
+<td class="apiTableRightPSyn">simVision.distort(int visionSensorHandle,list pixelMap=None,list depthScalings=None)</td>
+</tr>
+</tbody></table>
+<br/>
+<p class="subsectionBar"><a id="simVision.handleAnaglyphStereo" name="simVision.handleAnaglyphStereo"></a>simVision.handleAnaglyphStereo</p>
+<table class="apiTable">
+<tbody><tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+Description 
+</td>
+<td class="apiTableRightDescr">
+Allows to generate an anaglyph stereo image from two individual vision sensors (for the left and right eye).</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLSyn">
+Lua synopsis
+</td>
+<td class="apiTableRightLSyn">simVision.handleAnaglyphStereo(int rgbVisionSensorHandle,int[2] handlesOfTwoVisionSensors,float[6] leftAndRightColors=nil)</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLParam">Lua parameters</td>
+<td class="apiTableRightLParam">
+<div><strong>rgbVisionSensorHandle</strong>: handle of a passive vision sensor, receiving the computed RGB image.</div>
+<div><strong>handlesOfTwoVisionSensors</strong>: the handles of two active vision sensors (for the left and right eye).</div>
+<div><strong>leftAndRightColors</strong>: the colors for the left and right eye rendering.</div>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLRet">
+Lua return values
+</td>
+<td class="apiTableRightLRet">
+<div></div></td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftPSyn">
+Python synopsis
+</td>
+<td class="apiTableRightPSyn">simVision.handleAnaglyphStereo(int rgbVisionSensorHandle,list handlesOfTwoVisionSensors,list leftAndRightColors=None)</td>
+</tr>
+</tbody></table>
+<br/>
+<p class="subsectionBar"><a id="simVision.handleSpherical" name="simVision.handleSpherical"></a>simVision.handleSpherical</p>
+<table class="apiTable">
+<tbody><tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+Description 
+</td>
+<td class="apiTableRightDescr">
+Allows to generate an RGB and/or depth image that covers all directions,
+ i.e. spherical vision, based on the input of 6 individual vision 
+sensors, each looking into a different and perpendicular direction.</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLSyn">
+Lua synopsis
+</td>
+<td class="apiTableRightLSyn">simVision.handleSpherical(int 
+rgbVisionSensorHandle,int[6] handlesOfSixVisionSensors,float 
+horizontalAngle,float verticalAngle,int depthVisionSensorHandle=-1)</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLParam">Lua parameters</td>
+<td class="apiTableRightLParam">
+<div><strong>rgbVisionSensorHandle</strong>: handle of a passive vision sensor, receiving the computed RGB spherical image.</div>
+<div><strong>handlesOfSixVisionSensors</strong>: the handles of 6 mutually perpendicular, looking into a different direction active vision sensors.</div>
+<div><strong>horizontalAngle</strong>: the desired horizontal view angle, in radians (e.g. 2*math.pi).</div>
+<div><strong>horizontalAngle</strong>: the desired vertical view angle, in radians (e.g. math.pi).</div>
+<div><strong>depthVisionSensorHandle</strong>: handle of a passive vision sensor, receiving the computed depth image representation of the spherical depth map.</div>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLRet">
+Lua return values
+</td>
+<td class="apiTableRightLRet">
+<div></div></td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftPSyn">
+Python synopsis
+</td>
+<td class="apiTableRightPSyn">simVision.handleSpherical(int 
+rgbVisionSensorHandle,list handlesOfSixVisionSensors,float 
+horizontalAngle,float verticalAngle,int depthVisionSensorHandle=-1)</td>
+</tr>
+</tbody></table>
+<br/>
+<p class="subsectionBar"><a id="simVision.handleVelodyneHDL64E" name="simVision.handleVelodyneHDL64E"></a>simVision.handleVelodyneHDL64E</p>
+<table class="apiTable">
+<tbody><tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+Description 
+</td>
+<td class="apiTableRightDescr">
+Handles a velodyne HDL64E sensor (i.e. generates and displays detection points. See also <a href="#simVision.createVelodyneHDL64E">simVision.createVelodyneHDL64E</a>.</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLSyn">
+Lua synopsis
+</td>
+<td class="apiTableRightLSyn">float[]/buffer points,buffer colors=simVision.handleVelodyneHDL64E(int velodyneHandle,float dt)</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLParam">Lua parameters</td>
+<td class="apiTableRightLParam">
+<div><strong>velodyneHandle</strong>: a handle previously returned by <a href="#simVision.createVelodyneHDL64E">simVision.createVelodyneHDL64E</a>.
+ Can be combined with sim.handleflag_abscoords to retrieve points 
+relative to the absolute reference frame, instead of the reference frame
+ of the sensor. Can also be combined with sim.handleflag_codedstring, in
+ order to retrieve packed data (faster).</div>
+<div><strong>dt</strong>: the time duration since last call to this function. Typically the simulation time step.</div>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLRet">
+Lua return values
+</td>
+<td class="apiTableRightLRet">
+<div><strong>points</strong>: a table containing the detected points, or a coded string.</div>
+<div><strong>colors</strong>: a coded string containing the colors of 
+each point (3 byte values for each point (RGB)). The colors are only 
+returned if the Velodyne model is appropriately configured.</div>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftPSyn">
+Python synopsis
+</td>
+<td class="apiTableRightPSyn">list/bytes points,bytes colors=simVision.handleVelodyneHDL64E(int velodyneHandle,float dt)</td>
+</tr>
+</tbody></table>
+<br/>
+<p class="subsectionBar"><a id="simVision.handleVelodyneVPL16" name="simVision.handleVelodyneVPL16"></a>simVision.handleVelodyneVPL16</p>
+<table class="apiTable">
+<tbody><tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+Description 
+</td>
+<td class="apiTableRightDescr">
+Handles a velodyne VPL16 sensor (i.e. generates and displays detection points. See also <a href="#simVision.createVelodyneVPL16">simVision.createVelodyneVPL16</a>.</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLSyn">
+Lua synopsis
+</td>
+<td class="apiTableRightLSyn">float[]/buffer points,buffer colors=simVision.handleVelodyneVPL16(int velodyneHandle,float dt)</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLParam">Lua parameters</td>
+<td class="apiTableRightLParam">
+<div><strong>velodyneHandle</strong>: a handle previously returned by <a href="#simVision.createVelodyneVPL16">simVision.createVelodyneVPL16</a>.
+ Can be combined with sim.handleflag_abscoords to retrieve points 
+relative to the absolute reference frame, instead of the reference frame
+ of the sensor. Can also be combined with sim.handleflag_codedstring, in
+ order to retrieve packed data (faster).</div>
+<div><strong>dt</strong>: the time duration since last call to this function. Typically the simulation time step.</div>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLRet">
+Lua return values
+</td>
+<td class="apiTableRightLRet">
+<div><strong>points</strong>: a table containing the detected points, or a coded string.</div>
+<div><strong>colors</strong>: a coded string containing the colors of 
+each point (3 byte values for each point (RGB)). The colors are only 
+returned if the Velodyne model is appropriately configured.</div>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftPSyn">
+Python synopsis
+</td>
+<td class="apiTableRightPSyn">list/bytes points,bytes colors=simVision.handleVelodyneVPL16(int velodyneHandle,float dt)</td>
+</tr>
+</tbody></table>
+<br/>
+<p class="subsectionBar"><a id="simVision.addBuffer1ToWorkImg" name="simVision.addBuffer1ToWorkImg"></a>simVision.addBuffer1ToWorkImg</p>
+<table class="apiTable">
+<tbody><tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+Description 
+</td>
+<td class="apiTableRightDescr">
+Performs a pixel wise addition between the <em>work image</em> and buffer <em>buffer1</em>, and stores the result in the <em>work image</em>. See also <a href="#simVision.addWorkImgToBuffer1">simVision.addWorkImgToBuffer1</a> and <a href="#simVision.subtractBuffer1FromWorkImg">simVision.subtractBuffer1FromWorkImg</a>.</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLSyn">
+Lua synopsis
+</td>
+<td class="apiTableRightLSyn">simVision.addBuffer1ToWorkImg(int handle)</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLParam">Lua parameters</td>
+<td class="apiTableRightLParam">
+<div><strong>handle</strong>: handle of the vision sensor, or sim.handle_self if the object attached to this script is the vision sensor.</div>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLRet">
+Lua return values
+</td>
+<td class="apiTableRightLRet">
+<div></div></td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftPSyn">
+Python synopsis
+</td>
+<td class="apiTableRightPSyn">simVision.addBuffer1ToWorkImg(int handle)</td>
+</tr>
+</tbody></table>
+<br/>
+<p class="subsectionBar"><a id="simVision.addWorkImgToBuffer1" name="simVision.addWorkImgToBuffer1"></a>simVision.addWorkImgToBuffer1</p>
+<table class="apiTable">
+<tbody><tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+Description 
+</td>
+<td class="apiTableRightDescr">
+Performs a pixel wise addition between the <em>work image</em> and buffer <em>buffer1</em>, and stores the result in buffer <em>buffer1</em>. See also <a href="#simVision.addBuffer1ToWorkImg">simVision.addBuffer1ToWorkImg</a> and <a href="#simVision.subtractWorkImgFromBuffer1">simVision.subtractWorkImgFromBuffer1</a>.</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLSyn">
+Lua synopsis
+</td>
+<td class="apiTableRightLSyn">simVision.addWorkImgToBuffer1(int handle)</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLParam">Lua parameters</td>
+<td class="apiTableRightLParam">
+<div><strong>handle</strong>: handle of the vision sensor, or sim.handle_self if the object attached to this script is the vision sensor.</div>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLRet">
+Lua return values
+</td>
+<td class="apiTableRightLRet">
+<div></div></td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftPSyn">
+Python synopsis
+</td>
+<td class="apiTableRightPSyn">simVision.addWorkImgToBuffer1(int handle)</td>
+</tr>
+</tbody></table>
+<br/>
+<p class="subsectionBar"><a id="simVision.binaryWorkImg" name="simVision.binaryWorkImg"></a>simVision.binaryWorkImg</p>
+<table class="apiTable">
+<tbody><tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+Description 
+</td>
+<td class="apiTableRightDescr">
+Transforms the <em>work image</em> into a binary image, with optional triggering.</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLSyn">
+Lua synopsis
+</td>
+<td class="apiTableRightLSyn">int trigger,buffer 
+packedPacket=simVision.binaryWorkImg(int handle,float threshold,float 
+oneProportion,float oneTol,float xCenter,float xCenterTol,float 
+yCenter,float yCenterTol,float orient,float orientTol,float 
+roundness,bool enableTrigger,float[3] overlayColor={1.0,0.0,1.0}))</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLParam">Lua parameters</td>
+<td class="apiTableRightLParam">
+<div><strong>handle</strong>: handle of the vision sensor, or sim.handle_self if the object attached to this script is the vision sensor.</div>
+<div><strong>threshold</strong>: the threshold for binary 0 or binary 1.</div>
+<div><strong>oneProportion</strong>: the nominal binary 1 pixels relative amount (0-1), for triggering.</div>
+<div><strong>oneTol</strong>: the allowed tolerance for <em>oneProportion</em>.</div>
+<div><strong>xCenter</strong>: the nominal x center of binary 1 pixels (0-1), for triggering.</div>
+<div><strong>xCenterTol</strong>: the allowed tolerance for <em>xCenter</em>.</div>
+<div><strong>yCenter</strong>: the nominal y center of binary 1 pixels (0-1), for triggering.</div>
+<div><strong>yCenterTol</strong>: the allowed tolerance for <em>yCenter</em>.</div>
+<div><strong>orient</strong>: the nominal orientation, in radians, of the bounding box around binary 1 pixels (0-1), for triggering.</div>
+<div><strong>orientTol</strong>: the allowed tolerance for <em>orient</em>.</div>
+<div><strong>roundness</strong>: the nominal roundness value of the bounding box around binary 1 pixels (0-1), for triggering.</div>
+<div><strong>enableTrigger</strong>: if true and the triggering conditions are met, then return value <em>trigger</em> will be true.</div>
+<div><strong>overlayColor</strong>: an overlay color used to visualize triggering conditions. Set to nil for no overlay.</div>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLRet">
+Lua return values
+</td>
+<td class="apiTableRightLRet">
+<div><strong>trigger</strong>: true if the filter has triggered.</div>
+<div><strong>packedPacket</strong>: a packed packet (use <a href="https://mde.tw/copsimdoc/en/regularApi/simUnpackFloatTable.htm">sim.unpackFloatTable</a> to unpack) containing:</div>
+<div>a) the binary image <em>proportion</em> value</div>
+<div>b) the binary image <em>posX</em> value</div>
+<div>c) the binary image <em>posY</em> value</div>
+<div>d) the binary image <em>angle</em> value</div>
+<div>e) the binary image <em>roundness</em> value</div>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftPSyn">
+Python synopsis
+</td>
+<td class="apiTableRightPSyn">int trigger,bytes 
+packedPacket=simVision.binaryWorkImg(int handle,float threshold,float 
+oneProportion,float oneTol,float xCenter,float xCenterTol,float 
+yCenter,float yCenterTol,float orient,float orientTol,float 
+roundness,bool enableTrigger,list overlayColor=[1.0,0.0,1.0]))</td>
+</tr>
+</tbody></table>
+<br/>
+<p class="subsectionBar"><a id="simVision.blobDetectionOnWorkImg" name="simVision.blobDetectionOnWorkImg"></a>simVision.blobDetectionOnWorkImg</p>
+<table class="apiTable">
+<tbody><tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+Description 
+</td>
+<td class="apiTableRightDescr">
+Performs blob detection on the <em>work image</em>.</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLSyn">
+Lua synopsis
+</td>
+<td class="apiTableRightLSyn">int trigger,buffer 
+packedPacket=simVision.blobDetectionOnWorkImg(int handle,float 
+threshold,float minBlobSize,bool diffColor,float[3] 
+overlayColor={1.0,0.0,1.0}))</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLParam">Lua parameters</td>
+<td class="apiTableRightLParam">
+<div><strong>handle</strong>: handle of the vision sensor, or sim.handle_self if the object attached to this script is the vision sensor.</div>
+<div><strong>threshold</strong>: the intensity threshold for a pixel to be considered <em>on</em>. </div>
+<div><strong>minBlobSize</strong>: the minimum size of a blob (in relation to the total image surface).</div>
+<div><strong>diffColor</strong>: if true then each blob will be represented in a different color.</div>
+<div><strong>overlayColor</strong>: an overlay color used to visualize the blobs. Set to nil for no overlay.</div>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLRet">
+Lua return values
+</td>
+<td class="apiTableRightLRet">
+<div><strong>trigger</strong>: always false. Not used.</div>
+<div><strong>packedPacket</strong>: a packed packet (use <a href="https://mde.tw/copsimdoc/en/regularApi/simUnpackFloatTable.htm">sim.unpackFloatTable</a> to unpack) containing:</div>
+<div>a) the number of detected blobs</div>
+<div>b) the number of values returned for each blob</div>
+<div>then for each blob:</div>
+<div>c.1) the blob relative size</div>
+<div>c.2) the blob orientation</div>
+<div>c.3) the blob relative position X</div>
+<div>c.4) the blob relative position Y</div>
+<div>c.5) the blob bounding box relative width</div>
+<div>c.6) the blob bounding box relative height</div>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftPSyn">
+Python synopsis
+</td>
+<td class="apiTableRightPSyn">int trigger,bytes 
+packedPacket=simVision.blobDetectionOnWorkImg(int handle,float 
+threshold,float minBlobSize,bool diffColor,list 
+overlayColor=[1.0,0.0,1.0]))</td>
+</tr>
+</tbody></table>
+<br/>
+<p class="subsectionBar"><a id="simVision.buffer1ToWorkImg" name="simVision.buffer1ToWorkImg"></a>simVision.buffer1ToWorkImg</p>
+<table class="apiTable">
+<tbody><tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+Description 
+</td>
+<td class="apiTableRightDescr">
+Copies buffer <em>buffer1</em> to the <em>work image</em>. See also <a href="#simVision.buffer2ToWorkImg">simVision.buffer2ToWorkImg</a>, <a href="#simVision.workImgToBuffer1">simVision.workImgToBuffer1</a>, <a href="#simVision.swapBuffers">simVision.swapBuffers</a> and <a href="#simVision.swapWorkImgWithBuffer1">simVision.swapWorkImgWithBuffer1</a>.</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLSyn">
+Lua synopsis
+</td>
+<td class="apiTableRightLSyn">simVision.buffer1ToWorkImg(int handle)</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLParam">Lua parameters</td>
+<td class="apiTableRightLParam">
+<div><strong>handle</strong>: handle of the vision sensor, or sim.handle_self if the object attached to this script is the vision sensor.</div>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLRet">
+Lua return values
+</td>
+<td class="apiTableRightLRet">
+<div></div></td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftPSyn">
+Python synopsis
+</td>
+<td class="apiTableRightPSyn">simVision.buffer1ToWorkImg(int handle)</td>
+</tr>
+</tbody></table>
+<br/>
+<p class="subsectionBar"><a id="simVision.buffer2ToWorkImg" name="simVision.buffer2ToWorkImg"></a>simVision.buffer2ToWorkImg</p>
+<table class="apiTable">
+<tbody><tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+Description 
+</td>
+<td class="apiTableRightDescr">
+Copies buffer <em>buffer2</em> to the <em>work image</em>. See also <a href="#simVision.buffer1ToWorkImg">simVision.buffer1ToWorkImg</a>, <a href="#simVision.workImgToBuffer2">simVision.workImgToBuffer2</a> and <a href="#simVision.swapBuffers">simVision.swapBuffers</a>.</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLSyn">
+Lua synopsis
+</td>
+<td class="apiTableRightLSyn">simVision.buffer2ToWorkImg(int handle)</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLParam">Lua parameters</td>
+<td class="apiTableRightLParam">
+<div><strong>handle</strong>: handle of the vision sensor, or sim.handle_self if the object attached to this script is the vision sensor.</div>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLRet">
+Lua return values
+</td>
+<td class="apiTableRightLRet">
+<div></div></td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftPSyn">
+Python synopsis
+</td>
+<td class="apiTableRightPSyn">simVision.buffer2ToWorkImg(int handle)</td>
+</tr>
+</tbody></table>
+<br/>
+<p class="subsectionBar"><a id="simVision.changedPixelsOnWorkImg" name="simVision.changedPixelsOnWorkImg"></a>simVision.changedPixelsOnWorkImg</p>
+<table class="apiTable">
+<tbody><tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+Description 
+</td>
+<td class="apiTableRightDescr">
+Returns the pixels that changed the <em>work image</em>, from one frame to the next.</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLSyn">
+Lua synopsis
+</td>
+<td class="apiTableRightLSyn">int trigger,buffer packedPacket=simVision.changedPixelsOnWorkImg(int handle,float threshold)</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLParam">Lua parameters</td>
+<td class="apiTableRightLParam">
+<div><strong>handle</strong>: handle of the vision sensor, or sim.handle_self if the object attached to this script is the vision sensor.</div>
+<div><strong>threshold</strong>: the minimum intensity variation for a pixel to have changed.</div>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLRet">
+Lua return values
+</td>
+<td class="apiTableRightLRet">
+<div><strong>trigger</strong>: always false. Not used.</div>
+<div><strong>packedPacket</strong>: a packed packet (use <a href="https://mde.tw/copsimdoc/en/regularApi/simUnpackFloatTable.htm">sim.unpackFloatTable</a> to unpack) containing for each changed pixel:</div>
+<div>a.1) 1 if the pixel became brighter, -1 otherwise</div>
+<div>a.2) the x coordinate of the pixel</div>
+<div>a.3) the y coordinate of the pixel</div>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftPSyn">
+Python synopsis
+</td>
+<td class="apiTableRightPSyn">int trigger,bytes packedPacket=simVision.changedPixelsOnWorkImg(int handle,float threshold)</td>
+</tr>
+</tbody></table>
+<br/>
+<p class="subsectionBar"><a id="simVision.circularCutWorkImg" name="simVision.circularCutWorkImg"></a>simVision.circularCutWorkImg</p>
+<table class="apiTable">
+<tbody><tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+Description 
+</td>
+<td class="apiTableRightDescr">
+Performs a circular cut on the <em>work image</em>.</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLSyn">
+Lua synopsis
+</td>
+<td class="apiTableRightLSyn">simVision.circularCutWorkImg(int handle,float radius,bool toBuffer1)</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLParam">Lua parameters</td>
+<td class="apiTableRightLParam">
+<div><strong>handle</strong>: handle of the vision sensor, or sim.handle_self if the object attached to this script is the vision sensor.</div>
+<div><strong>radius</strong>: the radius of the disc, expressed proportionally to the image resolution. Pixels outside of the disc's bounds are removed.</div>
+<div><strong>toBuffer1</strong>: if true, then the removed pixels are copied to buffer <em>buffer1</em>.</div>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLRet">
+Lua return values
+</td>
+<td class="apiTableRightLRet">
+<div></div></td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftPSyn">
+Python synopsis
+</td>
+<td class="apiTableRightPSyn">simVision.circularCutWorkImg(int handle,float radius,bool toBuffer1)</td>
+</tr>
+</tbody></table>
+<br/>
+<p class="subsectionBar"><a id="simVision.colorSegmentationOnWorkImg" name="simVision.colorSegmentationOnWorkImg"></a>simVision.colorSegmentationOnWorkImg</p>
+<table class="apiTable">
+<tbody><tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+Description 
+</td>
+<td class="apiTableRightDescr">
+Performs a color segmentation on the <em>work image</em>.</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLSyn">
+Lua synopsis
+</td>
+<td class="apiTableRightLSyn">simVision.colorSegmentationOnWorkImg(int handle,float colorDistance)</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLParam">Lua parameters</td>
+<td class="apiTableRightLParam">
+<div><strong>handle</strong>: handle of the vision sensor, or sim.handle_self if the object attached to this script is the vision sensor.</div>
+<div><strong>colorDistance</strong>: the color distance to be used as threshold.</div>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLRet">
+Lua return values
+</td>
+<td class="apiTableRightLRet">
+<div></div></td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftPSyn">
+Python synopsis
+</td>
+<td class="apiTableRightPSyn">simVision.colorSegmentationOnWorkImg(int handle,float colorDistance)</td>
+</tr>
+</tbody></table>
+<br/>
+<p class="subsectionBar"><a id="simVision.coordinatesFromWorkImg" name="simVision.coordinatesFromWorkImg"></a>simVision.coordinatesFromWorkImg</p>
+<table class="apiTable">
+<tbody><tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+Description 
+</td>
+<td class="apiTableRightDescr">
+Extracts coordinates from the <em>work image</em> (based on the view field of a vision sensor).</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLSyn">
+Lua synopsis
+</td>
+<td class="apiTableRightLSyn">int trigger,buffer packedPacket,buffer 
+colorData=simVision.coordinatesFromWorkImg(int handle,int[2] 
+pointCount,bool angularSpace,bool returnColorData)</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLParam">Lua parameters</td>
+<td class="apiTableRightLParam">
+<div><strong>handle</strong>: handle of the vision sensor. Can be 
+combined with sim.handleflag_abscoords in order to retrieve points 
+relative to the absolute reference frame, instead of the vision sensor 
+reference frame.</div>
+<div><strong>pointCount</strong>: the desired point count along X and Y.</div>
+<div><strong>angularSpace</strong>: whether the point sampling happens in the cartesian or angular space (within a given direction).</div>
+<div><strong>returnColorData</strong>: whether to also return color data for each point. If true, then the vision sensor's image data should be located in buffer <em>buffer1</em>.</div>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLRet">
+Lua return values
+</td>
+<td class="apiTableRightLRet">
+<div><strong>trigger</strong>: always false. Not used.</div>
+<div><strong>packedPacket</strong>: a packed packet (use <a href="https://mde.tw/copsimdoc/en/regularApi/simUnpackFloatTable.htm">sim.unpackFloatTable</a> to unpack) containing:</div>
+<div>a) the number of points along X</div>
+<div>b) the number of points along Y</div>
+<div>then for each points:</div>
+<div>c.1) the x coordinate of the point</div>
+<div>c.2) the y coordinate of the point</div>
+<div>c.3) the z coordinate of the point</div>
+<div>c.4) the distance to the point</div>
+<div><strong>colorData</strong>: optional color data (use <a href="https://mde.tw/copsimdoc/en/regularApi/simUnpackUInt8Table.htm">sim.unpackUInt8Table</a> to unpack) containing RGB triplets for each point.</div>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftPSyn">
+Python synopsis
+</td>
+<td class="apiTableRightPSyn">int trigger,bytes packedPacket,bytes 
+colorData=simVision.coordinatesFromWorkImg(int handle,list 
+pointCount,bool angularSpace,bool returnColorData)</td>
+</tr>
+</tbody></table>
+<br/>
+<p class="subsectionBar"><a id="simVision.edgeDetectionOnWorkImg" name="simVision.edgeDetectionOnWorkImg"></a>simVision.edgeDetectionOnWorkImg</p>
+<table class="apiTable">
+<tbody><tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+Description 
+</td>
+<td class="apiTableRightDescr">
+Applies an edge detection filter to the <em>work image</em>. See also <a href="#simVision.matrix3x3OnWorkImg">simVision.matrix3x3OnWorkImg</a> and <a href="#simVision.matrix5x5OnWorkImg">simVision.matrix5x5OnWorkImg</a>.</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLSyn">
+Lua synopsis
+</td>
+<td class="apiTableRightLSyn">simVision.edgeDetectionOnWorkImg(int handle,float threshold)</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLParam">Lua parameters</td>
+<td class="apiTableRightLParam">
+<div><strong>handle</strong>: handle of the vision sensor, or sim.handle_self if the object attached to this script is the vision sensor.</div>
+<div><strong>threshold</strong>: the threshold value.</div>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLRet">
+Lua return values
+</td>
+<td class="apiTableRightLRet">
+<div></div></td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftPSyn">
+Python synopsis
+</td>
+<td class="apiTableRightPSyn">simVision.edgeDetectionOnWorkImg(int handle,float threshold)</td>
+</tr>
+</tbody></table>
+<br/>
+<p class="subsectionBar"><a id="simVision.horizontalFlipWorkImg" name="simVision.horizontalFlipWorkImg"></a>simVision.horizontalFlipWorkImg</p>
+<table class="apiTable">
+<tbody><tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+Description 
+</td>
+<td class="apiTableRightDescr">
+Horizontally flips the <em>work image</em>. See also <a href="#simVision.verticalFlipWorkImg">simVision.verticalFlipWorkImg</a>.</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLSyn">
+Lua synopsis
+</td>
+<td class="apiTableRightLSyn">simVision.horizontalFlipWorkImg(int handle)</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLParam">Lua parameters</td>
+<td class="apiTableRightLParam">
+<div><strong>handle</strong>: handle of the vision sensor, or sim.handle_self if the object attached to this script is the vision sensor.</div>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLRet">
+Lua return values
+</td>
+<td class="apiTableRightLRet">
+<div></div></td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftPSyn">
+Python synopsis
+</td>
+<td class="apiTableRightPSyn">simVision.horizontalFlipWorkImg(int handle)</td>
+</tr>
+</tbody></table>
+<br/>
+<p class="subsectionBar"><a id="simVision.intensityScaleOnWorkImg" name="simVision.intensityScaleOnWorkImg"></a>simVision.intensityScaleOnWorkImg</p>
+<table class="apiTable">
+<tbody><tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+Description 
+</td>
+<td class="apiTableRightDescr">
+Transforms the <em>work image</em> into an intensity representation.</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLSyn">
+Lua synopsis
+</td>
+<td class="apiTableRightLSyn">simVision.intensityScaleOnWorkImg(int handle,float start,float end,bool greyscale)</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLParam">Lua parameters</td>
+<td class="apiTableRightLParam">
+<div><strong>handle</strong>: handle of the vision sensor, or sim.handle_self if the object attached to this script is the vision sensor.</div>
+<div><strong>start</strong>: the value representing the minimum intensity.</div>
+<div><strong>end</strong>: the value representing the maximum intensity.</div>
+<div><strong>greyscale</strong>: if true, the output is a grey scale image, otherwise it is a color coded intensity image.</div>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLRet">
+Lua return values
+</td>
+<td class="apiTableRightLRet">
+<div></div></td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftPSyn">
+Python synopsis
+</td>
+<td class="apiTableRightPSyn">simVision.intensityScaleOnWorkImg(int handle,float start,float end,bool greyscale)</td>
+</tr>
+</tbody></table>
+<br/>
+<p class="subsectionBar"><a id="simVision.matrix3x3OnWorkImg" name="simVision.matrix3x3OnWorkImg"></a>simVision.matrix3x3OnWorkImg</p>
+<table class="apiTable">
+<tbody><tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+Description 
+</td>
+<td class="apiTableRightDescr">
+Applies a 3X3 matrix filter to the <em>work image</em>.</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLSyn">
+Lua synopsis
+</td>
+<td class="apiTableRightLSyn">simVision.matrix3x3OnWorkImg(int handle,int passes,float multiplier,float[9] matrix)</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLParam">Lua parameters</td>
+<td class="apiTableRightLParam">
+<div><strong>handle</strong>: handle of the vision sensor, or sim.handle_self if the object attached to this script is the vision sensor.</div>
+<div><strong>passes</strong>: the number of desired filter passes.</div>
+<div><strong>multiplier</strong>: a matrix multiplier.</div>
+<div><strong>matrix</strong>: the 3X3 matrix.</div>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLRet">
+Lua return values
+</td>
+<td class="apiTableRightLRet">
+<div></div></td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftPSyn">
+Python synopsis
+</td>
+<td class="apiTableRightPSyn">simVision.matrix3x3OnWorkImg(int handle,int passes,float multiplier,list matrix)</td>
+</tr>
+</tbody></table>
+<br/>
+<p class="subsectionBar"><a id="simVision.matrix5x5OnWorkImg" name="simVision.matrix5x5OnWorkImg"></a>simVision.matrix5x5OnWorkImg</p>
+<table class="apiTable">
+<tbody><tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+Description 
+</td>
+<td class="apiTableRightDescr">
+Applies a 5X5 matrix filter to the <em>work image</em>.</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLSyn">
+Lua synopsis
+</td>
+<td class="apiTableRightLSyn">simVision.matrix5x5OnWorkImg(int handle,int passes,float multiplier,float[25] matrix)</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLParam">Lua parameters</td>
+<td class="apiTableRightLParam">
+<div><strong>handle</strong>: handle of the vision sensor, or sim.handle_self if the object attached to this script is the vision sensor.</div>
+<div><strong>passes</strong>: the int of desired filter passes.</div>
+<div><strong>multiplier</strong>: a matrix multiplier.</div>
+<div><strong>matrix</strong>: the 5X5 matrix.</div>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLRet">
+Lua return values
+</td>
+<td class="apiTableRightLRet">
+<div></div></td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftPSyn">
+Python synopsis
+</td>
+<td class="apiTableRightPSyn">simVision.matrix5x5OnWorkImg(int handle,int passes,float multiplier,list matrix)</td>
+</tr>
+</tbody></table>
+<br/>
+<p class="subsectionBar"><a id="simVision.multiplyWorkImgWithBuffer1" name="simVision.multiplyWorkImgWithBuffer1"></a>simVision.multiplyWorkImgWithBuffer1</p>
+<table class="apiTable">
+<tbody><tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+Description 
+</td>
+<td class="apiTableRightDescr">
+Multiplies (pixel wise) the <em>work image</em> with buffer <em>buffer1</em>, and stores the result in the <em>work image</em>.</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLSyn">
+Lua synopsis
+</td>
+<td class="apiTableRightLSyn">simVision.multiplyWorkImgWithBuffer1(int handle)</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLParam">Lua parameters</td>
+<td class="apiTableRightLParam">
+<div><strong>handle</strong>: handle of the vision sensor, or sim.handle_self if the object attached to this script is the vision sensor.</div>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLRet">
+Lua return values
+</td>
+<td class="apiTableRightLRet">
+<div></div></td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftPSyn">
+Python synopsis
+</td>
+<td class="apiTableRightPSyn">simVision.multiplyWorkImgWithBuffer1(int handle)</td>
+</tr>
+</tbody></table>
+<br/>
+<p class="subsectionBar"><a id="simVision.normalizeWorkImg" name="simVision.normalizeWorkImg"></a>simVision.normalizeWorkImg</p>
+<table class="apiTable">
+<tbody><tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+Description 
+</td>
+<td class="apiTableRightDescr">
+Normalizes the <em>work image</em>.</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLSyn">
+Lua synopsis
+</td>
+<td class="apiTableRightLSyn">simVision.normalizeWorkImg(int handle)</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLParam">Lua parameters</td>
+<td class="apiTableRightLParam">
+<div><strong>handle</strong>: handle of the vision sensor, or sim.handle_self if the object attached to this script is the vision sensor.</div>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLRet">
+Lua return values
+</td>
+<td class="apiTableRightLRet">
+<div></div></td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftPSyn">
+Python synopsis
+</td>
+<td class="apiTableRightPSyn">simVision.normalizeWorkImg(int handle)</td>
+</tr>
+</tbody></table>
+<br/>
+<p class="subsectionBar"><a id="simVision.rectangularCutWorkImg" name="simVision.rectangularCutWorkImg"></a>simVision.rectangularCutWorkImg</p>
+<table class="apiTable">
+<tbody><tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+Description 
+</td>
+<td class="apiTableRightDescr">
+Performs a rectangular cut on the <em>work image</em>.</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLSyn">
+Lua synopsis
+</td>
+<td class="apiTableRightLSyn">simVision.rectangularCutWorkImg(int handle,float[2] rectangle,bool toBuffer1)</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLParam">Lua parameters</td>
+<td class="apiTableRightLParam">
+<div><strong>handle</strong>: handle of the vision sensor, or sim.handle_self if the object attached to this script is the vision sensor.</div>
+<div><strong>rectangle</strong>: the x/y size of the rectangle, 
+expressed proportionally to the image resolution. Pixels outside of the 
+rectangle's bounds are removed.</div>
+<div><strong>toBuffer1</strong>: if true, then the removed pixels are copied to buffer <em>buffer1</em>.</div>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLRet">
+Lua return values
+</td>
+<td class="apiTableRightLRet">
+<div></div></td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftPSyn">
+Python synopsis
+</td>
+<td class="apiTableRightPSyn">simVision.rectangularCutWorkImg(int handle,list rectangle,bool toBuffer1)</td>
+</tr>
+</tbody></table>
+<br/>
+<p class="subsectionBar"><a id="simVision.resizeWorkImg" name="simVision.resizeWorkImg"></a>simVision.resizeWorkImg</p>
+<table class="apiTable">
+<tbody><tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+Description 
+</td>
+<td class="apiTableRightDescr">
+Scales the <em>work image</em>. The resolution remains same.</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLSyn">
+Lua synopsis
+</td>
+<td class="apiTableRightLSyn">simVision.resizeWorkImg(int handle,float[2] scaling)</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLParam">Lua parameters</td>
+<td class="apiTableRightLParam">
+<div><strong>handle</strong>: handle of the vision sensor, or sim.handle_self if the object attached to this script is the vision sensor.</div>
+<div><strong>scaling</strong>: the x/y scaling.</div>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLRet">
+Lua return values
+</td>
+<td class="apiTableRightLRet">
+<div></div></td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftPSyn">
+Python synopsis
+</td>
+<td class="apiTableRightPSyn">simVision.resizeWorkImg(int handle,list scaling)</td>
+</tr>
+</tbody></table>
+<br/>
+<p class="subsectionBar"><a id="simVision.rotateWorkImg" name="simVision.rotateWorkImg"></a>simVision.rotateWorkImg</p>
+<table class="apiTable">
+<tbody><tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+Description 
+</td>
+<td class="apiTableRightDescr">
+Performs a rotation of the <em>work image</em>.</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLSyn">
+Lua synopsis
+</td>
+<td class="apiTableRightLSyn">simVision.rotateWorkImg(int handle,float angle)</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLParam">Lua parameters</td>
+<td class="apiTableRightLParam">
+<div><strong>handle</strong>: handle of the vision sensor, or sim.handle_self if the object attached to this script is the vision sensor.</div>
+<div><strong>angle</strong>: the rotation angle in radians.</div>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLRet">
+Lua return values
+</td>
+<td class="apiTableRightLRet">
+<div></div></td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftPSyn">
+Python synopsis
+</td>
+<td class="apiTableRightPSyn">simVision.rotateWorkImg(int handle,float angle)</td>
+</tr>
+</tbody></table>
+<br/>
+<p class="subsectionBar"><a id="simVision.scaleAndOffsetWorkImg" name="simVision.scaleAndOffsetWorkImg"></a>simVision.scaleAndOffsetWorkImg</p>
+<table class="apiTable">
+<tbody><tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+Description 
+</td>
+<td class="apiTableRightDescr">
+Shifts and scales colors of the <em>work image</em>, in the RGB or HSL space: colorOut=postOffset+(colorIn+preOffset)*scaling</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLSyn">
+Lua synopsis
+</td>
+<td class="apiTableRightLSyn">simVision.scaleAndOffsetWorkImg(int handle,float[3] colorPreOffset,float[3] colorScaling,float[3] colorPostOffset,bool rgbSpace)</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLParam">Lua parameters</td>
+<td class="apiTableRightLParam">
+<div><strong>handle</strong>: handle of the vision sensor, or sim.handle_self if the object attached to this script is the vision sensor.</div>
+<div><strong>colorPreOffset</strong>: the pre-offset, in RGB or HSL space.</div>
+<div><strong>colorScaling</strong>: the scaling, in RGB or HSL space.</div>
+<div><strong>colorPostOffset</strong>: the post-offset, in RGB or HSL space.</div>
+<div><strong>rgbSpace</strong>: if true, values are in the RGB space, otherwise they are in the HSL space.</div>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLRet">
+Lua return values
+</td>
+<td class="apiTableRightLRet">
+<div></div></td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftPSyn">
+Python synopsis
+</td>
+<td class="apiTableRightPSyn">simVision.scaleAndOffsetWorkImg(int handle,list colorPreOffset,list colorScaling,list colorPostOffset,bool rgbSpace)</td>
+</tr>
+</tbody></table>
+<br/>
+<p class="subsectionBar"><a id="simVision.selectiveColorOnWorkImg" name="simVision.selectiveColorOnWorkImg"></a>simVision.selectiveColorOnWorkImg</p>
+<table class="apiTable">
+<tbody><tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+Description 
+</td>
+<td class="apiTableRightDescr">
+Selects a specific color in the RGB or HSL space of the <em>work image</em>.</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLSyn">
+Lua synopsis
+</td>
+<td class="apiTableRightLSyn">simVision.selectiveColorOnWorkImg(int 
+handle,float[3] nominalColor,float[3] colorTolerance,bool rgbSpace,bool 
+keepColor,bool toBuffer1)</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLParam">Lua parameters</td>
+<td class="apiTableRightLParam">
+<div><strong>handle</strong>: handle of the vision sensor, or sim.handle_self if the object attached to this script is the vision sensor.</div>
+<div><strong>nominalColor</strong>: the nominal color to select, in RGB or HSL space.</div>
+<div><strong>colorTolerance</strong>: the tolerance around the nominal color, in RGB or HSL space.</div>
+<div><strong>rgbSpace</strong>: if true, values are in the RGB space, otherwise they are in the HSL space.</div>
+<div><strong>keepColor</strong>: if true, the specified color is kept, otherwise it is removed.</div>
+<div><strong>toBuffer1</strong>: if true, the removed color is copied to buffer <em>buffer1</em>.</div>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLRet">
+Lua return values
+</td>
+<td class="apiTableRightLRet">
+<div></div></td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftPSyn">
+Python synopsis
+</td>
+<td class="apiTableRightPSyn">simVision.selectiveColorOnWorkImg(int handle,list nominalColor,list colorTolerance,bool rgbSpace,bool keepColor,bool toBuffer1)</td>
+</tr>
+</tbody></table>
+<br/>
+<p class="subsectionBar"><a id="simVision.sensorDepthMapToWorkImg" name="simVision.sensorDepthMapToWorkImg"></a>simVision.sensorDepthMapToWorkImg</p>
+<table class="apiTable">
+<tbody><tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+Description 
+</td>
+<td class="apiTableRightDescr">
+Copies the depth buffer acquired by a vision sensor to the <em>work image</em> (buffer used for image processing). see also <a href="#simVision.sensorImgToWorkImg">simVision.sensorImgToWorkImg</a> and <a href="#simVision.workImgToSensorImg">simVision.workImgToSensorImg</a>.</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLSyn">
+Lua synopsis
+</td>
+<td class="apiTableRightLSyn">simVision.sensorDepthMapToWorkImg(int handle)</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLParam">Lua parameters</td>
+<td class="apiTableRightLParam">
+<div><strong>handle</strong>: handle of the vision sensor, or sim.handle_self if the object attached to this script is the vision sensor.</div>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLRet">
+Lua return values
+</td>
+<td class="apiTableRightLRet">
+<div></div></td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftPSyn">
+Python synopsis
+</td>
+<td class="apiTableRightPSyn">simVision.sensorDepthMapToWorkImg(int handle)</td>
+</tr>
+</tbody></table>
+<br/>
+<p class="subsectionBar"><a id="simVision.sensorImgToWorkImg" name="simVision.sensorImgToWorkImg"></a>simVision.sensorImgToWorkImg</p>
+<table class="apiTable">
+<tbody><tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+Description 
+</td>
+<td class="apiTableRightDescr">
+Copies the RGB image acquired by a vision sensor to the <em>work image</em> (buffer used for image processing). See also <a href="#simVision.sensorDepthMapToWorkImg">simVision.sensorDepthMapToWorkImg</a> and <a href="#simVision.workImgToSensorImg">simVision.workImgToSensorImg</a>.</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLSyn">
+Lua synopsis
+</td>
+<td class="apiTableRightLSyn">simVision.sensorImgToWorkImg(int handle)</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLParam">Lua parameters</td>
+<td class="apiTableRightLParam">
+<div><strong>handle</strong>: handle of the vision sensor, or sim.handle_self if the object attached to this script is the vision sensor.</div>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLRet">
+Lua return values
+</td>
+<td class="apiTableRightLRet">
+<div></div></td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftPSyn">
+Python synopsis
+</td>
+<td class="apiTableRightPSyn">simVision.sensorImgToWorkImg(int handle)</td>
+</tr>
+</tbody></table>
+<br/>
+<p class="subsectionBar"><a id="simVision.sharpenWorkImg" name="simVision.sharpenWorkImg"></a>simVision.sharpenWorkImg</p>
+<table class="apiTable">
+<tbody><tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+Description 
+</td>
+<td class="apiTableRightDescr">
+Sharpens the <em>work image</em>. See also <a href="#simVision.matrix3x3OnWorkImg">simVision.matrix3x3OnWorkImg</a> and <a href="#simVision.matrix5x5OnWorkImg">simVision.matrix5x5OnWorkImg</a>.</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLSyn">
+Lua synopsis
+</td>
+<td class="apiTableRightLSyn">simVision.sharpenWorkImg(int handle)</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLParam">Lua parameters</td>
+<td class="apiTableRightLParam">
+<div><strong>handle</strong>: handle of the vision sensor, or sim.handle_self if the object attached to this script is the vision sensor.</div>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLRet">
+Lua return values
+</td>
+<td class="apiTableRightLRet">
+<div></div></td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftPSyn">
+Python synopsis
+</td>
+<td class="apiTableRightPSyn">simVision.sharpenWorkImg(int handle)</td>
+</tr>
+</tbody></table>
+<br/>
+<p class="subsectionBar"><a id="simVision.shiftWorkImg" name="simVision.shiftWorkImg"></a>simVision.shiftWorkImg</p>
+<table class="apiTable">
+<tbody><tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+Description 
+</td>
+<td class="apiTableRightDescr">
+Shifts the <em>work image</em>.</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLSyn">
+Lua synopsis
+</td>
+<td class="apiTableRightLSyn">simVision.shiftWorkImg(int handle,float[2] shift,bool wrap)</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLParam">Lua parameters</td>
+<td class="apiTableRightLParam">
+<div><strong>handle</strong>: handle of the vision sensor, or sim.handle_self if the object attached to this script is the vision sensor.</div>
+<div><strong>shift</strong>: the x/y shift amount, proportional to the image resolution (0=no shift, 1=shift by x/y resolution pixels).</div>
+<div><strong>wrap</strong>: whether parts shifted outside the image frame wrap around.</div>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLRet">
+Lua return values
+</td>
+<td class="apiTableRightLRet">
+<div></div></td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftPSyn">
+Python synopsis
+</td>
+<td class="apiTableRightPSyn">simVision.shiftWorkImg(int handle,list shift,bool wrap)</td>
+</tr>
+</tbody></table>
+<br/>
+<p class="subsectionBar"><a id="simVision.subtractBuffer1FromWorkImg" name="simVision.subtractBuffer1FromWorkImg"></a>simVision.subtractBuffer1FromWorkImg</p>
+<table class="apiTable">
+<tbody><tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+Description 
+</td>
+<td class="apiTableRightDescr">
+Subtracts (pixel wise subtraction) buffer <em>buffer1</em> from the <em>work image</em>. See also <a href="#simVision.subtractWorkImgFromBuffer1">simVision.subtractWorkImgFromBuffer1</a> and <a href="#simVision.addBuffer1ToWorkImg">simVision.addBuffer1ToWorkImg</a>.</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLSyn">
+Lua synopsis
+</td>
+<td class="apiTableRightLSyn">simVision.subtractBuffer1FromWorkImg(int handle)</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLParam">Lua parameters</td>
+<td class="apiTableRightLParam">
+<div><strong>handle</strong>: handle of the vision sensor, or sim.handle_self if the object attached to this script is the vision sensor.</div>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLRet">
+Lua return values
+</td>
+<td class="apiTableRightLRet">
+<div></div></td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftPSyn">
+Python synopsis
+</td>
+<td class="apiTableRightPSyn">simVision.subtractBuffer1FromWorkImg(int handle)</td>
+</tr>
+</tbody></table>
+<br/>
+<p class="subsectionBar"><a id="simVision.subtractWorkImgFromBuffer1" name="simVision.subtractWorkImgFromBuffer1"></a>simVision.subtractWorkImgFromBuffer1</p>
+<table class="apiTable">
+<tbody><tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+Description 
+</td>
+<td class="apiTableRightDescr">
+Subtracts (pixel wise subtraction) the <em>work image</em> from buffer <em>buffer1</em>. See also <a href="#simVision.subtractBuffer1FromWorkImg">simVision.subtractBuffer1FromWorkImg</a> and <a href="#simVision.addWorkImgToBuffer1">simVision.addWorkImgToBuffer1</a>.</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLSyn">
+Lua synopsis
+</td>
+<td class="apiTableRightLSyn">simVision.subtractWorkImgFromBuffer1(int handle)</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLParam">Lua parameters</td>
+<td class="apiTableRightLParam">
+<div><strong>handle</strong>: handle of the vision sensor, or sim.handle_self if the object attached to this script is the vision sensor.</div>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLRet">
+Lua return values
+</td>
+<td class="apiTableRightLRet">
+<div></div></td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftPSyn">
+Python synopsis
+</td>
+<td class="apiTableRightPSyn">simVision.subtractWorkImgFromBuffer1(int handle)</td>
+</tr>
+</tbody></table>
+<br/>
+<p class="subsectionBar"><a id="simVision.swapBuffers" name="simVision.swapBuffers"></a>simVision.swapBuffers</p>
+<table class="apiTable">
+<tbody><tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+Description 
+</td>
+<td class="apiTableRightDescr">
+Swaps buffer <em>buffer1</em> with buffer <em>buffer2</em>. See also <a href="#simVision.swapWorkImgWithBuffer1">simVision.swapWorkImgWithBuffer1</a>.</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLSyn">
+Lua synopsis
+</td>
+<td class="apiTableRightLSyn">simVision.swapBuffers(int handle)</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLParam">Lua parameters</td>
+<td class="apiTableRightLParam">
+<div><strong>handle</strong>: handle of the vision sensor, or sim.handle_self if the object attached to this script is the vision sensor.</div>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLRet">
+Lua return values
+</td>
+<td class="apiTableRightLRet">
+<div></div></td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftPSyn">
+Python synopsis
+</td>
+<td class="apiTableRightPSyn">simVision.swapBuffers(int handle)</td>
+</tr>
+</tbody></table>
+<br/>
+<p class="subsectionBar"><a id="simVision.swapWorkImgWithBuffer1" name="simVision.swapWorkImgWithBuffer1"></a>simVision.swapWorkImgWithBuffer1</p>
+<table class="apiTable">
+<tbody><tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+Description 
+</td>
+<td class="apiTableRightDescr">
+Swaps the <em>work image</em> with buffer <em>buffer1</em>. See also <a href="#simVision.swapBuffers">simVision.swapBuffers</a>.</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLSyn">
+Lua synopsis
+</td>
+<td class="apiTableRightLSyn">simVision.swapWorkImgWithBuffer1(int handle)</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLParam">Lua parameters</td>
+<td class="apiTableRightLParam">
+<div><strong>handle</strong>: handle of the vision sensor, or sim.handle_self if the object attached to this script is the vision sensor.</div>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLRet">
+Lua return values
+</td>
+<td class="apiTableRightLRet">
+<div></div></td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftPSyn">
+Python synopsis
+</td>
+<td class="apiTableRightPSyn">simVision.swapWorkImgWithBuffer1(int handle)</td>
+</tr>
+</tbody></table>
+<br/>
+<p class="subsectionBar"><a id="simVision.uniformImgToWorkImg" name="simVision.uniformImgToWorkImg"></a>simVision.uniformImgToWorkImg</p>
+<table class="apiTable">
+<tbody><tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+Description 
+</td>
+<td class="apiTableRightDescr">
+Applies a uniform color to the <em>work image</em> (buffer used for image processing)</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLSyn">
+Lua synopsis
+</td>
+<td class="apiTableRightLSyn">simVision.uniformImgToWorkImg(int handle,float[3] color)</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLParam">Lua parameters</td>
+<td class="apiTableRightLParam">
+<div><strong>handle</strong>: handle of the vision sensor, or sim.handle_self if the object attached to this script is the vision sensor.</div>
+<div><strong>color</strong>: a table containing the RGB-triplet for the color (in the range of 0-1).</div>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLRet">
+Lua return values
+</td>
+<td class="apiTableRightLRet">
+<div></div></td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftPSyn">
+Python synopsis
+</td>
+<td class="apiTableRightPSyn">simVision.uniformImgToWorkImg(int handle,list color)</td>
+</tr>
+</tbody></table>
+<br/>
+<p class="subsectionBar"><a id="simVision.velodyneDataFromWorkImg" name="simVision.velodyneDataFromWorkImg"></a>simVision.velodyneDataFromWorkImg</p>
+<table class="apiTable">
+<tbody><tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+Description 
+</td>
+<td class="apiTableRightDescr">
+Extracts Velodyne coordinates from the <em>work image</em> (based on the view field of a vision sensor).</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLSyn">
+Lua synopsis
+</td>
+<td class="apiTableRightLSyn">int trigger,buffer packedPacket,buffer 
+colorData=simVision.velodyneDataFromWorkImg(int handle,int[2] 
+pointCount,float verticalScanAngle,bool returnColorData=false)</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLParam">Lua parameters</td>
+<td class="apiTableRightLParam">
+<div><strong>handle</strong>: handle of the vision sensor. Can be 
+combined with sim.handleflag_abscoords in order to retrieve points 
+relative to the absolute reference frame, instead of the vision sensor 
+reference frame.</div>
+<div><strong>pointCount</strong>: the desired point count along X and Y.</div>
+<div><strong>verticalScanAngle</strong>: the vertical scan angle.</div>
+<div><strong>returnColorData</strong>: whether to also return color data for each point. If true, then the vision sensor's image data should be located in buffer <em>buffer1</em>.</div>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLRet">
+Lua return values
+</td>
+<td class="apiTableRightLRet">
+<div><strong>trigger</strong>: always false. Not used.</div>
+<div><strong>packedPacket</strong>: a packed packet (use <a href="https://mde.tw/copsimdoc/en/regularApi/simUnpackFloatTable.htm">sim.unpackFloatTable</a> to unpack) containing:</div>
+<div>a) the number of points along X</div>
+<div>b) the number of points along Y</div>
+<div>then for each points:</div>
+<div>c.1) the x coordinate of the point</div>
+<div>c.2) the y coordinate of the point</div>
+<div>c.3) the z coordinate of the point</div>
+<div>c.4) the distance from the sensor to the point</div>
+<div><strong>colorData</strong>: optional color data (use <a href="https://mde.tw/copsimdoc/en/regularApi/simUnpackUInt8Table.htm">sim.unpackUInt8Table</a> to unpack) containing RGB triplets for each point.</div>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftPSyn">
+Python synopsis
+</td>
+<td class="apiTableRightPSyn">int trigger,bytes packedPacket,bytes 
+colorData=simVision.velodyneDataFromWorkImg(int handle,list 
+pointCount,float verticalScanAngle,bool returnColorData=False)</td>
+</tr>
+</tbody></table>
+<br/>
+<p class="subsectionBar"><a id="simVision.verticalFlipWorkImg" name="simVision.verticalFlipWorkImg"></a>simVision.verticalFlipWorkImg</p>
+<table class="apiTable">
+<tbody><tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+Description 
+</td>
+<td class="apiTableRightDescr">
+Vertically flips the <em>work image</em>. See also <a href="#simVision.horizontalFlipWorkImg">simVision.horizontalFlipWorkImg</a>.</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLSyn">
+Lua synopsis
+</td>
+<td class="apiTableRightLSyn">simVision.verticalFlipWorkImg(int handle)</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLParam">Lua parameters</td>
+<td class="apiTableRightLParam">
+<div><strong>handle</strong>: handle of the vision sensor, or sim.handle_self if the object attached to this script is the vision sensor.</div>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLRet">
+Lua return values
+</td>
+<td class="apiTableRightLRet">
+<div></div></td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftPSyn">
+Python synopsis
+</td>
+<td class="apiTableRightPSyn">simVision.verticalFlipWorkImg(int handle)</td>
+</tr>
+</tbody></table>
+<br/>
+<p class="subsectionBar"><a id="simVision.workImgToBuffer1" name="simVision.workImgToBuffer1"></a>simVision.workImgToBuffer1</p>
+<table class="apiTable">
+<tbody><tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+Description 
+</td>
+<td class="apiTableRightDescr">
+Copies the <em>work image</em> to buffer <em>buffer1</em>. See also <a href="#simVision.workImgToBuffer2">simVision.workImgToBuffer2</a>, <a href="#simVision.buffer1ToWorkImg">simVision.buffer1ToWorkImg</a>, <a href="#simVision.swapBuffers">simVision.swapBuffers</a> and <a href="#simVision.swapWorkImgWithBuffer1">simVision.swapWorkImgWithBuffer1</a>.</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLSyn">
+Lua synopsis
+</td>
+<td class="apiTableRightLSyn">simVision.workImgToBuffer1(int handle)</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLParam">Lua parameters</td>
+<td class="apiTableRightLParam">
+<div><strong>handle</strong>: handle of the vision sensor, or sim.handle_self if the object attached to this script is the vision sensor.</div>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLRet">
+Lua return values
+</td>
+<td class="apiTableRightLRet">
+<div></div></td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftPSyn">
+Python synopsis
+</td>
+<td class="apiTableRightPSyn">simVision.workImgToBuffer1(int handle)</td>
+</tr>
+</tbody></table>
+<br/>
+<p class="subsectionBar"><a id="simVision.workImgToBuffer2" name="simVision.workImgToBuffer2"></a>simVision.workImgToBuffer2</p>
+<table class="apiTable">
+<tbody><tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+Description 
+</td>
+<td class="apiTableRightDescr">
+Copies the <em>work image</em> to buffer <em>buffer2</em>. See also <a href="#simVision.workImgToBuffer1">simVision.workImgToBuffer1</a>, <a href="#simVision.buffer2ToWorkImg">simVision.buffer2ToWorkImg</a> and <a href="#simVision.swapBuffers">simVision.swapBuffers</a>.</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLSyn">
+Lua synopsis
+</td>
+<td class="apiTableRightLSyn">simVision.workImgToBuffer2(int handle)</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLParam">Lua parameters</td>
+<td class="apiTableRightLParam">
+<div><strong>handle</strong>: handle of the vision sensor, or sim.handle_self if the object attached to this script is the vision sensor.</div>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLRet">
+Lua return values
+</td>
+<td class="apiTableRightLRet">
+<div></div></td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftPSyn">
+Python synopsis
+</td>
+<td class="apiTableRightPSyn">simVision.workImgToBuffer2(int handle)</td>
+</tr>
+</tbody></table>
+<br/>
+<p class="subsectionBar"><a id="simVision.workImgToSensorDepthMap" name="simVision.workImgToSensorDepthMap"></a>simVision.workImgToSensorDepthMap</p>
+<table class="apiTable">
+<tbody><tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+Description 
+</td>
+<td class="apiTableRightDescr">
+Copies the <em>work image</em> (buffer used for image processing) to a 
+vision sensor's depth buffer (each depth buffer pixel will be averaged 
+from the image RGB-triplet). See also <a href="#simVision.workImgToSensorImg">simVision.workImgToSensorImg</a>.</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLSyn">
+Lua synopsis
+</td>
+<td class="apiTableRightLSyn">simVision.workImgToSensorDepthMap(int handle)</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLParam">Lua parameters</td>
+<td class="apiTableRightLParam">
+<div><strong>handle</strong>: handle of the vision sensor, or sim.handle_self if the object attached to this script is the vision sensor.</div>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLRet">
+Lua return values
+</td>
+<td class="apiTableRightLRet">
+<div></div></td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftPSyn">
+Python synopsis
+</td>
+<td class="apiTableRightPSyn">simVision.workImgToSensorDepthMap(int handle)</td>
+</tr>
+</tbody></table>
+<br/>
+<p class="subsectionBar"><a id="simVision.workImgToSensorImg" name="simVision.workImgToSensorImg"></a>simVision.workImgToSensorImg</p>
+<table class="apiTable">
+<tbody><tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+Description 
+</td>
+<td class="apiTableRightDescr">
+Copies the <em>work image</em> (buffer used for image processing) to a vision sensor's RGB buffer. See also <a href="#simVision.sensorImgToWorkImg">simVision.sensorImgToWorkImg</a>.</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLSyn">
+Lua synopsis
+</td>
+<td class="apiTableRightLSyn">simVision.workImgToSensorImg(int handle)</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLParam">Lua parameters</td>
+<td class="apiTableRightLParam">
+<div><strong>handle</strong>: handle of the vision sensor, or sim.handle_self if the object attached to this script is the vision sensor.</div>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLRet">
+Lua return values
+</td>
+<td class="apiTableRightLRet">
+<div></div></td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftPSyn">
+Python synopsis
+</td>
+<td class="apiTableRightPSyn">simVision.workImgToSensorImg(int handle)</td>
+</tr>
+</tbody></table>
+<br/>
+</td></tr>
+</tbody></table></div>, <script type="text/javascript">
+//
+view = getParameterByName('view')
+document.getElementById('alphabetical').style.display = view == 'alphabetical' ? 'table-cell' : 'none'
+document.getElementById('category').style.display = view == 'category' ? 'table-cell' : 'none'
+document.getElementById('commands').style.display = view == null ? 'table-cell' : 'none'
+document.getElementById('enums').style.display = view == null ? 'table-cell' : 'none'
+document.getElementById('structs').style.display = view == null ? 'table-cell' : 'none'
+document.getElementById('scriptFunctions').style.display = view == null ? 'table-cell' : 'none'
+//
+                </script><br />simIM API reference << <a href='simIM API reference.html'>Previous</a> <a href='Custom user interfaces.html'>Next</a> >> Custom user interfaces</div>
+        
+    <!-- footer -->
+      <div class="container">
+        <div class="row pt-3 mx-auto">
+            <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+        </div>
+      </div>
+    <!-- for footer -->
+    
+        </div> <!-- for site wrap -->
+            <!-- <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script> -->
+            <script src="../cmsimde/static/chimper/js/jquery-migrate-3.0.1.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery-ui.js"></script>
+            <script src="../cmsimde/static/chimper/js/popper.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/owl.carousel.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.stellar.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.countdown.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.magnific-popup.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap-datepicker.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/aos.js"></script>
+            <!--
+            <script src="../cmsimde/static/chimper/js/typed.js"></script>
+                    <script>
+                    var typed = new Typed('.typed-words', {
+                    strings: ["Web Apps"," WordPress"," Mobile Apps"],
+                    typeSpeed: 80,
+                    backSpeed: 80,
+                    backDelay: 4000,
+                    startDelay: 1000,
+                    loop: true,
+                    showCursor: true
+                    });
+                    </script>
+            -->
+            <script src="../cmsimde/static/chimper/js/main.js"></script>
+        
+<!-- 啟用 LaTeX equations 編輯 -->
+  <!-- <script>
+  MathJax = {
+    tex: {inlineMath: [['$', '$'], ['\(', '\)']]}
+  };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>-->
+    </body></html>
+        
