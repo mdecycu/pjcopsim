@@ -1,5 +1,5 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Strict//EN">
-<html>
+<!DOCTYPE.htmlL PUBLIC "-//W3C//DTD.htmlL 4.0 Strict//EN">
+.htmll>
 
 <head>
 <meta http-equiv="Content-Language" content="en-us">
@@ -13,7 +13,7 @@
 <table class=allEncompassingTable >
  <tr>
   <td >
-<p><a href="../../index.html" TARGET="_top"><img src="../images/homeImg.png"></a></p>
+<p><a href="../../index.htmll" TARGET="_top"><img src="../images/homeImg.png"></a></p>
 
 <h1>Regular API function</h1>
 <p class=subsectionBar><a name="simMoveToPose" id="simMoveToPose"></a>sim.moveToPose 
@@ -23,7 +23,7 @@
 <td class=apiTableLeftDescr>
 Description 
 </td> 
-<td class=apiTableRightDescr>Generates object movement data using the <a href="https://github.com/pantor/ruckig#readme">Ruckig online trajectory generator</a>, by performing interpolations between two poses. The function can operate by handling 4 movement variables (x,y,z and angle between the two poses), or a single movement variable (t, which requires a metric to be specified for distance calculation between the two poses). This function can only be called from <a href="../childScripts.htm">child scripts</a> running in a thread or from a coroutine (since this is a blocking operation). See also <a href="simMoveToConfig.htm">sim.moveToConfig</a>, and <a href="simRuckigPos.htm">sim.ruckigPos</a>.</td>
+<td class=apiTableRightDescr>Generates object movement data using the <a href="https://github.com/pantor/ruckig#readme">Ruckig online trajectory generator</a>, by performing interpolations between two poses. The function can operate by handling 4 movement variables (x,y,z and angle between the two poses), or a single movement variable (t, which requires a metric to be specified for distance calculation between the two poses). This function can only be called from <a href="../childScripts.html">child scripts</a> running in a thread or from a coroutine (since this is a blocking operation). See also <a href="simMoveToConfig.html">sim.moveToConfig</a>, and <a href="simRuckigPos.html">sim.ruckigPos</a>.</td>
 </tr> 
 <tr class=apiTableTr> 
 <td class=apiTableLeftCSyn>
@@ -52,7 +52,7 @@ Lua<br>synopsis
 <tr class=apiTableTr> 
 <td class=apiTableLeftLParam>Lua<br>parameters</td> 
 <td class=apiTableRightLParam>
-<div><strong>flags</strong>: <a href="../apiConstants.htm#ruckigFunctions">Ruckig flags</a>. -1 for default flags.</div>
+<div><strong>flags</strong>: <a href="../apiConstants.html#ruckigFunctions">Ruckig flags</a>. -1 for default flags.</div>
 <div><strong>currentPose/currentMatrix</strong>: the start pose, specified via a pose (x,y,z,qx,qy,qz,qw) or transformation matrix (the last row of the 4x4 matrix is omitted).</div>
 <div><strong>maxVel</strong>: the maximum allowed velocity. If <em>metric</em> is specified, then this is a table of size 1, otherwse a table of size 4. If sim.ruckig_minVel is specified in flags, then this table should contain twice as many values, first the values for the maximum velocity, then the values for the minimum velocity.</div>
 <div><strong>maxAccel</strong>: the maximum allowed acceleration. If <em>metric</em> is specified, then this is a table of size 1, otherwse a table of size 4. If sim.ruckig_minAccel is specified in flags, then this table should contain twice as many values, first the values for the maximum acceleration, then the values for the minimum acceleration.</div>
@@ -88,4 +88,4 @@ Lua<br>return values
 </table>
 </div>
 </body>
-</html>
+<.htmll>

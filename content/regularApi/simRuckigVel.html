@@ -1,5 +1,5 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Strict//EN">
-<html>
+<!DOCTYPE.htmlL PUBLIC "-//W3C//DTD.htmlL 4.0 Strict//EN">
+.htmll>
 
 <head>
 <meta http-equiv="Content-Language" content="en-us">
@@ -13,7 +13,7 @@
 <table class=allEncompassingTable >
  <tr>
   <td >
-<p><a href="../../index.html" TARGET="_top"><img src="../images/homeImg.png"></a></p>
+<p><a href="../../index.htmll" TARGET="_top"><img src="../images/homeImg.png"></a></p>
 
 <h1>Regular API function</h1>
 <p class=subsectionBar><a name="simRuckigVel" id="simRuckigVel"></a>simRuckigVel / sim.ruckigVel </p>
@@ -22,7 +22,7 @@
 <td class=apiTableLeftDescr>
 Description 
 </td> 
-<td class=apiTableRightDescr>Executes a call to the <a href="https://github.com/pantor/ruckig#readme">Ruckig online trajectory generator</a>. The Ruckig online trajectory generator provides instantaneous trajectory generation capabilities for motion control systems. This function prepares a  velocity-based trajectory generation object, that can then be calculated with <a href="simRuckigStep.htm">sim.ruckigStep</a>. When this object is not needed anymore, remove it with <a href="simRuckigRemove.htm">sim.ruckigRemove</a>. See also <a href="simRuckigPos.htm">sim.ruckigPos</a>.</td>
+<td class=apiTableRightDescr>Executes a call to the <a href="https://github.com/pantor/ruckig#readme">Ruckig online trajectory generator</a>. The Ruckig online trajectory generator provides instantaneous trajectory generation capabilities for motion control systems. This function prepares a  velocity-based trajectory generation object, that can then be calculated with <a href="simRuckigStep.html">sim.ruckigStep</a>. When this object is not needed anymore, remove it with <a href="simRuckigRemove.html">sim.ruckigRemove</a>. See also <a href="simRuckigPos.html">sim.ruckigPos</a>.</td>
 </tr> 
 <tr class=apiTableTr> 
 <td class=apiTableLeftCSyn>
@@ -35,7 +35,7 @@ C/C++<br>synopsis
 <td class=apiTableRightCParam>
 <div><strong>dofs</strong>: the number of degrees of freedom (n).</div>
 <div><strong>baseCycleTime</strong>: the smallest expected cycle time. The cycle time should always be a multiple of baseCycleTime. Use a value of 0.0001 (0.1ms).</div>
-<div><strong>flags</strong>: <a href="../apiConstants.htm#ruckigFunctions">Ruckig flags</a>. -1 for default flags.</div>
+<div><strong>flags</strong>: <a href="../apiConstants.html#ruckigFunctions">Ruckig flags</a>. -1 for default flags.</div>
 <div><strong>currentPos</strong>: the current position (one value for each DoF)</div>
 <div><strong>currentVel</strong>: the current velocity (one value for each DoF)</div>
 <div><strong>currentAccel</strong>: the current acceleration (one value for each DoF)</div>
@@ -67,7 +67,7 @@ Lua<br>synopsis
 <td class=apiTableRightLParam>
 <div><strong>dofs</strong>: the number of degrees of freedom (n).</div>
 <div><strong>baseCycleTime</strong>: the smallest expected cycle time. The cycle time should always be a multiple of baseCycleTime. Use a value of 0.0001 (0.1ms).</div>
-<div><strong>flags</strong>: <a href="../apiConstants.htm#ruckigFunctions">Ruckig flags</a>. -1 for default flags.</div>
+<div><strong>flags</strong>: <a href="../apiConstants.html#ruckigFunctions">Ruckig flags</a>. -1 for default flags.</div>
 <div><strong>currentPosVelAccel</strong>: the current position, velocity and acceleration: {pos_1, ..., pos_n, vel_1, ..., vel_n, accel_1, ..., accel_n} (one value for each DoF)</div>
 <div><strong>maxAccelJerk</strong>: the maximum allowed acceleration and jerk: {maxA_1, ..., maxA_n, maxJ_1, ..., maxJ_n}. If sim.ruckig_minaccel is specified in flags, then maxAccelJerk should contain following additional values: {minA_1, ..., minA_n}</div>
 <div><strong>selection</strong>: the selection vector (one value for each DoF). For a default behaviour, fill the vector with non-zero values.</div>
@@ -97,4 +97,4 @@ Lua<br>return values
 </table>
 </div>
 </body>
-</html>
+<.htmll>

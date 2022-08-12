@@ -1,5 +1,5 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Strict//EN">
-<html>
+<!DOCTYPE.htmlL PUBLIC "-//W3C//DTD.htmlL 4.0 Strict//EN">
+.htmll>
 
 <head>
 <meta http-equiv="Content-Language" content="en-us">
@@ -13,7 +13,7 @@
 <table class=allEncompassingTable >
  <tr>
   <td >
-<p><a href="../../index.html" TARGET="_top"><img src="../images/homeImg.png"></a></p>
+<p><a href="../../index.htmll" TARGET="_top"><img src="../images/homeImg.png"></a></p>
 
 <h1>Regular API function</h1>
 <p class=subsectionBar><a name="simGetVisionSensorCharImage" id="simGetVisionSensorCharImage"></a>simGetVisionSensorCharImage / sim.getVisionSensorCharImage</p>
@@ -22,7 +22,7 @@
 <td class=apiTableLeftDescr>
 Description 
 </td> 
-<td class=apiTableRightDescr>Deprecated. Use <a href="simGetVisionSensorImg.htm">sim.getVisionSensorImg</a> instead</td>
+<td class=apiTableRightDescr>Deprecated. Use <a href="simGetVisionSensorImg.html">sim.getVisionSensorImg</a> instead</td>
 </tr> 
 <tr class=apiTableTr> 
 <td class=apiTableLeftCSyn>
@@ -33,7 +33,7 @@ C/C++<br>synopsis
 <tr class=apiTableTr> 
 <td class=apiTableLeftCParam>C/C++<br>parameters</td> 
 <td class=apiTableRightCParam>
-<div><strong>sensorHandle</strong>: handle of the vision sensor.  Can be combined with <a href="../apiConstants.htm#specialHandleFlags">sim.handleflag_greyscale</a> (simply add sim.handleflag_greyscale to sensorHandle), if you wish to retrieve the grey scale equivalent.</div>
+<div><strong>sensorHandle</strong>: handle of the vision sensor.  Can be combined with <a href="../apiConstants.html#specialHandleFlags">sim.handleflag_greyscale</a> (simply add sim.handleflag_greyscale to sensorHandle), if you wish to retrieve the grey scale equivalent.</div>
 <div><strong>resolutionX/resolutionY</strong>: the returned vision sensor resolution</div>
 </td> 
 </tr> 
@@ -42,7 +42,7 @@ C/C++<br>synopsis
 C/C++<br>return value
 </td> 
 <td class=apiTableRightCRet>
-<div>image buffer (buffer size is resolutionX*resolution*3 or resolutionX*resolutionY in case of a grey scale image retrieval) or nullptr in case of an error. The user is in charge of releasing the returned buffer with <a href="simReleaseBuffer.htm">simReleaseBuffer</a>. Returned values are in the range of 0-255 (0=min. intensity, 255=max. intensity)<br>
+<div>image buffer (buffer size is resolutionX*resolution*3 or resolutionX*resolutionY in case of a grey scale image retrieval) or nullptr in case of an error. The user is in charge of releasing the returned buffer with <a href="simReleaseBuffer.html">simReleaseBuffer</a>. Returned values are in the range of 0-255 (0=min. intensity, 255=max. intensity)<br>
 </div>
 </td> 
 </tr> 
@@ -55,7 +55,7 @@ Lua<br>synopsis
 <tr class=apiTableTr> 
 <td class=apiTableLeftLParam>Lua<br>parameters</td> 
 <td class=apiTableRightLParam>
-<div><strong>sensorHandle</strong>: handle of the vision sensor.   Can be combined with <a href="../apiConstants.htm#specialHandleFlags">sim.handleflag_greyscale</a> (simply add sim.handleflag_greyscale to sensorHandle), if you wish to retrieve the grey scale equivalent.</div>
+<div><strong>sensorHandle</strong>: handle of the vision sensor.   Can be combined with <a href="../apiConstants.html#specialHandleFlags">sim.handleflag_greyscale</a> (simply add sim.handleflag_greyscale to sensorHandle), if you wish to retrieve the grey scale equivalent.</div>
 <div><strong>posX / posY</strong>: position of the image portion to retrieve. Zero by default.</div>
 <div><strong>sizeX / sizeY</strong>: size of the image portion to retrieve. Zero by default, which means that the full image should be retrieved</div>
 <div><strong>rgbaCutOff</strong>: when different from zero, then an RGBA image is returned, where the alpha component will be 255 for all depth values below <em>rgbaCutOff</em>, and 0 for all depth values above <em>rgbaCutOff</em>. 0 corresponds to the near clipping plane, 1 to the far clipping plane. Zero by default.</div>
@@ -86,4 +86,4 @@ Lua<br>return values
 </table>
 </div>
 </body>
-</html>
+<.htmll>
