@@ -1,0 +1,3522 @@
+<!DOCTYPE html><html>
+        <head>
+        <title>cmsite</title>
+        <meta charset="utf-8">
+<meta property="head" content="H2">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/icomoon/style.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/magnific-popup.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/jquery-ui.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap-datepicker.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/flaticon/font/flaticon.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/aos.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/style.css">
+        <link rel="shortcut icon" href="./../cmsimde/static/favicons.png">
+        
+        <style type='text/css'>
+            .site-section {
+            background-color: #FFFF;
+            padding: 40px 40px;
+            }
+            body > div > div.dropdown.open {
+                display: block;
+            }
+        </style>
+    
+        <!-- <script src="./../cmsimde/static/jquery.js"></script> -->
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+        <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/normalize.min.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch_set.js"></script>
+        <script src="tipuesearch_content.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/tipuesearch.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch.js"></script>
+        <!-- for Wink3 客製化關閉 -->
+        <!--
+        <link rel="stylesheet" type="text/css" href="./../cmsimde/static/winkPlayer.css" />
+        <script type="text/javascript" src="./../cmsimde/static/winkPlayer.js"></script>
+        -->
+        <script>
+            /* original tipuesearch
+            $(document).ready(function() {
+                 $('#tipue_search_input').tipuesearch();
+            });
+            */
+            // customed doSearch
+            function doSearch() {
+                $('#tipue_search_input').tipuesearch({
+                    newWindow: true, 
+                    minimumLength: 2,
+                    wholeWords: false, // for search 中文
+                });
+            }
+            $(document).ready(doSearch);
+        </script>
+        
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shCore.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushBash.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDiff.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJScript.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJava.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPython.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushSql.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushHaxe.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushXml.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPhp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPowerShell.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushLua.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCpp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCss.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCSharp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDart.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushRust.js"></script>
+<link type="text/css" rel="stylesheet" href="./../cmsimde/static/syntaxhighlighter/css/shCoreDefault.css"/>
+<script type="text/javascript">SyntaxHighlighter.all();</script>
+<!-- 暫時不用
+<script src="./../cmsimde/static/fengari-web.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/Cango-13v08-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/CangoAxes-4v01-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/gearUtils-05.js"></script>
+-->
+<!-- for Brython 暫時不用
+<script src="https://scrum-3.github.io/web/brython/brython.js"></script>
+<script src="https://scrum-3.github.io/web/brython/brython_stdlib.js"></script>
+-->
+<style>
+img.add_border {
+    border: 3px solid blue;
+}
+</style>
+
+</head>
+<body>
+<div class='container'><nav>
+        
+    <div class="site-wrap">
+
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+    
+            <header class="site-navbar py-4 bg-white" role="banner">
+              <div class="container">
+                <div class="row align-items-center">
+                <h1>cmsite</h1>
+                <div class="pl-4">
+                    <form>
+                    <input type="text" placeholder="Search" name="q" id="tipue_search_input" pattern=".{2,}" title="At least 2 characters" required>
+                    </form>
+                </div>
+                  <!-- <div class="col-11 col-xl-2">
+                    <h1 class="mb-0 site-logo"><a href="index.html" class="text-black h2 mb-0">cmsite</a></h1> 
+                  </div>
+                  -->
+                  <div class="col-12 col-md-10 d-none d-xl-block">
+                    <nav class="site-navigation position-relative text-right" role="navigation">
+    <ul class='site-menu js-clone-nav mr-auto d-none d-lg-block'>
+                        <li class="active has-children"><a href="index.html">Home</a>
+                        <ul class="dropdown">
+                            <li><a href="sitemap.html">Site Map</a></li>
+                            <li><a href="./../reveal/index.html">reveal</a></li>
+                            <li><a href="./../blog/index.html">blog</a></li>
+                        </ul>
+                      </li>
+                     <li><a href='welcome.html'>welcome</a><li class='has-children'><a href='userInterface.html'>userInterface</a><ul class='dropdown'><li><a href='pagesAndViews.html'>pagesAndViews</a><li><a href='coordinateDialog.html'>coordinateDialog</a><li><a href='positionDialog.html'>positionDialog</a><li><a href='orientationDialog.html'>orientationDialog</a><li><a href='objectMovement.html'>objectMovement</a><li><a href='positionOrientationTransformation.html'>positionOrientationTransformation</a><li><a href='settings.html'>settings</a><li><a href='shortcuts.html'>shortcuts</a></li></ul><li class='has-children'><a href='scenesAndModels.html'>scenesAndModels</a><ul class='dropdown'><li><a href='scenes.html'>scenes</a><li><a href='models.html'>models</a><li><a href='modelDialog.html'>modelDialog</a></li></ul><li class='has-children'><a href='environment.html'>environment</a><ul class='dropdown'><li><a href='environmentPropertiesDialog.html'>environmentPropertiesDialog</a><li><a href='textureDialog.html'>textureDialog</a></li></ul><li class='has-children'><a href='entities.html'>entities</a><ul class='dropdown'><li><a href='collections.html'>collections</a><li class='has-children'><a href='objects.html'>objects</a><ul class='dropdown'><li><a href='sceneObjectPropertiesDialog.html'>sceneObjectPropertiesDialog</a><li><a href='commonPropertiesDialog.html'>commonPropertiesDialog</a></li></ul><li><a href='collidableObjects.html'>collidableObjects</a><li><a href='measurableObjects.html'>measurableObjects</a><li><a href='detectableObjects.html'>detectableObjects</a><li><a href='viewableObjects.html'>viewableObjects</a><li><a href='convexHull.html'>convexHull</a><li class='has-children'><a href='layerSelectionDialog.html'>layerSelectionDialog</a><ul class='dropdown'><li><a href='cameras.html'>cameras</a><li><a href='cameraPropertiesDialog.html'>cameraPropertiesDialog</a><li><a href='lights.html'>lights</a><li><a href='lightPropertiesDialog.html'>lightPropertiesDialog</a><li><a href='shapes.html'>shapes</a><li><a href='shapeReferenceFrames.html'>shapeReferenceFrames</a><li><a href='primitiveShapes.html'>primitiveShapes</a><li><a href='convexDecomposition.html'>convexDecomposition</a><li><a href='shapeProperties.html'>shapeProperties</a><li><a href='shapeDynamicsProperties.html'>shapeDynamicsProperties</a><li><a href='shapeDynamicEngineProperties.html'>shapeDynamicEngineProperties</a><li><a href='geometryDialog.html'>geometryDialog</a><li><a href='shapeEditModes.html'>shapeEditModes</a><li><a href='triangleEditMode.html'>triangleEditMode</a><li><a href='vertexEditMode.html'>vertexEditMode</a><li><a href='edgeEditMode.html'>edgeEditMode</a><li><a href='groupedShapeEditMode.html'>groupedShapeEditMode</a><li><a href='joints.html'>joints</a><li><a href='jointModes.html'>jointModes</a><li><a href='jointProperties.html'>jointProperties</a><li><a href='jointDynamicsProperties.html'>jointDynamicsProperties</a><li><a href='jointDynamicEngineProperties.html'>jointDynamicEngineProperties</a><li><a href='dummies.html'>dummies</a><li><a href='dummyPropertiesDialog.html'>dummyPropertiesDialog</a><li><a href='graphs.html'>graphs</a><li><a href='graphPropertiesDialog.html'>graphPropertiesDialog</a><li><a href='proximitySensors.html'>proximitySensors</a><li><a href='proximitySensorDescription.html'>proximitySensorDescription</a><li><a href='proximitySensorPropertiesDialog.html'>proximitySensorPropertiesDialog</a><li><a href='proximitySensorVolumeDialog.html'>proximitySensorVolumeDialog</a><li><a href='proximitySensorDetectionParameterDialog.html'>proximitySensorDetectionParameterDialog</a><li><a href='visionSensors.html'>visionSensors</a><li><a href='visionSensorDescription.html'>visionSensorDescription</a><li><a href='visionSensorPropertiesDialog.html'>visionSensorPropertiesDialog</a><li><a href='forceSensors.html'>forceSensors</a><li><a href='forceSensorPropertiesDialog.html'>forceSensorPropertiesDialog</a><li><a href='octrees.html'>octrees</a><li><a href='octreePropertiesDialog.html'>octreePropertiesDialog</a><li><a href='pointClouds.html'>pointClouds</a><li><a href='pointCloudPropertiesDialog.html'>pointCloudPropertiesDialog</a></li></ul><li><a href='paths.html'>paths</a></li></ul><li class='has-children'><a href='functionality.html'>functionality</a><ul class='dropdown'><li><a href='geometricCalculations.html'>geometricCalculations</a><li><a href='collisionDetection.html'>collisionDetection</a><li class='has-children'><a href='distanceCalculation.html'>distanceCalculation</a><ul class='dropdown'><li><a href='geometricPlugin.html'>geometricPlugin</a><li><a href='simGeom API.html'>simGeom API</a><li><a href='coppeliaGeometricRoutines.html'>coppeliaGeometricRoutines</a><li><a href='CoppeliaGeometricRoutinesAPI.html'>CoppeliaGeometricRoutinesAPI</a></li></ul><li><a href='IGLPluginAPIreference.html'>IGLPluginAPIreference</a><li><a href='kinematics.html'>kinematics</a><li><a href='basicsOnIkGroupsAndIkElements.html'>basicsOnIkGroupsAndIkElements</a><li class='has-children'><a href='solvingIkAndFk.html'>solvingIkAndFk</a><ul class='dropdown'><li><a href='kinematicsPlugin.html'>kinematicsPlugin</a><li><a href='simIKAPI.html'>simIKAPI</a><li><a href='coppeliaKinematicsRoutines.html'>coppeliaKinematicsRoutines</a><li><a href='CoppeliaKinematicsRoutinesAPI.html'>CoppeliaKinematicsRoutinesAPI</a></li></ul><li><a href='dynamicsModule.html'>dynamicsModule</a><li class='has-children'><a href='designingDynamicSimulations.html'>designingDynamicSimulations</a><ul class='dropdown'><li><a href='dynamicsDialog.html'>dynamicsDialog</a><li><a href='dynamicsEngineDialog.html'>dynamicsEngineDialog</a></li></ul><li><a href='dataVisualizationAndOutput.html'>dataVisualizationAndOutput</a><li><a href='externalFrontEnd.html'>externalFrontEnd</a><li><a href='dataTransformation.html'>dataTransformation</a><li class='has-children'><a href='meansOfCommunication.html'>meansOfCommunication</a><ul class='dropdown'><li><a href='remoteApiOverview.html'>remoteApiOverview</a><li><a href='zmqRemoteApiOverview.html'>zmqRemoteApiOverview</a><li><a href='wsRemoteApiOverview.html'>wsRemoteApiOverview</a><li><a href='rosInterfaces.html'>rosInterfaces</a><li><a href='rosInterf.html'>rosInterf</a><li><a href='ROSPluginAPIreference.html'>ROSPluginAPIreference</a><li><a href='ros2Interface.html'>ros2Interface</a><li><a href='ROS2PluginAPIreference.html'>ROS2PluginAPIreference</a></li></ul><li><a href='ZMQPluginAPIreference.html'>ZMQPluginAPIreference</a><li><a href='WSPluginAPIreference.html'>WSPluginAPIreference</a><li><a href='pathsAndTrajectories.html'>pathsAndTrajectories</a><li><a href='pathAndMotionPlanningModules.html'>pathAndMotionPlanningModules</a><li><a href='OMPLPluginAPIreference.html'>OMPLPluginAPIreference</a><li><a href='syntheticVision.html'>syntheticVision</a><li><a href='IMPluginAPIreference.html'>IMPluginAPIreference</a><li><a href='simVisionAPI.html'>simVisionAPI</a><li><a href='customUIPlugin.html'>customUIPlugin</a><li><a href='UIPluginAPIreference.html'>UIPluginAPIreference</a><li><a href='simUI-widgets.html'>simUI-widgets</a><li><a href='QMLPluginAPIreference.html'>QMLPluginAPIreference</a><li><a href='importExport.html'>importExport</a><li class='has-children'><a href='xmlFormat.html'>xmlFormat</a><ul class='dropdown'><li><a href='urdfPlugin.html'>urdfPlugin</a><li><a href='APIFunctions.html'>APIFunctions</a><li><a href='sdfPlugin.html'>sdfPlugin</a><li><a href='SDFPluginAPIreference.html'>SDFPluginAPIreference</a></li></ul><li><a href='aviRecorder.html'>aviRecorder</a><li><a href='AssimpPluginAPIreference.html'>AssimpPluginAPIreference</a><li class='has-children'><a href='GLTFPluginAPIreference.html'>GLTFPluginAPIreference</a><ul class='dropdown'><li><a href='commandLine.html'>commandLine</a><li><a href='LuaCmdPluginAPIreference.html'>LuaCmdPluginAPIreference</a><li><a href='miscellaneousFunctionality.html'>miscellaneousFunctionality</a><li><a href='SurfRecPluginAPIreference.html'>SurfRecPluginAPIreference</a><li><a href='ICPPluginAPIreference.html'>ICPPluginAPIreference</a><li><a href='SubprocessPluginAPIreference.html'>SubprocessPluginAPIreference</a></li></li></ul></ul><li class='has-children'><a href='writingCode.html'>writingCode</a><ul class='dropdown'><li class='has-children'><a href='scripts.html'>scripts</a><ul class='dropdown'><li><a href='embeddedScripts.html'>embeddedScripts</a><li><a href='simulationScripts.html'>simulationScripts</a><li><a href='mainScript.html'>mainScript</a><li><a href='childScripts.html'>childScripts</a><li><a href='customizationScripts.html'>customizationScripts</a><li><a href='scriptProperties.html'>scriptProperties</a><li><a href='scriptEditor.html'>scriptEditor</a></li></ul><li><a href='addOns.html'>addOns</a><li><a href='sandboxScript.html'>sandboxScript</a><li><a href='scriptExecution.html'>scriptExecution</a><li class='has-children'><a href='threadedAndNonThreadedCode.html'>threadedAndNonThreadedCode</a><ul class='dropdown'><li><a href='callbackFunctions.html'>callbackFunctions</a><li><a href='dynCallbackFunctions.html'>dynCallbackFunctions</a><li><a href='jointCallbackFunctions.html'>jointCallbackFunctions</a><li><a href='contactCallbackFunction.html'>contactCallbackFunction</a><li><a href='visionCallbackFunctions.html'>visionCallbackFunctions</a><li><a href='triggerCallbackFunctions.html'>triggerCallbackFunctions</a><li><a href='userConfigCallbackFunctions.html'>userConfigCallbackFunctions</a></li></ul><li><a href='luaPythonDifferences.html'>luaPythonDifferences</a><li><a href='luaCrashCourse.html'>luaCrashCourse</a><li><a href='plugins.html'>plugins</a><li><a href='mainClientApplication.html'>mainClientApplication</a><li><a href='accessingSceneObjects.html'>accessingSceneObjects</a><li><a href='explicitHandling.html'>explicitHandling</a><li class='has-children'><a href='apisOverview.html'>apisOverview</a><ul class='dropdown'><li><a href='apiFunctions.html'>apiFunctions</a><li><a href='apiConstants.html'>apiConstants</a><li><a href='objectParameterIDs.html'>objectParameterIDs</a></li></li></ul></ul><li class='has-children'><a href='simulation.html'>simulation</a><ul class='dropdown'><li><a href='simulationPropertiesDialog.html'>simulationPropertiesDialog</a></li></ul><li class='has-children'><a href='tutorials.html'>tutorials</a><ul class='dropdown'><li><a href='bubbleRobTutorial.html'>bubbleRobTutorial</a><li><a href='buildingAModelTutorial.html'>buildingAModelTutorial</a><li><a href='lineFollowingBubbleRobTutorial.html'>lineFollowingBubbleRobTutorial</a><li><a href='inverseKinematicsTutorial.html'>inverseKinematicsTutorial</a><li><a href='externalControllerTutorial.html'>externalControllerTutorial</a><li><a href='pluginTutorial.html'>pluginTutorial</a><li><a href='robotLanguageIntegrationTutorial.html'>robotLanguageIntegrationTutorial</a><li class='has-children'><a href='rosTutorial.html'>rosTutorial</a><ul class='dropdown'><li><a href='ros1Tutorial.html'>ros1Tutorial</a><li><a href='ros2Tutorial.html'>ros2Tutorial</a></li></ul><li><a href='compilingCoppeliaSim.html'>compilingCoppeliaSim</a></li>
+                      </ul>
+                </nav>
+              </div>
+              <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
+              </div>
+
+            </div>
+          </div>
+          
+        </header>
+    <div id="tipue_search_content">syntheticVision << <a href='syntheticVision.html'>Previous</a> <a href='simVisionAPI.html'>Next</a> >> simVisionAPI<br /><h1>IMPluginAPIreference</h1><div align="center"><table class="allEncompassingTable">
+<tbody><tr><td class="section" id="title"><h4>IM Plugin API reference</h4></td></tr>
+<tr><td class="section" id="info"><p class="infoBox">Plugin for processing images</p></td></tr>
+<tr><td class="section" id="alphabetical" style="display: table-cell;"><pre class="lightGreyBox"><a href="https://mde.tw/copsimdoc/en/simIM.html?#abs">simIM.abs</a>
+<a href="https://mde.tw/copsimdoc/en/simIM.html?#absdiff">simIM.absdiff</a>
+<a href="https://mde.tw/copsimdoc/en/simIM.html?#absdiffK">simIM.absdiffK</a>
+<a href="https://mde.tw/copsimdoc/en/simIM.html?#add">simIM.add</a>
+<a href="https://mde.tw/copsimdoc/en/simIM.html?#addK">simIM.addK</a>
+<a href="https://mde.tw/copsimdoc/en/simIM.html?#addWeighted">simIM.addWeighted</a>
+<a href="https://mde.tw/copsimdoc/en/simIM.html?#arrowedLine">simIM.arrowedLine</a>
+<a href="https://mde.tw/copsimdoc/en/simIM.html?#bitwiseAnd">simIM.bitwiseAnd</a>
+<a href="https://mde.tw/copsimdoc/en/simIM.html?#bitwiseAndK">simIM.bitwiseAndK</a>
+<a href="https://mde.tw/copsimdoc/en/simIM.html?#bitwiseNot">simIM.bitwiseNot</a>
+<a href="https://mde.tw/copsimdoc/en/simIM.html?#bitwiseOr">simIM.bitwiseOr</a>
+<a href="https://mde.tw/copsimdoc/en/simIM.html?#bitwiseOrK">simIM.bitwiseOrK</a>
+<a href="https://mde.tw/copsimdoc/en/simIM.html?#bitwiseXor">simIM.bitwiseXor</a>
+<a href="https://mde.tw/copsimdoc/en/simIM.html?#bitwiseXorK">simIM.bitwiseXorK</a>
+<a href="https://mde.tw/copsimdoc/en/simIM.html?#cart2polar">simIM.cart2polar</a>
+<a href="https://mde.tw/copsimdoc/en/simIM.html?#circle">simIM.circle</a>
+<a href="https://mde.tw/copsimdoc/en/simIM.html?#clipLine">simIM.clipLine</a>
+<a href="https://mde.tw/copsimdoc/en/simIM.html?#closeVideoCapture">simIM.closeVideoCapture</a>
+<a href="https://mde.tw/copsimdoc/en/simIM.html?#compare">simIM.compare</a>
+<a href="https://mde.tw/copsimdoc/en/simIM.html?#compareK">simIM.compareK</a>
+<a href="https://mde.tw/copsimdoc/en/simIM.html?#convert">simIM.convert</a>
+<a href="https://mde.tw/copsimdoc/en/simIM.html?#copy">simIM.copy</a>
+<a href="https://mde.tw/copsimdoc/en/simIM.html?#create">simIM.create</a>
+<a href="https://mde.tw/copsimdoc/en/simIM.html?#createFromData">simIM.createFromData</a>
+<a href="https://mde.tw/copsimdoc/en/simIM.html?#dataURL">simIM.dataURL</a>
+<a href="https://mde.tw/copsimdoc/en/simIM.html?#destroy">simIM.destroy</a>
+<a href="https://mde.tw/copsimdoc/en/simIM.html?#distanceTransform">simIM.distanceTransform</a>
+<a href="https://mde.tw/copsimdoc/en/simIM.html?#divide">simIM.divide</a>
+<a href="https://mde.tw/copsimdoc/en/simIM.html?#divideK">simIM.divideK</a>
+<a href="https://mde.tw/copsimdoc/en/simIM.html?#ellipse">simIM.ellipse</a>
+<a href="https://mde.tw/copsimdoc/en/simIM.html?#encode">simIM.encode</a>
+<a href="https://mde.tw/copsimdoc/en/simIM.html?#exp">simIM.exp</a>
+<a href="https://mde.tw/copsimdoc/en/simIM.html?#fillConvexPoly">simIM.fillConvexPoly</a>
+<a href="https://mde.tw/copsimdoc/en/simIM.html?#fillPoly">simIM.fillPoly</a>
+<a href="https://mde.tw/copsimdoc/en/simIM.html?#flip">simIM.flip</a>
+<a href="https://mde.tw/copsimdoc/en/simIM.html?#get">simIM.get</a>
+<a href="https://mde.tw/copsimdoc/en/simIM.html?#gray2rgb">simIM.gray2rgb</a>
+<a href="https://mde.tw/copsimdoc/en/simIM.html?#hls2rgb">simIM.hls2rgb</a>
+<a href="https://mde.tw/copsimdoc/en/simIM.html?#hsv2rgb">simIM.hsv2rgb</a>
+<a href="https://mde.tw/copsimdoc/en/simIM.html?#line">simIM.line</a>
+<a href="https://mde.tw/copsimdoc/en/simIM.html?#log">simIM.log</a>
+<a href="https://mde.tw/copsimdoc/en/simIM.html?#magnitude">simIM.magnitude</a>
+<a href="https://mde.tw/copsimdoc/en/simIM.html?#merge">simIM.merge</a>
+<a href="https://mde.tw/copsimdoc/en/simIM.html?#mixChannels">simIM.mixChannels</a>
+<a href="https://mde.tw/copsimdoc/en/simIM.html?#multiply">simIM.multiply</a>
+<a href="https://mde.tw/copsimdoc/en/simIM.html?#openVideoCapture">simIM.openVideoCapture</a>
+<a href="https://mde.tw/copsimdoc/en/simIM.html?#phase">simIM.phase</a>
+<a href="https://mde.tw/copsimdoc/en/simIM.html?#polar2cart">simIM.polar2cart</a>
+<a href="https://mde.tw/copsimdoc/en/simIM.html?#polylines">simIM.polylines</a>
+<a href="https://mde.tw/copsimdoc/en/simIM.html?#pow">simIM.pow</a>
+<a href="https://mde.tw/copsimdoc/en/simIM.html?#read">simIM.read</a>
+<a href="https://mde.tw/copsimdoc/en/simIM.html?#readFromVideoCapture">simIM.readFromVideoCapture</a>
+<a href="https://mde.tw/copsimdoc/en/simIM.html?#readFromVisionSensor">simIM.readFromVisionSensor</a>
+<a href="https://mde.tw/copsimdoc/en/simIM.html?#rectangle">simIM.rectangle</a>
+<a href="https://mde.tw/copsimdoc/en/simIM.html?#reduce">simIM.reduce</a>
+<a href="https://mde.tw/copsimdoc/en/simIM.html?#repeat">simIM.repeat</a>
+<a href="https://mde.tw/copsimdoc/en/simIM.html?#resize">simIM.resize</a>
+<a href="https://mde.tw/copsimdoc/en/simIM.html?#rgb2gray">simIM.rgb2gray</a>
+<a href="https://mde.tw/copsimdoc/en/simIM.html?#rgb2hls">simIM.rgb2hls</a>
+<a href="https://mde.tw/copsimdoc/en/simIM.html?#rgb2hsv">simIM.rgb2hsv</a>
+<a href="https://mde.tw/copsimdoc/en/simIM.html?#scaleAdd">simIM.scaleAdd</a>
+<a href="https://mde.tw/copsimdoc/en/simIM.html?#set">simIM.set</a>
+<a href="https://mde.tw/copsimdoc/en/simIM.html?#size">simIM.size</a>
+<a href="https://mde.tw/copsimdoc/en/simIM.html?#split">simIM.split</a>
+<a href="https://mde.tw/copsimdoc/en/simIM.html?#sqrt">simIM.sqrt</a>
+<a href="https://mde.tw/copsimdoc/en/simIM.html?#subtract">simIM.subtract</a>
+<a href="https://mde.tw/copsimdoc/en/simIM.html?#subtractK">simIM.subtractK</a>
+<a href="https://mde.tw/copsimdoc/en/simIM.html?#text">simIM.text</a>
+<a href="https://mde.tw/copsimdoc/en/simIM.html?#textSize">simIM.textSize</a>
+<a href="https://mde.tw/copsimdoc/en/simIM.html?#write">simIM.write</a>
+<a href="https://mde.tw/copsimdoc/en/simIM.html?#writeToVisionSensor">simIM.writeToVisionSensor</a>
+</pre></td></tr>
+<tr><td class="section" id="commands" style="display: none;">
+<br/>
+<a id="abs" name="abs"></a>simIM.abs
+<table class="apiTable">
+<tbody><tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+                                                    Description
+                                                </td>
+<td class="apiTableRightDescr">Calculates an absolute value of each pixel.</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLSyn">Lua synopsis</td>
+<td class="apiTableRightLSyn">string handle=simIM.abs(string handle, bool inPlace=false)<br/>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLParam">Lua parameters</td>
+<td class="apiTableRightLParam">
+<div>
+<strong>handle</strong> (string): handle to image</div>
+<div>
+<strong>inPlace</strong> (bool, default: false): if true, the original 
+immage will be converted in place. otherwise, the original image will 
+not be modified and a new image is returned.</div>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLRet">Lua return values</td>
+<td class="apiTableRightLRet"><div>
+<strong>handle</strong> (string): handle of resulting image</div></td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftPSyn">Python synopsis</td>
+<td class="apiTableRightPSyn">string handle=simIM.abs(string handle, bool inPlace=false)<br/>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+                                                See also
+                                            </td>
+<td class="apiTableRightDescr"></td>
+</tr>
+</tbody></table>
+<br/><br/>
+<a id="absdiff" name="absdiff"></a>simIM.absdiff
+<table class="apiTable">
+<tbody><tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+                                                    Description
+                                                </td>
+<td class="apiTableRightDescr">Calculates the per-element absolute difference between two arrays.</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLSyn">Lua synopsis</td>
+<td class="apiTableRightLSyn">string handle=simIM.absdiff(string handle1, string handle2, bool inPlace=false)<br/>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLParam">Lua parameters</td>
+<td class="apiTableRightLParam">
+<div>
+<strong>handle1</strong> (string): handle to first image</div>
+<div>
+<strong>handle2</strong> (string): handle to second image</div>
+<div>
+<strong>inPlace</strong> (bool, default: false): if true, the original 
+immage will be converted in place. otherwise, the original image will 
+not be modified and a new image is returned.</div>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLRet">Lua return values</td>
+<td class="apiTableRightLRet"><div>
+<strong>handle</strong> (string): handle of resulting image</div></td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftPSyn">Python synopsis</td>
+<td class="apiTableRightPSyn">string handle=simIM.absdiff(string handle1, string handle2, bool inPlace=false)<br/>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+                                                See also
+                                            </td>
+<td class="apiTableRightDescr"></td>
+</tr>
+</tbody></table>
+<br/><br/>
+<a id="absdiffK" name="absdiffK"></a>simIM.absdiffK
+<table class="apiTable">
+<tbody><tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+                                                    Description
+                                                </td>
+<td class="apiTableRightDescr">Calculates the per-element absolute difference between an array and a scalar.</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLSyn">Lua synopsis</td>
+<td class="apiTableRightLSyn">string handle=simIM.absdiffK(string handle, float[] k, bool inPlace=false)<br/>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLParam">Lua parameters</td>
+<td class="apiTableRightLParam">
+<div>
+<strong>handle</strong> (string): handle to image</div>
+<div>
+<strong>k</strong> (table of float): scalar</div>
+<div>
+<strong>inPlace</strong> (bool, default: false): if true, the original 
+immage will be converted in place. otherwise, the original image will 
+not be modified and a new image is returned.</div>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLRet">Lua return values</td>
+<td class="apiTableRightLRet"><div>
+<strong>handle</strong> (string): handle of resulting image</div></td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftPSyn">Python synopsis</td>
+<td class="apiTableRightPSyn">string handle=simIM.absdiffK(string handle, list k, bool inPlace=false)<br/>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+                                                See also
+                                            </td>
+<td class="apiTableRightDescr"></td>
+</tr>
+</tbody></table>
+<br/><br/>
+<a id="add" name="add"></a>simIM.add
+<table class="apiTable">
+<tbody><tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+                                                    Description
+                                                </td>
+<td class="apiTableRightDescr">Calculates the per-element sum of two arrays.</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLSyn">Lua synopsis</td>
+<td class="apiTableRightLSyn">string handle=simIM.add(string handle1, string handle2, bool inPlace=false)<br/>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLParam">Lua parameters</td>
+<td class="apiTableRightLParam">
+<div>
+<strong>handle1</strong> (string): handle to first image</div>
+<div>
+<strong>handle2</strong> (string): handle to second image</div>
+<div>
+<strong>inPlace</strong> (bool, default: false): if true, the original 
+immage will be converted in place. otherwise, the original image will 
+not be modified and a new image is returned.</div>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLRet">Lua return values</td>
+<td class="apiTableRightLRet"><div>
+<strong>handle</strong> (string): handle of resulting image</div></td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftPSyn">Python synopsis</td>
+<td class="apiTableRightPSyn">string handle=simIM.add(string handle1, string handle2, bool inPlace=false)<br/>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+                                                See also
+                                            </td>
+<td class="apiTableRightDescr"></td>
+</tr>
+</tbody></table>
+<br/><br/>
+<a id="addK" name="addK"></a>simIM.addK
+<table class="apiTable">
+<tbody><tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+                                                    Description
+                                                </td>
+<td class="apiTableRightDescr">Calculates the per-element sum of an array and a scalar.</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLSyn">Lua synopsis</td>
+<td class="apiTableRightLSyn">string handle=simIM.addK(string handle, float[] k, bool inPlace=false)<br/>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLParam">Lua parameters</td>
+<td class="apiTableRightLParam">
+<div>
+<strong>handle</strong> (string): handle to image</div>
+<div>
+<strong>k</strong> (table of float): scalar</div>
+<div>
+<strong>inPlace</strong> (bool, default: false): if true, the original 
+immage will be converted in place. otherwise, the original image will 
+not be modified and a new image is returned.</div>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLRet">Lua return values</td>
+<td class="apiTableRightLRet"><div>
+<strong>handle</strong> (string): handle of resulting image</div></td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftPSyn">Python synopsis</td>
+<td class="apiTableRightPSyn">string handle=simIM.addK(string handle, list k, bool inPlace=false)<br/>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+                                                See also
+                                            </td>
+<td class="apiTableRightDescr"></td>
+</tr>
+</tbody></table>
+<br/><br/>
+<a id="addWeighted" name="addWeighted"></a>simIM.addWeighted
+<table class="apiTable">
+<tbody><tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+                                                    Description
+                                                </td>
+<td class="apiTableRightDescr">Calculates the weighted sum of two arrays, i.e. DST(i) = SRC1(i)*alpha + SRC2(i)*beta + gamma.</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLSyn">Lua synopsis</td>
+<td class="apiTableRightLSyn">string handle=simIM.addWeighted(string handle1, string handle2, float alpha, float beta, float gamma, bool inPlace=false)<br/>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLParam">Lua parameters</td>
+<td class="apiTableRightLParam">
+<div>
+<strong>handle1</strong> (string): handle to first image</div>
+<div>
+<strong>handle2</strong> (string): handle to second image</div>
+<div>
+<strong>alpha</strong> (float): alpha coefficient</div>
+<div>
+<strong>beta</strong> (float): beta coefficient</div>
+<div>
+<strong>gamma</strong> (float): gamma coefficient</div>
+<div>
+<strong>inPlace</strong> (bool, default: false): if true, the original 
+immage will be converted in place. otherwise, the original image will 
+not be modified and a new image is returned.</div>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLRet">Lua return values</td>
+<td class="apiTableRightLRet"><div>
+<strong>handle</strong> (string): handle of resulting image</div></td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftPSyn">Python synopsis</td>
+<td class="apiTableRightPSyn">string handle=simIM.addWeighted(string handle1, string handle2, float alpha, float beta, float gamma, bool inPlace=false)<br/>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+                                                See also
+                                            </td>
+<td class="apiTableRightDescr"></td>
+</tr>
+</tbody></table>
+<br/><br/>
+<a id="arrowedLine" name="arrowedLine"></a>simIM.arrowedLine
+<table class="apiTable">
+<tbody><tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+                                                    Description
+                                                </td>
+<td class="apiTableRightDescr">Draw a arrow segment starting from (x1,y1) and pointing to (x2,y2).</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLSyn">Lua synopsis</td>
+<td class="apiTableRightLSyn">simIM.arrowedLine(string handle, int[2] 
+p1, int[2] p2, int[3] color, int thickness=1, int type=8, int shift=0, 
+float tipLength=0.1)<br/>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLParam">Lua parameters</td>
+<td class="apiTableRightLParam">
+<div>
+<strong>handle</strong> (string): handle to image</div>
+<div>
+<strong>p1</strong> (table of int, size 2): x, y coordinates of first point</div>
+<div>
+<strong>p2</strong> (table of int, size 2): x, y coordinates of second point</div>
+<div>
+<strong>color</strong> (table of int, size 3): color (red, green, blue values in range 0..255)</div>
+<div>
+<strong>thickness</strong> (int, default: 1): line thickness</div>
+<div>
+<strong>type</strong> (int, default: 8): type of the line (8 for 8-connected line, 4 for 4-connected line, or 16 for antialiased line)</div>
+<div>
+<strong>shift</strong> (int, default: 0): number of fractional bits in the point coordinates</div>
+<div>
+<strong>tipLength</strong> (float, default: 0.1): The length of the arrow tip in relation to the arrow length</div>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLRet">Lua return values</td>
+<td class="apiTableRightLRet">-</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftPSyn">Python synopsis</td>
+<td class="apiTableRightPSyn">simIM.arrowedLine(string handle, list p1, list p2, list color, int thickness=1, int type=8, int shift=0, float tipLength=0.1)<br/>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+                                                See also
+                                            </td>
+<td class="apiTableRightDescr"></td>
+</tr>
+</tbody></table>
+<br/><br/>
+<a id="bitwiseAnd" name="bitwiseAnd"></a>simIM.bitwiseAnd
+<table class="apiTable">
+<tbody><tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+                                                    Description
+                                                </td>
+<td class="apiTableRightDescr">Calculates the per-element bit-wise conjunction of two arrays.</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLSyn">Lua synopsis</td>
+<td class="apiTableRightLSyn">string handle=simIM.bitwiseAnd(string handle1, string handle2, bool inPlace=false)<br/>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLParam">Lua parameters</td>
+<td class="apiTableRightLParam">
+<div>
+<strong>handle1</strong> (string): handle to first image</div>
+<div>
+<strong>handle2</strong> (string): handle to second image</div>
+<div>
+<strong>inPlace</strong> (bool, default: false): if true, the original 
+immage will be converted in place. otherwise, the original image will 
+not be modified and a new image is returned.</div>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLRet">Lua return values</td>
+<td class="apiTableRightLRet"><div>
+<strong>handle</strong> (string): handle of resulting image</div></td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftPSyn">Python synopsis</td>
+<td class="apiTableRightPSyn">string handle=simIM.bitwiseAnd(string handle1, string handle2, bool inPlace=false)<br/>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+                                                See also
+                                            </td>
+<td class="apiTableRightDescr"></td>
+</tr>
+</tbody></table>
+<br/><br/>
+<a id="bitwiseAndK" name="bitwiseAndK"></a>simIM.bitwiseAndK
+<table class="apiTable">
+<tbody><tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+                                                    Description
+                                                </td>
+<td class="apiTableRightDescr">Calculates the per-element bit-wise conjunction of an array and a scalar.</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLSyn">Lua synopsis</td>
+<td class="apiTableRightLSyn">string handle=simIM.bitwiseAndK(string handle, float[] k, bool inPlace=false)<br/>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLParam">Lua parameters</td>
+<td class="apiTableRightLParam">
+<div>
+<strong>handle</strong> (string): handle to image</div>
+<div>
+<strong>k</strong> (table of float): scalar</div>
+<div>
+<strong>inPlace</strong> (bool, default: false): if true, the original 
+immage will be converted in place. otherwise, the original image will 
+not be modified and a new image is returned.</div>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLRet">Lua return values</td>
+<td class="apiTableRightLRet"><div>
+<strong>handle</strong> (string): handle of resulting image</div></td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftPSyn">Python synopsis</td>
+<td class="apiTableRightPSyn">string handle=simIM.bitwiseAndK(string handle, list k, bool inPlace=false)<br/>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+                                                See also
+                                            </td>
+<td class="apiTableRightDescr"></td>
+</tr>
+</tbody></table>
+<br/><br/>
+<a id="bitwiseNot" name="bitwiseNot"></a>simIM.bitwiseNot
+<table class="apiTable">
+<tbody><tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+                                                    Description
+                                                </td>
+<td class="apiTableRightDescr">Inverts every bit of an array.</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLSyn">Lua synopsis</td>
+<td class="apiTableRightLSyn">string handle=simIM.bitwiseNot(string handle, bool inPlace=false)<br/>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLParam">Lua parameters</td>
+<td class="apiTableRightLParam">
+<div>
+<strong>handle</strong> (string): handle to image</div>
+<div>
+<strong>inPlace</strong> (bool, default: false): if true, the original 
+immage will be converted in place. otherwise, the original image will 
+not be modified and a new image is returned.</div>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLRet">Lua return values</td>
+<td class="apiTableRightLRet"><div>
+<strong>handle</strong> (string): handle of resulting image</div></td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftPSyn">Python synopsis</td>
+<td class="apiTableRightPSyn">string handle=simIM.bitwiseNot(string handle, bool inPlace=false)<br/>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+                                                See also
+                                            </td>
+<td class="apiTableRightDescr"></td>
+</tr>
+</tbody></table>
+<br/><br/>
+<a id="bitwiseOr" name="bitwiseOr"></a>simIM.bitwiseOr
+<table class="apiTable">
+<tbody><tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+                                                    Description
+                                                </td>
+<td class="apiTableRightDescr">Calculates the per-element bit-wise disjunction of two arrays.</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLSyn">Lua synopsis</td>
+<td class="apiTableRightLSyn">string handle=simIM.bitwiseOr(string handle1, string handle2, bool inPlace=false)<br/>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLParam">Lua parameters</td>
+<td class="apiTableRightLParam">
+<div>
+<strong>handle1</strong> (string): handle to first image</div>
+<div>
+<strong>handle2</strong> (string): handle to second image</div>
+<div>
+<strong>inPlace</strong> (bool, default: false): if true, the original 
+immage will be converted in place. otherwise, the original image will 
+not be modified and a new image is returned.</div>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLRet">Lua return values</td>
+<td class="apiTableRightLRet"><div>
+<strong>handle</strong> (string): handle of resulting image</div></td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftPSyn">Python synopsis</td>
+<td class="apiTableRightPSyn">string handle=simIM.bitwiseOr(string handle1, string handle2, bool inPlace=false)<br/>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+                                                See also
+                                            </td>
+<td class="apiTableRightDescr"></td>
+</tr>
+</tbody></table>
+<br/><br/>
+<a id="bitwiseOrK" name="bitwiseOrK"></a>simIM.bitwiseOrK
+<table class="apiTable">
+<tbody><tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+                                                    Description
+                                                </td>
+<td class="apiTableRightDescr">Calculates the per-element bit-wise disjunction of an array and a scalar.</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLSyn">Lua synopsis</td>
+<td class="apiTableRightLSyn">string handle=simIM.bitwiseOrK(string handle, float[] k, bool inPlace=false)<br/>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLParam">Lua parameters</td>
+<td class="apiTableRightLParam">
+<div>
+<strong>handle</strong> (string): handle to image</div>
+<div>
+<strong>k</strong> (table of float): scalar</div>
+<div>
+<strong>inPlace</strong> (bool, default: false): if true, the original 
+immage will be converted in place. otherwise, the original image will 
+not be modified and a new image is returned.</div>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLRet">Lua return values</td>
+<td class="apiTableRightLRet"><div>
+<strong>handle</strong> (string): handle of resulting image</div></td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftPSyn">Python synopsis</td>
+<td class="apiTableRightPSyn">string handle=simIM.bitwiseOrK(string handle, list k, bool inPlace=false)<br/>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+                                                See also
+                                            </td>
+<td class="apiTableRightDescr"></td>
+</tr>
+</tbody></table>
+<br/><br/>
+<a id="bitwiseXor" name="bitwiseXor"></a>simIM.bitwiseXor
+<table class="apiTable">
+<tbody><tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+                                                    Description
+                                                </td>
+<td class="apiTableRightDescr">Calculates the per-element bit-wise exclusive-or of two arrays.</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLSyn">Lua synopsis</td>
+<td class="apiTableRightLSyn">string handle=simIM.bitwiseXor(string handle1, string handle2, bool inPlace=false)<br/>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLParam">Lua parameters</td>
+<td class="apiTableRightLParam">
+<div>
+<strong>handle1</strong> (string): handle to first image</div>
+<div>
+<strong>handle2</strong> (string): handle to second image</div>
+<div>
+<strong>inPlace</strong> (bool, default: false): if true, the original 
+immage will be converted in place. otherwise, the original image will 
+not be modified and a new image is returned.</div>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLRet">Lua return values</td>
+<td class="apiTableRightLRet"><div>
+<strong>handle</strong> (string): handle of resulting image</div></td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftPSyn">Python synopsis</td>
+<td class="apiTableRightPSyn">string handle=simIM.bitwiseXor(string handle1, string handle2, bool inPlace=false)<br/>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+                                                See also
+                                            </td>
+<td class="apiTableRightDescr"></td>
+</tr>
+</tbody></table>
+<br/><br/>
+<a id="bitwiseXorK" name="bitwiseXorK"></a>simIM.bitwiseXorK
+<table class="apiTable">
+<tbody><tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+                                                    Description
+                                                </td>
+<td class="apiTableRightDescr">Calculates the per-element bit-wise exclusive-or of an array and a scalar.</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLSyn">Lua synopsis</td>
+<td class="apiTableRightLSyn">string handle=simIM.bitwiseXorK(string handle, float[] k, bool inPlace=false)<br/>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLParam">Lua parameters</td>
+<td class="apiTableRightLParam">
+<div>
+<strong>handle</strong> (string): handle to image</div>
+<div>
+<strong>k</strong> (table of float): scalar</div>
+<div>
+<strong>inPlace</strong> (bool, default: false): if true, the original 
+immage will be converted in place. otherwise, the original image will 
+not be modified and a new image is returned.</div>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLRet">Lua return values</td>
+<td class="apiTableRightLRet"><div>
+<strong>handle</strong> (string): handle of resulting image</div></td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftPSyn">Python synopsis</td>
+<td class="apiTableRightPSyn">string handle=simIM.bitwiseXorK(string handle, list k, bool inPlace=false)<br/>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+                                                See also
+                                            </td>
+<td class="apiTableRightDescr"></td>
+</tr>
+</tbody></table>
+<br/><br/>
+<a id="cart2polar" name="cart2polar"></a>simIM.cart2polar
+<table class="apiTable">
+<tbody><tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+                                                    Description
+                                                </td>
+<td class="apiTableRightDescr">Calculates magnitude and angle coordinates of 2D vectors from their x and y coordinates.</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLSyn">Lua synopsis</td>
+<td class="apiTableRightLSyn">string handle1, string handle2=simIM.cart2polar(string handle1, string handle2, bool angleInDegrees=false)<br/>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLParam">Lua parameters</td>
+<td class="apiTableRightLParam">
+<div>
+<strong>handle1</strong> (string): handle to first image (x)</div>
+<div>
+<strong>handle2</strong> (string): handle to second image (y)</div>
+<div>
+<strong>angleInDegrees</strong> (bool, default: false): when true, the function calculates the angle in degrees, otherwise, they are measured in radians</div>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLRet">Lua return values</td>
+<td class="apiTableRightLRet">
+<div>
+<strong>handle1</strong> (string): handle of resulting image (magnitude)</div>
+<div>
+<strong>handle2</strong> (string): handle of resulting image (angle)</div>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftPSyn">Python synopsis</td>
+<td class="apiTableRightPSyn">string handle1, string handle2=simIM.cart2polar(string handle1, string handle2, bool angleInDegrees=false)<br/>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+                                                See also
+                                            </td>
+<td class="apiTableRightDescr"></td>
+</tr>
+</tbody></table>
+<br/><br/>
+<a id="circle" name="circle"></a>simIM.circle
+<table class="apiTable">
+<tbody><tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+                                                    Description
+                                                </td>
+<td class="apiTableRightDescr">Draw a circle with center (cx,cy) and radius r.</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLSyn">Lua synopsis</td>
+<td class="apiTableRightLSyn">simIM.circle(string handle, int[2] center, int radius, int[3] color, int thickness=1, int type=8, int shift=0)<br/>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLParam">Lua parameters</td>
+<td class="apiTableRightLParam">
+<div>
+<strong>handle</strong> (string): handle to image</div>
+<div>
+<strong>center</strong> (table of int, size 2): x, y coordinates of center</div>
+<div>
+<strong>radius</strong> (int): circle radius</div>
+<div>
+<strong>color</strong> (table of int, size 3): color (red, green, blue values in range 0..255)</div>
+<div>
+<strong>thickness</strong> (int, default: 1): line thickness (negative values means rect is filled)</div>
+<div>
+<strong>type</strong> (int, default: 8): type of the line (8 for 8-connected line, 4 for 4-connected line, or 16 for antialiased line)</div>
+<div>
+<strong>shift</strong> (int, default: 0): number of fractional bits in the point coordinates</div>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLRet">Lua return values</td>
+<td class="apiTableRightLRet">-</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftPSyn">Python synopsis</td>
+<td class="apiTableRightPSyn">simIM.circle(string handle, list center, int radius, list color, int thickness=1, int type=8, int shift=0)<br/>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+                                                See also
+                                            </td>
+<td class="apiTableRightDescr"></td>
+</tr>
+</tbody></table>
+<br/><br/>
+<a id="clipLine" name="clipLine"></a>simIM.clipLine
+<table class="apiTable">
+<tbody><tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+                                                    Description
+                                                </td>
+<td class="apiTableRightDescr">Clips the line against the image rectangle.</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLSyn">Lua synopsis</td>
+<td class="apiTableRightLSyn">bool valid, int[2] p1, int[2] p2=simIM.clipLine(string handle, int[2] p1, int[2] p2)<br/>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLParam">Lua parameters</td>
+<td class="apiTableRightLParam">
+<div>
+<strong>handle</strong> (string): handle to image</div>
+<div>
+<strong>p1</strong> (table of int, size 2): x, y coordinates of first point</div>
+<div>
+<strong>p2</strong> (table of int, size 2): x, y coordinates of second point</div>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLRet">Lua return values</td>
+<td class="apiTableRightLRet">
+<div>
+<strong>valid</strong> (bool): false if the line segment is completely outside the image rectangle, otherwise true.</div>
+<div>
+<strong>p1</strong> (table of int, size 2): x, y coordinates of first point</div>
+<div>
+<strong>p2</strong> (table of int, size 2): x, y coordinates of second point</div>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftPSyn">Python synopsis</td>
+<td class="apiTableRightPSyn">bool valid, list p1, list p2=simIM.clipLine(string handle, list p1, list p2)<br/>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+                                                See also
+                                            </td>
+<td class="apiTableRightDescr"></td>
+</tr>
+</tbody></table>
+<br/><br/>
+<a id="closeVideoCapture" name="closeVideoCapture"></a>simIM.closeVideoCapture
+<table class="apiTable">
+<tbody><tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+                                                    Description
+                                                </td>
+<td class="apiTableRightDescr">Close video capture device.</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLSyn">Lua synopsis</td>
+<td class="apiTableRightLSyn">simIM.closeVideoCapture(int deviceIndex)<br/>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLParam">Lua parameters</td>
+<td class="apiTableRightLParam"><div>
+<strong>deviceIndex</strong> (int): device index (0 based)</div></td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLRet">Lua return values</td>
+<td class="apiTableRightLRet">-</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftPSyn">Python synopsis</td>
+<td class="apiTableRightPSyn">simIM.closeVideoCapture(int deviceIndex)<br/>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+                                                See also
+                                            </td>
+<td class="apiTableRightDescr"></td>
+</tr>
+</tbody></table>
+<br/><br/>
+<a id="compare" name="compare"></a>simIM.compare
+<table class="apiTable">
+<tbody><tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+                                                    Description
+                                                </td>
+<td class="apiTableRightDescr">Performs the per-element comparison of two arrays.</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLSyn">Lua synopsis</td>
+<td class="apiTableRightLSyn">string handle=simIM.compare(string handle1, string handle2, int op, bool inPlace=false)<br/>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLParam">Lua parameters</td>
+<td class="apiTableRightLParam">
+<div>
+<strong>handle1</strong> (string): handle to first image</div>
+<div>
+<strong>handle2</strong> (string): handle to second image</div>
+<div>
+<strong>op</strong> (int): comparison operator</div>
+<div>
+<strong>inPlace</strong> (bool, default: false): if true, the original 
+immage will be converted in place. otherwise, the original image will 
+not be modified and a new image is returned.</div>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLRet">Lua return values</td>
+<td class="apiTableRightLRet"><div>
+<strong>handle</strong> (string): handle of resulting image</div></td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftPSyn">Python synopsis</td>
+<td class="apiTableRightPSyn">string handle=simIM.compare(string handle1, string handle2, int op, bool inPlace=false)<br/>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+                                                See also
+                                            </td>
+<td class="apiTableRightDescr"></td>
+</tr>
+</tbody></table>
+<br/><br/>
+<a id="compareK" name="compareK"></a>simIM.compareK
+<table class="apiTable">
+<tbody><tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+                                                    Description
+                                                </td>
+<td class="apiTableRightDescr">Performs the per-element comparison of an array and scalar value.</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLSyn">Lua synopsis</td>
+<td class="apiTableRightLSyn">string handle=simIM.compareK(string handle, float[] k, int op, bool inPlace=false)<br/>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLParam">Lua parameters</td>
+<td class="apiTableRightLParam">
+<div>
+<strong>handle</strong> (string): handle to image</div>
+<div>
+<strong>k</strong> (table of float): scalar</div>
+<div>
+<strong>op</strong> (int): comparison operator</div>
+<div>
+<strong>inPlace</strong> (bool, default: false): if true, the original 
+immage will be converted in place. otherwise, the original image will 
+not be modified and a new image is returned.</div>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLRet">Lua return values</td>
+<td class="apiTableRightLRet"><div>
+<strong>handle</strong> (string): handle of resulting image</div></td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftPSyn">Python synopsis</td>
+<td class="apiTableRightPSyn">string handle=simIM.compareK(string handle, list k, int op, bool inPlace=false)<br/>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+                                                See also
+                                            </td>
+<td class="apiTableRightDescr"></td>
+</tr>
+</tbody></table>
+<br/><br/>
+<a id="convert" name="convert"></a>simIM.convert
+<table class="apiTable">
+<tbody><tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+                                                    Description
+                                                </td>
+<td class="apiTableRightDescr">Convert the image to a different format.</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLSyn">Lua synopsis</td>
+<td class="apiTableRightLSyn">string handle=simIM.convert(string handle, int format, float scale=1.0, bool inPlace=false)<br/>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLParam">Lua parameters</td>
+<td class="apiTableRightLParam">
+<div>
+<strong>handle</strong> (string): handle to image</div>
+<div>
+<strong>format</strong> (int): target image format (see <a href="#enum:format">simIM.format</a>)</div>
+<div>
+<strong>scale</strong> (float, default: 1.0): scale factor</div>
+<div>
+<strong>inPlace</strong> (bool, default: false): if true, the original 
+immage will be converted in place. otherwise, the original image will 
+not be modified and a new image is returned.</div>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLRet">Lua return values</td>
+<td class="apiTableRightLRet"><div>
+<strong>handle</strong> (string): handle to the converted image</div></td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftPSyn">Python synopsis</td>
+<td class="apiTableRightPSyn">string handle=simIM.convert(string handle, int format, float scale=1.0, bool inPlace=false)<br/>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+                                                See also
+                                            </td>
+<td class="apiTableRightDescr"></td>
+</tr>
+</tbody></table>
+<br/><br/>
+<a id="copy" name="copy"></a>simIM.copy
+<table class="apiTable">
+<tbody><tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+                                                    Description
+                                                </td>
+<td class="apiTableRightDescr">Copy a (portion of) image to another image.</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLSyn">Lua synopsis</td>
+<td class="apiTableRightLSyn">simIM.copy(string srcHandle, int[2] srcOffset, string dstHandle, int[2] dstOffset, int[2] size)<br/>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLParam">Lua parameters</td>
+<td class="apiTableRightLParam">
+<div>
+<strong>srcHandle</strong> (string): handle to source image</div>
+<div>
+<strong>srcOffset</strong> (table of int, size 2): x, y offset in the source image</div>
+<div>
+<strong>dstHandle</strong> (string): handle to destination image</div>
+<div>
+<strong>dstOffset</strong> (table of int, size 2): x, y offset in the destination image</div>
+<div>
+<strong>size</strong> (table of int, size 2): size (width, height) of the copied region</div>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLRet">Lua return values</td>
+<td class="apiTableRightLRet">-</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftPSyn">Python synopsis</td>
+<td class="apiTableRightPSyn">simIM.copy(string srcHandle, list srcOffset, string dstHandle, list dstOffset, list size)<br/>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+                                                See also
+                                            </td>
+<td class="apiTableRightDescr"></td>
+</tr>
+</tbody></table>
+<br/><br/>
+<a id="create" name="create"></a>simIM.create
+<table class="apiTable">
+<tbody><tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+                                                    Description
+                                                </td>
+<td class="apiTableRightDescr">Create an image with given size</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLSyn">Lua synopsis</td>
+<td class="apiTableRightLSyn">string handle=simIM.create(int width, int height, int format=sim_im_fmt_8UC3, int initialValue=0)<br/>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLParam">Lua parameters</td>
+<td class="apiTableRightLParam">
+<div>
+<strong>width</strong> (int): width</div>
+<div>
+<strong>height</strong> (int): height</div>
+<div>
+<strong>format</strong> (int, default: sim_im_fmt_8UC3): image format (see <a href="#enum:format">simIM.format</a>)</div>
+<div>
+<strong>initialValue</strong> (int, default: 0): initial value to fill matrix with</div>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLRet">Lua return values</td>
+<td class="apiTableRightLRet"><div>
+<strong>handle</strong> (string): handle to image</div></td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftPSyn">Python synopsis</td>
+<td class="apiTableRightPSyn">string handle=simIM.create(int width, int height, int format=sim_im_fmt_8UC3, int initialValue=0)<br/>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+                                                See also
+                                            </td>
+<td class="apiTableRightDescr"></td>
+</tr>
+</tbody></table>
+<br/><br/>
+<a id="createFromData" name="createFromData"></a>simIM.createFromData
+<table class="apiTable">
+<tbody><tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+                                                    Description
+                                                </td>
+<td class="apiTableRightDescr">Create an image from given raw data</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLSyn">Lua synopsis</td>
+<td class="apiTableRightLSyn">string handle=simIM.createFromData(int width, int height, string data, int format=sim_im_fmt_8UC3)<br/>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLParam">Lua parameters</td>
+<td class="apiTableRightLParam">
+<div>
+<strong>width</strong> (int): width</div>
+<div>
+<strong>height</strong> (int): height</div>
+<div>
+<strong>data</strong> (string): image data</div>
+<div>
+<strong>format</strong> (int, default: sim_im_fmt_8UC3): image format (see <a href="#enum:format">simIM.format</a>)</div>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLRet">Lua return values</td>
+<td class="apiTableRightLRet"><div>
+<strong>handle</strong> (string): handle to image</div></td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftPSyn">Python synopsis</td>
+<td class="apiTableRightPSyn">string handle=simIM.createFromData(int width, int height, string data, int format=sim_im_fmt_8UC3)<br/>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+                                                See also
+                                            </td>
+<td class="apiTableRightDescr"></td>
+</tr>
+</tbody></table>
+<br/><br/>
+<a id="dataURL" name="dataURL"></a>simIM.dataURL
+<table class="apiTable">
+<tbody><tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+                                                    Description
+                                                </td>
+<td class="apiTableRightDescr">Encode image data according to "data" URL scheme (RFC 2397)</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLSyn">Lua synopsis</td>
+<td class="apiTableRightLSyn">string output=simIM.dataURL(string imgHandle, string format='BMP')<br/>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLParam">Lua parameters</td>
+<td class="apiTableRightLParam">
+<div>
+<strong>imgHandle</strong> (string): Handle to the image</div>
+<div>
+<strong>format</strong> (string, default: 'BMP'): Image format (BMP, JPG, or PNG)</div>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLRet">Lua return values</td>
+<td class="apiTableRightLRet"><div>
+<strong>output</strong> (string): Buffer with encoded data</div></td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftPSyn">Python synopsis</td>
+<td class="apiTableRightPSyn">string output=simIM.dataURL(string imgHandle, string format='BMP')<br/>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+                                                See also
+                                            </td>
+<td class="apiTableRightDescr"></td>
+</tr>
+</tbody></table>
+<br/><br/>
+<a id="destroy" name="destroy"></a>simIM.destroy
+<table class="apiTable">
+<tbody><tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+                                                    Description
+                                                </td>
+<td class="apiTableRightDescr">Destroy (i.e.: free memory) an image with given handle</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLSyn">Lua synopsis</td>
+<td class="apiTableRightLSyn">simIM.destroy(string handle)<br/>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLParam">Lua parameters</td>
+<td class="apiTableRightLParam"><div>
+<strong>handle</strong> (string): handle to image</div></td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLRet">Lua return values</td>
+<td class="apiTableRightLRet">-</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftPSyn">Python synopsis</td>
+<td class="apiTableRightPSyn">simIM.destroy(string handle)<br/>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+                                                See also
+                                            </td>
+<td class="apiTableRightDescr"></td>
+</tr>
+</tbody></table>
+<br/><br/>
+<a id="distanceTransform" name="distanceTransform"></a>simIM.distanceTransform
+<table class="apiTable">
+<tbody><tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+                                                    Description
+                                                </td>
+<td class="apiTableRightDescr">Calculates the distance to the closest zero pixel for each pixel of the source image.</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLSyn">Lua synopsis</td>
+<td class="apiTableRightLSyn">string 
+handle=simIM.distanceTransform(string handle, int 
+distanceType=sim_im_dist_L2, int maskSize=sim_im_masksize_precise, bool 
+inPlace=false)<br/>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLParam">Lua parameters</td>
+<td class="apiTableRightLParam">
+<div>
+<strong>handle</strong> (string): handle to image</div>
+<div>
+<strong>distanceType</strong> (int, default: sim_im_dist_L2): type of distance (see <a href="#enum:dist">simIM.dist</a>)</div>
+<div>
+<strong>maskSize</strong> (int, default: sim_im_masksize_precise): mask size (see <a href="#enum:masksize">simIM.masksize</a>)</div>
+<div>
+<strong>inPlace</strong> (bool, default: false): if true, the original 
+immage will be converted in place. otherwise, the original image will 
+not be modified and a new image is returned.</div>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLRet">Lua return values</td>
+<td class="apiTableRightLRet"><div>
+<strong>handle</strong> (string): handle to image</div></td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftPSyn">Python synopsis</td>
+<td class="apiTableRightPSyn">string 
+handle=simIM.distanceTransform(string handle, int 
+distanceType=sim_im_dist_L2, int maskSize=sim_im_masksize_precise, bool 
+inPlace=false)<br/>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+                                                See also
+                                            </td>
+<td class="apiTableRightDescr"></td>
+</tr>
+</tbody></table>
+<br/><br/>
+<a id="divide" name="divide"></a>simIM.divide
+<table class="apiTable">
+<tbody><tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+                                                    Description
+                                                </td>
+<td class="apiTableRightDescr">Calculates the per-element division of two arrays.</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLSyn">Lua synopsis</td>
+<td class="apiTableRightLSyn">string handle=simIM.divide(string handle1, string handle2, bool inPlace=false)<br/>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLParam">Lua parameters</td>
+<td class="apiTableRightLParam">
+<div>
+<strong>handle1</strong> (string): handle to first image</div>
+<div>
+<strong>handle2</strong> (string): handle to second image</div>
+<div>
+<strong>inPlace</strong> (bool, default: false): if true, the original 
+immage will be converted in place. otherwise, the original image will 
+not be modified and a new image is returned.</div>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLRet">Lua return values</td>
+<td class="apiTableRightLRet"><div>
+<strong>handle</strong> (string): handle of resulting image</div></td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftPSyn">Python synopsis</td>
+<td class="apiTableRightPSyn">string handle=simIM.divide(string handle1, string handle2, bool inPlace=false)<br/>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+                                                See also
+                                            </td>
+<td class="apiTableRightDescr"></td>
+</tr>
+</tbody></table>
+<br/><br/>
+<a id="divideK" name="divideK"></a>simIM.divideK
+<table class="apiTable">
+<tbody><tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+                                                    Description
+                                                </td>
+<td class="apiTableRightDescr">Calculates the per-element division of a scalar by an array.</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLSyn">Lua synopsis</td>
+<td class="apiTableRightLSyn">string handle=simIM.divideK(float[] k, string handle, bool inPlace=false)<br/>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLParam">Lua parameters</td>
+<td class="apiTableRightLParam">
+<div>
+<strong>k</strong> (table of float): scalar</div>
+<div>
+<strong>handle</strong> (string): handle to image</div>
+<div>
+<strong>inPlace</strong> (bool, default: false): if true, the original 
+immage will be converted in place. otherwise, the original image will 
+not be modified and a new image is returned.</div>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLRet">Lua return values</td>
+<td class="apiTableRightLRet"><div>
+<strong>handle</strong> (string): handle of resulting image</div></td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftPSyn">Python synopsis</td>
+<td class="apiTableRightPSyn">string handle=simIM.divideK(list k, string handle, bool inPlace=false)<br/>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+                                                See also
+                                            </td>
+<td class="apiTableRightDescr"></td>
+</tr>
+</tbody></table>
+<br/><br/>
+<a id="ellipse" name="ellipse"></a>simIM.ellipse
+<table class="apiTable">
+<tbody><tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+                                                    Description
+                                                </td>
+<td class="apiTableRightDescr">Draw an ellipse with center (cx,cy) and axes (rx,ry) points in the image.</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLSyn">Lua synopsis</td>
+<td class="apiTableRightLSyn">simIM.ellipse(string handle, int[2] 
+center, int[2] radius, float angle=0.0, float startAngle=0.0, float 
+endAngle=360.0, int[3] color={255,255,255}, int thickness=1, int type=8,
+ int shift=0)<br/>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLParam">Lua parameters</td>
+<td class="apiTableRightLParam">
+<div>
+<strong>handle</strong> (string): handle to image</div>
+<div>
+<strong>center</strong> (table of int, size 2): x, y coordinates of center</div>
+<div>
+<strong>radius</strong> (table of int, size 2): radius along x and y axis</div>
+<div>
+<strong>angle</strong> (float, default: 0.0): rotation in degrees</div>
+<div>
+<strong>startAngle</strong> (float, default: 0.0): starting angle of the elliptic arc in degrees</div>
+<div>
+<strong>endAngle</strong> (float, default: 360.0): ending angle of the elliptic arc in degrees</div>
+<div>
+<strong>color</strong> (table of int, size 3, default: {255,255,255}): color (red, green, blue values in range 0..255)</div>
+<div>
+<strong>thickness</strong> (int, default: 1): line thickness (negative values means rect is filled)</div>
+<div>
+<strong>type</strong> (int, default: 8): type of the line (8 for 8-connected line, 4 for 4-connected line, or 16 for antialiased line)</div>
+<div>
+<strong>shift</strong> (int, default: 0): number of fractional bits in the point coordinates</div>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLRet">Lua return values</td>
+<td class="apiTableRightLRet">-</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftPSyn">Python synopsis</td>
+<td class="apiTableRightPSyn">simIM.ellipse(string handle, list center, 
+list radius, float angle=0.0, float startAngle=0.0, float 
+endAngle=360.0, list color={255,255,255}, int thickness=1, int type=8, 
+int shift=0)<br/>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+                                                See also
+                                            </td>
+<td class="apiTableRightDescr"></td>
+</tr>
+</tbody></table>
+<br/><br/>
+<a id="encode" name="encode"></a>simIM.encode
+<table class="apiTable">
+<tbody><tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+                                                    Description
+                                                </td>
+<td class="apiTableRightDescr">Encode the image to a memory buffer.</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLSyn">Lua synopsis</td>
+<td class="apiTableRightLSyn">string output=simIM.encode(string handle, string format)<br/>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLParam">Lua parameters</td>
+<td class="apiTableRightLParam">
+<div>
+<strong>handle</strong> (string): handle to image</div>
+<div>
+<strong>format</strong> (string): image format (e.g. "PNG", "JPG", "BMP")</div>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLRet">Lua return values</td>
+<td class="apiTableRightLRet"><div>
+<strong>output</strong> (string): output buffer</div></td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftPSyn">Python synopsis</td>
+<td class="apiTableRightPSyn">string output=simIM.encode(string handle, string format)<br/>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+                                                See also
+                                            </td>
+<td class="apiTableRightDescr"></td>
+</tr>
+</tbody></table>
+<br/><br/>
+<a id="exp" name="exp"></a>simIM.exp
+<table class="apiTable">
+<tbody><tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+                                                    Description
+                                                </td>
+<td class="apiTableRightDescr">Calculates the exponential of every array element.</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLSyn">Lua synopsis</td>
+<td class="apiTableRightLSyn">string handle=simIM.exp(string handle, bool inPlace=false)<br/>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLParam">Lua parameters</td>
+<td class="apiTableRightLParam">
+<div>
+<strong>handle</strong> (string): handle to image</div>
+<div>
+<strong>inPlace</strong> (bool, default: false): if true, the original 
+immage will be converted in place. otherwise, the original image will 
+not be modified and a new image is returned.</div>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLRet">Lua return values</td>
+<td class="apiTableRightLRet"><div>
+<strong>handle</strong> (string): handle of resulting image</div></td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftPSyn">Python synopsis</td>
+<td class="apiTableRightPSyn">string handle=simIM.exp(string handle, bool inPlace=false)<br/>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+                                                See also
+                                            </td>
+<td class="apiTableRightDescr"></td>
+</tr>
+</tbody></table>
+<br/><br/>
+<a id="fillConvexPoly" name="fillConvexPoly"></a>simIM.fillConvexPoly
+<table class="apiTable">
+<tbody><tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+                                                    Description
+                                                </td>
+<td class="apiTableRightDescr">Fills a convex polygon.</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLSyn">Lua synopsis</td>
+<td class="apiTableRightLSyn">simIM.fillConvexPoly(string handle, int[] points, int[3] color, int type=8, int shift=0)<br/>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLParam">Lua parameters</td>
+<td class="apiTableRightLParam">
+<div>
+<strong>handle</strong> (string): handle to image</div>
+<div>
+<strong>points</strong> (table of int): polygon vertices, i.e. {x1, y1, x2, y2, ..., xN, yN}</div>
+<div>
+<strong>color</strong> (table of int, size 3): color (red, green, blue values in range 0..255)</div>
+<div>
+<strong>type</strong> (int, default: 8): type of the line (8 for 8-connected line, 4 for 4-connected line, or 16 for antialiased line)</div>
+<div>
+<strong>shift</strong> (int, default: 0): number of fractional bits in the point coordinates</div>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLRet">Lua return values</td>
+<td class="apiTableRightLRet">-</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftPSyn">Python synopsis</td>
+<td class="apiTableRightPSyn">simIM.fillConvexPoly(string handle, list points, list color, int type=8, int shift=0)<br/>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+                                                See also
+                                            </td>
+<td class="apiTableRightDescr"></td>
+</tr>
+</tbody></table>
+<br/><br/>
+<a id="fillPoly" name="fillPoly"></a>simIM.fillPoly
+<table class="apiTable">
+<tbody><tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+                                                    Description
+                                                </td>
+<td class="apiTableRightDescr">Fills the area bounded by one or more polygon.</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLSyn">Lua synopsis</td>
+<td class="apiTableRightLSyn">simIM.fillPoly(string handle, int[] points, int[] numPoints, int[2] offset, int[3] color, int type=8, int shift=0)<br/>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLParam">Lua parameters</td>
+<td class="apiTableRightLParam">
+<div>
+<strong>handle</strong> (string): handle to image</div>
+<div>
+<strong>points</strong> (table of int): contour points, i.e. {c1x1, 
+c1y1, c1x2, c1y2, ..., c1xN1, c1yN1, c2x1, c2y1, ..., c2xN2, c2yN2, ...,
+ cMxNM, cMyNM}</div>
+<div>
+<strong>numPoints</strong> (table of int): lengths of countours, i.e. 
+{N1, N2, ..., NM}. the sum of numPoints items must be equal to the 
+number of x,y pairs in points.</div>
+<div>
+<strong>offset</strong> (table of int, size 2): x, y offset for all points</div>
+<div>
+<strong>color</strong> (table of int, size 3): color (red, green, blue values in range 0..255)</div>
+<div>
+<strong>type</strong> (int, default: 8): type of the line (8 for 8-connected line, 4 for 4-connected line, or 16 for antialiased line)</div>
+<div>
+<strong>shift</strong> (int, default: 0): number of fractional bits in the point coordinates</div>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLRet">Lua return values</td>
+<td class="apiTableRightLRet">-</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftPSyn">Python synopsis</td>
+<td class="apiTableRightPSyn">simIM.fillPoly(string handle, list points, list numPoints, list offset, list color, int type=8, int shift=0)<br/>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+                                                See also
+                                            </td>
+<td class="apiTableRightDescr"></td>
+</tr>
+</tbody></table>
+<br/><br/>
+<a id="flip" name="flip"></a>simIM.flip
+<table class="apiTable">
+<tbody><tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+                                                    Description
+                                                </td>
+<td class="apiTableRightDescr">Flips an image around vertical, horizontal, or both axes.</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLSyn">Lua synopsis</td>
+<td class="apiTableRightLSyn">string handle=simIM.flip(string handle, int op=0, bool inPlace=false)<br/>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLParam">Lua parameters</td>
+<td class="apiTableRightLParam">
+<div>
+<strong>handle</strong> (string): handle to image</div>
+<div>
+<strong>op</strong> (int, default: 0): a flag to specify how to flip the array (see <a href="#enum:flipOp">simIM.flipOp</a>)</div>
+<div>
+<strong>inPlace</strong> (bool, default: false): if true, the original 
+immage will be converted in place. otherwise, the original image will 
+not be modified and a new image is returned.</div>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLRet">Lua return values</td>
+<td class="apiTableRightLRet"><div>
+<strong>handle</strong> (string): handle of resulting image</div></td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftPSyn">Python synopsis</td>
+<td class="apiTableRightPSyn">string handle=simIM.flip(string handle, int op=0, bool inPlace=false)<br/>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+                                                See also
+                                            </td>
+<td class="apiTableRightDescr"></td>
+</tr>
+</tbody></table>
+<br/><br/>
+<a id="get" name="get"></a>simIM.get
+<table class="apiTable">
+<tbody><tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+                                                    Description
+                                                </td>
+<td class="apiTableRightDescr">Get pixel at specified coordinate.</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLSyn">Lua synopsis</td>
+<td class="apiTableRightLSyn">float[] value=simIM.get(string handle, int[2] coord)<br/>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLParam">Lua parameters</td>
+<td class="apiTableRightLParam">
+<div>
+<strong>handle</strong> (string): handle to image</div>
+<div>
+<strong>coord</strong> (table of int, size 2): x, y coordinates</div>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLRet">Lua return values</td>
+<td class="apiTableRightLRet"><div>
+<strong>value</strong> (table of float): value</div></td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftPSyn">Python synopsis</td>
+<td class="apiTableRightPSyn">list value=simIM.get(string handle, list coord)<br/>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+                                                See also
+                                            </td>
+<td class="apiTableRightDescr"></td>
+</tr>
+</tbody></table>
+<br/><br/>
+<a id="gray2rgb" name="gray2rgb"></a>simIM.gray2rgb
+<table class="apiTable">
+<tbody><tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+                                                    Description
+                                                </td>
+<td class="apiTableRightDescr">Convert the specified grayscale image to RGB.</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLSyn">Lua synopsis</td>
+<td class="apiTableRightLSyn">string handle=simIM.gray2rgb(string handle, bool inPlace=false)<br/>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLParam">Lua parameters</td>
+<td class="apiTableRightLParam">
+<div>
+<strong>handle</strong> (string): handle to image</div>
+<div>
+<strong>inPlace</strong> (bool, default: false): if true, the original 
+immage will be converted in place. otherwise, the original image will 
+not be modified and a new image is returned.</div>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLRet">Lua return values</td>
+<td class="apiTableRightLRet"><div>
+<strong>handle</strong> (string): handle to the converted image</div></td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftPSyn">Python synopsis</td>
+<td class="apiTableRightPSyn">string handle=simIM.gray2rgb(string handle, bool inPlace=false)<br/>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+                                                See also
+                                            </td>
+<td class="apiTableRightDescr"></td>
+</tr>
+</tbody></table>
+<br/><br/>
+<a id="hls2rgb" name="hls2rgb"></a>simIM.hls2rgb
+<table class="apiTable">
+<tbody><tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+                                                    Description
+                                                </td>
+<td class="apiTableRightDescr">Convert the specified HLS image to RGB.</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLSyn">Lua synopsis</td>
+<td class="apiTableRightLSyn">string handle=simIM.hls2rgb(string handle, bool inPlace=false)<br/>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLParam">Lua parameters</td>
+<td class="apiTableRightLParam">
+<div>
+<strong>handle</strong> (string): handle to image</div>
+<div>
+<strong>inPlace</strong> (bool, default: false): if true, the original 
+immage will be converted in place. otherwise, the original image will 
+not be modified and a new image is returned.</div>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLRet">Lua return values</td>
+<td class="apiTableRightLRet"><div>
+<strong>handle</strong> (string): handle to the converted image</div></td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftPSyn">Python synopsis</td>
+<td class="apiTableRightPSyn">string handle=simIM.hls2rgb(string handle, bool inPlace=false)<br/>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+                                                See also
+                                            </td>
+<td class="apiTableRightDescr"></td>
+</tr>
+</tbody></table>
+<br/><br/>
+<a id="hsv2rgb" name="hsv2rgb"></a>simIM.hsv2rgb
+<table class="apiTable">
+<tbody><tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+                                                    Description
+                                                </td>
+<td class="apiTableRightDescr">Convert the specified HSV image to RGB.</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLSyn">Lua synopsis</td>
+<td class="apiTableRightLSyn">string handle=simIM.hsv2rgb(string handle, bool inPlace=false)<br/>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLParam">Lua parameters</td>
+<td class="apiTableRightLParam">
+<div>
+<strong>handle</strong> (string): handle to image</div>
+<div>
+<strong>inPlace</strong> (bool, default: false): if true, the original 
+immage will be converted in place. otherwise, the original image will 
+not be modified and a new image is returned.</div>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLRet">Lua return values</td>
+<td class="apiTableRightLRet"><div>
+<strong>handle</strong> (string): handle to the converted image</div></td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftPSyn">Python synopsis</td>
+<td class="apiTableRightPSyn">string handle=simIM.hsv2rgb(string handle, bool inPlace=false)<br/>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+                                                See also
+                                            </td>
+<td class="apiTableRightDescr"></td>
+</tr>
+</tbody></table>
+<br/><br/>
+<a id="line" name="line"></a>simIM.line
+<table class="apiTable">
+<tbody><tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+                                                    Description
+                                                </td>
+<td class="apiTableRightDescr">Draw a line segment between (x1,y1) and (x2,y2) points in the image.</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLSyn">Lua synopsis</td>
+<td class="apiTableRightLSyn">simIM.line(string handle, int[2] p1, int[2] p2, int[3] color, int thickness=1, int type=8, int shift=0)<br/>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLParam">Lua parameters</td>
+<td class="apiTableRightLParam">
+<div>
+<strong>handle</strong> (string): handle to image</div>
+<div>
+<strong>p1</strong> (table of int, size 2): x, y coordinates of first point</div>
+<div>
+<strong>p2</strong> (table of int, size 2): x, y coordinates of second point</div>
+<div>
+<strong>color</strong> (table of int, size 3): color (red, green, blue values in range 0..255)</div>
+<div>
+<strong>thickness</strong> (int, default: 1): line thickness</div>
+<div>
+<strong>type</strong> (int, default: 8): type of the line (8 for 8-connected line, 4 for 4-connected line, or 16 for antialiased line)</div>
+<div>
+<strong>shift</strong> (int, default: 0): number of fractional bits in the point coordinates</div>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLRet">Lua return values</td>
+<td class="apiTableRightLRet">-</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftPSyn">Python synopsis</td>
+<td class="apiTableRightPSyn">simIM.line(string handle, list p1, list p2, list color, int thickness=1, int type=8, int shift=0)<br/>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+                                                See also
+                                            </td>
+<td class="apiTableRightDescr"></td>
+</tr>
+</tbody></table>
+<br/><br/>
+<a id="log" name="log"></a>simIM.log
+<table class="apiTable">
+<tbody><tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+                                                    Description
+                                                </td>
+<td class="apiTableRightDescr">Calculates the natural logarithm of every array element.</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLSyn">Lua synopsis</td>
+<td class="apiTableRightLSyn">string handle=simIM.log(string handle, bool inPlace=false)<br/>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLParam">Lua parameters</td>
+<td class="apiTableRightLParam">
+<div>
+<strong>handle</strong> (string): handle to image</div>
+<div>
+<strong>inPlace</strong> (bool, default: false): if true, the original 
+immage will be converted in place. otherwise, the original image will 
+not be modified and a new image is returned.</div>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLRet">Lua return values</td>
+<td class="apiTableRightLRet"><div>
+<strong>handle</strong> (string): handle of resulting image</div></td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftPSyn">Python synopsis</td>
+<td class="apiTableRightPSyn">string handle=simIM.log(string handle, bool inPlace=false)<br/>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+                                                See also
+                                            </td>
+<td class="apiTableRightDescr"></td>
+</tr>
+</tbody></table>
+<br/><br/>
+<a id="magnitude" name="magnitude"></a>simIM.magnitude
+<table class="apiTable">
+<tbody><tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+                                                    Description
+                                                </td>
+<td class="apiTableRightDescr">Calculates the magnitude of 2D vectors, i.e. DST(i) = sqrt(SRC1(i)^2, SRC2(i)^2).</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLSyn">Lua synopsis</td>
+<td class="apiTableRightLSyn">string handle=simIM.magnitude(string handle1, string handle2)<br/>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLParam">Lua parameters</td>
+<td class="apiTableRightLParam">
+<div>
+<strong>handle1</strong> (string): handle to first image</div>
+<div>
+<strong>handle2</strong> (string): handle to second image</div>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLRet">Lua return values</td>
+<td class="apiTableRightLRet"><div>
+<strong>handle</strong> (string): handle of resulting image</div></td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftPSyn">Python synopsis</td>
+<td class="apiTableRightPSyn">string handle=simIM.magnitude(string handle1, string handle2)<br/>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+                                                See also
+                                            </td>
+<td class="apiTableRightDescr"></td>
+</tr>
+</tbody></table>
+<br/><br/>
+<a id="merge" name="merge"></a>simIM.merge
+<table class="apiTable">
+<tbody><tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+                                                    Description
+                                                </td>
+<td class="apiTableRightDescr">Merge many single channel images into a multichannel image.</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLSyn">Lua synopsis</td>
+<td class="apiTableRightLSyn">string handle=simIM.merge(string[] handles)<br/>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLParam">Lua parameters</td>
+<td class="apiTableRightLParam"><div>
+<strong>handles</strong> (table of string): handles to individual channel images</div></td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLRet">Lua return values</td>
+<td class="apiTableRightLRet"><div>
+<strong>handle</strong> (string): handle to merged image</div></td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftPSyn">Python synopsis</td>
+<td class="apiTableRightPSyn">string handle=simIM.merge(list handles)<br/>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+                                                See also
+                                            </td>
+<td class="apiTableRightDescr"></td>
+</tr>
+</tbody></table>
+<br/><br/>
+<a id="mixChannels" name="mixChannels"></a>simIM.mixChannels
+<table class="apiTable">
+<tbody><tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+                                                    Description
+                                                </td>
+<td class="apiTableRightDescr">Mix many single channel images into many multichannel images.</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLSyn">Lua synopsis</td>
+<td class="apiTableRightLSyn">simIM.mixChannels(string[] inputHandles, string[] outputHandles, int[] fromTo)<br/>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLParam">Lua parameters</td>
+<td class="apiTableRightLParam">
+<div>
+<strong>inputHandles</strong> (table of string): handles to input images</div>
+<div>
+<strong>outputHandles</strong> (table of string): handles to output images</div>
+<div>
+<strong>fromTo</strong> (table of int): array of index pairs, i.e. {src1,dst1,src2,dst2,...,srcN,dstN}. see <a href="http://docs.opencv.org/2.4/modules/core/doc/operations_on_arrays.htmll#void%20mixChannels(const%20Mat*%20src,%20size_t%20nsrcs,%20Mat*%20dst,%20size_t%20ndsts,%20const%20int*%20fromTo,%20size_t%20npairs)">here</a> for details</div>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLRet">Lua return values</td>
+<td class="apiTableRightLRet">-</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftPSyn">Python synopsis</td>
+<td class="apiTableRightPSyn">simIM.mixChannels(list inputHandles, list outputHandles, list fromTo)<br/>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+                                                See also
+                                            </td>
+<td class="apiTableRightDescr"></td>
+</tr>
+</tbody></table>
+<br/><br/>
+<a id="multiply" name="multiply"></a>simIM.multiply
+<table class="apiTable">
+<tbody><tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+                                                    Description
+                                                </td>
+<td class="apiTableRightDescr">Calculates the per-element product of two arrays.</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLSyn">Lua synopsis</td>
+<td class="apiTableRightLSyn">string handle=simIM.multiply(string handle1, string handle2, bool inPlace=false)<br/>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLParam">Lua parameters</td>
+<td class="apiTableRightLParam">
+<div>
+<strong>handle1</strong> (string): handle to first image</div>
+<div>
+<strong>handle2</strong> (string): handle to second image</div>
+<div>
+<strong>inPlace</strong> (bool, default: false): if true, the original 
+immage will be converted in place. otherwise, the original image will 
+not be modified and a new image is returned.</div>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLRet">Lua return values</td>
+<td class="apiTableRightLRet"><div>
+<strong>handle</strong> (string): handle of resulting image</div></td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftPSyn">Python synopsis</td>
+<td class="apiTableRightPSyn">string handle=simIM.multiply(string handle1, string handle2, bool inPlace=false)<br/>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+                                                See also
+                                            </td>
+<td class="apiTableRightDescr"></td>
+</tr>
+</tbody></table>
+<br/><br/>
+<a id="openVideoCapture" name="openVideoCapture"></a>simIM.openVideoCapture
+<table class="apiTable">
+<tbody><tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+                                                    Description
+                                                </td>
+<td class="apiTableRightDescr">Open video capture device.</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLSyn">Lua synopsis</td>
+<td class="apiTableRightLSyn">simIM.openVideoCapture(int deviceIndex)<br/>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLParam">Lua parameters</td>
+<td class="apiTableRightLParam"><div>
+<strong>deviceIndex</strong> (int): device index (0 based)</div></td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLRet">Lua return values</td>
+<td class="apiTableRightLRet">-</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftPSyn">Python synopsis</td>
+<td class="apiTableRightPSyn">simIM.openVideoCapture(int deviceIndex)<br/>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+                                                See also
+                                            </td>
+<td class="apiTableRightDescr"></td>
+</tr>
+</tbody></table>
+<br/><br/>
+<a id="phase" name="phase"></a>simIM.phase
+<table class="apiTable">
+<tbody><tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+                                                    Description
+                                                </td>
+<td class="apiTableRightDescr">Calculates the rotation angle of 2D vectors, i.e. DST(i) = atan2(SRC2(i), SRC1(i)).</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLSyn">Lua synopsis</td>
+<td class="apiTableRightLSyn">string handle=simIM.phase(string handle1, string handle2, bool angleInDegrees=false)<br/>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLParam">Lua parameters</td>
+<td class="apiTableRightLParam">
+<div>
+<strong>handle1</strong> (string): handle to first image</div>
+<div>
+<strong>handle2</strong> (string): handle to second image</div>
+<div>
+<strong>angleInDegrees</strong> (bool, default: false): when true, the function calculates the angle in degrees, otherwise, they are measured in radians</div>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLRet">Lua return values</td>
+<td class="apiTableRightLRet"><div>
+<strong>handle</strong> (string): handle of resulting image</div></td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftPSyn">Python synopsis</td>
+<td class="apiTableRightPSyn">string handle=simIM.phase(string handle1, string handle2, bool angleInDegrees=false)<br/>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+                                                See also
+                                            </td>
+<td class="apiTableRightDescr"></td>
+</tr>
+</tbody></table>
+<br/><br/>
+<a id="polar2cart" name="polar2cart"></a>simIM.polar2cart
+<table class="apiTable">
+<tbody><tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+                                                    Description
+                                                </td>
+<td class="apiTableRightDescr">Calculates x and y coordinates of 2D vectors from their magnitude and angle.</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLSyn">Lua synopsis</td>
+<td class="apiTableRightLSyn">string handle1, string handle2=simIM.polar2cart(string handle1, string handle2, bool angleInDegrees=false)<br/>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLParam">Lua parameters</td>
+<td class="apiTableRightLParam">
+<div>
+<strong>handle1</strong> (string): handle to first image (magnitude)</div>
+<div>
+<strong>handle2</strong> (string): handle to second image (angle)</div>
+<div>
+<strong>angleInDegrees</strong> (bool, default: false): when true, the function calculates the angle in degrees, otherwise, they are measured in radians</div>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLRet">Lua return values</td>
+<td class="apiTableRightLRet">
+<div>
+<strong>handle1</strong> (string): handle of resulting image (x)</div>
+<div>
+<strong>handle2</strong> (string): handle of resulting image (y)</div>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftPSyn">Python synopsis</td>
+<td class="apiTableRightPSyn">string handle1, string handle2=simIM.polar2cart(string handle1, string handle2, bool angleInDegrees=false)<br/>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+                                                See also
+                                            </td>
+<td class="apiTableRightDescr"></td>
+</tr>
+</tbody></table>
+<br/><br/>
+<a id="polylines" name="polylines"></a>simIM.polylines
+<table class="apiTable">
+<tbody><tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+                                                    Description
+                                                </td>
+<td class="apiTableRightDescr">Draw several polygonal curves.</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLSyn">Lua synopsis</td>
+<td class="apiTableRightLSyn">simIM.polylines(string handle, int[] 
+points, int[] numPoints, bool isClosed, int[3] color, int thickness=1, 
+int type=8, int shift=0)<br/>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLParam">Lua parameters</td>
+<td class="apiTableRightLParam">
+<div>
+<strong>handle</strong> (string): handle to image</div>
+<div>
+<strong>points</strong> (table of int): curve points, i.e. {c1x1, c1y1, 
+c1x2, c1y2, ..., c1xN1, c1yN1, c2x1, c2y1, ..., c2xN2, c2yN2, ..., 
+cMxNM, cMyNM}</div>
+<div>
+<strong>numPoints</strong> (table of int): lengths of curves, i.e. {N1, 
+N2, ..., NM}. the sum of numPoints items must be equal to the number of 
+x,y pairs in points.</div>
+<div>
+<strong>isClosed</strong> (bool): Flag indicating whether the drawn 
+polylines are closed or not. If they are closed, the function draws a 
+line from the last vertex of each curve to its first vertex.</div>
+<div>
+<strong>color</strong> (table of int, size 3): color (red, green, blue values in range 0..255)</div>
+<div>
+<strong>thickness</strong> (int, default: 1): line thickness</div>
+<div>
+<strong>type</strong> (int, default: 8): type of the line (8 for 8-connected line, 4 for 4-connected line, or 16 for antialiased line)</div>
+<div>
+<strong>shift</strong> (int, default: 0): number of fractional bits in the point coordinates</div>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLRet">Lua return values</td>
+<td class="apiTableRightLRet">-</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftPSyn">Python synopsis</td>
+<td class="apiTableRightPSyn">simIM.polylines(string handle, list points, list numPoints, bool isClosed, list color, int thickness=1, int type=8, int shift=0)<br/>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+                                                See also
+                                            </td>
+<td class="apiTableRightDescr"></td>
+</tr>
+</tbody></table>
+<br/><br/>
+<a id="pow" name="pow"></a>simIM.pow
+<table class="apiTable">
+<tbody><tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+                                                    Description
+                                                </td>
+<td class="apiTableRightDescr">Raises every array element to a power.</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLSyn">Lua synopsis</td>
+<td class="apiTableRightLSyn">string handle=simIM.pow(string handle, float power, bool inPlace=false)<br/>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLParam">Lua parameters</td>
+<td class="apiTableRightLParam">
+<div>
+<strong>handle</strong> (string): handle to image</div>
+<div>
+<strong>power</strong> (float): handle to image</div>
+<div>
+<strong>inPlace</strong> (bool, default: false): if true, the original 
+immage will be converted in place. otherwise, the original image will 
+not be modified and a new image is returned.</div>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLRet">Lua return values</td>
+<td class="apiTableRightLRet"><div>
+<strong>handle</strong> (string): handle of resulting image</div></td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftPSyn">Python synopsis</td>
+<td class="apiTableRightPSyn">string handle=simIM.pow(string handle, float power, bool inPlace=false)<br/>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+                                                See also
+                                            </td>
+<td class="apiTableRightDescr"></td>
+</tr>
+</tbody></table>
+<br/><br/>
+<a id="read" name="read"></a>simIM.read
+<table class="apiTable">
+<tbody><tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+                                                    Description
+                                                </td>
+<td class="apiTableRightDescr">Read an image from the specified file.</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLSyn">Lua synopsis</td>
+<td class="apiTableRightLSyn">string handle=simIM.read(string filename)<br/>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLParam">Lua parameters</td>
+<td class="apiTableRightLParam"><div>
+<strong>filename</strong> (string): file name</div></td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLRet">Lua return values</td>
+<td class="apiTableRightLRet"><div>
+<strong>handle</strong> (string): handle to image</div></td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftPSyn">Python synopsis</td>
+<td class="apiTableRightPSyn">string handle=simIM.read(string filename)<br/>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+                                                See also
+                                            </td>
+<td class="apiTableRightDescr"></td>
+</tr>
+</tbody></table>
+<br/><br/>
+<a id="readFromVideoCapture" name="readFromVideoCapture"></a>simIM.readFromVideoCapture
+<table class="apiTable">
+<tbody><tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+                                                    Description
+                                                </td>
+<td class="apiTableRightDescr">Read frame from video capture device.</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLSyn">Lua synopsis</td>
+<td class="apiTableRightLSyn">string handle=simIM.readFromVideoCapture(int deviceIndex, string handle="")<br/>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLParam">Lua parameters</td>
+<td class="apiTableRightLParam">
+<div>
+<strong>deviceIndex</strong> (int): device index (0 based)</div>
+<div>
+<strong>handle</strong> (string, default: ""): handle to existing image, or "" to create and return a new image</div>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLRet">Lua return values</td>
+<td class="apiTableRightLRet"><div>
+<strong>handle</strong> (string): handle to new image (or existing image if given)</div></td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftPSyn">Python synopsis</td>
+<td class="apiTableRightPSyn">string handle=simIM.readFromVideoCapture(int deviceIndex, string handle="")<br/>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+                                                See also
+                                            </td>
+<td class="apiTableRightDescr"></td>
+</tr>
+</tbody></table>
+<br/><br/>
+<a id="readFromVisionSensor" name="readFromVisionSensor"></a>simIM.readFromVisionSensor
+<table class="apiTable">
+<tbody><tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+                                                    Description
+                                                </td>
+<td class="apiTableRightDescr">Read image from vision sensor.</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLSyn">Lua synopsis</td>
+<td class="apiTableRightLSyn">string handle=simIM.readFromVisionSensor(int sensorHandle, string handle="")<br/>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLParam">Lua parameters</td>
+<td class="apiTableRightLParam">
+<div>
+<strong>sensorHandle</strong> (int): handle to vision sensor</div>
+<div>
+<strong>handle</strong> (string, default: ""): handle to existing image, or "" to create and return a new image</div>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLRet">Lua return values</td>
+<td class="apiTableRightLRet"><div>
+<strong>handle</strong> (string): handle to new image (or existing image if given)</div></td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftPSyn">Python synopsis</td>
+<td class="apiTableRightPSyn">string handle=simIM.readFromVisionSensor(int sensorHandle, string handle="")<br/>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+                                                See also
+                                            </td>
+<td class="apiTableRightDescr"></td>
+</tr>
+</tbody></table>
+<br/><br/>
+<a id="rectangle" name="rectangle"></a>simIM.rectangle
+<table class="apiTable">
+<tbody><tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+                                                    Description
+                                                </td>
+<td class="apiTableRightDescr">Draw a rectangle with corners (x1,y1) and (x2,y2) points in the image.</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLSyn">Lua synopsis</td>
+<td class="apiTableRightLSyn">simIM.rectangle(string handle, int[2] p1, int[2] p2, int[3] color, int thickness=1, int type=8, int shift=0)<br/>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLParam">Lua parameters</td>
+<td class="apiTableRightLParam">
+<div>
+<strong>handle</strong> (string): handle to image</div>
+<div>
+<strong>p1</strong> (table of int, size 2): x, y coordinates of top-left corner</div>
+<div>
+<strong>p2</strong> (table of int, size 2): x, y coordinates of bottom-right corner</div>
+<div>
+<strong>color</strong> (table of int, size 3): color (red, green, blue values in range 0..255)</div>
+<div>
+<strong>thickness</strong> (int, default: 1): line thickness (negative values means rect is filled)</div>
+<div>
+<strong>type</strong> (int, default: 8): type of the line (8 for 8-connected line, 4 for 4-connected line, or 16 for antialiased line)</div>
+<div>
+<strong>shift</strong> (int, default: 0): number of fractional bits in the point coordinates</div>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLRet">Lua return values</td>
+<td class="apiTableRightLRet">-</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftPSyn">Python synopsis</td>
+<td class="apiTableRightPSyn">simIM.rectangle(string handle, list p1, list p2, list color, int thickness=1, int type=8, int shift=0)<br/>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+                                                See also
+                                            </td>
+<td class="apiTableRightDescr"></td>
+</tr>
+</tbody></table>
+<br/><br/>
+<a id="reduce" name="reduce"></a>simIM.reduce
+<table class="apiTable">
+<tbody><tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+                                                    Description
+                                                </td>
+<td class="apiTableRightDescr">Reduces a matrix to a vector.</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLSyn">Lua synopsis</td>
+<td class="apiTableRightLSyn">string handle=simIM.reduce(string handle, int dim, int op, bool inPlace=false)<br/>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLParam">Lua parameters</td>
+<td class="apiTableRightLParam">
+<div>
+<strong>handle</strong> (string): handle to image</div>
+<div>
+<strong>dim</strong> (int): dimension index along which the matrix is 
+reduced. 0 means that the matrix is reduced to a single row. 1 means 
+that the matrix is reduced to a single column.</div>
+<div>
+<strong>op</strong> (int): reduction operation (see <a href="#enum:reduceOp">simIM.reduceOp</a>)</div>
+<div>
+<strong>inPlace</strong> (bool, default: false): if true, the original 
+immage will be converted in place. otherwise, the original image will 
+not be modified and a new image is returned.</div>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLRet">Lua return values</td>
+<td class="apiTableRightLRet"><div>
+<strong>handle</strong> (string): handle of resulting image</div></td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftPSyn">Python synopsis</td>
+<td class="apiTableRightPSyn">string handle=simIM.reduce(string handle, int dim, int op, bool inPlace=false)<br/>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+                                                See also
+                                            </td>
+<td class="apiTableRightDescr"></td>
+</tr>
+</tbody></table>
+<br/><br/>
+<a id="repeat" name="repeat"></a>simIM.repeat
+<table class="apiTable">
+<tbody><tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+                                                    Description
+                                                </td>
+<td class="apiTableRightDescr">Fills the output array with repeated copies of the input array.</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLSyn">Lua synopsis</td>
+<td class="apiTableRightLSyn">string handle=simIM.repeat(string handle, int nx, int ny, bool inPlace=false)<br/>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLParam">Lua parameters</td>
+<td class="apiTableRightLParam">
+<div>
+<strong>handle</strong> (string): handle to image</div>
+<div>
+<strong>nx</strong> (int): how many times the src is repeated along the horizontal axis</div>
+<div>
+<strong>ny</strong> (int): how many times the src is repeated along the vertical axis</div>
+<div>
+<strong>inPlace</strong> (bool, default: false): if true, the original 
+immage will be converted in place. otherwise, the original image will 
+not be modified and a new image is returned.</div>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLRet">Lua return values</td>
+<td class="apiTableRightLRet"><div>
+<strong>handle</strong> (string): handle of resulting image</div></td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftPSyn">Python synopsis</td>
+<td class="apiTableRightPSyn">string handle=simIM.repeat(string handle, int nx, int ny, bool inPlace=false)<br/>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+                                                See also
+                                            </td>
+<td class="apiTableRightDescr"></td>
+</tr>
+</tbody></table>
+<br/><br/>
+<a id="resize" name="resize"></a>simIM.resize
+<table class="apiTable">
+<tbody><tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+                                                    Description
+                                                </td>
+<td class="apiTableRightDescr">Resize an image and return the resized image (original image is not modified).</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLSyn">Lua synopsis</td>
+<td class="apiTableRightLSyn">string handle=simIM.resize(string handle, int width, int height, int interpolation=sim_im_interp_linear, bool inPlace=false)<br/>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLParam">Lua parameters</td>
+<td class="apiTableRightLParam">
+<div>
+<strong>handle</strong> (string): handle to image</div>
+<div>
+<strong>width</strong> (int): width of the new image</div>
+<div>
+<strong>height</strong> (int): height of the new image</div>
+<div>
+<strong>interpolation</strong> (int, default: sim_im_interp_linear): type of interpolation (see <a href="#enum:interp">simIM.interp</a>)</div>
+<div>
+<strong>inPlace</strong> (bool, default: false): if true, the original 
+immage will be converted in place. otherwise, the original image will 
+not be modified and a new image is returned.</div>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLRet">Lua return values</td>
+<td class="apiTableRightLRet"><div>
+<strong>handle</strong> (string): handle to resized image</div></td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftPSyn">Python synopsis</td>
+<td class="apiTableRightPSyn">string handle=simIM.resize(string handle, int width, int height, int interpolation=sim_im_interp_linear, bool inPlace=false)<br/>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+                                                See also
+                                            </td>
+<td class="apiTableRightDescr"></td>
+</tr>
+</tbody></table>
+<br/><br/>
+<a id="rgb2gray" name="rgb2gray"></a>simIM.rgb2gray
+<table class="apiTable">
+<tbody><tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+                                                    Description
+                                                </td>
+<td class="apiTableRightDescr">Convert the specified RGB image to gray.</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLSyn">Lua synopsis</td>
+<td class="apiTableRightLSyn">string handle=simIM.rgb2gray(string handle, bool inPlace=false)<br/>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLParam">Lua parameters</td>
+<td class="apiTableRightLParam">
+<div>
+<strong>handle</strong> (string): handle to image</div>
+<div>
+<strong>inPlace</strong> (bool, default: false): if true, the original 
+immage will be converted in place. otherwise, the original image will 
+not be modified and a new image is returned.</div>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLRet">Lua return values</td>
+<td class="apiTableRightLRet"><div>
+<strong>handle</strong> (string): handle to the converted image</div></td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftPSyn">Python synopsis</td>
+<td class="apiTableRightPSyn">string handle=simIM.rgb2gray(string handle, bool inPlace=false)<br/>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+                                                See also
+                                            </td>
+<td class="apiTableRightDescr"></td>
+</tr>
+</tbody></table>
+<br/><br/>
+<a id="rgb2hls" name="rgb2hls"></a>simIM.rgb2hls
+<table class="apiTable">
+<tbody><tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+                                                    Description
+                                                </td>
+<td class="apiTableRightDescr">Convert the specified RGB image to HLS.</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLSyn">Lua synopsis</td>
+<td class="apiTableRightLSyn">string handle=simIM.rgb2hls(string handle, bool inPlace=false)<br/>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLParam">Lua parameters</td>
+<td class="apiTableRightLParam">
+<div>
+<strong>handle</strong> (string): handle to image</div>
+<div>
+<strong>inPlace</strong> (bool, default: false): if true, the original 
+immage will be converted in place. otherwise, the original image will 
+not be modified and a new image is returned.</div>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLRet">Lua return values</td>
+<td class="apiTableRightLRet"><div>
+<strong>handle</strong> (string): handle to the converted image</div></td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftPSyn">Python synopsis</td>
+<td class="apiTableRightPSyn">string handle=simIM.rgb2hls(string handle, bool inPlace=false)<br/>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+                                                See also
+                                            </td>
+<td class="apiTableRightDescr"></td>
+</tr>
+</tbody></table>
+<br/><br/>
+<a id="rgb2hsv" name="rgb2hsv"></a>simIM.rgb2hsv
+<table class="apiTable">
+<tbody><tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+                                                    Description
+                                                </td>
+<td class="apiTableRightDescr">Convert the specified RGB image to HSV.</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLSyn">Lua synopsis</td>
+<td class="apiTableRightLSyn">string handle=simIM.rgb2hsv(string handle, bool inPlace=false)<br/>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLParam">Lua parameters</td>
+<td class="apiTableRightLParam">
+<div>
+<strong>handle</strong> (string): handle to image</div>
+<div>
+<strong>inPlace</strong> (bool, default: false): if true, the original 
+immage will be converted in place. otherwise, the original image will 
+not be modified and a new image is returned.</div>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLRet">Lua return values</td>
+<td class="apiTableRightLRet"><div>
+<strong>handle</strong> (string): handle to the converted image</div></td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftPSyn">Python synopsis</td>
+<td class="apiTableRightPSyn">string handle=simIM.rgb2hsv(string handle, bool inPlace=false)<br/>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+                                                See also
+                                            </td>
+<td class="apiTableRightDescr"></td>
+</tr>
+</tbody></table>
+<br/><br/>
+<a id="scaleAdd" name="scaleAdd"></a>simIM.scaleAdd
+<table class="apiTable">
+<tbody><tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+                                                    Description
+                                                </td>
+<td class="apiTableRightDescr">Calculates the sum of a scaled array and another array, i.e. DST(i) = SRC1(i)*scale + SRC2(i).</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLSyn">Lua synopsis</td>
+<td class="apiTableRightLSyn">string handle=simIM.scaleAdd(string handle1, string handle2, float alpha, bool inPlace=false)<br/>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLParam">Lua parameters</td>
+<td class="apiTableRightLParam">
+<div>
+<strong>handle1</strong> (string): handle to first image</div>
+<div>
+<strong>handle2</strong> (string): handle to second image</div>
+<div>
+<strong>alpha</strong> (float): scale coefficient</div>
+<div>
+<strong>inPlace</strong> (bool, default: false): if true, the original 
+immage will be converted in place. otherwise, the original image will 
+not be modified and a new image is returned.</div>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLRet">Lua return values</td>
+<td class="apiTableRightLRet"><div>
+<strong>handle</strong> (string): handle of resulting image</div></td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftPSyn">Python synopsis</td>
+<td class="apiTableRightPSyn">string handle=simIM.scaleAdd(string handle1, string handle2, float alpha, bool inPlace=false)<br/>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+                                                See also
+                                            </td>
+<td class="apiTableRightDescr"></td>
+</tr>
+</tbody></table>
+<br/><br/>
+<a id="set" name="set"></a>simIM.set
+<table class="apiTable">
+<tbody><tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+                                                    Description
+                                                </td>
+<td class="apiTableRightDescr">Set pixel at specified coordinate.</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLSyn">Lua synopsis</td>
+<td class="apiTableRightLSyn">simIM.set(string handle, int[2] coord, float[] value)<br/>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLParam">Lua parameters</td>
+<td class="apiTableRightLParam">
+<div>
+<strong>handle</strong> (string): handle to image</div>
+<div>
+<strong>coord</strong> (table of int, size 2): x, y coordinates</div>
+<div>
+<strong>value</strong> (table of float): value</div>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLRet">Lua return values</td>
+<td class="apiTableRightLRet">-</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftPSyn">Python synopsis</td>
+<td class="apiTableRightPSyn">simIM.set(string handle, list coord, list value)<br/>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+                                                See also
+                                            </td>
+<td class="apiTableRightDescr"></td>
+</tr>
+</tbody></table>
+<br/><br/>
+<a id="size" name="size"></a>simIM.size
+<table class="apiTable">
+<tbody><tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+                                                    Description
+                                                </td>
+<td class="apiTableRightDescr">Get the size of an image.</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLSyn">Lua synopsis</td>
+<td class="apiTableRightLSyn">int[2] size=simIM.size(string handle)<br/>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLParam">Lua parameters</td>
+<td class="apiTableRightLParam"><div>
+<strong>handle</strong> (string): handle to image</div></td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLRet">Lua return values</td>
+<td class="apiTableRightLRet"><div>
+<strong>size</strong> (table of int, size 2): size (width, height) of the image</div></td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftPSyn">Python synopsis</td>
+<td class="apiTableRightPSyn">list size=simIM.size(string handle)<br/>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+                                                See also
+                                            </td>
+<td class="apiTableRightDescr"></td>
+</tr>
+</tbody></table>
+<br/><br/>
+<a id="split" name="split"></a>simIM.split
+<table class="apiTable">
+<tbody><tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+                                                    Description
+                                                </td>
+<td class="apiTableRightDescr">Split a multichannel image.</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLSyn">Lua synopsis</td>
+<td class="apiTableRightLSyn">string[] handles=simIM.split(string handle)<br/>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLParam">Lua parameters</td>
+<td class="apiTableRightLParam"><div>
+<strong>handle</strong> (string): handle to image</div></td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLRet">Lua return values</td>
+<td class="apiTableRightLRet"><div>
+<strong>handles</strong> (table of string): handles to individual channel images</div></td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftPSyn">Python synopsis</td>
+<td class="apiTableRightPSyn">list handles=simIM.split(string handle)<br/>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+                                                See also
+                                            </td>
+<td class="apiTableRightDescr"></td>
+</tr>
+</tbody></table>
+<br/><br/>
+<a id="sqrt" name="sqrt"></a>simIM.sqrt
+<table class="apiTable">
+<tbody><tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+                                                    Description
+                                                </td>
+<td class="apiTableRightDescr">Calculates the square root of every array element.</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLSyn">Lua synopsis</td>
+<td class="apiTableRightLSyn">string handle=simIM.sqrt(string handle, bool inPlace=false)<br/>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLParam">Lua parameters</td>
+<td class="apiTableRightLParam">
+<div>
+<strong>handle</strong> (string): handle to image</div>
+<div>
+<strong>inPlace</strong> (bool, default: false): if true, the original 
+immage will be converted in place. otherwise, the original image will 
+not be modified and a new image is returned.</div>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLRet">Lua return values</td>
+<td class="apiTableRightLRet"><div>
+<strong>handle</strong> (string): handle of resulting image</div></td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftPSyn">Python synopsis</td>
+<td class="apiTableRightPSyn">string handle=simIM.sqrt(string handle, bool inPlace=false)<br/>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+                                                See also
+                                            </td>
+<td class="apiTableRightDescr"></td>
+</tr>
+</tbody></table>
+<br/><br/>
+<a id="subtract" name="subtract"></a>simIM.subtract
+<table class="apiTable">
+<tbody><tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+                                                    Description
+                                                </td>
+<td class="apiTableRightDescr">Calculates the per-element difference of two arrays.</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLSyn">Lua synopsis</td>
+<td class="apiTableRightLSyn">string handle=simIM.subtract(string handle1, string handle2, bool inPlace=false)<br/>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLParam">Lua parameters</td>
+<td class="apiTableRightLParam">
+<div>
+<strong>handle1</strong> (string): handle to first image</div>
+<div>
+<strong>handle2</strong> (string): handle to second image</div>
+<div>
+<strong>inPlace</strong> (bool, default: false): if true, the original 
+immage will be converted in place. otherwise, the original image will 
+not be modified and a new image is returned.</div>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLRet">Lua return values</td>
+<td class="apiTableRightLRet"><div>
+<strong>handle</strong> (string): handle of resulting image</div></td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftPSyn">Python synopsis</td>
+<td class="apiTableRightPSyn">string handle=simIM.subtract(string handle1, string handle2, bool inPlace=false)<br/>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+                                                See also
+                                            </td>
+<td class="apiTableRightDescr"></td>
+</tr>
+</tbody></table>
+<br/><br/>
+<a id="subtractK" name="subtractK"></a>simIM.subtractK
+<table class="apiTable">
+<tbody><tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+                                                    Description
+                                                </td>
+<td class="apiTableRightDescr">Calculates the per-element difference of an array and a scalar.</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLSyn">Lua synopsis</td>
+<td class="apiTableRightLSyn">string handle=simIM.subtractK(string handle, float[] k, bool inPlace=false)<br/>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLParam">Lua parameters</td>
+<td class="apiTableRightLParam">
+<div>
+<strong>handle</strong> (string): handle to image</div>
+<div>
+<strong>k</strong> (table of float): scalar</div>
+<div>
+<strong>inPlace</strong> (bool, default: false): if true, the original 
+immage will be converted in place. otherwise, the original image will 
+not be modified and a new image is returned.</div>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLRet">Lua return values</td>
+<td class="apiTableRightLRet"><div>
+<strong>handle</strong> (string): handle of resulting image</div></td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftPSyn">Python synopsis</td>
+<td class="apiTableRightPSyn">string handle=simIM.subtractK(string handle, list k, bool inPlace=false)<br/>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+                                                See also
+                                            </td>
+<td class="apiTableRightDescr"></td>
+</tr>
+</tbody></table>
+<br/><br/>
+<a id="text" name="text"></a>simIM.text
+<table class="apiTable">
+<tbody><tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+                                                    Description
+                                                </td>
+<td class="apiTableRightDescr">Drawn a text string.</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLSyn">Lua synopsis</td>
+<td class="apiTableRightLSyn">simIM.text(string handle, string str, 
+int[2] pos, int fontFace=sim_im_fontface_simplex, bool italic=false, 
+float fontScale=1.0, int[3] color={255,255,255}, int thickness=1, int 
+type=8, bool bottomLeftOrigin=false)<br/>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLParam">Lua parameters</td>
+<td class="apiTableRightLParam">
+<div>
+<strong>handle</strong> (string): handle to image</div>
+<div>
+<strong>str</strong> (string): text string to be drawn</div>
+<div>
+<strong>pos</strong> (table of int, size 2): x, y coordinates of the origin (bottom-left corner of the string)</div>
+<div>
+<strong>fontFace</strong> (int, default: sim_im_fontface_simplex): font face (see <a href="#enum:fontFace">simIM.fontFace</a>)</div>
+<div>
+<strong>italic</strong> (bool, default: false): if true text will have italic style</div>
+<div>
+<strong>fontScale</strong> (float, default: 1.0): font scale</div>
+<div>
+<strong>color</strong> (table of int, size 3, default: {255,255,255}): color (red, green, blue values in range 0..255)</div>
+<div>
+<strong>thickness</strong> (int, default: 1): thickness used to draw a text</div>
+<div>
+<strong>type</strong> (int, default: 8): type of the line (8 for 8-connected line, 4 for 4-connected line, or 16 for antialiased line)</div>
+<div>
+<strong>bottomLeftOrigin</strong> (bool, default: false): When true, the image data origin is at the bottom-left corner. Otherwise, it is at the top-left corner</div>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLRet">Lua return values</td>
+<td class="apiTableRightLRet">-</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftPSyn">Python synopsis</td>
+<td class="apiTableRightPSyn">simIM.text(string handle, string str, list
+ pos, int fontFace=sim_im_fontface_simplex, bool italic=false, float 
+fontScale=1.0, list color={255,255,255}, int thickness=1, int type=8, 
+bool bottomLeftOrigin=false)<br/>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+                                                See also
+                                            </td>
+<td class="apiTableRightDescr"></td>
+</tr>
+</tbody></table>
+<br/><br/>
+<a id="textSize" name="textSize"></a>simIM.textSize
+<table class="apiTable">
+<tbody><tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+                                                    Description
+                                                </td>
+<td class="apiTableRightDescr">Calculates the width and height of a text string.</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLSyn">Lua synopsis</td>
+<td class="apiTableRightLSyn">int width, int height, int 
+baseline=simIM.textSize(string str, int 
+fontFace=sim_im_fontface_simplex, bool italic=false, float 
+fontScale=1.0, int thickness=1)<br/>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLParam">Lua parameters</td>
+<td class="apiTableRightLParam">
+<div>
+<strong>str</strong> (string): text string to be drawn</div>
+<div>
+<strong>fontFace</strong> (int, default: sim_im_fontface_simplex): font face (see <a href="#enum:fontFace">simIM.fontFace</a>)</div>
+<div>
+<strong>italic</strong> (bool, default: false): if true text will have italic style</div>
+<div>
+<strong>fontScale</strong> (float, default: 1.0): font scale</div>
+<div>
+<strong>thickness</strong> (int, default: 1): thickness used to draw a text</div>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLRet">Lua return values</td>
+<td class="apiTableRightLRet">
+<div>
+<strong>width</strong> (int): width of the text</div>
+<div>
+<strong>height</strong> (int): height of the text</div>
+<div>
+<strong>baseline</strong> (int): y-coordinate of the baseline relative to the bottom-most text point</div>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftPSyn">Python synopsis</td>
+<td class="apiTableRightPSyn">int width, int height, int 
+baseline=simIM.textSize(string str, int 
+fontFace=sim_im_fontface_simplex, bool italic=false, float 
+fontScale=1.0, int thickness=1)<br/>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+                                                See also
+                                            </td>
+<td class="apiTableRightDescr"></td>
+</tr>
+</tbody></table>
+<br/><br/>
+<a id="write" name="write"></a>simIM.write
+<table class="apiTable">
+<tbody><tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+                                                    Description
+                                                </td>
+<td class="apiTableRightDescr">Write the image with given handle to a file.</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLSyn">Lua synopsis</td>
+<td class="apiTableRightLSyn">simIM.write(string handle, string filename)<br/>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLParam">Lua parameters</td>
+<td class="apiTableRightLParam">
+<div>
+<strong>handle</strong> (string): handle to image</div>
+<div>
+<strong>filename</strong> (string): file name</div>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLRet">Lua return values</td>
+<td class="apiTableRightLRet">-</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftPSyn">Python synopsis</td>
+<td class="apiTableRightPSyn">simIM.write(string handle, string filename)<br/>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+                                                See also
+                                            </td>
+<td class="apiTableRightDescr"></td>
+</tr>
+</tbody></table>
+<br/><br/>
+<a id="writeToVisionSensor" name="writeToVisionSensor"></a>simIM.writeToVisionSensor
+<table class="apiTable">
+<tbody><tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+                                                    Description
+                                                </td>
+<td class="apiTableRightDescr">Write image to vision sensor. Make sure the vision sensor is flagged as <em>external input</em>.</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLSyn">Lua synopsis</td>
+<td class="apiTableRightLSyn">simIM.writeToVisionSensor(string handle, int sensorHandle)<br/>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLParam">Lua parameters</td>
+<td class="apiTableRightLParam">
+<div>
+<strong>handle</strong> (string): handle to image</div>
+<div>
+<strong>sensorHandle</strong> (int): handle to vision sensor</div>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftLRet">Lua return values</td>
+<td class="apiTableRightLRet">-</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftPSyn">Python synopsis</td>
+<td class="apiTableRightPSyn">simIM.writeToVisionSensor(string handle, int sensorHandle)<br/>
+</td>
+</tr>
+<tr class="apiTableTr">
+<td class="apiTableLeftDescr">
+                                                See also
+                                            </td>
+<td class="apiTableRightDescr"></td>
+</tr>
+</tbody></table>
+<br/>
+</td></tr>
+<tr><td class="section" id="enums" style="display: none;">
+<br/><br/><h4>Constants</h4>
+<p>Constants used in the various functions. Refer to each constant using <i>enumName.constantName</i>, i.e. <b>simUI.curve_type.xy</b> for <b>xy</b> constant in <b>simUI.curve_type</b> enum.</p>
+<br/>
+<a id="enum:format" name="enum:format"></a>simIM.format
+<table class="apiConstantsTable"><tbody><tr><td>
+<div>
+<strong>_8UC1</strong>: 1 channel, 8 bit unsigned int</div>
+<div>
+<strong>_8UC3</strong>: 3 channels, 8 bit unsigned int</div>
+<div>
+<strong>_8UC4</strong>: 4 channels, 8 bit unsigned int</div>
+<div>
+<strong>_32FC1</strong>: 1 channel, 32 bit float</div>
+<div>
+<strong>_32FC3</strong>: 3 channels, 32 bit float</div>
+<div>
+<strong>_32FC4</strong>: 4 channels, 32 bit float</div>
+</td></tr></tbody></table>
+<br/>
+<a id="enum:interp" name="enum:interp"></a>simIM.interp
+<table class="apiConstantsTable"><tbody><tr><td>
+<div>
+<strong>nearest</strong>: nearest-neighbor interpolation</div>
+<div>
+<strong>linear</strong>: bilinear interpolation</div>
+<div>
+<strong>area</strong>: resampling using pixel area relation (best for shrinking)</div>
+<div>
+<strong>cubic</strong>: bicubic interpolation over 4x4 pixel neighborhood</div>
+<div>
+<strong>lanczos4</strong>: Lanczos interpolation over 8x8 pixel neighborhood</div>
+</td></tr></tbody></table>
+<br/>
+<a id="enum:fontFace" name="enum:fontFace"></a>simIM.fontFace
+<table class="apiConstantsTable"><tbody><tr><td>
+<div><strong>simplex</strong></div>
+<div><strong>plain</strong></div>
+<div><strong>duplex</strong></div>
+<div><strong>complex</strong></div>
+<div><strong>triplex</strong></div>
+<div><strong>complex_small</strong></div>
+<div><strong>script_simplex</strong></div>
+<div><strong>script_complex</strong></div>
+</td></tr></tbody></table>
+<br/>
+<a id="enum:cmpOp" name="enum:cmpOp"></a>simIM.cmpOp
+<table class="apiConstantsTable"><tbody><tr><td>
+<div><strong>eq</strong></div>
+<div><strong>gt</strong></div>
+<div><strong>ge</strong></div>
+<div><strong>lt</strong></div>
+<div><strong>le</strong></div>
+<div><strong>ne</strong></div>
+</td></tr></tbody></table>
+<br/>
+<a id="enum:reduceOp" name="enum:reduceOp"></a>simIM.reduceOp
+<table class="apiConstantsTable"><tbody><tr><td>
+<div>
+<strong>sum</strong>: the output is the sum of all rows/columns of the matrix.</div>
+<div>
+<strong>avg</strong>: the output is the mean vector of all rows/columns of the matrix.</div>
+<div>
+<strong>max</strong>: the output is the maximum (column/row-wise) of all rows/columns of the matrix.</div>
+<div>
+<strong>min</strong>: the output is the minimum (column/row-wise) of all rows/columns of the matrix.</div>
+</td></tr></tbody></table>
+<br/>
+<a id="enum:flipOp" name="enum:flipOp"></a>simIM.flipOp
+<table class="apiConstantsTable"><tbody><tr><td>
+<div>
+<strong>x</strong>: flip around the x-axis</div>
+<div>
+<strong>y</strong>: flip around the y-axis</div>
+<div>
+<strong>both</strong>: flip around both axes</div>
+</td></tr></tbody></table>
+<br/>
+<a id="enum:dist" name="enum:dist"></a>simIM.dist
+<table class="apiConstantsTable"><tbody><tr><td>
+<div><strong>L1</strong></div>
+<div><strong>L2</strong></div>
+<div><strong>C</strong></div>
+</td></tr></tbody></table>
+<br/>
+<a id="enum:maskSize" name="enum:maskSize"></a>simIM.maskSize
+<table class="apiConstantsTable"><tbody><tr><td>
+<div><strong>_3x3</strong></div>
+<div><strong>_5x5</strong></div>
+<div><strong>_precise</strong></div>
+</td></tr></tbody></table>
+</td></tr>
+<tr><td class="section" id="structs" style="display: none;"></td></tr>
+<tr><td class="section" id="scriptFunctions" style="display: none;"></td></tr>
+</tbody></table></div>, <script type="text/javascript">
+//
+view = getParameterByName('view')
+document.getElementById('alphabetical').style.display = view == 'alphabetical' ? 'table-cell' : 'none'
+document.getElementById('commands').style.display = view == null ? 'table-cell' : 'none'
+document.getElementById('enums').style.display = view == null ? 'table-cell' : 'none'
+document.getElementById('structs').style.display = view == null ? 'table-cell' : 'none'
+document.getElementById('scriptFunctions').style.display = view == null ? 'table-cell' : 'none'
+//
+                </script>, <link href="IMPluginAPIreference_files/default.min.css" rel="stylesheet"/>, <script src="IMPluginAPIreference_files/highlight.min.js"></script>, <script type="text/javascript">
+//
+document.addEventListener('DOMContentLoaded', (event) => {
+    document.querySelectorAll('code.hljs').forEach((block) => {
+        hljs.highlightBlock(block);
+    });
+});
+//
+                </script><br />syntheticVision << <a href='syntheticVision.html'>Previous</a> <a href='simVisionAPI.html'>Next</a> >> simVisionAPI</div>
+        
+    <!-- footer -->
+      <div class="container">
+        <div class="row pt-3 mx-auto">
+            <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+        </div>
+      </div>
+    <!-- for footer -->
+    
+        </div> <!-- for site wrap -->
+            <!-- <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script> -->
+            <script src="../cmsimde/static/chimper/js/jquery-migrate-3.0.1.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery-ui.js"></script>
+            <script src="../cmsimde/static/chimper/js/popper.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/owl.carousel.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.stellar.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.countdown.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.magnific-popup.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap-datepicker.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/aos.js"></script>
+            <!--
+            <script src="../cmsimde/static/chimper/js/typed.js"></script>
+                    <script>
+                    var typed = new Typed('.typed-words', {
+                    strings: ["Web Apps"," WordPress"," Mobile Apps"],
+                    typeSpeed: 80,
+                    backSpeed: 80,
+                    backDelay: 4000,
+                    startDelay: 1000,
+                    loop: true,
+                    showCursor: true
+                    });
+                    </script>
+            -->
+            <script src="../cmsimde/static/chimper/js/main.js"></script>
+        
+<!-- 啟用 LaTeX equations 編輯 -->
+  <!-- <script>
+  MathJax = {
+    tex: {inlineMath: [['$', '$'], ['\(', '\)']]}
+  };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>-->
+    </body></html>
+        
