@@ -145,7 +145,7 @@ img.add_border {
 <table class="allEncompassingTable">
 <tr>
 <td>
-<p><a href="../index.htmll" target="_top"><img src="./../images/homeImg.png"/></a></p>
+<p><a href="../index.html" target="_top"><img src="./../images/homeImg.png"/></a></p>
 <p>The user manual is included in the downloadable CoppeliaSim packages</p>
 <h4>CoppeliaSim User Manual
 </h4>
@@ -633,7 +633,7 @@ Refer also to CoppeliaSim's overview description in other languages: <a href="ov
 <table class="allEncompassingTable">
 <tr>
 <td>
-<p><a href="../index.htmll" target="_top"><img src="./../images/homeImg.png"/></a></p>
+<p><a href="../index.html" target="_top"><img src="./../images/homeImg.png"/></a></p>
 <h4>
 CoppeliaSim version history
 </h4>
@@ -711,7 +711,7 @@ Version history:
 </h4>
 <li>Fixed several bugs. Thanks to Adrian Schoisengeier, Mathias Thor, Francisco Marin, Nikita Aigner, Charles Han, Shai Levy, Bobovsky Zdenko, Salvatore Sessa, Jakob Ambsdorf, Hayato Amaike, and Kevin Thomas for noticing them or helping to resolve them.</li>
 <li><a href="scripts.html">All script types</a> now support <a href="threadedAndNonThreadedCode.html">threaded or non-threaded operation</a>. Threaded operation is handled via coroutines that are preemptively interrupted by CoppeliaSim. Except for its code, there is no difference anymore between a threaded and non-threaded script. Old threaded child scripts are still supported for backward compatibility, but CoppeliaSim will try to automatically convert them. If this is not desired, adjust value <em>keepOldThreadedScripts</em> in <em>system/usrset.txt</em>.</li>
-<li>Switched from Lua 5.1 to Lua 5.3. Backward compatibility should normally be maintained, except maybe for old Lua modules you might be using. If this is the case, update those module to their Lua 5.3 counterparts. Read also about the <a href="http://www.lua.org/manual/5.2/manual.htmll#8" target="_blank">language incompatibilities introduced in Lua 5.2</a>, and the <a href="http://www.lua.org/manual/5.3/manual.htmll#8" target="_blank">language incompatibilities introduced in Lua 5.3</a>. Additional backward compatibility code can be communicated to us and added to <em>lua/sim.lua.</em></li>
+<li>Switched from Lua 5.1 to Lua 5.3. Backward compatibility should normally be maintained, except maybe for old Lua modules you might be using. If this is the case, update those module to their Lua 5.3 counterparts. Read also about the <a href="http://www.lua.org/manual/5.2/manual.html#8" target="_blank">language incompatibilities introduced in Lua 5.2</a>, and the <a href="http://www.lua.org/manual/5.3/manual.html#8" target="_blank">language incompatibilities introduced in Lua 5.3</a>. Additional backward compatibility code can be communicated to us and added to <em>lua/sim.lua.</em></li>
 <li>The <a href="ros2Interface.html">ROS2 interface</a> is now also supported on Windows.</li>
 <li>Since this release, static IK groups (i.e. created via the GUI) are deprecated in favor of <a href="kinematicsPlugin.html">dynamically created IK groups</a>, which offer much more flexibility. Read more about the <a href="kinematics.html">kinematics functionality here</a>.</li>
 <li>Added the convenience functions <a href="simIK.html#simIK.addIkElementFromScene">simIK.addIkElementFromScene</a>, <a href="simIK.html#simIK.applyIkEnvironmentToScene">simIK.applyIkEnvironmentToScene</a>, <a href="simIK.html#simIK.applySceneToIkEnvironment">simIK.applySceneToIkEnvironment</a>, allowing to quickly generate an IK element from a kinematic chain in the scene, and to perform/apply calculations to it. All scenes have been adjusted to use above convenience functions. As simple example can be seen in <em>scenes/kinematics/simpleIkGroupWithSimpleIkElement-undamped.ttt</em></li>
@@ -818,11 +818,11 @@ Version history:
 <li>The Lua commander now has dynamic variable completion, history, explicitely prints any variable, etc. Type <em>help()</em> for details.</li>
 <li>Added following API function: <a href="regularApi/simGetPersistentDataTags.html">sim.getPersistentDataTags</a>.</li>
 <li>The Open Mesh plugin for V-REP now uses the latest OpenMesh library (V6.3) on all 3 platforms</li>
-<li>Added a <a href="https://msgpack.org/index.htmll">MessagePack</a> module for Lua: <a href="http://fperrad.github.io/lua-MessagePack/" target="_blank">lua-MessagePack</a>, courtesy of Francois Perrad.</li>
-<li>Added a <a href="https://msgpack.org/index.htmll">MessagePack</a> encoder/decoder for C/C++: <a href="https://github.com/msgpack/msgpack-c/" target="_blank">msgpack-c</a>, courtesy of Takatoshi Kondo and several others.</li>
-<li>Added a <a href="https://msgpack.org/index.htmll">MessagePack</a> encoder/decoder for Matlab: <a href="https://github.com/bastibe/matlab-msgpack/" target="_blank">matlab-msgpack</a>, courtesy of Bastian Bechtold.</li>
-<li>Added a <a href="https://msgpack.org/index.htmll">MessagePack</a> encoder/decoder for Java: <a href="https://github.com/msgpack/msgpack-java/" target="_blank">msgpack-java</a>, courtesy of Sadayuki Furuhashi and several others.</li>
-<li>Added a <a href="http://cbor.io/">CBOR</a> encoder/decoder for Lua: <a href="https://www.zash.se/lua-cbor.htmll" target="_blank">Lua-CBOR</a>, courtesy of Kim Alvefur.</li>
+<li>Added a <a href="https://msgpack.org/index.html">MessagePack</a> module for Lua: <a href="http://fperrad.github.io/lua-MessagePack/" target="_blank">lua-MessagePack</a>, courtesy of Francois Perrad.</li>
+<li>Added a <a href="https://msgpack.org/index.html">MessagePack</a> encoder/decoder for C/C++: <a href="https://github.com/msgpack/msgpack-c/" target="_blank">msgpack-c</a>, courtesy of Takatoshi Kondo and several others.</li>
+<li>Added a <a href="https://msgpack.org/index.html">MessagePack</a> encoder/decoder for Matlab: <a href="https://github.com/bastibe/matlab-msgpack/" target="_blank">matlab-msgpack</a>, courtesy of Bastian Bechtold.</li>
+<li>Added a <a href="https://msgpack.org/index.html">MessagePack</a> encoder/decoder for Java: <a href="https://github.com/msgpack/msgpack-java/" target="_blank">msgpack-java</a>, courtesy of Sadayuki Furuhashi and several others.</li>
+<li>Added a <a href="http://cbor.io/">CBOR</a> encoder/decoder for Lua: <a href="https://www.zash.se/lua-cbor.html" target="_blank">Lua-CBOR</a>, courtesy of Kim Alvefur.</li>
 <li>Added <a href="regularApi/simGetRandom.html">sim.getRandom</a>, <em>math.random2</em> and <em>math.randomseed2</em> in order to provide individual random number generators for each script (<em>math.random</em> and <em>math.randomseed</em> share the same generator, independent of which script is calling)</li>
 <li>The <a href="scriptEditor.html">script editor</a> functionality is now provided via a plugin: <a href="https://github.com/CoppeliaRobotics/simExtCodeEditor" target="_blank">simExtCodeEditor</a>. It allows to easily search/replace, do/undo, jump to specific functions, restart a script, offers non-modal customization script edition, etc. Code included via the <em>require</em> directive can automatically be opened and modified via the popup menu. You can temporarily revert to the old script editor functionality by adjusting variable <em>useOldCodeEditor</em> in file <em>system/usrset.txt</em>.</li>
 <li>Added <a href="regularApi/simTextEditorOpen.html">sim.textEditorOpen</a>, <a href="regularApi/simTextEditorClose.html">sim.textEditorClose</a>, <a href="regularApi/simTextEditorShow.html">sim.textEditorShow</a> and <a href="regularApi/simTextEditorGetInfo.html">sim.textEditorGetInfo</a></li>
@@ -851,7 +851,7 @@ Version history:
 <li>Broke compatibility of the <em>simExtSurfaceReconstruction_reconstruct</em> API function, which was replaced with <a href="simSurfRec.html#reconstruct_scale_space">simSurfRec.reconstruct_scale_space</a>.</li>
 <li>Added support for shared memory communication in the <a href="legacyRemoteApiOverview.html">legacy emote API</a>. The code is courtesy of Benjamin Navarro. By specifying a negative port number, shared memory will be used instead of socket communication.</li>
 <li>Added following API functions: <a href="regularApi/simExecuteScriptString.html">sim.executeScriptString</a>, <a href="regularApi/simGetApiFunc.html">sim.getApiFunc</a>, <a href="regularApi/simGetApiInfo.html">sim.getApiInfo</a>, <a href="regularApi/simSetModuleInfo.html">sim.setModuleInfo</a> and <a href="regularApi/simGetModuleInfo.html">sim.getModuleInfo</a>.</li>
-<li>A <a href="https://www.mrt.kit.edu/software/libLanelet/libLanelet.htmll">Lanelet</a> plugin for V-REP was developed by Cándido Otero, available <a href="https://github.com/omcandido/v_repExtLanelets" target="_blank">here</a>.</li>
+<li>A <a href="https://www.mrt.kit.edu/software/libLanelet/libLanelet.html">Lanelet</a> plugin for V-REP was developed by Cándido Otero, available <a href="https://github.com/omcandido/v_repExtLanelets" target="_blank">here</a>.</li>
 <li><em>Modern Robotics: Mechanics, Planning, and Control</em>, a new textbook by Prof. Kevin M. Lynch and Prof. Frank C. Park is available for free download <a href="http://hades.mech.northwestern.edu/index.php/Modern_Robotics">here</a>, and also available for purchase as hardback copy. Several V-REP examples and scenes are available <a href="http://hades.mech.northwestern.edu/index.php/V-REP_Introduction">here</a>.</li>
 <br/>
 <br/>
@@ -973,7 +973,7 @@ Version history:
 <li>Added a scene that demonstrates the various rendering modes available in V-REP: <em>scenes/rendererDemo.ttt</em>.</li>
 <li>Modified the way how V-REP interacts with the physics plugin: it is now possible to compile the Bullet, ODE, Vortex or Newton plugins separately. This will greatly simplify adding additional physics engines.</li>
 <li>Modified the legacy remote API Python bindings, including the Python example programs. They should work fine on Python 2.x, Python 3.x and IronPython.</li>
-<li>The <a href="https://en.wikipedia.org/wiki/OpenRTM-aist">OpenRTM-aist</a> is now supported thanks to Yuki Suga. Installation instructions are given <a href="http://ogata-lab.jp/ja/technology_ja/動力学シミュレータ-vrepの使い方.htmll">here</a>.</li>
+<li>The <a href="https://en.wikipedia.org/wiki/OpenRTM-aist">OpenRTM-aist</a> is now supported thanks to Yuki Suga. Installation instructions are given <a href="http://ogata-lab.jp/ja/technology_ja/動力学シミュレータ-vrepの使い方.html">here</a>.</li>
 <li>Moved the Qhull functionality out of V-REP's main library, into a plugin (<em>simExtQhull</em>). The source code can be found <a href="https://github.com/CoppeliaRobotics/simExtQhull" target="_blank">here</a>.</li>
 <li>Moved the convex decomposition functionality out of V-REP's main library, into a plugin (<em>simExtConvexDecompose</em>). The source code can be found <a href="https://github.com/CoppeliaRobotics/simExtConvexDecompose" target="_blank">here</a>.</li>
 <li>The convex decomposition plugin now also offers the V-HACD algorithm (next to the HACD algorithm). Both are courtesy of Khaled Mamou.</li>
@@ -1049,8 +1049,8 @@ Version history:
 <li>Modified  the way <a href="childScripts.html">child scripts</a> are handled in order to make them operate in a more coherent manner:</li>
 <li class="tabTab"> <a href="childScripts.html">child scripts</a> execution is now automatically cascaded (i.e. no need to explicitely call simHandleChildScript anymore).</li>
 <li class="tabTab"> child scripts are now executed in the<em> actuation</em> phase as well as in the <em>sensing</em> phase of a given simulation step: there is no distinction anymore with what previously used to be <em>sensing child scripts</em>.</li>
-<li class="tabTab"> script compatibility with previous file versions is guaranteed by <strong>1)</strong> automatic child script code modification (clearly marked as such), <strong>2)</strong> automatic <a href="mainScript.html">main script</a> replacement. This covers 99% of all situations, but it can happen that this automatic modification partly fails (e.g. when the main script was customized, or when explicitely executing a specific child script (previously marked as <em>explicit handling</em>)). In that case,<a href="http://coppeliarobotics.com/contact.htmll"> contact us</a> for assistance.</li>
-<li>Improved the rendering speed. If compatibility issues arise, please <a href="http://coppeliarobotics.com/contact.htmll">contact us</a>, and try to disable <strong>VBO operation</strong> <a href="settings.html#openGl">here</a>.</li>
+<li class="tabTab"> script compatibility with previous file versions is guaranteed by <strong>1)</strong> automatic child script code modification (clearly marked as such), <strong>2)</strong> automatic <a href="mainScript.html">main script</a> replacement. This covers 99% of all situations, but it can happen that this automatic modification partly fails (e.g. when the main script was customized, or when explicitely executing a specific child script (previously marked as <em>explicit handling</em>)). In that case,<a href="http://coppeliarobotics.com/contact.html"> contact us</a> for assistance.</li>
+<li>Improved the rendering speed. If compatibility issues arise, please <a href="http://coppeliarobotics.com/contact.html">contact us</a>, and try to disable <strong>VBO operation</strong> <a href="settings.html#openGl">here</a>.</li>
 <li>Improved the start-up time of certain simulation scenes, by adding a broad mode for collision detection, minimum distance calculation and proximity sensor detection: Oriented Bounding Box (i.e. OBB) data structures are now only computed on-the-fly and only when absolutely necessary. This can be visualized via [Menu bar --&gt; Help --&gt; Debug --&gt; Visualize prepared OBB calculation structures].</li>
 <li>Added 3 new API functions: <a href="regularApi/simCopyPasteObjects.html">sim.copyPasteObjects</a>, <a href="regularApi/simScaleObjects.html">sim.scaleObjects</a> and <a href="regularApi/simRemoveModel.html">sim.removeModel</a>. simCopyPasteSelectedObjects, simScaleSelectedObjects and simDeleteSelectedObjects are declared deprecated.</li>
 <li>Added project files for custom ROS plugins for V-REP (i.e. in order to support specific ROS messages of a specific robot). </li>
@@ -1737,7 +1737,7 @@ First public release in March 2010 </li>
 <table class="allEncompassingTable">
 <tr>
 <td>
-<p><a href="../index.htmll" target="_top"><img src="./../images/homeImg.png"/></a></p>
+<p><a href="../index.html" target="_top"><img src="./../images/homeImg.png"/></a></p>
 <h4>
 Licensing
 </h4>
@@ -1820,7 +1820,7 @@ death, data loss, damages, loss of profits or any other loss while using or misu
 <table class="allEncompassingTable">
 <tr>
 <td>
-<p><a href="../index.htmll" target="_top"><img src="./../images/homeImg.png"/></a></p>
+<p><a href="../index.html" target="_top"><img src="./../images/homeImg.png"/></a></p>
 <h4>
 Acknowledgments and credits
 </h4>
@@ -1842,7 +1842,7 @@ Digia Plc and/or its subsidiary(-ies), and all other contributors, for the <a hr
 <li>
 Antonio Escano Scuri and Mark Stroetzel Glasberg for the free WebBook framework they provide. <a href="#WebBookCredit">See the license</a>.</li>
 <li>
-Diego Nehab (<a href="http://w3.impa.br/~diego/software/luasocket/home.htmll">http://w3.impa.br/~diego/software/luasocket/home.htmll</a>), for the free LuaSocket extension library. <a href="#LuaSocketCredit">See the license</a>.</li>
+Diego Nehab (<a href="http://w3.impa.br/~diego/software/luasocket/home.html">http://w3.impa.br/~diego/software/luasocket/home.html</a>), for the free LuaSocket extension library. <a href="#LuaSocketCredit">See the license</a>.</li>
 <li>
 Erwin Coumans (<a href="http://www.bulletphysics.org">http://www.bulletphysics.org</a>), for the free <a href="dynamicsModule.html#bullet">Bullet physics library</a> he provides. <a href="#BulletCredit">See the license</a>.</li>
 <li>
@@ -1858,14 +1858,14 @@ Russel L. Smith (<a href="http://www.ode.org">http://www.ode.org</a>), for the f
 The Scintilla development team (<a href="http://www.scintilla.org">http://www.scintilla.org</a>), for the free source code editing component they provide. Since CoppeliaSim 2.6.0, the Scintilla library is used via <a href="http://www.riverbankcomputing.com">commercial QScintilla</a>. </li>
 <li>Lee Thomason, for his nice and compact tinyxml routines. <a href="#tinyxmlCredit">See the license</a>.</li>
 <li>
-Marcus Geelnard for the Basic Compression Library he provides (<a href="http://bcl.comli.eu/home-en.htmll">http://bcl.comli.eu/home-en.htmll</a>). <a href="#BasicCompressionLibrary">See the license</a>.</li>
+Marcus Geelnard for the Basic Compression Library he provides (<a href="http://bcl.comli.eu/home-en.html">http://bcl.comli.eu/home-en.html</a>). <a href="#BasicCompressionLibrary">See the license</a>.</li>
 <li>
 Toni Ronkko for the Dirent interface for Microsoft Visual Studio he provides (<a href="https://github.com/tronkko/dirent" target="_blank">https://github.com/tronkko/dirent</a>). <a href="#Dirent">See the license</a>.</li>
 <li>Martin Courchesne and <a href="http://www.simwat.com/">SimWat</a> for the initial <a href="dynamicsModule.html#vortex">Vortex plugin</a> for CoppeliaSim they provided.</li>
 <li><a href="http://www.cm-labs.com">CM Labs</a> for the free version of their Vortex physics engine (<a href="https://www.cm-labs.com/vortex-studio/">Vortex Studio</a>), used in CoppeliaSim's Vortex plugin.</li>
 <li>Sean Barrett for his image loading routines he provides.</li>
 <li>
-Jari Komppa for the <a href="http://sol.gfxile.net/escapi/index.htmll">ESCAPI library</a> that is wrapped in the webcam plugin for CoppeliaSim (Credit is given when the plugin is used)</li>
+Jari Komppa for the <a href="http://sol.gfxile.net/escapi/index.html">ESCAPI library</a> that is wrapped in the webcam plugin for CoppeliaSim (Credit is given when the plugin is used)</li>
 <li>Julio Jerez and Alain Suero, for the <a href="dynamicsModule.html#newton">Newton plugin</a> for CoppeliaSim they provide. <a href="#newtonCredit">See the license</a>.</li>
 <li>René Nyffenegger, for the base64 source code he provides. <a href="#base64Credit">See the license</a>.</li>
 <li>
@@ -1895,7 +1895,7 @@ Eric Rohmer who is a thorough CoppeliaSim tester and an "idea machine". He is al
 <li>Andreas Geiger, for the <a href="http://www.cvlibs.net/software/libicp/">LIBICP</a> he provides. <a href="#icp">See the license</a>.</li>
 <li>Hung Pham, Quang Cuong Pham and others, for the <a href="https://hungpham2511.github.io/toppra/">TOPP-RA</a> library they provide. <a href="#toppra">See the license</a>.</li>
 <li>Diego Daniel Santiago for writing a shared memory communication plugin, and the <a href="https://github.com/santdiego/simExtSimulink" target="_blank">plugin for Simulink-CoppeliaSim communication</a>.</li>
-<li>The developers of the POV-Ray raytracer, Persistence of Vision Raytracer Pty. Ltd. POV-Ray uses the <a href="http://www.povray.org/povlegal.htmll">GNU AFFERO GENERAL PUBLIC LICENSE</a>, a copy of which is included in the software package.</li>
+<li>The developers of the POV-Ray raytracer, Persistence of Vision Raytracer Pty. Ltd. POV-Ray uses the <a href="http://www.povray.org/povlegal.html">GNU AFFERO GENERAL PUBLIC LICENSE</a>, a copy of which is included in the software package.</li>
 <li>The developers of the <a href="http://www.cgal.org/" target="_blank">CGAL library</a>, which is used by the <em>simExtSurfRec</em> plugin. <a href="#CGAL">See the license</a>.</li>
 <li>The developers of <a href="https://libigl.github.io/" target="_blank">LIBIGL</a>, which is wrapped in the IGL plugin. <a href="#IGL">See the license</a>.</li>
 <li>The developers of <a href="https://zeromq.org/" target="_blank">ZeroMQ</a>, which is wrapped in several CoppeliaSim plugins, and used in several external applications. <a href="#ZMQ">See the license</a>.</li>
@@ -1907,7 +1907,7 @@ Eric Rohmer who is a thorough CoppeliaSim tester and an "idea machine". He is al
 <li>Takatoshi Kondo and several other contributors, for <a href="https://github.com/msgpack/msgpack-c" target="_blank">their MessagePack code for C/C++</a>. <a href="#messagePack-c">See the license</a>.</li>
 <li>Bastian Bechtold, for <a href="https://github.com/bastibe/matlab-msgpack" target="_blank">his MessagePack code for Matlab</a>. <a href="#messagePack-matlab">See the license</a>.</li>
 <li>The people behind the <a href="https://github.com/msgpack/msgpack-java" target="_blank">MessagePack code for Java</a>. <a href="#messagePack-java">See the license</a>.</li>
-<li>Kim Alvefur, for <a href="https://www.zash.se/lua-cbor.htmll">his CBOR code for Lua</a>. <a href="#cbor-lua">See the license</a>.</li>
+<li>Kim Alvefur, for <a href="https://www.zash.se/lua-cbor.html">his CBOR code for Lua</a>. <a href="#cbor-lua">See the license</a>.</li>
 <li>Sean Conner, for <a href="https://github.com/spc476/CBOR">his CBOR library for Lua</a>. <a href="#cbor-lua2">See the license</a>.</li>
 <li>Federico Ferri, for creating a whole series of plugins for CoppeliaSim.</li>
 <li>Stephen James (Imperial College London) for his <a href="https://github.com/stepjam/PyRep" target="_blank">PyRep toolkit for robot learning research</a>, and his <a href="https://github.com/stepjam/simExtOpenGL3Renderer" target="_blank">OpenGL3  renderer plugin</a>.</li>
@@ -2120,13 +2120,13 @@ and redistributed under the following conditions:<br/>
 <h4><a id="ffmpegCredit" name="ffmpegCredit"></a>License of the FFmpeg library</h4>
 <p>CoppeliaSim is linking dynamically to a library that itself links to the unmodified FFmpeg library files. The unmodified FFmpeg library, source and binaries (as distributed with CoppeliaSim), is available for download from <a href="http://www.ffmpeg.org">here</a></p>
 <div class="licenseBox">
-<p>FFmpeg is licensed under the <a href="http://www.gnu.org/licenses/old-licenses/lgpl-2.1.htmll">GNU Lesser  General Public License (LGPL) version 2.1</a> or later. However, FFmpeg  incorporates several optional parts and optimizations that are covered by the <a href="http://www.gnu.org/licenses/old-licenses/gpl-2.0.htmll">GNU General  Public License (GPL) version 2</a> or later.  If those parts get used the GPL applies to all of FFmpeg. <br/>
+<p>FFmpeg is licensed under the <a href="http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html">GNU Lesser  General Public License (LGPL) version 2.1</a> or later. However, FFmpeg  incorporates several optional parts and optimizations that are covered by the <a href="http://www.gnu.org/licenses/old-licenses/gpl-2.0.html">GNU General  Public License (GPL) version 2</a> or later.  If those parts get used the GPL applies to all of FFmpeg. <br/>
 </p>
 </div>
 <br/>
 <h4><a id="openMeshCredit" name="openMeshCredit"></a>License of the OpenMesh library</h4>
 <div class="licenseBox">
-<p>OpenMesh makes use of the <a href="https://www.gnu.org/licenses/lgpl.htmll">LGPL v3</a> with the following exception:<br/><br/>
+<p>OpenMesh makes use of the <a href="https://www.gnu.org/licenses/lgpl.html">LGPL v3</a> with the following exception:<br/><br/>
 
 As a special exception to the GNU Lesser General Public License, you may use any file of this software library without restriction. Specifically, if other files instantiate templates or use macros or inline functions from this file, or you compile this file and link it with other files to produce an executable, this file does not by itself cause the resulting executable to be covered by the GNU Lesser General Public License. This exception does not however invalidate any other reasons why the executable file might be covered by the GNU Lesser General Public License.</p>
 </div>
@@ -2239,7 +2239,7 @@ appreciated but is not required.</p>
 <h4><a id="CGAL" name="CGAL"></a>License of the CGAL library</h4>
 <p>(the unmodified CGAL shared library is used by the simExtSurfRec plugin)</p>
 <div class="licenseBox">
-<p>Some parts of CGAL are available under the <a href="http://www.gnu.org/copyleft/lesser.htmll" target="_blank">LGPL</a>, other parts are under the <a href="http://www.gnu.org/copyleft/gpl.htmll" target="_blank">GPL</a>. For details see <a href="http://www.cgal.org/license.htmll" target="_blank">here</a> and also refer to the LICENSE file from the CGAL source code distribution.</p>
+<p>Some parts of CGAL are available under the <a href="http://www.gnu.org/copyleft/lesser.html" target="_blank">LGPL</a>, other parts are under the <a href="http://www.gnu.org/copyleft/gpl.html" target="_blank">GPL</a>. For details see <a href="http://www.cgal.org/license.html" target="_blank">here</a> and also refer to the LICENSE file from the CGAL source code distribution.</p>
 </div>
 <br/>
 <h4><a id="IGL" name="IGL"></a>License of Libigl</h4>
@@ -2250,7 +2250,7 @@ appreciated but is not required.</p>
 <h4><a id="ZMQ" name="ZMQ"></a>License of ZeroMQ</h4>
 <div class="licenseBox">
 <p>ZeroMQ Free Software Licenses</p>
-<p>The libzmq library is licensed under the <a href="http://www.gnu.org/licenses/lgpl.htmll">GNU Lesser General Public License</a> V3 plus a static linking exception.</p>
+<p>The libzmq library is licensed under the <a href="http://www.gnu.org/licenses/lgpl.html">GNU Lesser General Public License</a> V3 plus a static linking exception.</p>
 <p>- <strong>You get the full source code</strong>. You can examine the code, modify it, and share your modified code under the terms of the LGPL.</p>
 <p>- <strong>Static linking exception</strong>. The copyright holders give you permission to link this library with independent modules to produce an executable, regardless of the license terms of these independent modules, and to copy and distribute the resulting executable under terms of your choice, provided that you also meet, for each linked independent module, the terms and conditions of the license of that module. An independent module is a module which is not derived from or based on this library. If you modify this library, you must extend this exception to your version of the library.</p>
 </div>
@@ -2374,13 +2374,13 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
 <br/>
 <h4><a id="cbor-lua2" name="cbor-lua2"></a>License of org.conman.cbor</h4>
 <div class="licenseBox">
-<p>The library is licensed under <a href="https://www.gnu.org/licenses/lgpl-3.0.en.htmll">LGPL V3.0</a></p>
+<p>The library is licensed under <a href="https://www.gnu.org/licenses/lgpl-3.0.en.html">LGPL V3.0</a></p>
 </div>
 <br/>
 <h4><a id="qcustomplot" name="qcustomplot"></a>License of QCustomPlot</h4>
 <p>Coppelia Robotics AG uses a commercial license of QCustomPlot</p>
 <div class="licenseBox">
-<p>QCustomPlot is licensed under the <a href="http://www.gnu.org/licenses/gpl.htmll">GNU General Public License (GPL)</a>. See also  <em>GPL.txt</em> located in the project files of the <a href="customUIPlugin.html">custom UI plugin</a> (<a href="https://github.com/CoppeliaRobotics/simExtUI" target="_blank">simExtUI</a>).</p>
+<p>QCustomPlot is licensed under the <a href="http://www.gnu.org/licenses/gpl.html">GNU General Public License (GPL)</a>. See also  <em>GPL.txt</em> located in the project files of the <a href="customUIPlugin.html">custom UI plugin</a> (<a href="https://github.com/CoppeliaRobotics/simExtUI" target="_blank">simExtUI</a>).</p>
 </div>
 <br/>
 <h4><a id="icp" name="icp"></a>License of LibICP</h4>
@@ -2455,7 +2455,7 @@ possibility of such damage.</p>
 <br/>
 <h4><a id="reflexxes" name="reflexxes"></a>License of the Reflexxes Motion Library (RML) Type II</h4>
 <div class="licenseBox">
-<p>The Reflexxes Motion Library Type II is licensed under <a href="https://www.gnu.org/licenses/lgpl-3.0.en.htmll">LGPL V3.0</a></p>
+<p>The Reflexxes Motion Library Type II is licensed under <a href="https://www.gnu.org/licenses/lgpl-3.0.en.html">LGPL V3.0</a></p>
 </div>
 <br/>
 <h4><a id="ruckig" name="ruckig"></a>License of the Ruckig Online Trajectory Generation library</h4>
@@ -2508,7 +2508,7 @@ SOFTWARE.</p>
 <table class="allEncompassingTable">
 <tr>
 <td>
-<p><a href="../index.htmll" target="_top"><img src="./../images/homeImg.png"/></a></p>
+<p><a href="../index.html" target="_top"><img src="./../images/homeImg.png"/></a></p>
 <h4>
 <a name="English"></a>English
 </h4>
@@ -2534,7 +2534,7 @@ SOFTWARE.</p>
 <li>Integrated <a href="shapeEditModes.html">shape edit modes</a></li>
 <li>Dynamic particles for water-/air-jet simulation</li>
 <li><a href="userInterface.html#ModelBrowser">Model browser</a> with drag-and-drop functionality (also during simulation)</li>
-<li>Multi-level undo/redo, <a href="aviRecorder.html">movie recorder</a>, simulation of paint dispensing, <a href="../index.htmll">exhaustive documentation</a>, etc.</li>
+<li>Multi-level undo/redo, <a href="aviRecorder.html">movie recorder</a>, simulation of paint dispensing, <a href="../index.html">exhaustive documentation</a>, etc.</li>
 <p>robot, robotics, simulator, simulation, kinematics, dynamics, path planning, minimum distance calculation, collision detection, vision sensor, image processing, proximity sensor, paint dispensing.</p>
 <br/>
 <br/>
@@ -2565,7 +2565,7 @@ SOFTWARE.</p>
 <li>Integrierter <a href="shapeEditModes.html">Mesh-Editiermodus</a></li>
 <li>Dynamische Partikel für Wasser- oder Luftströmungssimulation</li>
 <li><a href="userInterface.html#ModelBrowser">Modell-Browser</a> mit Drag-and-Drop-Funktionalität (auch während der Simulation)</li>
-<li>Mehrstufige Undo/Redo-Funktion, <a href="aviRecorder.html">Filmaufnahmefunktion</a>, Farbspritzsimulation, <a href="../index.htmll">ausführliche Dokumentation</a>, usw.</li>
+<li>Mehrstufige Undo/Redo-Funktion, <a href="aviRecorder.html">Filmaufnahmefunktion</a>, Farbspritzsimulation, <a href="../index.html">ausführliche Dokumentation</a>, usw.</li>
 <p>roboter, robotik, simulator, simulation, kinematik, dynamik, bahnplanung, kleinste entfernung bestimmung, kollisionserkennung, optischer sensor, bildverarbeitung, entfernungssensoren, farbspritz.</p>
 </span>
 <br/>
@@ -2597,7 +2597,7 @@ SOFTWARE.</p>
 <li><a href="shapeEditModes.html">Editeur de mesh</a> intégré</li>
 <li>Particules dynamiques pour la simulation de jets d'eau ou d'air</li>
 <li><a href="userInterface.html#ModelBrowser">Model-browser</a> avec fonctionnalité drag-and-drop (également pendant la simulation)</li>
-<li>Fonctionalité undo/redo, <a href="aviRecorder.html">enregistreur vidéo</a>, simulation de pulvérisation de peinture, <a href="../index.htmll">documentation exhaustive</a>, etc.</li>
+<li>Fonctionalité undo/redo, <a href="aviRecorder.html">enregistreur vidéo</a>, simulation de pulvérisation de peinture, <a href="../index.html">documentation exhaustive</a>, etc.</li>
 <p>robot, robotique, simulateur, simulation, cinématique, dynamique, planification de mouvement, calcul de distance minimale, détection de collision, capteur de vision, traitement d'image, capteur de proximité, pulvérisation de peinture.</p>
 </span>
 <br/>
@@ -2630,7 +2630,7 @@ SOFTWARE.</p>
 <li>Particelle dinamiche per la simulazione di acqua o getti d'aria <br/>
 </li>
 <li><a href="userInterface.html#ModelBrowser">Browser di modelli</a> con funzionalità di drag-and-drop (utilizzabile   anche durante le simulazioni)</li>
-<li>undo/redo a più livelli, <a href="aviRecorder.html">registratore di video</a>, simulatore di   vernice, <a href="../index.htmll">documentazione esaustiva</a>, ecc  </li>
+<li>undo/redo a più livelli, <a href="aviRecorder.html">registratore di video</a>, simulatore di   vernice, <a href="../index.html">documentazione esaustiva</a>, ecc  </li>
 <p>robot, robotica, simulatore, simulazione, cinematica, dinamica,   pianificazione del moto, calcolo della distanza minima, controllo di   collisione, sensore di visione, elaborazione delle immagini, sensori di   prossimità, simulazione di erogazione della vernice.</p>
 </span>
 <br/>
@@ -2662,7 +2662,7 @@ SOFTWARE.</p>
 <li><a href="shapeEditModes.html">Modos de edición de  forma </a>integrados</li>
 <li>Partículas dinámicss  para la simulación de <em>jet</em> de agua o  aire</li>
 <li><a href="userInterface.html#ModelBrowser">Navegador de modelos </a>con función de  arrastrar y soltar (<em>drag and drop</em>) (incluso  durante la simulación)</li>
-<li>Función multiniveles  deshacer /rehacer (undo/redo), <a href="aviRecorder.html">función de grabación  o registro de video</a>, simulación de pintura, <a href="../index.htmll">documentación  exhaustiva</a>, etc.</li>
+<li>Función multiniveles  deshacer /rehacer (undo/redo), <a href="aviRecorder.html">función de grabación  o registro de video</a>, simulación de pintura, <a href="../index.html">documentación  exhaustiva</a>, etc.</li>
 <p>robot, robótica, simulador, simulación, cinemática, dinámica, planificación o planeación de la trayectoria, cálculo de la distancia, detección de colisiones, sensores de visión, procesamiento de imágenes, sensores de proximidad, simulación de pintura.</p>
 </span>
 <br/>
@@ -2694,7 +2694,7 @@ SOFTWARE.</p>
 <li>Entegre <a href="shapeEditModes.html">şekil düzenleme modları</a></li>
 <li>Su ve hava jeti simülasyonları için dinamik partiküller</li>
 <li><a href="userInterface.html#ModelBrowser">Sürükle-bırak fonksiyonuna sahip Model Listeleyici</a> (simülasyon esnasinda da aktif)</li>
-<li>Çoklu geri al/yinele, <a href="aviRecorder.html">video kaydedici</a>, boyama simülasyonu, <a href="../index.htmll">detaylı dokümantasyon</a>, vb.</li>
+<li>Çoklu geri al/yinele, <a href="aviRecorder.html">video kaydedici</a>, boyama simülasyonu, <a href="../index.html">detaylı dokümantasyon</a>, vb.</li>
 <p>CoppeliaSim Türkiye distribütörü: <a href="http://www.turaengineering.com/">Tura Mühendislik</a></p>
 <p>robot, robotik, simülatör, simülasyon, kinematik, dinamik, güzergah planlama, en kısa mesafe hesaplaması, çakışma tespiti, görüntü sensörü, görüntü işleme, mesafe sensörü, sprey boya simülasyonu.</p>
 </span>
@@ -2727,7 +2727,7 @@ SOFTWARE.</p>
 <li><a href="shapeEditModes.html">Modos de edição de formas</a> integrados</li>
 <li>Partículas dinâmicas para simulação de jatos de água ou ar</li>
 <li><a href="userInterface.html#ModelBrowser">Navegador de modelos</a> com funcionalidade drag-and-drop (também durante a simulação)</li>
-<li>Função undo / redo em níveis múltiplos, <a href="aviRecorder.html">gravador de animações</a>, simulação de pintura, <a href="../index.htmll">documentação extensiva</a>, etc.</li>
+<li>Função undo / redo em níveis múltiplos, <a href="aviRecorder.html">gravador de animações</a>, simulação de pintura, <a href="../index.html">documentação extensiva</a>, etc.</li>
 <p>robô, robótica, simulador, simulação, cinemática, dinâmica, planejamento de trajetória, cálculo de distância mínima, deteção de colisão, sensor de visão, processamento de image.</p>
 </span>
 <br/>
@@ -2759,7 +2759,7 @@ SOFTWARE.</p>
 <li><a href="shapeEditModes.html">shapeエディットモード搭載</a></li>
 <li>ウォーター/エアージェットの動的粒子シミュレーション</li>
 <li><a href="userInterface.html#ModelBrowser">ドラッグ＆ドロップ可能なモデルブラウザー</a>（シミュレーション中も有効）</li>
-<li>その他、マルチレベルアンドゥ・リドゥ、<a href="aviRecorder.html">動画作成</a>、塗装シミュレーション、<a href="../index.htmll">詳細なドキュメント</a></li>
+<li>その他、マルチレベルアンドゥ・リドゥ、<a href="aviRecorder.html">動画作成</a>、塗装シミュレーション、<a href="../index.html">詳細なドキュメント</a></li>
 <p>ロボット、ロボット工学、シミュレーター、シミュレーション、キネマティクス（運動学）、パスプランニング、最短距離計算、衝突検知、ビジョン（視覚/画像）センサー、画像処理、近接センサー、塗装シミュレーション</p>
 </span>
 <br/>
@@ -2791,7 +2791,7 @@ SOFTWARE.</p>
 <li><a href="shapeEditModes.html">형상 편집 모드  내장</a></li>
 <li>물/젯-에어를 시뮬레이션할  수 있는 역학입자</li>
 <li><a href="userInterface.html#ModelBrowser">드래그 앤 드롭  기능을 지원하는 모델 브라우저</a> (시뮬레이션 도중에서도  사용 가능)</li>
-<li>다중 레벨 되돌리기/다시하기, <a href="aviRecorder.html">동영상 저장</a>, 페인트 분사  시뮬레이션, <a href="../index.htmll">상세한 매뉴얼</a>과 기타 등등</li>
+<li>다중 레벨 되돌리기/다시하기, <a href="aviRecorder.html">동영상 저장</a>, 페인트 분사  시뮬레이션, <a href="../index.html">상세한 매뉴얼</a>과 기타 등등</li>
 <p>로봇, 로보틱스, 시뮬레이터, 시뮬레이션, 기구학, 역학, 경로 생성, 최소 거리 계산, 충돌 감지, 비전 센서, 영상처리, 근접센서, 페인트 분사.</p>
 </span>
 <br/>
@@ -2823,7 +2823,7 @@ SOFTWARE.</p>
 <li><a href="shapeEditModes.html">整合图形编辑模式</a></li>
 <li>支持水/气体喷射的动态颗粒仿真</li>
 <li><a href="userInterface.html#ModelBrowser">带有拖放功能的模型浏览器</a> (在仿真中依旧可行)</li>
-<li>多层 取消/重做、<a href="aviRecorder.html">影像记录</a>、油漆的仿真、<a href="../index.htmll">详尽的文档等</a></li>
+<li>多层 取消/重做、<a href="aviRecorder.html">影像记录</a>、油漆的仿真、<a href="../index.html">详尽的文档等</a></li>
 <p>机器人、机器人学、仿真器、仿真、运动学、动力学、路径规划、最短距离计算、碰撞检测、视觉传感器、图像处理、接近传感器、油漆分散仿真.</p>
 </span>
 <br/>
@@ -2855,7 +2855,7 @@ SOFTWARE.</p>
 <li><a href="shapeEditModes.html">整合形狀編輯模式</a></li>
 <li>支援噴水與氣體噴射的動態顆粒模擬</li>
 <li><a href="userInterface.html#ModelBrowser">支援拖放功能的模型瀏覽器</a> (模擬計算中仍可使用)</li>
-<li>支援多重的取消/重做、<a href="aviRecorder.html">影像錄製</a>、油漆噴塗、<a href="../index.htmll">建立詳盡的文檔等功能</a></li>
+<li>支援多重的取消/重做、<a href="aviRecorder.html">影像錄製</a>、油漆噴塗、<a href="../index.html">建立詳盡的文檔等功能</a></li>
 <p>機器人,機器人學,模擬器,模擬計算,運動學,動力學,路徑規劃,最短距離計算,碰撞偵測,視覺感測器,影像處理,接近感測器,油漆噴塗模擬.</p>
 </span>
 <br/>

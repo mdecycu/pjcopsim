@@ -145,7 +145,7 @@ img.add_border {
 <table class="allEncompassingTable">
 <tr>
 <td>
-<p><a href="../index.htmll" target="_top"><img src="./../images/homeImg.png"/></a></p>
+<p><a href="../index.html" target="_top"><img src="./../images/homeImg.png"/></a></p>
 <h4>Joint callback functions</h4>
 <p><a href="childScripts.html">Child script</a>s, or <a href="customizationScripts.html">customization scripts</a> can include a joint callback function, which is one of many <a href="callbackFunctions.html#systemCallbacks">system callback functions</a>. When present for a given joint, then it will be called by CoppeliaSim in various situations: </p>
 <li>When the joint is in kinematic mode: a call to <a href="regularApi/simSetJointTargetPosition.html">sim.setJointTargetPosition</a> or <a href="regularApi/simSetJointTargetVelocity.html">sim.setJointTargetVelocity</a> will trigger the joint callback function. If not present in a script attached to the given joint, then the call will be redirected to the <a href="mainScript.html">main script</a> that offers a default behaviour, i.e. a specific motion profile will be applied</li>

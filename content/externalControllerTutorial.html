@@ -145,7 +145,7 @@ img.add_border {
 <table class="allEncompassingTable">
 <tr>
 <td>
-<p><a href="../index.htmll" target="_top"><img src="./../images/homeImg.png"/></a></p>
+<p><a href="../index.html" target="_top"><img src="./../images/homeImg.png"/></a></p>
 <h4>External controller tutorial</h4>
 <p>There are several ways one can control a robot or simulation in CoppeliaSim: </p>
 <li>The most convenient way is to write a <a href="childScripts.html">child script</a> (in Lua or Python) that will handle the behaviour of a given robot or <a href="models.html">model</a>. It is the most convenient way, because child scripts are directly attached to <a href="objects.html">scene objects</a>, they will be duplicated together with their associated scene objects, they do not need any compilation with an external tool, they can run in <a href="threadedAndNonThreadedCode.html">threaded or non-threaded mode</a>, they can be extended via <a href="apiFunctions.html#customizingLuaFunctions">custom script functions</a> or via Lua/Python language extension mechanisms. Another major advantage in using child scripts: there is no communication lag as with the last 3 methods mentioned in this section (i.e. the <a href="apiFunctions.html">regular API</a> is used), and child scripts are part of the application main thread (inherent synchronous operation). There are however <a href="luaPythonDifferences.html">small differences between Lua and Python</a>.</li>
