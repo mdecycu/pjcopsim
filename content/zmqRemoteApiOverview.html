@@ -160,7 +160,7 @@ $ /path/to/python -m pip install cbor</pre>
 <p>It is also helpful to have the location of the Python remote API items in either Python's sys.path, or in the PYTHONPATH environment variable:</p>
 <pre>$ export PYTHONPATH=/path/to/zmqRemoteApi/clients/python</pre>
 <p>Following is a very simple example ZeroMQ remote API client code, which starts then runs a <a href="simulation.html#stepped">stepped</a> simulation for 3 seconds:</p>
-<code class="hljs language-python coppelia-zmq-remote-api-client">import time
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">import time
 from zmqRemoteApi import RemoteAPIClient
 
 client = RemoteAPIClient()
@@ -212,7 +212,7 @@ int main(int argc,char* argv[])
 pkg install -forge zeromq</pre>
 <br/>
 <p>Following is a very simple Matlab/Octave ZeroMQ remote API client code, which starts then runs a <a href="simulation.html#stepped">stepped</a> simulation for 3 seconds:</p>
-<code class="hljs language-matlab coppelia-zmq-remote-api-client">client = RemoteAPIClient();
+<pre class="brush:js;auto-links:false;toolbar:false" contenteditable="false">client = RemoteAPIClient();
 sim = client.getObject('sim');
 
 client.setStepping(true);
