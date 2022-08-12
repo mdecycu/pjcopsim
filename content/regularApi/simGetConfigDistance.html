@@ -53,10 +53,10 @@ Lua<br>synopsis
 <tr class=apiTableTr> 
 <td class=apiTableLeftLParam>Lua<br>parameters</td> 
 <td class=apiTableRightLParam>
-<div><strong>configA</strong>: the first configuration, e.g. in case of a 3D pose (position+quaternion), would be {x1,y1,z1,qx1,qy1,qz1,qw1}</div>
-<div><strong>configB</strong>: the second configuration</div>
-<div><strong>metric</strong>: an optional table specifying the metric to use to compute distances. e.g. if the specified configurations were 3D positions, the distance between two configurations would be calculated as SQRT( mx*(x2-x1)^2+my*(y2-y1)^2+mz*(z2-z1)^2 ), where {mx,my,mz} would be the metric.</div>
-<div><strong>types</strong>: an optional table specifying the type of each configuration value/dimension: 0=cartesian value, 1=2pi-cyclic value, 2=quaternion value. e.g. a configuration representing 3D poses should use a types argument {0,0,0,2,2,2,2}, a configuration representing revolute and cyclic joints should use a types argument {1,1,1,...}</div>
+<div>configA: the first configuration, e.g. in case of a 3D pose (position+quaternion), would be {x1,y1,z1,qx1,qy1,qz1,qw1}</div>
+<div>configB: the second configuration</div>
+<div>metric: an optional table specifying the metric to use to compute distances. e.g. if the specified configurations were 3D positions, the distance between two configurations would be calculated as SQRT( mx*(x2-x1)^2+my*(y2-y1)^2+mz*(z2-z1)^2 ), where {mx,my,mz} would be the metric.</div>
+<div>types: an optional table specifying the type of each configuration value/dimension: 0=cartesian value, 1=2pi-cyclic value, 2=quaternion value. e.g. a configuration representing 3D poses should use a types argument {0,0,0,2,2,2,2}, a configuration representing revolute and cyclic joints should use a types argument {1,1,1,...}</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -64,7 +64,7 @@ Lua<br>synopsis
 Lua<br>return values
 </td> 
 <td class=apiTableRightLRet>
-<div><strong>distance</strong>: the distance between the two configurations</div>
+<div>distance: the distance between the two configurations</div>
 </td> 
 </tr> 
 

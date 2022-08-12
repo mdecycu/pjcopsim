@@ -33,14 +33,14 @@ C/C++<br>synopsis
 <tr class=apiTableTr> 
 <td class=apiTableLeftCParam>C/C++<br>parameters</td> 
 <td class=apiTableRightCParam>
-<div><strong>inVertices</strong>: a pointer to the input vertices (succession of x/y/z values).</div>
-<div><strong>inVerticesL</strong>: the number of input vertices times 3.</div>
-<div><strong>verticesOut</strong>: a pointer to a pointer to the output vertices. The output vertices are allocated by CoppeliaSim and the user is in charge of releasing the buffer via <a href="simReleaseBuffer.html">simReleaseBuffer</a>.</div>
-<div><strong>verticesOutL</strong>: a pointer to the number of output vertices times 3.</div>
-<div><strong>indicesOut</strong>: a pointer to a pointer to the output indices. The output indices are allocated by CoppeliaSim and the user is in charge of releasing the buffer via <a href="simReleaseBuffer.html">simReleaseBuffer</a>.</div>
-<div><strong>indicesOutL</strong>: a pointer to the number of output indices (i.e. the number of triangles times 3).</div>
-<div><strong>reserved1</strong>: reserved, set to 0.</div>
-<div><strong>reserved2</strong>: reserved, set to nullptr.</div>
+<div>inVertices: a pointer to the input vertices (succession of x/y/z values).</div>
+<div>inVerticesL: the number of input vertices times 3.</div>
+<div>verticesOut: a pointer to a pointer to the output vertices. The output vertices are allocated by CoppeliaSim and the user is in charge of releasing the buffer via <a href="simReleaseBuffer.html">simReleaseBuffer</a>.</div>
+<div>verticesOutL: a pointer to the number of output vertices times 3.</div>
+<div>indicesOut: a pointer to a pointer to the output indices. The output indices are allocated by CoppeliaSim and the user is in charge of releasing the buffer via <a href="simReleaseBuffer.html">simReleaseBuffer</a>.</div>
+<div>indicesOutL: a pointer to the number of output indices (i.e. the number of triangles times 3).</div>
+<div>reserved1: reserved, set to 0.</div>
+<div>reserved2: reserved, set to nullptr.</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -60,7 +60,7 @@ Lua<br>synopsis
 <tr class=apiTableTr> 
 <td class=apiTableLeftLParam>Lua<br>parameters</td> 
 <td class=apiTableRightLParam>
-<div><strong>verticesIn</strong>: a table containing the input vertices (succession of x/y/z values).</div>
+<div>verticesIn: a table containing the input vertices (succession of x/y/z values).</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -68,8 +68,8 @@ Lua<br>synopsis
 Lua<br>return values
 </td> 
 <td class=apiTableRightLRet>
-<div><strong>verticesOut</strong>: a table containing the output vertices (succession of x/y/z values).</div>
-<div><strong>indicesOut</strong>: a table containing the output indices (3 values for each triangle).</div>
+<div>verticesOut: a table containing the output vertices (succession of x/y/z values).</div>
+<div>indicesOut: a table containing the output indices (3 values for each triangle).</div>
 </td> 
 </tr> 
 

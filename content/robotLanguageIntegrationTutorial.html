@@ -157,17 +157,17 @@ img.add_border {
 <p>The <em>MTB</em> robot is an imaginary robot (<em>MTB</em> stands for <em>Machine Type B</em>), that will be controlled with an imaginary robot language.</p>
 <p>As previously stated, the used robot language is imaginary and very very simple. Following commands are supported (one command per line, input is case-sensitive):</p>
 <pre class="lightGreyBox">
-"<strong>REM</strong>" starts a comment line
-"<strong>SETLINVEL</strong> v": sets the prismatic joint velocity for next movements (v is in m/s)
-"<strong>SETROTVEL</strong> v": sets the revolute joint velocity for next movements (v is in degrees/s)
-"<strong>MOVE</strong> p1 p2 p3 p4": moves to joint positions (p1;p2;p3;p4) (in degrees except for p3 in meters)
-"<strong>WAIT</strong> x": waits x milliseconds
-"<strong>SETBIT</strong> y": sets the bit at position y (1-32) in the robot output port
-"<strong>CLEARBIT</strong> y": clears the bit at position y (1-32) in the robot output port
-"<strong>IFBITGOTO</strong> y label": if bit at position y (1-32) in the robot input port is set, jump to "label"
-"<strong>IFNBITGOTO</strong> y label": if bit at position y (1-32) in the robot input port is not set, jump to "label"
-"<strong>GOTO</strong> label": jumps to "label"</pre>
-<p>Any word different from "<strong>REM</strong>", "<strong>SETLINVEL</strong>", "<strong>SETROTVEL</strong>", "<strong>MOVE</strong>", "<strong>WAIT</strong>", "<strong>SETBIT</strong>", "<strong>CLEARBIT</strong>", "<strong>IFBITGOTO</strong>", "<strong>IFNBITGOTO</strong>" and "<strong>GOTO</strong>" is considered to be a label. Now run the simulation. If the related plugin was not found, following message displays (the display of the message is handled in the <a href="childScripts.html">child scripts</a> attached to <a href="objects.html">objects</a> <em>MTB_Robot</em> and <em>MTB_Robot#0</em>):<br/>
+"REM" starts a comment line
+"SETLINVEL v": sets the prismatic joint velocity for next movements (v is in m/s)
+"SETROTVEL v": sets the revolute joint velocity for next movements (v is in degrees/s)
+"MOVE p1 p2 p3 p4": moves to joint positions (p1;p2;p3;p4) (in degrees except for p3 in meters)
+"WAIT x": waits x milliseconds
+"SETBIT y": sets the bit at position y (1-32) in the robot output port
+"CLEARBIT y": clears the bit at position y (1-32) in the robot output port
+"IFBITGOTO y label": if bit at position y (1-32) in the robot input port is set, jump to "label"
+"IFNBITGOTO y label": if bit at position y (1-32) in the robot input port is not set, jump to "label"
+"GOTO label": jumps to "label"</pre>
+<p>Any word different from "REM", "SETLINVEL", "SETROTVEL", "MOVE", "WAIT", "SETBIT", "CLEARBIT", "IFBITGOTO", "IFNBITGOTO" and "GOTO" is considered to be a label. Now run the simulation. If the related plugin was not found, following message displays (the display of the message is handled in the <a href="childScripts.html">child scripts</a> attached to <a href="objects.html">objects</a> <em>MTB_Robot</em> and <em>MTB_Robot#0</em>):<br/>
 </p>
 <p align="center"><img src="./../images/robLangTut3.jpg"/></p>
 <br/>
@@ -231,19 +231,19 @@ Checking whether the plugin was loaded. If not, an error message is output.</li>
 </li>
 <p>Following 3 custom script functions are of main interest (others are exported by the plugin): <br/>
 </p>
-<code class="hljs language-lua coppelia-coppeliasim-script">
+<pre class="brush:lua;auto-links:false;toolbar:false" contenteditable="false">
 int mtbServerHandle,string message=simMTB.startServer(string mtbServerExecutable,
-    int portNumber,charBuffer program,table[4] jointPositions, table[2] velocities)</code>
-<code class="hljs language-lua coppelia-coppeliasim-script">
-int result,string message=simMTB.step(int mtbServerHandle,float timeStep)</code>
-<code class="hljs language-lua coppelia-coppeliasim-script">
-table[4] jointValues=simMTB.getJoints(int mtbServerHandle)</code>
-<li><strong>simMTB.startServer</strong>: launches the server application (e.g. <em>mtbServer</em>) on the specified port, connects to it, and sends it the robot language code, the initial linear/angular joint positions, and the initial velocities. In return, the function returns a server handle (if successful), and a message (usually a compilation error message).</li>
-<li><strong>simMTB.step</strong>: steps through the robot language program with the specified timeStep, and returns a result value and a message (usually the code being currently executed).</li>
-<li><strong>simMTB.getJoints</strong>: retrieves the current linear/angular joint positions. The linear/angular joint positions are automatically updated when <em>simMTB.step</em> is called.</li>
+    int portNumber,charBuffer program,table[4] jointPositions, table[2] velocities)</pre>
+<pre class="brush:lua;auto-links:false;toolbar:false" contenteditable="false">
+int result,string message=simMTB.step(int mtbServerHandle,float timeStep)</pre>
+<pre class="brush:lua;auto-links:false;toolbar:false" contenteditable="false">
+table[4] jointValues=simMTB.getJoints(int mtbServerHandle)</pre>
+<li>simMTB.startServer: launches the server application (e.g. <em>mtbServer</em>) on the specified port, connects to it, and sends it the robot language code, the initial linear/angular joint positions, and the initial velocities. In return, the function returns a server handle (if successful), and a message (usually a compilation error message).</li>
+<li>simMTB.step: steps through the robot language program with the specified timeStep, and returns a result value and a message (usually the code being currently executed).</li>
+<li>simMTB.getJoints: retrieves the current linear/angular joint positions. The linear/angular joint positions are automatically updated when <em>simMTB.step</em> is called.</li>
 <p>You could also imagine slightly modifying the step function, and add one additional function, in order to be able to handle intermediate events triggered by the robot language program execution. In that case, each simulation step would have to execute following script code (in a child script):<br/>
 </p>
-<code class="hljs language-lua coppelia-coppeliasim-script">
+<pre class="brush:lua;auto-links:false;toolbar:false" contenteditable="false">
 local dt=sim.getSimulationTimeStep()
 while (dt&gt;0) do
     result,dt,cmdMessage=simMTB.step(mtbServerHandle,dt) -- where the returned dt is the remaining dt
@@ -252,7 +252,7 @@ while (dt&gt;0) do
         -- handle events here
         event=simMTB.getEvent()
     end
-end</code>
+end</pre>
 <br/>
 <br/>
 </td></tr>

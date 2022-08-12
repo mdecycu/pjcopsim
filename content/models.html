@@ -149,22 +149,22 @@ img.add_border {
 <h4>Models <img src="./../images/models0.jpg"/></h4>
 <p>A model is a sub-element of a <a href="scenes.html">scene</a>. A model by itself cannot exist, except in a file ("*.ttm"-file type), nor can it be simulated by itself. A model has to be contained in a scene in order to be operational.
 </p>
-<p>Models are defined by a selection of <a href="objects.html">scene objects</a> built on a same hierarchy tree, where the base of the tree has to be an object flagged as <strong>object is model base</strong>. They can be loaded with [Menu bar --&gt; File --&gt; Load model...]. It is however much easier and convenient to load a model with a drag-and-drop operation between the<a href="userInterface.html#ModelBrowser"> model browser</a> and a <a href="pagesAndViews.html">scene view</a>. Models can be saved with [Menu bar --&gt; File --&gt; Save model as...], just  make sure one single object flagged as <strong>object is model base</strong> is selected, otherwise the <strong>Save model as...</strong>-menu item will not be enabled. Make also sure to follow the <a href="buildingAModelTutorial.html">tutorial on how to build a clean simulation model</a>.</p>
+<p>Models are defined by a selection of <a href="objects.html">scene objects</a> built on a same hierarchy tree, where the base of the tree has to be an object flagged as object is model base. They can be loaded with [Menu bar --&gt; File --&gt; Load model...]. It is however much easier and convenient to load a model with a drag-and-drop operation between the<a href="userInterface.html#ModelBrowser"> model browser</a> and a <a href="pagesAndViews.html">scene view</a>. Models can be saved with [Menu bar --&gt; File --&gt; Save model as...], just  make sure one single object flagged as object is model base is selected, otherwise the Save model as...-menu item will not be enabled. Make also sure to follow the <a href="buildingAModelTutorial.html">tutorial on how to build a clean simulation model</a>.</p>
 <p>
 A model is defined in following steps:
 </p>
 <li>
   attach all objects that logically belong to the model to a base object, so that the base object is the base of the model tree.</li>
-<li>check the <strong>object is model base</strong>-item in the <a href="commonPropertiesDialog.html">object common properties</a>.</li>
-<li>in the same dialog as above, clicking <strong>Edit model properties</strong>, you can define special overriding properties (e.g. make the whole model invisible, non-collidable, etc.). That allows to quickly disable some properties for all objects defined in the model.</li>
+<li>check the object is model base-item in the <a href="commonPropertiesDialog.html">object common properties</a>.</li>
+<li>in the same dialog as above, clicking Edit model properties, you can define special overriding properties (e.g. make the whole model invisible, non-collidable, etc.). That allows to quickly disable some properties for all objects defined in the model.</li>
 <li>
-  for all objects in the model, except for the base object, check the <strong>select base of model instead</strong>-item in the <a href="commonPropertiesDialog.html">object common properties</a>. This will protect your model: you won't be able to directly select individual objects in your model, and you will be able to manipulate your model almost as a single object.</li>
-<li>for all objects that are normally not visible, check the <strong>Don't show as inside model selection</strong>-item. This will make the model bounding box appear in the right size around the model.</li>
+  for all objects in the model, except for the base object, check the select base of model instead-item in the <a href="commonPropertiesDialog.html">object common properties</a>. This will protect your model: you won't be able to directly select individual objects in your model, and you will be able to manipulate your model almost as a single object.</li>
+<li>for all objects that are normally not visible, check the Don't show as inside model selection-item. This will make the model bounding box appear in the right size around the model.</li>
 <li>think about the role of the model: will you be able to attach it to some other object? (e.g. your model is a gripper that you could attach to a manipulator wrist). Or will you be able to attach some other model to it? (e.g. your model is a manipulator that could accept a gripper model). Once the role is decided, define the model's <a href="commonPropertiesDialog.html#assembling">assembling behaviour</a>. Refer also to this <a href="designingDynamicSimulations.html#modelBaseSelection">dynamics design consideration</a>.</li>
 <p>Now, individual objects build on the model base cannot be selected anymore in the scene (selecting them will select the base of the model instead), however they can still be individually selected by holding down the ctrl- and shift-key during selection, or by selecting them in the <a href="userInterface.html#SceneHierarchy">scene hierarchy</a>. In addition to that, when the base object is selected, a stippled bounding box encompassing the whole model is displayed as can be seen in following figure:
 </p>
 <p align="center"><img src="./../images/models1.jpg"/></p>
-<p class="imageLabel">[Scene view and corresponding scene hierarchy view. The selected dummy is flagged as <strong>object is model base</strong>]</p>
+<p class="imageLabel">[Scene view and corresponding scene hierarchy view. The selected dummy is flagged as object is model base]</p>
 <br/>
 <p>Notice the model tag on the left-hand side of the icon of the object flagged as model base:</p>
 <p align="center"><img src="./../images/models0.jpg"/></p>

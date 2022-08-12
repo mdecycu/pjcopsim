@@ -77,19 +77,19 @@ td.section { margin: 0; padding: 0; }
 <td class="apiTableLeftLParam">Lua parameters</td>
 <td class="apiTableRightLParam">
 <div>
-<strong>topicName</strong> (string): topic name, e.g.: '/cmd_vel'</div>
+topicName (string): topic name, e.g.: '/cmd_vel'</div>
 <div>
-<strong>topicType</strong> (string): topic type, e.g.: 'geometry_msgs::Twist'</div>
+topicType (string): topic type, e.g.: 'geometry_msgs::Twist'</div>
 <div>
-<strong>queueSize</strong> (int, default: 1): (optional) queue size</div>
+queueSize (int, default: 1): (optional) queue size</div>
 <div>
-<strong>latch</strong> (bool, default: false): (optional) latch topic</div>
+latch (bool, default: false): (optional) latch topic</div>
 </td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftLRet">Lua return values</td>
 <td class="apiTableRightLRet"><div>
-<strong>publisherHandle</strong> (string): a handle to the ROS publisher</div></td>
+publisherHandle (string): a handle to the ROS publisher</div></td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftPSyn">Python synopsis</td>
@@ -122,17 +122,17 @@ td.section { margin: 0; padding: 0; }
 <td class="apiTableLeftLParam">Lua parameters</td>
 <td class="apiTableRightLParam">
 <div>
-<strong>serviceName</strong> (string): topic name, e.g.: '/cmd_vel'</div>
+serviceName (string): topic name, e.g.: '/cmd_vel'</div>
 <div>
-<strong>serviceType</strong> (string): topic type, e.g.: 'geometry_msgs::Twist'</div>
+serviceType (string): topic type, e.g.: 'geometry_msgs::Twist'</div>
 <div>
-<strong>serviceCallback</strong> (string): name of the callback function, which will be called with a single argument of type table containing the service request payload; it must return another table containing the response</div>
+serviceCallback (string): name of the callback function, which will be called with a single argument of type table containing the service request payload; it must return another table containing the response</div>
 </td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftLRet">Lua return values</td>
 <td class="apiTableRightLRet"><div>
-<strong>serviceServerHandle</strong> (string): a handle to the ROS service server</div></td>
+serviceServerHandle (string): a handle to the ROS service server</div></td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftPSyn">Python synopsis</td>
@@ -165,15 +165,15 @@ td.section { margin: 0; padding: 0; }
 <td class="apiTableLeftLParam">Lua parameters</td>
 <td class="apiTableRightLParam">
 <div>
-<strong>serviceClientHandle</strong> (string): the service client handle</div>
+serviceClientHandle (string): the service client handle</div>
 <div>
-<strong>request</strong> (table): the message to publish</div>
+request (table): the message to publish</div>
 </td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftLRet">Lua return values</td>
 <td class="apiTableRightLRet"><div>
-<strong>result</strong> (table): the response message, if the call succeeded</div></td>
+result (table): the response message, if the call succeeded</div></td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftPSyn">Python synopsis</td>
@@ -205,7 +205,7 @@ td.section { margin: 0; padding: 0; }
 <tr class="apiTableTr">
 <td class="apiTableLeftLParam">Lua parameters</td>
 <td class="apiTableRightLParam"><div>
-<strong>name</strong> (string): name of the parameter</div></td>
+name (string): name of the parameter</div></td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftLRet">Lua return values</td>
@@ -242,18 +242,18 @@ td.section { margin: 0; padding: 0; }
 <td class="apiTableLeftLParam">Lua parameters</td>
 <td class="apiTableRightLParam">
 <div>
-<strong>name</strong> (string): name of the parameter</div>
+name (string): name of the parameter</div>
 <div>
-<strong>defaultValue</strong> (bool, default: false): default value returned when parameter does not exist</div>
+defaultValue (bool, default: false): default value returned when parameter does not exist</div>
 </td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftLRet">Lua return values</td>
 <td class="apiTableRightLRet">
 <div>
-<strong>exists</strong> (bool): true if the param exists otherwise false</div>
+exists (bool): true if the param exists otherwise false</div>
 <div>
-<strong>value</strong> (bool): the value of the requested parameter</div>
+value (bool): the value of the requested parameter</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -287,18 +287,18 @@ td.section { margin: 0; padding: 0; }
 <td class="apiTableLeftLParam">Lua parameters</td>
 <td class="apiTableRightLParam">
 <div>
-<strong>name</strong> (string): name of the parameter</div>
+name (string): name of the parameter</div>
 <div>
-<strong>defaultValue</strong> (double, default: 0.0): default value returned when parameter does not exist</div>
+defaultValue (double, default: 0.0): default value returned when parameter does not exist</div>
 </td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftLRet">Lua return values</td>
 <td class="apiTableRightLRet">
 <div>
-<strong>exists</strong> (bool): true if the param exists otherwise false</div>
+exists (bool): true if the param exists otherwise false</div>
 <div>
-<strong>value</strong> (double): the value of the requested parameter</div>
+value (double): the value of the requested parameter</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -332,18 +332,18 @@ td.section { margin: 0; padding: 0; }
 <td class="apiTableLeftLParam">Lua parameters</td>
 <td class="apiTableRightLParam">
 <div>
-<strong>name</strong> (string): name of the parameter</div>
+name (string): name of the parameter</div>
 <div>
-<strong>defaultValue</strong> (int, default: 0): default value returned when parameter does not exist</div>
+defaultValue (int, default: 0): default value returned when parameter does not exist</div>
 </td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftLRet">Lua return values</td>
 <td class="apiTableRightLRet">
 <div>
-<strong>exists</strong> (bool): true if the param exists otherwise false</div>
+exists (bool): true if the param exists otherwise false</div>
 <div>
-<strong>value</strong> (int): the value of the requested parameter</div>
+value (int): the value of the requested parameter</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -377,18 +377,18 @@ td.section { margin: 0; padding: 0; }
 <td class="apiTableLeftLParam">Lua parameters</td>
 <td class="apiTableRightLParam">
 <div>
-<strong>name</strong> (string): name of the parameter</div>
+name (string): name of the parameter</div>
 <div>
-<strong>defaultValue</strong> (string, default: ""): default value returned when parameter does not exist</div>
+defaultValue (string, default: ""): default value returned when parameter does not exist</div>
 </td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftLRet">Lua return values</td>
 <td class="apiTableRightLRet">
 <div>
-<strong>exists</strong> (bool): true if the param exists otherwise false</div>
+exists (bool): true if the param exists otherwise false</div>
 <div>
-<strong>value</strong> (string): the value of the requested parameter</div>
+value (string): the value of the requested parameter</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -421,12 +421,12 @@ td.section { margin: 0; padding: 0; }
 <tr class="apiTableTr">
 <td class="apiTableLeftLParam">Lua parameters</td>
 <td class="apiTableRightLParam"><div>
-<strong>flag</strong> (int, default: 0): unused: set to zero</div></td>
+flag (int, default: 0): unused: set to zero</div></td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftLRet">Lua return values</td>
 <td class="apiTableRightLRet"><div>
-<strong>time</strong> (double): ROS time expressed in seconds</div></td>
+time (double): ROS time expressed in seconds</div></td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftPSyn">Python synopsis</td>
@@ -457,12 +457,12 @@ td.section { margin: 0; padding: 0; }
 <tr class="apiTableTr">
 <td class="apiTableLeftLParam">Lua parameters</td>
 <td class="apiTableRightLParam"><div>
-<strong>name</strong> (string): name of the parameter</div></td>
+name (string): name of the parameter</div></td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftLRet">Lua return values</td>
 <td class="apiTableRightLRet"><div>
-<strong>exists</strong> (bool): true if the parameter exists, false otherwise</div></td>
+exists (bool): true if the parameter exists, false otherwise</div></td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftPSyn">Python synopsis</td>
@@ -495,15 +495,15 @@ td.section { margin: 0; padding: 0; }
 <td class="apiTableLeftLParam">Lua parameters</td>
 <td class="apiTableRightLParam">
 <div>
-<strong>topicName</strong> (string): topic name, e.g.: '/cmd_vel'</div>
+topicName (string): topic name, e.g.: '/cmd_vel'</div>
 <div>
-<strong>queueSize</strong> (int, default: 1): (optional) queue size</div>
+queueSize (int, default: 1): (optional) queue size</div>
 </td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftLRet">Lua return values</td>
 <td class="apiTableRightLRet"><div>
-<strong>publisherHandle</strong> (string): a handle to the ROS publisher</div></td>
+publisherHandle (string): a handle to the ROS publisher</div></td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftPSyn">Python synopsis</td>
@@ -536,15 +536,15 @@ td.section { margin: 0; padding: 0; }
 <td class="apiTableLeftLParam">Lua parameters</td>
 <td class="apiTableRightLParam">
 <div>
-<strong>publisherHandle</strong> (string): the publisher handle</div>
+publisherHandle (string): the publisher handle</div>
 <div>
-<strong>data</strong> (string): the image data</div>
+data (string): the image data</div>
 <div>
-<strong>width</strong> (int): image width</div>
+width (int): image width</div>
 <div>
-<strong>height</strong> (int): image height</div>
+height (int): image height</div>
 <div>
-<strong>frame_id</strong> (string): frame id</div>
+frame_id (string): frame id</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -581,7 +581,7 @@ td.section { margin: 0; padding: 0; }
 <tr class="apiTableTr">
 <td class="apiTableLeftLParam">Lua parameters</td>
 <td class="apiTableRightLParam"><div>
-<strong>publisherHandle</strong> (string): the publisher handle</div></td>
+publisherHandle (string): the publisher handle</div></td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftLRet">Lua return values</td>
@@ -617,7 +617,7 @@ td.section { margin: 0; padding: 0; }
 <tr class="apiTableTr">
 <td class="apiTableLeftLParam">Lua parameters</td>
 <td class="apiTableRightLParam"><div>
-<strong>subscriberHandle</strong> (string): the subscriber handle</div></td>
+subscriberHandle (string): the subscriber handle</div></td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftLRet">Lua return values</td>
@@ -654,17 +654,17 @@ td.section { margin: 0; padding: 0; }
 <td class="apiTableLeftLParam">Lua parameters</td>
 <td class="apiTableRightLParam">
 <div>
-<strong>topicName</strong> (string): topic name, e.g.: '/cmd_vel'</div>
+topicName (string): topic name, e.g.: '/cmd_vel'</div>
 <div>
-<strong>topicCallback</strong> (string): name of the callback function, which will be called as: topicCallback(string data, number width, number height)</div>
+topicCallback (string): name of the callback function, which will be called as: topicCallback(string data, number width, number height)</div>
 <div>
-<strong>queueSize</strong> (int, default: 1): (optional) queue size</div>
+queueSize (int, default: 1): (optional) queue size</div>
 </td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftLRet">Lua return values</td>
 <td class="apiTableRightLRet"><div>
-<strong>subscriberHandle</strong> (string): a handle to the ROS subscriber</div></td>
+subscriberHandle (string): a handle to the ROS subscriber</div></td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftPSyn">Python synopsis</td>
@@ -697,9 +697,9 @@ td.section { margin: 0; padding: 0; }
 <td class="apiTableLeftLParam">Lua parameters</td>
 <td class="apiTableRightLParam">
 <div>
-<strong>publisherHandle</strong> (string): the publisher handle</div>
+publisherHandle (string): the publisher handle</div>
 <div>
-<strong>message</strong> (table): the message to publish</div>
+message (table): the message to publish</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -736,7 +736,7 @@ td.section { margin: 0; padding: 0; }
 <tr class="apiTableTr">
 <td class="apiTableLeftLParam">Lua parameters</td>
 <td class="apiTableRightLParam"><div>
-<strong>publisherHandle</strong> (string): the publisher handle</div></td>
+publisherHandle (string): the publisher handle</div></td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftLRet">Lua return values</td>
@@ -772,15 +772,15 @@ td.section { margin: 0; padding: 0; }
 <tr class="apiTableTr">
 <td class="apiTableLeftLParam">Lua parameters</td>
 <td class="apiTableRightLParam"><div>
-<strong>name</strong> (string): name of the parameter</div></td>
+name (string): name of the parameter</div></td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftLRet">Lua return values</td>
 <td class="apiTableRightLRet">
 <div>
-<strong>found</strong> (bool): true if the parameter has been found</div>
+found (bool): true if the parameter has been found</div>
 <div>
-<strong>name</strong> (string): name of the parameter which has been found</div>
+name (string): name of the parameter which has been found</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -813,7 +813,7 @@ td.section { margin: 0; padding: 0; }
 <tr class="apiTableTr">
 <td class="apiTableLeftLParam">Lua parameters</td>
 <td class="apiTableRightLParam"><div>
-<strong>transform</strong> (table): the transformation expressed as a geometry_msgs/TransformStamped message, i.e. {header={stamp=timeStamp, frame_id='...'}, child_frame_id='...', transform={translation={x=..., y=..., z=...}, rotation={x=..., y=..., z=..., w=...}}}</div></td>
+transform (table): the transformation expressed as a geometry_msgs/TransformStamped message, i.e. {header={stamp=timeStamp, frame_id='...'}, child_frame_id='...', transform={translation={x=..., y=..., z=...}, rotation={x=..., y=..., z=..., w=...}}}</div></td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftLRet">Lua return values</td>
@@ -849,7 +849,7 @@ td.section { margin: 0; padding: 0; }
 <tr class="apiTableTr">
 <td class="apiTableLeftLParam">Lua parameters</td>
 <td class="apiTableRightLParam"><div>
-<strong>transforms</strong> (table): an array of geometry_msgs/TransformStamped messages</div></td>
+transforms (table): an array of geometry_msgs/TransformStamped messages</div></td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftLRet">Lua return values</td>
@@ -886,15 +886,15 @@ td.section { margin: 0; padding: 0; }
 <td class="apiTableLeftLParam">Lua parameters</td>
 <td class="apiTableRightLParam">
 <div>
-<strong>serviceName</strong> (string): topic name, e.g.: '/cmd_vel'</div>
+serviceName (string): topic name, e.g.: '/cmd_vel'</div>
 <div>
-<strong>serviceType</strong> (string): topic type, e.g.: 'geometry_msgs::Twist'</div>
+serviceType (string): topic type, e.g.: 'geometry_msgs::Twist'</div>
 </td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftLRet">Lua return values</td>
 <td class="apiTableRightLRet"><div>
-<strong>serviceClientHandle</strong> (string): a handle to the ROS service client</div></td>
+serviceClientHandle (string): a handle to the ROS service client</div></td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftPSyn">Python synopsis</td>
@@ -926,7 +926,7 @@ td.section { margin: 0; padding: 0; }
 <tr class="apiTableTr">
 <td class="apiTableLeftLParam">Lua parameters</td>
 <td class="apiTableRightLParam"><div>
-<strong>serviceClientHandle</strong> (string): the service client handle</div></td>
+serviceClientHandle (string): the service client handle</div></td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftLRet">Lua return values</td>
@@ -962,7 +962,7 @@ td.section { margin: 0; padding: 0; }
 <tr class="apiTableTr">
 <td class="apiTableLeftLParam">Lua parameters</td>
 <td class="apiTableRightLParam"><div>
-<strong>serviceServerHandle</strong> (string): the service server handle</div></td>
+serviceServerHandle (string): the service server handle</div></td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftLRet">Lua return values</td>
@@ -999,9 +999,9 @@ td.section { margin: 0; padding: 0; }
 <td class="apiTableLeftLParam">Lua parameters</td>
 <td class="apiTableRightLParam">
 <div>
-<strong>name</strong> (string): name of the parameter</div>
+name (string): name of the parameter</div>
 <div>
-<strong>value</strong> (bool): value of the parameter</div>
+value (bool): value of the parameter</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -1039,9 +1039,9 @@ td.section { margin: 0; padding: 0; }
 <td class="apiTableLeftLParam">Lua parameters</td>
 <td class="apiTableRightLParam">
 <div>
-<strong>name</strong> (string): name of the parameter</div>
+name (string): name of the parameter</div>
 <div>
-<strong>value</strong> (double): value of the parameter</div>
+value (double): value of the parameter</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -1079,9 +1079,9 @@ td.section { margin: 0; padding: 0; }
 <td class="apiTableLeftLParam">Lua parameters</td>
 <td class="apiTableRightLParam">
 <div>
-<strong>name</strong> (string): name of the parameter</div>
+name (string): name of the parameter</div>
 <div>
-<strong>value</strong> (int): value of the parameter</div>
+value (int): value of the parameter</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -1119,9 +1119,9 @@ td.section { margin: 0; padding: 0; }
 <td class="apiTableLeftLParam">Lua parameters</td>
 <td class="apiTableRightLParam">
 <div>
-<strong>name</strong> (string): name of the parameter</div>
+name (string): name of the parameter</div>
 <div>
-<strong>value</strong> (string): value of the parameter</div>
+value (string): value of the parameter</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -1158,7 +1158,7 @@ td.section { margin: 0; padding: 0; }
 <tr class="apiTableTr">
 <td class="apiTableLeftLParam">Lua parameters</td>
 <td class="apiTableRightLParam"><div>
-<strong>publisherHandle</strong> (string): the publisher handle</div></td>
+publisherHandle (string): the publisher handle</div></td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftLRet">Lua return values</td>
@@ -1194,7 +1194,7 @@ td.section { margin: 0; padding: 0; }
 <tr class="apiTableTr">
 <td class="apiTableLeftLParam">Lua parameters</td>
 <td class="apiTableRightLParam"><div>
-<strong>serviceClientHandle</strong> (string): the service client handle</div></td>
+serviceClientHandle (string): the service client handle</div></td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftLRet">Lua return values</td>
@@ -1230,7 +1230,7 @@ td.section { margin: 0; padding: 0; }
 <tr class="apiTableTr">
 <td class="apiTableLeftLParam">Lua parameters</td>
 <td class="apiTableRightLParam"><div>
-<strong>serviceServerHandle</strong> (string): the service server handle</div></td>
+serviceServerHandle (string): the service server handle</div></td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftLRet">Lua return values</td>
@@ -1266,7 +1266,7 @@ td.section { margin: 0; padding: 0; }
 <tr class="apiTableTr">
 <td class="apiTableLeftLParam">Lua parameters</td>
 <td class="apiTableRightLParam"><div>
-<strong>subscriberHandle</strong> (string): the subscriber handle</div></td>
+subscriberHandle (string): the subscriber handle</div></td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftLRet">Lua return values</td>
@@ -1303,21 +1303,21 @@ td.section { margin: 0; padding: 0; }
 <td class="apiTableLeftLParam">Lua parameters</td>
 <td class="apiTableRightLParam">
 <div>
-<strong>topicName</strong> (string): topic name, e.g.: '/cmd_vel'</div>
+topicName (string): topic name, e.g.: '/cmd_vel'</div>
 <div>
-<strong>topicType</strong> (string): topic type, e.g.: 'geometry_msgs::Twist'</div>
+topicType (string): topic type, e.g.: 'geometry_msgs::Twist'</div>
 <div>
-<strong>topicCallback</strong> (string): name of the callback function, which will be called with a single argument of type table containing the message payload, e.g.: {linear={x=1.5, y=0.0, z=0.0}, angular={x=0.0, y=0.0, z=-2.3}}</div>
+topicCallback (string): name of the callback function, which will be called with a single argument of type table containing the message payload, e.g.: {linear={x=1.5, y=0.0, z=0.0}, angular={x=0.0, y=0.0, z=-2.3}}</div>
 <div>
-<strong>queueSize</strong> (int, default: 1): (optional) queue size</div>
+queueSize (int, default: 1): (optional) queue size</div>
 <div>
-<strong>transportHints</strong> (transport_hints, default: {}): (optional) transport hints</div>
+transportHints (transport_hints, default: {}): (optional) transport hints</div>
 </td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftLRet">Lua return values</td>
 <td class="apiTableRightLRet"><div>
-<strong>subscriberHandle</strong> (string): a handle to the ROS subscriber</div></td>
+subscriberHandle (string): a handle to the ROS subscriber</div></td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftPSyn">Python synopsis</td>
@@ -1349,7 +1349,7 @@ td.section { margin: 0; padding: 0; }
 <tr class="apiTableTr">
 <td class="apiTableLeftLParam">Lua parameters</td>
 <td class="apiTableRightLParam"><div>
-<strong>subscriberHandle</strong> (string): the subscriber handle</div></td>
+subscriberHandle (string): the subscriber handle</div></td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftLRet">Lua return values</td>
@@ -1373,7 +1373,7 @@ td.section { margin: 0; padding: 0; }
 <tr><td id="enums" class="section"></td></tr>
 <tr><td id="structs" class="section">
 <br><br><h1>Data structures</h1>
-<p>Data structures are used to pass complex data around. Create data structures in Lua in the form of a map, e.g.: <code>{line_size=3, add_to_legend=false, selectable=true}</code></p>
+<p>Data structures are used to pass complex data around. Create data structures in Lua in the form of a map, e.g.: <code>{line_size=3, add_to_legend=false, selectable=true}</pre></p>
 <h3 class="subsectionBar">
 <a name="struct:transport_hints" id="struct:transport_hints"></a>transport_hints</h3>
 <table class="apiTable">
@@ -1387,11 +1387,11 @@ td.section { margin: 0; padding: 0; }
 <td class="apiTableLeftLParam">Fields</td>
 <td class="apiTableRightLParam">
 <div>
-<strong>transports</strong> (table of string, default: {}): the list of transports to use. allowed values are 'reliable', 'unreliable', 'tcp', 'udp' (the last two being synonyms of the first two respectively). transports appearing earlier in the list have higher priority. e.g.: {'unreliable','reliable'} specifies that you would prefer an unreliable transport, followed by a reliable one.</div>
+transports (table of string, default: {}): the list of transports to use. allowed values are 'reliable', 'unreliable', 'tcp', 'udp' (the last two being synonyms of the first two respectively). transports appearing earlier in the list have higher priority. e.g.: {'unreliable','reliable'} specifies that you would prefer an unreliable transport, followed by a reliable one.</div>
 <div>
-<strong>tcpNoDelay</strong> (bool, default: false): </div>
+tcpNoDelay (bool, default: false): </div>
 <div>
-<strong>maxDatagramSize</strong> (int, default: 0): </div>
+maxDatagramSize (int, default: 0): </div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -1423,7 +1423,7 @@ td.section { margin: 0; padding: 0; }
 <tr class="apiTableTr">
 <td class="apiTableLeftLParam">Lua parameters</td>
 <td class="apiTableRightLParam"><div>
-<strong>message</strong> (table): the topic payload (i.e. the message)</div></td>
+message (table): the topic payload (i.e. the message)</div></td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftLRet">Lua return values</td>
@@ -1459,11 +1459,11 @@ td.section { margin: 0; padding: 0; }
 <td class="apiTableLeftLParam">Lua parameters</td>
 <td class="apiTableRightLParam">
 <div>
-<strong>data</strong> (string): the image data</div>
+data (string): the image data</div>
 <div>
-<strong>width</strong> (int): image width</div>
+width (int): image width</div>
 <div>
-<strong>height</strong> (int): image height</div>
+height (int): image height</div>
 </td>
 </tr>
 <tr class="apiTableTr">

@@ -33,17 +33,17 @@ C/C++<br>synopsis
 <tr class=apiTableTr> 
 <td class=apiTableLeftCParam>C/C++<br>parameters</td> 
 <td class=apiTableRightCParam>
-<div><strong>shapeHandle</strong>: the handle of the shape.</div>
-<div><strong>textureId</strong>: the ID of the texture or -1 to remove any existing texture. See also <a href="simGetTextureId.html">simGetTextureId</a>, <a href="simGetShapeTextureId.html">simGetShapeTextureId</a> and <a href="simCreateTexture.html">simCreateTexture</a>.</div>
-<div><strong>mappingMode</strong>: the <a href="../apiConstants.html#textureMappingModes">texture mapping mode</a>.</div>
-<div><strong>options</strong>: bit-coded:</div>
+<div>shapeHandle: the handle of the shape.</div>
+<div>textureId: the ID of the texture or -1 to remove any existing texture. See also <a href="simGetTextureId.html">simGetTextureId</a>, <a href="simGetShapeTextureId.html">simGetShapeTextureId</a> and <a href="simCreateTexture.html">simCreateTexture</a>.</div>
+<div>mappingMode: the <a href="../apiConstants.html#textureMappingModes">texture mapping mode</a>.</div>
+<div>options: bit-coded:</div>
 <div class=tab>bit0: if set (1), then adjacent texture pixels are not interpolated.</div>
 <div class=tab>bit1:  if set (2), then the texture is applied as a decal (its appearance won't be influenced by light conditions).</div>
 <div class=tab>bit2: if set (4), then the texture will be repeated along the U direction.</div>
 <div class=tab>bit3: if set (8), then the texture will be repeated along the V direction.</div>
-<div><strong>uvScaling</strong>: a pointer to 2 values that indicate the texture scaling factors along the U and V directions.</div>
-<div><strong>position</strong>: a pointer to 3 values (x,y,z) that indicate the texture position on the shape. Can be nullptr for default values.</div>
-<div><strong>orientation</strong>: a pointer to 3 values (Euler angles) that indicate the texture orientation on the shape. Can be nullptr for default values.</div>
+<div>uvScaling: a pointer to 2 values that indicate the texture scaling factors along the U and V directions.</div>
+<div>position: a pointer to 3 values (x,y,z) that indicate the texture position on the shape. Can be nullptr for default values.</div>
+<div>orientation: a pointer to 3 values (Euler angles) that indicate the texture orientation on the shape. Can be nullptr for default values.</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 

@@ -33,14 +33,14 @@ C/C++<br>synopsis
 <tr class=apiTableTr> 
 <td class=apiTableLeftCParam>C/C++<br>parameters</td> 
 <td class=apiTableRightCParam>
-<div><strong>objectType</strong>: a <a href="../apiConstants.html#customDrawingObjects">drawing object type combined with attributes</a></div>
-<div><strong>size</strong>: size of the item (width of lines or size of points are in pixels, other sizes are in meters</div>
-<div><strong>duplicateTolerance</strong>: if different from 0.0, then a call to <a href="simAddDrawingObjectItem.html">simAddDrawingObjectItem</a> will only add the item if there is no other item within duplicateTolerance distance. Useful to avoid adding a too high density of points, is however not appropriate when using a large number of points (slower operation). Applicable only for single vertex items.<br>
+<div>objectType: a <a href="../apiConstants.html#customDrawingObjects">drawing object type combined with attributes</a></div>
+<div>size: size of the item (width of lines or size of points are in pixels, other sizes are in meters</div>
+<div>duplicateTolerance: if different from 0.0, then a call to <a href="simAddDrawingObjectItem.html">simAddDrawingObjectItem</a> will only add the item if there is no other item within duplicateTolerance distance. Useful to avoid adding a too high density of points, is however not appropriate when using a large number of points (slower operation). Applicable only for single vertex items.<br>
 </div>
-<div><strong>parentObjectHandle</strong>: handle of the scene object where the drawing items should keep attached to (if the scene object moves, the drawing items will also move), or -1 if the drawing items are relative to the world (fixed)<br>
+<div>parentObjectHandle: handle of the scene object where the drawing items should keep attached to (if the scene object moves, the drawing items will also move), or -1 if the drawing items are relative to the world (fixed)<br>
 </div>
-<div><strong>maxItemCount</strong>: maximum number of items this object can hold.</div>
-<div><strong>color</strong>: default  color (pointer to 3 rgb values). Can be nullptr</div>
+<div>maxItemCount: maximum number of items this object can hold.</div>
+<div>color: default  color (pointer to 3 rgb values). Can be nullptr</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 

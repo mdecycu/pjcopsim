@@ -155,7 +155,7 @@ img.add_border {
 <li><a href="regularApi/simTransformBuffer.html">sim.transformBuffer</a></li>
 <li>other <a href="apiFunctions.html#coordinatesAndTransformations">matrix/transformation related functions</a></li>
 <p><a name="packing"></a>Following example illustrates how to pack/unpack data. Other functions can be found here:</p>
-<code class="hljs language-lua coppelia-coppeliasim-script">
+<pre class="brush:lua;auto-links:false;toolbar:false" contenteditable="false">
 -- Packing/unpacking specific type of data:
 local data={1,2,3}
 local binaryPackedData=sim.packDoubleTable(data) -- binary packing
@@ -182,11 +182,11 @@ cbor=require('cbor')
 local cborPackedData=cbor.encode(data) -- cbor encoding
 data=cbor.decode(cborPackedData) -- cbor decoding
 
-</code>
+</pre>
 <p>More packing/unpacking functions can be found <a href="apiFunctions.html#packing">here</a>.</p>
 <br/>
 <p><a name="algebra"></a>Following example illustrates usage of the linear algebra functionality:</p>
-<code class="hljs language-lua coppelia-coppeliasim-script">
+<pre class="brush:lua;auto-links:false;toolbar:false" contenteditable="false">
 -- Get the absolute transformation matrices of an object and its parent:
 local absObj=Matrix4x4:frompose(sim.getObjectPose(objectHandle,-1))
 local absParentObj=Matrix4x4:frompose(sim.getObjectPose(parentHandle,-1))
@@ -198,7 +198,7 @@ local relObj=Matrix4x4:inv(absParentObj)*absObj
 local relObj2=Matrix4x4:frompose(sim.getObjectPose(objectHandle,parentHandle))
 
 -- Check that both matrices are same:
-print(relObj:sub(relObj2):abs():max())</code>
+print(relObj:sub(relObj2):abs():max())</pre>
 <p>The documentation for the linear algebra functionality can be found <a href="https://github.com/CoppeliaRobotics/lua/blob/master/matrix.md" target="_blank">here</a>.</p>
 <br/>
 <br/>

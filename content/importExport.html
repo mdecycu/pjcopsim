@@ -185,7 +185,7 @@ img.add_border {
 <a name="text"></a>Importing/exporting text/binary data
 </h4>
 <p>Following example illustrates how to log a joint angle to a file, as text data:</p>
-<code class="hljs language-lua coppelia-coppeliasim-script">
+<pre class="brush:lua;auto-links:false;toolbar:false" contenteditable="false">
 function sysCall_init()
     jointHandle=sim.getObject('/Joint')
     file=io.open('jointAngles.txt','w+')
@@ -200,12 +200,12 @@ end
 
 function sysCall_cleanup()
     file:close()
-end</code>
+end</pre>
 <p>Following example illustrates how to read a file, line by line:</p>
-<code class="hljs language-lua coppelia-coppeliasim-script">
+<pre class="brush:lua;auto-links:false;toolbar:false" contenteditable="false">
 for line in io.lines('textFile.txt') do 
     print(line)
-end</code>
+end</pre>
 <br/>
 <br/>
 <h4>

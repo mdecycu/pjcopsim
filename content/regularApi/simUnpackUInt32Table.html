@@ -53,17 +53,17 @@ Lua<br>synopsis
 <tr class=apiTableTr> 
 <td class=apiTableLeftLParam>Lua<br>parameters</td> 
 <td class=apiTableRightLParam>
-<div><strong>data</strong>: a string (values between 0 and 255) that contains packed uint32 numbers</div>
-<div><strong>startUint32Index</strong>: the zero-based index from which on data should be unpacked (from data[4*startUint32Index+1+additionalByteOffset]). Can be omitted in which case 0 is used</div>
-<div><strong>uint32Count</strong>: the amount of uint32s that should be unpacked. Can be omitted in which case 0 is used (which indicates that the maximum of uint32s should be unpacked from the indicated startUint32Index)</div>
-<div><strong>additionalByteOffset</strong>: a byte offset that will be added before reading the uint32s. Can be omitted, in which case 0 is used.</div></td> 
+<div>data: a string (values between 0 and 255) that contains packed uint32 numbers</div>
+<div>startUint32Index: the zero-based index from which on data should be unpacked (from data[4*startUint32Index+1+additionalByteOffset]). Can be omitted in which case 0 is used</div>
+<div>uint32Count: the amount of uint32s that should be unpacked. Can be omitted in which case 0 is used (which indicates that the maximum of uint32s should be unpacked from the indicated startUint32Index)</div>
+<div>additionalByteOffset: a byte offset that will be added before reading the uint32s. Can be omitted, in which case 0 is used.</div></td> 
 </tr> 
 <tr class=apiTableTr> 
 <td class=apiTableLeftLRet>
 Lua<br>return values
 </td> 
 <td class=apiTableRightLRet>
-<div><strong>integerNumbers</strong>: a table containing unpacked uint32 numbers</div>
+<div>integerNumbers: a table containing unpacked uint32 numbers</div>
 </td> 
 </tr> 
 

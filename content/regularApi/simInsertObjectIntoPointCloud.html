@@ -33,14 +33,14 @@ C/C++<br>synopsis
 <tr class=apiTableTr> 
 <td class=apiTableLeftCParam>C/C++<br>parameters</td> 
 <td class=apiTableRightCParam>
-<div><strong>pointCloudHandle</strong>: the handle of the point cloud. See also <a href="simGetObject.html">sim.getObject</a></div>
-<div><strong>objectHandle</strong>: the handle of the object to insert. Only potentially <a href="../collidableObjects.html">collidable objects</a> are supported</div>
-<div><strong>options</strong>: reserved. Set to 0</div>
-<div><strong>gridSize</strong>: when a shape is inserted, it will first be converted to an OC tree with a given grid or voxel size.</div>
-<div><strong>color</strong>: a pointer to one RGB triple, specifying the red, green and blue color components (0-255). Can be nullptr.</div>
-<div><strong>optionalValues</strong>: can be used to specify additional parameters, or set to nullptr for default parameter values:</div>
+<div>pointCloudHandle: the handle of the point cloud. See also <a href="simGetObject.html">sim.getObject</a></div>
+<div>objectHandle: the handle of the object to insert. Only potentially <a href="../collidableObjects.html">collidable objects</a> are supported</div>
+<div>options: reserved. Set to 0</div>
+<div>gridSize: when a shape is inserted, it will first be converted to an OC tree with a given grid or voxel size.</div>
+<div>color: a pointer to one RGB triple, specifying the red, green and blue color components (0-255). Can be nullptr.</div>
+<div>optionalValues: can be used to specify additional parameters, or set to nullptr for default parameter values:</div>
 <div class=tab>((simInt*)optionalValues)[0]: an integer value that is bit coded. Each bit indicates which additional parameter will be taken into account:</div>
-<div class=tab>((simFloat*)optionalValues)[1]: <strong>duplicateTolerance</strong>: a minimum distance tolerance value that is used to avoid duplicate points. To have this parameter taken into account, set bit0 to 1 in ((simInt*)optionalValues)[0]. Point insertion is slower when the duplicate tolerance is &gt; then 0.0</div>
+<div class=tab>((simFloat*)optionalValues)[1]: duplicateTolerance: a minimum distance tolerance value that is used to avoid duplicate points. To have this parameter taken into account, set bit0 to 1 in ((simInt*)optionalValues)[0]. Point insertion is slower when the duplicate tolerance is &gt; then 0.0</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 

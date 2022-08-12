@@ -38,18 +38,18 @@ C/C++<br>synopsis
 <tr class=apiTableTr> 
 <td class=apiTableLeftCParam>C/C++<br>parameters</td> 
 <td class=apiTableRightCParam>
-<div><strong>functNameAtPluginName</strong>: name of the function, combined with the plugin name: functionName@pluginName. Avoid using too simple function names, otherwise they might clash with other plugins. Also, always use the <em>simXX.</em> prefix (e.g. <em>simMyPlugin.myCustomFunction</em>) for the function name. The plugin name should be the exact same name used while loading the plugin via <a href="simLoadModule.html">simLoadModule</a> (if the plugin name is <em>simExtMyPlugin.dll</em>, this should be <em>MyPlugin</em>).<br>
+<div>functNameAtPluginName: name of the function, combined with the plugin name: functionName@pluginName. Avoid using too simple function names, otherwise they might clash with other plugins. Also, always use the <em>simXX.</em> prefix (e.g. <em>simMyPlugin.myCustomFunction</em>) for the function name. The plugin name should be the exact same name used while loading the plugin via <a href="simLoadModule.html">simLoadModule</a> (if the plugin name is <em>simExtMyPlugin.dll</em>, this should be <em>MyPlugin</em>).<br>
 </div>
-<div><strong>callTips</strong>: call tips: string (or several strings separated by '@') that indicates the input/output argument type/size. Call tips appear in the script editor when the function was typed followed by &quot;(&quot;. callTips Can be nullptr, in which case no call tips will be displayed, nor syntax highlighting used.<br>
+<div>callTips: call tips: string (or several strings separated by '@') that indicates the input/output argument type/size. Call tips appear in the script editor when the function was typed followed by &quot;(&quot;. callTips Can be nullptr, in which case no call tips will be displayed, nor syntax highlighting used.<br>
 </div>
-<div><strong>callback</strong>: callback address that is called when the &quot;functName&quot; function is called from Lua. Can be nullptr, in which case the command will only register the function for call tips and syntax highlighting. See further down for a simple way to call above function, using a helper class. The callback's first argument is a SScriptCallBack structure that holds:<br>
+<div>callback: callback address that is called when the &quot;functName&quot; function is called from Lua. Can be nullptr, in which case the command will only register the function for call tips and syntax highlighting. See further down for a simple way to call above function, using a helper class. The callback's first argument is a SScriptCallBack structure that holds:<br>
 </div>
 <br>
-<div><strong>simInt objectID</strong>: handle of the object that the calling script is attached to, or -1 if the calling script is not a child script<br>
+<div>simInt objectID: handle of the object that the calling script is attached to, or -1 if the calling script is not a child script<br>
 </div>
-<div><strong>simInt scriptID</strong>: handle of the calling script<br>
+<div>simInt scriptID: handle of the calling script<br>
 </div>
-<div><strong>simInt stackID</strong>: a <a href="simCreateStack.html">stack handle</a>. The stack is used to read arguments from the script, and to return data to the script.  See also the <a href="../apiFunctions.html#stacks">available stack functions</a>.<br>
+<div>simInt stackID: a <a href="simCreateStack.html">stack handle</a>. The stack is used to read arguments from the script, and to return data to the script.  See also the <a href="../apiFunctions.html#stacks">available stack functions</a>.<br>
 </div>
 <br>
 

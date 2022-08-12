@@ -311,13 +311,13 @@ Below API functions are a sub-set of their <a href="https://mde.tw/copsimdoc/en/
 <tr class="apiTableTr">
 <td class="apiTableLeftLParam">Lua arguments</td>
 <td class="apiTableRightLParam">
-<div><strong>meshHandle</strong>: the mesh object to duplicate.</div>
+<div>meshHandle: the mesh object to duplicate.</div>
 </td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftLRet">Lua return value(s)</td>
 <td class="apiTableRightLRet">
-<div><strong>meshCopyHandle</strong>: the copy of the mesh object in case of success.</div>
+<div>meshCopyHandle: the copy of the mesh object in case of success.</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -344,13 +344,13 @@ Below API functions are a sub-set of their <a href="https://mde.tw/copsimdoc/en/
 <tr class="apiTableTr">
 <td class="apiTableLeftLParam">Lua arguments</td>
 <td class="apiTableRightLParam">
-<div><strong>octreeHandle</strong>: the OC-tree object to duplicate.</div>
+<div>octreeHandle: the OC-tree object to duplicate.</div>
 </td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftLRet">Lua return value(s)</td>
 <td class="apiTableRightLRet">
-<div><strong>octreeCopyHandle</strong>: the handle of the duplicated OC-tree object.</div>
+<div>octreeCopyHandle: the handle of the duplicated OC-tree object.</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -377,13 +377,13 @@ Below API functions are a sub-set of their <a href="https://mde.tw/copsimdoc/en/
 <tr class="apiTableTr">
 <td class="apiTableLeftLParam">Lua arguments</td>
 <td class="apiTableRightLParam">
-<div><strong>ptcloudHandle</strong>: the point-cloud object to duplicate.</div>
+<div>ptcloudHandle: the point-cloud object to duplicate.</div>
 </td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftLRet">Lua return value(s)</td>
 <td class="apiTableRightLRet">
-<div><strong>ptcloudCopyHandle</strong>: the handle of the duplicated point-cloud object.</div>
+<div>ptcloudCopyHandle: the handle of the duplicated point-cloud object.</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -413,19 +413,19 @@ maxTrianglesInBoundingBox=8)</td>
 <tr class="apiTableTr">
 <td class="apiTableLeftLParam">Lua arguments</td>
 <td class="apiTableRightLParam">
-<div><strong>vertices</strong>: a table with the vertices of the mesh, expressed relative to the world origin.</div>
-<div><strong>indices</strong>: a table with the indices of the mesh.</div>
-<div><strong>meshOriginPos</strong>: the transformation frame position 
+<div>vertices: a table with the vertices of the mesh, expressed relative to the world origin.</div>
+<div>indices: a table with the indices of the mesh.</div>
+<div>meshOriginPos: the transformation frame position 
 of the mesh. Can be omitted, in which case the frame of the mesh is 
 located at the world origin.</div>
-<div><strong>meshOriginQuat</strong>: the transformation frame 
+<div>meshOriginQuat: the transformation frame 
 quaternion of the mesh. Can be omitted, in which case the frame of the 
 mesh is oriented as the world reference frame.</div>
-<div><strong>triangleEdgeMaxLength</strong>: the maximum triangle size 
+<div>triangleEdgeMaxLength: the maximum triangle size 
 used internally for efficient calculations. A smaller size usually 
 results in faster calculations, but larger calculation structures. Can 
 be omitted.</div>
-<div><strong>maxTrianglesInBoundingBox</strong>: the maximum number of 
+<div>maxTrianglesInBoundingBox: the maximum number of 
 triangles in leaf bounding boxes, used internally for efficient 
 calculations. A smaller value usually results in faster calculations, 
 but larger calculation structures. Can be omitted.</div>
@@ -434,7 +434,7 @@ but larger calculation structures. Can be omitted.</div>
 <tr class="apiTableTr">
 <td class="apiTableLeftLRet">Lua return value(s)</td>
 <td class="apiTableRightLRet">
-<div><strong>meshHandle</strong>: the handle to the mesh object in case of success.</div>
+<div>meshHandle: the handle to the mesh object in case of success.</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -464,13 +464,13 @@ maxTrianglesInBoundingBox=8)</td>
 <tr class="apiTableTr">
 <td class="apiTableLeftLParam">Lua arguments</td>
 <td class="apiTableRightLParam">
-<div><strong>serializationData</strong>: the serialization data previously generated with <a href="#simGeom.getMeshSerializationData">simGeom.getMeshSerializationData</a>.</div>
+<div>serializationData: the serialization data previously generated with <a href="#simGeom.getMeshSerializationData">simGeom.getMeshSerializationData</a>.</div>
 </td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftLRet">Lua return value(s)</td>
 <td class="apiTableRightLRet">
-<div><strong>meshHandle</strong>: the handle of the created mesh.</div>
+<div>meshHandle: the handle of the created mesh.</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -500,22 +500,22 @@ cellS=0.05,int[] rgbData=nil,int[] usrData=nil)</td>
 <tr class="apiTableTr">
 <td class="apiTableLeftLParam">Lua arguments</td>
 <td class="apiTableRightLParam">
-<div><strong>points</strong>: a table with point data, expressed relative to the world origin.</div>
-<div><strong>octreeOriginPos</strong>: the transformation frame position
+<div>points: a table with point data, expressed relative to the world origin.</div>
+<div>octreeOriginPos: the transformation frame position
  of the OC-tree. Can be omitted, in which case the frame of the OC-tree 
 is located at the world origin.</div>
-<div><strong>octreeOriginQuat</strong>: the transformation frame 
+<div>octreeOriginQuat: the transformation frame 
 quaternion of the OC-tree. Can be omitted, in which case the frame 
 orientation of the OC-tree is same as the world origin.</div>
-<div><strong>cellS</strong>: The desired OC-tree voxel size. Can be omitted.</div>
-<div><strong>rgbData</strong>: the RGB colors (0-255)of the various points (i.e. one color per point). Can be omitted.</div>
-<div><strong>usrData</strong>: the user data of the various points (i.e. one user data per point). Can be omitted.</div>
+<div>cellS: The desired OC-tree voxel size. Can be omitted.</div>
+<div>rgbData: the RGB colors (0-255)of the various points (i.e. one color per point). Can be omitted.</div>
+<div>usrData: the user data of the various points (i.e. one user data per point). Can be omitted.</div>
 </td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftLRet">Lua return value(s)</td>
 <td class="apiTableRightLRet">
-<div><strong>octreeHandle</strong>: the handle of the created OC-tree object.</div>
+<div>octreeHandle: the handle of the created OC-tree object.</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -548,24 +548,24 @@ octreeOriginQuat=nil,float cellS=0.05,int[3] rgbData=nil,int usrData=0)</td>
 <tr class="apiTableTr">
 <td class="apiTableLeftLParam">Lua arguments</td>
 <td class="apiTableRightLParam">
-<div><strong>meshHandle</strong>: the mesh object.</div>
-<div><strong>meshPos</strong>: the position of the mesh object.</div>
-<div><strong>meshQuat</strong>: the quaternion of the mesh object.</div>
-<div><strong>octreeOriginPos</strong>: the transformation frame position
+<div>meshHandle: the mesh object.</div>
+<div>meshPos: the position of the mesh object.</div>
+<div>meshQuat: the quaternion of the mesh object.</div>
+<div>octreeOriginPos: the transformation frame position
  of the OC-tree. Can be omitted, in which case the frame of the OC-tree 
 is located at the world origin.</div>
-<div><strong>octreeOriginQuat</strong>: the transformation frame 
+<div>octreeOriginQuat: the transformation frame 
 quaternion of the OC-tree. Can be omitted, in which case the frame 
 orientation of the OC-tree is same as the world origin.</div>
-<div><strong>cellS</strong>: The desired OC-tree voxel size. Can be omitted.</div>
-<div><strong>rgbData</strong>: the RGB color (0-255) of the generated voxels. Can be omitted.</div>
-<div><strong>usrData</strong>: the user data of the generated voxels. Can be omitted.</div>
+<div>cellS: The desired OC-tree voxel size. Can be omitted.</div>
+<div>rgbData: the RGB color (0-255) of the generated voxels. Can be omitted.</div>
+<div>usrData: the user data of the generated voxels. Can be omitted.</div>
 </td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftLRet">Lua return value(s)</td>
 <td class="apiTableRightLRet">
-<div><strong>octreeHandle</strong>: the handle of the created OC-tree object.</div>
+<div>octreeHandle: the handle of the created OC-tree object.</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -599,24 +599,24 @@ newOctreeOriginQuat=nil,float newOctreeCellS=0.05,int[3] rgbData=nil,int
 <tr class="apiTableTr">
 <td class="apiTableLeftLParam">Lua arguments</td>
 <td class="apiTableRightLParam">
-<div><strong>octreeHandle</strong>: the handle to the OC-tree object.</div>
-<div><strong>octreePos</strong>: the position of the OC-tree object.</div>
-<div><strong>octreeQuat</strong>: the quaternion of the OC-tree object.</div>
-<div><strong>newOctreeOriginPos</strong>: the transformation frame 
+<div>octreeHandle: the handle to the OC-tree object.</div>
+<div>octreePos: the position of the OC-tree object.</div>
+<div>octreeQuat: the quaternion of the OC-tree object.</div>
+<div>newOctreeOriginPos: the transformation frame 
 position of the new OC-tree. Can be omitted, in which case the frame of 
 the new OC-tree is located at the world origin.</div>
-<div><strong>newOctreeOriginQuat</strong>: the transformation frame 
+<div>newOctreeOriginQuat: the transformation frame 
 quaternion of the new OC-tree. Can be omitted, in which case the frame 
 orientation of the new OC-tree is same as the world origin.</div>
-<div><strong>newOctreeCellS</strong>: The desired OC-tree voxel size. Can be omitted.</div>
-<div><strong>rgbData</strong>: the RGB color (0-255) of the generated voxels. Can be omitted.</div>
-<div><strong>usrData</strong>: the user data of the generated voxels. Can be omitted.</div>
+<div>newOctreeCellS: The desired OC-tree voxel size. Can be omitted.</div>
+<div>rgbData: the RGB color (0-255) of the generated voxels. Can be omitted.</div>
+<div>usrData: the user data of the generated voxels. Can be omitted.</div>
 </td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftLRet">Lua return value(s)</td>
 <td class="apiTableRightLRet">
-<div><strong>newOctreeHandle</strong>: the handle of the new OC-tree object.</div>
+<div>newOctreeHandle: the handle of the new OC-tree object.</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -650,22 +650,22 @@ octreeOriginPos=nil,float[4] octreeOriginQuat=nil,float cellS=0.05,int[]
 <tr class="apiTableTr">
 <td class="apiTableLeftLParam">Lua arguments</td>
 <td class="apiTableRightLParam">
-<div><strong>points</strong>: an table with point data, expressed relative to the world origin.</div>
-<div><strong>octreeOriginPos</strong>: the transformation frame position
+<div>points: an table with point data, expressed relative to the world origin.</div>
+<div>octreeOriginPos: the transformation frame position
  of the OC-tree. Can be omitted, in which case the frame position of the
  OC-tree is located at the world origin.</div>
-<div><strong>octreeOriginQuat</strong>: the transformation frame 
+<div>octreeOriginQuat: the transformation frame 
 quaternion of the OC-tree. Can be omitted, in which case the frame 
 orientation of the OC-tree is same as the world origin.</div>
-<div><strong>cellS</strong>: The desired OC-tree voxel size. Can be omitted.</div>
-<div><strong>rgbData</strong>: the RGB color (0-255) of the generated voxels. Can be omitted.</div>
-<div><strong>usrData</strong>: the user data of the generated voxels. Can be omitted.</div>
+<div>cellS: The desired OC-tree voxel size. Can be omitted.</div>
+<div>rgbData: the RGB color (0-255) of the generated voxels. Can be omitted.</div>
+<div>usrData: the user data of the generated voxels. Can be omitted.</div>
 </td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftLRet">Lua return value(s)</td>
 <td class="apiTableRightLRet">
-<div><strong>octreeHandle</strong>: the handle of the created OC-tree object.</div>
+<div>octreeHandle: the handle of the created OC-tree object.</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -695,13 +695,13 @@ rgbData=None,int usrData=0)</td>
 <tr class="apiTableTr">
 <td class="apiTableLeftLParam">Lua arguments</td>
 <td class="apiTableRightLParam">
-<div><strong>serializationData</strong>: the serialization data previously generated with <a href="#simGeom.getOctreeSerializationData">simGeom.getOctreeSerializationData</a>.</div>
+<div>serializationData: the serialization data previously generated with <a href="#simGeom.getOctreeSerializationData">simGeom.getOctreeSerializationData</a>.</div>
 </td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftLRet">Lua return value(s)</td>
 <td class="apiTableRightLRet">
-<div><strong>octreeHandle</strong>: the handle to the created OC-tree object.</div>
+<div>octreeHandle: the handle to the created OC-tree object.</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -732,17 +732,17 @@ rgbData=nil,float proximityTol=0.005)</td>
 <tr class="apiTableTr">
 <td class="apiTableLeftLParam">Lua arguments</td>
 <td class="apiTableRightLParam">
-<div><strong>points</strong>: a table with point data, expressed relative to the world origin.</div>
-<div><strong>ptcloudOriginPos</strong>: the transformation frame 
+<div>points: a table with point data, expressed relative to the world origin.</div>
+<div>ptcloudOriginPos: the transformation frame 
 position of the point-cloud. Can be omitted, in which case the frame of 
 the point-cloud is located at the world origin.</div>
-<div><strong>ptcloudOriginQuat</strong>: the transformation frame 
+<div>ptcloudOriginQuat: the transformation frame 
 quaternion of the point-cloud. Can be omitted, in which case the frame 
 orientation of the point-cloud is same as the world origin.</div>
-<div><strong>cellS</strong>: The desired voxel size of the underlying OC-tree. Can be omitted.</div>
-<div><strong>maxPointCnt</strong>: The maximum amount of points inside of a OC-tree voxel. Can be omitted.</div>
-<div><strong>rgbData</strong>: the RGB color (0-255) of the generated points. Specify one color per point. Can be omitted.</div>
-<div><strong>proximityTol</strong>: the distance tolerance to other 
+<div>cellS: The desired voxel size of the underlying OC-tree. Can be omitted.</div>
+<div>maxPointCnt: The maximum amount of points inside of a OC-tree voxel. Can be omitted.</div>
+<div>rgbData: the RGB color (0-255) of the generated points. Specify one color per point. Can be omitted.</div>
+<div>proximityTol: the distance tolerance to other 
 points (i.e. point-point distances below the specified value are not 
 permitted and points will be omitted). Can be omitted.</div>
 </td>
@@ -750,7 +750,7 @@ permitted and points will be omitted). Can be omitted.</div>
 <tr class="apiTableTr">
 <td class="apiTableLeftLRet">Lua return value(s)</td>
 <td class="apiTableRightLRet">
-<div><strong>ptcloudHandle</strong>: the handle to the created point-cloud object.</div>
+<div>ptcloudHandle: the handle to the created point-cloud object.</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -783,17 +783,17 @@ ptcloudOriginPos=nil,float[4] ptcloudOriginQuat=nil,float cellS=0.05,int
 <tr class="apiTableTr">
 <td class="apiTableLeftLParam">Lua arguments</td>
 <td class="apiTableRightLParam">
-<div><strong>points</strong>: a table with point data, expressed relative to the world origin.</div>
-<div><strong>ptcloudOriginPos</strong>: the transformation frame 
+<div>points: a table with point data, expressed relative to the world origin.</div>
+<div>ptcloudOriginPos: the transformation frame 
 position of the point-cloud. Can be omitted, in which case the frame of 
 the point-cloud is located at the world origin.</div>
-<div><strong>ptcloudOriginQuat</strong>: the transformation frame 
+<div>ptcloudOriginQuat: the transformation frame 
 quaternion of the point-cloud. Can be omitted, in which case the frame 
 orientation of the point-cloud is same as the world origin.</div>
-<div><strong>cellS</strong>: The desired voxel size of the underlying OC-tree. Can be omitted.</div>
-<div><strong>maxPointCnt</strong>: The maximum amount of points inside of a OC-tree voxel. Can be omitted.</div>
-<div><strong>rgbData</strong>: the RGB color (0-255) of the generated points. Can be omitted.</div>
-<div><strong>proximityTol</strong>: the distance tolerance to other 
+<div>cellS: The desired voxel size of the underlying OC-tree. Can be omitted.</div>
+<div>maxPointCnt: The maximum amount of points inside of a OC-tree voxel. Can be omitted.</div>
+<div>rgbData: the RGB color (0-255) of the generated points. Can be omitted.</div>
+<div>proximityTol: the distance tolerance to other 
 points (i.e. point-point distances below the specified value are not 
 permitted and points will be omitted). Can be omitted.</div>
 </td>
@@ -801,7 +801,7 @@ permitted and points will be omitted). Can be omitted.</div>
 <tr class="apiTableTr">
 <td class="apiTableLeftLRet">Lua return value(s)</td>
 <td class="apiTableRightLRet">
-<div><strong>ptcloudHandle</strong>: the handle to the created point-cloud object.</div>
+<div>ptcloudHandle: the handle to the created point-cloud object.</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -831,13 +831,13 @@ maxPointCnt=20,list rgbData=None,float proximityTol=0.005)</td>
 <tr class="apiTableTr">
 <td class="apiTableLeftLParam">Lua arguments</td>
 <td class="apiTableRightLParam">
-<div><strong>serializationData</strong>: the serialization data previously generated with <a href="#simGeom.getPtcloudSerializationData">simGeom.getPtcloudSerializationData</a>.</div>
+<div>serializationData: the serialization data previously generated with <a href="#simGeom.getPtcloudSerializationData">simGeom.getPtcloudSerializationData</a>.</div>
 </td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftLRet">Lua return value(s)</td>
 <td class="apiTableRightLRet">
-<div><strong>ptcloudHandle</strong>: the handle of the created point-cloud.</div>
+<div>ptcloudHandle: the handle of the created point-cloud.</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -864,7 +864,7 @@ maxPointCnt=20,list rgbData=None,float proximityTol=0.005)</td>
 <tr class="apiTableTr">
 <td class="apiTableLeftLParam">Lua arguments</td>
 <td class="apiTableRightLParam">
-<div><strong>meshHandle</strong>: the handle of the mesh object.</div>
+<div>meshHandle: the handle of the mesh object.</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -895,7 +895,7 @@ maxPointCnt=20,list rgbData=None,float proximityTol=0.005)</td>
 <tr class="apiTableTr">
 <td class="apiTableLeftLParam">Lua arguments</td>
 <td class="apiTableRightLParam">
-<div><strong>octreeHandle</strong>: the handle of the OC-tree object.</div>
+<div>octreeHandle: the handle of the OC-tree object.</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -926,7 +926,7 @@ maxPointCnt=20,list rgbData=None,float proximityTol=0.005)</td>
 <tr class="apiTableTr">
 <td class="apiTableLeftLParam">Lua arguments</td>
 <td class="apiTableRightLParam">
-<div><strong>ptcloudHandle</strong>: the handle of the point-cloud object.</div>
+<div>ptcloudHandle: the handle of the point-cloud object.</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -961,22 +961,22 @@ altRoutine=false)</td>
 <tr class="apiTableTr">
 <td class="apiTableLeftLParam">Lua arguments</td>
 <td class="apiTableRightLParam">
-<div><strong>box1Pos</strong>: the position of the first cuboid.</div> <div><strong>box1Quat</strong>: the quaternion of the first cuboid.</div>
-<div><strong>box1HalfSize</strong>: the half-size of the first cuboid.</div>
-<div><strong>box2Pos</strong>: the position of the second cuboid.</div> <div><strong>box2Quat</strong>: the quaternion of the second cuboid.</div>
-<div><strong>box2HalfSize</strong>: the half-size of the second cuboid.</div>
-<div><strong>boxesAreSolid</strong>: whether the two cuboids are solid. 
+<div>box1Pos: the position of the first cuboid.</div> <div>box1Quat: the quaternion of the first cuboid.</div>
+<div>box1HalfSize: the half-size of the first cuboid.</div>
+<div>box2Pos: the position of the second cuboid.</div> <div>box2Quat: the quaternion of the second cuboid.</div>
+<div>box2HalfSize: the half-size of the second cuboid.</div>
+<div>boxesAreSolid: whether the two cuboids are solid. 
 If true, then cuboid A being fully encompassed by cuboid B will always 
 lead to a distance of zero between the two cuboids.</div>
-<div><strong>altRoutine</strong>: if true, an alternative calculation routine will be used. Can be omitted.</div>
+<div>altRoutine: if true, an alternative calculation routine will be used. Can be omitted.</div>
 </td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftLRet">Lua return value(s)</td>
 <td class="apiTableRightLRet">
-<div><strong>distance</strong>: the minimum distance between the two entities.</div>
-<div><strong>distSegPt1</strong>: the minimum distance point on the first cuboid.</div>
-<div><strong>distSegPt2</strong>: the minimum distance point on the second cuboid.</div>
+<div>distance: the minimum distance between the two entities.</div>
+<div>distSegPt1: the minimum distance point on the first cuboid.</div>
+<div>distSegPt2: the minimum distance point on the second cuboid.</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -1008,19 +1008,19 @@ boxQuat,float[3] boxHalfSize,bool boxIsSolid,float[3] point)</td>
 <tr class="apiTableTr">
 <td class="apiTableLeftLParam">Lua arguments</td>
 <td class="apiTableRightLParam">
-<div><strong>boxPos</strong>: the position of the cuboid.</div> <div><strong>boxQuat</strong>: the quaternion of the cuboid.</div>
-<div><strong>boxHalfSize</strong>: the half-size of the cuboid.</div>
-<div><strong>boxIsSolid</strong>: whether the cuboid is solid. If true, 
+<div>boxPos: the position of the cuboid.</div> <div>boxQuat: the quaternion of the cuboid.</div>
+<div>boxHalfSize: the half-size of the cuboid.</div>
+<div>boxIsSolid: whether the cuboid is solid. If true, 
 then the point being fully encompassed by the cuboid will always lead to
  a distance of zero.</div>
-<div><strong>point</strong>: position of the point.</div>
+<div>point: position of the point.</div>
 </td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftLRet">Lua return value(s)</td>
 <td class="apiTableRightLRet">
-<div><strong>distance</strong>: the minimum distance between the two entities.</div>
-<div><strong>boxDistSegPt</strong>: the minimum distance point on the cuboid.</div>
+<div>distance: the minimum distance between the two entities.</div>
+<div>boxDistSegPt: the minimum distance point on the cuboid.</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -1053,22 +1053,22 @@ segmentEndPoint,float[3] segmentVector,bool altRoutine=false)</td>
 <tr class="apiTableTr">
 <td class="apiTableLeftLParam">Lua arguments</td>
 <td class="apiTableRightLParam">
-<div><strong>boxPos</strong>: the position of the cuboid.</div> <div><strong>boxQuat</strong>: the quaternion of the cuboid.</div>
-<div><strong>boxHalfSize</strong>: the half-size of the cuboid.</div>
-<div><strong>boxIsSolid</strong>: whether the cuboid is solid. If true, 
+<div>boxPos: the position of the cuboid.</div> <div>boxQuat: the quaternion of the cuboid.</div>
+<div>boxHalfSize: the half-size of the cuboid.</div>
+<div>boxIsSolid: whether the cuboid is solid. If true, 
 then the segment being fully encompassed by the cuboid will always lead 
 to a distance of zero.</div>
-<div><strong>segmentEndPoint</strong>: position of vertex A on the segment.</div>
-<div><strong>segmentVector</strong>: vector stretching from vertex A to vertex B on the segment.</div>
-<div><strong>altRoutine</strong>: if true, an alternative calculation routine will be used. Can be omitted.</div>
+<div>segmentEndPoint: position of vertex A on the segment.</div>
+<div>segmentVector: vector stretching from vertex A to vertex B on the segment.</div>
+<div>altRoutine: if true, an alternative calculation routine will be used. Can be omitted.</div>
 </td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftLRet">Lua return value(s)</td>
 <td class="apiTableRightLRet">
-<div><strong>distance</strong>: the minimum distance between the two entities.</div>
-<div><strong>boxDistSegPt</strong>: the minimum distance point on the cuboid.</div>
-<div><strong>segmentSegPt</strong>: the minimum distance point on the segment.</div>
+<div>distance: the minimum distance between the two entities.</div>
+<div>boxDistSegPt: the minimum distance point on the cuboid.</div>
+<div>segmentSegPt: the minimum distance point on the segment.</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -1102,23 +1102,23 @@ p,float[3] v,float[3] w,bool altRoutine=false)</td>
 <tr class="apiTableTr">
 <td class="apiTableLeftLParam">Lua arguments</td>
 <td class="apiTableRightLParam">
-<div><strong>boxPos</strong>: the position of the cuboid.</div> <div><strong>boxQuat</strong>: the quaternion of the cuboid.</div>
-<div><strong>boxHalfSize</strong>: the half-size of the cuboid.</div>
-<div><strong>boxIsSolid</strong>: whether the cuboid is solid. If true, 
+<div>boxPos: the position of the cuboid.</div> <div>boxQuat: the quaternion of the cuboid.</div>
+<div>boxHalfSize: the half-size of the cuboid.</div>
+<div>boxIsSolid: whether the cuboid is solid. If true, 
 then the triangle being fully encompassed by the cuboid will always lead
  to a distance of zero.</div>
-<div><strong>p</strong>: position of vertex A on the triangle.</div>
-<div><strong>v</strong>: vector stretching from vertex A to vertex B on the triangle.</div>
-<div><strong>w</strong>: vector stretching from vertex A to vertex C on the triangle.</div>
-<div><strong>altRoutine</strong>: if true, an alternative calculation routine will be used. Can be omitted.</div>
+<div>p: position of vertex A on the triangle.</div>
+<div>v: vector stretching from vertex A to vertex B on the triangle.</div>
+<div>w: vector stretching from vertex A to vertex C on the triangle.</div>
+<div>altRoutine: if true, an alternative calculation routine will be used. Can be omitted.</div>
 </td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftLRet">Lua return value(s)</td>
 <td class="apiTableRightLRet">
-<div><strong>distance</strong>: the minimum distance between the two entities.</div>
-<div><strong>boxDistSegPt</strong>: the minimum distance point on the cuboid.</div>
-<div><strong>triangleDistSegPt</strong>: the minimum distance point on the triangle.</div>
+<div>distance: the minimum distance between the two entities.</div>
+<div>boxDistSegPt: the minimum distance point on the cuboid.</div>
+<div>triangleDistSegPt: the minimum distance point on the triangle.</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -1152,24 +1152,24 @@ mesh2Handle,float[3] mesh2Pos,float[4] mesh2Quat,int[2] caching=nil,bool
 <tr class="apiTableTr">
 <td class="apiTableLeftLParam">Lua arguments</td>
 <td class="apiTableRightLParam">
-<div><strong>mesh1Handle</strong>: the handle of the first mesh object.</div>
-<div><strong>mesh1Pos</strong>: the position of the first mesh object.</div>
-<div><strong>mesh1Quat</strong>: the quaternion of the first mesh object.</div>
-<div><strong>mesh2Handle</strong>: the handle of the second mesh object.</div>
-<div><strong>mesh2Pos</strong>: the position of the second mesh object.</div>
-<div><strong>mesh2Quat</strong>: the quaternion of the second mesh object.</div>
-<div><strong>caching</strong>: a table with two values from previous collision checking between the same two entities, to speed-up calculations.</div>
-<div><strong>returnIntersections</strong>: whether the interference segments should be computed and returned.</div>
+<div>mesh1Handle: the handle of the first mesh object.</div>
+<div>mesh1Pos: the position of the first mesh object.</div>
+<div>mesh1Quat: the quaternion of the first mesh object.</div>
+<div>mesh2Handle: the handle of the second mesh object.</div>
+<div>mesh2Pos: the position of the second mesh object.</div>
+<div>mesh2Quat: the quaternion of the second mesh object.</div>
+<div>caching: a table with two values from previous collision checking between the same two entities, to speed-up calculations.</div>
+<div>returnIntersections: whether the interference segments should be computed and returned.</div>
 </td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftLRet">Lua return value(s)</td>
 <td class="apiTableRightLRet">
-<div><strong>collisionResult</strong>: the collision status</div>
-<div><strong>caching</strong>: a table with two values that can be used 
+<div>collisionResult: the collision status</div>
+<div>caching: a table with two values that can be used 
 to speed-up next collision checking between the same two entities 
 (memorizes the colliding triangle in the two meshes).</div>
-<div><strong>intersections</strong>: the interference segments.</div>
+<div>intersections: the interference segments.</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -1203,12 +1203,12 @@ mesh2Quat,float thresholdDist=nil,int[2] caching=nil)</td>
 <tr class="apiTableTr">
 <td class="apiTableLeftLParam">Lua arguments</td>
 <td class="apiTableRightLParam">
-<div><strong>mesh1Handle</strong>: the handle of the first mesh object.</div>
-<div><strong>mesh1Pos</strong>: the position of the first mesh.</div> <div><strong>mesh1Quat</strong>: the quaternion of the first mesh.</div>
-<div><strong>mesh2Handle</strong>: the handle of the second mesh object.</div>
-<div><strong>mesh2Pos</strong>: the position of the second mesh.</div> <div><strong>mesh2Quat</strong>: the quaternion of the second mesh.</div>
-<div><strong>thresholdDist</strong>: the distance threshold. Can be omitted.</div>
-<div><strong>caching</strong>: a table with two values from previous 
+<div>mesh1Handle: the handle of the first mesh object.</div>
+<div>mesh1Pos: the position of the first mesh.</div> <div>mesh1Quat: the quaternion of the first mesh.</div>
+<div>mesh2Handle: the handle of the second mesh object.</div>
+<div>mesh2Pos: the position of the second mesh.</div> <div>mesh2Quat: the quaternion of the second mesh.</div>
+<div>thresholdDist: the distance threshold. Can be omitted.</div>
+<div>caching: a table with two values from previous 
 distance calculation between the same two entities, to speed-up 
 calculations. Can be omitted.</div>
 </td>
@@ -1216,10 +1216,10 @@ calculations. Can be omitted.</div>
 <tr class="apiTableTr">
 <td class="apiTableLeftLRet">Lua return value(s)</td>
 <td class="apiTableRightLRet">
-<div><strong>distance</strong>: the minimum distance between the two entities, or if it is not smaller than the threshold distance, the threshold distance.</div>
-<div><strong>minDistSegPt1</strong>: the minimum distance point on the first mesh. nil if the distance is not smaller than the threshold distance.</div>
-<div><strong>minDistSegPt2</strong>: the minimum distance point on the second mesh. nil if the distance is not smaller than the threshold distance.</div>
-<div><strong>caching</strong>: a table with two values that can be used 
+<div>distance: the minimum distance between the two entities, or if it is not smaller than the threshold distance, the threshold distance.</div>
+<div>minDistSegPt1: the minimum distance point on the first mesh. nil if the distance is not smaller than the threshold distance.</div>
+<div>minDistSegPt2: the minimum distance point on the second mesh. nil if the distance is not smaller than the threshold distance.</div>
+<div>caching: a table with two values that can be used 
 to speed-up next distance calculation between the same two entities. nil
  if the distance is not smaller than the threshold distance.</div>
 </td>
@@ -1254,18 +1254,18 @@ octreeQuat,int[2] caching=nil)</td>
 <tr class="apiTableTr">
 <td class="apiTableLeftLParam">Lua arguments</td>
 <td class="apiTableRightLParam">
-<div><strong>meshHandle</strong>: the handle of the mesh object.</div>
-<div><strong>meshPos</strong>: the position of the mesh.</div> <div><strong>meshQuat</strong>: the quaternion of the mesh.</div>
-<div><strong>octreeHandle</strong>: the handle of the OC-tree object.</div>
-<div><strong>octreePos</strong>: the position of the OC-tree.</div> <div><strong>octreeQuat</strong>: the quaternion of the OC-tree.</div>
-<div><strong>caching</strong>: a table with two values from previous collision checking between the same two entities, to speed-up calculations.</div>
+<div>meshHandle: the handle of the mesh object.</div>
+<div>meshPos: the position of the mesh.</div> <div>meshQuat: the quaternion of the mesh.</div>
+<div>octreeHandle: the handle of the OC-tree object.</div>
+<div>octreePos: the position of the OC-tree.</div> <div>octreeQuat: the quaternion of the OC-tree.</div>
+<div>caching: a table with two values from previous collision checking between the same two entities, to speed-up calculations.</div>
 </td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftLRet">Lua return value(s)</td>
 <td class="apiTableRightLRet">
-<div><strong>collisionResult</strong>: the collision status.</div>
-<div><strong>caching</strong>: a table with two values that can be used to speed-up next collision checking between the same two entities.</div>
+<div>collisionResult: the collision status.</div>
+<div>caching: a table with two values that can be used to speed-up next collision checking between the same two entities.</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -1299,12 +1299,12 @@ octreeQuat,float thresholdDist=nil,int[2] caching=nil)</td>
 <tr class="apiTableTr">
 <td class="apiTableLeftLParam">Lua arguments</td>
 <td class="apiTableRightLParam">
-<div><strong>meshHandle</strong>: the handle of the mesh object.</div>
-<div><strong>meshPos</strong>: the position of the mesh.</div> <div><strong>meshQuat</strong>: the quaternion of the mesh.</div>
-<div><strong>octreeHandle</strong>: the handle of the OC-tree object.</div>
-<div><strong>octreePos</strong>: the position of the OC-tree.</div> <div><strong>octreeQuat</strong>: the quaternion of the OC-tree.</div>
-<div><strong>thresholdDist</strong>: the distance threshold. Can be omitted.</div>
-<div><strong>caching</strong>: a table with two values from previous 
+<div>meshHandle: the handle of the mesh object.</div>
+<div>meshPos: the position of the mesh.</div> <div>meshQuat: the quaternion of the mesh.</div>
+<div>octreeHandle: the handle of the OC-tree object.</div>
+<div>octreePos: the position of the OC-tree.</div> <div>octreeQuat: the quaternion of the OC-tree.</div>
+<div>thresholdDist: the distance threshold. Can be omitted.</div>
+<div>caching: a table with two values from previous 
 distance calculation between the same two entities, to speed-up 
 calculations. Can be omitted.</div>
 </td>
@@ -1312,10 +1312,10 @@ calculations. Can be omitted.</div>
 <tr class="apiTableTr">
 <td class="apiTableLeftLRet">Lua return value(s)</td>
 <td class="apiTableRightLRet">
-<div><strong>distance</strong>: the minimum distance between the two entities, or if it is not smaller than the threshold distance, the threshold distance.</div>
-<div><strong>meshMinDistPt</strong>: the minimum distance point on the mesh. nil if the distance is not smaller than the threshold distance.</div>
-<div><strong>ocMinDistPt</strong>: the minimum distance point on the OC-tree. nil if the distance is not smaller than the threshold distance.</div>
-<div><strong>caching</strong>: a table with two values that can be used 
+<div>distance: the minimum distance between the two entities, or if it is not smaller than the threshold distance, the threshold distance.</div>
+<div>meshMinDistPt: the minimum distance point on the mesh. nil if the distance is not smaller than the threshold distance.</div>
+<div>ocMinDistPt: the minimum distance point on the OC-tree. nil if the distance is not smaller than the threshold distance.</div>
+<div>caching: a table with two values that can be used 
 to speed-up next distance calculation between the same two entities. nil
  if the distance is not smaller than the threshold distance.</div>
 </td>
@@ -1350,19 +1350,19 @@ caching=-1)</td>
 <tr class="apiTableTr">
 <td class="apiTableLeftLParam">Lua arguments</td>
 <td class="apiTableRightLParam">
-<div><strong>meshHandle</strong>: the handle of the mesh object.</div>
-<div><strong>meshPos</strong>: the position of the mesh.</div> <div><strong>meshQuat</strong>: the quaternion of the mesh.</div>
-<div><strong>point</strong>: the position of the point.</div>
-<div><strong>thresholdDist</strong>: the distance threshold. Can be omitted.</div>
-<div><strong>caching</strong>: a value from previous distance calculation between the same two entities, to speed-up calculations. Can be omitted or -1.</div>
+<div>meshHandle: the handle of the mesh object.</div>
+<div>meshPos: the position of the mesh.</div> <div>meshQuat: the quaternion of the mesh.</div>
+<div>point: the position of the point.</div>
+<div>thresholdDist: the distance threshold. Can be omitted.</div>
+<div>caching: a value from previous distance calculation between the same two entities, to speed-up calculations. Can be omitted or -1.</div>
 </td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftLRet">Lua return value(s)</td>
 <td class="apiTableRightLRet">
-<div><strong>distance</strong>: the minimum distance between the two entities, or if it is not smaller than the threshold distance, the threshold distance.</div>
-<div><strong>meshMinDistPt</strong>: the minimum distance point on the mesh. nil if the distance is not smaller than the threshold distance.</div>
-<div><strong>caching</strong>: a value that can be used to speed-up next
+<div>distance: the minimum distance between the two entities, or if it is not smaller than the threshold distance, the threshold distance.</div>
+<div>meshMinDistPt: the minimum distance point on the mesh. nil if the distance is not smaller than the threshold distance.</div>
+<div>caching: a value that can be used to speed-up next
  distance calculation between the same two entities. nil if the distance
  is not smaller than the threshold distance.</div>
 </td>
@@ -1397,12 +1397,12 @@ pcQuat,float thresholdDist=nil,int[2] caching=nil)</td>
 <tr class="apiTableTr">
 <td class="apiTableLeftLParam">Lua arguments</td>
 <td class="apiTableRightLParam">
-<div><strong>meshHandle</strong>: the handle of the mesh object.</div>
-<div><strong>meshPos</strong>: the position of the mesh.</div> <div><strong>meshQuat</strong>: the quaternion of the mesh.</div>
-<div><strong>ptcloudHandle</strong>: the handle of the point-cloud object.</div>
-<div><strong>pcPos</strong>: the position of the point-cloud.</div> <div><strong>pcQuat</strong>: the quaternion of the point-cloud.</div>
-<div><strong>thresholdDist</strong>: the distance threshold. Can be omitted.</div>
-<div><strong>caching</strong>: a table with two values from previous 
+<div>meshHandle: the handle of the mesh object.</div>
+<div>meshPos: the position of the mesh.</div> <div>meshQuat: the quaternion of the mesh.</div>
+<div>ptcloudHandle: the handle of the point-cloud object.</div>
+<div>pcPos: the position of the point-cloud.</div> <div>pcQuat: the quaternion of the point-cloud.</div>
+<div>thresholdDist: the distance threshold. Can be omitted.</div>
+<div>caching: a table with two values from previous 
 distance calculation between the same two entities, to speed-up 
 calculations. Can be omitted.</div>
 </td>
@@ -1410,10 +1410,10 @@ calculations. Can be omitted.</div>
 <tr class="apiTableTr">
 <td class="apiTableLeftLRet">Lua return value(s)</td>
 <td class="apiTableRightLRet">
-<div><strong>distance</strong>: the minimum distance between the two entities, or if it is not smaller than the threshold distance, the threshold distance.</div>
-<div><strong>meshMinDistPt</strong>: the minimum distance point on the mesh. nil if the distance is not smaller than the threshold distance.</div>
-<div><strong>pcMinDistPt</strong>: the minimum distance point on the point-cloud. nil if the distance is not smaller than the threshold distance.</div>
-<div><strong>caching</strong>: a table with two values that can be used 
+<div>distance: the minimum distance between the two entities, or if it is not smaller than the threshold distance, the threshold distance.</div>
+<div>meshMinDistPt: the minimum distance point on the mesh. nil if the distance is not smaller than the threshold distance.</div>
+<div>pcMinDistPt: the minimum distance point on the point-cloud. nil if the distance is not smaller than the threshold distance.</div>
+<div>caching: a table with two values that can be used 
 to speed-up next distance calculation between the same two entities. nil
  if the distance is not smaller than the threshold distance.</div>
 </td>
@@ -1448,22 +1448,22 @@ segmentVector,int caching=-1,bool returnIntersections)</td>
 <tr class="apiTableTr">
 <td class="apiTableLeftLParam">Lua arguments</td>
 <td class="apiTableRightLParam">
-<div><strong>meshHandle</strong>: the handle of the mesh object.</div>
-<div><strong>meshPos</strong>: the position of the mesh.</div> <div><strong>meshQuat</strong>: the quaternion of the mesh.</div>
-<div><strong>segmentExtremity</strong>: position of vertex A on the segment.</div>
-<div><strong>segmentVector</strong>: vector stretching from vertex A to vertex B on the segment.</div>
-<div><strong>caching</strong>: a values from previous collision checking
+<div>meshHandle: the handle of the mesh object.</div>
+<div>meshPos: the position of the mesh.</div> <div>meshQuat: the quaternion of the mesh.</div>
+<div>segmentExtremity: position of vertex A on the segment.</div>
+<div>segmentVector: vector stretching from vertex A to vertex B on the segment.</div>
+<div>caching: a values from previous collision checking
  between the same two entities, to speed-up collision checking. Can be 
 omitted or set to -1.</div>
-<div><strong>returnIntersections</strong>: whether the interference segments should be returned. Can be omitted.</div>
+<div>returnIntersections: whether the interference segments should be returned. Can be omitted.</div>
 </td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftLRet">Lua return value(s)</td>
 <td class="apiTableRightLRet">
-<div><strong>collisionResult</strong>: the collision status.</div>
-<div><strong>caching</strong>: a value that can be used to speed-up next collision checking between the same two entities.</div>
-<div><strong>intersections</strong>: the interference segments which actually represent one or more segments with zero length.</div>
+<div>collisionResult: the collision status.</div>
+<div>caching: a value that can be used to speed-up next collision checking between the same two entities.</div>
+<div>intersections: the interference segments which actually represent one or more segments with zero length.</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -1497,21 +1497,21 @@ segmentVector,float thresholdDist=nil,int caching=-1)</td>
 <tr class="apiTableTr">
 <td class="apiTableLeftLParam">Lua arguments</td>
 <td class="apiTableRightLParam">
-<div><strong>meshHandle</strong>: the handle of the mesh object.</div>
-<div><strong>meshPos</strong>: the position of the mesh.</div> <div><strong>meshQuat</strong>: the quaternion of the mesh.</div>
-<div><strong>segmentEndPoint</strong>: position of vertex A on the segment.</div>
-<div><strong>segmentVector</strong>: vector stretching from vertex A to vertex B on the segment.</div>
-<div><strong>thresholdDist</strong>: the distance threshold. Can be omitted.</div>
-<div><strong>caching</strong>: a value from previous distance calculation between the same two entities, to speed-up calculations. Can be omitted or -1.</div>
+<div>meshHandle: the handle of the mesh object.</div>
+<div>meshPos: the position of the mesh.</div> <div>meshQuat: the quaternion of the mesh.</div>
+<div>segmentEndPoint: position of vertex A on the segment.</div>
+<div>segmentVector: vector stretching from vertex A to vertex B on the segment.</div>
+<div>thresholdDist: the distance threshold. Can be omitted.</div>
+<div>caching: a value from previous distance calculation between the same two entities, to speed-up calculations. Can be omitted or -1.</div>
 </td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftLRet">Lua return value(s)</td>
 <td class="apiTableRightLRet">
-<div><strong>distance</strong>: the minimum distance between the two entities, or if it is not smaller than the threshold distance, the threshold distance.</div>
-<div><strong>meshMinDistPt</strong>: the minimum distance point on the mesh. nil if the distance is not smaller than the threshold distance.</div>
-<div><strong>segmentDistSegPt</strong>: the minimum distance point on the segment. nil if the distance is not smaller than the threshold distance.</div>
-<div><strong>caching</strong>: a value that can be used to speed-up next
+<div>distance: the minimum distance between the two entities, or if it is not smaller than the threshold distance, the threshold distance.</div>
+<div>meshMinDistPt: the minimum distance point on the mesh. nil if the distance is not smaller than the threshold distance.</div>
+<div>segmentDistSegPt: the minimum distance point on the segment. nil if the distance is not smaller than the threshold distance.</div>
+<div>caching: a value that can be used to speed-up next
  distance calculation between the same two entities. nil if the distance
  is not smaller than the threshold distance.</div>
 </td>
@@ -1543,13 +1543,13 @@ segmentVector,float thresholdDist=None,int caching=-1)</td>
 <tr class="apiTableTr">
 <td class="apiTableLeftLParam">Lua arguments</td>
 <td class="apiTableRightLParam">
-<div><strong>meshHandle</strong>: the handle of the mesh object.</div>
+<div>meshHandle: the handle of the mesh object.</div>
 </td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftLRet">Lua return value(s)</td>
 <td class="apiTableRightLRet">
-<div><strong>serializationData</strong>: the serialization data.</div>
+<div>serializationData: the serialization data.</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -1579,23 +1579,23 @@ caching=-1,bool returnIntersections)</td>
 <tr class="apiTableTr">
 <td class="apiTableLeftLParam">Lua arguments</td>
 <td class="apiTableRightLParam">
-<div><strong>meshHandle</strong>: the handle of the mesh object.</div>
-<div><strong>meshPos</strong>: the position of the mesh.</div> <div><strong>meshQuat</strong>: the quaternion of the mesh.</div>
-<div><strong>p</strong>: position of vertex A on the triangle.</div>
-<div><strong>v</strong>: vector stretching from vertex A to vertex B on the triangle.</div>
-<div><strong>w</strong>: vector stretching from vertex A to vertex C on the triangle.</div>
-<div><strong>caching</strong>: a values from previous collision checking
+<div>meshHandle: the handle of the mesh object.</div>
+<div>meshPos: the position of the mesh.</div> <div>meshQuat: the quaternion of the mesh.</div>
+<div>p: position of vertex A on the triangle.</div>
+<div>v: vector stretching from vertex A to vertex B on the triangle.</div>
+<div>w: vector stretching from vertex A to vertex C on the triangle.</div>
+<div>caching: a values from previous collision checking
  between the same two entities, to speed-up collision checking. Can be 
 omitted or set to -1.</div>
-<div><strong>returnIntersections</strong>: whether the interference segments should be returned. Can be omitted.</div>
+<div>returnIntersections: whether the interference segments should be returned. Can be omitted.</div>
 </td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftLRet">Lua return value(s)</td>
 <td class="apiTableRightLRet">
-<div><strong>collisionResult</strong>: the collision status.</div>
-<div><strong>caching</strong>: a value that can be used to speed-up next collision checking between the same two entities.</div>
-<div><strong>intersections</strong>: the interference segments.</div>
+<div>collisionResult: the collision status.</div>
+<div>caching: a value that can be used to speed-up next collision checking between the same two entities.</div>
+<div>intersections: the interference segments.</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -1629,22 +1629,22 @@ thresholdDist=nil,int caching=-1)</td>
 <tr class="apiTableTr">
 <td class="apiTableLeftLParam">Lua arguments</td>
 <td class="apiTableRightLParam">
-<div><strong>meshHandle</strong>: the handle of the mesh object.</div>
-<div><strong>meshPos</strong>: the position of the mesh.</div> <div><strong>meshQuat</strong>: the quaternion of the mesh.</div>
-<div><strong>p</strong>: position of vertex A on the triangle.</div>
-<div><strong>v</strong>: vector stretching from vertex A to vertex B on the triangle.</div>
-<div><strong>w</strong>: vector stretching from vertex A to vertex C on the triangle.</div>
-<div><strong>thresholdDist</strong>: the distance threshold. Can be omitted.</div>
-<div><strong>caching</strong>: a value from previous distance calculation between the same two entities, to speed-up calculations. Can be omitted or -1.</div>
+<div>meshHandle: the handle of the mesh object.</div>
+<div>meshPos: the position of the mesh.</div> <div>meshQuat: the quaternion of the mesh.</div>
+<div>p: position of vertex A on the triangle.</div>
+<div>v: vector stretching from vertex A to vertex B on the triangle.</div>
+<div>w: vector stretching from vertex A to vertex C on the triangle.</div>
+<div>thresholdDist: the distance threshold. Can be omitted.</div>
+<div>caching: a value from previous distance calculation between the same two entities, to speed-up calculations. Can be omitted or -1.</div>
 </td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftLRet">Lua return value(s)</td>
 <td class="apiTableRightLRet">
-<div><strong>distance</strong>: the minimum distance between the two entities, or if it is not smaller than the threshold distance, the threshold distance.</div>
-<div><strong>meshMinDistPt</strong>: the minimum distance point on the mesh. nil if the distance is not smaller than the threshold distance.</div>
-<div><strong>triangleMinDistPt</strong>: the minimum distance point on the triangle. nil if the distance is not smaller than the threshold distance.</div>
-<div><strong>caching</strong>: a value that can be used to speed-up next
+<div>distance: the minimum distance between the two entities, or if it is not smaller than the threshold distance, the threshold distance.</div>
+<div>meshMinDistPt: the minimum distance point on the mesh. nil if the distance is not smaller than the threshold distance.</div>
+<div>triangleMinDistPt: the minimum distance point on the triangle. nil if the distance is not smaller than the threshold distance.</div>
+<div>caching: a value that can be used to speed-up next
  distance calculation between the same two entities. nil if the distance
  is not smaller than the threshold distance.</div>
 </td>
@@ -1679,11 +1679,11 @@ octree2Pos,float[4] octree2Quat,int[2] caching=nil)</td>
 <tr class="apiTableTr">
 <td class="apiTableLeftLParam">Lua arguments</td>
 <td class="apiTableRightLParam">
-<div><strong>oc1Handle</strong>: handle of the first OC-tree object.</div>
-<div><strong>octree1Pos</strong>: the position of the first OC-tree.</div> <div><strong>octree1Pos</strong>: the quaternion of the first OC-tree.</div>
-<div><strong>oc2Handle</strong>: handle of the second OC-tree object.</div>
-<div><strong>octree2Pos</strong>: the position of the second OC-tree.</div> <div><strong>octree2Pos</strong>: the quaternion of the second OC-tree.</div>
-<div><strong>caching</strong>: a table with two values from previous 
+<div>oc1Handle: handle of the first OC-tree object.</div>
+<div>octree1Pos: the position of the first OC-tree.</div> <div>octree1Pos: the quaternion of the first OC-tree.</div>
+<div>oc2Handle: handle of the second OC-tree object.</div>
+<div>octree2Pos: the position of the second OC-tree.</div> <div>octree2Pos: the quaternion of the second OC-tree.</div>
+<div>caching: a table with two values from previous 
 collision checking between the same two entities, to speed-up collision 
 checking. Can be omitted.</div>
 </td>
@@ -1691,8 +1691,8 @@ checking. Can be omitted.</div>
 <tr class="apiTableTr">
 <td class="apiTableLeftLRet">Lua return value(s)</td>
 <td class="apiTableRightLRet">
-<div><strong>collisionResult</strong>: the collision status.</div>
-<div><strong>caching</strong>: a table with two values that can be used to speed-up next collision checking between the same two entities.</div>
+<div>collisionResult: the collision status.</div>
+<div>caching: a table with two values that can be used to speed-up next collision checking between the same two entities.</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -1727,12 +1727,12 @@ caching=nil)</td>
 <tr class="apiTableTr">
 <td class="apiTableLeftLParam">Lua arguments</td>
 <td class="apiTableRightLParam">
-<div><strong>oc1Handle</strong>: the handle of the first OC-tree object.</div>
-<div><strong>octree1Pos</strong>: the position of the first OC-tree.</div> <div><strong>octree1Pos</strong>: the quaternion of the first OC-tree.</div>
-<div><strong>oc2Handle</strong>: the handle of the second OC-tree object.</div>
-<div><strong>octree2Pos</strong>: the position of the second OC-tree.</div> <div><strong>octree2Pos</strong>: the quaternion of the second OC-tree.</div>
-<div><strong>thresholdDist</strong>: the distance threshold. Can be omitted.</div>
-<div><strong>caching</strong>: a table with two values from previous 
+<div>oc1Handle: the handle of the first OC-tree object.</div>
+<div>octree1Pos: the position of the first OC-tree.</div> <div>octree1Pos: the quaternion of the first OC-tree.</div>
+<div>oc2Handle: the handle of the second OC-tree object.</div>
+<div>octree2Pos: the position of the second OC-tree.</div> <div>octree2Pos: the quaternion of the second OC-tree.</div>
+<div>thresholdDist: the distance threshold. Can be omitted.</div>
+<div>caching: a table with two values from previous 
 distance calculation between the same two entities, to speed-up 
 calculations. Can be omitted.</div>
 </td>
@@ -1740,10 +1740,10 @@ calculations. Can be omitted.</div>
 <tr class="apiTableTr">
 <td class="apiTableLeftLRet">Lua return value(s)</td>
 <td class="apiTableRightLRet">
-<div><strong>distance</strong>: the minimum distance between the two entities, or if it is not smaller than the threshold distance, the threshold distance.</div>
-<div><strong>oc1MinDistPt</strong>: the minimum distance point on the first OC-tree. nil if the distance is not smaller than the threshold distance.</div>
-<div><strong>oc2MinDistPt</strong>: the minimum distance point on the second OC-tree. nil if the distance is not smaller than the threshold distance.</div>
-<div><strong>caching</strong>: a table with two values that can be used 
+<div>distance: the minimum distance between the two entities, or if it is not smaller than the threshold distance, the threshold distance.</div>
+<div>oc1MinDistPt: the minimum distance point on the first OC-tree. nil if the distance is not smaller than the threshold distance.</div>
+<div>oc2MinDistPt: the minimum distance point on the second OC-tree. nil if the distance is not smaller than the threshold distance.</div>
+<div>caching: a table with two values that can be used 
 to speed-up next distance calculation between the same two entities. nil
  if the distance is not smaller than the threshold distance.</div>
 </td>
@@ -1777,17 +1777,17 @@ octreePos,float[4] octreeQuat,float[3] point,int caching=-1)</td>
 <tr class="apiTableTr">
 <td class="apiTableLeftLParam">Lua arguments</td>
 <td class="apiTableRightLParam">
-<div><strong>octreeHandle</strong>: the handle of the OC-tree object.</div>
-<div><strong>octreePos</strong>: the position of the OC-tree.</div> <div><strong>octreeQuat</strong>: the quaternion of the OC-tree.</div>
-<div><strong>point</strong>: a point expressed relative to the world reference frame.</div>
-<div><strong>caching</strong>: a value from previous collision checking between the same two entities, to speed-up collision checking. Can be omitted or -1.</div>
+<div>octreeHandle: the handle of the OC-tree object.</div>
+<div>octreePos: the position of the OC-tree.</div> <div>octreeQuat: the quaternion of the OC-tree.</div>
+<div>point: a point expressed relative to the world reference frame.</div>
+<div>caching: a value from previous collision checking between the same two entities, to speed-up collision checking. Can be omitted or -1.</div>
 </td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftLRet">Lua return value(s)</td>
 <td class="apiTableRightLRet">
-<div><strong>collisionResult</strong>: the collision status.</div>
-<div><strong>caching</strong>: a value that can be used to speed-up next collision checking between the same two entities.</div>
+<div>collisionResult: the collision status.</div>
+<div>caching: a value that can be used to speed-up next collision checking between the same two entities.</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -1819,19 +1819,19 @@ octreePos,float[4] octreeQuat,float[3] point,float thresholdDist=nil,int
 <tr class="apiTableTr">
 <td class="apiTableLeftLParam">Lua arguments</td>
 <td class="apiTableRightLParam">
-<div><strong>octreeHandle</strong>: the handle of the OC-tree object.</div>
-<div><strong>octreePos</strong>: the position of the OC-tree.</div> <div><strong>octreeQuat</strong>: the quaternion of the OC-tree.</div>
-<div><strong>point</strong>: the position of the point.</div>
-<div><strong>thresholdDist</strong>: the distance threshold. Can be omitted.</div>
-<div><strong>caching</strong>: a value from previous distance calculation between the same two entities, to speed-up calculations. Can be omitted or -1.</div>
+<div>octreeHandle: the handle of the OC-tree object.</div>
+<div>octreePos: the position of the OC-tree.</div> <div>octreeQuat: the quaternion of the OC-tree.</div>
+<div>point: the position of the point.</div>
+<div>thresholdDist: the distance threshold. Can be omitted.</div>
+<div>caching: a value from previous distance calculation between the same two entities, to speed-up calculations. Can be omitted or -1.</div>
 </td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftLRet">Lua return value(s)</td>
 <td class="apiTableRightLRet">
-<div><strong>distance</strong>: the minimum distance between the two entities, or if it is not smaller than the threshold distance, the threshold distance.</div>
-<div><strong>ocMinDistPt</strong>: the minimum distance point on the OC-tree. nil if the distance is not smaller than the threshold distance.</div>
-<div><strong>caching</strong>: a value that can be used to speed-up next
+<div>distance: the minimum distance between the two entities, or if it is not smaller than the threshold distance, the threshold distance.</div>
+<div>ocMinDistPt: the minimum distance point on the OC-tree. nil if the distance is not smaller than the threshold distance.</div>
+<div>caching: a value that can be used to speed-up next
  distance calculation between the same two entities. nil if the distance
  is not smaller than the threshold distance.</div>
 </td>
@@ -1866,18 +1866,18 @@ ptcloudPos,float[4] ptcloudQuat,int[2] caching=nil)</td>
 <tr class="apiTableTr">
 <td class="apiTableLeftLParam">Lua arguments</td>
 <td class="apiTableRightLParam">
-<div><strong>octreeHandle</strong>: the handle of the OC-tree object.</div>
-<div><strong>octreePos</strong>: the position of the OC-tree.</div> <div><strong>octreeQuat</strong>: the quaternion of the OC-tree.</div>
-<div><strong>ptcloudHandle</strong>: the handle of the point-cloud object.</div>
-<div><strong>ptcloudPos</strong>: the position of the point-cloud.</div> <div><strong>ptcloudQuat</strong>: the quaternion of the point-cloud.</div>
-<div><strong>caching</strong>: a table with two values from previous collision checking between the same two entities, to speed-up collision checking..</div>
+<div>octreeHandle: the handle of the OC-tree object.</div>
+<div>octreePos: the position of the OC-tree.</div> <div>octreeQuat: the quaternion of the OC-tree.</div>
+<div>ptcloudHandle: the handle of the point-cloud object.</div>
+<div>ptcloudPos: the position of the point-cloud.</div> <div>ptcloudQuat: the quaternion of the point-cloud.</div>
+<div>caching: a table with two values from previous collision checking between the same two entities, to speed-up collision checking..</div>
 </td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftLRet">Lua return value(s)</td>
 <td class="apiTableRightLRet">
-<div><strong>collisionResult</strong>: the collision status.</div>
-<div><strong>caching</strong>: a value that can be used to speed-up next collision checking between the same two entities.</div>
+<div>collisionResult: the collision status.</div>
+<div>caching: a value that can be used to speed-up next collision checking between the same two entities.</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -1911,12 +1911,12 @@ pcQuat,float thresholdDist=nil,int[2] caching=nil)</td>
 <tr class="apiTableTr">
 <td class="apiTableLeftLParam">Lua arguments</td>
 <td class="apiTableRightLParam">
-<div><strong>octreeHandle</strong>: the handle of the OC-tree object.</div>
-<div><strong>octreePos</strong>: the position of the OC-tree.</div> <div><strong>octreeQuat</strong>: the quaternion of the OC-tree.</div>
-<div><strong>ptcloudHandle</strong>: the handle of the point-cloud object.</div>
-<div><strong>pcPos</strong>: the position of the point-cloud.</div> <div><strong>pcQuat</strong>: the quaternion of the point-cloud.</div>
-<div><strong>thresholdDist</strong>: the distance threshold. Can be omitted.</div>
-<div><strong>caching</strong>: a table with two values from previous 
+<div>octreeHandle: the handle of the OC-tree object.</div>
+<div>octreePos: the position of the OC-tree.</div> <div>octreeQuat: the quaternion of the OC-tree.</div>
+<div>ptcloudHandle: the handle of the point-cloud object.</div>
+<div>pcPos: the position of the point-cloud.</div> <div>pcQuat: the quaternion of the point-cloud.</div>
+<div>thresholdDist: the distance threshold. Can be omitted.</div>
+<div>caching: a table with two values from previous 
 distance calculation between the same two entities, to speed-up 
 calculations. Can be omitted.</div>
 </td>
@@ -1924,10 +1924,10 @@ calculations. Can be omitted.</div>
 <tr class="apiTableTr">
 <td class="apiTableLeftLRet">Lua return value(s)</td>
 <td class="apiTableRightLRet">
-<div><strong>distance</strong>: the minimum distance between the two entities, or if it is not smaller than the threshold distance, the threshold distance.</div>
-<div><strong>ocMinDistPt</strong>: the minimum distance point on the OC-tree. nil if the distance is not smaller than the threshold distance.</div>
-<div><strong>pcMinDistPt</strong>: the minimum distance point on the point-cloud. nil if the distance is not smaller than the threshold distance.</div>
-<div><strong>caching</strong>: a table with two values that can be used 
+<div>distance: the minimum distance between the two entities, or if it is not smaller than the threshold distance, the threshold distance.</div>
+<div>ocMinDistPt: the minimum distance point on the OC-tree. nil if the distance is not smaller than the threshold distance.</div>
+<div>pcMinDistPt: the minimum distance point on the point-cloud. nil if the distance is not smaller than the threshold distance.</div>
+<div>caching: a table with two values that can be used 
 to speed-up next distance calculation between the same two entities. nil
  if the distance is not smaller than the threshold distance.</div>
 </td>
@@ -1962,18 +1962,18 @@ segmentVector,int caching=-1)</td>
 <tr class="apiTableTr">
 <td class="apiTableLeftLParam">Lua arguments</td>
 <td class="apiTableRightLParam">
-<div><strong>octreeHandle</strong>: the handle of the OC-tree object.</div>
-<div><strong>octreePos</strong>: the position of the OC-tree.</div> <div><strong>octreeQuat</strong>: the quaternion of the OC-tree.</div>
-<div><strong>segmentExtremity</strong>: position of vertex A on the segment.</div>
-<div><strong>segmentVector</strong>: vector stretching from vertex A to vertex B on the segment.</div>
-<div><strong>caching</strong>: a value from previous collision checking between the same two entities, to speed-up collision checking. Can be omitted or -1.</div>
+<div>octreeHandle: the handle of the OC-tree object.</div>
+<div>octreePos: the position of the OC-tree.</div> <div>octreeQuat: the quaternion of the OC-tree.</div>
+<div>segmentExtremity: position of vertex A on the segment.</div>
+<div>segmentVector: vector stretching from vertex A to vertex B on the segment.</div>
+<div>caching: a value from previous collision checking between the same two entities, to speed-up collision checking. Can be omitted or -1.</div>
 </td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftLRet">Lua return value(s)</td>
 <td class="apiTableRightLRet">
-<div><strong>collisionResult</strong>: the collision status.</div>
-<div><strong>caching</strong>: a value that can be used to speed-up next collision checking between the same two entities.</div>
+<div>collisionResult: the collision status.</div>
+<div>caching: a value that can be used to speed-up next collision checking between the same two entities.</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -2007,21 +2007,21 @@ segmentVector,float thresholdDist=nil,int caching=-1)</td>
 <tr class="apiTableTr">
 <td class="apiTableLeftLParam">Lua arguments</td>
 <td class="apiTableRightLParam">
-<div><strong>octreeHandle</strong>: the handle of the OC-tree object.</div>
-<div><strong>octreePos</strong>: the position of the OC-tree.</div> <div><strong>octreeQuat</strong>: the quaternion of the OC-tree.</div>
-<div><strong>segmentEndPoint</strong>: position of vertex A on the segment.</div>
-<div><strong>segmentVector</strong>: vector stretching from vertex A to vertex B on the segment.</div>
-<div><strong>thresholdDist</strong>: the distance threshold. Can be omitted.</div>
-<div><strong>caching</strong>: a value from previous distance calculation between the same two entities, to speed-up calculations. Can be omitted or -1.</div>
+<div>octreeHandle: the handle of the OC-tree object.</div>
+<div>octreePos: the position of the OC-tree.</div> <div>octreeQuat: the quaternion of the OC-tree.</div>
+<div>segmentEndPoint: position of vertex A on the segment.</div>
+<div>segmentVector: vector stretching from vertex A to vertex B on the segment.</div>
+<div>thresholdDist: the distance threshold. Can be omitted.</div>
+<div>caching: a value from previous distance calculation between the same two entities, to speed-up calculations. Can be omitted or -1.</div>
 </td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftLRet">Lua return value(s)</td>
 <td class="apiTableRightLRet">
-<div><strong>distance</strong>: the minimum distance between the two entities, or if it is not smaller than the threshold distance, the threshold distance.</div>
-<div><strong>ocMinDistPt</strong>: the minimum distance point on the OC-tree. nil if the distance is not smaller than the threshold distance.</div>
-<div><strong>segmentDistSegPt</strong>: the minimum distance point on the segment. nil if the distance is not smaller than the threshold distance.</div>
-<div><strong>caching</strong>: a value that can be used to speed-up next
+<div>distance: the minimum distance between the two entities, or if it is not smaller than the threshold distance, the threshold distance.</div>
+<div>ocMinDistPt: the minimum distance point on the OC-tree. nil if the distance is not smaller than the threshold distance.</div>
+<div>segmentDistSegPt: the minimum distance point on the segment. nil if the distance is not smaller than the threshold distance.</div>
+<div>caching: a value that can be used to speed-up next
  distance calculation between the same two entities. nil if the distance
  is not smaller than the threshold distance.</div>
 </td>
@@ -2053,13 +2053,13 @@ segmentVector,float thresholdDist=None,int caching=-1)</td>
 <tr class="apiTableTr">
 <td class="apiTableLeftLParam">Lua arguments</td>
 <td class="apiTableRightLParam">
-<div><strong>octreeHandle</strong>: the handle of the OC-tree object.</div>
+<div>octreeHandle: the handle of the OC-tree object.</div>
 </td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftLRet">Lua return value(s)</td>
 <td class="apiTableRightLRet">
-<div><strong>serializationData</strong>: the serialization data.</div>
+<div>serializationData: the serialization data.</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -2089,19 +2089,19 @@ caching=-1)</td>
 <tr class="apiTableTr">
 <td class="apiTableLeftLParam">Lua arguments</td>
 <td class="apiTableRightLParam">
-<div><strong>octreeHandle</strong>: the handle of the OC-tree object.</div>
-<div><strong>octreePos</strong>: the position of the OC-tree.</div> <div><strong>octreeQuat</strong>: the quaternion of the OC-tree.</div>
-<div><strong>p</strong>: position of vertex A on the triangle.</div>
-<div><strong>v</strong>: vector stretching from vertex A to vertex B on the triangle.</div>
-<div><strong>w</strong>: vector stretching from vertex A to vertex C on the triangle.</div>
-<div><strong>caching</strong>: a value from previous collision checking between the same two entities, to speed-up collision checking. Can be omitted or -1.</div>
+<div>octreeHandle: the handle of the OC-tree object.</div>
+<div>octreePos: the position of the OC-tree.</div> <div>octreeQuat: the quaternion of the OC-tree.</div>
+<div>p: position of vertex A on the triangle.</div>
+<div>v: vector stretching from vertex A to vertex B on the triangle.</div>
+<div>w: vector stretching from vertex A to vertex C on the triangle.</div>
+<div>caching: a value from previous collision checking between the same two entities, to speed-up collision checking. Can be omitted or -1.</div>
 </td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftLRet">Lua return value(s)</td>
 <td class="apiTableRightLRet">
-<div><strong>collisionResult</strong>: the collision status.</div>
-<div><strong>caching</strong>: a value that can be used to speed-up next collision checking between the same two entities.</div>
+<div>collisionResult: the collision status.</div>
+<div>caching: a value that can be used to speed-up next collision checking between the same two entities.</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -2134,22 +2134,22 @@ thresholdDist=nil,int caching=-1)</td>
 <tr class="apiTableTr">
 <td class="apiTableLeftLParam">Lua arguments</td>
 <td class="apiTableRightLParam">
-<div><strong>octreeHandle</strong>: the handle of the OC-tree object.</div>
-<div><strong>octreePos</strong>: the position of the OC-tree.</div> <div><strong>octreeQuat</strong>: the quaternion of the OC-tree.</div>
-<div><strong>p</strong>: position of vertex A on the triangle.</div>
-<div><strong>v</strong>: vector stretching from vertex A to vertex B on the triangle.</div>
-<div><strong>w</strong>: vector stretching from vertex A to vertex C on the triangle.</div>
-<div><strong>thresholdDist</strong>: the distance threshold. Can be omitted.</div>
-<div><strong>caching</strong>: a value from previous distance calculation between the same two entities, to speed-up calculations. Can be omitted or -1.</div>
+<div>octreeHandle: the handle of the OC-tree object.</div>
+<div>octreePos: the position of the OC-tree.</div> <div>octreeQuat: the quaternion of the OC-tree.</div>
+<div>p: position of vertex A on the triangle.</div>
+<div>v: vector stretching from vertex A to vertex B on the triangle.</div>
+<div>w: vector stretching from vertex A to vertex C on the triangle.</div>
+<div>thresholdDist: the distance threshold. Can be omitted.</div>
+<div>caching: a value from previous distance calculation between the same two entities, to speed-up calculations. Can be omitted or -1.</div>
 </td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftLRet">Lua return value(s)</td>
 <td class="apiTableRightLRet">
-<div><strong>distance</strong>: the minimum distance between the two entities, or if it is not smaller than the threshold distance, the threshold distance.</div>
-<div><strong>ocMinDistPt</strong>: the minimum distance point on the OC-tree. nil if the distance is not smaller than the threshold distance.</div>
-<div><strong>triangleMinDistPt</strong>: the minimum distance point on the triangle. nil if the distance is not smaller than the threshold distance.</div>
-<div><strong>caching</strong>: a value that can be used to speed-up next
+<div>distance: the minimum distance between the two entities, or if it is not smaller than the threshold distance, the threshold distance.</div>
+<div>ocMinDistPt: the minimum distance point on the OC-tree. nil if the distance is not smaller than the threshold distance.</div>
+<div>triangleMinDistPt: the minimum distance point on the triangle. nil if the distance is not smaller than the threshold distance.</div>
+<div>caching: a value that can be used to speed-up next
  distance calculation between the same two entities. nil if the distance
  is not smaller than the threshold distance.</div>
 </td>
@@ -2181,15 +2181,15 @@ thresholdDist=None,int caching=-1)</td>
 <tr class="apiTableTr">
 <td class="apiTableLeftLParam">Lua arguments</td>
 <td class="apiTableRightLParam">
-<div><strong>octreeHandle</strong>: the handle of the OC-tree object.</div>
+<div>octreeHandle: the handle of the OC-tree object.</div>
 </td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftLRet">Lua return value(s)</td>
 <td class="apiTableRightLRet">
-<div><strong>posData</strong>: position data: for each voxel, there are 3 position values (XYZ).</div>
-<div><strong>colorData</strong>: color data: for each voxel, there are 3 color values (RGB, 0-1).</div>
-<div><strong>userData</strong>: user data: for each voxel, there is one user data value.</div>
+<div>posData: position data: for each voxel, there are 3 position values (XYZ).</div>
+<div>colorData: color data: for each voxel, there are 3 color values (RGB, 0-1).</div>
+<div>userData: user data: for each voxel, there is one user data value.</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -2219,19 +2219,19 @@ caching=-1)</td>
 <tr class="apiTableTr">
 <td class="apiTableLeftLParam">Lua arguments</td>
 <td class="apiTableRightLParam">
-<div><strong>ptcloudHandle</strong>: the handle of the point-cloud object.</div>
-<div><strong>pcPos</strong>: the position of the point-cloud.</div> <div><strong>pcQuat</strong>: the quaternion of the point-cloud.</div>
-<div><strong>point</strong>: the position of the point.</div>
-<div><strong>thresholdDist</strong>: the distance threshold. Can be omitted.</div>
-<div><strong>caching</strong>: a value from previous distance calculation between the same two entities, to speed-up calculations. Can be omitted.</div>
+<div>ptcloudHandle: the handle of the point-cloud object.</div>
+<div>pcPos: the position of the point-cloud.</div> <div>pcQuat: the quaternion of the point-cloud.</div>
+<div>point: the position of the point.</div>
+<div>thresholdDist: the distance threshold. Can be omitted.</div>
+<div>caching: a value from previous distance calculation between the same two entities, to speed-up calculations. Can be omitted.</div>
 </td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftLRet">Lua return value(s)</td>
 <td class="apiTableRightLRet">
-<div><strong>distance</strong>: the minimum distance between the two entities, or if it is not smaller than the threshold distance, the threshold distance.</div>
-<div><strong>pcMinDistPt</strong>: the minimum distance point on the point-cloud. nil if the distance is not smaller than the threshold distance.</div>
-<div><strong>caching</strong>: a value that can be used to speed-up next
+<div>distance: the minimum distance between the two entities, or if it is not smaller than the threshold distance, the threshold distance.</div>
+<div>pcMinDistPt: the minimum distance point on the point-cloud. nil if the distance is not smaller than the threshold distance.</div>
+<div>caching: a value that can be used to speed-up next
  distance calculation between the same two entities. nil if the distance
  is not smaller than the threshold distance.</div>
 </td>
@@ -2262,15 +2262,15 @@ pcPos,list pcQuat,list point,float thresholdDist=None,int caching=-1)</td>
 <tr class="apiTableTr">
 <td class="apiTableLeftLParam">Lua arguments</td>
 <td class="apiTableRightLParam">
-<div><strong>ptcloudHandle</strong>: the handle of the point-cloud object.</div>
-<div><strong>prop</strong>: the proportion of data to retrieve, on a voxel-basis. 1 retrieves all data, 0.25 retrieves 25% of the data.</div>
+<div>ptcloudHandle: the handle of the point-cloud object.</div>
+<div>prop: the proportion of data to retrieve, on a voxel-basis. 1 retrieves all data, 0.25 retrieves 25% of the data.</div>
 </td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftLRet">Lua return value(s)</td>
 <td class="apiTableRightLRet">
-<div><strong>posData</strong>: the position data: for each point, there are 3 position values (XYZ).</div>
-<div><strong>colorData</strong>: the color data: for each point, there are 3 color values (RGB, 0-1).</div>
+<div>posData: the position data: for each point, there are 3 position values (XYZ).</div>
+<div>colorData: the color data: for each point, there are 3 color values (RGB, 0-1).</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -2301,14 +2301,14 @@ pc2Quat,float distanceThreshold=nil,int[2] caching)</td>
 <tr class="apiTableTr">
 <td class="apiTableLeftLParam">Lua arguments</td>
 <td class="apiTableRightLParam">
-<div><strong>pc1Handle</strong>: the handle of the first point-cloud object.</div>
-<div><strong>pc1Pos</strong>: the position of the first point-cloud.</div>
-<div><strong>pc1Quat</strong>: the quaternion of the first point-cloud.</div>
-<div><strong>pc2Handle</strong>: the handle of the second point-cloud object.</div>
-<div><strong>pc2Pos</strong>: the position of the second point-cloud.</div>
-<div><strong>pc2Quat</strong>: the quaternion of the second point-cloud.</div>
-<div><strong>distanceThreshold</strong>: the distance threshold. Can be omitted.</div>
-<div><strong>caching</strong>: a table with two values from previous 
+<div>pc1Handle: the handle of the first point-cloud object.</div>
+<div>pc1Pos: the position of the first point-cloud.</div>
+<div>pc1Quat: the quaternion of the first point-cloud.</div>
+<div>pc2Handle: the handle of the second point-cloud object.</div>
+<div>pc2Pos: the position of the second point-cloud.</div>
+<div>pc2Quat: the quaternion of the second point-cloud.</div>
+<div>distanceThreshold: the distance threshold. Can be omitted.</div>
+<div>caching: a table with two values from previous 
 distance calculation between the same two entities, to speed-up 
 calculations. Can be omitted.</div>
 </td>
@@ -2316,10 +2316,10 @@ calculations. Can be omitted.</div>
 <tr class="apiTableTr">
 <td class="apiTableLeftLRet">Lua return value(s)</td>
 <td class="apiTableRightLRet">
-<div><strong>distance</strong>: the minimum distance between the two entities, or if it is not smaller than the threshold distance, the threshold distance.</div>
-<div><strong>pc1MinDistPt</strong>: the minimum distance point on the first point-cloud. nil if the distance is not smaller than the threshold distance.</div>
-<div><strong>pc2MinDistPt</strong>: the minimum distance point on the second point-cloud. nil if the distance is not smaller than the threshold distance.</div>
-<div><strong>caching</strong>: a table with two values that can be used 
+<div>distance: the minimum distance between the two entities, or if it is not smaller than the threshold distance, the threshold distance.</div>
+<div>pc1MinDistPt: the minimum distance point on the first point-cloud. nil if the distance is not smaller than the threshold distance.</div>
+<div>pc2MinDistPt: the minimum distance point on the second point-cloud. nil if the distance is not smaller than the threshold distance.</div>
+<div>caching: a table with two values that can be used 
 to speed-up next distance calculation between the same two entities. nil
  if the distance is not smaller than the threshold distance.</div>
 </td>
@@ -2355,21 +2355,21 @@ segmentVector,float thresholdDist=nil,int caching=-1)</td>
 <tr class="apiTableTr">
 <td class="apiTableLeftLParam">Lua arguments</td>
 <td class="apiTableRightLParam">
-<div><strong>ptcloudHandle</strong>: the handle of the point-cloud object.</div>
-<div><strong>pcPos</strong>: the position of the point-cloud.</div> <div><strong>pcQuat</strong>: the quaternion of the point-cloud.</div>
-<div><strong>segmentEndPoint</strong>: position of vertex A on the segment.</div>
-<div><strong>segmentVector</strong>: vector stretching from vertex A to vertex B on the segment.</div>
-<div><strong>thresholdDist</strong>: the distance threshold. Can be omitted.</div>
-<div><strong>caching</strong>: a value from previous distance calculation between the same two entities, to speed-up calculations. Can be omitted.</div>
+<div>ptcloudHandle: the handle of the point-cloud object.</div>
+<div>pcPos: the position of the point-cloud.</div> <div>pcQuat: the quaternion of the point-cloud.</div>
+<div>segmentEndPoint: position of vertex A on the segment.</div>
+<div>segmentVector: vector stretching from vertex A to vertex B on the segment.</div>
+<div>thresholdDist: the distance threshold. Can be omitted.</div>
+<div>caching: a value from previous distance calculation between the same two entities, to speed-up calculations. Can be omitted.</div>
 </td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftLRet">Lua return value(s)</td>
 <td class="apiTableRightLRet">
-<div><strong>distance</strong>: the minimum distance between the two entities, or if it is not smaller than the threshold distance, the threshold distance.</div>
-<div><strong>pcMinDistPt</strong>: the minimum distance point on the point-cloud. nil if the distance is not smaller than the threshold distance.</div>
-<div><strong>segmentDistSegPt</strong>: the minimum distance point on the segment. nil if the distance is not smaller than the threshold distance.</div>
-<div><strong>caching</strong>: a value that can be used to speed-up next
+<div>distance: the minimum distance between the two entities, or if it is not smaller than the threshold distance, the threshold distance.</div>
+<div>pcMinDistPt: the minimum distance point on the point-cloud. nil if the distance is not smaller than the threshold distance.</div>
+<div>segmentDistSegPt: the minimum distance point on the segment. nil if the distance is not smaller than the threshold distance.</div>
+<div>caching: a value that can be used to speed-up next
  distance calculation between the same two entities. nil if the distance
  is not smaller than the threshold distance.</div>
 </td>
@@ -2401,13 +2401,13 @@ segmentVector,float thresholdDist=None,int caching=-1)</td>
 <tr class="apiTableTr">
 <td class="apiTableLeftLParam">Lua arguments</td>
 <td class="apiTableRightLParam">
-<div><strong>ptcloudHandle</strong>: the handle of the point-cloud object.</div>
+<div>ptcloudHandle: the handle of the point-cloud object.</div>
 </td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftLRet">Lua return value(s)</td>
 <td class="apiTableRightLRet">
-<div><strong>serializationData</strong>: the serialization data.</div>
+<div>serializationData: the serialization data.</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -2438,22 +2438,22 @@ thresholdDist=nil,int caching=nil)</td>
 <tr class="apiTableTr">
 <td class="apiTableLeftLParam">Lua arguments</td>
 <td class="apiTableRightLParam">
-<div><strong>ptcloudHandle</strong>: the handle of the point-cloud object.</div>
-<div><strong>pcPos</strong>: the position of the point-cloud.</div> <div><strong>pcQuat</strong>: the quaternion of the point-cloud.</div>
-<div><strong>p</strong>: position of vertex A on the triangle.</div>
-<div><strong>v</strong>: vector stretching from vertex A to vertex B on the triangle.</div>
-<div><strong>w</strong>: vector stretching from vertex A to vertex C on the triangle.</div>
-<div><strong>thresholdDist</strong>: the distance threshold. Can be omitted.</div>
-<div><strong>caching</strong>: a value from previous distance calculation between the same two entities, to speed-up calculations. Can be omitted.</div>
+<div>ptcloudHandle: the handle of the point-cloud object.</div>
+<div>pcPos: the position of the point-cloud.</div> <div>pcQuat: the quaternion of the point-cloud.</div>
+<div>p: position of vertex A on the triangle.</div>
+<div>v: vector stretching from vertex A to vertex B on the triangle.</div>
+<div>w: vector stretching from vertex A to vertex C on the triangle.</div>
+<div>thresholdDist: the distance threshold. Can be omitted.</div>
+<div>caching: a value from previous distance calculation between the same two entities, to speed-up calculations. Can be omitted.</div>
 </td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftLRet">Lua return value(s)</td>
 <td class="apiTableRightLRet">
-<div><strong>distance</strong>: the minimum distance between the two entities, or if it is not smaller than the threshold distance, the threshold distance.</div>
-<div><strong>pcMinDistPt</strong>: the minimum distance point on the point-cloud. nil if the distance is not smaller than the threshold distance.</div>
-<div><strong>triangleMinDistPt</strong>: the minimum distance point on the triangle. nil if the distance is not smaller than the threshold distance.</div>
-<div><strong>caching</strong>: a value that can be used to speed-up next
+<div>distance: the minimum distance between the two entities, or if it is not smaller than the threshold distance, the threshold distance.</div>
+<div>pcMinDistPt: the minimum distance point on the point-cloud. nil if the distance is not smaller than the threshold distance.</div>
+<div>triangleMinDistPt: the minimum distance point on the triangle. nil if the distance is not smaller than the threshold distance.</div>
+<div>caching: a value that can be used to speed-up next
  distance calculation between the same two entities. nil if the distance
  is not smaller than the threshold distance.</div>
 </td>
@@ -2487,16 +2487,16 @@ segmentEndPoint,float[3] segmentVector,float[3] point)</td>
 <tr class="apiTableTr">
 <td class="apiTableLeftLParam">Lua arguments</td>
 <td class="apiTableRightLParam">
-<div><strong>segmentEndPoint</strong>: position of vertex A on the segment.</div>
-<div><strong>segmentVector</strong>: vector stretching from vertex A to vertex B on the segment.</div>
-<div><strong>point</strong>: position of the point</div>
+<div>segmentEndPoint: position of vertex A on the segment.</div>
+<div>segmentVector: vector stretching from vertex A to vertex B on the segment.</div>
+<div>point: position of the point</div>
 </td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftLRet">Lua return value(s)</td>
 <td class="apiTableRightLRet">
-<div><strong>distance</strong>: the minimum distance between the two entities.</div>
-<div><strong>segmentDistSegPt</strong>: the minimum distance point on the segment.</div>
+<div>distance: the minimum distance between the two entities.</div>
+<div>segmentDistSegPt: the minimum distance point on the segment.</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -2527,18 +2527,18 @@ segment2EndPoint,float[3] segment2Vector)</td>
 <tr class="apiTableTr">
 <td class="apiTableLeftLParam">Lua arguments</td>
 <td class="apiTableRightLParam">
-<div><strong>segment1EndPoint</strong>: position of point A on the first segment</div>
-<div><strong>segment1Vector</strong>: vector stretching from point A to point B on the first segment.</div>
-<div><strong>segment2EndPoint</strong>: position of point A on the second segment</div>
-<div><strong>segment2Vector</strong>: vector stretching from point A to point B on the second segment.</div>
+<div>segment1EndPoint: position of point A on the first segment</div>
+<div>segment1Vector: vector stretching from point A to point B on the first segment.</div>
+<div>segment2EndPoint: position of point A on the second segment</div>
+<div>segment2Vector: vector stretching from point A to point B on the second segment.</div>
 </td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftLRet">Lua return value(s)</td>
 <td class="apiTableRightLRet">
-<div><strong>distance</strong>: the minimum distance between the two entities.</div>
-<div><strong>segment1DistSegPt</strong>: the minimum distance point on the first segment.</div>
-<div><strong>segment2DistSegPt</strong>: the minimum distance point on the second segment.</div>
+<div>distance: the minimum distance between the two entities.</div>
+<div>segment1DistSegPt: the minimum distance point on the first segment.</div>
+<div>segment2DistSegPt: the minimum distance point on the second segment.</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -2572,23 +2572,23 @@ segment2Vector)</td>
 <tr class="apiTableTr">
 <td class="apiTableLeftLParam">Lua arguments</td>
 <td class="apiTableRightLParam">
-<div><strong>points</strong>: the points to transform.</div>
-<div><strong>transformationMatrix</strong>: a transformation matrix: 12 
+<div>points: the points to transform.</div>
+<div>transformationMatrix: a transformation matrix: 12 
 values (the last row of the 4x4 matrix (0,0,0,1) is not needed). The 
 x-axis of the orientation component is (matrix[1],matrix[5],matrix[9]), 
 the y-axis of the orientation component is 
 (matrix[2],matrix[6],matrix[10]), the z-axis of the orientation 
 component is (matrix[3],matrix[7],matrix[11]), and the translation 
 component is (matrix[4],matrix[8],matrix[12]).</div>
-<div><strong>pos</strong>: a position.</div>
-<div><strong>quaternion</strong>: a quaternion.</div>
-<div><strong>eulerAngles</strong>: Euler angles.</div>
+<div>pos: a position.</div>
+<div>quaternion: a quaternion.</div>
+<div>eulerAngles: Euler angles.</div>
 </td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftLRet">Lua return value(s)</td>
 <td class="apiTableRightLRet">
-<div><strong>transformedPoints</strong>: the transformed points.</div>
+<div>transformedPoints: the transformed points.</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -2620,17 +2620,17 @@ component is (matrix[4],matrix[8],matrix[12]).</div>
 <tr class="apiTableTr">
 <td class="apiTableLeftLParam">Lua arguments</td>
 <td class="apiTableRightLParam">
-<div><strong>p</strong>: position of vertex A on the triangle.</div>
-<div><strong>v</strong>: vector stretching from vertex A to vertex B on the triangle.</div>
-<div><strong>w</strong>: vector stretching from vertex A to vertex C on the triangle.</div>
-<div><strong>point</strong>: position of the point</div>
+<div>p: position of vertex A on the triangle.</div>
+<div>v: vector stretching from vertex A to vertex B on the triangle.</div>
+<div>w: vector stretching from vertex A to vertex C on the triangle.</div>
+<div>point: position of the point</div>
 </td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftLRet">Lua return value(s)</td>
 <td class="apiTableRightLRet">
-<div><strong>distance</strong>: the minimum distance between the two entities.</div>
-<div><strong>triangleDistSegPt</strong>: the minimum distance point on the triangle.</div>
+<div>distance: the minimum distance between the two entities.</div>
+<div>triangleDistSegPt: the minimum distance point on the triangle.</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -2660,19 +2660,19 @@ v,float[3] w,float[3] segmentEndPoint,float[3] segmentVector)</td>
 <tr class="apiTableTr">
 <td class="apiTableLeftLParam">Lua arguments</td>
 <td class="apiTableRightLParam">
-<div><strong>p</strong>: position of vertex A on the triangle.</div>
-<div><strong>v</strong>: vector stretching from vertex A to vertex B on the triangle.</div>
-<div><strong>w</strong>: vector stretching from vertex A to vertex C on the triangle.</div>
-<div><strong>segmentEndPoint</strong>: position of vertex A on the segment.</div>
-<div><strong>segmentVector</strong>: vector stretching from vertex A to vertex B on the segment.</div>
+<div>p: position of vertex A on the triangle.</div>
+<div>v: vector stretching from vertex A to vertex B on the triangle.</div>
+<div>w: vector stretching from vertex A to vertex C on the triangle.</div>
+<div>segmentEndPoint: position of vertex A on the segment.</div>
+<div>segmentVector: vector stretching from vertex A to vertex B on the segment.</div>
 </td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftLRet">Lua return value(s)</td>
 <td class="apiTableRightLRet">
-<div><strong>distance</strong>: the minimum distance between the two entities.</div>
-<div><strong>triangleDistSegPt</strong>: the minimum distance point on the triangle.</div>
-<div><strong>segmentDistSegPt</strong>: the minimum distance point on the segment.</div>
+<div>distance: the minimum distance between the two entities.</div>
+<div>triangleDistSegPt: the minimum distance point on the triangle.</div>
+<div>segmentDistSegPt: the minimum distance point on the segment.</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -2704,20 +2704,20 @@ v1,float[3] w1,float[3] p2,float[3] v2,float[3] w2)</td>
 <tr class="apiTableTr">
 <td class="apiTableLeftLParam">Lua arguments</td>
 <td class="apiTableRightLParam">
-<div><strong>p1</strong>: position of point A on triangle 1.</div>
-<div><strong>v1</strong>: vector stretching from point A to point B on triangle 1.</div>
-<div><strong>w1</strong>: vector stretching from point A to point C on triangle 1.</div>
-<div><strong>p2</strong>: position of point A on triangle 2.</div>
-<div><strong>v2</strong>: vector stretching from point A to point B on triangle 2.</div>
-<div><strong>w2</strong>: vector stretching from point A to point C on triangle 2.</div>
+<div>p1: position of point A on triangle 1.</div>
+<div>v1: vector stretching from point A to point B on triangle 1.</div>
+<div>w1: vector stretching from point A to point C on triangle 1.</div>
+<div>p2: position of point A on triangle 2.</div>
+<div>v2: vector stretching from point A to point B on triangle 2.</div>
+<div>w2: vector stretching from point A to point C on triangle 2.</div>
 </td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftLRet">Lua return value(s)</td>
 <td class="apiTableRightLRet">
-<div><strong>distance</strong>: the minimum distance between the two entities.</div>
-<div><strong>triangle1DistSegPt</strong>: the minimum distance point on the first triangle.</div>
-<div><strong>triangle2DistSegPt</strong>: the minimum distance point on the second triangle.</div>
+<div>distance: the minimum distance between the two entities.</div>
+<div>triangle1DistSegPt: the minimum distance point on the first triangle.</div>
+<div>triangle2DistSegPt: the minimum distance point on the second triangle.</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -2746,8 +2746,8 @@ w1,list p2,list v2,list w2)</td>
 <tr class="apiTableTr">
 <td class="apiTableLeftLParam">Lua arguments</td>
 <td class="apiTableRightLParam">
-<div><strong>meshHandle</strong>: the handle of the mesh object.</div>
-<div><strong>scalingFactor</strong>: the scaling factor.</div>
+<div>meshHandle: the handle of the mesh object.</div>
+<div>scalingFactor: the scaling factor.</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -2778,8 +2778,8 @@ w1,list p2,list v2,list w2)</td>
 <tr class="apiTableTr">
 <td class="apiTableLeftLParam">Lua arguments</td>
 <td class="apiTableRightLParam">
-<div><strong>octreeHandle</strong>: the handle of the OC-tree object.</div>
-<div><strong>scalingFactor</strong>: the scaling factor.</div>
+<div>octreeHandle: the handle of the OC-tree object.</div>
+<div>scalingFactor: the scaling factor.</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -2810,8 +2810,8 @@ w1,list p2,list v2,list w2)</td>
 <tr class="apiTableTr">
 <td class="apiTableLeftLParam">Lua arguments</td>
 <td class="apiTableRightLParam">
-<div><strong>ptcloudHandle</strong>: the handle of the point-cloud object.</div>
-<div><strong>scalingFactor</strong>: the scaling factor.</div>
+<div>ptcloudHandle: the handle of the point-cloud object.</div>
+<div>scalingFactor: the scaling factor.</div>
 </td>
 </tr>
 <tr class="apiTableTr">

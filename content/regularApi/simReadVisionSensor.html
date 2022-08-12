@@ -33,10 +33,10 @@ C/C++<br>synopsis
 <tr class=apiTableTr> 
 <td class=apiTableLeftCParam>C/C++<br>parameters</td> 
 <td class=apiTableRightCParam>
-<div><strong>visionSensorHandle</strong>: handle of a vision sensor object</div>
-<div><strong>auxValues</strong>: by default CoppeliaSim returns one packet of 15 auxiliary values:the minimum of {intensity, red, green, blue, depth value}, the maximum of {intensity, red, green, blue, depth value}, and the average of {intensity, red, green, blue, depth value}. Additional packets can be appended in the <a href="../visionCallbackFunctions.html">vision callback function</a>. AuxValues can be nullptr. The user is in charge of releasing the auxValues buffer with <a href="simReleaseBuffer.html">simReleaseBuffer</a>(*auxValues).<br>
+<div>visionSensorHandle: handle of a vision sensor object</div>
+<div>auxValues: by default CoppeliaSim returns one packet of 15 auxiliary values:the minimum of {intensity, red, green, blue, depth value}, the maximum of {intensity, red, green, blue, depth value}, and the average of {intensity, red, green, blue, depth value}. Additional packets can be appended in the <a href="../visionCallbackFunctions.html">vision callback function</a>. AuxValues can be nullptr. The user is in charge of releasing the auxValues buffer with <a href="simReleaseBuffer.html">simReleaseBuffer</a>(*auxValues).<br>
 </div>
-<div><strong>auxValuesCount</strong>: contains information about the number of auxiliary value packets and packet sizes returned in auxValues. The first value is the number of packets, the second is the size of packet1, the third is the size of packet2, etc. Can be nullptr if auxValues is also nullptr. The user is in charge of releasing the auxValuesCount buffer with <a href="simReleaseBuffer.html">simReleaseBuffer</a>(*auxValuesCount).<br>
+<div>auxValuesCount: contains information about the number of auxiliary value packets and packet sizes returned in auxValues. The first value is the number of packets, the second is the size of packet1, the third is the size of packet2, etc. Can be nullptr if auxValues is also nullptr. The user is in charge of releasing the auxValuesCount buffer with <a href="simReleaseBuffer.html">simReleaseBuffer</a>(*auxValuesCount).<br>
 </div>
 <br>
 <div>See <a href="simHandleVisionSensor.html">simHandleVisionSensor</a> for a usage example</div>
@@ -60,7 +60,7 @@ Lua<br>synopsis
 <tr class=apiTableTr> 
 <td class=apiTableLeftLParam>Lua<br>parameters</td> 
 <td class=apiTableRightLParam>
-<div><strong>visionSensorHandle</strong>: handle of a vision sensor object</div>
+<div>visionSensorHandle: handle of a vision sensor object</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -68,11 +68,11 @@ Lua<br>synopsis
 Lua<br>return values
 </td> 
 <td class=apiTableRightLRet>
-<div><strong>result</strong>: detection state (0 or 1), or -1 if <a href="simHandleVisionSensor.html">sim.handleVisionSensor</a> was never called, or if <a href="simResetVisionSensor.html">sim.resetVisionSensor</a> was previously called.<br>
+<div>result: detection state (0 or 1), or -1 if <a href="simHandleVisionSensor.html">sim.handleVisionSensor</a> was never called, or if <a href="simResetVisionSensor.html">sim.resetVisionSensor</a> was previously called.<br>
 </div>
-<div><strong>auxiliaryValuePacket1</strong>: default auxiliary value packet (same as for the C-function)</div>
-<div><strong>auxiliaryValuePacket2</strong>: additional auxiliary value packet (e.g. from an image processing component)</div>
-<div><strong>auxiliaryValuePacket3</strong>: etc. (the function returns as many tables as there are auxiliary value packets)</div>
+<div>auxiliaryValuePacket1: default auxiliary value packet (same as for the C-function)</div>
+<div>auxiliaryValuePacket2: additional auxiliary value packet (e.g. from an image processing component)</div>
+<div>auxiliaryValuePacket3: etc. (the function returns as many tables as there are auxiliary value packets)</div>
 <div></div></td> 
 </tr> 
 

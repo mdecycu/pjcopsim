@@ -159,105 +159,105 @@ img.add_border {
 <li><a href="userConfigCallbackFunctions.html">User config callback functions</a> are called when the user double-clicks a user parameter icon.</li>
 <br/>
 <p><a name="systemCallbacks"></a>Following is a list of all supported system callback functions. Most support returning {cmd='cleanup'} or {cmd='restart'} to end or restart the script. Refer to the comments in the code below for details about individual functions:</p>
-<code class="hljs language-lua coppelia-coppeliasim-script">
-function <strong>sysCall_info</strong>()
+<pre class="brush:lua;auto-links:false;toolbar:false" contenteditable="false">
+function sysCall_info()
     -- Lua only. Can be used to specify initial configuration data. E.g. in case of an add-on: 
     return {autoStart=false,menu='menu1\nmenu2\nadd-on name',menuEnabled=true}
 end
 
-function <strong>sysCall_init</strong>()
+function sysCall_init()
     -- Do some initialization here. 
     -- Either sysCall_init or sysCall_thread is required with Python scripts.
 end
 
-function <strong>sysCall_thread</strong>()
+function sysCall_thread()
     -- Python only. Entry point for threaded scripts.
     -- Either sysCall_thread or sysCall_init is required.
 end
 
-function <strong>sysCall_cleanup</strong>()
+function sysCall_cleanup()
     -- Do some clean-up here.
 end
 
-function <strong>sysCall_nonSimulation</strong>()
+function sysCall_nonSimulation()
     -- Is executed when simulation is not running. 
     -- Not for <a href="simulationScripts.html">simulation scripts</a>.
 end
 
-function <strong>sysCall_beforeSimulation</strong>()
+function sysCall_beforeSimulation()
     -- Simulation is about to start. 
     -- Not for <a href="simulationScripts.html">simulation scripts</a>.
 end
 
-function <strong>sysCall_afterSimulation</strong>()
+function sysCall_afterSimulation()
     -- Simulation has just ended. 
     -- Not for <a href="simulationScripts.html">simulation scripts</a>.
 end
 
-function <strong>sysCall_actuation</strong>()
+function sysCall_actuation()
     -- Put some actuation code here.
 end
 
-function <strong>sysCall_sensing</strong>()
+function sysCall_sensing()
     -- Put some sensing code here.
 end
 
-function <strong>sysCall_suspend</strong>()
+function sysCall_suspend()
     -- Simulation is about to be suspended.
 end
 
-function <strong>sysCall_suspended</strong>()
+function sysCall_suspended()
     -- Simulation is suspended.
 end
 
-function <strong>sysCall_resume</strong>()
+function sysCall_resume()
     -- Simulation is about to resume.
 end
 
-function <strong>sysCall_realTimeIdle</strong>()
+function sysCall_realTimeIdle()
     -- Is executed when idle in real-time mode
 end
 
-function <strong>sysCall_beforeInstanceSwitch</strong>()
+function sysCall_beforeInstanceSwitch()
     -- About to switch to another scene.
     -- Not for <a href="simulationScripts.html">simulation scripts</a>.
 end
 
-function <strong>sysCall_afterInstanceSwitch</strong>()
+function sysCall_afterInstanceSwitch()
     -- Switched to another scene. 
     -- Not for <a href="simulationScripts.html">simulation scripts</a>.
 end
 
-function <strong>sysCall_beforeSave</strong>()
+function sysCall_beforeSave()
     -- About to save the scene, or about to set an undo/redo point
 end
 
-function <strong>sysCall_afterSave</strong>()
+function sysCall_afterSave()
     -- After the scene was saved , or after an undo/redo point was set
 end
 
-function <strong>sysCall_beforeCopy</strong>(inData)
+function sysCall_beforeCopy(inData)
     -- Before one or several objects will be copied. Can be reentrant. Disabled by default for Python.
     for key,value in pairs(inData.objectHandles) do
         print("Object with handle "..key.." will be copied")
     end
 end
 
-function <strong>sysCall_afterCopy</strong>(inData)
+function sysCall_afterCopy(inData)
     -- After one or several objects were copied. Can be reentrant. Disabled by default for Python.
     for key,value in pairs(inData.objectHandles) do
         print("Object with handle "..key.." was copied")
     end
 end
 
-function <strong>sysCall_afterCreate</strong>(inData)
+function sysCall_afterCreate(inData)
     -- After one or several objects were created. Can be reentrant. Disabled by default for Python.
     for i,#inData.objectHandles,1 do
         print("Object with handle "..inData.objectHandles[i].." was created")
     end
 end
 
-function <strong>sysCall_beforeDelete</strong>(inData)
+function sysCall_beforeDelete(inData)
     -- Before one or several objects will be deleted. Can be reentrant. Disabled by default for Python.
     for key,value in pairs(inData.objectHandles) do
         print("Object with handle "..key.." will be deleted")
@@ -265,7 +265,7 @@ function <strong>sysCall_beforeDelete</strong>(inData)
     -- inData.allObjects indicates if all objects in the scene will be deleted
 end
 
-function <strong>sysCall_afterDelete</strong>(inData)
+function sysCall_afterDelete(inData)
     -- After one or several objects were deleted. Can be reentrant. Disabled by default for Python.
     for key,value in pairs(inData.objectHandles) do
         print("Object with handle "..key.." was deleted")
@@ -273,77 +273,77 @@ function <strong>sysCall_afterDelete</strong>(inData)
     -- inData.allObjects indicates if all objects in the scene were deleted
 end
 
-<a name="sysCall_beforeMainScript"></a>function <strong>sysCall_beforeMainScript</strong>()
+<a name="sysCall_beforeMainScript"></a>function sysCall_beforeMainScript()
     -- Lua only. Can be used to step a simulation in a custom manner.
     local outData={doNotRunMainScript=false} -- when true, then the main script won't be executed
     return outData
 end
 
-function <strong>sysCall_addOnScriptSuspend</strong>()
+function sysCall_addOnScriptSuspend()
     -- Add-on script execution is about to be suspended.
     -- Only for <a href="addOns.html">add-on scripts</a>.
 end
 
-function <strong>sysCall_addOnScriptResume</strong>()
+function sysCall_addOnScriptResume()
     -- Add-on script execution is about to be resumed.
     -- Only for <a href="addOns.html">add-on scripts</a>.
 end
 
-function <strong>sysCall_dynCallback</strong>(inData)
+function sysCall_dynCallback(inData)
     -- See the <a href="dynCallbackFunctions.html">dynamics callback function</a> section for details. Disabled by default for Python.
     -- Only for <a href="customizationScripts.html">customization scripts</a> and <a href="childScripts.html">child scripts</a>.
 end
 
-function <strong>sysCall_jointCallback</strong>(inData)
+function sysCall_jointCallback(inData)
     -- See the <a href="jointCallbackFunctions.html">joint callback function</a> section for details. Disabled by default for Python.
     -- Only for <a href="customizationScripts.html">customization scripts</a> and <a href="childScripts.html">child scripts</a>.
     return outData
 end
 
-function <strong>sysCall_contactCallback</strong>(inData)
+function sysCall_contactCallback(inData)
     -- See the <a href="contactCallbackFunction.html">contact callback function</a> section for details. Disabled by default for Python.
     -- Only for <a href="customizationScripts.html">customization scripts</a> and <a href="childScripts.html">child scripts</a>.
     return outData
 end
 
-function <strong>sysCall_vision</strong>(inData)
+function sysCall_vision(inData)
     -- See the <a href="visionCallbackFunctions.html">vision callback function</a> section for details. Disabled by default for Python.
     -- Only for <a href="customizationScripts.html">customization scripts</a> and <a href="childScripts.html">child scripts</a>.
     return outData
 end
 
-function <strong>sysCall_trigger</strong>(inData)
+function sysCall_trigger(inData)
     -- See the <a href="triggerCallbackFunctions.html">trigger callback function</a> section for details. Disabled by default for Python.
     -- Only for <a href="customizationScripts.html">customization scripts</a> and <a href="childScripts.html">child scripts</a>.
     return outData
 end
 
-function <strong>sysCall_userConfig</strong>()
+function sysCall_userConfig()
     -- See the <a href="userConfigCallbackFunctions.html">user config callback function</a> section for details.
     -- Only for <a href="customizationScripts.html">customization scripts</a>.
 end
 
-<a name="sysCall_moduleEntry"></a>function <strong>sysCall_moduleEntry</strong>(inData)
+<a name="sysCall_moduleEntry"></a>function sysCall_moduleEntry(inData)
     -- Called when a user module menu entry is selected, e.g.
     print('Following module menu entry was selected: '..inData.handle)
     -- See the <a href="regularApi/simModuleEntry.html">sim.moduleEntry</a> for details.
 end
 
-<a name="sysCall_msg"></a>function <strong>sysCall_msg</strong>(message,origin)
+<a name="sysCall_msg"></a>function sysCall_msg(message,origin)
     -- Synchronously called when <a href="regularApi/simBroadcastMsg.html">sim.broadcastMsg</a> is called. Can be reentrant. Disabled by default for Python. 
 end
 
-<a name="sysCall_event"></a>function <strong>sysCall_event</strong>(inData)
+<a name="sysCall_event"></a>function sysCall_event(inData)
     -- Called when something (mainly visual for now) changes. Can be reentrant. Disabled by default for Python. 
     -- Mainly used to synchronize an external viewer/renderer with CoppeliaSim.
     -- See also <a href="regularApi/simGetGenesisEvents.html">sim.getGenesisEvents</a>
 end
 
-<a name="sysCall_ext"></a>function <strong>sysCall_ext</strong>(string funcName,inData)
+<a name="sysCall_ext"></a>function sysCall_ext(string funcName,inData)
     -- Lua only. When this function is present, then all external calls to a script function, i.e. user callbacks,
     -- will be intercepted (the original function will be shadowed). If only monitoring is desired,
     -- then one should use <a href="regularApi/simRegisterScriptFuncHook.html">sim.registerScriptFuncHook</a> on this function.
-end</code>
+end</pre>
 <br/>
 <br/>
 </td></tr>

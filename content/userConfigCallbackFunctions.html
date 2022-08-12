@@ -155,7 +155,7 @@ img.add_border {
 <p align="center"><img src="./../images/userConfigCallback.jpg"/></p>
 <p class="imageLabel">[Custom configuration dialog]</p>
 <br/>
-<code class="hljs language-lua coppelia-coppeliasim-script">
+<pre class="brush:lua;auto-links:false;toolbar:false" contenteditable="false">
 function sysCall_init()
     modelHandle=sim.getObject('.')
 end
@@ -223,13 +223,13 @@ end
 
 function writeData(data)
     sim.writeCustomDataBlock(modelHandle,'RobotParams',sim.packTable(data))
-end</code>
+end</pre>
 <br/>
 <p>You may also use the <em>configUI</em> module for quicker set-up of custom configuration dialog, that will also automatically write data to custom data blocks:</p>
 <p align="center"><img src="./../images/userConfigCallback2.jpg"/></p>
 <p class="imageLabel">[Custom configuration dialog based on <em>configUI</em> module]</p>
 <br/>
-<code class="hljs language-lua coppelia-coppeliasim-script">
+<pre class="brush:lua;auto-links:false;toolbar:false" contenteditable="false">
 require 'configUi'
 
 function sysCall_init()
@@ -334,7 +334,7 @@ function modificationCallback(config)
     local txt="Object '"..sim.getObjectAlias(objectHandle,5).."' just changed.\nNew parameters are:"
     print(txt)
     print(config)
-end</code>
+end</pre>
 <br/>
 <br/>
 </td></tr>

@@ -33,7 +33,7 @@ C/C++<br>synopsis
 <tr class=apiTableTr> 
 <td class=apiTableLeftCParam>C/C++<br>parameters</td> 
 <td class=apiTableRightCParam>
-<div><strong>previousTime</strong>: value that indicates how the command should operate:</div>
+<div>previousTime: value that indicates how the command should operate:</div>
 <div class=tabTab>&gt;=0: the function returns a time difference with previousTime. PreviousTime must have been previously retrieved with the -1 argument below.</div>
 <div class=tabTab>-1: the function returns a time relative to an arbitrary time. Use this to measure time differences within CoppeliaSim</div>
 <div class=tabTab>-2: the function returns a time as follows:</div>
@@ -45,7 +45,7 @@ returnedValue=TimeGetTime();
 struct timeval now;
 gettimeofday(&now,nullptr);
 returnValue=now.tv_sec*1000+now.tv_usec/1000;
-</code>
+</pre>
 
 </td> 
 </tr> 

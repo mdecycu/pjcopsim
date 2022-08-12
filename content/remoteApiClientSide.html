@@ -18,7 +18,7 @@
 
 <h1>Enabling the legacy remote API - client side</h1>
 
-<p class=warningBox>All units going to, or coming from the <a href="apiFunctions.htm">API</a> are in meters, kilograms, seconds and <strong>radians</strong>  or a combination of those (unless otherwise explicitly indicated).<br>
+<p class=warningBox>All units going to, or coming from the <a href="apiFunctions.htm">API</a> are in meters, kilograms, seconds and radians  or a combination of those (unless otherwise explicitly indicated).<br>
 </p>
 
 
@@ -37,7 +37,7 @@
 <li>extApiPlatform.h (contains platform specific code)</li>
 <li>extApiPlatform.c (contains platform specific code)</li>
 
-<p>Above files are located in CoppeliaSim's installation directory, under <em>programming/legacyRemoteApi/</em>. Make sure you have defined <strong>NON_MATLAB_PARSING</strong> and <strong>MAX_EXT_API_CONNECTIONS=255</strong> (and optionally <strong>DO_NOT_USE_SHARED_MEMORY</strong>) as a preprocessor definition. To enable the legacy remote API on the client side (i.e. your application), call<em> <a href="remoteApiFunctions.htm#simxStart">simxStart</a></em>. See the <em>bubbleRobClient</em> project in the <em>programming</em> directory for an example. <a href="remoteApiFunctions.htm">This page</a> lists and describes all supported  C/C++ legacy remote API functions. CoppeliaSim legacy remote API functions can easily be recognized from their &quot;simx&quot;-prefix.
+<p>Above files are located in CoppeliaSim's installation directory, under <em>programming/legacyRemoteApi/</em>. Make sure you have defined NON_MATLAB_PARSING and MAX_EXT_API_CONNECTIONS=255 (and optionally DO_NOT_USE_SHARED_MEMORY) as a preprocessor definition. To enable the legacy remote API on the client side (i.e. your application), call<em> <a href="remoteApiFunctions.htm#simxStart">simxStart</a></em>. See the <em>bubbleRobClient</em> project in the <em>programming</em> directory for an example. <a href="remoteApiFunctions.htm">This page</a> lists and describes all supported  C/C++ legacy remote API functions. CoppeliaSim legacy remote API functions can easily be recognized from their &quot;simx&quot;-prefix.
 </p>
 
 <br>
@@ -53,7 +53,7 @@
 <li>simConst.py</li>
 <li>remoteApi.dll, remoteApi.dylib or remoteApi.so (depending on your target platform)</li>
 
-<p>Above files are located in CoppeliaSim's installation directory, under <em>programming/legacyRemoteApi/remoteApiBindings/python</em>. You might have to build the remoteApi shared library yourself (using <em>remoteApiSharedLib.vcproj</em> or <em>makefile</em>) if not already built. In that case, make sure you have defined <strong>NON_MATLAB_PARSING</strong> and <strong>MAX_EXT_API_CONNECTIONS=255 </strong>(and optionally <strong><strong>DO_NOT_USE_SHARED_MEMORY</strong></strong>) as a preprocessor definition.</p>
+<p>Above files are located in CoppeliaSim's installation directory, under <em>programming/legacyRemoteApi/remoteApiBindings/python</em>. You might have to build the remoteApi shared library yourself (using <em>remoteApiSharedLib.vcproj</em> or <em>makefile</em>) if not already built. In that case, make sure you have defined NON_MATLAB_PARSING and MAX_EXT_API_CONNECTIONS=255 (and optionally DO_NOT_USE_SHARED_MEMORY) as a preprocessor definition.</p>
 
 <p>Once you have above elements in a directory known to Python, call <em>import sim</em> to load the library. To enable the legacy remote API on the client side (i.e. your application), call <a href="remoteApiFunctionsPython.htm#simxStart"><em>sim.simxStart</em></a>. See the <em>simpleTest.py</em> script in the <em>programming/legacyRemoteApi/remoteApiBindings/python</em> directory for an example. <a href="remoteApiFunctionsPython.htm">This page</a> lists and describes all supported  Python legacy remote API functions. CoppeliaSim legacy remote API functions can easily be recognized from their &quot;simx&quot;-prefix.
 </p>
@@ -72,7 +72,7 @@
 <li>package <em>coppelia</em> (containing 12 Java classes)</li>
 <li>remoteApiJava.dll, libremoteApiJava.dylib or libremoteApiJava.so (depending on your target platform)</li>
 
-<p>Above files are located in CoppeliaSim's installation directory, under <em>programming/legacyRemoteApi/remoteApiBindings/java</em>. You might have to build the remoteApiJava shared library yourself (using <em>remoteApiSharedLibJava.vcproj</em> or <em>remoteApiSharedLibJava_Makefile</em>) if not already built. In that case, make sure you have defined <strong>NON_MATLAB_PARSING</strong> and <strong>MAX_EXT_API_CONNECTIONS=255</strong>  (and optionally <strong>DO_NOT_USE_SHARED_MEMORY</strong>) as a preprocessor definition.</p>
+<p>Above files are located in CoppeliaSim's installation directory, under <em>programming/legacyRemoteApi/remoteApiBindings/java</em>. You might have to build the remoteApiJava shared library yourself (using <em>remoteApiSharedLibJava.vcproj</em> or <em>remoteApiSharedLibJava_Makefile</em>) if not already built. In that case, make sure you have defined NON_MATLAB_PARSING and MAX_EXT_API_CONNECTIONS=255  (and optionally DO_NOT_USE_SHARED_MEMORY) as a preprocessor definition.</p>
 
 <p>Once you have above elements in a directory known to Java, compile your application with <em>myAppName.java</em> with <em>javac myAppName.java</em>. In your application, make sure to import the classes that you use with <em>import coppelia.className</em>, then call <em>remoteApi sim = new remoteApi() </em> to load the library. To enable the legacy remote API on the client side (i.e. your application), call <a href="remoteApiFunctionsJava.htm#simxStart"><em>sim.simxStart</em></a>.   See the <em>simpleTest.java</em> program in the <em>programming/legacyRemoteApi/remoteApiBindings/java</em> directory for an example.<a href="remoteApiFunctionsJava.htm">This page</a> lists and describes all supported  Java legacy remote API functions. CoppeliaSim legacy remote API functions can easily be recognized from their &quot;simx&quot;-prefix.
 </p>

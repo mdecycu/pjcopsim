@@ -152,18 +152,18 @@ Lua synopsis
 <tr class=apiTableTr> 
 <td class=apiTableLeftLParam>Lua parameters</td> 
 <td class=apiTableRightLParam>
-<div><strong>rgbVisionSensorHandle</strong>: handle of a passive vision sensor, receiving the computed RGB image.</div>
-<div><strong>visionSensorHandles</strong>: the handles of 4 active vision sensors, looking to the front, left, rear and right.</div>
-<div><strong>frequency</strong>: the rotation frequency.</div>
-<div><strong>options</strong>: bit-coded options:</div>
+<div>rgbVisionSensorHandle: handle of a passive vision sensor, receiving the computed RGB image.</div>
+<div>visionSensorHandles: the handles of 4 active vision sensors, looking to the front, left, rear and right.</div>
+<div>frequency: the rotation frequency.</div>
+<div>options: bit-coded options:</div>
 <div class=tab>bit0 set (i.e. 1): do not display points</div>
 <div class=tab>bit1 set( i.e. 2): display only current points.</div>
 <div class=tab>bit2 set( i.e. 4): returned data is polar (otherwise cartesian).</div>
 <div class=tab>bit3 set( i.e. 8): displayed points are emissive.</div>
-<div><strong>pointSize</strong>: the size of the displayed points, in pixels.</div>
-<div><strong>coloring_closeFarDist</strong>: the close and far distances, used to adjust intensity coloring.</div>
-<div><strong>displayScalingFactor</strong>: a scaling factor applied radially to each point. Can be used to bring points slightly closer to the sensor, to avoid points being hidden behind surfaces due to depth map resolution.</div>
-<div><strong>pointCloudHandle</strong>: the optional handle of a point cloud object (that will be in charge of displaying the detected points.</div>
+<div>pointSize: the size of the displayed points, in pixels.</div>
+<div>coloring_closeFarDist: the close and far distances, used to adjust intensity coloring.</div>
+<div>displayScalingFactor: a scaling factor applied radially to each point. Can be used to bring points slightly closer to the sensor, to avoid points being hidden behind surfaces due to depth map resolution.</div>
+<div>pointCloudHandle: the optional handle of a point cloud object (that will be in charge of displaying the detected points.</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -171,7 +171,7 @@ Lua synopsis
 Lua return values
 </td> 
 <td class=apiTableRightLRet>
-<div><strong>handle</strong>: the created Velodyne HDL64E handle.</div></td> 
+<div>handle: the created Velodyne HDL64E handle.</div></td> 
 </tr> 
 
 <tr class="apiTableTr">
@@ -206,18 +206,18 @@ Lua synopsis
 <tr class=apiTableTr> 
 <td class=apiTableLeftLParam>Lua parameters</td> 
 <td class=apiTableRightLParam>
-<div><strong>rgbVisionSensorHandle</strong>: handle of a passive vision sensor, receiving the computed RGB image.</div>
-<div><strong>visionSensorHandles</strong>: the handles of 4 active vision sensors, looking to the front, left, rear and right.</div>
-<div><strong>frequency</strong>: the rotation frequency.</div>
-<div><strong>options</strong>: bit-coded options:</div>
+<div>rgbVisionSensorHandle: handle of a passive vision sensor, receiving the computed RGB image.</div>
+<div>visionSensorHandles: the handles of 4 active vision sensors, looking to the front, left, rear and right.</div>
+<div>frequency: the rotation frequency.</div>
+<div>options: bit-coded options:</div>
 <div class=tab>bit0 set (i.e. 1): do not display points</div>
 <div class=tab>bit1 set( i.e. 2): display only current points.</div>
 <div class=tab>bit2 set( i.e. 4): returned data is polar (otherwise cartesian).</div>
 <div class=tab>bit3 set( i.e. 8): displayed points are emissive.</div>
-<div><strong>pointSize</strong>: the size of the displayed points, in pixels.</div>
-<div><strong>coloring_closeFarDist</strong>: the close and far distances, used to adjust intensity coloring.</div>
-<div><strong>displayScalingFactor</strong>: a scaling factor applied radially to each point. Can be used to bring points slightly closer to the sensor, to avoid points being hidden behind surfaces due to depth map resolution.</div>
-<div><strong>pointCloudHandle</strong>: the optional handle of a point cloud object (that will be in charge of displaying the detected points.</div>
+<div>pointSize: the size of the displayed points, in pixels.</div>
+<div>coloring_closeFarDist: the close and far distances, used to adjust intensity coloring.</div>
+<div>displayScalingFactor: a scaling factor applied radially to each point. Can be used to bring points slightly closer to the sensor, to avoid points being hidden behind surfaces due to depth map resolution.</div>
+<div>pointCloudHandle: the optional handle of a point cloud object (that will be in charge of displaying the detected points.</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -225,7 +225,7 @@ Lua synopsis
 Lua return values
 </td> 
 <td class=apiTableRightLRet>
-<div><strong>handle</strong>: the created Velodyne VPL16 handle.</div></td> 
+<div>handle: the created Velodyne VPL16 handle.</div></td> 
 </tr> 
 
 <tr class="apiTableTr">
@@ -260,7 +260,7 @@ Lua synopsis
 <tr class=apiTableTr> 
 <td class=apiTableLeftLParam>Lua parameters</td> 
 <td class=apiTableRightLParam>
-<div><strong>velodyneHandle</strong>: a handle previously returned by <a href="#simVision.createVelodyneHDL64E">simVision.createVelodyneHDL64E</a>.</div>
+<div>velodyneHandle: a handle previously returned by <a href="#simVision.createVelodyneHDL64E">simVision.createVelodyneHDL64E</a>.</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -303,7 +303,7 @@ Lua synopsis
 <tr class=apiTableTr> 
 <td class=apiTableLeftLParam>Lua parameters</td> 
 <td class=apiTableRightLParam>
-<div><strong>velodyneHandle</strong>: a handle previously returned by <a href="#simVision.createVelodyneVPL16">simVision.createVelodyneVPL16</a>.</div>
+<div>velodyneHandle: a handle previously returned by <a href="#simVision.createVelodyneVPL16">simVision.createVelodyneVPL16</a>.</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -346,9 +346,9 @@ Lua synopsis
 <tr class=apiTableTr> 
 <td class=apiTableLeftLParam>Lua parameters</td> 
 <td class=apiTableRightLParam>
-<div><strong>visionSensorHandle</strong>: the handle of the vision sensor.</div>
-<div><strong>pixelMap</strong>: a table containing indices to new pixel positions. Should be of size resX*resY. Consecutive, incremental indices (starting at 0) represents the identity transformation. Can be omitted if a map was previously provided and doesn't need change.</div>
-<div><strong>depthScaling</strong>: an optional table containing scaling factors for each depth value.</div>
+<div>visionSensorHandle: the handle of the vision sensor.</div>
+<div>pixelMap: a table containing indices to new pixel positions. Should be of size resX*resY. Consecutive, incremental indices (starting at 0) represents the identity transformation. Can be omitted if a map was previously provided and doesn't need change.</div>
+<div>depthScaling: an optional table containing scaling factors for each depth value.</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -393,9 +393,9 @@ Lua synopsis
 <tr class=apiTableTr> 
 <td class=apiTableLeftLParam>Lua parameters</td> 
 <td class=apiTableRightLParam>
-<div><strong>rgbVisionSensorHandle</strong>: handle of a passive vision sensor, receiving the computed RGB image.</div>
-<div><strong>handlesOfTwoVisionSensors</strong>: the handles of two active vision sensors (for the left and right eye).</div>
-<div><strong>leftAndRightColors</strong>: the colors for the left and right eye rendering.</div>
+<div>rgbVisionSensorHandle: handle of a passive vision sensor, receiving the computed RGB image.</div>
+<div>handlesOfTwoVisionSensors: the handles of two active vision sensors (for the left and right eye).</div>
+<div>leftAndRightColors: the colors for the left and right eye rendering.</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -438,11 +438,11 @@ Lua synopsis
 <tr class=apiTableTr> 
 <td class=apiTableLeftLParam>Lua parameters</td> 
 <td class=apiTableRightLParam>
-<div><strong>rgbVisionSensorHandle</strong>: handle of a passive vision sensor, receiving the computed RGB spherical image.</div>
-<div><strong>handlesOfSixVisionSensors</strong>: the handles of 6 mutually perpendicular, looking into a different direction active vision sensors.</div>
-<div><strong>horizontalAngle</strong>: the desired horizontal view angle, in radians (e.g. 2*math.pi).</div>
-<div><strong>horizontalAngle</strong>: the desired vertical view angle, in radians (e.g. math.pi).</div>
-<div><strong>depthVisionSensorHandle</strong>: handle of a passive vision sensor, receiving the computed depth image representation of the spherical depth map.</div>
+<div>rgbVisionSensorHandle: handle of a passive vision sensor, receiving the computed RGB spherical image.</div>
+<div>handlesOfSixVisionSensors: the handles of 6 mutually perpendicular, looking into a different direction active vision sensors.</div>
+<div>horizontalAngle: the desired horizontal view angle, in radians (e.g. 2*math.pi).</div>
+<div>horizontalAngle: the desired vertical view angle, in radians (e.g. math.pi).</div>
+<div>depthVisionSensorHandle: handle of a passive vision sensor, receiving the computed depth image representation of the spherical depth map.</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -485,8 +485,8 @@ Lua synopsis
 <tr class=apiTableTr> 
 <td class=apiTableLeftLParam>Lua parameters</td> 
 <td class=apiTableRightLParam>
-<div><strong>velodyneHandle</strong>: a handle previously returned by <a href="#simVision.createVelodyneHDL64E">simVision.createVelodyneHDL64E</a>. Can be combined with sim.handleflag_abscoords to retrieve points relative to the absolute reference frame, instead of the reference frame of the sensor. Can also be combined with sim.handleflag_codedstring, in order to retrieve packed data (faster).</div>
-<div><strong>dt</strong>: the time duration since last call to this function. Typically the simulation time step.</div>
+<div>velodyneHandle: a handle previously returned by <a href="#simVision.createVelodyneHDL64E">simVision.createVelodyneHDL64E</a>. Can be combined with sim.handleflag_abscoords to retrieve points relative to the absolute reference frame, instead of the reference frame of the sensor. Can also be combined with sim.handleflag_codedstring, in order to retrieve packed data (faster).</div>
+<div>dt: the time duration since last call to this function. Typically the simulation time step.</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -494,8 +494,8 @@ Lua synopsis
 Lua return values
 </td> 
 <td class=apiTableRightLRet>
-<div><strong>points</strong>: a table containing the detected points, or a coded string.</div>
-<div><strong>colors</strong>: a coded string containing the colors of each point (3 byte values for each point (RGB)). The colors are only returned if the Velodyne model is appropriately configured.</div>
+<div>points: a table containing the detected points, or a coded string.</div>
+<div>colors: a coded string containing the colors of each point (3 byte values for each point (RGB)). The colors are only returned if the Velodyne model is appropriately configured.</div>
 </td> 
 </tr> 
 
@@ -531,8 +531,8 @@ Lua synopsis
 <tr class=apiTableTr> 
 <td class=apiTableLeftLParam>Lua parameters</td> 
 <td class=apiTableRightLParam>
-<div><strong>velodyneHandle</strong>: a handle previously returned by <a href="#simVision.createVelodyneVPL16">simVision.createVelodyneVPL16</a>. Can be combined with sim.handleflag_abscoords to retrieve points relative to the absolute reference frame, instead of the reference frame of the sensor. Can also be combined with sim.handleflag_codedstring, in order to retrieve packed data (faster).</div>
-<div><strong>dt</strong>: the time duration since last call to this function. Typically the simulation time step.</div>
+<div>velodyneHandle: a handle previously returned by <a href="#simVision.createVelodyneVPL16">simVision.createVelodyneVPL16</a>. Can be combined with sim.handleflag_abscoords to retrieve points relative to the absolute reference frame, instead of the reference frame of the sensor. Can also be combined with sim.handleflag_codedstring, in order to retrieve packed data (faster).</div>
+<div>dt: the time duration since last call to this function. Typically the simulation time step.</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -540,8 +540,8 @@ Lua synopsis
 Lua return values
 </td> 
 <td class=apiTableRightLRet>
-<div><strong>points</strong>: a table containing the detected points, or a coded string.</div>
-<div><strong>colors</strong>: a coded string containing the colors of each point (3 byte values for each point (RGB)). The colors are only returned if the Velodyne model is appropriately configured.</div>
+<div>points: a table containing the detected points, or a coded string.</div>
+<div>colors: a coded string containing the colors of each point (3 byte values for each point (RGB)). The colors are only returned if the Velodyne model is appropriately configured.</div>
 </td> 
 </tr> 
 
@@ -574,7 +574,7 @@ Lua synopsis
 <tr class=apiTableTr> 
 <td class=apiTableLeftLParam>Lua parameters</td> 
 <td class=apiTableRightLParam>
-<div><strong>handle</strong>: handle of the vision sensor, or sim.handle_self if the object attached to this script is the vision sensor.</div>
+<div>handle: handle of the vision sensor, or sim.handle_self if the object attached to this script is the vision sensor.</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -617,7 +617,7 @@ Lua synopsis
 <tr class=apiTableTr> 
 <td class=apiTableLeftLParam>Lua parameters</td> 
 <td class=apiTableRightLParam>
-<div><strong>handle</strong>: handle of the vision sensor, or sim.handle_self if the object attached to this script is the vision sensor.</div>
+<div>handle: handle of the vision sensor, or sim.handle_self if the object attached to this script is the vision sensor.</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -660,19 +660,19 @@ Lua synopsis
 <tr class=apiTableTr> 
 <td class=apiTableLeftLParam>Lua parameters</td> 
 <td class=apiTableRightLParam>
-<div><strong>handle</strong>: handle of the vision sensor, or sim.handle_self if the object attached to this script is the vision sensor.</div>
-<div><strong>threshold</strong>: the threshold for binary 0 or binary 1.</div>
-<div><strong>oneProportion</strong>: the nominal binary 1 pixels relative amount (0-1), for triggering.</div>
-<div><strong>oneTol</strong>: the allowed tolerance for <em>oneProportion</em>.</div>
-<div><strong>xCenter</strong>: the nominal x center of binary 1 pixels (0-1), for triggering.</div>
-<div><strong>xCenterTol</strong>: the allowed tolerance for <em>xCenter</em>.</div>
-<div><strong>yCenter</strong>: the nominal y center of binary 1 pixels (0-1), for triggering.</div>
-<div><strong>yCenterTol</strong>: the allowed tolerance for <em>yCenter</em>.</div>
-<div><strong>orient</strong>: the nominal orientation, in radians, of the bounding box around binary 1 pixels (0-1), for triggering.</div>
-<div><strong>orientTol</strong>: the allowed tolerance for <em>orient</em>.</div>
-<div><strong>roundness</strong>: the nominal roundness value of the bounding box around binary 1 pixels (0-1), for triggering.</div>
-<div><strong>enableTrigger</strong>: if true and the triggering conditions are met, then return value <em>trigger</em> will be true.</div>
-<div><strong>overlayColor</strong>: an overlay color used to visualize triggering conditions. Set to nil for no overlay.</div>
+<div>handle: handle of the vision sensor, or sim.handle_self if the object attached to this script is the vision sensor.</div>
+<div>threshold: the threshold for binary 0 or binary 1.</div>
+<div>oneProportion: the nominal binary 1 pixels relative amount (0-1), for triggering.</div>
+<div>oneTol: the allowed tolerance for <em>oneProportion</em>.</div>
+<div>xCenter: the nominal x center of binary 1 pixels (0-1), for triggering.</div>
+<div>xCenterTol: the allowed tolerance for <em>xCenter</em>.</div>
+<div>yCenter: the nominal y center of binary 1 pixels (0-1), for triggering.</div>
+<div>yCenterTol: the allowed tolerance for <em>yCenter</em>.</div>
+<div>orient: the nominal orientation, in radians, of the bounding box around binary 1 pixels (0-1), for triggering.</div>
+<div>orientTol: the allowed tolerance for <em>orient</em>.</div>
+<div>roundness: the nominal roundness value of the bounding box around binary 1 pixels (0-1), for triggering.</div>
+<div>enableTrigger: if true and the triggering conditions are met, then return value <em>trigger</em> will be true.</div>
+<div>overlayColor: an overlay color used to visualize triggering conditions. Set to nil for no overlay.</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -680,8 +680,8 @@ Lua synopsis
 Lua return values
 </td> 
 <td class=apiTableRightLRet>
-<div><strong>trigger</strong>: true if the filter has triggered.</div>
-<div><strong>packedPacket</strong>: a packed packet (use <a href="regularApi/simUnpackFloatTable.htm">sim.unpackFloatTable</a> to unpack) containing:</div>
+<div>trigger: true if the filter has triggered.</div>
+<div>packedPacket: a packed packet (use <a href="regularApi/simUnpackFloatTable.htm">sim.unpackFloatTable</a> to unpack) containing:</div>
 <div>a) the binary image <em>proportion</em> value</div>
 <div>b) the binary image <em>posX</em> value</div>
 <div>c) the binary image <em>posY</em> value</div>
@@ -722,11 +722,11 @@ Lua synopsis
 <tr class=apiTableTr> 
 <td class=apiTableLeftLParam>Lua parameters</td> 
 <td class=apiTableRightLParam>
-<div><strong>handle</strong>: handle of the vision sensor, or sim.handle_self if the object attached to this script is the vision sensor.</div>
-<div><strong>threshold</strong>: the intensity threshold for a pixel to be considered <em>on</em>. </div>
-<div><strong>minBlobSize</strong>: the minimum size of a blob (in relation to the total image surface).</div>
-<div><strong>diffColor</strong>: if true then each blob will be represented in a different color.</div>
-<div><strong>overlayColor</strong>: an overlay color used to visualize the blobs. Set to nil for no overlay.</div>
+<div>handle: handle of the vision sensor, or sim.handle_self if the object attached to this script is the vision sensor.</div>
+<div>threshold: the intensity threshold for a pixel to be considered <em>on</em>. </div>
+<div>minBlobSize: the minimum size of a blob (in relation to the total image surface).</div>
+<div>diffColor: if true then each blob will be represented in a different color.</div>
+<div>overlayColor: an overlay color used to visualize the blobs. Set to nil for no overlay.</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -734,8 +734,8 @@ Lua synopsis
 Lua return values
 </td> 
 <td class=apiTableRightLRet>
-<div><strong>trigger</strong>: always false. Not used.</div>
-<div><strong>packedPacket</strong>: a packed packet (use <a href="regularApi/simUnpackFloatTable.htm">sim.unpackFloatTable</a> to unpack) containing:</div>
+<div>trigger: always false. Not used.</div>
+<div>packedPacket: a packed packet (use <a href="regularApi/simUnpackFloatTable.htm">sim.unpackFloatTable</a> to unpack) containing:</div>
 <div>a) the number of detected blobs</div>
 <div>b) the number of values returned for each blob</div>
 <div>then for each blob:</div>
@@ -780,7 +780,7 @@ Lua synopsis
 <tr class=apiTableTr> 
 <td class=apiTableLeftLParam>Lua parameters</td> 
 <td class=apiTableRightLParam>
-<div><strong>handle</strong>: handle of the vision sensor, or sim.handle_self if the object attached to this script is the vision sensor.</div>
+<div>handle: handle of the vision sensor, or sim.handle_self if the object attached to this script is the vision sensor.</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -823,7 +823,7 @@ Lua synopsis
 <tr class=apiTableTr> 
 <td class=apiTableLeftLParam>Lua parameters</td> 
 <td class=apiTableRightLParam>
-<div><strong>handle</strong>: handle of the vision sensor, or sim.handle_self if the object attached to this script is the vision sensor.</div>
+<div>handle: handle of the vision sensor, or sim.handle_self if the object attached to this script is the vision sensor.</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -866,8 +866,8 @@ Lua synopsis
 <tr class=apiTableTr> 
 <td class=apiTableLeftLParam>Lua parameters</td> 
 <td class=apiTableRightLParam>
-<div><strong>handle</strong>: handle of the vision sensor, or sim.handle_self if the object attached to this script is the vision sensor.</div>
-<div><strong>threshold</strong>: the minimum intensity variation for a pixel to have changed.</div>
+<div>handle: handle of the vision sensor, or sim.handle_self if the object attached to this script is the vision sensor.</div>
+<div>threshold: the minimum intensity variation for a pixel to have changed.</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -875,8 +875,8 @@ Lua synopsis
 Lua return values
 </td> 
 <td class=apiTableRightLRet>
-<div><strong>trigger</strong>: always false. Not used.</div>
-<div><strong>packedPacket</strong>: a packed packet (use <a href="regularApi/simUnpackFloatTable.htm">sim.unpackFloatTable</a> to unpack) containing for each changed pixel:</div>
+<div>trigger: always false. Not used.</div>
+<div>packedPacket: a packed packet (use <a href="regularApi/simUnpackFloatTable.htm">sim.unpackFloatTable</a> to unpack) containing for each changed pixel:</div>
 <div>a.1) 1 if the pixel became brighter, -1 otherwise</div>
 <div>a.2) the x coordinate of the pixel</div>
 <div>a.3) the y coordinate of the pixel</div>
@@ -915,9 +915,9 @@ Lua synopsis
 <tr class=apiTableTr> 
 <td class=apiTableLeftLParam>Lua parameters</td> 
 <td class=apiTableRightLParam>
-<div><strong>handle</strong>: handle of the vision sensor, or sim.handle_self if the object attached to this script is the vision sensor.</div>
-<div><strong>radius</strong>: the radius of the disc, expressed proportionally to the image resolution. Pixels outside of the disc's bounds are removed.</div>
-<div><strong>toBuffer1</strong>: if true, then the removed pixels are copied to buffer <em>buffer1</em>.</div>
+<div>handle: handle of the vision sensor, or sim.handle_self if the object attached to this script is the vision sensor.</div>
+<div>radius: the radius of the disc, expressed proportionally to the image resolution. Pixels outside of the disc's bounds are removed.</div>
+<div>toBuffer1: if true, then the removed pixels are copied to buffer <em>buffer1</em>.</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -960,8 +960,8 @@ Lua synopsis
 <tr class=apiTableTr> 
 <td class=apiTableLeftLParam>Lua parameters</td> 
 <td class=apiTableRightLParam>
-<div><strong>handle</strong>: handle of the vision sensor, or sim.handle_self if the object attached to this script is the vision sensor.</div>
-<div><strong>colorDistance</strong>: the color distance to be used as threshold.</div>
+<div>handle: handle of the vision sensor, or sim.handle_self if the object attached to this script is the vision sensor.</div>
+<div>colorDistance: the color distance to be used as threshold.</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -1004,10 +1004,10 @@ Lua synopsis
 <tr class=apiTableTr> 
 <td class=apiTableLeftLParam>Lua parameters</td> 
 <td class=apiTableRightLParam>
-<div><strong>handle</strong>: handle of the vision sensor. Can be combined with sim.handleflag_abscoords in order to retrieve points relative to the absolute reference frame, instead of the vision sensor reference frame.</div>
-<div><strong>pointCount</strong>: the desired point count along X and Y.</div>
-<div><strong>angularSpace</strong>: whether the point sampling happens in the cartesian or angular space (within a given direction).</div>
-<div><strong>returnColorData</strong>: whether to also return color data for each point. If true, then the vision sensor's image data should be located in buffer <em>buffer1</em>.</div>
+<div>handle: handle of the vision sensor. Can be combined with sim.handleflag_abscoords in order to retrieve points relative to the absolute reference frame, instead of the vision sensor reference frame.</div>
+<div>pointCount: the desired point count along X and Y.</div>
+<div>angularSpace: whether the point sampling happens in the cartesian or angular space (within a given direction).</div>
+<div>returnColorData: whether to also return color data for each point. If true, then the vision sensor's image data should be located in buffer <em>buffer1</em>.</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -1015,8 +1015,8 @@ Lua synopsis
 Lua return values
 </td> 
 <td class=apiTableRightLRet>
-<div><strong>trigger</strong>: always false. Not used.</div>
-<div><strong>packedPacket</strong>: a packed packet (use <a href="regularApi/simUnpackFloatTable.htm">sim.unpackFloatTable</a> to unpack) containing:</div>
+<div>trigger: always false. Not used.</div>
+<div>packedPacket: a packed packet (use <a href="regularApi/simUnpackFloatTable.htm">sim.unpackFloatTable</a> to unpack) containing:</div>
 <div>a) the number of points along X</div>
 <div>b) the number of points along Y</div>
 <div>then for each points:</div>
@@ -1024,7 +1024,7 @@ Lua return values
 <div>c.2) the y coordinate of the point</div>
 <div>c.3) the z coordinate of the point</div>
 <div>c.4) the distance to the point</div>
-<div><strong>colorData</strong>: optional color data (use <a href="regularApi/simUnpackUInt8Table.htm">sim.unpackUInt8Table</a> to unpack) containing RGB triplets for each point.</div>
+<div>colorData: optional color data (use <a href="regularApi/simUnpackUInt8Table.htm">sim.unpackUInt8Table</a> to unpack) containing RGB triplets for each point.</div>
 </td> 
 </tr> 
 
@@ -1060,8 +1060,8 @@ Lua synopsis
 <tr class=apiTableTr> 
 <td class=apiTableLeftLParam>Lua parameters</td> 
 <td class=apiTableRightLParam>
-<div><strong>handle</strong>: handle of the vision sensor, or sim.handle_self if the object attached to this script is the vision sensor.</div>
-<div><strong>threshold</strong>: the threshold value.</div>
+<div>handle: handle of the vision sensor, or sim.handle_self if the object attached to this script is the vision sensor.</div>
+<div>threshold: the threshold value.</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -1104,7 +1104,7 @@ Lua synopsis
 <tr class=apiTableTr> 
 <td class=apiTableLeftLParam>Lua parameters</td> 
 <td class=apiTableRightLParam>
-<div><strong>handle</strong>: handle of the vision sensor, or sim.handle_self if the object attached to this script is the vision sensor.</div>
+<div>handle: handle of the vision sensor, or sim.handle_self if the object attached to this script is the vision sensor.</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -1147,10 +1147,10 @@ Lua synopsis
 <tr class=apiTableTr> 
 <td class=apiTableLeftLParam>Lua parameters</td> 
 <td class=apiTableRightLParam>
-<div><strong>handle</strong>: handle of the vision sensor, or sim.handle_self if the object attached to this script is the vision sensor.</div>
-<div><strong>start</strong>: the value representing the minimum intensity.</div>
-<div><strong>end</strong>: the value representing the maximum intensity.</div>
-<div><strong>greyscale</strong>: if true, the output is a grey scale image, otherwise it is a color coded intensity image.</div>
+<div>handle: handle of the vision sensor, or sim.handle_self if the object attached to this script is the vision sensor.</div>
+<div>start: the value representing the minimum intensity.</div>
+<div>end: the value representing the maximum intensity.</div>
+<div>greyscale: if true, the output is a grey scale image, otherwise it is a color coded intensity image.</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -1193,10 +1193,10 @@ Lua synopsis
 <tr class=apiTableTr> 
 <td class=apiTableLeftLParam>Lua parameters</td> 
 <td class=apiTableRightLParam>
-<div><strong>handle</strong>: handle of the vision sensor, or sim.handle_self if the object attached to this script is the vision sensor.</div>
-<div><strong>passes</strong>: the number of desired filter passes.</div>
-<div><strong>multiplier</strong>: a matrix multiplier.</div>
-<div><strong>matrix</strong>: the 3X3 matrix.</div>
+<div>handle: handle of the vision sensor, or sim.handle_self if the object attached to this script is the vision sensor.</div>
+<div>passes: the number of desired filter passes.</div>
+<div>multiplier: a matrix multiplier.</div>
+<div>matrix: the 3X3 matrix.</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -1239,10 +1239,10 @@ Lua synopsis
 <tr class=apiTableTr> 
 <td class=apiTableLeftLParam>Lua parameters</td> 
 <td class=apiTableRightLParam>
-<div><strong>handle</strong>: handle of the vision sensor, or sim.handle_self if the object attached to this script is the vision sensor.</div>
-<div><strong>passes</strong>: the int of desired filter passes.</div>
-<div><strong>multiplier</strong>: a matrix multiplier.</div>
-<div><strong>matrix</strong>: the 5X5 matrix.</div>
+<div>handle: handle of the vision sensor, or sim.handle_self if the object attached to this script is the vision sensor.</div>
+<div>passes: the int of desired filter passes.</div>
+<div>multiplier: a matrix multiplier.</div>
+<div>matrix: the 5X5 matrix.</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -1285,7 +1285,7 @@ Lua synopsis
 <tr class=apiTableTr> 
 <td class=apiTableLeftLParam>Lua parameters</td> 
 <td class=apiTableRightLParam>
-<div><strong>handle</strong>: handle of the vision sensor, or sim.handle_self if the object attached to this script is the vision sensor.</div>
+<div>handle: handle of the vision sensor, or sim.handle_self if the object attached to this script is the vision sensor.</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -1328,7 +1328,7 @@ Lua synopsis
 <tr class=apiTableTr> 
 <td class=apiTableLeftLParam>Lua parameters</td> 
 <td class=apiTableRightLParam>
-<div><strong>handle</strong>: handle of the vision sensor, or sim.handle_self if the object attached to this script is the vision sensor.</div>
+<div>handle: handle of the vision sensor, or sim.handle_self if the object attached to this script is the vision sensor.</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -1371,9 +1371,9 @@ Lua synopsis
 <tr class=apiTableTr> 
 <td class=apiTableLeftLParam>Lua parameters</td> 
 <td class=apiTableRightLParam>
-<div><strong>handle</strong>: handle of the vision sensor, or sim.handle_self if the object attached to this script is the vision sensor.</div>
-<div><strong>rectangle</strong>: the x/y size of the rectangle, expressed proportionally to the image resolution. Pixels outside of the rectangle's bounds are removed.</div>
-<div><strong>toBuffer1</strong>: if true, then the removed pixels are copied to buffer <em>buffer1</em>.</div>
+<div>handle: handle of the vision sensor, or sim.handle_self if the object attached to this script is the vision sensor.</div>
+<div>rectangle: the x/y size of the rectangle, expressed proportionally to the image resolution. Pixels outside of the rectangle's bounds are removed.</div>
+<div>toBuffer1: if true, then the removed pixels are copied to buffer <em>buffer1</em>.</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -1416,8 +1416,8 @@ Lua synopsis
 <tr class=apiTableTr> 
 <td class=apiTableLeftLParam>Lua parameters</td> 
 <td class=apiTableRightLParam>
-<div><strong>handle</strong>: handle of the vision sensor, or sim.handle_self if the object attached to this script is the vision sensor.</div>
-<div><strong>scaling</strong>: the x/y scaling.</div>
+<div>handle: handle of the vision sensor, or sim.handle_self if the object attached to this script is the vision sensor.</div>
+<div>scaling: the x/y scaling.</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -1460,8 +1460,8 @@ Lua synopsis
 <tr class=apiTableTr> 
 <td class=apiTableLeftLParam>Lua parameters</td> 
 <td class=apiTableRightLParam>
-<div><strong>handle</strong>: handle of the vision sensor, or sim.handle_self if the object attached to this script is the vision sensor.</div>
-<div><strong>angle</strong>: the rotation angle in radians.</div>
+<div>handle: handle of the vision sensor, or sim.handle_self if the object attached to this script is the vision sensor.</div>
+<div>angle: the rotation angle in radians.</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -1504,11 +1504,11 @@ Lua synopsis
 <tr class=apiTableTr> 
 <td class=apiTableLeftLParam>Lua parameters</td> 
 <td class=apiTableRightLParam>
-<div><strong>handle</strong>: handle of the vision sensor, or sim.handle_self if the object attached to this script is the vision sensor.</div>
-<div><strong>colorPreOffset</strong>: the pre-offset, in RGB or HSL space.</div>
-<div><strong>colorScaling</strong>: the scaling, in RGB or HSL space.</div>
-<div><strong>colorPostOffset</strong>: the post-offset, in RGB or HSL space.</div>
-<div><strong>rgbSpace</strong>: if true, values are in the RGB space, otherwise they are in the HSL space.</div>
+<div>handle: handle of the vision sensor, or sim.handle_self if the object attached to this script is the vision sensor.</div>
+<div>colorPreOffset: the pre-offset, in RGB or HSL space.</div>
+<div>colorScaling: the scaling, in RGB or HSL space.</div>
+<div>colorPostOffset: the post-offset, in RGB or HSL space.</div>
+<div>rgbSpace: if true, values are in the RGB space, otherwise they are in the HSL space.</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -1551,12 +1551,12 @@ Lua synopsis
 <tr class=apiTableTr> 
 <td class=apiTableLeftLParam>Lua parameters</td> 
 <td class=apiTableRightLParam>
-<div><strong>handle</strong>: handle of the vision sensor, or sim.handle_self if the object attached to this script is the vision sensor.</div>
-<div><strong>nominalColor</strong>: the nominal color to select, in RGB or HSL space.</div>
-<div><strong>colorTolerance</strong>: the tolerance around the nominal color, in RGB or HSL space.</div>
-<div><strong>rgbSpace</strong>: if true, values are in the RGB space, otherwise they are in the HSL space.</div>
-<div><strong>keepColor</strong>: if true, the specified color is kept, otherwise it is removed.</div>
-<div><strong>toBuffer1</strong>: if true, the removed color is copied to buffer <em>buffer1</em>.</div>
+<div>handle: handle of the vision sensor, or sim.handle_self if the object attached to this script is the vision sensor.</div>
+<div>nominalColor: the nominal color to select, in RGB or HSL space.</div>
+<div>colorTolerance: the tolerance around the nominal color, in RGB or HSL space.</div>
+<div>rgbSpace: if true, values are in the RGB space, otherwise they are in the HSL space.</div>
+<div>keepColor: if true, the specified color is kept, otherwise it is removed.</div>
+<div>toBuffer1: if true, the removed color is copied to buffer <em>buffer1</em>.</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -1599,7 +1599,7 @@ Lua synopsis
 <tr class=apiTableTr> 
 <td class=apiTableLeftLParam>Lua parameters</td> 
 <td class=apiTableRightLParam>
-<div><strong>handle</strong>: handle of the vision sensor, or sim.handle_self if the object attached to this script is the vision sensor.</div>
+<div>handle: handle of the vision sensor, or sim.handle_self if the object attached to this script is the vision sensor.</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -1642,7 +1642,7 @@ Lua synopsis
 <tr class=apiTableTr> 
 <td class=apiTableLeftLParam>Lua parameters</td> 
 <td class=apiTableRightLParam>
-<div><strong>handle</strong>: handle of the vision sensor, or sim.handle_self if the object attached to this script is the vision sensor.</div>
+<div>handle: handle of the vision sensor, or sim.handle_self if the object attached to this script is the vision sensor.</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -1685,7 +1685,7 @@ Lua synopsis
 <tr class=apiTableTr> 
 <td class=apiTableLeftLParam>Lua parameters</td> 
 <td class=apiTableRightLParam>
-<div><strong>handle</strong>: handle of the vision sensor, or sim.handle_self if the object attached to this script is the vision sensor.</div>
+<div>handle: handle of the vision sensor, or sim.handle_self if the object attached to this script is the vision sensor.</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -1728,9 +1728,9 @@ Lua synopsis
 <tr class=apiTableTr> 
 <td class=apiTableLeftLParam>Lua parameters</td> 
 <td class=apiTableRightLParam>
-<div><strong>handle</strong>: handle of the vision sensor, or sim.handle_self if the object attached to this script is the vision sensor.</div>
-<div><strong>shift</strong>: the x/y shift amount, proportional to the image resolution (0=no shift, 1=shift by x/y resolution pixels).</div>
-<div><strong>wrap</strong>: whether parts shifted outside the image frame wrap around.</div>
+<div>handle: handle of the vision sensor, or sim.handle_self if the object attached to this script is the vision sensor.</div>
+<div>shift: the x/y shift amount, proportional to the image resolution (0=no shift, 1=shift by x/y resolution pixels).</div>
+<div>wrap: whether parts shifted outside the image frame wrap around.</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -1773,7 +1773,7 @@ Lua synopsis
 <tr class=apiTableTr> 
 <td class=apiTableLeftLParam>Lua parameters</td> 
 <td class=apiTableRightLParam>
-<div><strong>handle</strong>: handle of the vision sensor, or sim.handle_self if the object attached to this script is the vision sensor.</div>
+<div>handle: handle of the vision sensor, or sim.handle_self if the object attached to this script is the vision sensor.</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -1816,7 +1816,7 @@ Lua synopsis
 <tr class=apiTableTr> 
 <td class=apiTableLeftLParam>Lua parameters</td> 
 <td class=apiTableRightLParam>
-<div><strong>handle</strong>: handle of the vision sensor, or sim.handle_self if the object attached to this script is the vision sensor.</div>
+<div>handle: handle of the vision sensor, or sim.handle_self if the object attached to this script is the vision sensor.</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -1859,7 +1859,7 @@ Lua synopsis
 <tr class=apiTableTr> 
 <td class=apiTableLeftLParam>Lua parameters</td> 
 <td class=apiTableRightLParam>
-<div><strong>handle</strong>: handle of the vision sensor, or sim.handle_self if the object attached to this script is the vision sensor.</div>
+<div>handle: handle of the vision sensor, or sim.handle_self if the object attached to this script is the vision sensor.</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -1902,7 +1902,7 @@ Lua synopsis
 <tr class=apiTableTr> 
 <td class=apiTableLeftLParam>Lua parameters</td> 
 <td class=apiTableRightLParam>
-<div><strong>handle</strong>: handle of the vision sensor, or sim.handle_self if the object attached to this script is the vision sensor.</div>
+<div>handle: handle of the vision sensor, or sim.handle_self if the object attached to this script is the vision sensor.</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -1945,8 +1945,8 @@ Lua synopsis
 <tr class=apiTableTr> 
 <td class=apiTableLeftLParam>Lua parameters</td> 
 <td class=apiTableRightLParam>
-<div><strong>handle</strong>: handle of the vision sensor, or sim.handle_self if the object attached to this script is the vision sensor.</div>
-<div><strong>color</strong>: a table containing the RGB-triplet for the color (in the range of 0-1).</div>
+<div>handle: handle of the vision sensor, or sim.handle_self if the object attached to this script is the vision sensor.</div>
+<div>color: a table containing the RGB-triplet for the color (in the range of 0-1).</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -1989,10 +1989,10 @@ Lua synopsis
 <tr class=apiTableTr> 
 <td class=apiTableLeftLParam>Lua parameters</td> 
 <td class=apiTableRightLParam>
-<div><strong>handle</strong>: handle of the vision sensor. Can be combined with sim.handleflag_abscoords in order to retrieve points relative to the absolute reference frame, instead of the vision sensor reference frame.</div>
-<div><strong>pointCount</strong>: the desired point count along X and Y.</div>
-<div><strong>verticalScanAngle</strong>: the vertical scan angle.</div>
-<div><strong>returnColorData</strong>: whether to also return color data for each point. If true, then the vision sensor's image data should be located in buffer <em>buffer1</em>.</div>
+<div>handle: handle of the vision sensor. Can be combined with sim.handleflag_abscoords in order to retrieve points relative to the absolute reference frame, instead of the vision sensor reference frame.</div>
+<div>pointCount: the desired point count along X and Y.</div>
+<div>verticalScanAngle: the vertical scan angle.</div>
+<div>returnColorData: whether to also return color data for each point. If true, then the vision sensor's image data should be located in buffer <em>buffer1</em>.</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -2000,8 +2000,8 @@ Lua synopsis
 Lua return values
 </td> 
 <td class=apiTableRightLRet>
-<div><strong>trigger</strong>: always false. Not used.</div>
-<div><strong>packedPacket</strong>: a packed packet (use <a href="regularApi/simUnpackFloatTable.htm">sim.unpackFloatTable</a> to unpack) containing:</div>
+<div>trigger: always false. Not used.</div>
+<div>packedPacket: a packed packet (use <a href="regularApi/simUnpackFloatTable.htm">sim.unpackFloatTable</a> to unpack) containing:</div>
 <div>a) the number of points along X</div>
 <div>b) the number of points along Y</div>
 <div>then for each points:</div>
@@ -2009,7 +2009,7 @@ Lua return values
 <div>c.2) the y coordinate of the point</div>
 <div>c.3) the z coordinate of the point</div>
 <div>c.4) the distance from the sensor to the point</div>
-<div><strong>colorData</strong>: optional color data (use <a href="regularApi/simUnpackUInt8Table.htm">sim.unpackUInt8Table</a> to unpack) containing RGB triplets for each point.</div>
+<div>colorData: optional color data (use <a href="regularApi/simUnpackUInt8Table.htm">sim.unpackUInt8Table</a> to unpack) containing RGB triplets for each point.</div>
 </td> 
 </tr> 
 
@@ -2044,7 +2044,7 @@ Lua synopsis
 <tr class=apiTableTr> 
 <td class=apiTableLeftLParam>Lua parameters</td> 
 <td class=apiTableRightLParam>
-<div><strong>handle</strong>: handle of the vision sensor, or sim.handle_self if the object attached to this script is the vision sensor.</div>
+<div>handle: handle of the vision sensor, or sim.handle_self if the object attached to this script is the vision sensor.</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -2087,7 +2087,7 @@ Lua synopsis
 <tr class=apiTableTr> 
 <td class=apiTableLeftLParam>Lua parameters</td> 
 <td class=apiTableRightLParam>
-<div><strong>handle</strong>: handle of the vision sensor, or sim.handle_self if the object attached to this script is the vision sensor.</div>
+<div>handle: handle of the vision sensor, or sim.handle_self if the object attached to this script is the vision sensor.</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -2130,7 +2130,7 @@ Lua synopsis
 <tr class=apiTableTr> 
 <td class=apiTableLeftLParam>Lua parameters</td> 
 <td class=apiTableRightLParam>
-<div><strong>handle</strong>: handle of the vision sensor, or sim.handle_self if the object attached to this script is the vision sensor.</div>
+<div>handle: handle of the vision sensor, or sim.handle_self if the object attached to this script is the vision sensor.</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -2173,7 +2173,7 @@ Lua synopsis
 <tr class=apiTableTr> 
 <td class=apiTableLeftLParam>Lua parameters</td> 
 <td class=apiTableRightLParam>
-<div><strong>handle</strong>: handle of the vision sensor, or sim.handle_self if the object attached to this script is the vision sensor.</div>
+<div>handle: handle of the vision sensor, or sim.handle_self if the object attached to this script is the vision sensor.</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -2215,7 +2215,7 @@ Lua synopsis
 <tr class=apiTableTr> 
 <td class=apiTableLeftLParam>Lua parameters</td> 
 <td class=apiTableRightLParam>
-<div><strong>handle</strong>: handle of the vision sensor, or sim.handle_self if the object attached to this script is the vision sensor.</div>
+<div>handle: handle of the vision sensor, or sim.handle_self if the object attached to this script is the vision sensor.</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 

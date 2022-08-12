@@ -148,7 +148,7 @@ img.add_border {
 <p><a href="../index.html" target="_top"><img src="./../images/homeImg.png"/></a></p>
 <h4>Regular API reference</h4>
 <p class="warningBox">The list of API functions below allows you to access many CoppeliaSim parameters<a href="settings.html"></a>. There are however too many parameters in CoppeliaSim to have a specific API function for each one of them. <em>Auxiliary</em> parameters can be accessed via a set of given functions that use <a href="objectParameterIDs.html">object parameter IDs</a>. Refer also to  the <a href="apiConstants.html#booleanParameters">global parameter IDs</a>.<br/>
-All units going to, or coming from the API are in meters, kilograms, seconds and <strong>radians</strong> or a combination of those (unless otherwise explicitly indicated).
+All units going to, or coming from the API are in meters, kilograms, seconds and radians or a combination of those (unless otherwise explicitly indicated).
 </p>
 <h4><a name="fileOperations"></a>File operations</h4>
 <code class="hljs language-lua coppelia-coppeliasim-script api-list">
@@ -162,7 +162,7 @@ All units going to, or coming from the API are in meters, kilograms, seconds and
 <a href="regularApi/simExportMesh.html">sim.exportMesh</a>
 <a href="regularApi/simLaunchExecutable.html">sim.launchExecutable</a>
 <a href="regularApi/simCreateTexture.html">sim.createTexture</a>
-</code>
+</pre>
 <br/>
 <code class="hljs language-c++ coppelia-coppeliasim-plugin api-list">
 <a href="regularApi/simCloseScene.html">simCloseScene</a>
@@ -175,7 +175,7 @@ All units going to, or coming from the API are in meters, kilograms, seconds and
 <a href="regularApi/simImportMesh.html">simImportMesh</a>
 <a href="regularApi/simExportMesh.html">simExportMesh</a>
 <a href="regularApi/simCreateTexture.html">simCreateTexture</a>
-</code>
+</pre>
 <br/>
 <h4><a name="HandleRetrieval"></a>General object handle retrieval</h4>
 <code class="hljs language-lua coppelia-coppeliasim-script api-list">
@@ -187,7 +187,7 @@ All units going to, or coming from the API are in meters, kilograms, seconds and
 <a href="regularApi/simGetCollectionObjects.html">sim.getCollectionObjects</a>
 <a href="regularApi/simSetReferencedHandles.html">sim.setReferencedHandles</a>
 <a href="regularApi/simGetReferencedHandles.html">sim.getReferencedHandles</a>
-</code>
+</pre>
 <br/>
 <code class="hljs language-c++ coppelia-coppeliasim-plugin api-list">
 <a href="regularApi/simGetObject.html">simGetObject</a>
@@ -198,7 +198,7 @@ All units going to, or coming from the API are in meters, kilograms, seconds and
 <a href="regularApi/simGetCollectionObjects.html">simGetCollectionObjects</a>
 <a href="regularApi/simSetReferencedHandles.html">simSetReferencedHandles</a>
 <a href="regularApi/simGetReferencedHandles.html">simGetReferencedHandles</a>
-</code>
+</pre>
 <br/>
 <h4><a name="mainFunctionalityHandling"></a>General functionality handling</h4>
 <code class="hljs language-lua coppelia-coppeliasim-script api-list">
@@ -206,31 +206,31 @@ All units going to, or coming from the API are in meters, kilograms, seconds and
 <a href="regularApi/simHandleCustomizationScripts.html">sim.handleCustomizationScripts</a>
 <a href="regularApi/simHandleAddOnScripts.html">sim.handleAddOnScripts</a>
 <a href="regularApi/simHandleSandboxScript.html">sim.handleSandboxScript</a>
-</code>
+</pre>
 <br/>
 <code class="hljs language-c++ coppelia-coppeliasim-plugin api-list">
 <a href="regularApi/simHandleMainScript.html">simHandleMainScript</a>
-</code>
+</pre>
 <br/>
 <h4><a name="collisionDetection"></a>Collision detection</h4>
 <code class="hljs language-lua coppelia-coppeliasim-script api-list">
 <a href="regularApi/simCheckCollision.html">sim.checkCollision</a>
 <a href="regularApi/simCheckCollisionEx.html">sim.checkCollisionEx</a>
-</code>
+</pre>
 <br/>
 <code class="hljs language-c++ coppelia-coppeliasim-plugin api-list">
 <a href="regularApi/simCheckCollision.html">simCheckCollision</a>
 <a href="regularApi/simCheckCollisionEx.html">simCheckCollisionEx</a>
-</code>
+</pre>
 <br/>
 <h4><a name="distanceCalculation"></a>Minimum distance calculation</h4>
 <code class="hljs language-lua coppelia-coppeliasim-script api-list">
 <a href="regularApi/simCheckDistance.html">sim.checkDistance</a>
-</code>
+</pre>
 <br/>
 <code class="hljs language-c++ coppelia-coppeliasim-plugin api-list">
 <a href="regularApi/simCheckDistance.html">simCheckDistance</a>
-</code>
+</pre>
 <br/>
 <h4><a name="dynamicsFunctionality"></a>Dynamics</h4>
 <code class="hljs language-lua coppelia-coppeliasim-script api-list">
@@ -265,7 +265,7 @@ All units going to, or coming from the API are in meters, kilograms, seconds and
 
  See also:
  <a href="#engineParameters">physics engine parameter functions</a>.
-</code>
+</pre>
 <br/>
 <code class="hljs language-c++ coppelia-coppeliasim-plugin api-list">
 <a href="regularApi/simHandleDynamics.html">simHandleDynamics</a>
@@ -296,7 +296,7 @@ All units going to, or coming from the API are in meters, kilograms, seconds and
 <a href="regularApi/simGetDecimatedMesh.html">simGetDecimatedMesh</a>
 <a href="regularApi/simIsDynamicallyEnabled.html">simIsDynamicallyEnabled</a>
 <a href="regularApi/simSetShapeMaterial.html">simSetShapeMaterial</a>
-</code>
+</pre>
 <br/>
 <h4><a name="proximitySensor"></a>Proximity sensors</h4>
 <code class="hljs language-lua coppelia-coppeliasim-script api-list">
@@ -310,7 +310,7 @@ All units going to, or coming from the API are in meters, kilograms, seconds and
 
  See also:
  <a href="#objectParameters">object parameter functions</a> and <a href="objectParameterIDs.html#proximitySensors">parameters related to proximity sensors</a>.
-</code>
+</pre>
 <br/>
 <code class="hljs language-c++ coppelia-coppeliasim-plugin api-list">
 <a href="regularApi/simHandleProximitySensor.html">simHandleProximitySensor</a>
@@ -320,7 +320,7 @@ All units going to, or coming from the API are in meters, kilograms, seconds and
 <a href="regularApi/simCheckProximitySensorEx.html">simCheckProximitySensorEx</a>
 <a href="regularApi/simCheckProximitySensorEx2.html">simCheckProximitySensorEx2</a>
 <a href="regularApi/simCreateProximitySensor.html">simCreateProximitySensor</a>
-</code>
+</pre>
 <br/>
 <h4><a name="visionSensor"></a>Vision sensors</h4>
 <code class="hljs language-lua coppelia-coppeliasim-script api-list">
@@ -338,7 +338,7 @@ All units going to, or coming from the API are in meters, kilograms, seconds and
 
  See also:
  <a href="#objectParameters">object parameter functions</a> and <a href="objectParameterIDs.html#visionSensors">parameters related to vision sensors</a>.
-</code>
+</pre>
 <br/>
 <code class="hljs language-c++ coppelia-coppeliasim-plugin api-list">
 <a href="regularApi/simHandleVisionSensor.html">simHandleVisionSensor</a>
@@ -352,7 +352,7 @@ All units going to, or coming from the API are in meters, kilograms, seconds and
 <a href="regularApi/simAdjustView.html">simAdjustView</a>
 <a href="regularApi/simCreateVisionSensor.html">simCreateVisionSensor</a>
 <a href="regularApi/simGetExtensionString.html">simGetExtensionString</a>
-</code>
+</pre>
 <br/>
 <h4><a name="forceSensor"></a>Force sensors</h4>
 <code class="hljs language-lua coppelia-coppeliasim-script api-list">
@@ -361,12 +361,12 @@ All units going to, or coming from the API are in meters, kilograms, seconds and
 
  See also:
  <a href="#objectParameters">object parameter functions</a> and <a href="objectParameterIDs.html#forceSensors">parameters related to force sensors</a>.
-</code>
+</pre>
 <br/>
 <code class="hljs language-c++ coppelia-coppeliasim-plugin api-list">
 <a href="regularApi/simReadForceSensor.html">simReadForceSensor</a>
 <a href="regularApi/simCreateForceSensor.html">simCreateForceSensor</a>
-</code>
+</pre>
 <br/>
 <h4><a name="jointObject"></a>Joints</h4>
 <code class="hljs language-lua coppelia-coppeliasim-script api-list">
@@ -394,7 +394,7 @@ All units going to, or coming from the API are in meters, kilograms, seconds and
  See also:
  <a href="#objectParameters">object parameter functions</a> and <a href="objectParameterIDs.html#joints">parameters related to joints</a>.
  <a href="#engineParameters">physics engine parameter functions</a>.
-</code>
+</pre>
 <br/>
 <code class="hljs language-c++ coppelia-coppeliasim-plugin api-list">
 <a href="regularApi/simSetJointPosition.html">simSetJointPosition</a>
@@ -417,7 +417,7 @@ All units going to, or coming from the API are in meters, kilograms, seconds and
 <a href="regularApi/simGetJointForce.html">simGetJointForce</a>
 <a href="regularApi/simGetJointTargetForce.html">simGetJointTargetForce</a>
 <a href="regularApi/simsetJointTargetForce.html">simSetJointTargetForce</a>
-</code>
+</pre>
 <br/>
 <h4><a name="shapeObject"></a>Shapes</h4>
 <code class="hljs language-lua coppelia-coppeliasim-script api-list">
@@ -455,7 +455,7 @@ All units going to, or coming from the API are in meters, kilograms, seconds and
  See also:
  <a href="#objectParameters">object parameter functions</a> and <a href="objectParameterIDs.html#shapes">parameters related to shapes</a>.
  <a href="#engineParameters">physics engine parameter functions</a>.
-</code>
+</pre>
 <br/>
 <code class="hljs language-c++ coppelia-coppeliasim-plugin api-list">
 <a href="regularApi/simAddForce.html">simAddForce</a>
@@ -486,7 +486,7 @@ All units going to, or coming from the API are in meters, kilograms, seconds and
 <a href="regularApi/simReorientShapeBoundingBox.html">simReorientShapeBoundingBox</a>
 <a href="regularApi/simSetShapeMaterial.html">simSetShapeMaterial</a>
 <a href="regularApi/simGetExtensionString.html">simGetExtensionString</a>
-</code>
+</pre>
 <br/>
 <h4><a name="graphs"></a>Graphs</h4>
 <code class="hljs language-lua coppelia-coppeliasim-script api-list">
@@ -501,7 +501,7 @@ All units going to, or coming from the API are in meters, kilograms, seconds and
 
  See also:
  <a href="#objectParameters">object parameter functions</a> and <a href="objectParameterIDs.html#graphs">parameters related to graphs</a>.
-</code>
+</pre>
 <br/>
 <code class="hljs language-c++ coppelia-coppeliasim-plugin api-list">
 <a href="regularApi/simAddGraphStream.html">simAddGraphStream</a>
@@ -512,7 +512,7 @@ All units going to, or coming from the API are in meters, kilograms, seconds and
 <a href="regularApi/simDuplicateGraphCurveToStatic.html">simDuplicateGraphCurveToStatic</a>
 <a href="regularApi/simHandleGraph.html">simHandleGraph</a>
 <a href="regularApi/simResetGraph.html">simResetGraph</a>
-</code>
+</pre>
 <br/>
 <h4><a name="lightObject"></a>Lights</h4>
 <code class="hljs language-lua coppelia-coppeliasim-script api-list">
@@ -522,13 +522,13 @@ All units going to, or coming from the API are in meters, kilograms, seconds and
 
  See also:
  <a href="#objectParameters">object parameter functions</a> and <a href="objectParameterIDs.html#lights">parameters related to lights</a>.
-</code>
+</pre>
 <br/>
 <code class="hljs language-c++ coppelia-coppeliasim-plugin api-list">
 <a href="regularApi/simGetLightParameters.html">simGetLightParameters</a>
 <a href="regularApi/simSetLightParameters.html">simSetLightParameters</a>
 <a href="regularApi/simGetExtensionString.html">simGetExtensionString</a>
-</code>
+</pre>
 <br/>
 <h4><a name="cameraObject"></a>Cameras</h4>
 <code class="hljs language-lua coppelia-coppeliasim-script api-list">
@@ -538,13 +538,13 @@ All units going to, or coming from the API are in meters, kilograms, seconds and
 
  See also:
  <a href="#objectParameters">object parameter functions</a> and <a href="objectParameterIDs.html#cameras">parameters related to cameras</a>.
-</code>
+</pre>
 <br/>
 <code class="hljs language-c++ coppelia-coppeliasim-plugin api-list">
 <a href="regularApi/simCameraFitToView.html">simCameraFitToView</a>
 <a href="regularApi/simAdjustView.html">simAdjustView</a>
 <a href="regularApi/simGetExtensionString.html">simGetExtensionString</a>
-</code>
+</pre>
 <br/>
 <h4><a name="dummyObject"></a>Dummies</h4>
 <code class="hljs language-lua coppelia-coppeliasim-script api-list">
@@ -554,13 +554,13 @@ All units going to, or coming from the API are in meters, kilograms, seconds and
 
  See also:
  <a href="#objectParameters">object parameter functions</a> and <a href="objectParameterIDs.html#dummies">parameters related to dummies</a>.
-</code>
+</pre>
 <br/>
 <code class="hljs language-c++ coppelia-coppeliasim-plugin api-list">
 <a href="regularApi/simCreateDummy.html">simCreateDummy</a>
 <a href="regularApi/simGetLinkDummy.html">simGetLinkDummy</a>
 <a href="regularApi/simSetLinkDummy.html">simSetLinkDummy</a>
-</code>
+</pre>
 <br/>
 <h4><a name="octree"></a>OC trees</h4>
 <code class="hljs language-lua coppelia-coppeliasim-script api-list">
@@ -574,7 +574,7 @@ All units going to, or coming from the API are in meters, kilograms, seconds and
 
  See also:
  <a href="#objectParameters">object parameter functions</a> and <a href="objectParameterIDs.html#octrees">parameters related to OC trees</a>.
-</code>
+</pre>
 <br/>
 <code class="hljs language-c++ coppelia-coppeliasim-plugin api-list">
 <a href="regularApi/simCreateOctree.html">simCreateOctree</a>
@@ -584,7 +584,7 @@ All units going to, or coming from the API are in meters, kilograms, seconds and
 <a href="regularApi/simSubtractObjectFromOctree.html">simSubtractObjectFromOctree</a>
 <a href="regularApi/simGetOctreeVoxels.html">simGetOctreeVoxels</a>
 <a href="regularApi/simCheckOctreePointOccupancy.html">simCheckOctreePointOccupancy</a>
-</code>
+</pre>
 <br/>
 <h4><a name="pointCloud"></a>Point clouds</h4>
 <code class="hljs language-lua coppelia-coppeliasim-script api-list">
@@ -600,7 +600,7 @@ All units going to, or coming from the API are in meters, kilograms, seconds and
 
  See also:
  <a href="#objectParameters">object parameter functions</a> and <a href="objectParameterIDs.html#pointClouds">parameters related to point clouds</a>.
-</code>
+</pre>
 <br/>
 <code class="hljs language-c++ coppelia-coppeliasim-plugin api-list">
 <a href="regularApi/simCreatePointCloud.html">simCreatePointCloud</a>
@@ -612,7 +612,7 @@ All units going to, or coming from the API are in meters, kilograms, seconds and
 <a href="regularApi/simIntersectPointsWithPointCloud.html">simIntersectPointsWithPointCloud</a>
 <a href="regularApi/simInsertObjectIntoPointCloud.html">simInsertObjectIntoPointCloud</a>
 <a href="regularApi/simGetPointCloudPoints.html">simGetPointCloudPoints</a>
-</code>
+</pre>
 <br/>
 <h4><a name="paths"></a>Paths</h4>
 <code class="hljs language-lua coppelia-coppeliasim-script api-list">
@@ -623,12 +623,12 @@ All units going to, or coming from the API are in meters, kilograms, seconds and
 <a href="regularApi/simResamplePath.html">sim.resamplePath</a>
 <a href="regularApi/simGenerateTimeOptimalTrajectory.html">sim.generateTimeOptimalTrajectory</a>
 <a href="regularApi/simGenerateShapeFromPath.html">sim.generateShapeFromPath</a>
-<a href="regularApi/simGetClosestPosOnPath.html">sim.getClosestPosOnPath</a></code>
+<a href="regularApi/simGetClosestPosOnPath.html">sim.getClosestPosOnPath</a></pre>
 <br/>
 <code class="hljs language-c++ coppelia-coppeliasim-plugin api-list">
 <a href="regularApi/simGenerateShapeFromPath.html">simGenerateShapeFromPath</a>
 <a href="regularApi/simGetClosestPosOnPath.html">simGetClosestPosOnPath</a>
-</code>
+</pre>
 <br/>
 <h4><a name="sceneObjectFunctionality"></a>Scene objects</h4>
 <code class="hljs language-lua coppelia-coppeliasim-script api-list">
@@ -679,7 +679,7 @@ All units going to, or coming from the API are in meters, kilograms, seconds and
 
  See also:
  <a href="#objectParameters">object parameter functions</a> and <a href="objectParameterIDs.html#sceneObjects">parameters related to scene objects</a>.
-</code>
+</pre>
 <br/>
 <code class="hljs language-c++ coppelia-coppeliasim-plugin api-list">
 <a href="regularApi/simGetObject.html">simGetObject</a>
@@ -724,7 +724,7 @@ All units going to, or coming from the API are in meters, kilograms, seconds and
 <a href="regularApi/simIsDynamicallyEnabled.html">simIsDynamicallyEnabled</a>
 <a href="regularApi/simGetObjectColor.html">simGetObjectColor</a>
 <a href="regularApi/simSetObjectColor.html">simSetObjectColor</a>
-</code>
+</pre>
 <br/>
 <h4><a name="size"></a><a name="scaling"></a>Object size / scaling</h4>
 <code class="hljs language-lua coppelia-coppeliasim-script api-list">
@@ -733,13 +733,13 @@ All units going to, or coming from the API are in meters, kilograms, seconds and
 <a href="regularApi/simScaleObjects.html">sim.scaleObjects</a>
 <a href="regularApi/simGetShapeBB.html">sim.getShapeBB</a>
 <a href="regularApi/simSetShapeBB.html">sim.setShapeBB</a>
-</code>
+</pre>
 <br/>
 <code class="hljs language-c++ coppelia-coppeliasim-plugin api-list">
 <a href="regularApi/simGetObjectSizeFactor.html">simGetObjectSizeFactor</a>
 <a href="regularApi/simScaleObject.html">simScaleObject</a>
 <a href="regularApi/simScaleObjects.html">simScaleObjects</a>
-</code>
+</pre>
 <br/>
 <h4><a name="collections"></a>Collections</h4>
 <code class="hljs language-lua coppelia-coppeliasim-script api-list">
@@ -747,14 +747,14 @@ All units going to, or coming from the API are in meters, kilograms, seconds and
 <a href="regularApi/simDestroyCollection.html">sim.destroyCollection</a>
 <a href="regularApi/simAddItemToCollection.html">sim.addItemToCollection</a>
 <a href="regularApi/simGetCollectionObjects.html">sim.getCollectionObjects</a>
-</code>
+</pre>
 <br/>
 <code class="hljs language-c++ coppelia-coppeliasim-plugin api-list">
 <a href="regularApi/simCreateCollection.html">simCreateCollectionEx</a>
 <a href="regularApi/simDestroyCollection.html">simDestroyCollection</a>
 <a href="regularApi/simAddItemToCollection.html">simAddItemToCollection</a>
 <a href="regularApi/simGetCollectionObjects.html">simGetCollectionObjects</a>
-</code>
+</pre>
 <br/>
 <h4><a name="serialCommunicationFunctionality"></a><a name="serialPort"></a>Serial port</h4>
 <code class="hljs language-lua coppelia-coppeliasim-script api-list">
@@ -763,7 +763,7 @@ All units going to, or coming from the API are in meters, kilograms, seconds and
 <a href="regularApi/simSerialOpen.html">sim.serialOpen</a>
 <a href="regularApi/simSerialRead.html">sim.serialRead</a>
 <a href="regularApi/simSerialSend.html">sim.serialSend</a>
-</code>
+</pre>
 <br/>
 <code class="hljs language-c++ coppelia-coppeliasim-plugin api-list">
 <a href="regularApi/simSerialCheck.html">simSerialCheck</a>
@@ -771,7 +771,7 @@ All units going to, or coming from the API are in meters, kilograms, seconds and
 <a href="regularApi/simSerialOpen.html">simSerialOpen</a>
 <a href="regularApi/simSerialRead.html">simSerialRead</a>
 <a href="regularApi/simSerialSend.html">simSerialSend</a>
-</code>
+</pre>
 <br/>
 <h4><a name="drawingObject"></a><a name="rendering"></a>Rendering</h4>
 <code class="hljs language-lua coppelia-coppeliasim-script api-list">
@@ -785,7 +785,7 @@ All units going to, or coming from the API are in meters, kilograms, seconds and
 <a href="regularApi/simChangeEntityColor.html">sim.changeEntityColor</a>
 <a href="regularApi/simRestoreEntityColor.html">sim.restoreEntityColor</a>
 <a href="regularApi/simGetGenesisEvents.html">sim.getGenesisEvents</a>
-</code>
+</pre>
 <br/>
 <code class="hljs language-c++ coppelia-coppeliasim-plugin api-list">
 <a href="regularApi/simAddDrawingObject.html">simAddDrawingObject</a>
@@ -795,20 +795,20 @@ All units going to, or coming from the API are in meters, kilograms, seconds and
 <a href="regularApi/simSetShapeColor.html">simSetShapeColor</a>
 <a href="regularApi/simGetObjectColor.html">simGetObjectColor</a>
 <a href="regularApi/simSetObjectColor.html">simSetObjectColor</a>
-</code>
+</pre>
 <br/>
 <h4><a name="particleObject"></a>Particle objects</h4>
 <code class="hljs language-lua coppelia-coppeliasim-script api-list">
 <a href="regularApi/simAddParticleObject.html">sim.addParticleObject</a>
 <a href="regularApi/simAddParticleObjectItem.html">sim.addParticleObjectItem</a>
 <a href="regularApi/simRemoveParticleObject.html">sim.removeParticleObject</a>
-</code>
+</pre>
 <br/>
 <code class="hljs language-c++ coppelia-coppeliasim-plugin api-list">
 <a href="regularApi/simAddParticleObject.html">simAddParticleObject</a>
 <a href="regularApi/simAddParticleObjectItem.html">simAddParticleObjectItem</a>
 <a href="regularApi/simRemoveParticleObject.html">simRemoveParticleObject</a>
-</code>
+</pre>
 <br/>
 <h4><a name="modelFunctionality"></a>Models</h4>
 <code class="hljs language-lua coppelia-coppeliasim-script api-list">
@@ -816,25 +816,25 @@ All units going to, or coming from the API are in meters, kilograms, seconds and
 <a href="regularApi/simSetModelProperty.html">sim.setModelProperty</a>
 <a href="regularApi/simSaveModel.html">sim.saveModel</a>
 <a href="regularApi/simLoadModel.html">sim.loadModel</a>
-</code>
+</pre>
 <br/>
 <code class="hljs language-c++ coppelia-coppeliasim-plugin api-list">
 <a href="regularApi/simGetModelProperty.html">simGetModelProperty</a>
 <a href="regularApi/simSetModelProperty.html">simSetModelProperty</a>
 <a href="regularApi/simSaveModel.html">simSaveModel</a>
 <a href="regularApi/simLoadModel.html">simLoadModel</a>
-</code>
+</pre>
 <br/>
 <h4><a name="sceneObjectSelectionFunctionality"></a>Object selection</h4>
 <code class="hljs language-lua coppelia-coppeliasim-script api-list">
 <a href="regularApi/simGetObjectSelection.html">sim.getObjectSelection</a>
 <a href="regularApi/simSetObjectSelection.html">sim.setObjectSelection</a>
-</code>
+</pre>
 <br/>
 <code class="hljs language-c++ coppelia-coppeliasim-plugin api-list">
 <a href="regularApi/simGetObjectSelection.html">simGetObjectSel</a>
 <a href="regularApi/simSetObjectSelection.html">simSetObjectSel</a>
-</code>
+</pre>
 <br/>
 <h4><a name="sceneObjectCreationFunctionality"></a>Object creation</h4>
 <code class="hljs language-lua coppelia-coppeliasim-script api-list">
@@ -851,7 +851,7 @@ All units going to, or coming from the API are in meters, kilograms, seconds and
 <a href="regularApi/simCreateTexture.html">sim.createTexture</a>
 <a href="regularApi/simGenerateTextShape.html">sim.generateTextShape</a>
 <a href="regularApi/simGenerateShapeFromPath.html">sim.generateShapeFromPath</a>
-</code>
+</pre>
 <br/>
 <code class="hljs language-c++ coppelia-coppeliasim-plugin api-list">
 <a href="regularApi/simCreateDummy.html">simCreateDummy</a>
@@ -866,7 +866,7 @@ All units going to, or coming from the API are in meters, kilograms, seconds and
 <a href="regularApi/simCreatePointCloud.html">simCreatePointCloud</a>
 <a href="regularApi/simCreateTexture.html">simCreateTexture</a>
 <a href="regularApi/simGenerateShapeFromPath.html">simGenerateShapeFromPath</a>
-</code>
+</pre>
 <br/>
 <h4>Scripts</h4>
 <code class="hljs language-lua coppelia-coppeliasim-script api-list">
@@ -893,7 +893,7 @@ All units going to, or coming from the API are in meters, kilograms, seconds and
 
  See also:
  <a href="#scriptParameters">functions related to script parameters</a>
-</code>
+</pre>
 <br/>
 <code class="hljs language-c++ coppelia-coppeliasim-plugin api-list">
 <a href="regularApi/simGetScriptHandleEx.html">simGetScriptHandleEx</a>
@@ -915,7 +915,7 @@ All units going to, or coming from the API are in meters, kilograms, seconds and
 <a href="regularApi/simRegisterScriptVariable.html">simRegisterScriptVariable</a>
 <a href="regularApi/simRegisterScriptFuncHook.html">simRegisterScriptFuncHook</a>
 <a href="regularApi/simIsDeprecated.html">simIsDeprecated</a>
-</code>
+</pre>
 <br/>
 <h4><a name="SimulationFunctionality"></a>Simulation</h4>
 <code class="hljs language-lua coppelia-coppeliasim-script api-list">
@@ -926,7 +926,7 @@ All units going to, or coming from the API are in meters, kilograms, seconds and
 <a href="regularApi/simGetSimulationTime.html">sim.getSimulationTime</a>
 <a href="regularApi/simGetSimulationTimeStep.html">sim.getSimulationTimeStep</a>
 <a href="regularApi/simGetRealTimeSimulation.html">sim.getRealTimeSimulation</a>
-</code>
+</pre>
 <br/>
 <code class="hljs language-c++ coppelia-coppeliasim-plugin api-list">
 <a href="regularApi/simStartSimulation.html">simStartSimulation</a>
@@ -941,7 +941,7 @@ All units going to, or coming from the API are in meters, kilograms, seconds and
 <a href="regularApi/simGetRealTimeSimulation.html">simGetRealTimeSimulation</a>
 <a href="regularApi/simAdjustRealTimeTimer.html">simAdjustRealTimeTimer</a>
 <a href="regularApi/simIsRealTimeSimulationStepNeeded.html">simIsRealTimeSimulationStepNeeded</a>
-</code>
+</pre>
 <br/>
 <h4><a name="threads"></a><a name="threadRelatedFunctionality"></a>Threads</h4>
 <code class="hljs language-lua coppelia-coppeliasim-script api-list">
@@ -954,20 +954,20 @@ All units going to, or coming from the API are in meters, kilograms, seconds and
 <a href="regularApi/simSetThreadSwitchTiming.html">sim.setThreadSwitchTiming</a>
 <a href="regularApi/simSetThreadSwitchAllowed.html">sim.setThreadSwitchAllowed</a>
 <a href="regularApi/simSwitchThread.html">sim.switchThread</a>
-</code>
+</pre>
 <br/>
 <h4><a name="customizingLuaFunctions"></a><a name="customScriptFunctions"></a>Custom scripts</h4>
 <code class="hljs language-lua coppelia-coppeliasim-script api-list">
 <a href="regularApi/simRegisterScriptFunction.html">sim.registerScriptFunction</a>
 <a href="regularApi/simRegisterScriptVariable.html">sim.registerScriptVariable</a>
 <a href="regularApi/simRegisterScriptFuncHook.html">sim.registerScriptFuncHook</a>
-</code>
+</pre>
 <br/>
 <code class="hljs language-c++ coppelia-coppeliasim-plugin api-list">
 <a href="regularApi/simRegisterScriptCallbackFunction.html">simRegisterScriptCallbackFunction</a>
 <a href="regularApi/simRegisterScriptVariable.html">simRegisterScriptVariable</a>
 <a href="regularApi/simRegisterScriptFuncHook.html">simRegisterScriptFuncHook</a>
-</code>
+</pre>
 <br/>
 <h4><a name="transformations"></a><a name="coordinatesAndTransformations"></a>Transformations</h4>
 <code class="hljs language-lua coppelia-coppeliasim-script api-list">
@@ -1001,7 +1001,7 @@ All units going to, or coming from the API are in meters, kilograms, seconds and
 
  See also:
  <a href="#packing">packing/unpacking functions</a>
-</code>
+</pre>
 <br/>
 <code class="hljs language-c++ coppelia-coppeliasim-plugin api-list">
 <a href="regularApi/simBuildMatrix.html">simBuildMatrix</a>
@@ -1029,7 +1029,7 @@ All units going to, or coming from the API are in meters, kilograms, seconds and
 <a href="regularApi/simRotateAroundAxis.html">simRotateAroundAxis</a>
 <a href="regularApi/simGetObjectVelocity.html">simGetObjectVelocity</a>
 <a href="regularApi/simReorientShapeBoundingBox.html">simReorientShapeBoundingBox</a>
-</code>
+</pre>
 <br/>
 <h4>Messaging</h4>
 <code class="hljs language-lua coppelia-coppeliasim-script api-list">
@@ -1069,7 +1069,7 @@ All units going to, or coming from the API are in meters, kilograms, seconds and
 <a href="regularApi/simGetGenesisEvents.html">sim.getGenesisEvents</a>
 <a href="regularApi/simBroadcastMsg.html">sim.broadcastMsg</a>
 <a href="regularApi/simPushUserEvent.html">sim.pushUserEvent</a>
-</code>
+</pre>
 <br/>
 <code class="hljs language-c++ coppelia-coppeliasim-plugin api-list">
 <a href="regularApi/simAddLog.html">simAddLog</a>
@@ -1104,7 +1104,7 @@ All units going to, or coming from the API are in meters, kilograms, seconds and
 <a href="regularApi/simCallScriptFunctionEx.html">simCallScriptFunctionEx</a>
 <a href="regularApi/simExecuteScriptString.html">simExecuteScriptString</a>
 <a href="regularApi/simGetObjectUid.html">simGetObjectUid</a>
-</code>
+</pre>
 <br/>
 <h4><a name="signals"></a>Signals</h4>
 <code class="hljs language-lua coppelia-coppeliasim-script api-list">
@@ -1126,7 +1126,7 @@ All units going to, or coming from the API are in meters, kilograms, seconds and
  See also:
  <a href="#packing">data packing/unpacking</a>.
  <a href="#persistentData">persistent data</a>.
-</code>
+</pre>
 <br/>
 <code class="hljs language-c++ coppelia-coppeliasim-plugin api-list">
 <a href="regularApi/simSetInt32Signal.html">simSetInt32Signal</a>
@@ -1142,7 +1142,7 @@ All units going to, or coming from the API are in meters, kilograms, seconds and
 <a href="regularApi/simGetStringSignal.html">simGetStringSignal</a>
 <a href="regularApi/simClearStringSignal.html">simClearStringSignal</a>
 <a href="regularApi/simGetSignalName.html">simGetSignalName</a>
-</code>
+</pre>
 <br/>
 <h4><a name="persistentData"></a>Persistent Data</h4>
 <code class="hljs language-lua coppelia-coppeliasim-script api-list">
@@ -1150,13 +1150,13 @@ All units going to, or coming from the API are in meters, kilograms, seconds and
 <a href="regularApi/simPersistentDataWrite.html">sim.persistentDataWrite</a>
 <a href="regularApi/simGetPersistentDataTags.html">sim.getPersistentDataTags</a>
 <a href="regularApi/simGetMatchingPersistentDataTags.html">sim.getMatchingPersistentDataTags</a>
-</code>
+</pre>
 <br/>
 <code class="hljs language-c++ coppelia-coppeliasim-plugin api-list">
 <a href="regularApi/simPersistentDataRead.html">simPersistentDataRead</a>
 <a href="regularApi/simPersistentDataWrite.html">simPersistentDataWrite</a>
 <a href="regularApi/simGetPersistentDataTags.html">simGetPersistentDataTags</a>
-</code>
+</pre>
 <br/>
 <h4><a name="customDataBlocks"></a>Custom data blocks</h4>
 <code class="hljs language-lua coppelia-coppeliasim-script api-list">
@@ -1168,13 +1168,13 @@ All units going to, or coming from the API are in meters, kilograms, seconds and
 
  See also:
  <a href="#packing">data packing/unpacking</a>.
-</code>
+</pre>
 <br/>
 <code class="hljs language-c++ coppelia-coppeliasim-plugin api-list">
 <a href="regularApi/simReadCustomDataBlock.html">simReadCustomDataBlock</a>
 <a href="regularApi/simReadCustomDataBlockTags.html">simReadCustomDataBlockTags</a>
 <a href="regularApi/simWriteCustomDataBlock.html">simWriteCustomDataBlock</a>
-</code>
+</pre>
 <br/>
 <h4><a name="textures"></a>Textures</h4>
 <code class="hljs language-lua coppelia-coppeliasim-script api-list">
@@ -1188,7 +1188,7 @@ All units going to, or coming from the API are in meters, kilograms, seconds and
 <a href="regularApi/simWriteTexture.html">sim.writeTexture</a>
 <a href="regularApi/simCreateTexture.html">sim.createTexture</a>
 <a href="regularApi/simSetShapeTexture.html">sim.setShapeTexture</a>
-</code>
+</pre>
 <br/>
 <code class="hljs language-c++ coppelia-coppeliasim-plugin api-list">
 <a href="regularApi/simApplyTExture.html">simApplyTexture</a>
@@ -1202,7 +1202,7 @@ All units going to, or coming from the API are in meters, kilograms, seconds and
 <a href="regularApi/simWriteTexture.html">simWriteTexture</a>
 <a href="regularApi/simCreateTexture.html">simCreateTexture</a>
 <a href="regularApi/simSetShapeTexture.html">simSetShapeTexture</a>
-</code>
+</pre>
 <br/>
 <h4><a name="blockingFunctions"></a>Blocking functions</h4>
 <code class="hljs language-lua coppelia-coppeliasim-script api-list">
@@ -1211,7 +1211,7 @@ All units going to, or coming from the API are in meters, kilograms, seconds and
 <a href="regularApi/simMoveToConfig.html">sim.moveToConfig</a>
 <a href="regularApi/simMoveToPose.html">sim.moveToPose</a>
 <a href="regularApi/simSerialRead.html">sim.serialRead</a>
-</code>
+</pre>
 <br/>
 <h4><a name="auxiliaryConsoles"></a><a name="auxiliaryConsoleFunctions"></a>Auxiliary consoles </h4>
 <code class="hljs language-lua coppelia-coppeliasim-script api-list">
@@ -1222,14 +1222,14 @@ All units going to, or coming from the API are in meters, kilograms, seconds and
 
  See also:
  <a href="customUIPlugin.html">Custom user interfaces</a>.
-</code>
+</pre>
 <br/>
 <code class="hljs language-c++ coppelia-coppeliasim-plugin api-list">
 <a href="regularApi/simAuxiliaryConsoleClose.html">simAuxiliaryConsoleClose</a>
 <a href="regularApi/simAuxiliaryConsoleOpen.html">simAuxiliaryConsoleOpen</a>
 <a href="regularApi/simAuxiliaryConsolePrint.html">simAuxiliaryConsolePrint</a>
 <a href="regularApi/simAuxiliaryConsoleShow.html">simAuxiliaryConsoleShow</a>
-</code>
+</pre>
 <br/>
 <h4><a name="textEditors"></a>Text/code editors</h4>
 <code class="hljs language-lua coppelia-coppeliasim-script api-list">
@@ -1240,7 +1240,7 @@ All units going to, or coming from the API are in meters, kilograms, seconds and
 
  See also:
  <a href="customUIPlugin.html">Custom user interfaces</a>.
-</code>
+</pre>
 <br/>
 <h4><a name="importExport"></a><a name="importExportFunctions"></a>Import/export</h4>
 <code class="hljs language-lua coppelia-coppeliasim-script api-list">
@@ -1254,7 +1254,7 @@ All units going to, or coming from the API are in meters, kilograms, seconds and
 
  See also:
  <a href="simAssimp.html?view=alphabetical">Assimp plugin API reference</a>.
-</code>
+</pre>
 <br/>
 <code class="hljs language-c++ coppelia-coppeliasim-plugin api-list">
 <a href="regularApi/simImportShape.html">simImportShape</a>
@@ -1263,7 +1263,7 @@ All units going to, or coming from the API are in meters, kilograms, seconds and
 <a href="regularApi/simCreateTexture.html">simCreateTexture</a>
 <a href="regularApi/simLoadImage.html">simLoadImage</a>
 <a href="regularApi/simSaveImage.html">simSaveImage</a>
-</code>
+</pre>
 <br/>
 <h4><a name="PagesAndViewsFunctions"></a>Pages and views</h4>
 <code class="hljs language-lua coppelia-coppeliasim-script api-list">
@@ -1271,14 +1271,14 @@ All units going to, or coming from the API are in meters, kilograms, seconds and
 <a href="regularApi/simFloatingViewRemove.html">sim.floatingViewRemove</a>
 <a href="regularApi/simAdjustView.html">sim.adjustView</a>
 <a href="regularApi/simCameraFitToView.html">sim.cameraFitToView</a>
-</code>
+</pre>
 <br/>
 <code class="hljs language-c++ coppelia-coppeliasim-plugin api-list">
 <a href="regularApi/simFloatingViewAdd.html">simFloatingViewAdd</a>
 <a href="regularApi/simFloatingViewRemove.html">simFloatingViewRemove</a>
 <a href="regularApi/simAdjustView.html">simAdjustView</a>
 <a href="regularApi/simCameraFitToView.html">simCameraFitToView</a>
-</code>
+</pre>
 <br/>
 <h4><a name="rml"></a><a name="ruckig"></a>Ruckig motion library</h4>
 <code class="hljs language-lua coppelia-coppeliasim-script api-list">
@@ -1288,14 +1288,14 @@ All units going to, or coming from the API are in meters, kilograms, seconds and
 <a href="regularApi/simRuckigVel.html">sim.ruckigVel</a>
 <a href="regularApi/simRuckigStep.html">sim.ruckigStep</a>
 <a href="regularApi/simRuckigRemove.html">sim.ruckigRemove</a>
-</code>
+</pre>
 <br/>
 <code class="hljs language-c++ coppelia-coppeliasim-plugin api-list">
 <a href="regularApi/simRuckigPos.html">simRuckigPos</a>
 <a href="regularApi/simRuckigVel.html">simRuckigVel</a>
 <a href="regularApi/simRuckigStep.html">simRuckigStep</a>
 <a href="regularApi/simRuckigRemove.html">simRuckigRemove</a>
-</code>
+</pre>
 <br/>
 <h4><a name="packing"></a>Packing / unpacking</h4>
 <code class="hljs language-lua coppelia-coppeliasim-script api-list">
@@ -1315,18 +1315,18 @@ All units going to, or coming from the API are in meters, kilograms, seconds and
 <a href="regularApi/simUnpackDoubleTable.html">sim.unpackDoubleTable</a>
 <a href="regularApi/simCopyTable.html">sim.copyTable</a>
 <a href="regularApi/simTransformBuffer.html">sim.transformBuffer</a>
-</code>
+</pre>
 <br/>
 <code class="hljs language-c++ coppelia-coppeliasim-plugin api-list">
 <a href="regularApi/simPackTable.html">simPackTable</a>
 <a href="regularApi/simUnpackTable.html">simUnpackTable</a>
-</code>
+</pre>
 <br/>
 <h4><a name="stacks"></a>Stacks</h4>
 <code class="hljs language-lua coppelia-coppeliasim-script api-list">
 <a href="regularApi/simPackTable.html">sim.packTable</a>
 <a href="regularApi/simUnpackTable.html">sim.unpackTable</a>
-</code>
+</pre>
 <br/>
 <code class="hljs language-c++ coppelia-coppeliasim-plugin api-list">
 <a href="regularApi/simCreateStack.html">simCreateStack</a>
@@ -1362,7 +1362,7 @@ All units going to, or coming from the API are in meters, kilograms, seconds and
 <a href="regularApi/simDebugStack.html">simDebugStack</a>
 <a href="regularApi/simPackTable.html">simPackTable</a>
 <a href="regularApi/simUnpackTable.html">simUnpackTable</a>
-</code>
+</pre>
 <br/>
 <h4><a name="objectParameters"></a>Object parameters</h4>
 <code class="hljs language-lua coppelia-coppeliasim-script api-list">
@@ -1372,7 +1372,7 @@ All units going to, or coming from the API are in meters, kilograms, seconds and
 <a href="regularApi/simSetObjectFloatParam.html">sim.setObjectFloatParam</a>
 <a href="regularApi/simGetObjectStringParam.html">sim.getObjectStringParam</a>
 <a href="regularApi/simSetObjectStringParam.html">sim.setObjectStringParam</a>
-</code>
+</pre>
 <br/>
 <code class="hljs language-c++ coppelia-coppeliasim-plugin api-list">
 <a href="regularApi/simGetObjectInt32Param.html">simGetObjectInt32Param</a>
@@ -1381,7 +1381,7 @@ All units going to, or coming from the API are in meters, kilograms, seconds and
 <a href="regularApi/simSetObjectFloatParam.html">simSetObjectFloatParam</a>
 <a href="regularApi/simGetObjectStringParam.html">simGetObjectStringParam</a>
 <a href="regularApi/simSetObjectStringParam.html">simSetObjectStringParam</a>
-</code>
+</pre>
 <br/>
 <h4><a name="scriptParameters"></a>Script parameters</h4>
 <code class="hljs language-lua coppelia-coppeliasim-script api-list">
@@ -1389,14 +1389,14 @@ All units going to, or coming from the API are in meters, kilograms, seconds and
 <a href="regularApi/simSetScriptInt32Param.html">sim.setScriptInt32Param</a>
 <a href="regularApi/simGetScriptStringParam.html">sim.getScriptStringParam</a>
 <a href="regularApi/simSetScriptStringParam.html">sim.setScriptStringParam</a>
-</code>
+</pre>
 <br/>
 <code class="hljs language-c++ coppelia-coppeliasim-plugin api-list">
 <a href="regularApi/simGetScriptInt32Param.html">simGetScriptInt32Param</a>
 <a href="regularApi/simSetScriptInt32Param.html">simSetScriptInt32Param</a>
 <a href="regularApi/simGetScriptStringParam.html">simGetScriptStringParam</a>
 <a href="regularApi/simSetScriptStringParam.html">simSetScriptStringParam</a>
-</code>
+</pre>
 <br/>
 <h4><a name="params"></a>Simulator parameters</h4>
 <code class="hljs language-lua coppelia-coppeliasim-script api-list">
@@ -1412,7 +1412,7 @@ All units going to, or coming from the API are in meters, kilograms, seconds and
 <a href="regularApi/simGetStringParam.html">sim.getStringParam</a>
 <a href="regularApi/simSetNamedStringParam.html">sim.setNamedStringParam</a>
 <a href="regularApi/simGetNamedStringParam.html">sim.getNamedStringParam</a>
-</code>
+</pre>
 <br/>
 <code class="hljs language-c++ coppelia-coppeliasim-plugin api-list">
 <a href="regularApi/simSetArrayParam.html">simSetArrayParam</a>
@@ -1428,7 +1428,7 @@ All units going to, or coming from the API are in meters, kilograms, seconds and
 <a href="regularApi/simSetNamedStringParam.html">simSetNamedStringParam</a>
 <a href="regularApi/simGetNamedStringParam.html">simGetNamedStringParam</a>
 <a href="regularApi/simGetUInt64Parameter.html">simGetUInt64Parameter</a>
-</code>
+</pre>
 <br/>
 <h4><a name="namedParams"></a>Simulator named parameters</h4>
 <code class="hljs language-lua coppelia-coppeliasim-script api-list">
@@ -1437,12 +1437,12 @@ All units going to, or coming from the API are in meters, kilograms, seconds and
 <a href="regularApi/simGetNamedBoolParam.html">sim.getNamedBoolParam</a>
 <a href="regularApi/simGetNamedFloatParam.html">sim.getNamedFloatParam</a>
 <a href="regularApi/simGetNamedInt32Param.html">sim.getNamedInt32Param</a>
-</code>
+</pre>
 <br/>
 <code class="hljs language-c++ coppelia-coppeliasim-plugin api-list">
 <a href="regularApi/simSetNamedStringParam.html">simSetNamedStringParam</a>
 <a href="regularApi/simGetNamedStringParam.html">simGetNamedStringParam</a>
-</code>
+</pre>
 <br/>
 <h4><a name="engineParameters"></a>Physics engine parameters</h4>
 <code class="hljs language-lua coppelia-coppeliasim-script api-list">
@@ -1452,7 +1452,7 @@ All units going to, or coming from the API are in meters, kilograms, seconds and
 <a href="regularApi/simSetEngineFloatParam.html">sim.setEngineFloatParam</a>
 <a href="regularApi/simSetEngineInt32Param.html">sim.setEngineInt32Param</a>
 <a href="regularApi/simSetEngineBoolParam.html">sim.setEngineBoolParam</a>
-</code>
+</pre>
 <br/>
 <code class="hljs language-c++ coppelia-coppeliasim-plugin api-list">
 <a href="regularApi/simGetEngineFloatParam.html">simGetEngineFloatParam</a>
@@ -1461,7 +1461,7 @@ All units going to, or coming from the API are in meters, kilograms, seconds and
 <a href="regularApi/simSetEngineFloatParam.html">simSetEngineFloatParam</a>
 <a href="regularApi/simSetEngineInt32Param.html">simSetEngineInt32Param</a>
 <a href="regularApi/simSetEngineBoolParam.html">simSetEngineBoolParam</a>
-</code>
+</pre>
 <br/>
 <h4>Other commands</h4>
 <code class="hljs language-lua coppelia-coppeliasim-script api-list">
@@ -1491,7 +1491,7 @@ All units going to, or coming from the API are in meters, kilograms, seconds and
 <a href="regularApi/simModuleEntry.html">sim.moduleEntry</a>
 <a href="regularApi/simGetGenesisEvents.html">sim.getGenesisEvents</a>
 <a href="regularApi/simPushUserEvent.html">sim.pushUserEvent</a>
-</code>
+</pre>
 <br/>
 <code class="hljs language-c++ coppelia-coppeliasim-plugin api-list">
 <a href="regularApi/simAddLog.html">simAddLog</a>
@@ -1514,7 +1514,7 @@ All units going to, or coming from the API are in meters, kilograms, seconds and
 <a href="regularApi/simReleaseBuffer.html">simReleaseBuffer</a>
 <a href="regularApi/simIsDeprecated.html">simIsDeprecated</a>
 <a href="regularApi/simModuleEntry.html">simModuleEntry</a>
-</code>
+</pre>
 <br/>
 <br/>
 <br/>

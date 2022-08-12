@@ -33,7 +33,7 @@ C/C++<br>synopsis
 <tr class=apiTableTr> 
 <td class=apiTableLeftCParam>C/C++<br>parameters</td> 
 <td class=apiTableRightCParam>
-<div><strong>sensorHandle</strong>: handle of the vision sensor. Can be combined with <a href="../apiConstants.html#specialHandleFlags">sim.handleflag_depthbuffermeters</a> (simply add sim.handleflag_depthbuffermeters to sensorHandle), if you wish to retrieve values in meters.</div>
+<div>sensorHandle: handle of the vision sensor. Can be combined with <a href="../apiConstants.html#specialHandleFlags">sim.handleflag_depthbuffermeters</a> (simply add sim.handleflag_depthbuffermeters to sensorHandle), if you wish to retrieve values in meters.</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -54,9 +54,9 @@ Lua<br>synopsis
 <tr class=apiTableTr> 
 <td class=apiTableLeftLParam>Lua<br>parameters</td> 
 <td class=apiTableRightLParam>
-<div><strong>sensorHandle</strong>: same as for the C function. Additionally, can also be combined with <a href="../apiConstants.html#specialHandleFlags">sim.handleflag_codedstring</a> (simply add sim.handleflag_codedstring to sensorHandle), if you wish to retrieve a string buffer (sim.buffer_float) instead of a table. In that case, refer also to <a href="simTransformBuffer.html">sim.transformBuffer</a>.</div>
-<div><strong>posX / posY</strong>: position of the depth buffer portion to retrieve. Zero by default.</div>
-<div><strong>sizeX / sizeY</strong>: size of the depth buffer portion to retrieve. Zero by default, which means that the full depth buffer should be retrieved</div>
+<div>sensorHandle: same as for the C function. Additionally, can also be combined with <a href="../apiConstants.html#specialHandleFlags">sim.handleflag_codedstring</a> (simply add sim.handleflag_codedstring to sensorHandle), if you wish to retrieve a string buffer (sim.buffer_float) instead of a table. In that case, refer also to <a href="simTransformBuffer.html">sim.transformBuffer</a>.</div>
+<div>posX / posY: position of the depth buffer portion to retrieve. Zero by default.</div>
+<div>sizeX / sizeY: size of the depth buffer portion to retrieve. Zero by default, which means that the full depth buffer should be retrieved</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -64,7 +64,7 @@ Lua<br>synopsis
 Lua<br>return values
 </td> 
 <td class=apiTableRightLRet>
-<div><strong>depthBuffer</strong>: table containing depth values (sizeX*sizeY), or a string containing coded depth values. Returned values are in the range of 0-1 (0=closest to sensor (i.e. close clipping plane), 1=farthest from sensor (i.e. far clipping plane)). If the sim.handleflag_depthbuffermeters was specified, then individual values are expressed as distances in meters.</div></td> 
+<div>depthBuffer: table containing depth values (sizeX*sizeY), or a string containing coded depth values. Returned values are in the range of 0-1 (0=closest to sensor (i.e. close clipping plane), 1=farthest from sensor (i.e. far clipping plane)). If the sim.handleflag_depthbuffermeters was specified, then individual values are expressed as distances in meters.</div></td> 
 </tr> 
 
  

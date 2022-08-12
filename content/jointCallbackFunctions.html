@@ -153,8 +153,8 @@ img.add_border {
 <p> Joint callback functions enable the user to customize the control loop for specific joints in order to write low-level control algorithms.</p>
 <p>Following represents a simple PID joint callback function, for a joint in dynamic mode:<br/>
 </p>
-<code class="hljs language-lua coppelia-coppeliasim-script">
-function <strong>sysCall_jointCallback</strong>(inData)
+<pre class="brush:lua;auto-links:false;toolbar:false" contenteditable="false">
+function sysCall_jointCallback(inData)
     -- inData.mode : sim.jointmode_kinematic or sim.jointmode_dynamic
     --
     -- inData.handle : the handle of the joint associated with this script
@@ -232,14 +232,14 @@ function <strong>sysCall_jointCallback</strong>(inData)
     -- 
     -- For dynamic joints:
     -- outData={force=f, velocity=vel}
-end</code>
+end</pre>
 <p>In Python, a joint callback function can only be implemented via a non-threaded script, and it should be explicitly activated with a luaExec command:</p>
-<code class="hljs language-python coppelia-coppeliasim-script">
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">
 #python
 #luaExec additionalFuncs={'sysCall_jointCallback'}
 
-def <strong>sysCall_jointCallback</strong>(inData):
-    pass</code>
+def sysCall_jointCallback(inData):
+    pass</pre>
 <br/>
 <br/>
 </td></tr>

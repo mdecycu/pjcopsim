@@ -165,18 +165,18 @@ img.add_border {
 <td class="apiTableLeftLParam">Lua<br/>parameters</td>
 <td class="apiTableRightLParam">
 <div>
-<strong>a</strong> (mesh): first mesh</div>
+a (mesh): first mesh</div>
 <div>
-<strong>b</strong> (mesh): second mesh</div>
+b (mesh): second mesh</div>
 <div>
-<strong>op</strong> (int): operation, see <a href="#enum:boolean_op">simIGL.boolean_op</a>
+op (int): operation, see <a href="#enum:boolean_op">simIGL.boolean_op</a>
 </div>
 </td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftLRet">Lua<br/>return values</td>
 <td class="apiTableRightLRet"><div>
-<strong>result</strong> (mesh): resulting mesh</div></td>
+result (mesh): resulting mesh</div></td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftPSyn">Python<br/>synopsis</td>
@@ -198,16 +198,16 @@ img.add_border {
 <br/>
 <a id="enum:boolean_op" name="enum:boolean_op"></a>simIGL.boolean_op
 <table class="apiConstantsTable"><tbody><tr><td>
-<div><strong>union</strong></div>
-<div><strong>intersection</strong></div>
-<div><strong>difference</strong></div>
-<div><strong>symmetric_difference</strong></div>
-<div><strong>resolve</strong></div>
+<div>union</div>
+<div>intersection</div>
+<div>difference</div>
+<div>symmetric_difference</div>
+<div>resolve</div>
 </td></tr></tbody></table>
 </td></tr>
 <tr><td class="section" id="structs" style="display: none;">
 <br/><br/><h4>Data structures</h4>
-<p>Data structures are used to pass complex data around. Create data structures in Lua in the form of a map, e.g.: <code>{line_size=3, add_to_legend=false, selectable=true}</code></p>
+<p>Data structures are used to pass complex data around. Create data structures in Lua in the form of a map, e.g.: <code>{line_size=3, add_to_legend=false, selectable=true}</pre></p>
 <br/>
 <a id="struct:mesh" name="struct:mesh"></a>mesh
 <table class="apiTable">
@@ -221,11 +221,11 @@ img.add_border {
 <td class="apiTableLeftLParam">Fields</td>
 <td class="apiTableRightLParam">
 <div>
-<strong>vertices</strong> (table of float): vertices of the mesh (3 * n values)</div>
+vertices (table of float): vertices of the mesh (3 * n values)</div>
 <div>
-<strong>indices</strong> (table of int): triangle indices of the mesh (3 * m indices, zero-based)</div>
+indices (table of int): triangle indices of the mesh (3 * m indices, zero-based)</div>
 <div>
-<strong>normals</strong> (table of float): per-vertex normals (3 * n values)</div>
+normals (table of float): per-vertex normals (3 * n values)</div>
 </td>
 </tr>
 <tr class="apiTableTr">

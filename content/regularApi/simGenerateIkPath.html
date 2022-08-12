@@ -33,14 +33,14 @@ C/C++<br>synopsis
 <tr class=apiTableTr> 
 <td class=apiTableLeftCParam>C/C++<br>parameters</td> 
 <td class=apiTableRightCParam>
-<div><strong>ikGroupHandle</strong>: the handle of an IK group that is in charge of bringing the manipulator's tip onto a target. The IK group can also be marked as <em>explicit handling</em> if needed. See also <a href="simGetIkGroupHandle.html">simGetIkGroupHandle</a>.</div>
-<div><strong>jointCnt</strong>: the number of joint handles provided in the <em>jointHandles</em> array.</div>
-<div><strong>jointHandles</strong> (input): an array with <em>jointCnt</em> entries, that specifies the joint handles for the joints we wish to retrieve the values calculated by the IK.</div>
-<div><strong>ptCnt</strong>: the desired number of path points. Each path point contains a robot configuration. A minimum of two path points is required. If the tip-target dummy distance is large, a larger number for <em>ptCnt</em> leads to better results for this function.</div>
-<div><strong>collisionPairCnt</strong>: the number of collision pairs. Can be 0 if collision checking is not required.</div>
-<div><strong>collisionPairs</strong>: an array containing 2 <a href="../entities.html">entity</a> handles for each collision pair. A collision pair is represented by a collider and a collidee, that will be tested against each other. The first pair could be used for robot self-collision testing, and a second pair could be used for robot-environment collision testing. The collider can be an <a href="../objects.html">object</a> or a <a href="../collections.html">collection</a> handle. The collidee can be an object or collection handle, or <em>sim.handle_all</em>, in which case the collider will be checked agains all other collidable objects in the scene. Can be nullptr if collision checking is not required.</div>
-<div><strong>jointOptions</strong>: a bit-coded value corresponding to each specified joint handle. Bit 0 (i.e. 1) indicates the corresponding joint is dependent of another joint. Can be nullptr.</div>
-<div><strong>reserved</strong>: reserved for future extension. Set to nullptr.</div>
+<div>ikGroupHandle: the handle of an IK group that is in charge of bringing the manipulator's tip onto a target. The IK group can also be marked as <em>explicit handling</em> if needed. See also <a href="simGetIkGroupHandle.html">simGetIkGroupHandle</a>.</div>
+<div>jointCnt: the number of joint handles provided in the <em>jointHandles</em> array.</div>
+<div>jointHandles (input): an array with <em>jointCnt</em> entries, that specifies the joint handles for the joints we wish to retrieve the values calculated by the IK.</div>
+<div>ptCnt: the desired number of path points. Each path point contains a robot configuration. A minimum of two path points is required. If the tip-target dummy distance is large, a larger number for <em>ptCnt</em> leads to better results for this function.</div>
+<div>collisionPairCnt: the number of collision pairs. Can be 0 if collision checking is not required.</div>
+<div>collisionPairs: an array containing 2 <a href="../entities.html">entity</a> handles for each collision pair. A collision pair is represented by a collider and a collidee, that will be tested against each other. The first pair could be used for robot self-collision testing, and a second pair could be used for robot-environment collision testing. The collider can be an <a href="../objects.html">object</a> or a <a href="../collections.html">collection</a> handle. The collidee can be an object or collection handle, or <em>sim.handle_all</em>, in which case the collider will be checked agains all other collidable objects in the scene. Can be nullptr if collision checking is not required.</div>
+<div>jointOptions: a bit-coded value corresponding to each specified joint handle. Bit 0 (i.e. 1) indicates the corresponding joint is dependent of another joint. Can be nullptr.</div>
+<div>reserved: reserved for future extension. Set to nullptr.</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 

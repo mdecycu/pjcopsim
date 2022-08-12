@@ -33,10 +33,10 @@ C/C++<br>synopsis
 <tr class=apiTableTr> 
 <td class=apiTableLeftCParam>C/C++<br>parameters</td> 
 <td class=apiTableRightCParam>
-<div><strong>sensorHandle</strong>: handle of the proximity sensor object</div>
-<div><strong>entityHandle</strong>: handle of entity to detect (object or collection), or sim.handle_all to detect all detectable objects<br>
+<div>sensorHandle: handle of the proximity sensor object</div>
+<div>entityHandle: handle of entity to detect (object or collection), or sim.handle_all to detect all detectable objects<br>
 </div>
-<div><strong>detectedPoint</strong>: coordinates of detected point relative to the sensor origin (detectedPoint[0]-detectedPoint[2]), and distance of detected point to the sensor origin (detectedPoint[3]). Can be nullptr<br>
+<div>detectedPoint: coordinates of detected point relative to the sensor origin (detectedPoint[0]-detectedPoint[2]), and distance of detected point to the sensor origin (detectedPoint[3]). Can be nullptr<br>
 </div>
 <div></div>
 </td> 
@@ -59,8 +59,8 @@ Lua<br>synopsis
 <tr class=apiTableTr> 
 <td class=apiTableLeftLParam>Lua<br>parameters</td> 
 <td class=apiTableRightLParam>
-<div><strong>sensorHandle</strong>: handle of the proximity sensor object</div>
-<div><strong>entityHandle</strong>: handle of entity to detect (object or collection), or sim.handle_all to detect all detectable objects
+<div>sensorHandle: handle of the proximity sensor object</div>
+<div>entityHandle: handle of entity to detect (object or collection), or sim.handle_all to detect all detectable objects
 </div></td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -68,12 +68,12 @@ Lua<br>synopsis
 Lua<br>return values
 </td> 
 <td class=apiTableRightLRet>
-<div><strong>result</strong>:  0 (not detected) or 1 (detected)</div>
-<div><strong>distance</strong>: distance from the sensor origin to the detected point. Is nil if result is different from 1<br>
+<div>result:  0 (not detected) or 1 (detected)</div>
+<div>distance: distance from the sensor origin to the detected point. Is nil if result is different from 1<br>
 </div>
-<div><strong>detectedPoint</strong>: position of the detected point relative to the sensor origin. Is nil if result is different from 1</div>
-<div><strong>detectedObjectHandle</strong>: handle of detected object. Is nil if result is different from 1</div>
-<div><strong>surfaceNormalVector</strong>: normal vector of the surface where the point was detected. Normalized. Relative to the sensor reference frame. Is nil if result is different from 1</div>
+<div>detectedPoint: position of the detected point relative to the sensor origin. Is nil if result is different from 1</div>
+<div>detectedObjectHandle: handle of detected object. Is nil if result is different from 1</div>
+<div>surfaceNormalVector: normal vector of the surface where the point was detected. Normalized. Relative to the sensor reference frame. Is nil if result is different from 1</div>
 </td> 
 </tr> 
 

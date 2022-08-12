@@ -166,13 +166,13 @@ img.add_border {
 <li>open of the documentation for the API function/constant under the mouse pointer, via the context menu</li>
 <p>The API functions can easily be accessed by typing the first 3 letters (usually <em>sim</em>). When a script was modified, there is no need to explicitly save the changes: closing the script editor, saving the scene or starting a <a href="simulation.html">simulation</a> will automatically apply the changes to the script. When a simulation is running, modifications to a given script will only take effect once a new simulation run is started. The user can also explicitely restart/reset a given script, for changes to take immediately effect.</p>
 <p>If you have recurring functions you wish to access from a given script, or if you simply wish to run code from an external file, you can do this with following for a Lua script:</p>
-<code class="hljs language-lua coppelia-coppeliasim-script">
+<pre class="brush:lua;auto-links:false;toolbar:false" contenteditable="false">
 require "myExternalLuaFile"
-</code>
+</pre>
 <p>and for a Python script:</p>
-<code class="hljs language-python coppelia-coppeliasim-script">
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">
 #pythonWrapper(myExternalLuaFile)  
-</code>
+</pre>
 <p>In that case, make sure the file is named <em>myExternalLuaFile.lua</em> or <em>myExternalLuaFile.py</em>, and do not forget to distribute it together with your scene or model, since that code will not be part of a CoppeliaSim file anymore. Searched path are usually following:</p>
 <li><em>&lt;CoppeliaSim executable&gt;/</em></li>
 <li><em>&lt;CoppeliaSim executable&gt;/lua/</em></li>

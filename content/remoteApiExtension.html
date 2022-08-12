@@ -21,7 +21,7 @@
 
 <p>Instead of extending the functions that the legacy remote API offers, one can  use the generic legacy remote API function <a href="remoteApiFunctions.htm#simxCallScriptFunction">simxCallScriptFunction</a>: this will call a CoppeliaSim script function, which can then execute any type of operation locally, then return data. The called script function should always have following input/output form:</p>
 
-<code class="hljs language-lua coppelia-coppeliasim-script">
+<pre class="brush:lua;auto-links:false;toolbar:false" contenteditable="false">
 function myFunctionName(inInts,inFloats,inStrings,inBuffer)
     -- inInts, inFloats and inStrings are tables
     -- inBuffer is a string
@@ -30,7 +30,7 @@ function myFunctionName(inInts,inFloats,inStrings,inBuffer)
 
     -- Always return 3 tables and a string, e.g.:
     return {},{},{},''
-end</code>
+end</pre>
 
 <br>
 
@@ -50,7 +50,7 @@ if res==sim.simx_return_ok:
     print (retInts)
     print (retFloats)
     print (retStrings)
-    print (retBuffer)</code>
+    print (retBuffer)</pre>
 
 <br>
 

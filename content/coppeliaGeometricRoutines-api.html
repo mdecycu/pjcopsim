@@ -288,7 +288,7 @@ td.section { margin: 0; padding: 0; }
 <tr class="apiTableTr">
 <td class="apiTableLeftCParam">Arguments</td>
 <td class="apiTableRightCParam">
-<div><strong>meshObbStruct</strong>: the mesh object to duplicate.</div>
+<div>meshObbStruct: the mesh object to duplicate.</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -316,7 +316,7 @@ td.section { margin: 0; padding: 0; }
 <tr class="apiTableTr">
 <td class="apiTableLeftCParam">Arguments</td>
 <td class="apiTableRightCParam">
-<div><strong>ocStruct</strong>: the OC-tree object to duplicate.</div>
+<div>ocStruct: the OC-tree object to duplicate.</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -344,7 +344,7 @@ td.section { margin: 0; padding: 0; }
 <tr class="apiTableTr">
 <td class="apiTableLeftCParam">Arguments</td>
 <td class="apiTableRightCParam">
-<div><strong>pcStruct</strong>: the point-cloud object to duplicate.</div>
+<div>pcStruct: the point-cloud object to duplicate.</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -372,13 +372,13 @@ td.section { margin: 0; padding: 0; }
 <tr class="apiTableTr">
 <td class="apiTableLeftCParam">Arguments</td>
 <td class="apiTableRightCParam">
-<div><strong>vertices</strong>: an array with the vertices of the mesh, expressed relative to the world origin.</div>
-<div><strong>verticesSize</strong>: the size of the vertex array, i.e. 3*vertexCount.</div>
-<div><strong>indices</strong>: an array with the indices of the mesh.</div>
-<div><strong>indicesSize</strong>: the size of the index array, i.e. each triangle takes 3 indices.</div>
-<div><strong>meshOrigin</strong>: the transformation frame of the mesh. Can be nullptr, in which case the frame of the mesh is located at the world origin.</div>
-<div><strong>triangleEdgeMaxLength</strong>: the maximum triangle size used internally for efficient calculations. A smaller size usually results in faster calculations, but larger calculation structures.</div>
-<div><strong>maxTrianglesInBoundingBox</strong>: the maximum number of triangles in leaf bounding boxes, used internally for efficient calculations. A smaller value usually results in faster calculations, but larger calculation structures.</div>
+<div>vertices: an array with the vertices of the mesh, expressed relative to the world origin.</div>
+<div>verticesSize: the size of the vertex array, i.e. 3*vertexCount.</div>
+<div>indices: an array with the indices of the mesh.</div>
+<div>indicesSize: the size of the index array, i.e. each triangle takes 3 indices.</div>
+<div>meshOrigin: the transformation frame of the mesh. Can be nullptr, in which case the frame of the mesh is located at the world origin.</div>
+<div>triangleEdgeMaxLength: the maximum triangle size used internally for efficient calculations. A smaller size usually results in faster calculations, but larger calculation structures.</div>
+<div>maxTrianglesInBoundingBox: the maximum number of triangles in leaf bounding boxes, used internally for efficient calculations. A smaller value usually results in faster calculations, but larger calculation structures.</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -406,12 +406,12 @@ td.section { margin: 0; padding: 0; }
 <tr class="apiTableTr">
 <td class="apiTableLeftCParam">Arguments</td>
 <td class="apiTableRightCParam">
-<div><strong>points</strong>: an array with point data, expressed relative to the world origin.</div>
-<div><strong>pointCnt</strong>: the number of provided points.</div>
-<div><strong>octreeOrigin</strong>: the transformation frame of the OC-tree. Can be nullptr, in which case the frame of the OC-tree is located at the world origin.</div>
-<div><strong>cellS</strong>: The desired OC-tree voxel size.</div>
-<div><strong>rgbData</strong>: the RGB colors (0-255)of the various points (i.e. one color per point).</div>
-<div><strong>usrData</strong>: the user data of the various points (i.e. one user data per point).</div>
+<div>points: an array with point data, expressed relative to the world origin.</div>
+<div>pointCnt: the number of provided points.</div>
+<div>octreeOrigin: the transformation frame of the OC-tree. Can be nullptr, in which case the frame of the OC-tree is located at the world origin.</div>
+<div>cellS: The desired OC-tree voxel size.</div>
+<div>rgbData: the RGB colors (0-255)of the various points (i.e. one color per point).</div>
+<div>usrData: the user data of the various points (i.e. one user data per point).</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -439,12 +439,12 @@ td.section { margin: 0; padding: 0; }
 <tr class="apiTableTr">
 <td class="apiTableLeftCParam">Arguments</td>
 <td class="apiTableRightCParam">
-<div><strong>meshObbStruct</strong>: the mesh object.</div>
-<div><strong>meshTransformation</strong>: the transformation frame of the mesh object.</div>
-<div><strong>octreeOrigin</strong>: the transformation frame of the OC-tree. Can be nullptr, in which case the frame of the OC-tree is located at the world origin.</div>
-<div><strong>cellS</strong>: The desired OC-tree voxel size.</div>
-<div><strong>rgbData</strong>: the RGB color (0-255) of the generated voxels.</div>
-<div><strong>usrData</strong>: the user data of the generated voxels.</div>
+<div>meshObbStruct: the mesh object.</div>
+<div>meshTransformation: the transformation frame of the mesh object.</div>
+<div>octreeOrigin: the transformation frame of the OC-tree. Can be nullptr, in which case the frame of the OC-tree is located at the world origin.</div>
+<div>cellS: The desired OC-tree voxel size.</div>
+<div>rgbData: the RGB color (0-255) of the generated voxels.</div>
+<div>usrData: the user data of the generated voxels.</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -472,12 +472,12 @@ td.section { margin: 0; padding: 0; }
 <tr class="apiTableTr">
 <td class="apiTableLeftCParam">Arguments</td>
 <td class="apiTableRightCParam">
-<div><strong>otherOctreeStruct</strong>: the other OC-tree object.</div>
-<div><strong>otherOctreeTransformation</strong>: the transformation frame of the other OC-tree object.</div>
-<div><strong>newOctreeOrigin</strong>: the transformation frame of the new OC-tree. Can be nullptr, in which case the frame of the new OC-tree is located at the world origin.</div>
-<div><strong>newOctreeCellS</strong>: The desired OC-tree voxel size.</div>
-<div><strong>rgbData</strong>: the RGB color (0-255) of the generated voxels.</div>
-<div><strong>usrData</strong>: the user data of the generated voxels.</div>
+<div>otherOctreeStruct: the other OC-tree object.</div>
+<div>otherOctreeTransformation: the transformation frame of the other OC-tree object.</div>
+<div>newOctreeOrigin: the transformation frame of the new OC-tree. Can be nullptr, in which case the frame of the new OC-tree is located at the world origin.</div>
+<div>newOctreeCellS: The desired OC-tree voxel size.</div>
+<div>rgbData: the RGB color (0-255) of the generated voxels.</div>
+<div>usrData: the user data of the generated voxels.</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -505,12 +505,12 @@ td.section { margin: 0; padding: 0; }
 <tr class="apiTableTr">
 <td class="apiTableLeftCParam">Arguments</td>
 <td class="apiTableRightCParam">
-<div><strong>points</strong>: an array with point data, expressed relative to the world origin.</div>
-<div><strong>pointCnt</strong>: the number of provided points.</div>
-<div><strong>octreeOrigin</strong>: the transformation frame of the OC-tree. Can be nullptr, in which case the frame of the OC-tree is located at the world origin.</div>
-<div><strong>cellS</strong>: The desired OC-tree voxel size.</div>
-<div><strong>rgbData</strong>: the RGB color (0-255) of the generated voxels.</div>
-<div><strong>usrData</strong>: the user data of the generated voxels.</div>
+<div>points: an array with point data, expressed relative to the world origin.</div>
+<div>pointCnt: the number of provided points.</div>
+<div>octreeOrigin: the transformation frame of the OC-tree. Can be nullptr, in which case the frame of the OC-tree is located at the world origin.</div>
+<div>cellS: The desired OC-tree voxel size.</div>
+<div>rgbData: the RGB color (0-255) of the generated voxels.</div>
+<div>usrData: the user data of the generated voxels.</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -538,13 +538,13 @@ td.section { margin: 0; padding: 0; }
 <tr class="apiTableTr">
 <td class="apiTableLeftCParam">Arguments</td>
 <td class="apiTableRightCParam">
-<div><strong>points</strong>: an array with point data, expressed relative to the world origin.</div>
-<div><strong>pointCnt</strong>: the number of provided points.</div>
-<div><strong>ptcloudOrigin</strong>: the transformation frame of the point-cloud. Can be nullptr, in which case the frame of the point-cloud is located at the world origin.</div>
-<div><strong>cellS</strong>: The desired voxel size of the underlying OC-tree.</div>
-<div><strong>maxPointCnt</strong>: The maximum amount of points inside of a OC-tree voxel.</div>
-<div><strong>rgbData</strong>: the RGB color (0-255) of the generated points. Specify one color per point.</div>
-<div><strong>proximityTol</strong>: the distance tolerance to other points (i.e. point-point distances below the specified value are not permitted and points will be omitted).</div>
+<div>points: an array with point data, expressed relative to the world origin.</div>
+<div>pointCnt: the number of provided points.</div>
+<div>ptcloudOrigin: the transformation frame of the point-cloud. Can be nullptr, in which case the frame of the point-cloud is located at the world origin.</div>
+<div>cellS: The desired voxel size of the underlying OC-tree.</div>
+<div>maxPointCnt: The maximum amount of points inside of a OC-tree voxel.</div>
+<div>rgbData: the RGB color (0-255) of the generated points. Specify one color per point.</div>
+<div>proximityTol: the distance tolerance to other points (i.e. point-point distances below the specified value are not permitted and points will be omitted).</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -572,13 +572,13 @@ td.section { margin: 0; padding: 0; }
 <tr class="apiTableTr">
 <td class="apiTableLeftCParam">Arguments</td>
 <td class="apiTableRightCParam">
-<div><strong>points</strong>: an array with point data, expressed relative to the world origin.</div>
-<div><strong>pointCnt</strong>: the number of provided points.</div>
-<div><strong>ptcloudOrigin</strong>: the transformation frame of the point-cloud. Can be nullptr, in which case the frame of the point-cloud is located at the world origin.</div>
-<div><strong>cellS</strong>: The desired voxel size of the underlying OC-tree.</div>
-<div><strong>maxPointCnt</strong>: The maximum amount of points inside of a OC-tree voxel.</div>
-<div><strong>rgbData</strong>: the RGB color (0-255) of the generated points.</div>
-<div><strong>proximityTol</strong>: the distance tolerance to other points (i.e. point-point distances below the specified value are not permitted and points will be omitted).</div>
+<div>points: an array with point data, expressed relative to the world origin.</div>
+<div>pointCnt: the number of provided points.</div>
+<div>ptcloudOrigin: the transformation frame of the point-cloud. Can be nullptr, in which case the frame of the point-cloud is located at the world origin.</div>
+<div>cellS: The desired voxel size of the underlying OC-tree.</div>
+<div>maxPointCnt: The maximum amount of points inside of a OC-tree voxel.</div>
+<div>rgbData: the RGB color (0-255) of the generated points.</div>
+<div>proximityTol: the distance tolerance to other points (i.e. point-point distances below the specified value are not permitted and points will be omitted).</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -606,7 +606,7 @@ td.section { margin: 0; padding: 0; }
 <tr class="apiTableTr">
 <td class="apiTableLeftCParam">Arguments</td>
 <td class="apiTableRightCParam">
-<div><strong>meshObbStruct</strong>: a pointer to the mesh object.</div>
+<div>meshObbStruct: a pointer to the mesh object.</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -634,7 +634,7 @@ td.section { margin: 0; padding: 0; }
 <tr class="apiTableTr">
 <td class="apiTableLeftCParam">Arguments</td>
 <td class="apiTableRightCParam">
-<div><strong>ocStruct</strong>: a pointer to the OC-tree object.</div>
+<div>ocStruct: a pointer to the OC-tree object.</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -662,7 +662,7 @@ td.section { margin: 0; padding: 0; }
 <tr class="apiTableTr">
 <td class="apiTableLeftCParam">Arguments</td>
 <td class="apiTableRightCParam">
-<div><strong>pcStruct</strong>: a pointer to the point-cloud object.</div>
+<div>pcStruct: a pointer to the point-cloud object.</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -690,10 +690,10 @@ td.section { margin: 0; padding: 0; }
 <tr class="apiTableTr">
 <td class="apiTableLeftCParam">Arguments</td>
 <td class="apiTableRightCParam">
-<div><strong>box1Transformation</strong>: the transformation frame of the first cuboid.</div>
-<div><strong>box1HalfSize</strong>: the half-size of the first cuboid.</div>
-<div><strong>box2Transformation</strong>: the transformation frame of the second cuboid.</div>
-<div><strong>box2HalfSize</strong>: the half-size of the second cuboid.</div>
+<div>box1Transformation: the transformation frame of the first cuboid.</div>
+<div>box1HalfSize: the half-size of the first cuboid.</div>
+<div>box2Transformation: the transformation frame of the second cuboid.</div>
+<div>box2HalfSize: the half-size of the second cuboid.</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -721,11 +721,11 @@ td.section { margin: 0; padding: 0; }
 <tr class="apiTableTr">
 <td class="apiTableLeftCParam">Arguments</td>
 <td class="apiTableRightCParam">
-<div><strong>box1Transformation</strong>: the transformation frame of the first cuboid.</div>
-<div><strong>box1HalfSize</strong>: the half-size of the first cuboid.</div>
-<div><strong>box2Transformation</strong>: the transformation frame of the second cuboid.</div>
-<div><strong>box2HalfSize</strong>: the half-size of the second cuboid.</div>
-<div><strong>boxesAreSolid</strong>: whether the two cuboids are solid. If not, then cuboid A being fully encompassed by cuboid B will not lead to a collision detection.</div>
+<div>box1Transformation: the transformation frame of the first cuboid.</div>
+<div>box1HalfSize: the half-size of the first cuboid.</div>
+<div>box2Transformation: the transformation frame of the second cuboid.</div>
+<div>box2HalfSize: the half-size of the second cuboid.</div>
+<div>boxesAreSolid: whether the two cuboids are solid. If not, then cuboid A being fully encompassed by cuboid B will not lead to a collision detection.</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -753,15 +753,15 @@ td.section { margin: 0; padding: 0; }
 <tr class="apiTableTr">
 <td class="apiTableLeftCParam">Arguments</td>
 <td class="apiTableRightCParam">
-<div><strong>box1Transformation</strong>: the transformation frame of the first cuboid.</div>
-<div><strong>box1HalfSize</strong>: the half-size of the first cuboid.</div>
-<div><strong>box2Transformation</strong>: the transformation frame of the second cuboid.</div>
-<div><strong>box2HalfSize</strong>: the half-size of the second cuboid.</div>
-<div><strong>boxesAreSolid</strong>: whether the two cuboids are solid. If true, then cuboid A being fully encompassed by cuboid B will always lead to a distance of zero between the two cuboids.</div>
-<div><strong>dist</strong>: the distance threshold as input, and the minimum distance as output if it is below the threshold.</div>
-<div><strong>distSegPt1</strong>: the minimum distance point on the first cuboid.</div>
-<div><strong>distSegPt2</strong>: the minimum distance point on the second cuboid.</div>
-<div><strong>altRoutine</strong>: if true, an alternative calculation routine will be used.</div>
+<div>box1Transformation: the transformation frame of the first cuboid.</div>
+<div>box1HalfSize: the half-size of the first cuboid.</div>
+<div>box2Transformation: the transformation frame of the second cuboid.</div>
+<div>box2HalfSize: the half-size of the second cuboid.</div>
+<div>boxesAreSolid: whether the two cuboids are solid. If true, then cuboid A being fully encompassed by cuboid B will always lead to a distance of zero between the two cuboids.</div>
+<div>dist: the distance threshold as input, and the minimum distance as output if it is below the threshold.</div>
+<div>distSegPt1: the minimum distance point on the first cuboid.</div>
+<div>distSegPt2: the minimum distance point on the second cuboid.</div>
+<div>altRoutine: if true, an alternative calculation routine will be used.</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -789,9 +789,9 @@ td.section { margin: 0; padding: 0; }
 <tr class="apiTableTr">
 <td class="apiTableLeftCParam">Arguments</td>
 <td class="apiTableRightCParam">
-<div><strong>boxTransformation</strong>: the transformation frame of the cuboid.</div>
-<div><strong>boxHalfSize</strong>: the half-size of the cuboid.</div>
-<div><strong>point</strong>: point position.</div>
+<div>boxTransformation: the transformation frame of the cuboid.</div>
+<div>boxHalfSize: the half-size of the cuboid.</div>
+<div>point: point position.</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -819,12 +819,12 @@ td.section { margin: 0; padding: 0; }
 <tr class="apiTableTr">
 <td class="apiTableLeftCParam">Arguments</td>
 <td class="apiTableRightCParam">
-<div><strong>boxTransformation</strong>: the transformation frame of the cuboid.</div>
-<div><strong>boxHalfSize</strong>: the half-size of the cuboid.</div>
-<div><strong>boxIsSolid</strong>: whether the cuboid is solid. If true, then the point being fully encompassed by the cuboid will always lead to a distance of zero.</div>
-<div><strong>point</strong>: position of the point.</div>
-<div><strong>dist</strong>: the distance threshold as input, and the minimum distance as output if it is below the threshold.</div>
-<div><strong>boxDistSegPt</strong>: the minimum distance point on the cuboid.</div>
+<div>boxTransformation: the transformation frame of the cuboid.</div>
+<div>boxHalfSize: the half-size of the cuboid.</div>
+<div>boxIsSolid: whether the cuboid is solid. If true, then the point being fully encompassed by the cuboid will always lead to a distance of zero.</div>
+<div>point: position of the point.</div>
+<div>dist: the distance threshold as input, and the minimum distance as output if it is below the threshold.</div>
+<div>boxDistSegPt: the minimum distance point on the cuboid.</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -852,11 +852,11 @@ td.section { margin: 0; padding: 0; }
 <tr class="apiTableTr">
 <td class="apiTableLeftCParam">Arguments</td>
 <td class="apiTableRightCParam">
-<div><strong>boxTransformation</strong>: the transformation frame of the cuboid.</div>
-<div><strong>boxHalfSize</strong>: the half-size of the cuboid.</div>
-<div><strong>boxIsSolid</strong>: whether the cuboid is solid. If not, then the segment being fully encompassed by the cuboid will not lead to a collision detection.</div>
-<div><strong>segmentEndPoint</strong>: position of vertex A on the segment.</div>
-<div><strong>segmentVector</strong>: vector stretching from vertex A to vertex B on the segment.</div>
+<div>boxTransformation: the transformation frame of the cuboid.</div>
+<div>boxHalfSize: the half-size of the cuboid.</div>
+<div>boxIsSolid: whether the cuboid is solid. If not, then the segment being fully encompassed by the cuboid will not lead to a collision detection.</div>
+<div>segmentEndPoint: position of vertex A on the segment.</div>
+<div>segmentVector: vector stretching from vertex A to vertex B on the segment.</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -884,15 +884,15 @@ td.section { margin: 0; padding: 0; }
 <tr class="apiTableTr">
 <td class="apiTableLeftCParam">Arguments</td>
 <td class="apiTableRightCParam">
-<div><strong>boxTransformation</strong>: the transformation frame of the cuboid.</div>
-<div><strong>boxHalfSize</strong>: the half-size of the cuboid.</div>
-<div><strong>boxIsSolid</strong>: whether the cuboid is solid. If true, then the segment being fully encompassed by the cuboid will always lead to a distance of zero.</div>
-<div><strong>segmentEndPoint</strong>: position of vertex A on the segment.</div>
-<div><strong>segmentVector</strong>: vector stretching from vertex A to vertex B on the segment.</div>
-<div><strong>dist</strong>: the distance threshold as input, and the minimum distance as output if it is below the threshold.</div>
-<div><strong>boxDistSegPt</strong>: the minimum distance point on the cuboid.</div>
-<div><strong>segmentSegPt</strong>: the minimum distance point on the segment.</div>
-<div><strong>altRoutine</strong>: if true, an alternative calculation routine will be used.</div>
+<div>boxTransformation: the transformation frame of the cuboid.</div>
+<div>boxHalfSize: the half-size of the cuboid.</div>
+<div>boxIsSolid: whether the cuboid is solid. If true, then the segment being fully encompassed by the cuboid will always lead to a distance of zero.</div>
+<div>segmentEndPoint: position of vertex A on the segment.</div>
+<div>segmentVector: vector stretching from vertex A to vertex B on the segment.</div>
+<div>dist: the distance threshold as input, and the minimum distance as output if it is below the threshold.</div>
+<div>boxDistSegPt: the minimum distance point on the cuboid.</div>
+<div>segmentSegPt: the minimum distance point on the segment.</div>
+<div>altRoutine: if true, an alternative calculation routine will be used.</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -920,12 +920,12 @@ td.section { margin: 0; padding: 0; }
 <tr class="apiTableTr">
 <td class="apiTableLeftCParam">Arguments</td>
 <td class="apiTableRightCParam">
-<div><strong>boxTransformation</strong>: the transformation frame of the cuboid.</div>
-<div><strong>boxHalfSize</strong>: the half-size of the cuboid.</div>
-<div><strong>boxIsSolid</strong>: whether the cuboid is solid. If not, then the triangle being fully encompassed by the cuboid will not lead to a collision detection.</div>
-<div><strong>p</strong>: position of vertex A on the triangle.</div>
-<div><strong>v</strong>: vector stretching from vertex A to vertex B on the triangle.</div>
-<div><strong>w</strong>: vector stretching from vertex A to vertex C on the triangle.</div>
+<div>boxTransformation: the transformation frame of the cuboid.</div>
+<div>boxHalfSize: the half-size of the cuboid.</div>
+<div>boxIsSolid: whether the cuboid is solid. If not, then the triangle being fully encompassed by the cuboid will not lead to a collision detection.</div>
+<div>p: position of vertex A on the triangle.</div>
+<div>v: vector stretching from vertex A to vertex B on the triangle.</div>
+<div>w: vector stretching from vertex A to vertex C on the triangle.</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -953,16 +953,16 @@ td.section { margin: 0; padding: 0; }
 <tr class="apiTableTr">
 <td class="apiTableLeftCParam">Arguments</td>
 <td class="apiTableRightCParam">
-<div><strong>boxTransformation</strong>: the transformation frame of the cuboid.</div>
-<div><strong>boxHalfSize</strong>: the half-size of the cuboid.</div>
-<div><strong>boxIsSolid</strong>: whether the cuboid is solid. If true, then the triangle being fully encompassed by the cuboid will always lead to a distance of zero.</div>
-<div><strong>p</strong>: position of vertex A on the triangle.</div>
-<div><strong>v</strong>: vector stretching from vertex A to vertex B on the triangle.</div>
-<div><strong>w</strong>: vector stretching from vertex A to vertex C on the triangle.</div>
-<div><strong>dist</strong>: the distance threshold as input, and the minimum distance as output if it is below the threshold.</div>
-<div><strong>boxDistSegPt</strong>: the minimum distance point on the cuboid.</div>
-<div><strong>triangleDistSegPt</strong>: the minimum distance point on the triangle.</div>
-<div><strong>altRoutine</strong>: if true, an alternative calculation routine will be used.</div>
+<div>boxTransformation: the transformation frame of the cuboid.</div>
+<div>boxHalfSize: the half-size of the cuboid.</div>
+<div>boxIsSolid: whether the cuboid is solid. If true, then the triangle being fully encompassed by the cuboid will always lead to a distance of zero.</div>
+<div>p: position of vertex A on the triangle.</div>
+<div>v: vector stretching from vertex A to vertex B on the triangle.</div>
+<div>w: vector stretching from vertex A to vertex C on the triangle.</div>
+<div>dist: the distance threshold as input, and the minimum distance as output if it is below the threshold.</div>
+<div>boxDistSegPt: the minimum distance point on the cuboid.</div>
+<div>triangleDistSegPt: the minimum distance point on the triangle.</div>
+<div>altRoutine: if true, an alternative calculation routine will be used.</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -990,7 +990,7 @@ td.section { margin: 0; padding: 0; }
 <tr class="apiTableTr">
 <td class="apiTableLeftCParam">Arguments</td>
 <td class="apiTableRightCParam">
-<div><strong>serializationData</strong>: the serialization data previously generated with <a href="#geom_getMeshSerializationData">geom_getMeshSerializationData</a>.</div>
+<div>serializationData: the serialization data previously generated with <a href="#geom_getMeshSerializationData">geom_getMeshSerializationData</a>.</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -1018,13 +1018,13 @@ td.section { margin: 0; padding: 0; }
 <tr class="apiTableTr">
 <td class="apiTableLeftCParam">Arguments</td>
 <td class="apiTableRightCParam">
-<div><strong>mesh1ObbStruct</strong>: a pointer to the first mesh object.</div>
-<div><strong>mesh1Transformation</strong>: the transformation frame of the first mesh.</div>
-<div><strong>mesh2ObbStruct</strong>: a pointer to the second mesh object.</div>
-<div><strong>mesh2Transformation</strong>: the transformation frame of the second mesh.</div>
-<div><strong>intersections</strong>: if not nullptr, then all collisions will be extracted as interference segments (set to nullptr for fast operation).</div>
-<div><strong>mesh1Caching</strong>: a value that can be used to speed-up next collision checking between the same two entities (memorizes the colliding triangle in mesh 1).</div>
-<div><strong>mesh2Caching</strong>: a value that can be used to speed-up next collision checking between the same two entities (memorizes the colliding triangle in mesh 2).</div>
+<div>mesh1ObbStruct: a pointer to the first mesh object.</div>
+<div>mesh1Transformation: the transformation frame of the first mesh.</div>
+<div>mesh2ObbStruct: a pointer to the second mesh object.</div>
+<div>mesh2Transformation: the transformation frame of the second mesh.</div>
+<div>intersections: if not nullptr, then all collisions will be extracted as interference segments (set to nullptr for fast operation).</div>
+<div>mesh1Caching: a value that can be used to speed-up next collision checking between the same two entities (memorizes the colliding triangle in mesh 1).</div>
+<div>mesh2Caching: a value that can be used to speed-up next collision checking between the same two entities (memorizes the colliding triangle in mesh 2).</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -1052,15 +1052,15 @@ td.section { margin: 0; padding: 0; }
 <tr class="apiTableTr">
 <td class="apiTableLeftCParam">Arguments</td>
 <td class="apiTableRightCParam">
-<div><strong>mesh1ObbStruct</strong>: a pointer to the first mesh object.</div>
-<div><strong>mesh1Transformation</strong>: the transformation frame of the first mesh.</div>
-<div><strong>mesh2ObbStruct</strong>: a pointer to the second mesh object.</div>
-<div><strong>mesh2Transformation</strong>: the transformation frame of the second mesh.</div>
-<div><strong>dist</strong>: the distance threshold as input, and the minimum distance as output if it is below the threshold.</div>
-<div><strong>minDistSegPt1</strong>: the minimum distance point on the first mesh.</div>
-<div><strong>minDistSegPt2</strong>: the minimum distance point on the second mesh.</div>
-<div><strong>mesh1Caching</strong>: a value that can be used to speed-up next distance calculation between the same two entities (memorizes the triangle that holds the minimum distance point on the first mesh).</div>
-<div><strong>mesh2Caching</strong>: a value that can be used to speed-up next distance calculation between the same two entities (memorizes the triangle that holds the minimum distance point on the second mesh).</div>
+<div>mesh1ObbStruct: a pointer to the first mesh object.</div>
+<div>mesh1Transformation: the transformation frame of the first mesh.</div>
+<div>mesh2ObbStruct: a pointer to the second mesh object.</div>
+<div>mesh2Transformation: the transformation frame of the second mesh.</div>
+<div>dist: the distance threshold as input, and the minimum distance as output if it is below the threshold.</div>
+<div>minDistSegPt1: the minimum distance point on the first mesh.</div>
+<div>minDistSegPt2: the minimum distance point on the second mesh.</div>
+<div>mesh1Caching: a value that can be used to speed-up next distance calculation between the same two entities (memorizes the triangle that holds the minimum distance point on the first mesh).</div>
+<div>mesh2Caching: a value that can be used to speed-up next distance calculation between the same two entities (memorizes the triangle that holds the minimum distance point on the second mesh).</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -1088,12 +1088,12 @@ td.section { margin: 0; padding: 0; }
 <tr class="apiTableTr">
 <td class="apiTableLeftCParam">Arguments</td>
 <td class="apiTableRightCParam">
-<div><strong>meshObbStruct</strong>: a pointer to the mesh object.</div>
-<div><strong>meshTransformation</strong>: the transformation frame of the mesh.</div>
-<div><strong>ocStruct</strong>: a pointer to the OC-tree object.</div>
-<div><strong>octreeTransformation</strong>: the transformation frame of the OC-tree.</div>
-<div><strong>meshCaching</strong>: a value that can be used to speed-up next collision checking between the same two entities (memorizes the colliding triangle in the mesh).</div>
-<div><strong>ocCaching</strong>: a value that can be used to speed-up next collision checking between the same two entities (memorizes the colliding voxel in the OC-tree).</div>
+<div>meshObbStruct: a pointer to the mesh object.</div>
+<div>meshTransformation: the transformation frame of the mesh.</div>
+<div>ocStruct: a pointer to the OC-tree object.</div>
+<div>octreeTransformation: the transformation frame of the OC-tree.</div>
+<div>meshCaching: a value that can be used to speed-up next collision checking between the same two entities (memorizes the colliding triangle in the mesh).</div>
+<div>ocCaching: a value that can be used to speed-up next collision checking between the same two entities (memorizes the colliding voxel in the OC-tree).</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -1121,15 +1121,15 @@ td.section { margin: 0; padding: 0; }
 <tr class="apiTableTr">
 <td class="apiTableLeftCParam">Arguments</td>
 <td class="apiTableRightCParam">
-<div><strong>meshObbStruct</strong>: a pointer to the mesh object.</div>
-<div><strong>meshTransformation</strong>: the transformation frame of the mesh.</div>
-<div><strong>ocStruct</strong>: a pointer to the OC-tree object.</div>
-<div><strong>octreeTransformation</strong>: the transformation frame of the OC-tree.</div>
-<div><strong>dist</strong>: the distance threshold as input, and the minimum distance as output if it is below the threshold.</div>
-<div><strong>meshMinDistPt</strong>: the minimum distance point on the mesh.</div>
-<div><strong>ocMinDistPt</strong>: the minimum distance point on the OC-tree.</div>
-<div><strong>meshCaching</strong>: a value that can be used to speed-up next distance calculation between the same two entities (memorizes the triangle that holds the minimum distance point on the mesh).</div>
-<div><strong>ocCaching</strong>: a value that can be used to speed-up next distance calculation between the same two entities (memorizes the voxel that holds the minimum distance point on the OC-tree).</div>
+<div>meshObbStruct: a pointer to the mesh object.</div>
+<div>meshTransformation: the transformation frame of the mesh.</div>
+<div>ocStruct: a pointer to the OC-tree object.</div>
+<div>octreeTransformation: the transformation frame of the OC-tree.</div>
+<div>dist: the distance threshold as input, and the minimum distance as output if it is below the threshold.</div>
+<div>meshMinDistPt: the minimum distance point on the mesh.</div>
+<div>ocMinDistPt: the minimum distance point on the OC-tree.</div>
+<div>meshCaching: a value that can be used to speed-up next distance calculation between the same two entities (memorizes the triangle that holds the minimum distance point on the mesh).</div>
+<div>ocCaching: a value that can be used to speed-up next distance calculation between the same two entities (memorizes the voxel that holds the minimum distance point on the OC-tree).</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -1157,12 +1157,12 @@ td.section { margin: 0; padding: 0; }
 <tr class="apiTableTr">
 <td class="apiTableLeftCParam">Arguments</td>
 <td class="apiTableRightCParam">
-<div><strong>meshObbStruct</strong>: a pointer to the mesh object.</div>
-<div><strong>meshTransformation</strong>: the transformation frame of the mesh.</div>
-<div><strong>point</strong>: the position of the point.</div>
-<div><strong>dist</strong>: the distance threshold as input, and the minimum distance as output if it is below the threshold.</div>
-<div><strong>meshMinDistPt</strong>: the minimum distance point on the mesh.</div>
-<div><strong>caching</strong>: a value that can be used to speed-up next distance calculation between the same two entities (memorizes the triangle that holds the minimum distance point on the mesh).</div>
+<div>meshObbStruct: a pointer to the mesh object.</div>
+<div>meshTransformation: the transformation frame of the mesh.</div>
+<div>point: the position of the point.</div>
+<div>dist: the distance threshold as input, and the minimum distance as output if it is below the threshold.</div>
+<div>meshMinDistPt: the minimum distance point on the mesh.</div>
+<div>caching: a value that can be used to speed-up next distance calculation between the same two entities (memorizes the triangle that holds the minimum distance point on the mesh).</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -1190,15 +1190,15 @@ td.section { margin: 0; padding: 0; }
 <tr class="apiTableTr">
 <td class="apiTableLeftCParam">Arguments</td>
 <td class="apiTableRightCParam">
-<div><strong>meshObbStruct</strong>: a pointer to the mesh object.</div>
-<div><strong>meshTransformation</strong>: the transformation frame of the mesh.</div>
-<div><strong>pcStruct</strong>: a pointer to the point-cloud object.</div>
-<div><strong>pcTransformation</strong>: the transformation frame of the point-cloud.</div>
-<div><strong>dist</strong>: the distance threshold as input, and the minimum distance as output if it is below the threshold.</div>
-<div><strong>meshMinDistPt</strong>: the minimum distance point on the mesh.</div>
-<div><strong>pcMinDistPt</strong>: the minimum distance point on the point-cloud.</div>
-<div><strong>meshCaching</strong>: a value that can be used to speed-up next distance calculation between the same two entities (memorizes the triangle that holds the minimum distance point on the mesh).</div>
-<div><strong>pcCaching</strong>: a value that can be used to speed-up next distance calculation between the same two entities (memorizes the point that holds the minimum distance point on the point-cloud).</div>
+<div>meshObbStruct: a pointer to the mesh object.</div>
+<div>meshTransformation: the transformation frame of the mesh.</div>
+<div>pcStruct: a pointer to the point-cloud object.</div>
+<div>pcTransformation: the transformation frame of the point-cloud.</div>
+<div>dist: the distance threshold as input, and the minimum distance as output if it is below the threshold.</div>
+<div>meshMinDistPt: the minimum distance point on the mesh.</div>
+<div>pcMinDistPt: the minimum distance point on the point-cloud.</div>
+<div>meshCaching: a value that can be used to speed-up next distance calculation between the same two entities (memorizes the triangle that holds the minimum distance point on the mesh).</div>
+<div>pcCaching: a value that can be used to speed-up next distance calculation between the same two entities (memorizes the point that holds the minimum distance point on the point-cloud).</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -1226,12 +1226,12 @@ td.section { margin: 0; padding: 0; }
 <tr class="apiTableTr">
 <td class="apiTableLeftCParam">Arguments</td>
 <td class="apiTableRightCParam">
-<div><strong>meshObbStruct</strong>: a pointer to the mesh object.</div>
-<div><strong>meshTransformation</strong>: the transformation frame of the mesh.</div>
-<div><strong>segmentExtremity</strong>: position of vertex A on the segment.</div>
-<div><strong>segmentVector</strong>: vector stretching from vertex A to vertex B on the segment.</div>
-<div><strong>intersections</strong>: if not nullptr, then all collisions will be extracted as interference segments (where both segment points are always coincident) (set to nullptr for fast operation).</div>
-<div><strong>caching</strong>: a value that can be used to speed-up next collision checking between the same two entities (memorizes the colliding triangle in the mesh).</div>
+<div>meshObbStruct: a pointer to the mesh object.</div>
+<div>meshTransformation: the transformation frame of the mesh.</div>
+<div>segmentExtremity: position of vertex A on the segment.</div>
+<div>segmentVector: vector stretching from vertex A to vertex B on the segment.</div>
+<div>intersections: if not nullptr, then all collisions will be extracted as interference segments (where both segment points are always coincident) (set to nullptr for fast operation).</div>
+<div>caching: a value that can be used to speed-up next collision checking between the same two entities (memorizes the colliding triangle in the mesh).</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -1259,14 +1259,14 @@ td.section { margin: 0; padding: 0; }
 <tr class="apiTableTr">
 <td class="apiTableLeftCParam">Arguments</td>
 <td class="apiTableRightCParam">
-<div><strong>meshObbStruct</strong>: a pointer to the mesh object.</div>
-<div><strong>meshTransformation</strong>: the transformation frame of the mesh.</div>
-<div><strong>segmentEndPoint</strong>: position of vertex A on the segment.</div>
-<div><strong>segmentVector</strong>: vector stretching from vertex A to vertex B on the segment.</div>
-<div><strong>dist</strong>: the distance threshold as input, and the minimum distance as output if it is below the threshold.</div>
-<div><strong>meshMinDistPt</strong>: the minimum distance point on the mesh.</div>
-<div><strong>segmentDistSegPt</strong>: the minimum distance point on the segment.</div>
-<div><strong>caching</strong>: a value that can be used to speed-up next distance calculation between the same two entities (memorizes the triangle that holds the minimum distance point on the mesh).</div>
+<div>meshObbStruct: a pointer to the mesh object.</div>
+<div>meshTransformation: the transformation frame of the mesh.</div>
+<div>segmentEndPoint: position of vertex A on the segment.</div>
+<div>segmentVector: vector stretching from vertex A to vertex B on the segment.</div>
+<div>dist: the distance threshold as input, and the minimum distance as output if it is below the threshold.</div>
+<div>meshMinDistPt: the minimum distance point on the mesh.</div>
+<div>segmentDistSegPt: the minimum distance point on the segment.</div>
+<div>caching: a value that can be used to speed-up next distance calculation between the same two entities (memorizes the triangle that holds the minimum distance point on the mesh).</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -1294,8 +1294,8 @@ td.section { margin: 0; padding: 0; }
 <tr class="apiTableTr">
 <td class="apiTableLeftCParam">Arguments</td>
 <td class="apiTableRightCParam">
-<div><strong>meshObbStruct</strong>: a pointer to the mesh object.</div>
-<div><strong>serializationData</strong>: the serialization data.</div>
+<div>meshObbStruct: a pointer to the mesh object.</div>
+<div>serializationData: the serialization data.</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -1323,13 +1323,13 @@ td.section { margin: 0; padding: 0; }
 <tr class="apiTableTr">
 <td class="apiTableLeftCParam">Arguments</td>
 <td class="apiTableRightCParam">
-<div><strong>meshObbStruct</strong>: a pointer to the mesh object.</div>
-<div><strong>meshTransformation</strong>: the transformation frame of the mesh.</div>
-<div><strong>p</strong>: position of vertex A on the triangle.</div>
-<div><strong>v</strong>: vector stretching from vertex A to vertex B on the triangle.</div>
-<div><strong>w</strong>: vector stretching from vertex A to vertex C on the triangle.</div>
-<div><strong>intersections</strong>: if not nullptr, then all collisions will be extracted as interference segments (set to nullptr for fast operation).</div>
-<div><strong>caching</strong>: a value that can be used to speed-up next collision checking between the same two entities (memorizes the colliding triangle in the mesh).</div>
+<div>meshObbStruct: a pointer to the mesh object.</div>
+<div>meshTransformation: the transformation frame of the mesh.</div>
+<div>p: position of vertex A on the triangle.</div>
+<div>v: vector stretching from vertex A to vertex B on the triangle.</div>
+<div>w: vector stretching from vertex A to vertex C on the triangle.</div>
+<div>intersections: if not nullptr, then all collisions will be extracted as interference segments (set to nullptr for fast operation).</div>
+<div>caching: a value that can be used to speed-up next collision checking between the same two entities (memorizes the colliding triangle in the mesh).</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -1357,15 +1357,15 @@ td.section { margin: 0; padding: 0; }
 <tr class="apiTableTr">
 <td class="apiTableLeftCParam">Arguments</td>
 <td class="apiTableRightCParam">
-<div><strong>meshObbStruct</strong>: a pointer to the mesh object.</div>
-<div><strong>meshTransformation</strong>: the transformation frame of the mesh.</div>
-<div><strong>p</strong>: position of vertex A on the triangle.</div>
-<div><strong>v</strong>: vector stretching from vertex A to vertex B on the triangle.</div>
-<div><strong>w</strong>: vector stretching from vertex A to vertex C on the triangle.</div>
-<div><strong>dist</strong>: the distance threshold as input, and the minimum distance as output if it is below the threshold.</div>
-<div><strong>meshMinDistPt</strong>: the minimum distance point on the mesh.</div>
-<div><strong>triangleMinDistPt</strong>: the minimum distance point on the triangle.</div>
-<div><strong>caching</strong>: a value that can be used to speed-up next distance calculation between the same two entities (memorizes the triangle that holds the minimum distance point on the mesh).</div>
+<div>meshObbStruct: a pointer to the mesh object.</div>
+<div>meshTransformation: the transformation frame of the mesh.</div>
+<div>p: position of vertex A on the triangle.</div>
+<div>v: vector stretching from vertex A to vertex B on the triangle.</div>
+<div>w: vector stretching from vertex A to vertex C on the triangle.</div>
+<div>dist: the distance threshold as input, and the minimum distance as output if it is below the threshold.</div>
+<div>meshMinDistPt: the minimum distance point on the mesh.</div>
+<div>triangleMinDistPt: the minimum distance point on the triangle.</div>
+<div>caching: a value that can be used to speed-up next distance calculation between the same two entities (memorizes the triangle that holds the minimum distance point on the mesh).</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -1393,7 +1393,7 @@ td.section { margin: 0; padding: 0; }
 <tr class="apiTableTr">
 <td class="apiTableLeftCParam">Arguments</td>
 <td class="apiTableRightCParam">
-<div><strong>serializationData</strong>: the serialization data previously generated with <a href="#geom_getOctreeSerializationData">geom_getOctreeSerializationData</a>.</div>
+<div>serializationData: the serialization data previously generated with <a href="#geom_getOctreeSerializationData">geom_getOctreeSerializationData</a>.</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -1421,12 +1421,12 @@ td.section { margin: 0; padding: 0; }
 <tr class="apiTableTr">
 <td class="apiTableLeftCParam">Arguments</td>
 <td class="apiTableRightCParam">
-<div><strong>oc1Struct</strong>: a pointer to the first OC-tree object.</div>
-<div><strong>octree1Transformation</strong>: the transformation frame of the first OC-tree.</div>
-<div><strong>oc2Struct</strong>: a pointer to the second OC-tree object.</div>
-<div><strong>octree2Transformation</strong>: the transformation frame of the second OC-tree.</div>
-<div><strong>oc1Caching</strong>: a value that can be used to speed-up next collision checking between the same two entities (memorizes the colliding voxel in OC-tree 1).</div>
-<div><strong>oc2Caching</strong>: a value that can be used to speed-up next collision checking between the same two entities (memorizes the colliding voxel in OC-tree 2).</div>
+<div>oc1Struct: a pointer to the first OC-tree object.</div>
+<div>octree1Transformation: the transformation frame of the first OC-tree.</div>
+<div>oc2Struct: a pointer to the second OC-tree object.</div>
+<div>octree2Transformation: the transformation frame of the second OC-tree.</div>
+<div>oc1Caching: a value that can be used to speed-up next collision checking between the same two entities (memorizes the colliding voxel in OC-tree 1).</div>
+<div>oc2Caching: a value that can be used to speed-up next collision checking between the same two entities (memorizes the colliding voxel in OC-tree 2).</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -1454,15 +1454,15 @@ td.section { margin: 0; padding: 0; }
 <tr class="apiTableTr">
 <td class="apiTableLeftCParam">Arguments</td>
 <td class="apiTableRightCParam">
-<div><strong>oc1Struct</strong>: a pointer to the first OC-tree object.</div>
-<div><strong>octree1Transformation</strong>: the transformation frame of the first OC-tree.</div>
-<div><strong>oc2Struct</strong>: a pointer to the second OC-tree object.</div>
-<div><strong>octree2Transformation</strong>: the transformation frame of the second OC-tree.</div>
-<div><strong>dist</strong>: the distance threshold as input, and the minimum distance as output if it is below the threshold.</div>
-<div><strong>oc1MinDistPt</strong>: the minimum distance point on the first OC-tree.</div>
-<div><strong>oc2MinDistPt</strong>: the minimum distance point on the second OC-tree.</div>
-<div><strong>oc1Caching</strong>: a value that can be used to speed-up next distance calculation between the same two entities (memorizes the voxel that holds the minimum distance point on the first OC-tree).</div>
-<div><strong>oc2Caching</strong>: a value that can be used to speed-up next distance calculation between the same two entities (memorizes the voxel that holds the minimum distance point on the second OC-tree).</div>
+<div>oc1Struct: a pointer to the first OC-tree object.</div>
+<div>octree1Transformation: the transformation frame of the first OC-tree.</div>
+<div>oc2Struct: a pointer to the second OC-tree object.</div>
+<div>octree2Transformation: the transformation frame of the second OC-tree.</div>
+<div>dist: the distance threshold as input, and the minimum distance as output if it is below the threshold.</div>
+<div>oc1MinDistPt: the minimum distance point on the first OC-tree.</div>
+<div>oc2MinDistPt: the minimum distance point on the second OC-tree.</div>
+<div>oc1Caching: a value that can be used to speed-up next distance calculation between the same two entities (memorizes the voxel that holds the minimum distance point on the first OC-tree).</div>
+<div>oc2Caching: a value that can be used to speed-up next distance calculation between the same two entities (memorizes the voxel that holds the minimum distance point on the second OC-tree).</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -1490,11 +1490,11 @@ td.section { margin: 0; padding: 0; }
 <tr class="apiTableTr">
 <td class="apiTableLeftCParam">Arguments</td>
 <td class="apiTableRightCParam">
-<div><strong>ocStruct</strong>: a pointer to the OC-tree object.</div>
-<div><strong>octreeTransformation</strong>: the transformation frame of the OC-tree.</div>
-<div><strong>point</strong>: a point expressed relative to the world reference frame.</div>
-<div><strong>usrData</strong>: the user data of the colliding voxel.</div>
-<div><strong>caching</strong>: a value that can be used to speed-up next collision checking between the same two entities (memorizes the colliding voxel in the OC-tree).</div>
+<div>ocStruct: a pointer to the OC-tree object.</div>
+<div>octreeTransformation: the transformation frame of the OC-tree.</div>
+<div>point: a point expressed relative to the world reference frame.</div>
+<div>usrData: the user data of the colliding voxel.</div>
+<div>caching: a value that can be used to speed-up next collision checking between the same two entities (memorizes the colliding voxel in the OC-tree).</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -1522,12 +1522,12 @@ td.section { margin: 0; padding: 0; }
 <tr class="apiTableTr">
 <td class="apiTableLeftCParam">Arguments</td>
 <td class="apiTableRightCParam">
-<div><strong>ocStruct</strong>: a pointer to the OC-tree object.</div>
-<div><strong>octreeTransformation</strong>: the transformation frame of the OC-tree.</div>
-<div><strong>point</strong>: the position of the point.</div>
-<div><strong>dist</strong>: the distance threshold as input, and the minimum distance as output if it is below the threshold.</div>
-<div><strong>ocMinDistPt</strong>: the minimum distance point on the OC-tree.</div>
-<div><strong>ocCaching</strong>: a value that can be used to speed-up next distance calculation between the same two entities (memorizes the voxel that holds the minimum distance point on the OC-tree).</div>
+<div>ocStruct: a pointer to the OC-tree object.</div>
+<div>octreeTransformation: the transformation frame of the OC-tree.</div>
+<div>point: the position of the point.</div>
+<div>dist: the distance threshold as input, and the minimum distance as output if it is below the threshold.</div>
+<div>ocMinDistPt: the minimum distance point on the OC-tree.</div>
+<div>ocCaching: a value that can be used to speed-up next distance calculation between the same two entities (memorizes the voxel that holds the minimum distance point on the OC-tree).</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -1555,12 +1555,12 @@ td.section { margin: 0; padding: 0; }
 <tr class="apiTableTr">
 <td class="apiTableLeftCParam">Arguments</td>
 <td class="apiTableRightCParam">
-<div><strong>ocStruct</strong>: a pointer to the OC-tree object.</div>
-<div><strong>octreeTransformation</strong>: the transformation frame of the OC-tree.</div>
-<div><strong>pcStruct</strong>: a pointer to the point-cloud object.</div>
-<div><strong>ptcloudTransformation</strong>: the transformation frame of the point-cloud.</div>
-<div><strong>ocCaching</strong>: a value that can be used to speed-up next collision checking between the same two entities (memorizes the colliding voxel in the OC-tree).</div>
-<div><strong>pcCaching</strong>: a value that can be used to speed-up next collision checking between the same two entities (memorizes the colliding point in the point-cloud).</div>
+<div>ocStruct: a pointer to the OC-tree object.</div>
+<div>octreeTransformation: the transformation frame of the OC-tree.</div>
+<div>pcStruct: a pointer to the point-cloud object.</div>
+<div>ptcloudTransformation: the transformation frame of the point-cloud.</div>
+<div>ocCaching: a value that can be used to speed-up next collision checking between the same two entities (memorizes the colliding voxel in the OC-tree).</div>
+<div>pcCaching: a value that can be used to speed-up next collision checking between the same two entities (memorizes the colliding point in the point-cloud).</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -1588,15 +1588,15 @@ td.section { margin: 0; padding: 0; }
 <tr class="apiTableTr">
 <td class="apiTableLeftCParam">Arguments</td>
 <td class="apiTableRightCParam">
-<div><strong>ocStruct</strong>: a pointer to the OC-tree object.</div>
-<div><strong>octreeTransformation</strong>: the transformation frame of the OC-tree.</div>
-<div><strong>pcStruct</strong>: a pointer to the point-cloud object.</div>
-<div><strong>pcTransformation</strong>: the transformation frame of the point-cloud.</div>
-<div><strong>dist</strong>: the distance threshold as input, and the minimum distance as output if it is below the threshold.</div>
-<div><strong>ocMinDistPt</strong>: the minimum distance point on the OC-tree.</div>
-<div><strong>pcMinDistPt</strong>: the minimum distance point on the point-cloud.</div>
-<div><strong>ocCaching</strong>: a value that can be used to speed-up next distance calculation between the same two entities (memorizes the voxel that holds the minimum distance point on the OC-tree).</div>
-<div><strong>pcCaching</strong>: a value that can be used to speed-up next distance calculation between the same two entities (memorizes the point that holds the minimum distance on the point-cloud).</div>
+<div>ocStruct: a pointer to the OC-tree object.</div>
+<div>octreeTransformation: the transformation frame of the OC-tree.</div>
+<div>pcStruct: a pointer to the point-cloud object.</div>
+<div>pcTransformation: the transformation frame of the point-cloud.</div>
+<div>dist: the distance threshold as input, and the minimum distance as output if it is below the threshold.</div>
+<div>ocMinDistPt: the minimum distance point on the OC-tree.</div>
+<div>pcMinDistPt: the minimum distance point on the point-cloud.</div>
+<div>ocCaching: a value that can be used to speed-up next distance calculation between the same two entities (memorizes the voxel that holds the minimum distance point on the OC-tree).</div>
+<div>pcCaching: a value that can be used to speed-up next distance calculation between the same two entities (memorizes the point that holds the minimum distance on the point-cloud).</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -1624,11 +1624,11 @@ td.section { margin: 0; padding: 0; }
 <tr class="apiTableTr">
 <td class="apiTableLeftCParam">Arguments</td>
 <td class="apiTableRightCParam">
-<div><strong>ocStruct</strong>: a pointer to the OC-tree object.</div>
-<div><strong>octreeTransformation</strong>: the transformation frame of the OC-tree.</div>
-<div><strong>segmentExtremity</strong>: position of vertex A on the segment.</div>
-<div><strong>segmentVector</strong>: vector stretching from vertex A to vertex B on the segment.</div>
-<div><strong>caching</strong>: a value that can be used to speed-up next collision checking between the same two entities (memorizes the colliding voxel in the OC-tree).</div>
+<div>ocStruct: a pointer to the OC-tree object.</div>
+<div>octreeTransformation: the transformation frame of the OC-tree.</div>
+<div>segmentExtremity: position of vertex A on the segment.</div>
+<div>segmentVector: vector stretching from vertex A to vertex B on the segment.</div>
+<div>caching: a value that can be used to speed-up next collision checking between the same two entities (memorizes the colliding voxel in the OC-tree).</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -1656,14 +1656,14 @@ td.section { margin: 0; padding: 0; }
 <tr class="apiTableTr">
 <td class="apiTableLeftCParam">Arguments</td>
 <td class="apiTableRightCParam">
-<div><strong>ocStruct</strong>: a pointer to the OC-tree object.</div>
-<div><strong>octreeTransformation</strong>: the transformation frame of the OC-tree.</div>
-<div><strong>segmentEndPoint</strong>: position of vertex A on the segment.</div>
-<div><strong>segmentVector</strong>: vector stretching from vertex A to vertex B on the segment.</div>
-<div><strong>dist</strong>: the distance threshold as input, and the minimum distance as output if it is below the threshold.</div>
-<div><strong>ocMinDistPt</strong>: the minimum distance point on the OC-tree.</div>
-<div><strong>segmentDistSegPt</strong>: the minimum distance point on the segment.</div>
-<div><strong>ocCaching</strong>: a value that can be used to speed-up next distance calculation between the same two entities (memorizes the voxel that holds the minimum distance point on the OC-tree).</div>
+<div>ocStruct: a pointer to the OC-tree object.</div>
+<div>octreeTransformation: the transformation frame of the OC-tree.</div>
+<div>segmentEndPoint: position of vertex A on the segment.</div>
+<div>segmentVector: vector stretching from vertex A to vertex B on the segment.</div>
+<div>dist: the distance threshold as input, and the minimum distance as output if it is below the threshold.</div>
+<div>ocMinDistPt: the minimum distance point on the OC-tree.</div>
+<div>segmentDistSegPt: the minimum distance point on the segment.</div>
+<div>ocCaching: a value that can be used to speed-up next distance calculation between the same two entities (memorizes the voxel that holds the minimum distance point on the OC-tree).</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -1691,8 +1691,8 @@ td.section { margin: 0; padding: 0; }
 <tr class="apiTableTr">
 <td class="apiTableLeftCParam">Arguments</td>
 <td class="apiTableRightCParam">
-<div><strong>ocStruct</strong>: a pointer to the OC-tree object.</div>
-<div><strong>serializationData</strong>: the serialization data.</div>
+<div>ocStruct: a pointer to the OC-tree object.</div>
+<div>serializationData: the serialization data.</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -1720,12 +1720,12 @@ td.section { margin: 0; padding: 0; }
 <tr class="apiTableTr">
 <td class="apiTableLeftCParam">Arguments</td>
 <td class="apiTableRightCParam">
-<div><strong>ocStruct</strong>: a pointer to the OC-tree object.</div>
-<div><strong>octreeTransformation</strong>: the transformation frame of the OC-tree.</div>
-<div><strong>p</strong>: position of vertex A on the triangle.</div>
-<div><strong>v</strong>: vector stretching from vertex A to vertex B on the triangle.</div>
-<div><strong>w</strong>: vector stretching from vertex A to vertex C on the triangle.</div>
-<div><strong>caching</strong>: a value that can be used to speed-up next collision checking between the same two entities (memorizes the colliding voxel in the OC-tree).</div>
+<div>ocStruct: a pointer to the OC-tree object.</div>
+<div>octreeTransformation: the transformation frame of the OC-tree.</div>
+<div>p: position of vertex A on the triangle.</div>
+<div>v: vector stretching from vertex A to vertex B on the triangle.</div>
+<div>w: vector stretching from vertex A to vertex C on the triangle.</div>
+<div>caching: a value that can be used to speed-up next collision checking between the same two entities (memorizes the colliding voxel in the OC-tree).</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -1753,15 +1753,15 @@ td.section { margin: 0; padding: 0; }
 <tr class="apiTableTr">
 <td class="apiTableLeftCParam">Arguments</td>
 <td class="apiTableRightCParam">
-<div><strong>ocStruct</strong>: a pointer to the OC-tree object.</div>
-<div><strong>octreeTransformation</strong>: the transformation frame of the OC-tree.</div>
-<div><strong>p</strong>: position of vertex A on the triangle.</div>
-<div><strong>v</strong>: vector stretching from vertex A to vertex B on the triangle.</div>
-<div><strong>w</strong>: vector stretching from vertex A to vertex C on the triangle.</div>
-<div><strong>dist</strong>: the distance threshold as input, and the minimum distance as output if it is below the threshold.</div>
-<div><strong>ocMinDistPt</strong>: the minimum distance point on the OC-tree.</div>
-<div><strong>triangleMinDistPt</strong>: the minimum distance point on the triangle.</div>
-<div><strong>ocCaching</strong>: a value that can be used to speed-up next distance calculation between the same two entities (memorizes the voxel that holds the minimum distance point on the OC-tree).</div>
+<div>ocStruct: a pointer to the OC-tree object.</div>
+<div>octreeTransformation: the transformation frame of the OC-tree.</div>
+<div>p: position of vertex A on the triangle.</div>
+<div>v: vector stretching from vertex A to vertex B on the triangle.</div>
+<div>w: vector stretching from vertex A to vertex C on the triangle.</div>
+<div>dist: the distance threshold as input, and the minimum distance as output if it is below the threshold.</div>
+<div>ocMinDistPt: the minimum distance point on the OC-tree.</div>
+<div>triangleMinDistPt: the minimum distance point on the triangle.</div>
+<div>ocCaching: a value that can be used to speed-up next distance calculation between the same two entities (memorizes the voxel that holds the minimum distance point on the OC-tree).</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -1789,9 +1789,9 @@ td.section { margin: 0; padding: 0; }
 <tr class="apiTableTr">
 <td class="apiTableLeftCParam">Arguments</td>
 <td class="apiTableRightCParam">
-<div><strong>ocStruct</strong>: a pointer to the OC-tree object.</div>
-<div><strong>voxelData</strong>: the voxel data: for each voxel, there are 3 position values (XYZ) and 3 color values (RGB, 0-1).</div>
-<div><strong>userData</strong>: the user data: for each voxel, there is one user data value.</div>
+<div>ocStruct: a pointer to the OC-tree object.</div>
+<div>voxelData: the voxel data: for each voxel, there are 3 position values (XYZ) and 3 color values (RGB, 0-1).</div>
+<div>userData: the user data: for each voxel, there is one user data value.</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -1819,7 +1819,7 @@ td.section { margin: 0; padding: 0; }
 <tr class="apiTableTr">
 <td class="apiTableLeftCParam">Arguments</td>
 <td class="apiTableRightCParam">
-<div><strong>serializationData</strong>: the serialization data previously generated with <a href="#geom_getPtcloudSerializationData">geom_getPtcloudSerializationData</a>.</div>
+<div>serializationData: the serialization data previously generated with <a href="#geom_getPtcloudSerializationData">geom_getPtcloudSerializationData</a>.</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -1847,12 +1847,12 @@ td.section { margin: 0; padding: 0; }
 <tr class="apiTableTr">
 <td class="apiTableLeftCParam">Arguments</td>
 <td class="apiTableRightCParam">
-<div><strong>pcStruct</strong>: a pointer to the point-cloud object.</div>
-<div><strong>pcTransformation</strong>: the transformation frame of the point-cloud.</div>
-<div><strong>point</strong>: the position of the point.</div>
-<div><strong>dist</strong>: the distance threshold as input, and the minimum distance as output if it is below the threshold.</div>
-<div><strong>pcMinDistPt</strong>: the minimum distance point on the point-cloud.</div>
-<div><strong>pcCaching</strong>: a value that can be used to speed-up next distance calculation between the same two entities (memorizes the point that holds the minimum distance point on the point-cloud).</div>
+<div>pcStruct: a pointer to the point-cloud object.</div>
+<div>pcTransformation: the transformation frame of the point-cloud.</div>
+<div>point: the position of the point.</div>
+<div>dist: the distance threshold as input, and the minimum distance as output if it is below the threshold.</div>
+<div>pcMinDistPt: the minimum distance point on the point-cloud.</div>
+<div>pcCaching: a value that can be used to speed-up next distance calculation between the same two entities (memorizes the point that holds the minimum distance point on the point-cloud).</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -1880,9 +1880,9 @@ td.section { margin: 0; padding: 0; }
 <tr class="apiTableTr">
 <td class="apiTableLeftCParam">Arguments</td>
 <td class="apiTableRightCParam">
-<div><strong>pcStruct</strong>: a pointer to the point-cloud object.</div>
-<div><strong>pointData</strong>: the point data: for each point, there are 3 position values (XYZ) and 3 color values (RGB, 0-1).</div>
-<div><strong>prop</strong>: the proportion of data to retrieve, on a voxel-basis. simOne retrieves all data, 0.25 retrieves 25% of the data.</div>
+<div>pcStruct: a pointer to the point-cloud object.</div>
+<div>pointData: the point data: for each point, there are 3 position values (XYZ) and 3 color values (RGB, 0-1).</div>
+<div>prop: the proportion of data to retrieve, on a voxel-basis. simOne retrieves all data, 0.25 retrieves 25% of the data.</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -1910,15 +1910,15 @@ td.section { margin: 0; padding: 0; }
 <tr class="apiTableTr">
 <td class="apiTableLeftCParam">Arguments</td>
 <td class="apiTableRightCParam">
-<div><strong>pc1Struct</strong>: a pointer to the first point-cloud object.</div>
-<div><strong>pc1Transformation</strong>: the transformation frame of the first point-cloud.</div>
-<div><strong>pc2Struct</strong>: a pointer to the second point-cloud object.</div>
-<div><strong>pc2Transformation</strong>: the transformation frame of the second point-cloud.</div>
-<div><strong>dist</strong>: the distance threshold as input, and the minimum distance as output if it is below the threshold.</div>
-<div><strong>pc1MinDistPt</strong>: the minimum distance point on the first point-cloud.</div>
-<div><strong>pc2MinDistPt</strong>: the minimum distance point on the second point-cloud.</div>
-<div><strong>pc1Caching</strong>: a value that can be used to speed-up next distance calculation between the same two entities (memorizes the point that holds the minimum distance point on the first point-cloud).</div>
-<div><strong>pc2Caching</strong>: a value that can be used to speed-up next distance calculation between the same two entities (memorizes the point that holds the minimum distance point on the second point-cloud).</div>
+<div>pc1Struct: a pointer to the first point-cloud object.</div>
+<div>pc1Transformation: the transformation frame of the first point-cloud.</div>
+<div>pc2Struct: a pointer to the second point-cloud object.</div>
+<div>pc2Transformation: the transformation frame of the second point-cloud.</div>
+<div>dist: the distance threshold as input, and the minimum distance as output if it is below the threshold.</div>
+<div>pc1MinDistPt: the minimum distance point on the first point-cloud.</div>
+<div>pc2MinDistPt: the minimum distance point on the second point-cloud.</div>
+<div>pc1Caching: a value that can be used to speed-up next distance calculation between the same two entities (memorizes the point that holds the minimum distance point on the first point-cloud).</div>
+<div>pc2Caching: a value that can be used to speed-up next distance calculation between the same two entities (memorizes the point that holds the minimum distance point on the second point-cloud).</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -1946,14 +1946,14 @@ td.section { margin: 0; padding: 0; }
 <tr class="apiTableTr">
 <td class="apiTableLeftCParam">Arguments</td>
 <td class="apiTableRightCParam">
-<div><strong>pcStruct</strong>: a pointer to the point-cloud object.</div>
-<div><strong>pcTransformation</strong>: the transformation frame of the point-cloud.</div>
-<div><strong>segmentEndPoint</strong>: position of vertex A on the segment.</div>
-<div><strong>segmentVector</strong>: vector stretching from vertex A to vertex B on the segment.</div>
-<div><strong>dist</strong>: the distance threshold as input, and the minimum distance as output if it is below the threshold.</div>
-<div><strong>pcMinDistPt</strong>: the minimum distance point on the point-cloud.</div>
-<div><strong>segmentDistSegPt</strong>: the minimum distance point on the segment.</div>
-<div><strong>pcCaching</strong>: a value that can be used to speed-up next distance calculation between the same two entities (memorizes the point that holds the minimum distance point on the point-cloud).</div>
+<div>pcStruct: a pointer to the point-cloud object.</div>
+<div>pcTransformation: the transformation frame of the point-cloud.</div>
+<div>segmentEndPoint: position of vertex A on the segment.</div>
+<div>segmentVector: vector stretching from vertex A to vertex B on the segment.</div>
+<div>dist: the distance threshold as input, and the minimum distance as output if it is below the threshold.</div>
+<div>pcMinDistPt: the minimum distance point on the point-cloud.</div>
+<div>segmentDistSegPt: the minimum distance point on the segment.</div>
+<div>pcCaching: a value that can be used to speed-up next distance calculation between the same two entities (memorizes the point that holds the minimum distance point on the point-cloud).</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -1981,8 +1981,8 @@ td.section { margin: 0; padding: 0; }
 <tr class="apiTableTr">
 <td class="apiTableLeftCParam">Arguments</td>
 <td class="apiTableRightCParam">
-<div><strong>pcStruct</strong>: a pointer to the point-cloud object.</div>
-<div><strong>serializationData</strong>: the serialization data.</div>
+<div>pcStruct: a pointer to the point-cloud object.</div>
+<div>serializationData: the serialization data.</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -2010,15 +2010,15 @@ td.section { margin: 0; padding: 0; }
 <tr class="apiTableTr">
 <td class="apiTableLeftCParam">Arguments</td>
 <td class="apiTableRightCParam">
-<div><strong>pcStruct</strong>: a pointer to the point-cloud object.</div>
-<div><strong>pcTransformation</strong>: the transformation frame of the point-cloud.</div>
-<div><strong>p</strong>: position of vertex A on the triangle.</div>
-<div><strong>v</strong>: vector stretching from vertex A to vertex B on the triangle.</div>
-<div><strong>w</strong>: vector stretching from vertex A to vertex C on the triangle.</div>
-<div><strong>dist</strong>: the distance threshold as input, and the minimum distance as output if it is below the threshold.</div>
-<div><strong>pcMinDistPt</strong>: the minimum distance point on the point-cloud.</div>
-<div><strong>triangleMinDistPt</strong>: the minimum distance point on the triangle.</div>
-<div><strong>pcCaching</strong>: a value that can be used to speed-up next distance calculation between the same two entities (memorizes the point that holds the minimum distance point on the point-cloud).</div>
+<div>pcStruct: a pointer to the point-cloud object.</div>
+<div>pcTransformation: the transformation frame of the point-cloud.</div>
+<div>p: position of vertex A on the triangle.</div>
+<div>v: vector stretching from vertex A to vertex B on the triangle.</div>
+<div>w: vector stretching from vertex A to vertex C on the triangle.</div>
+<div>dist: the distance threshold as input, and the minimum distance as output if it is below the threshold.</div>
+<div>pcMinDistPt: the minimum distance point on the point-cloud.</div>
+<div>triangleMinDistPt: the minimum distance point on the triangle.</div>
+<div>pcCaching: a value that can be used to speed-up next distance calculation between the same two entities (memorizes the point that holds the minimum distance point on the point-cloud).</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -2046,11 +2046,11 @@ td.section { margin: 0; padding: 0; }
 <tr class="apiTableTr">
 <td class="apiTableLeftCParam">Arguments</td>
 <td class="apiTableRightCParam">
-<div><strong>segmentEndPoint</strong>: position of vertex A on the segment.</div>
-<div><strong>segmentVector</strong>: vector stretching from vertex A to vertex B on the segment.</div>
-<div><strong>point</strong>: position of the point</div>
-<div><strong>dist</strong>: the distance threshold as input, and the minimum distance as output if it is below the threshold.</div>
-<div><strong>segmentDistSegPt</strong>: the minimum distance point on the segment.</div>
+<div>segmentEndPoint: position of vertex A on the segment.</div>
+<div>segmentVector: vector stretching from vertex A to vertex B on the segment.</div>
+<div>point: position of the point</div>
+<div>dist: the distance threshold as input, and the minimum distance as output if it is below the threshold.</div>
+<div>segmentDistSegPt: the minimum distance point on the segment.</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -2078,13 +2078,13 @@ td.section { margin: 0; padding: 0; }
 <tr class="apiTableTr">
 <td class="apiTableLeftCParam">Arguments</td>
 <td class="apiTableRightCParam">
-<div><strong>segment1EndPoint</strong>: position of point A on the first segment</div>
-<div><strong>segment1Vector</strong>: vector stretching from point A to point B on the first segment.</div>
-<div><strong>segment2EndPoint</strong>: position of point A on the second segment</div>
-<div><strong>segment2Vector</strong>: vector stretching from point A to point B on the second segment.</div>
-<div><strong>dist</strong>: the distance threshold as input, and the minimum distance as output if it is below the threshold.</div>
-<div><strong>segment1DistSegPt</strong>: the minimum distance point on the first segment.</div>
-<div><strong>segment2DistSegPt</strong>: the minimum distance point on the second segment.</div>
+<div>segment1EndPoint: position of point A on the first segment</div>
+<div>segment1Vector: vector stretching from point A to point B on the first segment.</div>
+<div>segment2EndPoint: position of point A on the second segment</div>
+<div>segment2Vector: vector stretching from point A to point B on the second segment.</div>
+<div>dist: the distance threshold as input, and the minimum distance as output if it is below the threshold.</div>
+<div>segment1DistSegPt: the minimum distance point on the first segment.</div>
+<div>segment2DistSegPt: the minimum distance point on the second segment.</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -2112,12 +2112,12 @@ td.section { margin: 0; padding: 0; }
 <tr class="apiTableTr">
 <td class="apiTableLeftCParam">Arguments</td>
 <td class="apiTableRightCParam">
-<div><strong>p</strong>: position of vertex A on the triangle.</div>
-<div><strong>v</strong>: vector stretching from vertex A to vertex B on the triangle.</div>
-<div><strong>w</strong>: vector stretching from vertex A to vertex C on the triangle.</div>
-<div><strong>point</strong>: position of the point</div>
-<div><strong>dist</strong>: the distance threshold as input, and the minimum distance as output if it is below the threshold.</div>
-<div><strong>triangleDistSegPt</strong>: the minimum distance point on the triangle.</div>
+<div>p: position of vertex A on the triangle.</div>
+<div>v: vector stretching from vertex A to vertex B on the triangle.</div>
+<div>w: vector stretching from vertex A to vertex C on the triangle.</div>
+<div>point: position of the point</div>
+<div>dist: the distance threshold as input, and the minimum distance as output if it is below the threshold.</div>
+<div>triangleDistSegPt: the minimum distance point on the triangle.</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -2145,12 +2145,12 @@ td.section { margin: 0; padding: 0; }
 <tr class="apiTableTr">
 <td class="apiTableLeftCParam">Arguments</td>
 <td class="apiTableRightCParam">
-<div><strong>p</strong>: position of vertex A on the triangle.</div>
-<div><strong>v</strong>: vector stretching from vertex A to vertex B on the triangle.</div>
-<div><strong>w</strong>: vector stretching from vertex A to vertex C on the triangle.</div>
-<div><strong>segmentEndPoint</strong>: position of vertex A on the segment.</div>
-<div><strong>segmentVector</strong>: vector stretching from vertex A to vertex B on the segment.</div>
-<div><strong>intersections</strong>: if not nullptr, then a possible collision will be extracted as interference segment (where both segment points are always coincident) (set to nullptr for fast operation).</div>
+<div>p: position of vertex A on the triangle.</div>
+<div>v: vector stretching from vertex A to vertex B on the triangle.</div>
+<div>w: vector stretching from vertex A to vertex C on the triangle.</div>
+<div>segmentEndPoint: position of vertex A on the segment.</div>
+<div>segmentVector: vector stretching from vertex A to vertex B on the segment.</div>
+<div>intersections: if not nullptr, then a possible collision will be extracted as interference segment (where both segment points are always coincident) (set to nullptr for fast operation).</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -2178,14 +2178,14 @@ td.section { margin: 0; padding: 0; }
 <tr class="apiTableTr">
 <td class="apiTableLeftCParam">Arguments</td>
 <td class="apiTableRightCParam">
-<div><strong>p</strong>: position of vertex A on the triangle.</div>
-<div><strong>v</strong>: vector stretching from vertex A to vertex B on the triangle.</div>
-<div><strong>w</strong>: vector stretching from vertex A to vertex C on the triangle.</div>
-<div><strong>segmentEndPoint</strong>: position of vertex A on the segment.</div>
-<div><strong>segmentVector</strong>: vector stretching from vertex A to vertex B on the segment.</div>
-<div><strong>dist</strong>: the distance threshold as input, and the minimum distance as output if it is below the threshold.</div>
-<div><strong>triangleDistSegPt</strong>: the minimum distance point on the triangle.</div>
-<div><strong>segmentDistSegPt</strong>: the minimum distance point on the segment.</div>
+<div>p: position of vertex A on the triangle.</div>
+<div>v: vector stretching from vertex A to vertex B on the triangle.</div>
+<div>w: vector stretching from vertex A to vertex C on the triangle.</div>
+<div>segmentEndPoint: position of vertex A on the segment.</div>
+<div>segmentVector: vector stretching from vertex A to vertex B on the segment.</div>
+<div>dist: the distance threshold as input, and the minimum distance as output if it is below the threshold.</div>
+<div>triangleDistSegPt: the minimum distance point on the triangle.</div>
+<div>segmentDistSegPt: the minimum distance point on the segment.</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -2213,13 +2213,13 @@ td.section { margin: 0; padding: 0; }
 <tr class="apiTableTr">
 <td class="apiTableLeftCParam">Arguments</td>
 <td class="apiTableRightCParam">
-<div><strong>p1</strong>: position of point A on triangle 1.</div>
-<div><strong>v1</strong>: vector stretching from point A to point B on triangle 1.</div>
-<div><strong>w1</strong>: vector stretching from point A to point C on triangle 1.</div>
-<div><strong>p2</strong>: position of point A on triangle 2.</div>
-<div><strong>v2</strong>: vector stretching from point A to point B on triangle 2.</div>
-<div><strong>w2</strong>: vector stretching from point A to point C on triangle 2.</div>
-<div><strong>intersections</strong>: if not nullptr, then all collisions will be extracted as interference segments (set to nullptr for fast operation).</div>
+<div>p1: position of point A on triangle 1.</div>
+<div>v1: vector stretching from point A to point B on triangle 1.</div>
+<div>w1: vector stretching from point A to point C on triangle 1.</div>
+<div>p2: position of point A on triangle 2.</div>
+<div>v2: vector stretching from point A to point B on triangle 2.</div>
+<div>w2: vector stretching from point A to point C on triangle 2.</div>
+<div>intersections: if not nullptr, then all collisions will be extracted as interference segments (set to nullptr for fast operation).</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -2247,15 +2247,15 @@ td.section { margin: 0; padding: 0; }
 <tr class="apiTableTr">
 <td class="apiTableLeftCParam">Arguments</td>
 <td class="apiTableRightCParam">
-<div><strong>p1</strong>: position of point A on triangle 1.</div>
-<div><strong>v1</strong>: vector stretching from point A to point B on triangle 1.</div>
-<div><strong>w1</strong>: vector stretching from point A to point C on triangle 1.</div>
-<div><strong>p2</strong>: position of point A on triangle 2.</div>
-<div><strong>v2</strong>: vector stretching from point A to point B on triangle 2.</div>
-<div><strong>w2</strong>: vector stretching from point A to point C on triangle 2.</div>
-<div><strong>dist</strong>: the distance threshold as input, and the minimum distance as output if it is below the threshold.</div>
-<div><strong>triangle1DistSegPt</strong>: the minimum distance point on the first triangle.</div>
-<div><strong>triangle2DistSegPt</strong>: the minimum distance point on the second triangle.</div>
+<div>p1: position of point A on triangle 1.</div>
+<div>v1: vector stretching from point A to point B on triangle 1.</div>
+<div>w1: vector stretching from point A to point C on triangle 1.</div>
+<div>p2: position of point A on triangle 2.</div>
+<div>v2: vector stretching from point A to point B on triangle 2.</div>
+<div>w2: vector stretching from point A to point C on triangle 2.</div>
+<div>dist: the distance threshold as input, and the minimum distance as output if it is below the threshold.</div>
+<div>triangle1DistSegPt: the minimum distance point on the first triangle.</div>
+<div>triangle2DistSegPt: the minimum distance point on the second triangle.</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -2283,12 +2283,12 @@ td.section { margin: 0; padding: 0; }
 <tr class="apiTableTr">
 <td class="apiTableLeftCParam">Arguments</td>
 <td class="apiTableRightCParam">
-<div><strong>ocStruct</strong>: a pointer to the OC-tree object.</div>
-<div><strong>octreeTransformation</strong>: the transformation frame of the OC-tree.</div>
-<div><strong>points</strong>: an array of point values (XYZ-triplets). Points are expressed relative to the world reference frame.</div>
-<div><strong>pointCnt</strong>: the number of points.</div>
-<div><strong>rgbData</strong>: the RGB colors (0-255)of the various points (i.e. one color per point).</div>
-<div><strong>usrData</strong>: the user data of the various points (i.e. one user data per point).</div>
+<div>ocStruct: a pointer to the OC-tree object.</div>
+<div>octreeTransformation: the transformation frame of the OC-tree.</div>
+<div>points: an array of point values (XYZ-triplets). Points are expressed relative to the world reference frame.</div>
+<div>pointCnt: the number of points.</div>
+<div>rgbData: the RGB colors (0-255)of the various points (i.e. one color per point).</div>
+<div>usrData: the user data of the various points (i.e. one user data per point).</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -2316,12 +2316,12 @@ td.section { margin: 0; padding: 0; }
 <tr class="apiTableTr">
 <td class="apiTableLeftCParam">Arguments</td>
 <td class="apiTableRightCParam">
-<div><strong>pcStruct</strong>: a pointer to the point-cloud object.</div>
-<div><strong>ptcloudTransformation</strong>: the transformation frame of the point-cloud.</div>
-<div><strong>points</strong>: an array of point values (XYZ-triplets). Points are expressed relative to the world reference frame.</div>
-<div><strong>pointCnt</strong>: the number of points.</div>
-<div><strong>rgbData</strong>: the RGB colors (0-255)of the various points (i.e. one color per point).</div>
-<div><strong>proximityTol</strong>: the distance tolerance to other points (i.e. point-point distances below the specified value are not permitted and points will be omitted).</div>
+<div>pcStruct: a pointer to the point-cloud object.</div>
+<div>ptcloudTransformation: the transformation frame of the point-cloud.</div>
+<div>points: an array of point values (XYZ-triplets). Points are expressed relative to the world reference frame.</div>
+<div>pointCnt: the number of points.</div>
+<div>rgbData: the RGB colors (0-255)of the various points (i.e. one color per point).</div>
+<div>proximityTol: the distance tolerance to other points (i.e. point-point distances below the specified value are not permitted and points will be omitted).</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -2349,12 +2349,12 @@ td.section { margin: 0; padding: 0; }
 <tr class="apiTableTr">
 <td class="apiTableLeftCParam">Arguments</td>
 <td class="apiTableRightCParam">
-<div><strong>ocStruct</strong>: a pointer to the OC-tree object.</div>
-<div><strong>octreeTransformation</strong>: the transformation frame of the OC-tree.</div>
-<div><strong>obbStruct</strong>: a pointer to the mesh object.</div>
-<div><strong>meshTransformation</strong>: the transformation frame of the mesh.</div>
-<div><strong>rgbData</strong>: the RGB color (0-255) of the generated voxels.</div>
-<div><strong>usrData</strong>: the user data of the generated voxels.</div>
+<div>ocStruct: a pointer to the OC-tree object.</div>
+<div>octreeTransformation: the transformation frame of the OC-tree.</div>
+<div>obbStruct: a pointer to the mesh object.</div>
+<div>meshTransformation: the transformation frame of the mesh.</div>
+<div>rgbData: the RGB color (0-255) of the generated voxels.</div>
+<div>usrData: the user data of the generated voxels.</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -2382,12 +2382,12 @@ td.section { margin: 0; padding: 0; }
 <tr class="apiTableTr">
 <td class="apiTableLeftCParam">Arguments</td>
 <td class="apiTableRightCParam">
-<div><strong>oc1Struct</strong>: a pointer to the OC-tree object.</div>
-<div><strong>octree1Transformation</strong>: the transformation frame of the OC-tree.</div>
-<div><strong>oc2Struct</strong>: a pointer to the other OC-tree object.</div>
-<div><strong>octree2Transformation</strong>: the transformation frame of the other OC-tree object.</div>
-<div><strong>rgbData</strong>: the RGB color (0-255) of the generated voxels.</div>
-<div><strong>usrData</strong>: the user data of the generated voxels.</div>
+<div>oc1Struct: a pointer to the OC-tree object.</div>
+<div>octree1Transformation: the transformation frame of the OC-tree.</div>
+<div>oc2Struct: a pointer to the other OC-tree object.</div>
+<div>octree2Transformation: the transformation frame of the other OC-tree object.</div>
+<div>rgbData: the RGB color (0-255) of the generated voxels.</div>
+<div>usrData: the user data of the generated voxels.</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -2415,12 +2415,12 @@ td.section { margin: 0; padding: 0; }
 <tr class="apiTableTr">
 <td class="apiTableLeftCParam">Arguments</td>
 <td class="apiTableRightCParam">
-<div><strong>ocStruct</strong>: a pointer to the OC-tree object.</div>
-<div><strong>octreeTransformation</strong>: the transformation frame of the OC-tree.</div>
-<div><strong>points</strong>: an array of point values (XYZ-triplets). Points are expressed relative to the world reference frame.</div>
-<div><strong>pointCnt</strong>: the number of points.</div>
-<div><strong>rgbData</strong>: the RGB color (0-255) of the generated voxels.</div>
-<div><strong>usrData</strong>: the user data of the generated voxels.</div>
+<div>ocStruct: a pointer to the OC-tree object.</div>
+<div>octreeTransformation: the transformation frame of the OC-tree.</div>
+<div>points: an array of point values (XYZ-triplets). Points are expressed relative to the world reference frame.</div>
+<div>pointCnt: the number of points.</div>
+<div>rgbData: the RGB color (0-255) of the generated voxels.</div>
+<div>usrData: the user data of the generated voxels.</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -2448,12 +2448,12 @@ td.section { margin: 0; padding: 0; }
 <tr class="apiTableTr">
 <td class="apiTableLeftCParam">Arguments</td>
 <td class="apiTableRightCParam">
-<div><strong>pcStruct</strong>: a pointer to the point-cloud object.</div>
-<div><strong>ptcloudTransformation</strong>: the transformation frame of the point-cloud.</div>
-<div><strong>points</strong>: an array of point values (XYZ-triplets). Points are expressed relative to the world reference frame.</div>
-<div><strong>pointCnt</strong>: the number of points.</div>
-<div><strong>rgbData</strong>: the RGB color (0-255) of the generated points.</div>
-<div><strong>proximityTol</strong>: the distance tolerance to other points (i.e. point-point distances below the specified value are not permitted and points will be omitted).</div>
+<div>pcStruct: a pointer to the point-cloud object.</div>
+<div>ptcloudTransformation: the transformation frame of the point-cloud.</div>
+<div>points: an array of point values (XYZ-triplets). Points are expressed relative to the world reference frame.</div>
+<div>pointCnt: the number of points.</div>
+<div>rgbData: the RGB color (0-255) of the generated points.</div>
+<div>proximityTol: the distance tolerance to other points (i.e. point-point distances below the specified value are not permitted and points will be omitted).</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -2481,11 +2481,11 @@ td.section { margin: 0; padding: 0; }
 <tr class="apiTableTr">
 <td class="apiTableLeftCParam">Arguments</td>
 <td class="apiTableRightCParam">
-<div><strong>pcStruct</strong>: a pointer to the point-cloud object.</div>
-<div><strong>ptcloudTransformation</strong>: the transformation frame of the point-cloud.</div>
-<div><strong>points</strong>: an array of point values (XYZ-triplets). Points are expressed relative to the world reference frame.</div>
-<div><strong>pointCnt</strong>: the number of points.</div>
-<div><strong>proximityTol</strong>: the distance tolerance to other points (i.e. point-point distances above the specified value will result in removal of those point-cloud points.</div>
+<div>pcStruct: a pointer to the point-cloud object.</div>
+<div>ptcloudTransformation: the transformation frame of the point-cloud.</div>
+<div>points: an array of point values (XYZ-triplets). Points are expressed relative to the world reference frame.</div>
+<div>pointCnt: the number of points.</div>
+<div>proximityTol: the distance tolerance to other points (i.e. point-point distances above the specified value will result in removal of those point-cloud points.</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -2513,10 +2513,10 @@ td.section { margin: 0; padding: 0; }
 <tr class="apiTableTr">
 <td class="apiTableLeftCParam">Arguments</td>
 <td class="apiTableRightCParam">
-<div><strong>planesIn</strong>: an array describing a convex volume, via planes. Each plane is defined by 4 values: (Nx,Ny,Nz,D), where a point (Px,Py,Pz) lies on the inside if N*P+D&gt;=0. N is the normal vector of the plane, pointing towards the volume inside.</div>
-<div><strong>planesInSize</strong>: the number of values in the planesIn array.</div>
-<div><strong>sensorTransformation</strong>: the transformation frame of the volume.</div>
-<div><strong>point</strong>: the point to test.</div>
+<div>planesIn: an array describing a convex volume, via planes. Each plane is defined by 4 values: (Nx,Ny,Nz,D), where a point (Px,Py,Pz) lies on the inside if N*P+D&gt;=0. N is the normal vector of the plane, pointing towards the volume inside.</div>
+<div>planesInSize: the number of values in the planesIn array.</div>
+<div>sensorTransformation: the transformation frame of the volume.</div>
+<div>point: the point to test.</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -2544,20 +2544,20 @@ td.section { margin: 0; padding: 0; }
 <tr class="apiTableTr">
 <td class="apiTableLeftCParam">Arguments</td>
 <td class="apiTableRightCParam">
-<div><strong>sensorTransformation</strong>: the transformation frame of the sensor.</div>
-<div><strong>rayOffset</strong>: the offset of the ray (i.e. where the ray starts), along its frame's Z-axis.</div>
-<div><strong>rayLength</strong>: the length of the ray.</div>
-<div><strong>meshObbStruct</strong>: a pointer to the mesh object.</div>
-<div><strong>meshTransformation</strong>: the transformation frame of the mesh.</div>
-<div><strong>dist</strong>: the distance threshold as input, and the minimum distance as output if it is below the threshold.</div>
-<div><strong>forbiddenDist</strong>: the distance threshold along the sensor's Z-axis, where detection is forbidden. If something is detected in that section of the ray, then the return will be false.</div>
-<div><strong>fast</strong>: if true, calculation will be faster, however only the first encountered feature that satisfies the detection requirements will be returned (and not the closest of those features).</div>
-<div><strong>frontDetection</strong>: if true, front faces of the mesh will be detected.</div>
-<div><strong>backDetection</strong>: if true, back faces of the mesh will be detected.</div>
-<div><strong>maxAngle</strong>: the maximum allowed angle between detection ray and normal vector of the detected face. Zero to ignore the maximum angle.</div>
-<div><strong>detectPt</strong>: the position of the detected point, if return value is true.</div>
-<div><strong>triN</strong>: the normal vector of the detected face, if return value is true.</div>
-<div><strong>forbiddenDistTouched</strong>: if something was detected in the forbidden section of the sensor, then the value pointed by this pointer will be true.</div>
+<div>sensorTransformation: the transformation frame of the sensor.</div>
+<div>rayOffset: the offset of the ray (i.e. where the ray starts), along its frame's Z-axis.</div>
+<div>rayLength: the length of the ray.</div>
+<div>meshObbStruct: a pointer to the mesh object.</div>
+<div>meshTransformation: the transformation frame of the mesh.</div>
+<div>dist: the distance threshold as input, and the minimum distance as output if it is below the threshold.</div>
+<div>forbiddenDist: the distance threshold along the sensor's Z-axis, where detection is forbidden. If something is detected in that section of the ray, then the return will be false.</div>
+<div>fast: if true, calculation will be faster, however only the first encountered feature that satisfies the detection requirements will be returned (and not the closest of those features).</div>
+<div>frontDetection: if true, front faces of the mesh will be detected.</div>
+<div>backDetection: if true, back faces of the mesh will be detected.</div>
+<div>maxAngle: the maximum allowed angle between detection ray and normal vector of the detected face. Zero to ignore the maximum angle.</div>
+<div>detectPt: the position of the detected point, if return value is true.</div>
+<div>triN: the normal vector of the detected face, if return value is true.</div>
+<div>forbiddenDistTouched: if something was detected in the forbidden section of the sensor, then the value pointed by this pointer will be true.</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -2585,20 +2585,20 @@ td.section { margin: 0; padding: 0; }
 <tr class="apiTableTr">
 <td class="apiTableLeftCParam">Arguments</td>
 <td class="apiTableRightCParam">
-<div><strong>sensorTransformation</strong>: the transformation frame of the sensor.</div>
-<div><strong>rayOffset</strong>: the offset of the ray (i.e. where the ray starts), along its frame's Z-axis.</div>
-<div><strong>rayLength</strong>: the length of the ray.</div>
-<div><strong>ocStruct</strong>: a pointer to the OC-tree object.</div>
-<div><strong>octreeTransformation</strong>: the transformation frame of the OC-tree.</div>
-<div><strong>dist</strong>: the distance threshold as input, and the minimum distance as output if it is below the threshold.</div>
-<div><strong>forbiddenDist</strong>: the distance threshold along the sensor's Z-axis, where detection is forbidden. If something is detected in that section of the ray, then the return will be false.</div>
-<div><strong>fast</strong>: if true, calculation will be faster, however only the first encountered feature that satisfies the detection requirements will be returned (and not the closest of those features).</div>
-<div><strong>frontDetection</strong>: if true, front faces of the OC-tree will be detected.</div>
-<div><strong>backDetection</strong>: if true, back faces of the OC-tree will be detected.</div>
-<div><strong>maxAngle</strong>: the maximum allowed angle between detection ray and normal vector of the detected face. Zero to ignore the maximum angle.</div>
-<div><strong>detectPt</strong>: the position of the detected point, if return value is true.</div>
-<div><strong>triN</strong>: the normal vector of the detected face, if return value is true.</div>
-<div><strong>forbiddenDistTouched</strong>: if something was detected in the forbidden section of the sensor, then the value pointed by this pointer will be true.</div>
+<div>sensorTransformation: the transformation frame of the sensor.</div>
+<div>rayOffset: the offset of the ray (i.e. where the ray starts), along its frame's Z-axis.</div>
+<div>rayLength: the length of the ray.</div>
+<div>ocStruct: a pointer to the OC-tree object.</div>
+<div>octreeTransformation: the transformation frame of the OC-tree.</div>
+<div>dist: the distance threshold as input, and the minimum distance as output if it is below the threshold.</div>
+<div>forbiddenDist: the distance threshold along the sensor's Z-axis, where detection is forbidden. If something is detected in that section of the ray, then the return will be false.</div>
+<div>fast: if true, calculation will be faster, however only the first encountered feature that satisfies the detection requirements will be returned (and not the closest of those features).</div>
+<div>frontDetection: if true, front faces of the OC-tree will be detected.</div>
+<div>backDetection: if true, back faces of the OC-tree will be detected.</div>
+<div>maxAngle: the maximum allowed angle between detection ray and normal vector of the detected face. Zero to ignore the maximum angle.</div>
+<div>detectPt: the position of the detected point, if return value is true.</div>
+<div>triN: the normal vector of the detected face, if return value is true.</div>
+<div>forbiddenDistTouched: if something was detected in the forbidden section of the sensor, then the value pointed by this pointer will be true.</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -2626,10 +2626,10 @@ td.section { margin: 0; padding: 0; }
 <tr class="apiTableTr">
 <td class="apiTableLeftCParam">Arguments</td>
 <td class="apiTableRightCParam">
-<div><strong>ocStruct</strong>: a pointer to the OC-tree object.</div>
-<div><strong>octreeTransformation</strong>: the transformation frame of the OC-tree.</div>
-<div><strong>obbStruct</strong>: a pointer to the mesh object.</div>
-<div><strong>meshTransformation</strong>: the transformation frame of the mesh.</div>
+<div>ocStruct: a pointer to the OC-tree object.</div>
+<div>octreeTransformation: the transformation frame of the OC-tree.</div>
+<div>obbStruct: a pointer to the mesh object.</div>
+<div>meshTransformation: the transformation frame of the mesh.</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -2657,10 +2657,10 @@ td.section { margin: 0; padding: 0; }
 <tr class="apiTableTr">
 <td class="apiTableLeftCParam">Arguments</td>
 <td class="apiTableRightCParam">
-<div><strong>oc1Struct</strong>: a pointer to the OC-tree object.</div>
-<div><strong>octree1Transformation</strong>: the transformation frame of the OC-tree.</div>
-<div><strong>oc2Struct</strong>: a pointer to the other OC-tree object.</div>
-<div><strong>octree2Transformation</strong>: the transformation frame of the other OC-tree.</div>
+<div>oc1Struct: a pointer to the OC-tree object.</div>
+<div>octree1Transformation: the transformation frame of the OC-tree.</div>
+<div>oc2Struct: a pointer to the other OC-tree object.</div>
+<div>octree2Transformation: the transformation frame of the other OC-tree.</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -2688,10 +2688,10 @@ td.section { margin: 0; padding: 0; }
 <tr class="apiTableTr">
 <td class="apiTableLeftCParam">Arguments</td>
 <td class="apiTableRightCParam">
-<div><strong>ocStruct</strong>: a pointer to the OC-tree object.</div>
-<div><strong>octreeTransformation</strong>: the transformation frame of the OC-tree.</div>
-<div><strong>points</strong>: an array of point values (XYZ-triplets). Points are expressed relative to the world reference frame.</div>
-<div><strong>pointCnt</strong>: the number of points.</div>
+<div>ocStruct: a pointer to the OC-tree object.</div>
+<div>octreeTransformation: the transformation frame of the OC-tree.</div>
+<div>points: an array of point values (XYZ-triplets). Points are expressed relative to the world reference frame.</div>
+<div>pointCnt: the number of points.</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -2719,11 +2719,11 @@ td.section { margin: 0; padding: 0; }
 <tr class="apiTableTr">
 <td class="apiTableLeftCParam">Arguments</td>
 <td class="apiTableRightCParam">
-<div><strong>pcStruct</strong>: a pointer to the point-cloud object.</div>
-<div><strong>ptcloudTransformation</strong>: the transformation frame of the point-cloud.</div>
-<div><strong>ocStruct</strong>: a pointer to the OC-tree object.</div>
-<div><strong>octreeTransformation</strong>: the transformation frame of the OC-tree.</div>
-<div><strong>countRemoved</strong>: the number of removed points.</div>
+<div>pcStruct: a pointer to the point-cloud object.</div>
+<div>ptcloudTransformation: the transformation frame of the point-cloud.</div>
+<div>ocStruct: a pointer to the OC-tree object.</div>
+<div>octreeTransformation: the transformation frame of the OC-tree.</div>
+<div>countRemoved: the number of removed points.</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -2751,12 +2751,12 @@ td.section { margin: 0; padding: 0; }
 <tr class="apiTableTr">
 <td class="apiTableLeftCParam">Arguments</td>
 <td class="apiTableRightCParam">
-<div><strong>pcStruct</strong>: a pointer to the point-cloud object.</div>
-<div><strong>ptcloudTransformation</strong>: the transformation frame of the point-cloud.</div>
-<div><strong>points</strong>: an array of point values (XYZ-triplets). Points are expressed relative to the world reference frame.</div>
-<div><strong>pointCnt</strong>: the number of points.</div>
-<div><strong>proximityTol</strong>: the proximity tolerance.</div>
-<div><strong>countRemoved</strong>: the number of removed points.</div>
+<div>pcStruct: a pointer to the point-cloud object.</div>
+<div>ptcloudTransformation: the transformation frame of the point-cloud.</div>
+<div>points: an array of point values (XYZ-triplets). Points are expressed relative to the world reference frame.</div>
+<div>pointCnt: the number of points.</div>
+<div>proximityTol: the proximity tolerance.</div>
+<div>countRemoved: the number of removed points.</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -2784,8 +2784,8 @@ td.section { margin: 0; padding: 0; }
 <tr class="apiTableTr">
 <td class="apiTableLeftCParam">Arguments</td>
 <td class="apiTableRightCParam">
-<div><strong>meshObbStruct</strong>: a pointer to the mesh object.</div>
-<div><strong>scalingFactor</strong>: the scaling factor.</div>
+<div>meshObbStruct: a pointer to the mesh object.</div>
+<div>scalingFactor: the scaling factor.</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -2813,8 +2813,8 @@ td.section { margin: 0; padding: 0; }
 <tr class="apiTableTr">
 <td class="apiTableLeftCParam">Arguments</td>
 <td class="apiTableRightCParam">
-<div><strong>ocStruct</strong>: a pointer to the OC-tree object.</div>
-<div><strong>scalingFactor</strong>: the scaling factor.</div>
+<div>ocStruct: a pointer to the OC-tree object.</div>
+<div>scalingFactor: the scaling factor.</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -2842,8 +2842,8 @@ td.section { margin: 0; padding: 0; }
 <tr class="apiTableTr">
 <td class="apiTableLeftCParam">Arguments</td>
 <td class="apiTableRightCParam">
-<div><strong>pcStruct</strong>: a pointer to the point-cloud object.</div>
-<div><strong>scalingFactor</strong>: the scaling factor.</div>
+<div>pcStruct: a pointer to the point-cloud object.</div>
+<div>scalingFactor: the scaling factor.</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -2871,20 +2871,20 @@ td.section { margin: 0; padding: 0; }
 <tr class="apiTableTr">
 <td class="apiTableLeftCParam">Arguments</td>
 <td class="apiTableRightCParam">
-<div><strong>planesIn</strong>: an array describing a convex volume, via planes. The mesh object (or parts of it) inside the volume, and outside of volume planesOut, is detected. Each plane is defined by 4 values: (Nx,Ny,Nz,D), where a point (Px,Py,Pz) lies on the inside if N*P+D&gt;=0. N is the normal vector of the plane, pointing towards the volume inside.</div>
-<div><strong>planesInSize</strong>: the number of values in the planesIn array.</div>
-<div><strong>planesOut</strong>: an array describing a convex volume, via planes. The mesh object (or parts of it) outside the volume and inside volume planesIn, is detected. Each plane is defined by 4 values: (Nx,Ny,Nz,D), where a point (Px,Py,Pz) lies on the outside if N*P+D&lt;0. N is the normal vector of the plane, pointing towards the volume inside. planesOut can be nullptr if planesOutSize is 0</div>
-<div><strong>planesOutSize</strong>: the number of values in the planesOut array.</div>
-<div><strong>sensorTransformation</strong>: the transformation frame of the sensor (also transforms the sensor's volumes).</div>
-<div><strong>meshObbStruct</strong>: a pointer to the mesh object.</div>
-<div><strong>meshTransformation</strong>: the transformation frame of the mesh.</div>
-<div><strong>dist</strong>: the distance threshold as input, and the minimum distance as output if it is below the threshold.</div>
-<div><strong>fast</strong>: if true, calculation will be faster, however only the first encountered feature that satisfies the detection requirements will be returned (and not the closest of those features).</div>
-<div><strong>frontDetection</strong>: if true, front faces of the mesh will be detected.</div>
-<div><strong>backDetection</strong>: if true, back faces of the mesh will be detected.</div>
-<div><strong>maxAngle</strong>: the maximum allowed angle between detection ray and normal vector of the detected face. Zero to ignore the maximum angle.</div>
-<div><strong>detectPt</strong>: the position of the detected point, if return value is true.</div>
-<div><strong>triN</strong>: the normal vector of the detected face, if return value is true.</div>
+<div>planesIn: an array describing a convex volume, via planes. The mesh object (or parts of it) inside the volume, and outside of volume planesOut, is detected. Each plane is defined by 4 values: (Nx,Ny,Nz,D), where a point (Px,Py,Pz) lies on the inside if N*P+D&gt;=0. N is the normal vector of the plane, pointing towards the volume inside.</div>
+<div>planesInSize: the number of values in the planesIn array.</div>
+<div>planesOut: an array describing a convex volume, via planes. The mesh object (or parts of it) outside the volume and inside volume planesIn, is detected. Each plane is defined by 4 values: (Nx,Ny,Nz,D), where a point (Px,Py,Pz) lies on the outside if N*P+D&lt;0. N is the normal vector of the plane, pointing towards the volume inside. planesOut can be nullptr if planesOutSize is 0</div>
+<div>planesOutSize: the number of values in the planesOut array.</div>
+<div>sensorTransformation: the transformation frame of the sensor (also transforms the sensor's volumes).</div>
+<div>meshObbStruct: a pointer to the mesh object.</div>
+<div>meshTransformation: the transformation frame of the mesh.</div>
+<div>dist: the distance threshold as input, and the minimum distance as output if it is below the threshold.</div>
+<div>fast: if true, calculation will be faster, however only the first encountered feature that satisfies the detection requirements will be returned (and not the closest of those features).</div>
+<div>frontDetection: if true, front faces of the mesh will be detected.</div>
+<div>backDetection: if true, back faces of the mesh will be detected.</div>
+<div>maxAngle: the maximum allowed angle between detection ray and normal vector of the detected face. Zero to ignore the maximum angle.</div>
+<div>detectPt: the position of the detected point, if return value is true.</div>
+<div>triN: the normal vector of the detected face, if return value is true.</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -2912,20 +2912,20 @@ td.section { margin: 0; padding: 0; }
 <tr class="apiTableTr">
 <td class="apiTableLeftCParam">Arguments</td>
 <td class="apiTableRightCParam">
-<div><strong>planesIn</strong>: an array describing a convex volume, via planes. The OC-tree object (or parts of it) inside the volume, and outside of volume planesOut, is detected. Each plane is defined by 4 values: (Nx,Ny,Nz,D), where a point (Px,Py,Pz) lies on the inside if N*P+D&gt;=0. N is the normal vector of the plane, pointing towards the volume inside.</div>
-<div><strong>planesInSize</strong>: the number of values in the planesIn array.</div>
-<div><strong>planesOut</strong>: an array describing a convex volume, via planes. The OC-tree object (or parts of it) outside the volume and inside volume planesIn, is detected. Each plane is defined by 4 values: (Nx,Ny,Nz,D), where a point (Px,Py,Pz) lies on the outside if N*P+D&lt;0. N is the normal vector of the plane, pointing towards the volume inside. planesOut can be nullptr if planesOutSize is 0</div>
-<div><strong>planesOutSize</strong>: the number of values in the planesOut array.</div>
-<div><strong>sensorTransformation</strong>: the transformation frame of the sensor (also transforms the sensor's volumes).</div>
-<div><strong>ocStruct</strong>: a pointer to the OC-tree object.</div>
-<div><strong>octreeTransformation</strong>: the transformation frame of the OC-tree.</div>
-<div><strong>dist</strong>: the distance threshold as input, and the minimum distance as output if it is below the threshold.</div>
-<div><strong>fast</strong>: if true, calculation will be faster, however only the first encountered feature that satisfies the detection requirements will be returned (and not the closest of those features).</div>
-<div><strong>frontDetection</strong>: if true, front faces of the OC-tree will be detected.</div>
-<div><strong>backDetection</strong>: if true, back faces of the OC-tree will be detected.</div>
-<div><strong>maxAngle</strong>: the maximum allowed angle between detection ray and normal vector of the detected face. Zero to ignore the maximum angle.</div>
-<div><strong>detectPt</strong>: the position of the detected point, if return value is true.</div>
-<div><strong>triN</strong>: the normal vector of the detected face, if return value is true.</div>
+<div>planesIn: an array describing a convex volume, via planes. The OC-tree object (or parts of it) inside the volume, and outside of volume planesOut, is detected. Each plane is defined by 4 values: (Nx,Ny,Nz,D), where a point (Px,Py,Pz) lies on the inside if N*P+D&gt;=0. N is the normal vector of the plane, pointing towards the volume inside.</div>
+<div>planesInSize: the number of values in the planesIn array.</div>
+<div>planesOut: an array describing a convex volume, via planes. The OC-tree object (or parts of it) outside the volume and inside volume planesIn, is detected. Each plane is defined by 4 values: (Nx,Ny,Nz,D), where a point (Px,Py,Pz) lies on the outside if N*P+D&lt;0. N is the normal vector of the plane, pointing towards the volume inside. planesOut can be nullptr if planesOutSize is 0</div>
+<div>planesOutSize: the number of values in the planesOut array.</div>
+<div>sensorTransformation: the transformation frame of the sensor (also transforms the sensor's volumes).</div>
+<div>ocStruct: a pointer to the OC-tree object.</div>
+<div>octreeTransformation: the transformation frame of the OC-tree.</div>
+<div>dist: the distance threshold as input, and the minimum distance as output if it is below the threshold.</div>
+<div>fast: if true, calculation will be faster, however only the first encountered feature that satisfies the detection requirements will be returned (and not the closest of those features).</div>
+<div>frontDetection: if true, front faces of the OC-tree will be detected.</div>
+<div>backDetection: if true, back faces of the OC-tree will be detected.</div>
+<div>maxAngle: the maximum allowed angle between detection ray and normal vector of the detected face. Zero to ignore the maximum angle.</div>
+<div>detectPt: the position of the detected point, if return value is true.</div>
+<div>triN: the normal vector of the detected face, if return value is true.</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -2953,16 +2953,16 @@ td.section { margin: 0; padding: 0; }
 <tr class="apiTableTr">
 <td class="apiTableLeftCParam">Arguments</td>
 <td class="apiTableRightCParam">
-<div><strong>planesIn</strong>: an array describing a convex volume, via planes. The point-cloud object (or parts of it) inside the volume, and outside of volume planesOut, is detected. Each plane is defined by 4 values: (Nx,Ny,Nz,D), where a point (Px,Py,Pz) lies on the inside if N*P+D&gt;=0. N is the normal vector of the plane, pointing towards the volume inside.</div>
-<div><strong>planesInSize</strong>: the number of values in the planesIn array.</div>
-<div><strong>planesOut</strong>: an array describing a convex volume, via planes. The point-cloud object (or parts of it) outside the volume and inside volume planesIn, is detected. Each plane is defined by 4 values: (Nx,Ny,Nz,D), where a point (Px,Py,Pz) lies on the outside if N*P+D&lt;0. N is the normal vector of the plane, pointing towards the volume inside. planesOut can be nullptr if planesOutSize is 0</div>
-<div><strong>planesOutSize</strong>: the number of values in the planesOut array.</div>
-<div><strong>sensorTransformation</strong>: the transformation frame of the sensor (also transforms the sensor's volumes).</div>
-<div><strong>pcStruct</strong>: a pointer to the point-cloud object.</div>
-<div><strong>ptcloudTransformation</strong>: the transformation frame of the point-cloud.</div>
-<div><strong>dist</strong>: the distance threshold as input, and the minimum distance as output if it is below the threshold.</div>
-<div><strong>fast</strong>: if true, calculation will be faster, however only the first encountered feature that satisfies the detection requirements will be returned (and not the closest of those features).</div>
-<div><strong>detectPt</strong>: the position of the detected point, if return value is true.</div>
+<div>planesIn: an array describing a convex volume, via planes. The point-cloud object (or parts of it) inside the volume, and outside of volume planesOut, is detected. Each plane is defined by 4 values: (Nx,Ny,Nz,D), where a point (Px,Py,Pz) lies on the inside if N*P+D&gt;=0. N is the normal vector of the plane, pointing towards the volume inside.</div>
+<div>planesInSize: the number of values in the planesIn array.</div>
+<div>planesOut: an array describing a convex volume, via planes. The point-cloud object (or parts of it) outside the volume and inside volume planesIn, is detected. Each plane is defined by 4 values: (Nx,Ny,Nz,D), where a point (Px,Py,Pz) lies on the outside if N*P+D&lt;0. N is the normal vector of the plane, pointing towards the volume inside. planesOut can be nullptr if planesOutSize is 0</div>
+<div>planesOutSize: the number of values in the planesOut array.</div>
+<div>sensorTransformation: the transformation frame of the sensor (also transforms the sensor's volumes).</div>
+<div>pcStruct: a pointer to the point-cloud object.</div>
+<div>ptcloudTransformation: the transformation frame of the point-cloud.</div>
+<div>dist: the distance threshold as input, and the minimum distance as output if it is below the threshold.</div>
+<div>fast: if true, calculation will be faster, however only the first encountered feature that satisfies the detection requirements will be returned (and not the closest of those features).</div>
+<div>detectPt: the position of the detected point, if return value is true.</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -2990,16 +2990,16 @@ td.section { margin: 0; padding: 0; }
 <tr class="apiTableTr">
 <td class="apiTableLeftCParam">Arguments</td>
 <td class="apiTableRightCParam">
-<div><strong>planesIn</strong>: an array describing a convex volume, via planes. The segment (or parts of it) inside the volume, and outside of volume planesOut, is detected. Each plane is defined by 4 values: (Nx,Ny,Nz,D), where a point (Px,Py,Pz) lies on the inside if N*P+D&gt;=0. N is the normal vector of the plane, pointing towards the volume inside.</div>
-<div><strong>planesInSize</strong>: the number of values in the planesIn array.</div>
-<div><strong>planesOut</strong>: an array describing a convex volume, via planes. The segment (or parts of it) outside the volume and inside volume planesIn, is detected. Each plane is defined by 4 values: (Nx,Ny,Nz,D), where a point (Px,Py,Pz) lies on the outside if N*P+D&lt;0. N is the normal vector of the plane, pointing towards the volume inside. planesOut can be nullptr if planesOutSize is 0</div>
-<div><strong>planesOutSize</strong>: the number of values in the planesOut array.</div>
-<div><strong>sensorTransformation</strong>: the transformation frame of the sensor (also transforms the sensor's volumes).</div>
-<div><strong>segmentEndPoint</strong>: position of vertex A on the segment.</div>
-<div><strong>segmentVector</strong>: vector stretching from vertex A to vertex B on the segment.</div>
-<div><strong>dist</strong>: the distance threshold as input, and the minimum distance as output if it is below the threshold.</div>
-<div><strong>maxAngle</strong>: the maximum allowed angle between detection ray and a perpendicular vector of the segment. Zero to ignore the maximum angle.</div>
-<div><strong>detectPt</strong>: the position of the detected point, if return value is true.</div>
+<div>planesIn: an array describing a convex volume, via planes. The segment (or parts of it) inside the volume, and outside of volume planesOut, is detected. Each plane is defined by 4 values: (Nx,Ny,Nz,D), where a point (Px,Py,Pz) lies on the inside if N*P+D&gt;=0. N is the normal vector of the plane, pointing towards the volume inside.</div>
+<div>planesInSize: the number of values in the planesIn array.</div>
+<div>planesOut: an array describing a convex volume, via planes. The segment (or parts of it) outside the volume and inside volume planesIn, is detected. Each plane is defined by 4 values: (Nx,Ny,Nz,D), where a point (Px,Py,Pz) lies on the outside if N*P+D&lt;0. N is the normal vector of the plane, pointing towards the volume inside. planesOut can be nullptr if planesOutSize is 0</div>
+<div>planesOutSize: the number of values in the planesOut array.</div>
+<div>sensorTransformation: the transformation frame of the sensor (also transforms the sensor's volumes).</div>
+<div>segmentEndPoint: position of vertex A on the segment.</div>
+<div>segmentVector: vector stretching from vertex A to vertex B on the segment.</div>
+<div>dist: the distance threshold as input, and the minimum distance as output if it is below the threshold.</div>
+<div>maxAngle: the maximum allowed angle between detection ray and a perpendicular vector of the segment. Zero to ignore the maximum angle.</div>
+<div>detectPt: the position of the detected point, if return value is true.</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -3027,20 +3027,20 @@ td.section { margin: 0; padding: 0; }
 <tr class="apiTableTr">
 <td class="apiTableLeftCParam">Arguments</td>
 <td class="apiTableRightCParam">
-<div><strong>planesIn</strong>: an array describing a convex volume, via planes. The triangle (or parts of it) inside the volume, and outside of volume planesOut, is detected. Each plane is defined by 4 values: (Nx,Ny,Nz,D), where a point (Px,Py,Pz) lies on the inside if N*P+D&gt;=0. N is the normal vector of the plane, pointing towards the volume inside.</div>
-<div><strong>planesInSize</strong>: the number of values in the planesIn array.</div>
-<div><strong>planesOut</strong>: an array describing a convex volume, via planes. The triangle (or parts of it) outside the volume and inside volume planesIn, is detected. Each plane is defined by 4 values: (Nx,Ny,Nz,D), where a point (Px,Py,Pz) lies on the outside if N*P+D&lt;0. N is the normal vector of the plane, pointing towards the volume inside. planesOut can be nullptr if planesOutSize is 0</div>
-<div><strong>planesOutSize</strong>: the number of values in the planesOut array.</div>
-<div><strong>sensorTransformation</strong>: the transformation frame of the sensor (also transforms the sensor's volumes).</div>
-<div><strong>p</strong>: position of vertex A on the triangle.</div>
-<div><strong>v</strong>: vector stretching from vertex A to vertex B on the triangle.</div>
-<div><strong>w</strong>: vector stretching from vertex A to vertex C on the triangle.</div>
-<div><strong>dist</strong>: the distance threshold as input, and the minimum distance as output if it is below the threshold.</div>
-<div><strong>frontDetection</strong>: if true, the front of the triangle will be detected.</div>
-<div><strong>backDetection</strong>: if true, the back of the triangle will be detected.</div>
-<div><strong>maxAngle</strong>: the maximum allowed angle between detection ray and normal vector of the triangle. Zero to ignore the maximum angle.</div>
-<div><strong>detectPt</strong>: the position of the detected point, if return value is true.</div>
-<div><strong>triN</strong>: the normal vector of the triangle, if return value is true.</div>
+<div>planesIn: an array describing a convex volume, via planes. The triangle (or parts of it) inside the volume, and outside of volume planesOut, is detected. Each plane is defined by 4 values: (Nx,Ny,Nz,D), where a point (Px,Py,Pz) lies on the inside if N*P+D&gt;=0. N is the normal vector of the plane, pointing towards the volume inside.</div>
+<div>planesInSize: the number of values in the planesIn array.</div>
+<div>planesOut: an array describing a convex volume, via planes. The triangle (or parts of it) outside the volume and inside volume planesIn, is detected. Each plane is defined by 4 values: (Nx,Ny,Nz,D), where a point (Px,Py,Pz) lies on the outside if N*P+D&lt;0. N is the normal vector of the plane, pointing towards the volume inside. planesOut can be nullptr if planesOutSize is 0</div>
+<div>planesOutSize: the number of values in the planesOut array.</div>
+<div>sensorTransformation: the transformation frame of the sensor (also transforms the sensor's volumes).</div>
+<div>p: position of vertex A on the triangle.</div>
+<div>v: vector stretching from vertex A to vertex B on the triangle.</div>
+<div>w: vector stretching from vertex A to vertex C on the triangle.</div>
+<div>dist: the distance threshold as input, and the minimum distance as output if it is below the threshold.</div>
+<div>frontDetection: if true, the front of the triangle will be detected.</div>
+<div>backDetection: if true, the back of the triangle will be detected.</div>
+<div>maxAngle: the maximum allowed angle between detection ray and normal vector of the triangle. Zero to ignore the maximum angle.</div>
+<div>detectPt: the position of the detected point, if return value is true.</div>
+<div>triN: the normal vector of the triangle, if return value is true.</div>
 </td>
 </tr>
 <tr class="apiTableTr">

@@ -33,22 +33,22 @@ C/C++<br>synopsis
 <tr class=apiTableTr> 
 <td class=apiTableLeftCParam>C/C++<br>parameters</td> 
 <td class=apiTableRightCParam>
-<div><strong>fileformat</strong>: the fileformat to export to:</div>
+<div>fileformat: the fileformat to export to:</div>
 <div class=tab>0: OBJ format</div>
 <div class=tab>3: TEXT STL format</div>
 <div class=tab>4: BINARY STL format</div>
 <div class=tab>5: COLLADA format</div>
 <div class=tab>6: TEXT PLY format</div>
 <div class=tab>7: BINARY PLY format</div>
-<div><strong>pathAndFilename</strong>: the location of the file to create.</div>
-<div><strong>options</strong>: keep at 0</div>
-<div><strong>scalingFactor</strong>: the scaling factor to apply to the vertices to export</div>
-<div><strong>vertices</strong>: an array to vertice arrays. See the example below</div>
-<div><strong>verticesSizes</strong>: an array indicating the individual vertice array sizes. See the example below</div>
-<div><strong>indices</strong>: an array to indice arrays. See the example below</div>
-<div><strong>indicesSizes</strong>: an array indicating the individual indice array sizes. See the example below</div>
-<div><strong>reserved</strong>: reserved for future extensions. Keep at nullptr.</div>
-<div><strong>names</strong>: Keep at nullptr</div>
+<div>pathAndFilename: the location of the file to create.</div>
+<div>options: keep at 0</div>
+<div>scalingFactor: the scaling factor to apply to the vertices to export</div>
+<div>vertices: an array to vertice arrays. See the example below</div>
+<div>verticesSizes: an array indicating the individual vertice array sizes. See the example below</div>
+<div>indices: an array to indice arrays. See the example below</div>
+<div>indicesSizes: an array indicating the individual indice array sizes. See the example below</div>
+<div>reserved: reserved for future extensions. Keep at nullptr.</div>
+<div>names: Keep at nullptr</div>
 <br>
 <div>USAGE EXAMPLE:</div>
 <code class="hljs language-c++ simple">
@@ -96,7 +96,7 @@ for (simInt i=0;i&#60;shapeCount;i++)
 delete[] vertices;
 delete[] verticesSizes;
 delete[] indices;
-delete[] indicesSizes;</code>
+delete[] indicesSizes;</pre>
 
 </td> 
 </tr> 
@@ -118,12 +118,12 @@ Lua<br>synopsis
 <tr class=apiTableTr> 
 <td class=apiTableLeftLParam>Lua<br>parameters</td> 
 <td class=apiTableRightLParam>
-<div><strong>fileformat</strong>: same as C function</div>
-<div><strong>pathAndFilename</strong>: same as C function</div>
-<div><strong>options</strong>: same as C function</div>
-<div><strong>scalingFactor</strong>: same as C function</div>
-<div><strong>vertices</strong>: a table of vertice tables. See the example below</div>
-<div><strong>indices</strong>: a table of indice tables. See the example below</div>
+<div>fileformat: same as C function</div>
+<div>pathAndFilename: same as C function</div>
+<div>options: same as C function</div>
+<div>scalingFactor: same as C function</div>
+<div>vertices: a table of vertice tables. See the example below</div>
+<div>indices: a table of indice tables. See the example below</div>
 <br>
 <div>USAGE EXAMPLE (e.g. in a <a href="../customizationScripts.html">customization script</a>):</div>
 <code class="hljs language-lua simple">
@@ -153,7 +153,7 @@ if (exportButtonPressed) then
     if (#allVertices>0) then
         sim.exportMesh(0,"d:\\example.obj",0,1,allVertices,allIndices)
     end
-end</code>
+end</pre>
 </td> 
 </tr> 
 <tr class=apiTableTr> 

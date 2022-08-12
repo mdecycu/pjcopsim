@@ -36,9 +36,9 @@ Python<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>Python parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>message</strong>: the message to display</div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_oneshot</div>
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>message: the message to display</div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_oneshot</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -46,7 +46,7 @@ Python<br>synopsis
 Python return values
 </td> 
 <td class=remApiTableRightCRet>
-<div><strong>returnCode</strong>: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
+<div>returnCode: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -88,10 +88,10 @@ Python<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>Python parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>signalName</strong>: name of the signal</div>
-<div><strong>signalValueToAppend</strong>: value to append to the  signal. That value may contain any value, including embedded zeros.</div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_oneshot
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>signalName: name of the signal</div>
+<div>signalValueToAppend: value to append to the  signal. That value may contain any value, including embedded zeros.</div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_oneshot
 </div>
 </td> 
 </tr> 
@@ -100,7 +100,7 @@ Python<br>synopsis
 Python return values
 </td> 
 <td class=remApiTableRightCRet>
-<div><strong>returnCode</strong>: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
+<div>returnCode: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -142,9 +142,9 @@ Python<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>Python parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>consoleHandle</strong>: the handle of the console window, previously returned by the <a href="#simxAuxiliaryConsoleOpen">simxAuxiliaryConsoleOpen</a> command</div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_oneshot
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>consoleHandle: the handle of the console window, previously returned by the <a href="#simxAuxiliaryConsoleOpen">simxAuxiliaryConsoleOpen</a> command</div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_oneshot
 </div>
 </td> 
 </tr> 
@@ -153,7 +153,7 @@ Python<br>synopsis
 Python return values
 </td> 
 <td class=remApiTableRightCRet>
-<div><strong>returnCode</strong>: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
+<div>returnCode: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -195,15 +195,15 @@ Python<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>Python parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>title</strong>: the title of the console window</div>
-<div><strong>maxLines</strong>: the number of text lines that can be displayed and buffered</div>
-<div><strong>mode</strong>: bit-coded value. Bit0 set indicates that the console window will   automatically close at simulation end, bit1 set   indicates that lines will be wrapped, bit2 set indicates that the user   can close the console window, bit3 set indicates that the console will   automatically be hidden during simulation pause, bit4 set indicates that   the console will not automatically hide when the user switches to   another scene.</div>
-<div><strong>position</strong>: the initial position of the console window (x and y value). Can be <strong>None</strong> for default values.</div>
-<div><strong>size</strong>: the initial size of the console window (x and y value). Can be <strong>None</strong> for default values.</div>
-<div><strong>textColor</strong>: the color of the text (rgb values, 0-1). Can be <strong>None</strong> for default values.</div>
-<div><strong>backgroundColor</strong>: the background color of the console window (rgb values, 0-1). Can be <strong>None</strong> for default values.</div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_blocking
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>title: the title of the console window</div>
+<div>maxLines: the number of text lines that can be displayed and buffered</div>
+<div>mode: bit-coded value. Bit0 set indicates that the console window will   automatically close at simulation end, bit1 set   indicates that lines will be wrapped, bit2 set indicates that the user   can close the console window, bit3 set indicates that the console will   automatically be hidden during simulation pause, bit4 set indicates that   the console will not automatically hide when the user switches to   another scene.</div>
+<div>position: the initial position of the console window (x and y value). Can be None for default values.</div>
+<div>size: the initial size of the console window (x and y value). Can be None for default values.</div>
+<div>textColor: the color of the text (rgb values, 0-1). Can be None for default values.</div>
+<div>backgroundColor: the background color of the console window (rgb values, 0-1). Can be None for default values.</div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_blocking
 </div>
 </td> 
 </tr> 
@@ -212,8 +212,8 @@ Python<br>synopsis
 Python return values
 </td> 
 <td class=remApiTableRightCRet>
-<div><strong>returnCode</strong>: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
-<div><strong>consoleHandle</strong>: the handle of the created console</div>
+<div>returnCode: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
+<div>consoleHandle: the handle of the created console</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -255,10 +255,10 @@ Python<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>Python parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>consoleHandle</strong>: the handle of the console window, previously returned by the <a href="#simxAuxiliaryConsoleOpen">simxAuxiliaryConsoleOpen</a> command</div>
-<div><strong>txt</strong>: the text to append, or &quot;<strong>None</strong>&quot; to clear the console window</div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_blocking
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>consoleHandle: the handle of the console window, previously returned by the <a href="#simxAuxiliaryConsoleOpen">simxAuxiliaryConsoleOpen</a> command</div>
+<div>txt: the text to append, or &quot;None&quot; to clear the console window</div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_blocking
 </div>
 </td> 
 </tr> 
@@ -267,7 +267,7 @@ Python<br>synopsis
 Python return values
 </td> 
 <td class=remApiTableRightCRet>
-<div><strong>returnCode</strong>: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
+<div>returnCode: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -309,10 +309,10 @@ Python<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>Python parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>consoleHandle</strong>: the handle of the console window, previously returned by the <a href="#simxAuxiliaryConsoleOpen">simxAuxiliaryConsoleOpen</a> command</div>
-<div><strong>showState</strong>: indicates whether the console should be hidden (0) or shown (!=0)</div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_blocking
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>consoleHandle: the handle of the console window, previously returned by the <a href="#simxAuxiliaryConsoleOpen">simxAuxiliaryConsoleOpen</a> command</div>
+<div>showState: indicates whether the console should be hidden (0) or shown (!=0)</div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_blocking
 </div>
 </td> 
 </tr> 
@@ -321,7 +321,7 @@ Python<br>synopsis
 Python return values
 </td> 
 <td class=remApiTableRightCRet>
-<div><strong>returnCode</strong>: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
+<div>returnCode: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -365,18 +365,18 @@ Python<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>Python parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>scriptName</strong>: an empty string, or:</div>
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>scriptName: an empty string, or:</div>
 <div class=tab>if<em> scriptHandleOrType</em> is sim_scripttype_childscript (1) or sim_scripttype_customizationscript (6), then this should be the path to the scene object this script is attached to (e.g. &quot;/path/to/object&quot;)</div>
 <div class=tab>if<em> scriptHandleOrType</em> is sim_scripttype_addonscript (2), then this should be the name of the add-on (e.g. &quot;Isometric scaling;)</div>
-<div><strong>scriptHandleOrType</strong>: the handle of the script, otherwise the <a href="apiConstants.htm#scriptTypes">type of the script</a></div>
-<div><strong>functionName</strong>: the name of the script function to call in the specified script.</div>
+<div>scriptHandleOrType: the handle of the script, otherwise the <a href="apiConstants.htm#scriptTypes">type of the script</a></div>
+<div>functionName: the name of the script function to call in the specified script.</div>
 
-<div><strong>inInts</strong>: the input integer values that are handed over to the script function. Can be [].</div>
-<div><strong>inFloats</strong>: the input floating-point values that are handed over to the script function. Can be [].</div>
-<div><strong>inStrings</strong>: the input strings that are handed over to the script function. Can be [].</div>
-<div><strong>inBuffer</strong>: the input buffer that is handed over to the script function. Should be a bytearray.</div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_blocking</div>
+<div>inInts: the input integer values that are handed over to the script function. Can be [].</div>
+<div>inFloats: the input floating-point values that are handed over to the script function. Can be [].</div>
+<div>inStrings: the input strings that are handed over to the script function. Can be [].</div>
+<div>inBuffer: the input buffer that is handed over to the script function. Should be a bytearray.</div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_blocking</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -384,11 +384,11 @@ Python<br>synopsis
 Python return values
 </td> 
 <td class=remApiTableRightCRet>
-<div><strong>returnCode</strong>: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
-<div><strong>outInts</strong>: the returned integer values.</div>
-<div><strong>outFloats</strong>: the returned floating-point values.</div>
-<div><strong>outStrings</strong>: the returned strings.</div>
-<div><strong>outBuffer</strong>: the returned buffer.</div>
+<div>returnCode: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
+<div>outInts: the returned integer values.</div>
+<div>outFloats: the returned floating-point values.</div>
+<div>outStrings: the returned strings.</div>
+<div>outBuffer: the returned buffer.</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -430,10 +430,10 @@ Python<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>Python parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>entity1</strong>: the handle of the first entity.</div>
-<div><strong>entity2</strong>: the handle of the second entity.</div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation modes for this function are simx_opmode_streaming (the first call) and simx_opmode_buffer (the following calls)
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>entity1: the handle of the first entity.</div>
+<div>entity2: the handle of the second entity.</div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation modes for this function are simx_opmode_streaming (the first call) and simx_opmode_buffer (the following calls)
 </div>
 </td> 
 </tr> 
@@ -443,8 +443,8 @@ Python<br>synopsis
 Python return values
 </td> 
 <td class=remApiTableRightCRet>
-<div><strong>returnCode</strong>: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
-<div><strong>collisionState</strong>: the collision state</div>
+<div>returnCode: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
+<div>collisionState: the collision state</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -486,10 +486,10 @@ Python<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>Python parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>entity1</strong>: the handle of the first entity.</div>
-<div><strong>entity2</strong>: the handle of the second entity.</div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation modes for this function are simx_opmode_streaming (the first call) and simx_opmode_buffer (the following calls)
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>entity1: the handle of the first entity.</div>
+<div>entity2: the handle of the second entity.</div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation modes for this function are simx_opmode_streaming (the first call) and simx_opmode_buffer (the following calls)
 </div>
 </td> 
 </tr> 
@@ -498,8 +498,8 @@ Python<br>synopsis
 Python return values
 </td> 
 <td class=remApiTableRightCRet>
-<div><strong>returnCode</strong>: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
-<div><strong>minimumDistance</strong>: the minimum distance.</div>
+<div>returnCode: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
+<div>minimumDistance: the minimum distance.</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -541,9 +541,9 @@ Python<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>Python parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>signalName</strong>: name of the signal</div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_oneshot
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>signalName: name of the signal</div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_oneshot
 </div>
 </td> 
 </tr> 
@@ -552,7 +552,7 @@ Python<br>synopsis
 Python return values
 </td> 
 <td class=remApiTableRightCRet>
-<div><strong>returnCode</strong>: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
+<div>returnCode: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -594,9 +594,9 @@ Python<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>Python parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>signalName</strong>: name of the signal</div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_oneshot
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>signalName: name of the signal</div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_oneshot
 </div>
 </td> 
 </tr> 
@@ -605,7 +605,7 @@ Python<br>synopsis
 Python return values
 </td> 
 <td class=remApiTableRightCRet>
-<div><strong>returnCode</strong>: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
+<div>returnCode: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -647,9 +647,9 @@ Python<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>Python parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>signalName</strong>: name of the signal</div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_oneshot
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>signalName: name of the signal</div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_oneshot
 </div>
 </td> 
 </tr> 
@@ -658,7 +658,7 @@ Python<br>synopsis
 Python return values
 </td> 
 <td class=remApiTableRightCRet>
-<div><strong>returnCode</strong>: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
+<div>returnCode: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -700,8 +700,8 @@ Python<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>Python parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_blocking
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_blocking
 </div>
 </td> 
 </tr> 
@@ -710,7 +710,7 @@ Python<br>synopsis
 Python return values
 </td> 
 <td class=remApiTableRightCRet>
-<div><strong>returnCode</strong>: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
+<div>returnCode: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -752,9 +752,9 @@ Python<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>Python parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>objectHandles</strong>: an array containing the handles of the objects to copy</div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_blocking
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>objectHandles: an array containing the handles of the objects to copy</div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_blocking
 </div>
 </td> 
 </tr> 
@@ -763,8 +763,8 @@ Python<br>synopsis
 Python return values
 </td> 
 <td class=remApiTableRightCRet>
-<div><strong>returnCode</strong>: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
-<div><strong>newObjectHandles</strong>: an array containing the handles of newly created objects. Individual objects of a new model are not returned, but only the model base. </div>
+<div>returnCode: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
+<div>newObjectHandles: an array containing the handles of newly created objects. Individual objects of a new model are not returned, but only the model base. </div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -806,7 +806,7 @@ Python<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>Python parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>bufferSize</strong>: size of the buffer in bytes</div>
+<div>bufferSize: size of the buffer in bytes</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -814,7 +814,7 @@ Python<br>synopsis
 Python return values
 </td> 
 <td class=remApiTableRightCRet>
-<div><strong>buffer</strong>: the created buffer</div>
+<div>buffer: the created buffer</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -858,10 +858,10 @@ Python<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>Python parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>size</strong>: the size of the dummy.</div>
-<div><strong>colors</strong>: 4*3 bytes (0-255) for ambient_diffuse RGB, 3 reserved values (set to zero), specular RGB and emissive RGB. Can be <strong>None</strong> for default colors.</div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_blocking
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>size: the size of the dummy.</div>
+<div>colors: 4*3 bytes (0-255) for ambient_diffuse RGB, 3 reserved values (set to zero), specular RGB and emissive RGB. Can be None for default colors.</div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_blocking
 </div>
 </td> 
 </tr> 
@@ -870,8 +870,8 @@ Python<br>synopsis
 Python return value
 </td> 
 <td class=remApiTableRightCRet>
-<div><strong>returnCode</strong>: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
-<div><strong>dummyHandle</strong>: handle of the created dummy.</div>
+<div>returnCode: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
+<div>dummyHandle: handle of the created dummy.</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -915,14 +915,14 @@ Python<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>Python parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>titleText</strong>: Title bar text</div>
-<div><strong>mainText</strong>: Information text</div>
-<div><strong>dialogType</strong>: a <a href="apiConstants.htm#genericDialogStyles">generic dialog style</a></div>
-<div><strong>initialText</strong>: Initial text in the edit box if the dialog is of type sim_dlgstyle_input. Cannot be <strong>None</strong>.</div>
-<div><strong>titleColors</strong>: Title bar color (6 values for RGB for background and foreground). Can be <strong>None</strong> for default values.</div>
-<div><strong>dialogColors</strong>: Dialog color (6 values for RGB for background and foreground). Can be <strong>None</strong> for default Values.</div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_blocking
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>titleText: Title bar text</div>
+<div>mainText: Information text</div>
+<div>dialogType: a <a href="apiConstants.htm#genericDialogStyles">generic dialog style</a></div>
+<div>initialText: Initial text in the edit box if the dialog is of type sim_dlgstyle_input. Cannot be None.</div>
+<div>titleColors: Title bar color (6 values for RGB for background and foreground). Can be None for default values.</div>
+<div>dialogColors: Dialog color (6 values for RGB for background and foreground). Can be None for default Values.</div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_blocking
 </div>
 </td> 
 </tr> 
@@ -931,9 +931,9 @@ Python<br>synopsis
 Python return values
 </td> 
 <td class=remApiTableRightCRet>
-<div><strong>returnCode</strong>: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
-<div><strong>dialogHandle</strong>: handle of the generic dialog (different from OpenGl-based custom UI handle!! (see hereafter)). This handle should be used with the following functions: <a href="#simxGetDialogResult">simxGetDialogResult</a>, <a href="#simxGetDialogInput">simxGetDialogInput</a> and <a href="#simxEndDialog">simxEndDialog</a>.</div>
-<div><strong>uiHandle</strong>: the handle of the corresponding OpenGl-based custom UI</div>
+<div>returnCode: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
+<div>dialogHandle: handle of the generic dialog (different from OpenGl-based custom UI handle!! (see hereafter)). This handle should be used with the following functions: <a href="#simxGetDialogResult">simxGetDialogResult</a>, <a href="#simxGetDialogInput">simxGetDialogInput</a> and <a href="#simxEndDialog">simxEndDialog</a>.</div>
+<div>uiHandle: the handle of the corresponding OpenGl-based custom UI</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -975,9 +975,9 @@ Python<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>Python parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>dialogHandle</strong>: handle of generic dialog (return value of <a href="#simxDisplayDialog">simxDisplayDialog</a>)</div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_oneshot
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>dialogHandle: handle of generic dialog (return value of <a href="#simxDisplayDialog">simxDisplayDialog</a>)</div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_oneshot
 </div>
 </td> 
 </tr> 
@@ -986,7 +986,7 @@ Python<br>synopsis
 Python return values
 </td> 
 <td class=remApiTableRightCRet>
-<div><strong>returnCode</strong>: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
+<div>returnCode: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -1028,9 +1028,9 @@ Python<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>Python parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>fileName_serverSide</strong>: the file to erase on the server side. For now, do not specify a path (the file will be erased in the remote API plugin directory)</div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_oneshot
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>fileName_serverSide: the file to erase on the server side. For now, do not specify a path (the file will be erased in the remote API plugin directory)</div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_oneshot
 </div>
 </td> 
 </tr> 
@@ -1039,7 +1039,7 @@ Python<br>synopsis
 Python return values
 </td> 
 <td class=remApiTableRightCRet>
-<div><strong>returnCode</strong>: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
+<div>returnCode: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -1074,7 +1074,7 @@ Python<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>Python parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.  Can be -1 to end all running communication threads.</div>
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.  Can be -1 to end all running communication threads.</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -1124,9 +1124,9 @@ Python<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>Python parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>signalName</strong>: name of the signal</div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Since this function will clear a read signal, and we cannot afford to wait for a reply (well, we could, but that would mean a blocking operation), the function operates in a special mode and should be used as in following example:</div>
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>signalName: name of the signal</div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Since this function will clear a read signal, and we cannot afford to wait for a reply (well, we could, but that would mean a blocking operation), the function operates in a special mode and should be used as in following example:</div>
 
 <br>
 <code class="hljs language-python simple">
@@ -1146,7 +1146,7 @@ while sim.simxGetConnectionId(clientID) != -1:
 
   ..
 
-</code>
+</pre>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -1154,8 +1154,8 @@ while sim.simxGetConnectionId(clientID) != -1:
 Python return values
 </td> 
 <td class=remApiTableRightCRet>
-<div><strong>returnCode</strong>: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
-<div><strong>signalValue</strong>: the value of the signal.</div>
+<div>returnCode: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
+<div>signalValue: the value of the signal.</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -1197,9 +1197,9 @@ Python<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>Python parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>paramIdentifier</strong>: an <a href="apiConstants.htm#arrayParameters">array parameter identifier</a></div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_blocking (if not called on a regular basis)
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>paramIdentifier: an <a href="apiConstants.htm#arrayParameters">array parameter identifier</a></div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_blocking (if not called on a regular basis)
 </div>
 </td> 
 </tr> 
@@ -1208,8 +1208,8 @@ Python<br>synopsis
 Python return values
 </td> 
 <td class=remApiTableRightCRet>
-<div><strong>returnCode</strong>: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
-<div><strong>paramValues</strong>: an array containing 3 values</div>
+<div>returnCode: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
+<div>paramValues: an array containing 3 values</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -1251,9 +1251,9 @@ Python<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>Python parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>paramIdentifier</strong>: a <a href="apiConstants.htm#booleanParameters">bool parameter identifier</a></div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_blocking (if not called on a regular basis)
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>paramIdentifier: a <a href="apiConstants.htm#booleanParameters">bool parameter identifier</a></div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_blocking (if not called on a regular basis)
 </div>
 </td> 
 </tr> 
@@ -1262,8 +1262,8 @@ Python<br>synopsis
 Python return values
 </td> 
 <td class=remApiTableRightCRet>
-<div><strong>returnCode</strong>: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
-<div><strong>paramValue</strong>: the bool value</div>
+<div>returnCode: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
+<div>paramValue: the bool value</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -1300,7 +1300,7 @@ Description
 local collectionHandle=sim.createCollection(0)
 sim.addItemToCollection(collectionHandle,..)
 ..
-sim.setInt32Signal('collectionName',collectionHandle)</code></td>
+sim.setInt32Signal('collectionName',collectionHandle)</pre></td>
 </tr> 
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCSyn>
@@ -1311,9 +1311,9 @@ Python<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>Python parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>collectionName</strong>: name of the collection.</div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_blocking
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>collectionName: name of the collection.</div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_blocking
 </div>
 </td> 
 </tr> 
@@ -1322,8 +1322,8 @@ Python<br>synopsis
 Python return values
 </td> 
 <td class=remApiTableRightCRet>
-<div><strong>returnCode</strong>: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
-<div><strong>handle</strong>: the collection handle</div>
+<div>returnCode: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
+<div>handle: the collection handle</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -1365,9 +1365,9 @@ Python<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>Python parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>collisionObjectName</strong>: name of the collision object.</div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_blocking
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>collisionObjectName: name of the collision object.</div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_blocking
 </div>
 </td> 
 </tr> 
@@ -1376,8 +1376,8 @@ Python<br>synopsis
 Python return values
 </td> 
 <td class=remApiTableRightCRet>
-<div><strong>returnCode</strong>: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
-<div><strong>handle</strong>: the collision handle</div>
+<div>returnCode: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
+<div>handle: the collision handle</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -1419,7 +1419,7 @@ Python<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>Python parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -1427,7 +1427,7 @@ Python<br>synopsis
 Python return values
 </td> 
 <td class=remApiTableRightCRet>
-<div><strong>connectionId</strong>: a connection ID, or -1 if the client is not connected to the server. Different connection IDs indicate temporary disconections in-between.</div>
+<div>connectionId: a connection ID, or -1 if the client is not connected to the server. Different connection IDs indicate temporary disconections in-between.</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -1469,9 +1469,9 @@ Python<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>Python parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>dialogHandle</strong>: handle of generic dialog (return value of <a href="#simxDisplayDialog">simxDisplayDialog</a>)</div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_blocking 
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>dialogHandle: handle of generic dialog (return value of <a href="#simxDisplayDialog">simxDisplayDialog</a>)</div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_blocking 
 </div>
 </td> 
 </tr> 
@@ -1480,8 +1480,8 @@ Python<br>synopsis
 Python return values
 </td> 
 <td class=remApiTableRightCRet>
-<div><strong>returnCode</strong>: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
-<div><strong>inputText</strong>: the string the user entered.</div>
+<div>returnCode: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
+<div>inputText: the string the user entered.</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -1523,9 +1523,9 @@ Python<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>Python parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>dialogHandle</strong>: handle of generic dialog (return value of <a href="#simxDisplayDialog">simxDisplayDialog</a>)</div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_oneshot 
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>dialogHandle: handle of generic dialog (return value of <a href="#simxDisplayDialog">simxDisplayDialog</a>)</div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_oneshot 
 </div>
 </td> 
 </tr> 
@@ -1534,8 +1534,8 @@ Python<br>synopsis
 Python return values
 </td> 
 <td class=remApiTableRightCRet>
-<div><strong>returnCode</strong>: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
-<div><strong>result</strong>: the <a href="apiConstants.htm#genericDialogReturnValues">result value</a>. </div>
+<div>returnCode: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
+<div>result: the <a href="apiConstants.htm#genericDialogReturnValues">result value</a>. </div>
 <br>
 <div>Note. If the result is sim_dlgret_still_open, the dialog was not closed and no button was pressed. Otherwise, you should free resources with <a href="#simxEndDialog">simxEndDialog</a> (the dialog might not be visible anymore, but is still present)</div>
 </td> 
@@ -1579,9 +1579,9 @@ Python<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>Python parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>distanceObjectName</strong>: name of the distance object.</div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_blocking
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>distanceObjectName: name of the distance object.</div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_blocking
 </div>
 </td> 
 </tr> 
@@ -1590,8 +1590,8 @@ Python<br>synopsis
 Python return values
 </td> 
 <td class=remApiTableRightCRet>
-<div><strong>returnCode</strong>: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
-<div><strong>handle</strong>: handle of the distance object</div>
+<div>returnCode: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
+<div>handle: handle of the distance object</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -1633,9 +1633,9 @@ Python<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>Python parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>paramIdentifier</strong>: a <a href="apiConstants.htm#floatingParameters">floating parameter identifier</a></div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_blocking (if not called on a regular basis)
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>paramIdentifier: a <a href="apiConstants.htm#floatingParameters">floating parameter identifier</a></div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_blocking (if not called on a regular basis)
 </div>
 </td> 
 </tr> 
@@ -1644,8 +1644,8 @@ Python<br>synopsis
 Python return values
 </td> 
 <td class=remApiTableRightCRet>
-<div><strong>returnCode</strong>: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
-<div><strong>paramValue</strong>: a pointer that will receive the parameter value</div>
+<div>returnCode: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
+<div>paramValue: a pointer that will receive the parameter value</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -1687,9 +1687,9 @@ Python<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>Python parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>signalName</strong>: name of the signal</div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation modes for this function are simx_opmode_streaming (the first call) and simx_opmode_buffer (the following calls)
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>signalName: name of the signal</div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation modes for this function are simx_opmode_streaming (the first call) and simx_opmode_buffer (the following calls)
 </div>
 </td> 
 </tr> 
@@ -1698,8 +1698,8 @@ Python<br>synopsis
 Python return values
 </td> 
 <td class=remApiTableRightCRet>
-<div><strong>returnCode</strong>: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
-<div><strong>signalValue</strong>: the value of the signal</div>
+<div>returnCode: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
+<div>signalValue: the value of the signal</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -1744,8 +1744,8 @@ Python<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>Python parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>infoType</strong>: an <a href="remoteApiConstants.htm#inboxMessageInfoType">inbox message info type</a></div>
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>infoType: an <a href="remoteApiConstants.htm#inboxMessageInfoType">inbox message info type</a></div>
 
 </td> 
 </tr> 
@@ -1754,8 +1754,8 @@ Python<br>synopsis
 Python return values
 </td> 
 <td class=remApiTableRightCRet>
-<div><strong>result</strong>: -1 in case of an error</div>
-<div><strong>info</strong>: the requested information</div>
+<div>result: -1 in case of an error</div>
+<div>info: the requested information</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -1797,9 +1797,9 @@ Python<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>Python parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>paramIdentifier</strong>: an <a href="apiConstants.htm#integerParameters">integer parameter identifier</a></div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_blocking (if not called on a regular basis)
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>paramIdentifier: an <a href="apiConstants.htm#integerParameters">integer parameter identifier</a></div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_blocking (if not called on a regular basis)
 </div>
 </td> 
 </tr> 
@@ -1808,8 +1808,8 @@ Python<br>synopsis
 Python return values
 </td> 
 <td class=remApiTableRightCRet>
-<div><strong>returnCode</strong>: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
-<div><strong>paramValue</strong>: the parameter value</div>
+<div>returnCode: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
+<div>paramValue: the parameter value</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -1851,9 +1851,9 @@ Python<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>Python parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>signalName</strong>: name of the signal</div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation modes for this function are simx_opmode_streaming (the first call) and simx_opmode_buffer (the following calls)
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>signalName: name of the signal</div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation modes for this function are simx_opmode_streaming (the first call) and simx_opmode_buffer (the following calls)
 </div>
 </td> 
 </tr> 
@@ -1862,8 +1862,8 @@ Python<br>synopsis
 Python return values
 </td> 
 <td class=remApiTableRightCRet>
-<div><strong>returnCode</strong>: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
-<div><strong>signalValue</strong>: the value of the signal</div>
+<div>returnCode: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
+<div>signalValue: the value of the signal</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -1905,9 +1905,9 @@ Python<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>Python parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>jointHandle</strong>: handle of the joint</div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation modes for this function are simx_opmode_streaming (the first call) and simx_opmode_buffer (the following calls)
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>jointHandle: handle of the joint</div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation modes for this function are simx_opmode_streaming (the first call) and simx_opmode_buffer (the following calls)
 </div>
 </td> 
 </tr> 
@@ -1916,8 +1916,8 @@ Python<br>synopsis
 Python return values
 </td> 
 <td class=remApiTableRightCRet>
-<div><strong>returnCode</strong>: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
-<div><strong>force</strong>: the force or the torque applied to the joint  along/about its z-axis
+<div>returnCode: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
+<div>force: the force or the torque applied to the joint  along/about its z-axis
 </div>
 </td> 
 </tr> 
@@ -1963,9 +1963,9 @@ Python<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>Python parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>jointHandle</strong>: handle of the joint</div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation modes for this function are simx_opmode_streaming (the first call) and simx_opmode_buffer (the following calls)
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>jointHandle: handle of the joint</div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation modes for this function are simx_opmode_streaming (the first call) and simx_opmode_buffer (the following calls)
 </div>
 </td> 
 </tr> 
@@ -1974,8 +1974,8 @@ Python<br>synopsis
 Python return values
 </td> 
 <td class=remApiTableRightCRet>
-<div><strong>returnCode</strong>: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
-<div><strong>force</strong>: the maximum force the joint can exert</div>
+<div>returnCode: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
+<div>force: the maximum force the joint can exert</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -2020,9 +2020,9 @@ Python<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>Python parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>jointHandle</strong>: handle of the joint</div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation modes for this function are simx_opmode_streaming (the first call) and simx_opmode_buffer (the following calls)
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>jointHandle: handle of the joint</div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation modes for this function are simx_opmode_streaming (the first call) and simx_opmode_buffer (the following calls)
 </div>
 </td> 
 </tr> 
@@ -2031,8 +2031,8 @@ Python<br>synopsis
 Python return values
 </td> 
 <td class=remApiTableRightCRet>
-<div><strong>returnCode</strong>: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
-<div><strong>matrix</strong>: array containing 12 values. See the regular API equivalent function for details
+<div>returnCode: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
+<div>matrix: array containing 12 values. See the regular API equivalent function for details
 </div>
 </td> 
 </tr> 
@@ -2072,9 +2072,9 @@ Python<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>Python parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>jointHandle</strong>: handle of the joint</div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation modes for this function are simx_opmode_streaming (the first call) and simx_opmode_buffer (the following calls)
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>jointHandle: handle of the joint</div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation modes for this function are simx_opmode_streaming (the first call) and simx_opmode_buffer (the following calls)
 </div>
 </td> 
 </tr> 
@@ -2083,8 +2083,8 @@ Python<br>synopsis
 Python return values
 </td> 
 <td class=remApiTableRightCRet>
-<div><strong>returnCode</strong>: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
-<div><strong>position</strong>: intrinsic position of the joint. This is a one-dimensional value: if the joint is revolute, the rotation angle is returned, if the joint is prismatic, the translation amount is returned, etc.
+<div>returnCode: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
+<div>position: intrinsic position of the joint. This is a one-dimensional value: if the joint is revolute, the rotation angle is returned, if the joint is prismatic, the translation amount is returned, etc.
 </div>
 </td> 
 </tr> 
@@ -2122,7 +2122,7 @@ Description
 data=sim.simxGetVisionSensorImage(clientID,handle,0,sim.simx_opmode_buffer)
 if data[0] == sim.simx_return_ok :
     imageAcquisitionTime=sim.simxGetLastCmdTime(clientID)
-</code>
+</pre>
 
 <br>
 
@@ -2138,7 +2138,7 @@ Python<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>Python parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -2146,7 +2146,7 @@ Python<br>synopsis
 Python return values
 </td> 
 <td class=remApiTableRightCRet>
-<div><strong>cmdTime</strong>: the simulation time in milliseconds when the command reply was generated, or 0 if simulation was not running.</div>
+<div>cmdTime: the simulation time in milliseconds when the command reply was generated, or 0 if simulation was not running.</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -2188,8 +2188,8 @@ Python<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>Python parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation modes for this function are simx_opmode_streaming (the first call) and simx_opmode_buffer (the following calls) when not debugging. For debugging purposes, use simx_opmode_blocking.
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation modes for this function are simx_opmode_streaming (the first call) and simx_opmode_buffer (the following calls) when not debugging. For debugging purposes, use simx_opmode_blocking.
 </div>
 </td> 
 </tr> 
@@ -2198,8 +2198,8 @@ Python<br>synopsis
 Python return values
 </td> 
 <td class=remApiTableRightCRet>
-<div><strong>returnCode</strong>: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
-<div><strong>errorStrings</strong>: the error strings</div>
+<div>returnCode: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
+<div>errorStrings: the error strings</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -2241,9 +2241,9 @@ Python<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>Python parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>objectHandle</strong>: handle of the object</div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation modes for this function are simx_opmode_streaming (the first call) and simx_opmode_buffer (the following calls), or simx_opmode_blocking (depending on the intended usage)
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>objectHandle: handle of the object</div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation modes for this function are simx_opmode_streaming (the first call) and simx_opmode_buffer (the following calls), or simx_opmode_blocking (depending on the intended usage)
 </div>
 </td> 
 </tr> 
@@ -2252,8 +2252,8 @@ Python<br>synopsis
 Python return values
 </td> 
 <td class=remApiTableRightCRet>
-<div><strong>returnCode</strong>: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
-<div><strong>prop</strong>: the <a href="apiConstants.htm#modelProperties">model property value</a></div>
+<div>returnCode: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
+<div>prop: the <a href="apiConstants.htm#modelProperties">model property value</a></div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -2295,10 +2295,10 @@ Python<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>Python parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>parentObjectHandle</strong>: handle of the object</div>
-<div><strong>childIndex</strong>: zero-based index of the child's position. To retrieve all children of an object, call the function by increasing the index until the child handle is  -1</div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_blocking
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>parentObjectHandle: handle of the object</div>
+<div>childIndex: zero-based index of the child's position. To retrieve all children of an object, call the function by increasing the index until the child handle is  -1</div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_blocking
 </div>
 </td> 
 </tr> 
@@ -2307,8 +2307,8 @@ Python<br>synopsis
 Python return values
 </td> 
 <td class=remApiTableRightCRet>
-<div><strong>returnCode</strong>: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
-<div><strong>childObjectHandle</strong>: the handle of the child object. If the value is -1, there is no child at the given index</div>
+<div>returnCode: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
+<div>childObjectHandle: the handle of the child object. If the value is -1, there is no child at the given index</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -2350,10 +2350,10 @@ Python<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>Python parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>objectHandle</strong>: handle of the object</div>
-<div><strong>parameterID</strong>: identifier of the parameter to retrieve. See the <a href="objectParameterIDs.htm">list of all possible object parameter identifiers</a></div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation modes for this function are simx_opmode_streaming (the first call) and simx_opmode_buffer (the following calls), or simx_opmode_blocking (depending on the intended usage)
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>objectHandle: handle of the object</div>
+<div>parameterID: identifier of the parameter to retrieve. See the <a href="objectParameterIDs.htm">list of all possible object parameter identifiers</a></div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation modes for this function are simx_opmode_streaming (the first call) and simx_opmode_buffer (the following calls), or simx_opmode_blocking (depending on the intended usage)
 </div>
 </td> 
 </tr> 
@@ -2362,8 +2362,8 @@ Python<br>synopsis
 Python return values
 </td> 
 <td class=remApiTableRightCRet>
-<div><strong>returnCode</strong>: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
-<div><strong>parameterValue</strong>: the value of the parameter</div>
+<div>returnCode: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
+<div>parameterValue: the value of the parameter</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -2405,9 +2405,9 @@ Python<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>Python parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>objectType</strong>: a <a href="apiConstants.htm#sceneObjectTypes">scene object type</a>, sim_appobj_object_type for all <a href="objects.htm">scene objects</a>, or a <a href="#simxGetCollectionHandle">collection</a> handle.</div>
-<div><strong>dataType</strong>: the type of data that is desired: </div>
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>objectType: a <a href="apiConstants.htm#sceneObjectTypes">scene object type</a>, sim_appobj_object_type for all <a href="objects.htm">scene objects</a>, or a <a href="#simxGetCollectionHandle">collection</a> handle.</div>
+<div>dataType: the type of data that is desired: </div>
 <div class=tab>0: retrieves the object names (deprecated. See further down)</div>
 <div class=tab>1: retrieves the <a href="apiConstants.htm#sceneObjectTypes">object types</a> (in intData)</div>
 <div class=tab>2: retrieves the parent object handles (in intData)</div>
@@ -2432,7 +2432,7 @@ Python<br>synopsis
 <div class=tab>21: retrieves the object paths (in stringData.)</div>
 
 
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_blocking or simx_opmode_streaming.</div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_blocking or simx_opmode_streaming.</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -2440,12 +2440,12 @@ Python<br>synopsis
 Python return values
 </td> 
 <td class=remApiTableRightCRet>
-<div><strong>returnCode</strong>: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
+<div>returnCode: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
 
-<div><strong>handles</strong>: the object handles.</div>
-<div><strong>intData</strong>: the integer values.</div>
-<div><strong>floatData</strong>: the float values.</div>
-<div><strong>stringData</strong>: the string values.</div>
+<div>handles: the object handles.</div>
+<div>intData: the integer values.</div>
+<div>floatData: the float values.</div>
+<div>stringData: the string values.</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -2487,9 +2487,9 @@ Python<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>Python parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>objectPath</strong>: the path of the object. See the section on <a href="accessingSceneObjects.htm">accessing scene objects</a> for details.</div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_blocking
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>objectPath: the path of the object. See the section on <a href="accessingSceneObjects.htm">accessing scene objects</a> for details.</div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_blocking
 </div>
 </td> 
 </tr> 
@@ -2498,8 +2498,8 @@ Python<br>synopsis
 Python return values
 </td> 
 <td class=remApiTableRightCRet>
-<div><strong>returnCode</strong>: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
-<div><strong>handle</strong>: the handle</div>
+<div>returnCode: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
+<div>handle: the handle</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -2541,10 +2541,10 @@ Python<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>Python parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>objectHandle</strong>: handle of the object</div>
-<div><strong>parameterID</strong>: identifier of the parameter to retrieve. See the <a href="objectParameterIDs.htm">list of all possible object parameter identifiers</a></div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation modes for this function are simx_opmode_streaming (the first call) and simx_opmode_buffer (the following calls), or simx_opmode_blocking (depending on the intended usage)
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>objectHandle: handle of the object</div>
+<div>parameterID: identifier of the parameter to retrieve. See the <a href="objectParameterIDs.htm">list of all possible object parameter identifiers</a></div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation modes for this function are simx_opmode_streaming (the first call) and simx_opmode_buffer (the following calls), or simx_opmode_blocking (depending on the intended usage)
 </div>
 </td> 
 </tr> 
@@ -2553,8 +2553,8 @@ Python<br>synopsis
 Python return values
 </td> 
 <td class=remApiTableRightCRet>
-<div><strong>returnCode</strong>: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
-<div><strong>parameterValue</strong>: the value of the parameter</div>
+<div>returnCode: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
+<div>parameterValue: the value of the parameter</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -2596,10 +2596,10 @@ Python<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>Python parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>objectHandle</strong>: handle of the object</div>
-<div><strong>relativeToObjectHandle</strong>: indicates relative to which reference frame we want the orientation.   Specify -1 to retrieve the absolute orientation, sim_handle_parent to   retrieve the orientation relative to the object's parent, or an object   handle relative to whose reference frame you want the orientation</div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation modes for this function are simx_opmode_streaming (the first call) and simx_opmode_buffer (the following calls)
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>objectHandle: handle of the object</div>
+<div>relativeToObjectHandle: indicates relative to which reference frame we want the orientation.   Specify -1 to retrieve the absolute orientation, sim_handle_parent to   retrieve the orientation relative to the object's parent, or an object   handle relative to whose reference frame you want the orientation</div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation modes for this function are simx_opmode_streaming (the first call) and simx_opmode_buffer (the following calls)
 </div>
 </td> 
 </tr> 
@@ -2608,8 +2608,8 @@ Python<br>synopsis
 Python return values
 </td> 
 <td class=remApiTableRightCRet>
-<div><strong>returnCode</strong>: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
-<div><strong>eulerAngles</strong>: the Euler angles (alpha, beta and gamma)</div>
+<div>returnCode: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
+<div>eulerAngles: the Euler angles (alpha, beta and gamma)</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -2651,9 +2651,9 @@ Python<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>Python parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>objectHandle</strong>: handle of the object</div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_blocking
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>objectHandle: handle of the object</div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_blocking
 </div>
 </td> 
 </tr> 
@@ -2662,8 +2662,8 @@ Python<br>synopsis
 Python return values
 </td> 
 <td class=remApiTableRightCRet>
-<div><strong>returnCode</strong>: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
-<div><strong>parentObjectHandle</strong>: the handle of the parent object. If the value is -1, the object has no parent</div>
+<div>returnCode: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
+<div>parentObjectHandle: the handle of the parent object. If the value is -1, the object has no parent</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -2705,10 +2705,10 @@ Python<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>Python parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>objectHandle</strong>: handle of the object</div>
-<div><strong>relativeToObjectHandle</strong>: indicates relative to which reference frame we want the position.   Specify -1 to retrieve the absolute position, sim_handle_parent to   retrieve the position relative to the object's parent, or an object   handle relative to whose reference frame you want the position</div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation modes for this function are simx_opmode_streaming (the first call) and simx_opmode_buffer (the following calls)
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>objectHandle: handle of the object</div>
+<div>relativeToObjectHandle: indicates relative to which reference frame we want the position.   Specify -1 to retrieve the absolute position, sim_handle_parent to   retrieve the position relative to the object's parent, or an object   handle relative to whose reference frame you want the position</div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation modes for this function are simx_opmode_streaming (the first call) and simx_opmode_buffer (the following calls)
 </div>
 </td> 
 </tr> 
@@ -2717,8 +2717,8 @@ Python<br>synopsis
 Python return values
 </td> 
 <td class=remApiTableRightCRet>
-<div><strong>returnCode</strong>: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
-<div><strong>position</strong>: the position (x,y,z)</div>
+<div>returnCode: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
+<div>position: the position (x,y,z)</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -2760,10 +2760,10 @@ Python<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>Python parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>objectHandle</strong>: handle of the object</div>
-<div><strong>relativeToObjectHandle</strong>: indicates relative to which reference frame we want the quaternion.   Specify -1 to retrieve the absolute quaternion, sim_handle_parent to   retrieve the quaternion relative to the object's parent, or an object   handle relative to whose reference frame you want the quaternion</div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation modes for this function are simx_opmode_streaming (the first call) and simx_opmode_buffer (the following calls)
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>objectHandle: handle of the object</div>
+<div>relativeToObjectHandle: indicates relative to which reference frame we want the quaternion.   Specify -1 to retrieve the absolute quaternion, sim_handle_parent to   retrieve the quaternion relative to the object's parent, or an object   handle relative to whose reference frame you want the quaternion</div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation modes for this function are simx_opmode_streaming (the first call) and simx_opmode_buffer (the following calls)
 </div>
 </td> 
 </tr> 
@@ -2772,8 +2772,8 @@ Python<br>synopsis
 Python return values
 </td> 
 <td class=remApiTableRightCRet>
-<div><strong>returnCode</strong>: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
-<div><strong>quat</strong>: the quaternion (x, y, z, w)</div>
+<div>returnCode: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
+<div>quat: the quaternion (x, y, z, w)</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -2815,9 +2815,9 @@ Python<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>Python parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>objectType</strong>: <a href="apiConstants.htm#sceneObjectTypes">object type</a> (sim_object_shape_type, sim_object_joint_type, etc., or sim_handle_all for any type of object</div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_blocking
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>objectType: <a href="apiConstants.htm#sceneObjectTypes">object type</a> (sim_object_shape_type, sim_object_joint_type, etc., or sim_handle_all for any type of object</div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_blocking
 </div>
 </td> 
 </tr> 
@@ -2826,8 +2826,8 @@ Python<br>synopsis
 Python return values
 </td> 
 <td class=remApiTableRightCRet>
-<div><strong>returnCode</strong>: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
-<div><strong>objectHandles</strong>: an object handle array.</div>
+<div>returnCode: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
+<div>objectHandles: an object handle array.</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -2869,8 +2869,8 @@ Python<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>Python parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation modes for this function are simx_opmode_streaming (the first call) and simx_opmode_buffer (the following calls), or simx_opmode_blocking depending on the intent.
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation modes for this function are simx_opmode_streaming (the first call) and simx_opmode_buffer (the following calls), or simx_opmode_blocking depending on the intent.
 </div>
 </td> 
 </tr> 
@@ -2879,8 +2879,8 @@ Python<br>synopsis
 Python return values
 </td> 
 <td class=remApiTableRightCRet>
-<div><strong>returnCode</strong>: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
-<div><strong>objectHandles</strong>: an object handle array.</div>
+<div>returnCode: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
+<div>objectHandles: an object handle array.</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -2922,9 +2922,9 @@ Python<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>Python parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>objectHandle</strong>: handle of the object</div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation modes for this function are simx_opmode_streaming (the first call) and simx_opmode_buffer (the following calls)
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>objectHandle: handle of the object</div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation modes for this function are simx_opmode_streaming (the first call) and simx_opmode_buffer (the following calls)
 </div>
 </td> 
 </tr> 
@@ -2933,9 +2933,9 @@ Python<br>synopsis
 Python return values
 </td> 
 <td class=remApiTableRightCRet>
-<div><strong>returnCode</strong>: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
-<div><strong>linearVelocity</strong>: the linear velocity (vx, vy, vz)</div>
-<div><strong>angularVelocity</strong>: the angular velocity (dAlpha, dBeta, dGamma)</div>
+<div>returnCode: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
+<div>linearVelocity: the linear velocity (vx, vy, vz)</div>
+<div>angularVelocity: the angular velocity (dAlpha, dBeta, dGamma)</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -2977,8 +2977,8 @@ Python<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>Python parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>infoType</strong>: an <a href="remoteApiConstants.htm#outboxMessageInfoType">outbox message info type</a></div>
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>infoType: an <a href="remoteApiConstants.htm#outboxMessageInfoType">outbox message info type</a></div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -2986,8 +2986,8 @@ Python<br>synopsis
 Python return values
 </td> 
 <td class=remApiTableRightCRet>
-<div><strong>result</strong>:-1 in case of an error</div>
-<div><strong>info</strong>: the requested information</div>
+<div>result:-1 in case of an error</div>
+<div>info: the requested information</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -3029,7 +3029,7 @@ Python<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>Python parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -3037,8 +3037,8 @@ Python<br>synopsis
 Python return values
 </td> 
 <td class=remApiTableRightCRet>
-<div><strong>returnCode</strong>: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
-<div><strong>pingTime</strong>: a pointer to a simxInt value accepting the ping time in milliseconds.</div>
+<div>returnCode: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
+<div>pingTime: a pointer to a simxInt value accepting the ping time in milliseconds.</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -3080,9 +3080,9 @@ Python<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>Python parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>paramIdentifier</strong>: a <a href="apiConstants.htm#stringParameters">string parameter identifier</a></div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_blocking (if not called on a regular basis)
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>paramIdentifier: a <a href="apiConstants.htm#stringParameters">string parameter identifier</a></div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_blocking (if not called on a regular basis)
 </div>
 </td> 
 </tr> 
@@ -3091,8 +3091,8 @@ Python<br>synopsis
 Python return values
 </td> 
 <td class=remApiTableRightCRet>
-<div><strong>returnCode</strong>: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
-<div><strong>paramValue</strong>: the string.</div>
+<div>returnCode: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
+<div>paramValue: the string.</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -3134,9 +3134,9 @@ Python<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>Python parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>signalName</strong>: name of the signal</div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation modes for this function are simx_opmode_streaming (the first call) and simx_opmode_buffer (the following calls)
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>signalName: name of the signal</div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation modes for this function are simx_opmode_streaming (the first call) and simx_opmode_buffer (the following calls)
 </div>
 </td> 
 </tr> 
@@ -3145,8 +3145,8 @@ Python<br>synopsis
 Python return values
 </td> 
 <td class=remApiTableRightCRet>
-<div><strong>returnCode</strong>: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
-<div><strong>signalValue</strong>: the value of the signal.</div>
+<div>returnCode: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
+<div>signalValue: the value of the signal.</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -3280,9 +3280,9 @@ Python<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>Python parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>sensorHandle</strong>: handle of the vision sensor</div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation modes for this function are simx_opmode_streaming (the first call) and simx_opmode_buffer (the following calls)
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>sensorHandle: handle of the vision sensor</div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation modes for this function are simx_opmode_streaming (the first call) and simx_opmode_buffer (the following calls)
 </div>
 </td> 
 </tr> 
@@ -3291,9 +3291,9 @@ Python<br>synopsis
 Python return values
 </td> 
 <td class=remApiTableRightCRet>
-<div><strong>returnCode</strong>: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
-<div><strong>resolution</strong>: the resolution of the image (x, y)</div>
-<div><strong>buffer</strong>: the depth buffer data. Values are in the range of 0-1 (0=closest to sensor, 1=farthest from sensor).</div>
+<div>returnCode: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
+<div>resolution: the resolution of the image (x, y)</div>
+<div>buffer: the depth buffer data. Values are in the range of 0-1 (0=closest to sensor, 1=farthest from sensor).</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -3335,11 +3335,11 @@ Python<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>Python parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>sensorHandle</strong>: handle of the vision sensor</div>
-<div><strong>options</strong>: image options, bit-coded:</div>
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>sensorHandle: handle of the vision sensor</div>
+<div>options: image options, bit-coded:</div>
 <div class=tab>bit0 set: each image pixel is a byte (greyscale image), otherwise each image pixel is a rgb byte-triplet</div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation modes for this function are simx_opmode_streaming (the first call) and simx_opmode_buffer (the following calls)
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation modes for this function are simx_opmode_streaming (the first call) and simx_opmode_buffer (the following calls)
 </div>
 </td> 
 </tr> 
@@ -3348,9 +3348,9 @@ Python<br>synopsis
 Python return values
 </td> 
 <td class=remApiTableRightCRet>
-<div><strong>returnCode</strong>: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
-<div><strong>resolution</strong>: the resolution of the image (x,y)</div>
-<div><strong>image</strong>: the image data. </div>
+<div>returnCode: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
+<div>resolution: the resolution of the image (x,y)</div>
+<div>image: the image data. </div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -3392,9 +3392,9 @@ Python<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>Python parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>jointHandle</strong>: handle of the joint</div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation modes for this function are simx_opmode_streaming (the first call) and simx_opmode_buffer (the following calls)
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>jointHandle: handle of the joint</div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation modes for this function are simx_opmode_streaming (the first call) and simx_opmode_buffer (the following calls)
 </div>
 </td> 
 </tr> 
@@ -3403,8 +3403,8 @@ Python<br>synopsis
 Python return values
 </td> 
 <td class=remApiTableRightCRet>
-<div><strong>returnCode</strong>: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
-<div><strong>force</strong>: the force or the torque applied to the joint  along/about its z-axis
+<div>returnCode: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
+<div>force: the force or the torque applied to the joint  along/about its z-axis
 </div>
 </td> 
 </tr> 
@@ -3450,11 +3450,11 @@ Python<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>Python parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>modelPathAndName</strong>: the model filename, including the path and extension ("ttm"). The file is relative to the client or server system depending on the <strong>options</strong> value (see next argument)</div>
-<div><strong>options</strong>: options, bit-coded:</div>
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>modelPathAndName: the model filename, including the path and extension ("ttm"). The file is relative to the client or server system depending on the options value (see next argument)</div>
+<div>options: options, bit-coded:</div>
 <div class=tab>bit0 set: the specified file is located on the client side (in that case the function will be blocking since the model first has to be transferred to the server). Otherwise it is located on the server side</div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_blocking
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_blocking
 </div>
 </td> 
 </tr> 
@@ -3463,8 +3463,8 @@ Python<br>synopsis
 Python return values
 </td> 
 <td class=remApiTableRightCRet>
-<div><strong>returnCode</strong>: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
-<div><strong>baseHandle</strong>: the loaded model base.</div>
+<div>returnCode: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
+<div>baseHandle: the loaded model base.</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -3506,11 +3506,11 @@ Python<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>Python parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>scenePathAndName</strong>: the scene filename, including the path and extension ("ttt"). The file is relative to the client or server system depending on the <strong>options</strong> value (see next argument)</div>
-<div><strong>options</strong>: options, bit-coded:</div>
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>scenePathAndName: the scene filename, including the path and extension ("ttt"). The file is relative to the client or server system depending on the options value (see next argument)</div>
+<div>options: options, bit-coded:</div>
 <div class=tab>bit0 set: the specified file is located on the client side (in that case the function will be blocking since the scene first has to be transferred to the server). Otherwise it is located on the server side</div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_blocking
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_blocking
 </div>
 </td> 
 </tr> 
@@ -3519,7 +3519,7 @@ Python<br>synopsis
 Python return values
 </td> 
 <td class=remApiTableRightCRet>
-<div><strong>returnCode</strong>: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
+<div>returnCode: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -3578,7 +3578,7 @@ Python<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>Python parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>floatValues</strong>: an array of numbers we wish to pack as floats</div>
+<div>floatValues: an array of numbers we wish to pack as floats</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -3586,7 +3586,7 @@ Python<br>synopsis
 Python return values
 </td> 
 <td class=remApiTableRightCRet>
-<div><strong>packedData</strong>: a string that contains the packed values. Each values takes exactly 4 bytes in the string.</div>
+<div>packedData: a string that contains the packed values. Each values takes exactly 4 bytes in the string.</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -3636,7 +3636,7 @@ Python<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>Python parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>intValues</strong>: an array of numbers we wish to pack as integers</div>
+<div>intValues: an array of numbers we wish to pack as integers</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -3644,7 +3644,7 @@ Python<br>synopsis
 Python return values
 </td> 
 <td class=remApiTableRightCRet>
-<div><strong>packedData</strong>: a string that contains the packed values. Each values takes exactly 4 bytes in the string.</div>
+<div>packedData: a string that contains the packed values. Each values takes exactly 4 bytes in the string.</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -3694,8 +3694,8 @@ Python<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>Python parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>pause</strong>: whether the communication thread should pause or run normally.
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>pause: whether the communication thread should pause or run normally.
 </div>
 <br>
 <div>Usage example:</div>
@@ -3706,7 +3706,7 @@ sim.simxSetJointPosition(clientID,joint2Handle,joint2Value,sim.simx_opmode_onesh
 sim.simxSetJointPosition(clientID,joint3Handle,joint3Value,sim.simx_opmode_oneshot)
 sim.simxPauseCommunication(clientID,False)
 
-'''Above's 3 joints will be received and set on the CoppeliaSim side at the same time'''</code>
+'''Above's 3 joints will be received and set on the CoppeliaSim side at the same time'''</pre>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -3714,7 +3714,7 @@ sim.simxPauseCommunication(clientID,False)
 Python return values
 </td> 
 <td class=remApiTableRightCRet>
-<div><strong>returnCode</strong>: 0 in case of operation success.<a href="remoteApiConstants.htm#functionErrorCodes"></a></div>
+<div>returnCode: 0 in case of operation success.<a href="remoteApiConstants.htm#functionErrorCodes"></a></div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -3756,8 +3756,8 @@ Python<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>Python parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation modes for this function is simx_opmode_oneshot.
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation modes for this function is simx_opmode_oneshot.
 </div>
 </td> 
 </tr> 
@@ -3766,7 +3766,7 @@ Python<br>synopsis
 Python return values
 </td> 
 <td class=remApiTableRightCRet>
-<div><strong>returnCode</strong>: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
+<div>returnCode: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -3808,7 +3808,7 @@ Description
 # Following is the remote API client side:
 res,replyData=sim.simxQuery(clientID,'request','send me a 42','reply',5000)
 if res==sim.simx_return_ok:
-    print &quot;The reply is: %s&quot; % replyData</code>
+    print &quot;The reply is: %s&quot; % replyData</pre>
 
 <br>
 <code class="hljs language-lua simple">
@@ -3821,7 +3821,7 @@ if (req) then
         sim.setStringSignal("reply","42\0") -- will be automatically cleared by the client
     end
 end
-</code>
+</pre>
 
 
 </td>
@@ -3835,11 +3835,11 @@ Python<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>Python parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>signalName</strong>: name of the signal that contains the request string</div>
-<div><strong>signalValue</strong>: the request string. </div>
-<div><strong>retSignalName</strong>: name of the signal that contains the reply string</div>
-<div><strong>timeOutInMs</strong>: the maximum time in milliseconds that the function will wait for a reply.
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>signalName: name of the signal that contains the request string</div>
+<div>signalValue: the request string. </div>
+<div>retSignalName: name of the signal that contains the reply string</div>
+<div>timeOutInMs: the maximum time in milliseconds that the function will wait for a reply.
 </div>
 </td> 
 </tr> 
@@ -3848,8 +3848,8 @@ Python<br>synopsis
 Python return value
 </td> 
 <td class=remApiTableRightCRet>
-<div><strong>returnCode</strong>: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
-<div><strong>retSignalValue</strong>: the reply string</div>
+<div>returnCode: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
+<div>retSignalValue: the reply string</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -3891,9 +3891,9 @@ Python<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>Python parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>collisionObjectHandle</strong>: handle of the collision object</div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation modes for this function are simx_opmode_streaming (the first call) and simx_opmode_buffer (the following calls)
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>collisionObjectHandle: handle of the collision object</div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation modes for this function are simx_opmode_streaming (the first call) and simx_opmode_buffer (the following calls)
 </div>
 </td> 
 </tr> 
@@ -3903,8 +3903,8 @@ Python<br>synopsis
 Python return values
 </td> 
 <td class=remApiTableRightCRet>
-<div><strong>returnCode</strong>: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
-<div><strong>collisionState</strong>: the collision state</div>
+<div>returnCode: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
+<div>collisionState: the collision state</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -3946,9 +3946,9 @@ Python<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>Python parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>distanceObjectHandle</strong>: handle of the distance object</div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation modes for this function are simx_opmode_streaming (the first call) and simx_opmode_buffer (the following calls)
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>distanceObjectHandle: handle of the distance object</div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation modes for this function are simx_opmode_streaming (the first call) and simx_opmode_buffer (the following calls)
 </div>
 </td> 
 </tr> 
@@ -3957,8 +3957,8 @@ Python<br>synopsis
 Python return values
 </td> 
 <td class=remApiTableRightCRet>
-<div><strong>returnCode</strong>: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
-<div><strong>minimumDistance</strong>: the minimum distance.  If the distance object wasn't handled yet, the distance value will be larger than 1e36.</div>
+<div>returnCode: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
+<div>minimumDistance: the minimum distance.  If the distance object wasn't handled yet, the distance value will be larger than 1e36.</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -4000,9 +4000,9 @@ Python<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>Python parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>forceSensorHandle</strong>: handle of the force sensor</div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation modes for this function are simx_opmode_streaming (the first call) and simx_opmode_buffer (the following calls)
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>forceSensorHandle: handle of the force sensor</div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation modes for this function are simx_opmode_streaming (the first call) and simx_opmode_buffer (the following calls)
 </div>
 </td> 
 </tr> 
@@ -4011,12 +4011,12 @@ Python<br>synopsis
 Python return values
 </td> 
 <td class=remApiTableRightCRet>
-<div><strong>returnCode</strong>: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
-<div><strong>state</strong>: the state of the force sensor</div>
+<div>returnCode: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
+<div>state: the state of the force sensor</div>
 <div class=tab>bit 0 set: force and torque data is available, otherwise it is not (yet) available (e.g. when not enough values are present for the filter)</div>
 <div class=tab>bit 1 set: force sensor is broken, otherwise it is still intact ('unbroken')</div>
-<div><strong>forceVector</strong>: the force vector (x,y,z)</div>
-<div><strong>torqueVector</strong>: the torque vector (x,y,z)</div>
+<div>forceVector: the force vector (x,y,z)</div>
+<div>torqueVector: the torque vector (x,y,z)</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -4058,9 +4058,9 @@ Python<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>Python parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>sensorHandle</strong>: handle of the proximity sensor</div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation modes for this function are simx_opmode_streaming (the first call) and simx_opmode_buffer (the following calls)
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>sensorHandle: handle of the proximity sensor</div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation modes for this function are simx_opmode_streaming (the first call) and simx_opmode_buffer (the following calls)
 </div>
 </td> 
 </tr> 
@@ -4069,11 +4069,11 @@ Python<br>synopsis
 Python return values
 </td> 
 <td class=remApiTableRightCRet>
-<div><strong>returnCode</strong>: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
-<div><strong>detectionState</strong>: the detection state.</div>
-<div><strong>detectedPoint</strong>: the detected point coordinates (relative to the sensor reference frame).</div>
-<div><strong>detectedObjectHandle</strong>:the handle of the detected object.</div>
-<div><strong>detectedSurfaceNormalVector</strong>: the normal vector (normalized) of the detected surface. Relative to the sensor reference frame.</div>
+<div>returnCode: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
+<div>detectionState: the detection state.</div>
+<div>detectedPoint: the detected point coordinates (relative to the sensor reference frame).</div>
+<div>detectedObjectHandle:the handle of the detected object.</div>
+<div>detectedSurfaceNormalVector: the normal vector (normalized) of the detected surface. Relative to the sensor reference frame.</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -4115,9 +4115,9 @@ Python<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>Python parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>signalName</strong>: name of the signal</div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation modes for this function are simx_opmode_streaming (the first call) and simx_opmode_buffer (the following calls). simx_opmode_blocking is forbidden. Use a construction like following in order to continuously exchange data with CoppeliaSim:</div>
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>signalName: name of the signal</div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation modes for this function are simx_opmode_streaming (the first call) and simx_opmode_buffer (the following calls). simx_opmode_blocking is forbidden. Use a construction like following in order to continuously exchange data with CoppeliaSim:</div>
 
 <br>
 Remote API client side:
@@ -4133,7 +4133,7 @@ while sim.simxGetConnectionId(clientID) != -1:
   if (err==sim.simx_return_ok):
     '''Data produced by the child script was retrieved! Send it back to the child script:'''
     sim.simxWriteStringStream(clientID,&quot;fromClient&quot;,signal,sim.simx_opmode_oneshot)
-</code>
+</pre>
 
 <br>
 Server side (CoppeliaSim), from a child script:
@@ -4168,7 +4168,7 @@ function sysCall_actuation()
             end
         end
     end
-end</code>
+end</pre>
 
 
 
@@ -4179,8 +4179,8 @@ end</code>
 Python return values
 </td> 
 <td class=remApiTableRightCRet>
-<div><strong>returnCode</strong>: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
-<div><strong>signalValue</strong>: the value of the signal.</div>
+<div>returnCode: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
+<div>signalValue: the value of the signal.</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -4222,9 +4222,9 @@ Python<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>Python parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>sensorHandle</strong>: handle of the vision sensor</div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation modes for this function are simx_opmode_streaming (the first call) and simx_opmode_buffer (the following calls)
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>sensorHandle: handle of the vision sensor</div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation modes for this function are simx_opmode_streaming (the first call) and simx_opmode_buffer (the following calls)
 </div>
 </td> 
 </tr> 
@@ -4233,9 +4233,9 @@ Python<br>synopsis
 Python return values
 </td> 
 <td class=remApiTableRightCRet>
-<div><strong>returnCode</strong>: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
-<div><strong>detectionState</strong>: the detection state (i.e. the trigger state).</div>
-<div><strong>auxPackets</strong>: by default CoppeliaSim returns one packet of 15 auxiliary values:the minimum of {intensity, red, green, blue, depth value}, the maximum of {intensity, red, green, blue, depth value}, and the average of {intensity, red, green, blue, depth value}. Additional packets can be appended in the <a href="visionCallbackFunctions.htm">vision callback function</a>.</div>
+<div>returnCode: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
+<div>detectionState: the detection state (i.e. the trigger state).</div>
+<div>auxPackets: by default CoppeliaSim returns one packet of 15 auxiliary values:the minimum of {intensity, red, green, blue, depth value}, the maximum of {intensity, red, green, blue, depth value}, and the average of {intensity, red, green, blue, depth value}. Additional packets can be appended in the <a href="visionCallbackFunctions.htm">vision callback function</a>.</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -4277,7 +4277,7 @@ Python<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>Python parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>buffer</strong>: buffer to be released</div>
+<div>buffer: buffer to be released</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -4327,9 +4327,9 @@ Python<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>Python parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>objectHandle</strong>: handle of the model to remove (object should be flagged as <em>model base</em>).</div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_oneshot (or simx_opmode_blocking)
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>objectHandle: handle of the model to remove (object should be flagged as <em>model base</em>).</div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_oneshot (or simx_opmode_blocking)
 </div>
 </td> 
 </tr> 
@@ -4338,7 +4338,7 @@ Python<br>synopsis
 Python return values
 </td> 
 <td class=remApiTableRightCRet>
-<div><strong>returnCode</strong>: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
+<div>returnCode: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -4380,9 +4380,9 @@ Python<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>Python parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>objectHandle</strong>: handle of the object to remove</div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_oneshot (or simx_opmode_blocking)
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>objectHandle: handle of the object to remove</div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_oneshot (or simx_opmode_blocking)
 </div>
 </td> 
 </tr> 
@@ -4391,7 +4391,7 @@ Python<br>synopsis
 Python return values
 </td> 
 <td class=remApiTableRightCRet>
-<div><strong>returnCode</strong>: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
+<div>returnCode: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -4457,10 +4457,10 @@ Python<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>Python parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>paramIdentifier</strong>: an <a href="apiConstants.htm#arrayParameters">array parameter identifier</a></div>
-<div><strong>paramValues</strong>: the array containing the 3 values to set</div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_oneshot
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>paramIdentifier: an <a href="apiConstants.htm#arrayParameters">array parameter identifier</a></div>
+<div>paramValues: the array containing the 3 values to set</div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_oneshot
 </div>
 </td> 
 </tr> 
@@ -4469,7 +4469,7 @@ Python<br>synopsis
 Python return values
 </td> 
 <td class=remApiTableRightCRet>
-<div><strong>returnCode</strong>: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
+<div>returnCode: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -4511,10 +4511,10 @@ Python<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>Python parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>paramIdentifier</strong>: a <a href="apiConstants.htm#booleanParameters">bool parameter identifier</a></div>
-<div><strong>paramValue</strong>: the parameter value</div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_oneshot
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>paramIdentifier: a <a href="apiConstants.htm#booleanParameters">bool parameter identifier</a></div>
+<div>paramValue: the parameter value</div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_oneshot
 </div>
 </td> 
 </tr> 
@@ -4523,7 +4523,7 @@ Python<br>synopsis
 Python return values
 </td> 
 <td class=remApiTableRightCRet>
-<div><strong>returnCode</strong>: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
+<div>returnCode: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -4565,10 +4565,10 @@ Python<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>Python parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>paramIdentifier</strong>: a <a href="apiConstants.htm#floatingParameters">floating parameter identifier</a></div>
-<div><strong>paramValue</strong>: the parameter value</div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_oneshot
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>paramIdentifier: a <a href="apiConstants.htm#floatingParameters">floating parameter identifier</a></div>
+<div>paramValue: the parameter value</div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_oneshot
 </div>
 </td> 
 </tr> 
@@ -4577,7 +4577,7 @@ Python<br>synopsis
 Python return values
 </td> 
 <td class=remApiTableRightCRet>
-<div><strong>returnCode</strong>: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
+<div>returnCode: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -4619,10 +4619,10 @@ Python<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>Python parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>signalName</strong>: name of the signal</div>
-<div><strong>signalValue</strong>: value of the signal</div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_oneshot
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>signalName: name of the signal</div>
+<div>signalValue: value of the signal</div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_oneshot
 </div>
 </td> 
 </tr> 
@@ -4631,7 +4631,7 @@ Python<br>synopsis
 Python return values
 </td> 
 <td class=remApiTableRightCRet>
-<div><strong>returnCode</strong>: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
+<div>returnCode: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -4673,10 +4673,10 @@ Python<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>Python parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>paramIdentifier</strong>: an <a href="apiConstants.htm#integerParameters">integer parameter identifier</a></div>
-<div><strong>paramValue</strong>: the parameter value</div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_oneshot
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>paramIdentifier: an <a href="apiConstants.htm#integerParameters">integer parameter identifier</a></div>
+<div>paramValue: the parameter value</div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_oneshot
 </div>
 </td> 
 </tr> 
@@ -4685,7 +4685,7 @@ Python<br>synopsis
 Python return values
 </td> 
 <td class=remApiTableRightCRet>
-<div><strong>returnCode</strong>: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
+<div>returnCode: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -4727,10 +4727,10 @@ Python<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>Python parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>signalName</strong>: name of the signal</div>
-<div><strong>signalValue</strong>: value of the signal</div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_oneshot
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>signalName: name of the signal</div>
+<div>signalValue: value of the signal</div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_oneshot
 </div>
 </td> 
 </tr> 
@@ -4739,7 +4739,7 @@ Python<br>synopsis
 Python return values
 </td> 
 <td class=remApiTableRightCRet>
-<div><strong>returnCode</strong>: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
+<div>returnCode: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -4781,11 +4781,11 @@ Python<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>Python parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>jointHandle</strong>: handle of the joint</div>
-<div><strong>force</strong>: the maximum force or torque that the joint can exert
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>jointHandle: handle of the joint</div>
+<div>force: the maximum force or torque that the joint can exert
 </div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_oneshot</div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_oneshot</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -4793,7 +4793,7 @@ Python<br>synopsis
 Python return values
 </td> 
 <td class=remApiTableRightCRet>
-<div><strong>returnCode</strong>: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
+<div>returnCode: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -4845,11 +4845,11 @@ Python<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>Python parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>jointHandle</strong>: handle of the joint</div>
-<div><strong>position</strong>: position of the joint (angular or linear value depending on the joint type)
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>jointHandle: handle of the joint</div>
+<div>position: position of the joint (angular or linear value depending on the joint type)
 </div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation modes for this function are simx_opmode_oneshot or 
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation modes for this function are simx_opmode_oneshot or 
 simx_opmode_streaming</div>
 </td> 
 </tr> 
@@ -4858,7 +4858,7 @@ simx_opmode_streaming</div>
 Python return values
 </td> 
 <td class=remApiTableRightCRet>
-<div><strong>returnCode</strong>: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
+<div>returnCode: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -4898,10 +4898,10 @@ Python<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>Python parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>jointHandle</strong>: handle of the joint</div>
-<div><strong>targetPosition</strong>: target position of the joint (angular or linear value depending on the joint type)</div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation modes for this function are simx_opmode_oneshot or 
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>jointHandle: handle of the joint</div>
+<div>targetPosition: target position of the joint (angular or linear value depending on the joint type)</div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation modes for this function are simx_opmode_oneshot or 
 simx_opmode_streaming
 </div>
 </td> 
@@ -4911,7 +4911,7 @@ simx_opmode_streaming
 Python return values
 </td> 
 <td class=remApiTableRightCRet>
-<div><strong>returnCode</strong>: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
+<div>returnCode: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -4953,10 +4953,10 @@ Python<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>Python parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>jointHandle</strong>: handle of the joint</div>
-<div><strong>targetVelocity</strong>: target velocity of the joint (linear or angular velocity depending on the joint-type)</div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation modes for this function are simx_opmode_oneshot or 
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>jointHandle: handle of the joint</div>
+<div>targetVelocity: target velocity of the joint (linear or angular velocity depending on the joint-type)</div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation modes for this function are simx_opmode_oneshot or 
 simx_opmode_streaming
 </div>
 </td> 
@@ -4966,7 +4966,7 @@ simx_opmode_streaming
 Python return values
 </td> 
 <td class=remApiTableRightCRet>
-<div><strong>returnCode</strong>: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
+<div>returnCode: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -5008,10 +5008,10 @@ Python<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>Python parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>objectHandle</strong>: handle of the object</div>
-<div><strong>prop</strong>: a <a href="apiConstants.htm#modelProperties">model property value</a></div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_oneshot
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>objectHandle: handle of the object</div>
+<div>prop: a <a href="apiConstants.htm#modelProperties">model property value</a></div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_oneshot
 </div>
 </td> 
 </tr> 
@@ -5020,7 +5020,7 @@ Python<br>synopsis
 Python return values
 </td> 
 <td class=remApiTableRightCRet>
-<div><strong>returnCode</strong>: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
+<div>returnCode: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -5062,11 +5062,11 @@ Python<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>Python parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>objectHandle</strong>: handle of the object</div>
-<div><strong>parameterID</strong>: identifier of the parameter to set. See the <a href="objectParameterIDs.htm">list of all possible object parameter identifiers</a></div>
-<div><strong>parameterValue</strong>: the desired value of the parameter</div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_oneshot
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>objectHandle: handle of the object</div>
+<div>parameterID: identifier of the parameter to set. See the <a href="objectParameterIDs.htm">list of all possible object parameter identifiers</a></div>
+<div>parameterValue: the desired value of the parameter</div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_oneshot
 </div>
 </td> 
 </tr> 
@@ -5075,7 +5075,7 @@ Python<br>synopsis
 Python return values
 </td> 
 <td class=remApiTableRightCRet>
-<div><strong>returnCode</strong>: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
+<div>returnCode: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -5117,11 +5117,11 @@ Python<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>Python parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>objectHandle</strong>: handle of the object</div>
-<div><strong>parameterID</strong>: identifier of the parameter to set. See the <a href="objectParameterIDs.htm">list of all possible object parameter identifiers</a></div>
-<div><strong>parameterValue</strong>: the desired value of the parameter</div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_oneshot
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>objectHandle: handle of the object</div>
+<div>parameterID: identifier of the parameter to set. See the <a href="objectParameterIDs.htm">list of all possible object parameter identifiers</a></div>
+<div>parameterValue: the desired value of the parameter</div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_oneshot
 </div>
 </td> 
 </tr> 
@@ -5130,7 +5130,7 @@ Python<br>synopsis
 Python return values
 </td> 
 <td class=remApiTableRightCRet>
-<div><strong>returnCode</strong>: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
+<div>returnCode: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -5172,11 +5172,11 @@ Python<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>Python parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>objectHandle</strong>: handle of the object</div>
-<div><strong>relativeToObjectHandle</strong>: indicates relative to which reference frame the orientation is specified. Specify -1 to set the absolute orientation, sim_handle_parent to set the orientation relative to the object's parent, or an object handle relative to whose reference frame the orientation is specified.</div>
-<div><strong>eulerAngles</strong>: Euler angles (alpha, beta and gamma)</div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_oneshot
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>objectHandle: handle of the object</div>
+<div>relativeToObjectHandle: indicates relative to which reference frame the orientation is specified. Specify -1 to set the absolute orientation, sim_handle_parent to set the orientation relative to the object's parent, or an object handle relative to whose reference frame the orientation is specified.</div>
+<div>eulerAngles: Euler angles (alpha, beta and gamma)</div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_oneshot
 </div>
 </td> 
 </tr> 
@@ -5185,7 +5185,7 @@ Python<br>synopsis
 Python return values
 </td> 
 <td class=remApiTableRightCRet>
-<div><strong>returnCode</strong>: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
+<div>returnCode: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -5227,11 +5227,11 @@ Python<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>Python parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>objectHandle</strong>: handle of the object that will become child of the parent object.  Can be combined with <a href="apiConstants.htm#specialHandleFlags">sim_handleflag_assembly</a>, if the two objects can be assembled via a predefined assembly transformation (refer to the <strong>assembling</strong> option in the <a href="commonPropertiesDialog.htm">object common properties</a>). In that case, <strong>parentObject</strong> can't be -1, and <strong>keepInPlace</strong> should be set to false.</div>
-<div><strong>parentObject</strong>: handle of the object that will become parent, or -1 if the object should become parentless</div>
-<div><strong>keepInPlace</strong>: indicates whether the object's absolute position and orientation should stay same</div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_oneshot or simx_opmode_blocking depending on the intent
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>objectHandle: handle of the object that will become child of the parent object.  Can be combined with <a href="apiConstants.htm#specialHandleFlags">sim_handleflag_assembly</a>, if the two objects can be assembled via a predefined assembly transformation (refer to the assembling option in the <a href="commonPropertiesDialog.htm">object common properties</a>). In that case, parentObject can't be -1, and keepInPlace should be set to false.</div>
+<div>parentObject: handle of the object that will become parent, or -1 if the object should become parentless</div>
+<div>keepInPlace: indicates whether the object's absolute position and orientation should stay same</div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_oneshot or simx_opmode_blocking depending on the intent
 </div>
 </td> 
 </tr> 
@@ -5240,7 +5240,7 @@ Python<br>synopsis
 Python return values
 </td> 
 <td class=remApiTableRightCRet>
-<div><strong>returnCode</strong>: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
+<div>returnCode: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -5282,11 +5282,11 @@ Python<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>Python parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>objectHandle</strong>: handle of the object</div>
-<div><strong>relativeToObjectHandle</strong>: indicates relative to which reference frame the position is specified. Specify -1 to set the absolute position, sim_handle_parent to set the position relative to the object's parent, or an object handle relative to whose reference frame the position is specified.</div>
-<div><strong>position</strong>: the position values (x, y and z)</div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_oneshot
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>objectHandle: handle of the object</div>
+<div>relativeToObjectHandle: indicates relative to which reference frame the position is specified. Specify -1 to set the absolute position, sim_handle_parent to set the position relative to the object's parent, or an object handle relative to whose reference frame the position is specified.</div>
+<div>position: the position values (x, y and z)</div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_oneshot
 </div>
 </td> 
 </tr> 
@@ -5295,7 +5295,7 @@ Python<br>synopsis
 Python return values
 </td> 
 <td class=remApiTableRightCRet>
-<div><strong>returnCode</strong>: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
+<div>returnCode: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -5337,11 +5337,11 @@ Python<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>Python parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>objectHandle</strong>: handle of the object</div>
-<div><strong>relativeToObjectHandle</strong>: indicates relative to which reference frame the quaternion is specified. Specify -1 to set the absolute quaternion, sim_handle_parent to set the quaternion relative to the object's parent, or an object handle relative to whose reference frame the quaternion is specified.</div>
-<div><strong>quat</strong>: the quaternion values (x, y, z, w)</div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_oneshot
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>objectHandle: handle of the object</div>
+<div>relativeToObjectHandle: indicates relative to which reference frame the quaternion is specified. Specify -1 to set the absolute quaternion, sim_handle_parent to set the quaternion relative to the object's parent, or an object handle relative to whose reference frame the quaternion is specified.</div>
+<div>quat: the quaternion values (x, y, z, w)</div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_oneshot
 </div>
 </td> 
 </tr> 
@@ -5350,7 +5350,7 @@ Python<br>synopsis
 Python return values
 </td> 
 <td class=remApiTableRightCRet>
-<div><strong>returnCode</strong>: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
+<div>returnCode: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -5392,9 +5392,9 @@ Python<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>Python parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>objectHandles</strong>: an array of object handles</div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_oneshot or simx_opmode_blocking depending on the intent.
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>objectHandles: an array of object handles</div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_oneshot or simx_opmode_blocking depending on the intent.
 </div>
 </td> 
 </tr> 
@@ -5403,7 +5403,7 @@ Python<br>synopsis
 Python return values
 </td> 
 <td class=remApiTableRightCRet>
-<div><strong>returnCode</strong>: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
+<div>returnCode: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
 
 </td> 
 </tr> 
@@ -5446,10 +5446,10 @@ Python<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>Python parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>jointHandle</strong>: handle of the joint</div>
-<div><strong>matrix</strong>: 12  values. See the regular API equivalent function for details</div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation modes for this function are simx_opmode_oneshot or 
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>jointHandle: handle of the joint</div>
+<div>matrix: 12  values. See the regular API equivalent function for details</div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation modes for this function are simx_opmode_oneshot or 
 simx_opmode_streaming
 </div>
 </td> 
@@ -5459,7 +5459,7 @@ simx_opmode_streaming
 Python return values
 </td> 
 <td class=remApiTableRightCRet>
-<div><strong>returnCode</strong>: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
+<div>returnCode: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -5499,10 +5499,10 @@ Python<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>Python parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>signalName</strong>: name of the signal</div>
-<div><strong>signalValue</strong>: value of the signal (which may contain any value, including embedded zeros)</div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_oneshot
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>signalName: name of the signal</div>
+<div>signalValue: value of the signal (which may contain any value, including embedded zeros)</div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_oneshot
 </div>
 </td> 
 </tr> 
@@ -5511,7 +5511,7 @@ Python<br>synopsis
 Python return values
 </td> 
 <td class=remApiTableRightCRet>
-<div><strong>returnCode</strong>: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
+<div>returnCode: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -5611,7 +5611,7 @@ Description
 <td class=apiTableLeftDescr>
 Description 
 </td> 
-<td class=apiTableRightDescr>Sets the image of a vision sensor (and applies any image processing, if enabled. Make sure the vision sensor is flagged as <strong>use external image</strong>.</td>
+<td class=apiTableRightDescr>Sets the image of a vision sensor (and applies any image processing, if enabled. Make sure the vision sensor is flagged as use external image.</td>
 </tr> 
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCSyn>
@@ -5622,12 +5622,12 @@ Python<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>Python parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>sensorHandle</strong>: handle of the vision sensor</div>
-<div><strong>image</strong>: image data</div>
-<div><strong>options</strong>: image options, bit-coded:</div>
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>sensorHandle: handle of the vision sensor</div>
+<div>image: image data</div>
+<div>options: image options, bit-coded:</div>
 <div class=tab>bit0 set: each image pixel is a byte (greyscale image), otherwise each image pixel is a rgb byte-triplet</div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_oneshot
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_oneshot
 </div>
 </td> 
 </tr> 
@@ -5636,7 +5636,7 @@ Python<br>synopsis
 Python return values
 </td> 
 <td class=remApiTableRightCRet>
-<div><strong>returnCode</strong>: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
+<div>returnCode: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -5678,14 +5678,14 @@ Python<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>Python parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>connectionAddress</strong>: the ip address where the server is located (i.e. CoppeliaSim)</div>
-<div><strong>connectionPort</strong>: the port number where to connect. Specify a negative port number in order to use shared memory, instead of socket communication.</div>
-<div><strong>waitUntilConnected</strong>: if True, then the function blocks until connected (or timed out).</div>
-<div><strong>doNotReconnectOnceDisconnected</strong>: if True, then the communication thread will not attempt a second connection if a connection was lost.</div>
-<div><strong>timeOutInMs</strong>:</div>
+<div>connectionAddress: the ip address where the server is located (i.e. CoppeliaSim)</div>
+<div>connectionPort: the port number where to connect. Specify a negative port number in order to use shared memory, instead of socket communication.</div>
+<div>waitUntilConnected: if True, then the function blocks until connected (or timed out).</div>
+<div>doNotReconnectOnceDisconnected: if True, then the communication thread will not attempt a second connection if a connection was lost.</div>
+<div>timeOutInMs:</div>
 <div class=tab> if positive: the connection time-out in milliseconds for the first connection attempt. In that case, the time-out for blocking function calls is 5000 milliseconds.</div>
 <div class=tab> if negative: its positive value is the time-out for blocking function calls. In that case, the connection time-out for the first connection attempt is 5000 milliseconds.</div>
-<div><strong>commThreadCycleInMs</strong>: indicates how often data packets are sent back and forth. Reducing this number improves responsiveness, and a default value of 5 is recommended.</div>
+<div>commThreadCycleInMs: indicates how often data packets are sent back and forth. Reducing this number improves responsiveness, and a default value of 5 is recommended.</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -5693,7 +5693,7 @@ Python<br>synopsis
 Python return values
 </td> 
 <td class=remApiTableRightCRet>
-<div><strong>clientID</strong>: the client ID, or -1 if the connection to the server was not possible (i.e. a timeout was reached). A call to simxStart should always be followed at the end with a call to <a href="#simxFinish">simxFinish</a> if simxStart didn't return -1</div>
+<div>clientID: the client ID, or -1 if the connection to the server was not possible (i.e. a timeout was reached). A call to simxStart should always be followed at the end with a call to <a href="#simxFinish">simxFinish</a> if simxStart didn't return -1</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -5735,8 +5735,8 @@ Python<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>Python parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_oneshot.
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_oneshot.
 </div>
 </td> 
 </tr> 
@@ -5745,7 +5745,7 @@ Python<br>synopsis
 Python return values
 </td> 
 <td class=remApiTableRightCRet>
-<div><strong>returnCode</strong>: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
+<div>returnCode: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -5787,8 +5787,8 @@ Python<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>Python parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation modes for this function is simx_opmode_oneshot.
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation modes for this function is simx_opmode_oneshot.
 </div>
 </td> 
 </tr> 
@@ -5797,7 +5797,7 @@ Python<br>synopsis
 Python return values
 </td> 
 <td class=remApiTableRightCRet>
-<div><strong>returnCode</strong>: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
+<div>returnCode: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -5839,8 +5839,8 @@ Python<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>Python parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>enable</strong>: the enable state of the stepped mode</div>
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>enable: the enable state of the stepped mode</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -5848,7 +5848,7 @@ Python<br>synopsis
 Python return values
 </td> 
 <td class=remApiTableRightCRet>
-<div><strong>returnCode</strong>: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
+<div>returnCode: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -5890,7 +5890,7 @@ Python<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>Python parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -5898,7 +5898,7 @@ Python<br>synopsis
 Python return values
 </td> 
 <td class=remApiTableRightCRet>
-<div><strong>returnCode</strong>: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
+<div>returnCode: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -5940,11 +5940,11 @@ Python<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>Python parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>filePathAndName</strong>: the local file name and path (i.e. on the client side)</div>
-<div><strong>fileName_serverSide</strong>: a file name under which the transferred file will be saved on the server side. For now, do not specify a path (the file will be saved in the remote API plugin directory)</div>
-<div><strong>timeOut</strong>: a timeout value in milliseconds</div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_blocking
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>filePathAndName: the local file name and path (i.e. on the client side)</div>
+<div>fileName_serverSide: a file name under which the transferred file will be saved on the server side. For now, do not specify a path (the file will be saved in the remote API plugin directory)</div>
+<div>timeOut: a timeout value in milliseconds</div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_blocking
 </div>
 </td> 
 </tr> 
@@ -5953,7 +5953,7 @@ Python<br>synopsis
 Python return values
 </td> 
 <td class=remApiTableRightCRet>
-<div><strong>returnCode</strong>: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
+<div>returnCode: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -5995,7 +5995,7 @@ Python<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>Python parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>packedData</strong>: a string that contains the packed values. Each values takes exactly 4 bytes in the string.</div>
+<div>packedData: a string that contains the packed values. Each values takes exactly 4 bytes in the string.</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -6003,7 +6003,7 @@ Python<br>synopsis
 Python return values
 </td> 
 <td class=remApiTableRightCRet>
-<div><strong>floatValues</strong>: an array of numbers that were unpacked as floats</div>
+<div>floatValues: an array of numbers that were unpacked as floats</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -6053,7 +6053,7 @@ Python<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>Python parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>packedData</strong>: a string that contains the packed values. Each values takes exactly 4 bytes in the string.</div>
+<div>packedData: a string that contains the packed values. Each values takes exactly 4 bytes in the string.</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -6061,7 +6061,7 @@ Python<br>synopsis
 Python return values
 </td> 
 <td class=remApiTableRightCRet>
-<div><strong>intValues</strong>: an array of numbers that were unpacked as integers</div>
+<div>intValues: an array of numbers that were unpacked as integers</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -6105,10 +6105,10 @@ Python<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>Python parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>signalName</strong>: name of the signal</div>
-<div><strong>signalValueToAppend</strong>: value to append to the  signal. That value may contain any value, including embedded zeros.</div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_oneshot
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>signalName: name of the signal</div>
+<div>signalValueToAppend: value to append to the  signal. That value may contain any value, including embedded zeros.</div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_oneshot
 </div>
 </td> 
 </tr> 
@@ -6117,7 +6117,7 @@ Python<br>synopsis
 Python return values
 </td> 
 <td class=remApiTableRightCRet>
-<div><strong>returnCode</strong>: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
+<div>returnCode: a <a href="remoteApiConstants.htm#functionErrorCodes">remote API function return code</a></div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 

@@ -29,9 +29,9 @@
 <br>
 <br>
 
-<p><a name="genericFunction" id="genericFunction"></a><strong>Using the generic function simxCallScriptFunction</strong>: instead of extending the functions that the B0-based remote API offers, one can  use the generic B0-based remote API function <a href="b0RemoteApi-cpp.htm#simxCallScriptFunction">simxCallScriptFunction</a>: this will call a CoppeliaSim script function, which can then execute any type of operation locally, then return data. For instance:</p>
+<p><a name="genericFunction" id="genericFunction"></a>Using the generic function simxCallScriptFunction: instead of extending the functions that the B0-based remote API offers, one can  use the generic B0-based remote API function <a href="b0RemoteApi-cpp.htm#simxCallScriptFunction">simxCallScriptFunction</a>: this will call a CoppeliaSim script function, which can then execute any type of operation locally, then return data. For instance:</p>
 
-<code class="hljs language-lua coppelia-coppeliasim-script">
+<pre class="brush:lua;auto-links:false;toolbar:false" contenteditable="false">
 function myFunctionName(args)
     for i=1,#args,1 do
         print('Argument '..i..' is :')
@@ -39,7 +39,7 @@ function myFunctionName(args)
         print('')
     end
     return 'Hello to you too!',42 -- return a string and a number
-end</code>
+end</pre>
 
 <br>
 
@@ -51,7 +51,7 @@ import b0RemoteApi
 with b0RemoteApi.RemoteApiClient('b0RemoteApi_pythonClient','b0RemoteApi') as client:    
     args=['Hello World!',[1,2,3],59]
     ret=client.simxCallScriptFunction('myFunctionName@objectPath','sim.scripttype_childscript',args,client.simxServiceCall())
-    print(ret)</code>
+    print(ret)</pre>
 
 <br>
 
@@ -59,7 +59,7 @@ with b0RemoteApi.RemoteApiClient('b0RemoteApi_pythonClient','b0RemoteApi') as cl
 
 <br>
 
-<p><a name="extending" id="extending"></a><strong>Extending the B0-based remote API</strong>: there are 4 simple steps involved:</p>
+<p><a name="extending" id="extending"></a>Extending the B0-based remote API: there are 4 simple steps involved:</p>
 
 <li>Add your function as the end of file <em>programming/remoteApiBindings/b0-based/generate/simxFunctions.xml</em></li>
 <li>Run following: <em>python generate.py --gen-simx-all --xml-file simxFunctions.xml ./generated</em></li>

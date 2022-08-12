@@ -33,9 +33,9 @@ C/C++<br>synopsis
 <tr class=apiTableTr> 
 <td class=apiTableLeftCParam>C/C++<br>parameters</td> 
 <td class=apiTableRightCParam>
-<div><strong>objectHandle</strong>: handle of a <a href="../objects.html">scene object</a>. It is highly recommended to add <em><a href="../apiConstants.html#specialHandleFlags">sim.handleflag_axis</a></em> to the object handle, in order to obtain the <em>regular</em> angular velocity for the object, i.e. the rotation axis and the rotation velocity that is represented by the axis' length. If <em>sim.handleflag_axis</em> is omitted, then a derivative of Euler angles expressed relative to previous' simulation frame will be returned for the angular velocity.</div>
-<div><strong>linearVelocity</strong>: pointer to 3 values that will receive the linear velocity. Can be nullptr</div>
-<div><strong>angularVelocity</strong>: pointer to 3 values that will receive the angular velocity. Can be nullptr</div>
+<div>objectHandle: handle of a <a href="../objects.html">scene object</a>. It is highly recommended to add <em><a href="../apiConstants.html#specialHandleFlags">sim.handleflag_axis</a></em> to the object handle, in order to obtain the <em>regular</em> angular velocity for the object, i.e. the rotation axis and the rotation velocity that is represented by the axis' length. If <em>sim.handleflag_axis</em> is omitted, then a derivative of Euler angles expressed relative to previous' simulation frame will be returned for the angular velocity.</div>
+<div>linearVelocity: pointer to 3 values that will receive the linear velocity. Can be nullptr</div>
+<div>angularVelocity: pointer to 3 values that will receive the angular velocity. Can be nullptr</div>
 <div></div></td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -55,7 +55,7 @@ Lua<br>synopsis
 <tr class=apiTableTr> 
 <td class=apiTableLeftLParam>Lua<br>parameters</td> 
 <td class=apiTableRightLParam>
-<div><strong>objectHandle</strong>: Similar to the C-function counterpart</div>
+<div>objectHandle: Similar to the C-function counterpart</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -63,8 +63,8 @@ Lua<br>synopsis
 Lua<br>return values
 </td> 
 <td class=apiTableRightLRet>
-<div><strong>linearVelocity</strong>: table containing 3 values that represent the linear velocity</div>
-<div><strong>angularVelocity</strong>: table containing 3 values that represent the angular velocity</div>
+<div>linearVelocity: table containing 3 values that represent the linear velocity</div>
+<div>angularVelocity: table containing 3 values that represent the angular velocity</div>
 </td> 
 </tr> 
 

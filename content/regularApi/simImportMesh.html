@@ -33,27 +33,27 @@ C/C++<br>synopsis
 <tr class=apiTableTr> 
 <td class=apiTableLeftCParam>C/C++<br>parameters</td> 
 <td class=apiTableRightCParam>
-<div><strong>fileformat</strong>: set to 0. Fileformat is automatically detected</div>
+<div>fileformat: set to 0. Fileformat is automatically detected</div>
 
-<div><strong>pathAndFilename</strong>: the location of the file to import.<br>
+<div>pathAndFilename: the location of the file to import.<br>
 </div>
-<div><strong>options</strong>: bit-coded: bit0 set (1): keep identical vertices, bit7 set (128): ignore up-vector coded in fileformat</div>
+<div>options: bit-coded: bit0 set (1): keep identical vertices, bit7 set (128): ignore up-vector coded in fileformat</div>
 
-<div><strong>identicalVerticeTolerance</strong>: has no effect. set to zero<br>
+<div>identicalVerticeTolerance: has no effect. set to zero<br>
 </div>
-<div><strong>scalingFactor</strong>: the scaling factor to apply to the imported vertices<br>
+<div>scalingFactor: the scaling factor to apply to the imported vertices<br>
 </div>
-<div><strong>vertices</strong>: an array to vertice arrays. The import operation may generate several meshes depending on the fileformat. The user is in charge of releasing the memory. See the example below<br>
+<div>vertices: an array to vertice arrays. The import operation may generate several meshes depending on the fileformat. The user is in charge of releasing the memory. See the example below<br>
 </div>
-<div><strong>verticesSizes</strong>: an array indicating the individual vertice array sizes. The user is in charge of releasing the memory. See the example below<br>
+<div>verticesSizes: an array indicating the individual vertice array sizes. The user is in charge of releasing the memory. See the example below<br>
 </div>
-<div><strong>indices</strong>: an array to indice arrays. The import operation may generate several meshes depending on the fileformat. The user is in charge of releasing the memory. Can be nullptr. See the example below<br>
+<div>indices: an array to indice arrays. The import operation may generate several meshes depending on the fileformat. The user is in charge of releasing the memory. Can be nullptr. See the example below<br>
 </div>
-<div><strong>indicesSizes</strong>: an array indicating the individual indice array sizes. The user is in charge of releasing the memory. Can be nullptr if indices is also nullptr. See the example below<br>
+<div>indicesSizes: an array indicating the individual indice array sizes. The user is in charge of releasing the memory. Can be nullptr if indices is also nullptr. See the example below<br>
 </div>
-<div><strong>reserved</strong>: reserved for future extensions. Keep at nullptr.<br>
+<div>reserved: reserved for future extensions. Keep at nullptr.<br>
 </div>
-<div><strong>names</strong>: not used anymore. Set to nullptr<br>
+<div>names: not used anymore. Set to nullptr<br>
 </div>
 <br>
 <div>USAGE EXAMPLE:</div>
@@ -79,7 +79,7 @@ if (elementCount>0)
     simReleaseBuffer((simChar*)indices);
     simReleaseBuffer((simChar*)verticesSizes);
     simReleaseBuffer((simChar*)vertices);
-}</code>
+}</pre>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -108,9 +108,9 @@ Lua<br>synopsis
 Lua<br>return values
 </td> 
 <td class=apiTableRightLRet>
-<div><strong>vertices</strong>: a table to vertice tables. The import operation may generate several meshes depending on the fileformat. See the example below<br>
+<div>vertices: a table to vertice tables. The import operation may generate several meshes depending on the fileformat. See the example below<br>
 </div>
-<div><strong>indices</strong>: a table to indice tables. The import operation may generate several meshes depending on the fileformat. See the example below<br>
+<div>indices: a table to indice tables. The import operation may generate several meshes depending on the fileformat. See the example below<br>
 </div>
 <br>
 <div>USAGE EXAMPLE (e.g. in a <a href="../customizationScripts.html">customization script</a>):</div>
@@ -122,7 +122,7 @@ if (importButtonPressed) then
         sim.setShapeColor(h,"",sim.colorcomponent_ambient,{0.5,0.5,0.5})
         sim.setObjectAlias(h,names[i])
     end
-end</code>
+end</pre>
 </td> 
 </tr> 
 

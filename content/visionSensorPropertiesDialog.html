@@ -152,32 +152,32 @@ img.add_border {
 <p align="center"><img src="./../images/objectPropertyToolbarButton.jpg"/></p>
 <p class="imageLabel">[Scene object properties toolbar button]</p>
 <br/>
-<p>In the scene object properties dialog, click  the <strong>Vision sensor</strong> button to display the vision sensor dialog (the <strong>Vision sensor</strong> button only appears if the last selection is a <a href="visionSensors.html">vision sensor</a>). The dialog displays the settings and parameters of the last selected vision sensor. If more than one vision sensor is selected, then some parameters can be copied from the last selected vision sensor to the other selected vision sensors (<strong>Apply to selection</strong>-buttons):<br/>
+<p>In the scene object properties dialog, click  the Vision sensor button to display the vision sensor dialog (the Vision sensor button only appears if the last selection is a <a href="visionSensors.html">vision sensor</a>). The dialog displays the settings and parameters of the last selected vision sensor. If more than one vision sensor is selected, then some parameters can be copied from the last selected vision sensor to the other selected vision sensors (Apply to selection-buttons):<br/>
 </p>
 <p align="center"><img src="./../images/visionSensorDialog1.jpg"/></p>
 <p class="imageLabel">[Vision sensor dialog]</p>
 <br/>
-<li><strong>Explicit handling</strong>: indicates whether the sensor should be explicitely handled. If checked, the sensor will not be handled when sim.handleVisionSensor(sim.handle_all_except_explicit) is called, but only if sim.handleVisionSensor(sim.handle_all) or sim.handleVisionSensor(visionSensorHandle) is called. This is useful if the user wishes to handle the sensor in a <a href="childScripts.html">child script</a> rather than in the <a href="mainScript.html">main script</a> (if not checked the sensor will be handled twice, once when sim.handleVisionSensor(sim.handle_all_except_explicit) is called in the main script, and once when sim.handleVisionSensor(visionSensorHandle) is called in the child script). Refer also to the section on <a href="explicitHandling.html">explicit and non-explicit calls</a>.<br/>
+<li>Explicit handling: indicates whether the sensor should be explicitely handled. If checked, the sensor will not be handled when sim.handleVisionSensor(sim.handle_all_except_explicit) is called, but only if sim.handleVisionSensor(sim.handle_all) or sim.handleVisionSensor(visionSensorHandle) is called. This is useful if the user wishes to handle the sensor in a <a href="childScripts.html">child script</a> rather than in the <a href="mainScript.html">main script</a> (if not checked the sensor will be handled twice, once when sim.handleVisionSensor(sim.handle_all_except_explicit) is called in the main script, and once when sim.handleVisionSensor(visionSensorHandle) is called in the child script). Refer also to the section on <a href="explicitHandling.html">explicit and non-explicit calls</a>.<br/>
 </li>
-<li><strong>External input</strong>: when selected, then the vision sensor's normal operation will be altered so as to be able to handle external images instead (e.g. video images).<br/>
+<li>External input: when selected, then the vision sensor's normal operation will be altered so as to be able to handle external images instead (e.g. video images).<br/>
 </li>
-<li><strong>Ignore RGB info (faster)</strong>: if selected, the RGB information of the sensor (i.e. the color) will be ignored so that it can operate faster. Use this option if you only rely on the depth information of the sensor.</li>
-<li><strong>Ignore depth info (faster)</strong>: if selected, the depth information of the sensor will be ignored so that it can operate faster. Use this option if you do not intend to use the depth information of the sensor.</li>
-<li><strong>Packet1 is blank (faster)</strong>: if selected, then CoppeliaSim won't automatically extract specific information from acquired images, so that it can operate faster. Use this option if you do not intend to use the first packet of auxiliary values returned by API functions <a href="regularApi/simReadVisionSensor.html">sim.readVisionSensor</a> or <a href="regularApi/simHandleVisionSensor.html">sim.handleVisionSensor</a>.</li>
-<li><strong>Render mode</strong>: three modes are currently available:</li>
-<li class="tabTab"><strong>OpenGL</strong> (default): renders the visible color channels of objects.</li>
-<li class="tabTab"><strong>OpenGL, auxiliary channels</strong>: renders the auxiliary color channels of objects. The auxiliary channels red, green and blue colors are meant to be used in following way: red is the temperature channel (0.5 is the ambient temperature), green is the user defined channel, and blue is the active light emitter channel.</li>
-<li class="tabTab"><strong>OpenGL, color coded handles</strong>: renders the objects by coding their handles into the colors. The first data packet returned by the <a href="regularApi/simReadVisionSensor.html">sim.readVisionSensor</a> or <a href="regularApi/simHandleVisionSensor.html">sim.handleVisionSensor</a> API functions represent the detected object handles (round the values down).</li>
-<li class="tabTab"><strong>POV-Ray</strong>: uses the POV-Ray plugin to render images, allowing for shadows (also soft shadows) and material effects (much slower). The plugin source code is located <a href="https://github.com/CoppeliaRobotics/simExtPovRay" target="_blank">here</a>.</li>
-<li class="tabTab"><strong>External renderer</strong>: uses an external renderer implemented via a plugin. The current external renderer source code is located <a href="https://github.com/CoppeliaRobotics/simExtExternalRenderer" target="_blank">here</a>.</li>
-<li class="tabTab"><strong>External renderer, windowed</strong>: uses an external renderer implemented via a plugin, and displays the image in an external window (during simulation only). The current external renderer source code is located <a href="https://github.com/CoppeliaRobotics/simExtExternalRenderer" target="_blank">here</a>.</li>
-<li class="tabTab"><strong>OpenGL3</strong>: uses the <a href="https://github.com/stepjam/simExtOpenGL3Renderer" target="_blank">OpenGL3 renderer plugin</a>, courtesy of Stephen James. The plugin offers shadow casting, which is currently not possible natively, in CoppeliaSim. Light projection and shadows can be adjusted for each light, via the object's <a href="commonPropertiesDialog.html#extensionString">extension string</a>, e.g. <em>openGL3 {lightProjection {nearPlane {0.1} farPlane {10} orthoSize {8} bias {0.001} normalBias {0.005} shadowTextureSize {2048}}}</em></li>
-<li class="tabTab"><strong>OpenGL3, windowed</strong>: same as above, but windowed.</li>
-<li><strong>Near / far clipping plane</strong>: the minimum / maximum distance from which the sensor will be able to detect.<br/>
+<li>Ignore RGB info (faster): if selected, the RGB information of the sensor (i.e. the color) will be ignored so that it can operate faster. Use this option if you only rely on the depth information of the sensor.</li>
+<li>Ignore depth info (faster): if selected, the depth information of the sensor will be ignored so that it can operate faster. Use this option if you do not intend to use the depth information of the sensor.</li>
+<li>Packet1 is blank (faster): if selected, then CoppeliaSim won't automatically extract specific information from acquired images, so that it can operate faster. Use this option if you do not intend to use the first packet of auxiliary values returned by API functions <a href="regularApi/simReadVisionSensor.html">sim.readVisionSensor</a> or <a href="regularApi/simHandleVisionSensor.html">sim.handleVisionSensor</a>.</li>
+<li>Render mode: three modes are currently available:</li>
+<li class="tabTab">OpenGL (default): renders the visible color channels of objects.</li>
+<li class="tabTab">OpenGL, auxiliary channels: renders the auxiliary color channels of objects. The auxiliary channels red, green and blue colors are meant to be used in following way: red is the temperature channel (0.5 is the ambient temperature), green is the user defined channel, and blue is the active light emitter channel.</li>
+<li class="tabTab">OpenGL, color coded handles: renders the objects by coding their handles into the colors. The first data packet returned by the <a href="regularApi/simReadVisionSensor.html">sim.readVisionSensor</a> or <a href="regularApi/simHandleVisionSensor.html">sim.handleVisionSensor</a> API functions represent the detected object handles (round the values down).</li>
+<li class="tabTab">POV-Ray: uses the POV-Ray plugin to render images, allowing for shadows (also soft shadows) and material effects (much slower). The plugin source code is located <a href="https://github.com/CoppeliaRobotics/simExtPovRay" target="_blank">here</a>.</li>
+<li class="tabTab">External renderer: uses an external renderer implemented via a plugin. The current external renderer source code is located <a href="https://github.com/CoppeliaRobotics/simExtExternalRenderer" target="_blank">here</a>.</li>
+<li class="tabTab">External renderer, windowed: uses an external renderer implemented via a plugin, and displays the image in an external window (during simulation only). The current external renderer source code is located <a href="https://github.com/CoppeliaRobotics/simExtExternalRenderer" target="_blank">here</a>.</li>
+<li class="tabTab">OpenGL3: uses the <a href="https://github.com/stepjam/simExtOpenGL3Renderer" target="_blank">OpenGL3 renderer plugin</a>, courtesy of Stephen James. The plugin offers shadow casting, which is currently not possible natively, in CoppeliaSim. Light projection and shadows can be adjusted for each light, via the object's <a href="commonPropertiesDialog.html#extensionString">extension string</a>, e.g. <em>openGL3 {lightProjection {nearPlane {0.1} farPlane {10} orthoSize {8} bias {0.001} normalBias {0.005} shadowTextureSize {2048}}}</em></li>
+<li class="tabTab">OpenGL3, windowed: same as above, but windowed.</li>
+<li>Near / far clipping plane: the minimum / maximum distance from which the sensor will be able to detect.<br/>
 </li>
-<li><strong>Perspective angle</strong>: the maximum opening angle of the detection volume when the sensor is in perspective mode.<br/>
+<li>Perspective angle: the maximum opening angle of the detection volume when the sensor is in perspective mode.<br/>
 </li>
-<li><strong>Orthographic size</strong>: the maximum size (along x or y) of the detection volume when the sensor is not in perspective mode.<br/>
+<li>Orthographic size: the maximum size (along x or y) of the detection volume when the sensor is not in perspective mode.<br/>
 </li>
 <p align="center"><img src="./../images/visionSensorDialog2.jpg"/></p>
 <p class="imageLabel">[Detection value parameters of the orthographic-type vision sensor]</p>
@@ -185,13 +185,13 @@ img.add_border {
 <p align="center"><img src="./../images/visionSensorDialog3.jpg"/></p>
 <p class="imageLabel">[Detection value parameters of the perspective-type vision sensor]</p>
 <br/>
-<li><strong>Resolution X / Y</strong>: desired x- / y-resolution of the image captured by the vision sensor. Carefully chose the resolution depending on your application (high resolution will result in slower operation). With older graphic card models, the actual resolution might be different from what is indicated here (old graphic card models only support resolutions at 2^n, where n is 0, 1, 2, etc.).<br/>
+<li>Resolution X / Y: desired x- / y-resolution of the image captured by the vision sensor. Carefully chose the resolution depending on your application (high resolution will result in slower operation). With older graphic card models, the actual resolution might be different from what is indicated here (old graphic card models only support resolutions at 2^n, where n is 0, 1, 2, etc.).<br/>
 </li>
-<li><strong>Adjust default image color</strong>: allows specifying the color that should be used in areas where nothing was rendered. By default, the <a href="environment.html">environment</a> fog color is used.<br/>
+<li>Adjust default image color: allows specifying the color that should be used in areas where nothing was rendered. By default, the <a href="environment.html">environment</a> fog color is used.<br/>
 </li>
-<li><strong>Sensor size</strong>: size of the body-part of the vision sensor. This has no functional effect.</li>
-<li><strong>Show view frustum</strong>: if selected, the view frustum (volume) is shown.</li>
-<li><strong>Adjust color</strong>: allows adjusting the color of the sensor.</li>
+<li>Sensor size: size of the body-part of the vision sensor. This has no functional effect.</li>
+<li>Show view frustum: if selected, the view frustum (volume) is shown.</li>
+<li>Adjust color: allows adjusting the color of the sensor.</li>
 <br/>
 <br/>
 </td></tr>

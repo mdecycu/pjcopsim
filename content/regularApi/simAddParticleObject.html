@@ -33,10 +33,10 @@ C/C++<br>synopsis
 <tr class=apiTableTr> 
 <td class=apiTableLeftCParam>C/C++<br>parameters</td> 
 <td class=apiTableRightCParam>
-<div><strong>objectType</strong>: a <a href="../apiConstants.html#particleObjects">particle object type combined with attributes</a></div>
-<div><strong>size</strong>: diameter of the particles (spheres)</div>
-<div><strong>density</strong>: density of the particles</div>
-<div><strong>parameters</strong>: points to an array of values, allowing to specify additional parameters. Can be nullptr. The first value (an integer) indicates how many parameters will be set. All following values come in pair (an integer indicating what parameter, and a float indicating the parameter value. Following indicates the parameters:
+<div>objectType: a <a href="../apiConstants.html#particleObjects">particle object type combined with attributes</a></div>
+<div>size: diameter of the particles (spheres)</div>
+<div>density: density of the particles</div>
+<div>parameters: points to an array of values, allowing to specify additional parameters. Can be nullptr. The first value (an integer) indicates how many parameters will be set. All following values come in pair (an integer indicating what parameter, and a float indicating the parameter value. Following indicates the parameters:
 </div>
 <div class=tab>0: Bullet friction coefficient (default: 0.0)</div>
 <div class=tab>1: Bullet restitution coefficient (default: 0.0)</div>
@@ -58,12 +58,12 @@ C/C++<br>synopsis
 <div class=tab>17: Newton restitution (default: 0.0)</div>
 <div class=tab>If a parameter is not set, then its default value is used. As an example, following array: [3,0,0.5,2,0.5,9,0.5] will set Bullet's,  ODE's and Vortex's friction coefficients to 0.5<br>
 </div>
-<div><strong>lifeTime</strong>: simulation time after which the particles are destroyed. Set to 0.0 for an unlimited lifetime.</div>
-<div><strong>maxItemCount</strong>: the maximum number of particles that this object can hold</div>
-<div><strong>ambient_diffuse</strong>: default ambient/diffuse color (pointer to 3 rgb values). Can be nullptr</div>
-<div><strong>setToNULL</strong>: not used, set to nullptr</div>
-<div><strong>specular</strong>: default specular color (pointer to 3 rgb values). Can be nullptr</div>
-<div><strong>emission</strong>: default emissive color (pointer to 3 rgb values). Can be nullptr</div>
+<div>lifeTime: simulation time after which the particles are destroyed. Set to 0.0 for an unlimited lifetime.</div>
+<div>maxItemCount: the maximum number of particles that this object can hold</div>
+<div>ambient_diffuse: default ambient/diffuse color (pointer to 3 rgb values). Can be nullptr</div>
+<div>setToNULL: not used, set to nullptr</div>
+<div>specular: default specular color (pointer to 3 rgb values). Can be nullptr</div>
+<div>emission: default emissive color (pointer to 3 rgb values). Can be nullptr</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 

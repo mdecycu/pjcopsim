@@ -34,14 +34,14 @@ The need for an <a href="remoteApiConstants.htm#operationModes">operation mode</
 <br>
 <br>
 
-<p><a name="blocking" id="blocking"></a><strong>Blocking function calls</strong>: a blocking function call is the naive or regular approach, and meant for situations where we cannot afford not to wait for a reply from the server, like in following situation:</p>
+<p><a name="blocking" id="blocking"></a>Blocking function calls: a blocking function call is the naive or regular approach, and meant for situations where we cannot afford not to wait for a reply from the server, like in following situation:</p>
 
 <code class="hljs language-c++ coppelia-legacy-remote-api-client">
-// Following function (<strong>blocking</strong> mode) will retrieve an object handle:
+// Following function (blocking mode) will retrieve an object handle:
 if (simxGetObjectHandle(clientID,"myJoint",&jointHandle,simx_opmode_blocking)==simx_return_ok) 
 {
     // here we have the joint handle in variable <em>jointHandle</em>!    
-}</code>
+}</pre>
 
 <p>Following diagram illustrates a blocking function call:</p>
 <p align=center><img src="images/remoteApiBlocking.jpg"></p>
@@ -49,12 +49,12 @@ if (simxGetObjectHandle(clientID,"myJoint",&jointHandle,simx_opmode_blocking)==s
 <br>
 
 
-<p><a name="nonBlocking" id="nonBlocking"></a><strong>Non-blocking function calls</strong>: a non-blocking function call is meant for situations when we simply want to send data to CoppeliaSim without the need for a reply, like in following situation:</p>
+<p><a name="nonBlocking" id="nonBlocking"></a>Non-blocking function calls: a non-blocking function call is meant for situations when we simply want to send data to CoppeliaSim without the need for a reply, like in following situation:</p>
 
 <code class="hljs language-c++ coppelia-legacy-remote-api-client">
-// Following function (<strong>non-blocking</strong> mode) will set the position of a joint:
+// Following function (non-blocking mode) will set the position of a joint:
 simxSetJointPosition(clientID,jointHandle,jointPosition,simx_opmode_oneshot); 
-</code>
+</pre>
 
 <p>Following diagram illustrates non-blocking function calls:</p>
 <p align=center><img src="images/remoteApiNonBlocking.jpg"></p>
@@ -70,7 +70,7 @@ simxSetJointPosition(clientID,joint2Handle,joint2Value,simx_opmode_oneshot);
 simxSetJointPosition(clientID,joint3Handle,joint3Value,simx_opmode_oneshot);
 simxPauseCommunication(clientID,0);
 
-// Above's 3 joints will be received and set on the CoppeliaSim side at the same time</code>
+// Above's 3 joints will be received and set on the CoppeliaSim side at the same time</pre>
 
 <p>Following diagram illustrates the effect of temporarily halting the communication thread:</p>
 <p align=center><img src="images/remoteApiCommPaused.jpg"></p>
@@ -80,17 +80,17 @@ simxPauseCommunication(clientID,0);
 
 
 
-<p><a name="streaming" id="streaming"></a><strong>Data streaming</strong>: the server can anticipate what type of data the client requires. For that to happen, the client has to signal this desire to the server with a &quot;streaming&quot; or &quot;continuous&quot; operation mode flag (i.e. the function is stored on the server side, executed and sent on a regular time basis, without the need of a request from the client). This can be seen as a command/message subscription from the client to the server, where the server will be streaming the data to the client. Such a streaming operation request and reading of streamed data could look like this on the client side:
+<p><a name="streaming" id="streaming"></a>Data streaming: the server can anticipate what type of data the client requires. For that to happen, the client has to signal this desire to the server with a &quot;streaming&quot; or &quot;continuous&quot; operation mode flag (i.e. the function is stored on the server side, executed and sent on a regular time basis, without the need of a request from the client). This can be seen as a command/message subscription from the client to the server, where the server will be streaming the data to the client. Such a streaming operation request and reading of streamed data could look like this on the client side:
  </p>
 
 <code class="hljs language-c++ coppelia-legacy-remote-api-client">
-// Streaming operation request (subscription) (function returns immediately (<strong>non-blocking</strong>)):
+// Streaming operation request (subscription) (function returns immediately (non-blocking)):
 simxGetJointPosition(clientID,jointHandle,&jointPosition,simx_opmode_streaming);
 
 // The control loop:
 while (simxGetConnectionId(clientID)!=-1) // while we are connected to the server..
 { 
-    // Fetch the newest joint value from the inbox (func. returns immediately (<strong>non-blocking</strong>)):
+    // Fetch the newest joint value from the inbox (func. returns immediately (non-blocking)):
     if (simxGetJointPosition(clientID,jointHandle,&jointPosition,simx_opmode_buffer)==simx_return_ok) 
     { 
         // here we have the newest joint position in variable <em>jointPosition</em>!    
@@ -108,7 +108,7 @@ while (simxGetConnectionId(clientID)!=-1) // while we are connected to the serve
 
 // Before disconnecting from CoppeliaSim, make sure to disable the streamings you previously enabled:
 simxGetJointPosition(clientID,jointHandle,&jointPosition,simx_opmode_discontinue);
-simxGetPingTime(clientID,&pingTime); // needed to insure that above reaches CoppeliaSim before disconnection</code>
+simxGetPingTime(clientID,&pingTime); // needed to insure that above reaches CoppeliaSim before disconnection</pre>
 
 <p>Following diagram illustrates data streaming:</p>
 <p align=center><img src="images/remoteApiDataStreaming.jpg"></p>
@@ -118,37 +118,37 @@ simxGetPingTime(clientID,&pingTime); // needed to insure that above reaches Copp
 <p>Once you are done streaming the data, the legacy remote API client should always inform the server (i.e. CoppeliaSim) to stop streaming that data, otherwise the server will continue to stream unnecessary data and eventually slow down. Use the <em>simx_opmode_discontinue</em> operation mode for that. Also, if you have enabled data streaming for a specific command (e.g. <a href="remoteApiFunctionsPython.htm#simxGetJointPosition">simxGetJointPosition</a>), then you shouldn't use any other operation mode with that specific command than <em>simx_opmode_buffer</em> or <em>simx_opmode_discontinue</em>, otherwise streaming will be interrupted on the client side (but data still sent on the server side).</p>
 <br>
 
-<p><a name="nonBlockingDataRetrieval" id="nonBlockingDataRetrieval"></a><strong>Non-blocking, non-streaming data query</strong>: if data needs to be queried in a non-blocking fashion, but not constantly as would data streaming do, one can use following:
+<p><a name="nonBlockingDataRetrieval" id="nonBlockingDataRetrieval"></a>Non-blocking, non-streaming data query: if data needs to be queried in a non-blocking fashion, but not constantly as would data streaming do, one can use following:
  </p>
 
 <code class="hljs language-c++ coppelia-legacy-remote-api-client">
-// Request vision sensor data (function returns immediately (<strong>non-blocking</strong>)):
+// Request vision sensor data (function returns immediately (non-blocking)):
 simxGetVisionSensorImage(clientID,sensorHandle,res,&amp;img,0,simx_opmode_oneshot);
 ...
-// Check later if some data has arrived (<strong>non-blocking</strong>):
+// Check later if some data has arrived (non-blocking):
 if (simx_return_ok==simxGetVisionSensorImage(clientID,sensorHandle,res,&amp;img,0,simx_opmode_buffer))
 { // yes, we have an image!
     ...
-}</code>
+}</pre>
 <br>
 
-<p><a name="stepping" id="stepping"></a><a name="synchronous" id="synchronous"></a><strong>stepped (or synchronous) mode</strong>: from above function calls you might have noticed that a simulation will advance or progress without taking into account the progress of the legacy remote API client. Legacy remote API function calls will be executed asynchronously by default. There are however situations where the legacy remote API client needs to be synchronized with the simulation progress, by controlling the simulation advance from the legacy remote API client side. This can be achieved by using the stepped mode. The legacy remote API server service needs in that case to be pre-enabled for stepped operation (this can be achieved via the <a href="remoteApiServerSide.htm#simRemoteApi.start">simRemoteApi.start</a> function, or via the <a href="remoteApiServerSide.htm#continuousRemoteApiService">continuous remote API server service configuration file <em>remoteApiConnections.txt</em></a>). Following is an example of the stepped mode:</p>
+<p><a name="stepping" id="stepping"></a><a name="synchronous" id="synchronous"></a>stepped (or synchronous) mode: from above function calls you might have noticed that a simulation will advance or progress without taking into account the progress of the legacy remote API client. Legacy remote API function calls will be executed asynchronously by default. There are however situations where the legacy remote API client needs to be synchronized with the simulation progress, by controlling the simulation advance from the legacy remote API client side. This can be achieved by using the stepped mode. The legacy remote API server service needs in that case to be pre-enabled for stepped operation (this can be achieved via the <a href="remoteApiServerSide.htm#simRemoteApi.start">simRemoteApi.start</a> function, or via the <a href="remoteApiServerSide.htm#continuousRemoteApiService">continuous remote API server service configuration file <em>remoteApiConnections.txt</em></a>). Following is an example of the stepped mode:</p>
 
 <code class="hljs language-c++ coppelia-legacy-remote-api-client">
-simxSynchronous(clientID,true); // Enable the stepped mode (<strong>Blocking</strong> function call)
+simxSynchronous(clientID,true); // Enable the stepped mode (Blocking function call)
 simxStartSimulation(clientID,simx_opmode_oneshot);
 
 // The first simulation step waits for a trigger before being executed
 
-simxSynchronousTrigger(clientID); // Trigger next simulation step (<strong>Blocking</strong> function call)
+simxSynchronousTrigger(clientID); // Trigger next simulation step (Blocking function call)
 
 // The first simulation step is now being executed
 
-simxSynchronousTrigger(clientID); // Trigger next simulation step (<strong>Blocking</strong> function call)
+simxSynchronousTrigger(clientID); // Trigger next simulation step (Blocking function call)
 
 // The second simulation step is now being executed
 
-...</code>
+...</pre>
 
 <p>Following diagram illustrates the stepped mode:</p>
 <p align=center><img src="images/remoteApiSynchronous.jpg"></p>
@@ -170,18 +170,18 @@ simxSynchronousTrigger(clientID); // Trigger next simulation step (<strong>Block
 <p>You have several possibilities to overcome above problematic situation. The simplest is to call a function in a blocking fashion directly after calling simxSynchronousTrigger:</p>
 
 <code class="hljs language-c++ coppelia-legacy-remote-api-client">
-simxSynchronous(clientID,true); // Enable the stepped mode (<strong>Blocking</strong> function call)
+simxSynchronous(clientID,true); // Enable the stepped mode (Blocking function call)
 simxStartSimulation(clientID,simx_opmode_oneshot);
 
 // The first simulation step waits for a trigger before being executed
 
-simxSynchronousTrigger(clientID); // Trigger next simulation step (<strong>Blocking</strong> function call)
+simxSynchronousTrigger(clientID); // Trigger next simulation step (Blocking function call)
 
 // The first simulation step is now being executed
 
-simxGetPingTime(clientID); // After this call, the first simulation step is finished (<strong>Blocking</strong> function call)
+simxGetPingTime(clientID); // After this call, the first simulation step is finished (Blocking function call)
 
-// Now we can safely read all streamed values</code>
+// Now we can safely read all streamed values</pre>
 
 <p>Following diagram illustrates above procedure:</p>
 <p align=center><img src="images/remoteApiSynchronousUpdate2.jpg"></p>
@@ -224,21 +224,21 @@ On the client side (i.e. your application), at least 2 threads will be running: 
 Following describes the various supported <a href="remoteApiConstants.htm#operationModes">modes of operations</a>: </p>
 
 
-<li><strong>simx_opmode_oneshot</strong>: non-blocking mode. A command is sent to the server for execution (1)-(b)-(3). A reply to a same command, but previously executed, is returned from a local buffer, if available (i)-(2). The function doesn't wait for a reply from the server (7)-(i).  On the server side, the command is stored temporarily (4)-(d), executed  once (d)-(9)-(g) and a reply sent back (g)-(6). This mode is often used with &quot;set-functions&quot; (e.g. simxSetJointPosition), where the user doesn't care about the return value.</li>
+<li>simx_opmode_oneshot: non-blocking mode. A command is sent to the server for execution (1)-(b)-(3). A reply to a same command, but previously executed, is returned from a local buffer, if available (i)-(2). The function doesn't wait for a reply from the server (7)-(i).  On the server side, the command is stored temporarily (4)-(d), executed  once (d)-(9)-(g) and a reply sent back (g)-(6). This mode is often used with &quot;set-functions&quot; (e.g. simxSetJointPosition), where the user doesn't care about the return value.</li>
 
-<li><strong>simx_opmode_blocking</strong>: blocking mode. A command is sent to the server for execution (1)-(b)-(3), and the function waits for the reply from the server (7)-(i)-(2). The received reply will then be erased from the inbox buffer (i), which doesn't happen with the other operation modes. On the server side, the command is stored temporarily (4)-(d), executed  once (d)-(9)-(g) and a reply sent back (g)-(6). This mode is often used with &quot;get-functions&quot; (e.g. simxGetObjectHandle), where the user requires a reply to the sent command.</li>
+<li>simx_opmode_blocking: blocking mode. A command is sent to the server for execution (1)-(b)-(3), and the function waits for the reply from the server (7)-(i)-(2). The received reply will then be erased from the inbox buffer (i), which doesn't happen with the other operation modes. On the server side, the command is stored temporarily (4)-(d), executed  once (d)-(9)-(g) and a reply sent back (g)-(6). This mode is often used with &quot;get-functions&quot; (e.g. simxGetObjectHandle), where the user requires a reply to the sent command.</li>
 
-<li><strong>simx_opmode_streaming</strong>: non-blocking mode. A command is sent to the server for execution (1)-(b)-(3).  A reply to a same command, but previously executed, is returned from a local buffer, if available (i)-(2). The function doesn't wait for a reply from the server (7)-(i). Similar to simx_opmode_oneshot, but with the difference that the command will be stored on the server side (4)-(e),  continuously executed (e)-(9)-(g), and continuously sent back to the client (g)-(6). This mode is often used with &quot;get-functions&quot; (e.g. simxGetJointPosition), where the user requires a specific value constantly.</li>
+<li>simx_opmode_streaming: non-blocking mode. A command is sent to the server for execution (1)-(b)-(3).  A reply to a same command, but previously executed, is returned from a local buffer, if available (i)-(2). The function doesn't wait for a reply from the server (7)-(i). Similar to simx_opmode_oneshot, but with the difference that the command will be stored on the server side (4)-(e),  continuously executed (e)-(9)-(g), and continuously sent back to the client (g)-(6). This mode is often used with &quot;get-functions&quot; (e.g. simxGetJointPosition), where the user requires a specific value constantly.</li>
 
-<li><strong>simx_opmode_oneshot_split</strong> (not recommended): non-blocking mode. A command is sent gradually (in small data chunks) to the server for execution (1)-(a)-(3). A reply to a same command, but previously executed, is returned from a local buffer, if available (i)-(2). The function doesn't wait for a reply from the server (7)-(h)-(i). When the command was fully sent, it is removed from (a). On the server side, the command chunks are remporarily stored (4)-(c) and when the command was fully received, the command will be executed once (5)-(d)-(9)-(f) and a reply gradually sent back to the client (f)-(6). The client receives the reply in small chunks (7)-(h) and when the reply is complete, it is stored in the local buffer (8)-(i).  This mode is often used with &quot;set-functions&quot; associated with large amounts of data (e.g. simxSetVisionSensorImage), in order not to overload the communication network.</li>
+<li>simx_opmode_oneshot_split (not recommended): non-blocking mode. A command is sent gradually (in small data chunks) to the server for execution (1)-(a)-(3). A reply to a same command, but previously executed, is returned from a local buffer, if available (i)-(2). The function doesn't wait for a reply from the server (7)-(h)-(i). When the command was fully sent, it is removed from (a). On the server side, the command chunks are remporarily stored (4)-(c) and when the command was fully received, the command will be executed once (5)-(d)-(9)-(f) and a reply gradually sent back to the client (f)-(6). The client receives the reply in small chunks (7)-(h) and when the reply is complete, it is stored in the local buffer (8)-(i).  This mode is often used with &quot;set-functions&quot; associated with large amounts of data (e.g. simxSetVisionSensorImage), in order not to overload the communication network.</li>
 
-<li><strong>simx_opmode_streaming_split </strong>(not recommended): non-blocking mode. A command is sent gradually (in small data chunks) to the server for execution (1)-(a)-(3).  A reply to a same command, but previously executed, is returned from a local buffer, if available (i)-(2). The function doesn't wait for a reply from the server (7)-(h)-(i). When the command was fully sent, it is removed from (a). On the server side, the command chunks are remporarily stored (4)-(c) and when the command was fully received (5)-(e), the command will be executed continuously (e)-(9)-(f) and a reply gradually sent back to the client (f)-(6). The client receives the reply in small chunks (7)-(h) and when the reply is complete, it is stored in the local buffer (8)-(i).  This mode is often used with &quot;get-functions&quot; associated with large amounts of data (e.g. simxGetVisionSensorImage), where the user requires data constantly without overloading the communication network.</li>
+<li>simx_opmode_streaming_split (not recommended): non-blocking mode. A command is sent gradually (in small data chunks) to the server for execution (1)-(a)-(3).  A reply to a same command, but previously executed, is returned from a local buffer, if available (i)-(2). The function doesn't wait for a reply from the server (7)-(h)-(i). When the command was fully sent, it is removed from (a). On the server side, the command chunks are remporarily stored (4)-(c) and when the command was fully received (5)-(e), the command will be executed continuously (e)-(9)-(f) and a reply gradually sent back to the client (f)-(6). The client receives the reply in small chunks (7)-(h) and when the reply is complete, it is stored in the local buffer (8)-(i).  This mode is often used with &quot;get-functions&quot; associated with large amounts of data (e.g. simxGetVisionSensorImage), where the user requires data constantly without overloading the communication network.</li>
 
-<li><strong>simx_opmode_discontinue</strong>: non-blocking mode. A command is sent to the server (1)-(b)-(3). A reply to a same command, but previously executed, is returned from a local buffer, if available (i)-(2). The function doesn't wait for a reply from the server (7)-(i).  On the server side, the command simply clears a similar command that is located in (e). A reply is sent to the client (6)-(7) that will also clear a similar reply located in (i). This mode is used to release some memory in (i) (similar to simx_opmode_remove), or to interrupt streaming commands (i.e. by removing them from (e)).</li>
+<li>simx_opmode_discontinue: non-blocking mode. A command is sent to the server (1)-(b)-(3). A reply to a same command, but previously executed, is returned from a local buffer, if available (i)-(2). The function doesn't wait for a reply from the server (7)-(i).  On the server side, the command simply clears a similar command that is located in (e). A reply is sent to the client (6)-(7) that will also clear a similar reply located in (i). This mode is used to release some memory in (i) (similar to simx_opmode_remove), or to interrupt streaming commands (i.e. by removing them from (e)).</li>
 
-<li><strong>simx_opmode_buffer</strong>: non-blocking mode. No command is sent to the server, but just a  reply to a same command, previously executed, is returned from a local buffer, if available (i)-(2). This mode is often used in conjunction with the simx_opmode_streaming or simx_opmode_streaming_split operation mode: first, a constant command execution is started with a streaming command, then only command replies fetched.</li>
+<li>simx_opmode_buffer: non-blocking mode. No command is sent to the server, but just a  reply to a same command, previously executed, is returned from a local buffer, if available (i)-(2). This mode is often used in conjunction with the simx_opmode_streaming or simx_opmode_streaming_split operation mode: first, a constant command execution is started with a streaming command, then only command replies fetched.</li>
 
-<li><strong>simx_opmode_remove</strong>: non-blocking mode. No command is sent to the server, but just a  reply to a same command, previously executed, is cleared from the local buffer, if present (i). The function doesn't return any values, except for a return code. This mode can be used to release some memory on the client side, but is rarely necessary.</li>
+<li>simx_opmode_remove: non-blocking mode. No command is sent to the server, but just a  reply to a same command, previously executed, is cleared from the local buffer, if present (i). The function doesn't return any values, except for a return code. This mode can be used to release some memory on the client side, but is rarely necessary.</li>
 
 <br>
 <br>

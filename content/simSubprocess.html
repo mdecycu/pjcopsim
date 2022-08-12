@@ -49,13 +49,13 @@ td.section { margin: 0; padding: 0; }
 <td class="apiTableLeftLParam">Lua parameters</td>
 <td class="apiTableRightLParam">
 <div>
-<strong>programPath</strong> (string): Program path.</div>
+programPath (string): Program path.</div>
 <div>
-<strong>args</strong> (table of string): Program arguments.</div>
+args (table of string): Program arguments.</div>
 <div>
-<strong>input</strong> (string, default: ""): Data passed to stdin.</div>
+input (string, default: ""): Data passed to stdin.</div>
 <div>
-<strong>opts</strong> (exec_opts, default: {}): Options. see <a href="#struct:exec_opts">exec_opts</a>
+opts (exec_opts, default: {}): Options. see <a href="#struct:exec_opts">exec_opts</a>
 </div>
 </td>
 </tr>
@@ -63,9 +63,9 @@ td.section { margin: 0; padding: 0; }
 <td class="apiTableLeftLRet">Lua return values</td>
 <td class="apiTableRightLRet">
 <div>
-<strong>exitCode</strong> (int): </div>
+exitCode (int): </div>
 <div>
-<strong>output</strong> (string): </div>
+output (string): </div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -98,18 +98,18 @@ td.section { margin: 0; padding: 0; }
 <td class="apiTableLeftLParam">Lua parameters</td>
 <td class="apiTableRightLParam">
 <div>
-<strong>programPath</strong> (string): Program path.</div>
+programPath (string): Program path.</div>
 <div>
-<strong>args</strong> (table of string): Program arguments.</div>
+args (table of string): Program arguments.</div>
 <div>
-<strong>opts</strong> (exec_opts, default: {}): Options. see <a href="#struct:exec_opts">exec_opts</a>
+opts (exec_opts, default: {}): Options. see <a href="#struct:exec_opts">exec_opts</a>
 </div>
 </td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftLRet">Lua return values</td>
 <td class="apiTableRightLRet"><div>
-<strong>handle</strong> (string): </div></td>
+handle (string): </div></td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftPSyn">Python synopsis</td>
@@ -140,12 +140,12 @@ td.section { margin: 0; padding: 0; }
 <tr class="apiTableTr">
 <td class="apiTableLeftLParam">Lua parameters</td>
 <td class="apiTableRightLParam"><div>
-<strong>handle</strong> (string): </div></td>
+handle (string): </div></td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftLRet">Lua return values</td>
 <td class="apiTableRightLRet"><div>
-<strong>running</strong> (bool): </div></td>
+running (bool): </div></td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftPSyn">Python synopsis</td>
@@ -176,12 +176,12 @@ td.section { margin: 0; padding: 0; }
 <tr class="apiTableTr">
 <td class="apiTableLeftLParam">Lua parameters</td>
 <td class="apiTableRightLParam"><div>
-<strong>handle</strong> (string): </div></td>
+handle (string): </div></td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftLRet">Lua return values</td>
 <td class="apiTableRightLRet"><div>
-<strong>exitCode</strong> (int): </div></td>
+exitCode (int): </div></td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftPSyn">Python synopsis</td>
@@ -213,15 +213,15 @@ td.section { margin: 0; padding: 0; }
 <td class="apiTableLeftLParam">Lua parameters</td>
 <td class="apiTableRightLParam">
 <div>
-<strong>handle</strong> (string): </div>
+handle (string): </div>
 <div>
-<strong>timeout</strong> (float, default: 5): </div>
+timeout (float, default: 5): </div>
 </td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftLRet">Lua return values</td>
 <td class="apiTableRightLRet"><div>
-<strong>exitCode</strong> (int): </div></td>
+exitCode (int): </div></td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftPSyn">Python synopsis</td>
@@ -240,7 +240,7 @@ td.section { margin: 0; padding: 0; }
 <tr><td id="enums" class="section"></td></tr>
 <tr><td id="structs" class="section">
 <br><br><h1>Data structures</h1>
-<p>Data structures are used to pass complex data around. Create data structures in Lua in the form of a map, e.g.: <code>{line_size=3, add_to_legend=false, selectable=true}</code></p>
+<p>Data structures are used to pass complex data around. Create data structures in Lua in the form of a map, e.g.: <code>{line_size=3, add_to_legend=false, selectable=true}</pre></p>
 <h3 class="subsectionBar">
 <a name="struct:exec_opts" id="struct:exec_opts"></a>exec_opts</h3>
 <table class="apiTable">
@@ -254,9 +254,9 @@ td.section { margin: 0; padding: 0; }
 <td class="apiTableLeftLParam">Fields</td>
 <td class="apiTableRightLParam">
 <div>
-<strong>useSearchPath</strong> (bool, default: true): Resolve program name searching in PATH entries.</div>
+useSearchPath (bool, default: true): Resolve program name searching in PATH entries.</div>
 <div>
-<strong>openNewConsole</strong> (bool, default: false): Win32-specific flag.</div>
+openNewConsole (bool, default: false): Win32-specific flag.</div>
 </td>
 </tr>
 <tr class="apiTableTr">

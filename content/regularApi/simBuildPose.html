@@ -33,9 +33,9 @@ C/C++<br>synopsis
 <tr class=apiTableTr> 
 <td class=apiTableLeftCParam>C/C++<br>parameters</td> 
 <td class=apiTableRightCParam>
-<div><strong>position</strong>: pointer to 3 values</div>
-<div><strong>eulerAngles</strong>: pointer to 3 values</div>
-<div><strong>pose</strong>: pointer to 7 values</div>
+<div>position: pointer to 3 values</div>
+<div>eulerAngles: pointer to 3 values</div>
+<div>pose: pointer to 7 values</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -56,9 +56,9 @@ Lua<br>synopsis
 <tr class=apiTableTr> 
 <td class=apiTableLeftLParam>Lua<br>parameters</td> 
 <td class=apiTableRightLParam>
-<div><strong>position</strong>: pointer to 3 values representing the position component</div>
-<div><strong>eulerAnglesOrAxis1</strong>: pointer to 3 values representing Euler angles or a reference frame axis (see mode below)</div>
-<div><strong>mode</strong>: describes how the orientation is specified:</div>
+<div>position: pointer to 3 values representing the position component</div>
+<div>eulerAnglesOrAxis1: pointer to 3 values representing Euler angles or a reference frame axis (see mode below)</div>
+<div>mode: describes how the orientation is specified:</div>
 <div class=tab>0: eulerAnglesOrAxis1 represents Euler angles and axis2 is ignored</div>
 <div class=tab>1: eulerAnglesOrAxis1 represents the x-axis of the new pose's reference frame, axis2 is ignored</div>
 <div class=tab>2: eulerAnglesOrAxis1 represents the y-axis of the new pose's reference frame, axis2 is ignored</div>
@@ -69,7 +69,7 @@ Lua<br>synopsis
 <div class=tab>7: eulerAnglesOrAxis1 represents the x-axis and axis2 represents the z-axis of the new pose's reference frame</div>
 <div class=tab>8: eulerAnglesOrAxis1 represents the y-axis and axis2 represents the x-axis of the new pose's reference frame</div>
 <div class=tab>9: eulerAnglesOrAxis1 represents the z-axis and axis2 represents the y-axis of the new pose's reference frame</div>
-<div><strong>axis2</strong>: pointer to 3 values representing a reference frame axis (see mode above)</div>
+<div>axis2: pointer to 3 values representing a reference frame axis (see mode above)</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -77,7 +77,7 @@ Lua<br>synopsis
 Lua<br>return values
 </td> 
 <td class=apiTableRightLRet>
-<div><strong>pose</strong>: an array of 7 value</div>
+<div>pose: an array of 7 value</div>
 </td> 
 </tr> 
 

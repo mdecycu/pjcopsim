@@ -149,7 +149,7 @@ img.add_border {
 <h4>Plugin tutorial</h4>
 <p>This tutorial describes how to write a <a href="plugins.html">plugin</a> for CoppeliaSim. The CoppeliaSim scene file related to this tutorial is located in <em>scenes/tutorials/BubbleRobExt</em>. The plugin project files of this tutorial can be found <a href="https://github.com/CoppeliaRobotics/simExtBubbleRob" target="_blank">here</a>.<br/>
 </p>
-<p>CoppeliaSim automatically loads all plugins that it can find in its folder (i.e. the installation folder, or the same folder as the one that contains <em>coppeliaSim.exe</em>) at program start-up. CoppeliaSim recognizes plugin files with following mask: "simExt*.dll" on Windows, "libsimExt*.dylib" on Mac OS and "libsimExt*.so" on Linux. Additionally a plugin's filename should not contain any underscore. The plugin file of this tutorial is <em>simExtBubbleRob.dll</em>. When testing it, make sure it was properly loaded at CoppeliaSim start-up: switch the <a href="userInterface.html#ConsoleWindow">console window</a> to visible by unchecking the <strong>Hide console window</strong> item in the <a href="settings.html">user settings dialog</a> ([Menu bar --&gt; Tools --&gt; Settings]). This option is only available in the Windows version. On Mac, have a look at the system's console, and on Linux try to start CoppeliaSim from within a console. The console window should display something similar to this:<br/>
+<p>CoppeliaSim automatically loads all plugins that it can find in its folder (i.e. the installation folder, or the same folder as the one that contains <em>coppeliaSim.exe</em>) at program start-up. CoppeliaSim recognizes plugin files with following mask: "simExt*.dll" on Windows, "libsimExt*.dylib" on Mac OS and "libsimExt*.so" on Linux. Additionally a plugin's filename should not contain any underscore. The plugin file of this tutorial is <em>simExtBubbleRob.dll</em>. When testing it, make sure it was properly loaded at CoppeliaSim start-up: switch the <a href="userInterface.html#ConsoleWindow">console window</a> to visible by unchecking the Hide console window item in the <a href="settings.html">user settings dialog</a> ([Menu bar --&gt; Tools --&gt; Settings]). This option is only available in the Windows version. On Mac, have a look at the system's console, and on Linux try to start CoppeliaSim from within a console. The console window should display something similar to this:<br/>
 </p>
 <p align="center"><img src="./../images/pluginTut1.jpg"/></p>
 <br/>
@@ -173,9 +173,9 @@ img.add_border {
 <tr class="apiTableTr">
 <td class="apiTableLeftLParam">Lua<br/>parameters</td>
 <td class="apiTableRightLParam">
-<div><strong>motorJointHandles</strong>: a table containing the handles of the left and right motor joints of the BubbleRob you wish to control.</div>
-<div><strong>sensorHandle</strong>: the handle of the proximity sensor or the BubbleRob you wish to control</div>
-<div><strong>backRelativeVelocities</strong>: when BubbleRob detects an obstacle, it will move backwards for some time. relativeBackVelocities[1] is the relative velocity of the left wheel when moving back. relativeBackVelocities[2] is the relative velocity of the right wheel when moving back</div>
+<div>motorJointHandles: a table containing the handles of the left and right motor joints of the BubbleRob you wish to control.</div>
+<div>sensorHandle: the handle of the proximity sensor or the BubbleRob you wish to control</div>
+<div>backRelativeVelocities: when BubbleRob detects an obstacle, it will move backwards for some time. relativeBackVelocities[1] is the relative velocity of the left wheel when moving back. relativeBackVelocities[2] is the relative velocity of the right wheel when moving back</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -211,7 +211,7 @@ img.add_border {
 <tr class="apiTableTr">
 <td class="apiTableLeftLParam">Lua<br/>parameters</td>
 <td class="apiTableRightLParam">
-<div><strong>bubbleRobHandle</strong>: the handle of a BubbleRob instance previously returned from simBubble.create.</div>
+<div>bubbleRobHandle: the handle of a BubbleRob instance previously returned from simBubble.create.</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -248,7 +248,7 @@ img.add_border {
 <tr class="apiTableTr">
 <td class="apiTableLeftLParam">Lua<br/>parameters</td>
 <td class="apiTableRightLParam">
-<div><strong>bubbleRobHandle</strong>: the handle of a BubbleRob instance previously returned from simBubble.create.</div>
+<div>bubbleRobHandle: the handle of a BubbleRob instance previously returned from simBubble.create.</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -256,7 +256,7 @@ img.add_border {
             Lua<br/>return values
         </td>
 <td class="apiTableRightLRet">
-<div><strong>result</strong>: false in case of an error</div>
+<div>result: false in case of an error</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -285,7 +285,7 @@ img.add_border {
 <tr class="apiTableTr">
 <td class="apiTableLeftLParam">Lua<br/>parameters</td>
 <td class="apiTableRightLParam">
-<div><strong>bubbleRobHandle</strong>: the handle of a BubbleRob instance previously returned from simBubble.create.</div>
+<div>bubbleRobHandle: the handle of a BubbleRob instance previously returned from simBubble.create.</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -305,7 +305,7 @@ img.add_border {
 <br/>
 <p>Now open the threaded <a href="childScripts.html">child script</a> attached to the BubbleRob model in the scene (e.g. double-click the script icon next to object <em>bubbleRob</em> in the scene hierarchy). Inspect the code:<br/>
 </p>
-<code class="hljs language-lua coppelia-coppeliasim-script">
+<pre class="brush:lua;auto-links:false;toolbar:false" contenteditable="false">
 function sysCall_init()
     corout=coroutine.create(coroutineMain)
 end
@@ -346,7 +346,7 @@ function coroutineMain()
             simBubble.destroy(robHandle)
         end
     end
-end</code>
+end</pre>
 <p>The first part of the code is in charge of checking whether the plugin required to run this script (i.e. <em>simExtBubbleRob.dll</em>) is available (i.e. was found and successfully loaded). If not, an error message is displayed. Otherwise, joint and sensor handles are retrieved and given to the custom script function that creates a controller instance of our BubbleRob in the plugin. If the call was successfull, then we can call <em>simBubble.start</em>. The function instructs the plugin to move the BubbleRob model while avoiding obstacles. Run the simulation: BubbleRob moves for 20 seconds then stops, as expected. Now leave CoppeliaSim. Temporarily rename the plugin to <em>TEMP_simExtBubbleRob.dll</em> so that CoppeliaSim won't load it anymore, then start CoppeliaSim again. Load the previous scene and run the simulation: an error message now appears, indicating that the required plugin could not be found. Leave CoppeliaSim again, rename back the plugin to <em>simExtBubbleRob.dll</em> and start CoppeliaSim again.<br/>
 </p>
 <p>Let's have a look at how the plugin registers and handles the above 4 custom Lua functions. Open the <a href="https://github.com/CoppeliaRobotics/simExtBubbleRob" target="_blank">BubbleRob plugin project</a>, and have a look at file <em>simExtBubbleRob.cpp</em>:</p>

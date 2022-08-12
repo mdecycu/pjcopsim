@@ -156,7 +156,7 @@ background. Add-ons can run <a href="threadedAndNonThreadedCode.html">threaded o
 <p>Add-ons should be written in a text file located in the
   same folder as the main application, with following naming convention: <em>simAddOnXXXX.lua</em> (even add-ons containing Python code). Add-ons that do not follow above naming convention can still be loaded and run via <a href="commandLine.html">command line options</a>.</p>
 <p>By default, add-ons will automatically start when CoppeliaSim starts, e.g.:</p>
-<code class="hljs language-lua coppelia-coppeliasim-script">
+<pre class="brush:lua;auto-links:false;toolbar:false" contenteditable="false">
 function sysCall_init()
     print("Executing the initialization section. Starting together with CoppeliaSim")
 end
@@ -166,10 +166,10 @@ function sysCall_addOnScriptSuspend()<br/>    print("Ending... (triggered by the
 
 function sysCall_cleanup()
     print("Executing the clean-up section")
-end</code>
+end</pre>
 <br/>
 <p>An add-on can also be manually started and stopped from the add-on menu (Lua only), e.g.:</p>
-<code class="hljs language-lua coppelia-coppeliasim-script">
+<pre class="brush:lua;auto-links:false;toolbar:false" contenteditable="false">
 function sysCall_info()<br/>    return {autoStart=false}<br/>end
 
 function sysCall_init()
@@ -178,10 +178,10 @@ end
 
 function sysCall_addOnScriptSuspend()<br/>    print("Ending... (triggered by the user)")
     return {cmd='cleanup'} -- end this add-on.<br/>end
-</code>
+</pre>
 <br/>
 <p>An add-on can also be suspended/resumed from the add-on menu, e.g.:</p>
-<code class="hljs language-lua coppelia-coppeliasim-script">...
+<pre class="brush:lua;auto-links:false;toolbar:false" contenteditable="false">...
 
 function sysCall_addOnScriptSuspend()<br/>    print("Suspending the add-on... (triggered by the user)")
 end
@@ -189,22 +189,22 @@ end
 function sysCall_addOnScriptResume()<br/>    print("Resuming the add-on... (triggered by the user)")
 end
 
-...</code>
+...</pre>
 <br/>
 <p>An add-on can also act as a simple function triggered by the user (Lua only), e.g.:</p>
-<code class="hljs language-lua coppelia-coppeliasim-script">
+<pre class="brush:lua;auto-links:false;toolbar:false" contenteditable="false">
 function sysCall_info()<br/>    return {autoStart=false}<br/>end
 
 function sysCall_init()
     print("Executing the initialization section. Start triggered by the user")
     -- execute some functions here, e.g. import something
     return {cmd='cleanup'} -- end this add-on.
-end</code>
+end</pre>
 <br/>
 <p>An add-on can also display a customized name in the Modules' menu (Lua only), e.g.:</p>
-<code class="hljs language-lua coppelia-coppeliasim-script">
+<pre class="brush:lua;auto-links:false;toolbar:false" contenteditable="false">
 function sysCall_info()<br/>    return {menu='Exporters//My exporter'}<br/>end
-</code>
+</pre>
 <br/>
 <p>For more information about add-ons, have a look at the add-ons located in the installation folder.</p>
 <br/>

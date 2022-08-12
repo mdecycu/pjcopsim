@@ -41,9 +41,9 @@ C/C++<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>C/C++<br>parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>message</strong>: the message to display</div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_oneshot</div>
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>message: the message to display</div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_oneshot</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -94,11 +94,11 @@ C/C++<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>C/C++<br>parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>signalName</strong>: name of the signal</div>
-<div><strong>signalValueToAppend</strong>: value to append to the  signal. That value may contain any value, including embedded zeros.</div>
-<div><strong>signalLength</strong>: size of the signalValueToAppend string. </div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_oneshot
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>signalName: name of the signal</div>
+<div>signalValueToAppend: value to append to the  signal. That value may contain any value, including embedded zeros.</div>
+<div>signalLength: size of the signalValueToAppend string. </div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_oneshot
 </div>
 </td> 
 </tr> 
@@ -153,9 +153,9 @@ C/C++<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>C/C++<br>parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>consoleHandle</strong>: the handle of the console window, previously returned by the <a href="#simxAuxiliaryConsoleOpen">simxAuxiliaryConsoleOpen</a> command</div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_oneshot
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>consoleHandle: the handle of the console window, previously returned by the <a href="#simxAuxiliaryConsoleOpen">simxAuxiliaryConsoleOpen</a> command</div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_oneshot
 </div>
 </td> 
 </tr> 
@@ -210,16 +210,16 @@ C/C++<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>C/C++<br>parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>title</strong>: the title of the console window</div>
-<div><strong>maxLines</strong>: the number of text lines that can be displayed and buffered</div>
-<div><strong>mode</strong>: bit-coded value. Bit0 set indicates that the console window will   automatically close at simulation end, bit1 set   indicates that lines will be wrapped, bit2 set indicates that the user   can close the console window, bit3 set indicates that the console will   automatically be hidden during simulation pause, bit4 set indicates that   the console will not automatically hide when the user switches to   another scene.</div>
-<div><strong>position</strong>: the initial position of the console window (x and y value). Can be nullptr</div>
-<div><strong>size</strong>: the initial size of the console window (x and y value). Can be nullptr</div>
-<div><strong>textColor</strong>: the color of the text (rgb values, 0-1). Can be nullptr</div>
-<div><strong>backgroundColor</strong>: the background color of the console window (rgb values, 0-1). Can be nullptr</div>
-<div><strong>consoleHandle</strong>: pointer to a location receiving the handle of the created console</div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_blocking
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>title: the title of the console window</div>
+<div>maxLines: the number of text lines that can be displayed and buffered</div>
+<div>mode: bit-coded value. Bit0 set indicates that the console window will   automatically close at simulation end, bit1 set   indicates that lines will be wrapped, bit2 set indicates that the user   can close the console window, bit3 set indicates that the console will   automatically be hidden during simulation pause, bit4 set indicates that   the console will not automatically hide when the user switches to   another scene.</div>
+<div>position: the initial position of the console window (x and y value). Can be nullptr</div>
+<div>size: the initial size of the console window (x and y value). Can be nullptr</div>
+<div>textColor: the color of the text (rgb values, 0-1). Can be nullptr</div>
+<div>backgroundColor: the background color of the console window (rgb values, 0-1). Can be nullptr</div>
+<div>consoleHandle: pointer to a location receiving the handle of the created console</div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_blocking
 </div>
 </td> 
 </tr> 
@@ -274,10 +274,10 @@ C/C++<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>C/C++<br>parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>consoleHandle</strong>: the handle of the console window, previously returned by the <a href="#simxAuxiliaryConsoleOpen">simxAuxiliaryConsoleOpen</a> command</div>
-<div><strong>txt</strong>: the text to append, or nullptr to clear the console window</div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_blocking
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>consoleHandle: the handle of the console window, previously returned by the <a href="#simxAuxiliaryConsoleOpen">simxAuxiliaryConsoleOpen</a> command</div>
+<div>txt: the text to append, or nullptr to clear the console window</div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_blocking
 </div>
 </td> 
 </tr> 
@@ -332,10 +332,10 @@ C/C++<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>C/C++<br>parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>consoleHandle</strong>: the handle of the console window, previously returned by the <a href="#simxAuxiliaryConsoleOpen">simxAuxiliaryConsoleOpen</a> command</div>
-<div><strong>showState</strong>: indicates whether the console should be hidden (0) or shown (!=0)</div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_blocking
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>consoleHandle: the handle of the console window, previously returned by the <a href="#simxAuxiliaryConsoleOpen">simxAuxiliaryConsoleOpen</a> command</div>
+<div>showState: indicates whether the console should be hidden (0) or shown (!=0)</div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_blocking
 </div>
 </td> 
 </tr> 
@@ -391,33 +391,33 @@ C/C++<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>C/C++<br>parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>pathToScript</strong>: the path to the scene object where the script is attached to, or an empty string if the script has no associated scene object.</div>
-<div><strong>scriptHandleOrType</strong>: the handle of the script, otherwise the type of the script:</div>
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>pathToScript: the path to the scene object where the script is attached to, or an empty string if the script has no associated scene object.</div>
+<div>scriptHandleOrType: the handle of the script, otherwise the type of the script:</div>
 <div class=tab><em>sim_scripttype_mainscript</em> (0): the <a href="mainScript.htm">main script</a> will be called.</div>
 <div class=tab><em>sim_scripttype_childscript</em> (1): a <a href="childScripts.htm">child script</a> will be called.</div>
 <div class=tab><em>sim_scripttype_customizationscript</em> (6): a <a href="customizationScripts.htm">customization script</a> will be called.</div>
-<div><strong>functionName</strong>: the name of the function to call in the specified script.</div>
+<div>functionName: the name of the function to call in the specified script.</div>
 
-<div><strong>inIntCnt</strong> (input): the number of input integer values.</div>
-<div><strong>inInt</strong> (input): the input integer values that are handed over to the script function. Can be nullptr if <em>inIntCnt</em> is zero.</div>
-<div><strong>inFloatCnt</strong> (input): the number of input floating-point values.</div>
-<div><strong>inFloat</strong> (input): the input floating-point values that are handed over to the script function. Can be nullptr if <em>inFloatCnt</em> is zero.</div>
-<div><strong>inStringCnt</strong> (input): the number of input strings.</div>
-<div><strong>inString</strong> (input): the input strings that are handed over to the script function. Each string should be terminated with one zero char, e.g. &quot;Hello\0World\0&quot;. Can be nullptr if <em>inStringCnt</em> is zero.</div>
-<div><strong>inBufferSize</strong> (input): the size of the input buffer.</div>
-<div><strong>inBuffer</strong> (input): the input buffer (bytes) that is handed over to the script function. Can be nullptr if <em>inBufferSize</em> is zero.</div>
+<div>inIntCnt (input): the number of input integer values.</div>
+<div>inInt (input): the input integer values that are handed over to the script function. Can be nullptr if <em>inIntCnt</em> is zero.</div>
+<div>inFloatCnt (input): the number of input floating-point values.</div>
+<div>inFloat (input): the input floating-point values that are handed over to the script function. Can be nullptr if <em>inFloatCnt</em> is zero.</div>
+<div>inStringCnt (input): the number of input strings.</div>
+<div>inString (input): the input strings that are handed over to the script function. Each string should be terminated with one zero char, e.g. &quot;Hello\0World\0&quot;. Can be nullptr if <em>inStringCnt</em> is zero.</div>
+<div>inBufferSize (input): the size of the input buffer.</div>
+<div>inBuffer (input): the input buffer (bytes) that is handed over to the script function. Can be nullptr if <em>inBufferSize</em> is zero.</div>
 
-<div><strong>outIntCnt</strong> (output): the number of returned integer values. Can be nullptr.</div>
-<div><strong>outInt</strong> (output): the returned integer values. The pointer remains valid until the next remote API call. Can be nullptr.</div>
-<div><strong>outFloatCnt</strong> (output): the number of returned floating-point values. Can be nullptr.</div>
-<div><strong>outFloat</strong> (output): the returned floating-point values. The pointer remains valid until the next remote API call. Can be nullptr.</div>
-<div><strong>outStringCnt</strong> (output): the number of returned strings. Can be nullptr.</div>
-<div><strong>outString</strong> (output): the returned strings. Each string is terminated with the zero char. The pointer remains valid until the next remote API call. Can be nullptr.</div>
-<div><strong>outBufferSize</strong> (output): the size of the returned buffer. Can be nullptr.</div>
-<div><strong>outBuffer</strong> (output): the returned buffer (bytes). The pointer remains valid until the next remote API call. Can be nullptr.</div>
+<div>outIntCnt (output): the number of returned integer values. Can be nullptr.</div>
+<div>outInt (output): the returned integer values. The pointer remains valid until the next remote API call. Can be nullptr.</div>
+<div>outFloatCnt (output): the number of returned floating-point values. Can be nullptr.</div>
+<div>outFloat (output): the returned floating-point values. The pointer remains valid until the next remote API call. Can be nullptr.</div>
+<div>outStringCnt (output): the number of returned strings. Can be nullptr.</div>
+<div>outString (output): the returned strings. Each string is terminated with the zero char. The pointer remains valid until the next remote API call. Can be nullptr.</div>
+<div>outBufferSize (output): the size of the returned buffer. Can be nullptr.</div>
+<div>outBuffer (output): the returned buffer (bytes). The pointer remains valid until the next remote API call. Can be nullptr.</div>
 
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_blocking</div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_blocking</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -471,11 +471,11 @@ C/C++<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>C/C++<br>parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>entity1</strong>: the handle of the first entity.</div>
-<div><strong>entity2</strong>: the handle of the second entity.</div>
-<div><strong>collisionState</strong>: a pointer to a value receiving the collision state (0: not colliding)</div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation modes for this function are simx_opmode_streaming (the first call) and simx_opmode_buffer (the following calls)
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>entity1: the handle of the first entity.</div>
+<div>entity2: the handle of the second entity.</div>
+<div>collisionState: a pointer to a value receiving the collision state (0: not colliding)</div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation modes for this function are simx_opmode_streaming (the first call) and simx_opmode_buffer (the following calls)
 </div>
 </td> 
 </tr> 
@@ -530,11 +530,11 @@ C/C++<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>C/C++<br>parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>entity1</strong>: the handle of the first entity.</div>
-<div><strong>entity2</strong>: the handle of the second entity.</div>
-<div><strong>minimumDistance</strong>: a pointer to a value receiving the minimum distance.</div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation modes for this function are simx_opmode_streaming (the first call) and simx_opmode_buffer (the following calls)
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>entity1: the handle of the first entity.</div>
+<div>entity2: the handle of the second entity.</div>
+<div>minimumDistance: a pointer to a value receiving the minimum distance.</div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation modes for this function are simx_opmode_streaming (the first call) and simx_opmode_buffer (the following calls)
 </div>
 </td> 
 </tr> 
@@ -589,9 +589,9 @@ C/C++<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>C/C++<br>parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>signalName</strong>: name of the signal</div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_oneshot
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>signalName: name of the signal</div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_oneshot
 </div>
 </td> 
 </tr> 
@@ -646,9 +646,9 @@ C/C++<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>C/C++<br>parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>signalName</strong>: name of the signal</div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_oneshot
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>signalName: name of the signal</div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_oneshot
 </div>
 </td> 
 </tr> 
@@ -703,9 +703,9 @@ C/C++<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>C/C++<br>parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>signalName</strong>: name of the signal</div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_oneshot
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>signalName: name of the signal</div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_oneshot
 </div>
 </td> 
 </tr> 
@@ -760,8 +760,8 @@ C/C++<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>C/C++<br>parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_blocking
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_blocking
 </div>
 </td> 
 </tr> 
@@ -816,12 +816,12 @@ C/C++<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>C/C++<br>parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>objectHandles</strong>: an array containing the handles of the objects to copy</div>
-<div><strong>objectCount</strong>: the number of handles the above array contains</div>
-<div><strong>newObjectHandles</strong>: a pointer to a value receiving an array of handles of newly created objects. Individual objects of a new model are not returned, but only the model base. The array remains valid until next remote API function is called.</div>
-<div><strong>newObjectCount</strong>: a pointer to a value receiving the number of handles the above array contains</div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_blocking
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>objectHandles: an array containing the handles of the objects to copy</div>
+<div>objectCount: the number of handles the above array contains</div>
+<div>newObjectHandles: a pointer to a value receiving an array of handles of newly created objects. Individual objects of a new model are not returned, but only the model base. The array remains valid until next remote API function is called.</div>
+<div>newObjectCount: a pointer to a value receiving the number of handles the above array contains</div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_blocking
 </div>
 </td> 
 </tr> 
@@ -872,7 +872,7 @@ C/C++<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>C/C++<br>parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>bufferSize</strong>: size of the buffer in bytes</div>
+<div>bufferSize: size of the buffer in bytes</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -926,11 +926,11 @@ C/C++<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>C/C++<br>parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>size</strong>: the size of the dummy.</div>
-<div><strong>colors</strong>: 4*3 bytes (0-255) for ambient_diffuse RGB, 3 reserved values (set to zero), specular RGB and emissive RGB. Can be nullptr for default colors.</div>
-<div><strong>dummyHandle</strong>: pointer to a value that will receive the dummy handle.</div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_blocking
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>size: the size of the dummy.</div>
+<div>colors: 4*3 bytes (0-255) for ambient_diffuse RGB, 3 reserved values (set to zero), specular RGB and emissive RGB. Can be nullptr for default colors.</div>
+<div>dummyHandle: pointer to a value that will receive the dummy handle.</div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_blocking
 </div>
 </td> 
 </tr> 
@@ -987,16 +987,16 @@ C/C++<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>C/C++<br>parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>titleText</strong>: Title bar text</div>
-<div><strong>mainText</strong>: Information text</div>
-<div><strong>dialogType</strong>: a <a href="apiConstants.htm#genericDialogStyles">generic dialog style</a></div>
-<div><strong>initialText</strong>: Initial text in the edit box if the dialog is of type sim_dlgstyle_input. Cannot be nullptr!</div>
-<div><strong>titleColors</strong>: Title bar color (6 simxFloat values for RGB for background and foreground), can be nullptr for default colors</div>
-<div><strong>dialogColors</strong>: Dialog color (6 simxFloat values for RGB for background and foreground), can be nullptr for default colors</div>
-<div><strong>dialogHandle</strong>: handle of the generic dialog (different from OpenGl-based custom UI handle!! (see hereafter)). This handle should be used with the following functions: <a href="#simxGetDialogResult">simxGetDialogResult</a>, <a href="#simxGetDialogInput">simxGetDialogInput</a> and <a href="#simxEndDialog">simxEndDialog</a>.</div>
-<div><strong>uiHandle</strong>: a pointer to a value accepting the handle of the corresponding OpenGl-based custom UI. Can be nullptr</div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_blocking
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>titleText: Title bar text</div>
+<div>mainText: Information text</div>
+<div>dialogType: a <a href="apiConstants.htm#genericDialogStyles">generic dialog style</a></div>
+<div>initialText: Initial text in the edit box if the dialog is of type sim_dlgstyle_input. Cannot be nullptr!</div>
+<div>titleColors: Title bar color (6 simxFloat values for RGB for background and foreground), can be nullptr for default colors</div>
+<div>dialogColors: Dialog color (6 simxFloat values for RGB for background and foreground), can be nullptr for default colors</div>
+<div>dialogHandle: handle of the generic dialog (different from OpenGl-based custom UI handle!! (see hereafter)). This handle should be used with the following functions: <a href="#simxGetDialogResult">simxGetDialogResult</a>, <a href="#simxGetDialogInput">simxGetDialogInput</a> and <a href="#simxEndDialog">simxEndDialog</a>.</div>
+<div>uiHandle: a pointer to a value accepting the handle of the corresponding OpenGl-based custom UI. Can be nullptr</div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_blocking
 </div>
 </td> 
 </tr> 
@@ -1051,9 +1051,9 @@ C/C++<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>C/C++<br>parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>dialogHandle</strong>: handle of generic dialog (return value of <a href="#simxDisplayDialog">simxDisplayDialog</a>)</div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_oneshot
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>dialogHandle: handle of generic dialog (return value of <a href="#simxDisplayDialog">simxDisplayDialog</a>)</div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_oneshot
 </div>
 </td> 
 </tr> 
@@ -1104,9 +1104,9 @@ C/C++<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>C/C++<br>parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>fileName_serverSide</strong>: the file to erase on the server side. For now, do not specify a path (the file will be erased in the remote API plugin directory)</div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_oneshot
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>fileName_serverSide: the file to erase on the server side. For now, do not specify a path (the file will be erased in the remote API plugin directory)</div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_oneshot
 
 </div>
 </td> 
@@ -1152,7 +1152,7 @@ C/C++<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>C/C++<br>parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>. Can be -1 to end all running communication threads.</div>
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>. Can be -1 to end all running communication threads.</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -1204,11 +1204,11 @@ C/C++<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>C/C++<br>parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>signalName</strong>: name of the signal</div>
-<div><strong>signalValue</strong>: pointer to a pointer receiving the value of the signal. The signal value will remain valid until next remote API call</div>
-<div><strong>signalLength</strong>: pointer to a location receiving the value of the signal length, since it may contain any data (also embedded zeros). </div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Since this function will clear a read signal, and we cannot afford to wait for a reply (well, we could, but that would mean a blocking operation), the function operates in a special mode and should be used as in following example:</div>
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>signalName: name of the signal</div>
+<div>signalValue: pointer to a pointer receiving the value of the signal. The signal value will remain valid until next remote API call</div>
+<div>signalLength: pointer to a location receiving the value of the signal length, since it may contain any data (also embedded zeros). </div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Since this function will clear a read signal, and we cannot afford to wait for a reply (well, we could, but that would mean a blocking operation), the function operates in a special mode and should be used as in following example:</div>
 
 <br>
 <code class="hljs language-c++ simple">
@@ -1230,7 +1230,7 @@ while (simxGetConnectionId(cid)!=-1)
 
   ..
 
-}</code>
+}</pre>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -1284,10 +1284,10 @@ C/C++<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>C/C++<br>parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>paramIdentifier</strong>: an <a href="apiConstants.htm#arrayParameters">array parameter identifier</a></div>
-<div><strong>paramValues</strong>: a pointer to 3 values that will receive the parameters</div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_blocking (if not called on a regular basis)
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>paramIdentifier: an <a href="apiConstants.htm#arrayParameters">array parameter identifier</a></div>
+<div>paramValues: a pointer to 3 values that will receive the parameters</div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_blocking (if not called on a regular basis)
 </div>
 </td> 
 </tr> 
@@ -1342,10 +1342,10 @@ C/C++<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>C/C++<br>parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>paramIdentifier</strong>: a <a href="apiConstants.htm#booleanParameters">bool parameter identifier</a></div>
-<div><strong>paramValue</strong>: a pointer that will receive the parameter value</div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_blocking (if not called on a regular basis)
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>paramIdentifier: a <a href="apiConstants.htm#booleanParameters">bool parameter identifier</a></div>
+<div>paramValue: a pointer that will receive the parameter value</div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_blocking (if not called on a regular basis)
 </div>
 </td> 
 </tr> 
@@ -1394,7 +1394,7 @@ Description
 local collectionHandle=sim.createCollection(0)
 sim.addItemToCollection(collectionHandle,..)
 ..
-sim.setInt32Signal('collectionName',collectionHandle)</code>
+sim.setInt32Signal('collectionName',collectionHandle)</pre>
 
 </td>
 </tr> 
@@ -1407,10 +1407,10 @@ C/C++<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>C/C++<br>parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>collectionName</strong>: name of the collection.</div>
-<div><strong>handle</strong>: pointer to a value that will receive the handle</div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_blocking
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>collectionName: name of the collection.</div>
+<div>handle: pointer to a value that will receive the handle</div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_blocking
 </div>
 </td> 
 </tr> 
@@ -1464,10 +1464,10 @@ C/C++<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>C/C++<br>parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>collisionObjectName</strong>: name of the collision object.</div>
-<div><strong>handle</strong>: pointer to a value that will receive the handle</div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_blocking
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>collisionObjectName: name of the collision object.</div>
+<div>handle: pointer to a value that will receive the handle</div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_blocking
 </div>
 </td> 
 </tr> 
@@ -1518,7 +1518,7 @@ C/C++<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>C/C++<br>parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -1572,10 +1572,10 @@ C/C++<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>C/C++<br>parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>dialogHandle</strong>: handle of generic dialog (return value of <a href="#simxDisplayDialog">simxDisplayDialog</a>)</div>
-<div><strong>inputText</strong>: pointer to a pointer receiving the string the user entered. The pointer is valid until another remote API function is called.</div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_blocking 
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>dialogHandle: handle of generic dialog (return value of <a href="#simxDisplayDialog">simxDisplayDialog</a>)</div>
+<div>inputText: pointer to a pointer receiving the string the user entered. The pointer is valid until another remote API function is called.</div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_blocking 
 </div>
 </td> 
 </tr> 
@@ -1630,12 +1630,12 @@ C/C++<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>C/C++<br>parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>dialogHandle</strong>: handle of generic dialog (return value of <a href="#simxDisplayDialog">simxDisplayDialog</a>)</div>
-<div><strong>result</strong>: pointer receiving the <a href="apiConstants.htm#genericDialogReturnValues">result value</a>. </div>
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>dialogHandle: handle of generic dialog (return value of <a href="#simxDisplayDialog">simxDisplayDialog</a>)</div>
+<div>result: pointer receiving the <a href="apiConstants.htm#genericDialogReturnValues">result value</a>. </div>
 <br>
 <div>Note. If the return value is sim_dlgret_still_open, the dialog was not closed and no button was pressed. Otherwise, you should free resources with <a href="#simxEndDialog">simxEndDialog</a> (the dialog might not be visible anymore, but is still present)</div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_oneshot 
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_oneshot 
 </div>
 </td> 
 </tr> 
@@ -1689,10 +1689,10 @@ C/C++<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>C/C++<br>parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>distanceObjectName</strong>: name of the distance object.</div>
-<div><strong>handle</strong>: pointer to a value that will receive the handle</div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_blocking
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>distanceObjectName: name of the distance object.</div>
+<div>handle: pointer to a value that will receive the handle</div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_blocking
 </div>
 </td> 
 </tr> 
@@ -1747,10 +1747,10 @@ C/C++<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>C/C++<br>parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>paramIdentifier</strong>: a <a href="apiConstants.htm#floatingParameters">floating parameter identifier</a></div>
-<div><strong>paramValue</strong>: a pointer that will receive the parameter value</div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_blocking (if not called on a regular basis)
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>paramIdentifier: a <a href="apiConstants.htm#floatingParameters">floating parameter identifier</a></div>
+<div>paramValue: a pointer that will receive the parameter value</div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_blocking (if not called on a regular basis)
 </div>
 </td> 
 </tr> 
@@ -1805,10 +1805,10 @@ C/C++<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>C/C++<br>parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>signalName</strong>: name of the signal</div>
-<div><strong>signalValue</strong>: pointer to a location receiving the value of the signal</div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation modes for this function are simx_opmode_streaming (the first call) and simx_opmode_buffer (the following calls)
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>signalName: name of the signal</div>
+<div>signalValue: pointer to a location receiving the value of the signal</div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation modes for this function are simx_opmode_streaming (the first call) and simx_opmode_buffer (the following calls)
 </div>
 </td> 
 </tr> 
@@ -1862,9 +1862,9 @@ C/C++<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>C/C++<br>parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>infoType</strong>: an <a href="remoteApiConstants.htm#inboxMessageInfoType">inbox message info type</a></div>
-<div><strong>info</strong>: pointer to a simxInt value receiving the requested information
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>infoType: an <a href="remoteApiConstants.htm#inboxMessageInfoType">inbox message info type</a></div>
+<div>info: pointer to a simxInt value receiving the requested information
 </div>
 </td> 
 </tr> 
@@ -1920,10 +1920,10 @@ C/C++<br>synopsis
 
 <td class=remApiTableLeftCParam>C/C++<br>parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>paramIdentifier</strong>: an <a href="apiConstants.htm#integerParameters">integer parameter identifier</a></div>
-<div><strong>paramValue</strong>: a pointer that will receive the parameter value</div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_blocking (if not called on a regular basis)
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>paramIdentifier: an <a href="apiConstants.htm#integerParameters">integer parameter identifier</a></div>
+<div>paramValue: a pointer that will receive the parameter value</div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_blocking (if not called on a regular basis)
 </div>
 </td> 
 </tr> 
@@ -1978,10 +1978,10 @@ C/C++<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>C/C++<br>parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>signalName</strong>: name of the signal</div>
-<div><strong>signalValue</strong>: pointer to a location receiving the value of the signal</div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation modes for this function are simx_opmode_streaming (the first call) and simx_opmode_buffer (the following calls)
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>signalName: name of the signal</div>
+<div>signalValue: pointer to a location receiving the value of the signal</div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation modes for this function are simx_opmode_streaming (the first call) and simx_opmode_buffer (the following calls)
 </div>
 </td> 
 </tr> 
@@ -2036,11 +2036,11 @@ C/C++<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>C/C++<br>parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>jointHandle</strong>: handle of the joint</div>
-<div><strong>force</strong>: the force or the torque applied to the joint  along/about its z-axis
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>jointHandle: handle of the joint</div>
+<div>force: the force or the torque applied to the joint  along/about its z-axis
 </div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation modes for this function are simx_opmode_streaming (the first call) and simx_opmode_buffer (the following calls)
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation modes for this function are simx_opmode_streaming (the first call) and simx_opmode_buffer (the following calls)
 </div>
 </td> 
 </tr> 
@@ -2098,10 +2098,10 @@ C/C++<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>C/C++<br>parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>jointHandle</strong>: handle of the joint</div>
-<div><strong>force</strong>: the maximum force the joint can exert</div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation modes for this function are simx_opmode_streaming (the first call) and simx_opmode_buffer (the following calls)
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>jointHandle: handle of the joint</div>
+<div>force: the maximum force the joint can exert</div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation modes for this function are simx_opmode_streaming (the first call) and simx_opmode_buffer (the following calls)
 </div>
 </td> 
 </tr> 
@@ -2159,11 +2159,11 @@ C/C++<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>C/C++<br>parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>jointHandle</strong>: handle of the joint</div>
-<div><strong>matrix</strong>: pointer to 12 simxFloat values. See the regular API equivalent function for details
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>jointHandle: handle of the joint</div>
+<div>matrix: pointer to 12 simxFloat values. See the regular API equivalent function for details
 </div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation modes for this function are simx_opmode_streaming (the first call) and simx_opmode_buffer (the following calls)
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation modes for this function are simx_opmode_streaming (the first call) and simx_opmode_buffer (the following calls)
 </div>
 </td> 
 </tr> 
@@ -2215,11 +2215,11 @@ C/C++<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>C/C++<br>parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>jointHandle</strong>: handle of the joint</div>
-<div><strong>position</strong>: intrinsic position of the joint. This is a one-dimensional value: if the joint is revolute, the rotation angle is returned, if the joint is prismatic, the translation amount is returned, etc.
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>jointHandle: handle of the joint</div>
+<div>position: intrinsic position of the joint. This is a one-dimensional value: if the joint is revolute, the rotation angle is returned, if the joint is prismatic, the translation amount is returned, etc.
 </div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation modes for this function are simx_opmode_streaming (the first call) and simx_opmode_buffer (the following calls)
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation modes for this function are simx_opmode_streaming (the first call) and simx_opmode_buffer (the following calls)
 </div>
 </td> 
 </tr> 
@@ -2264,7 +2264,7 @@ Description
 <code class="hljs language-c++ simple">
 if (simxGetVisionSensorImage(cid,handle,res,&amp;img,0,sim_opmode_buffer)==simx_return_ok)
     imageAcquisitionTime=simxGetLastCmdTime(cid);
-</code>
+</pre>
 
 <br>
 <div>If some streaming commands are running, simxGetLastCmdTime will always retrieve the current simulation time, otherwise, only the simulation time of the last command that retrieved data from CoppeliaSim. This is a remote API helper function.</div></td>
@@ -2278,7 +2278,7 @@ C/C++<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>C/C++<br>parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -2332,10 +2332,10 @@ C/C++<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>C/C++<br>parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>errorCnt</strong>: pointer receiving the number of error strings returned</div>
-<div><strong>errorStrings</strong>: pointer to a string pointer receiving the address of an error string (individual strings are separated by a zero character). The address is valid until next remote API function is called</div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation modes for this function are simx_opmode_streaming (the first call) and simx_opmode_buffer (the following calls) when not debugging. For debugging purposes, use simx_opmode_blocking.
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>errorCnt: pointer receiving the number of error strings returned</div>
+<div>errorStrings: pointer to a string pointer receiving the address of an error string (individual strings are separated by a zero character). The address is valid until next remote API function is called</div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation modes for this function are simx_opmode_streaming (the first call) and simx_opmode_buffer (the following calls) when not debugging. For debugging purposes, use simx_opmode_blocking.
 </div>
 </td> 
 </tr> 
@@ -2390,10 +2390,10 @@ C/C++<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>C/C++<br>parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>objectHandle</strong>: handle of the object</div>
-<div><strong>prop</strong>: pointer to a location receiving the <a href="apiConstants.htm#modelProperties">model property value</a></div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation modes for this function are simx_opmode_streaming (the first call) and simx_opmode_buffer (the following calls), or simx_opmode_blocking (depending on the intended usage)
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>objectHandle: handle of the object</div>
+<div>prop: pointer to a location receiving the <a href="apiConstants.htm#modelProperties">model property value</a></div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation modes for this function are simx_opmode_streaming (the first call) and simx_opmode_buffer (the following calls), or simx_opmode_blocking (depending on the intended usage)
 </div>
 </td> 
 </tr> 
@@ -2448,11 +2448,11 @@ C/C++<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>C/C++<br>parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>parentObjectHandle</strong>: handle of the object</div>
-<div><strong>childIndex</strong>: zero-based index of the child's position. To retrieve all children of an object, call the function by increasing the index until the child handle is  -1</div>
-<div><strong>childObjectHandle</strong>: pointer to a value receiving the handle of the child object. If the value is -1, there is no child at the given index</div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_blocking
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>parentObjectHandle: handle of the object</div>
+<div>childIndex: zero-based index of the child's position. To retrieve all children of an object, call the function by increasing the index until the child handle is  -1</div>
+<div>childObjectHandle: pointer to a value receiving the handle of the child object. If the value is -1, there is no child at the given index</div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_blocking
 </div>
 </td> 
 </tr> 
@@ -2507,11 +2507,11 @@ C/C++<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>C/C++<br>parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>objectHandle</strong>: handle of the object</div>
-<div><strong>parameterID</strong>: identifier of the parameter to retrieve. See the <a href="objectParameterIDs.htm">list of all possible object parameter identifiers</a></div>
-<div><strong>parameterValue</strong>: pointer to a location that will receive the value of the parameter</div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation modes for this function are simx_opmode_streaming (the first call) and simx_opmode_buffer (the following calls), or simx_opmode_blocking (depending on the intended usage)
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>objectHandle: handle of the object</div>
+<div>parameterID: identifier of the parameter to retrieve. See the <a href="objectParameterIDs.htm">list of all possible object parameter identifiers</a></div>
+<div>parameterValue: pointer to a location that will receive the value of the parameter</div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation modes for this function are simx_opmode_streaming (the first call) and simx_opmode_buffer (the following calls), or simx_opmode_blocking (depending on the intended usage)
 </div>
 </td> 
 </tr> 
@@ -2563,9 +2563,9 @@ C/C++<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>C/C++<br>parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>objectType</strong>: a <a href="apiConstants.htm#sceneObjectTypes">scene object type</a>, sim_appobj_object_type for all <a href="objects.htm">scene objects</a>, or a <a href="#simxGetCollectionHandle">collection</a> handle.</div>
-<div><strong>dataType</strong>: the type of data that is desired: </div>
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>objectType: a <a href="apiConstants.htm#sceneObjectTypes">scene object type</a>, sim_appobj_object_type for all <a href="objects.htm">scene objects</a>, or a <a href="#simxGetCollectionHandle">collection</a> handle.</div>
+<div>dataType: the type of data that is desired: </div>
 <div class=tab>0: retrieves the object names (deprecated. See further down)</div>
 <div class=tab>1: retrieves the <a href="apiConstants.htm#sceneObjectTypes">object types</a> (in intData)</div>
 <div class=tab>2: retrieves the parent object handles (in intData)</div>
@@ -2589,15 +2589,15 @@ C/C++<br>synopsis
 <div class=tab>20: retrieves the object aliases (in stringData.)</div>
 <div class=tab>21: retrieves the object paths (in stringData.)</div>
 
-<div><strong>handlesCount</strong> (output): the number of returned object handles. Can be nullptr.</div>
-<div><strong>handles</strong> (output): the object handles. The pointer remains valid until the next remote API call. Can be nullptr.</div>
-<div><strong>intDataCount</strong> (output): the number of returned integer values. Can be nullptr.</div>
-<div><strong>intData</strong> (output): the integer values. The pointer remains valid until the next remote API call. Can be nullptr.</div>
-<div><strong>floatDataCount</strong> (output): the number of returned float values. Can be nullptr.</div>
-<div><strong>floatData</strong> (output): the float values. The pointer remains valid until the next remote API call. Can be nullptr.</div>
-<div><strong>stringDataCount</strong> (output): the number of returned strings. Can be nullptr.</div>
-<div><strong>stringData</strong> (output): the strings. Each string is separated by the zero char ('\0'). The pointer remains valid until the next remote API call. Can be nullptr.</div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_blocking or simx_opmode_streaming.</div>
+<div>handlesCount (output): the number of returned object handles. Can be nullptr.</div>
+<div>handles (output): the object handles. The pointer remains valid until the next remote API call. Can be nullptr.</div>
+<div>intDataCount (output): the number of returned integer values. Can be nullptr.</div>
+<div>intData (output): the integer values. The pointer remains valid until the next remote API call. Can be nullptr.</div>
+<div>floatDataCount (output): the number of returned float values. Can be nullptr.</div>
+<div>floatData (output): the float values. The pointer remains valid until the next remote API call. Can be nullptr.</div>
+<div>stringDataCount (output): the number of returned strings. Can be nullptr.</div>
+<div>stringData (output): the strings. Each string is separated by the zero char ('\0'). The pointer remains valid until the next remote API call. Can be nullptr.</div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_blocking or simx_opmode_streaming.</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -2651,10 +2651,10 @@ C/C++<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>C/C++<br>parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>objectPath</strong>: the path of the object. See the section on <a href="accessingSceneObjects.htm">accessing scene objects</a> for details. </div>
-<div><strong>handle</strong>: pointer to a value that will receive the handle</div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_blocking
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>objectPath: the path of the object. See the section on <a href="accessingSceneObjects.htm">accessing scene objects</a> for details. </div>
+<div>handle: pointer to a value that will receive the handle</div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_blocking
 </div>
 </td> 
 </tr> 
@@ -2709,11 +2709,11 @@ C/C++<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>C/C++<br>parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>objectHandle</strong>: handle of the object</div>
-<div><strong>parameterID</strong>: identifier of the parameter to retrieve. See the <a href="objectParameterIDs.htm">list of all possible object parameter identifiers</a></div>
-<div><strong>parameterValue</strong>: pointer to a location that will receive the value of the parameter</div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation modes for this function are simx_opmode_streaming (the first call) and simx_opmode_buffer (the following calls), or simx_opmode_blocking (depending on the intended usage)
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>objectHandle: handle of the object</div>
+<div>parameterID: identifier of the parameter to retrieve. See the <a href="objectParameterIDs.htm">list of all possible object parameter identifiers</a></div>
+<div>parameterValue: pointer to a location that will receive the value of the parameter</div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation modes for this function are simx_opmode_streaming (the first call) and simx_opmode_buffer (the following calls), or simx_opmode_blocking (depending on the intended usage)
 </div>
 </td> 
 </tr> 
@@ -2768,11 +2768,11 @@ C/C++<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>C/C++<br>parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>objectHandle</strong>: handle of the object</div>
-<div><strong>relativeToObjectHandle</strong>: indicates relative to which reference frame we want the orientation.   Specify -1 to retrieve the absolute orientation, sim_handle_parent to   retrieve the orientation relative to the object's parent, or an object   handle relative to whose reference frame you want the orientation</div>
-<div><strong>eulerAngles</strong>: pointer to 3 values receiving the Euler angles (alpha, beta and gamma)</div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation modes for this function are simx_opmode_streaming (the first call) and simx_opmode_buffer (the following calls)
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>objectHandle: handle of the object</div>
+<div>relativeToObjectHandle: indicates relative to which reference frame we want the orientation.   Specify -1 to retrieve the absolute orientation, sim_handle_parent to   retrieve the orientation relative to the object's parent, or an object   handle relative to whose reference frame you want the orientation</div>
+<div>eulerAngles: pointer to 3 values receiving the Euler angles (alpha, beta and gamma)</div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation modes for this function are simx_opmode_streaming (the first call) and simx_opmode_buffer (the following calls)
 </div>
 </td> 
 </tr> 
@@ -2827,10 +2827,10 @@ C/C++<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>C/C++<br>parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>objectHandle</strong>: handle of the object</div>
-<div><strong>parentObjectHandle</strong>: pointer to a value receiving the handle of the parent object. If the value is -1, the object has no parent</div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_blocking
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>objectHandle: handle of the object</div>
+<div>parentObjectHandle: pointer to a value receiving the handle of the parent object. If the value is -1, the object has no parent</div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_blocking
 </div>
 </td> 
 </tr> 
@@ -2886,11 +2886,11 @@ C/C++<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>C/C++<br>parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>objectHandle</strong>: handle of the object</div>
-<div><strong>relativeToObjectHandle</strong>: indicates relative to which reference frame we want the position.   Specify -1 to retrieve the absolute position, sim_handle_parent to   retrieve the position relative to the object's parent, or an object   handle relative to whose reference frame you want the position</div>
-<div><strong>position</strong>: pointer to 3 values receiving the position</div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation modes for this function are simx_opmode_streaming (the first call) and simx_opmode_buffer (the following calls)
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>objectHandle: handle of the object</div>
+<div>relativeToObjectHandle: indicates relative to which reference frame we want the position.   Specify -1 to retrieve the absolute position, sim_handle_parent to   retrieve the position relative to the object's parent, or an object   handle relative to whose reference frame you want the position</div>
+<div>position: pointer to 3 values receiving the position</div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation modes for this function are simx_opmode_streaming (the first call) and simx_opmode_buffer (the following calls)
 </div>
 </td> 
 </tr> 
@@ -2945,11 +2945,11 @@ C/C++<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>C/C++<br>parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>objectHandle</strong>: handle of the object</div>
-<div><strong>relativeToObjectHandle</strong>: indicates relative to which reference frame we want the quaternion.   Specify -1 to retrieve the absolute quaternion, sim_handle_parent to retrieve the quaternion relative to the object's parent, or an object   handle relative to whose reference frame you want the quaternion</div>
-<div><strong>quat</strong>: pointer to 4 values receiving the quaternion (x,y,z,w)</div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation modes for this function are simx_opmode_streaming (the first call) and simx_opmode_buffer (the following calls)
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>objectHandle: handle of the object</div>
+<div>relativeToObjectHandle: indicates relative to which reference frame we want the quaternion.   Specify -1 to retrieve the absolute quaternion, sim_handle_parent to retrieve the quaternion relative to the object's parent, or an object   handle relative to whose reference frame you want the quaternion</div>
+<div>quat: pointer to 4 values receiving the quaternion (x,y,z,w)</div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation modes for this function are simx_opmode_streaming (the first call) and simx_opmode_buffer (the following calls)
 </div>
 </td> 
 </tr> 
@@ -3004,11 +3004,11 @@ C/C++<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>C/C++<br>parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>objectType</strong>: <a href="apiConstants.htm#sceneObjectTypes">object type</a> (sim_object_shape_type, sim_object_joint_type, etc., or sim_handle_all for any type of object</div>
-<div><strong>objectCount</strong>: pointer to a value that will receive the number of retrieved handles</div>
-<div><strong>objectHandles</strong>: pointer to a pointer that will receive an object handle array. The array remains valid until next remote API function is called.</div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_blocking
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>objectType: <a href="apiConstants.htm#sceneObjectTypes">object type</a> (sim_object_shape_type, sim_object_joint_type, etc., or sim_handle_all for any type of object</div>
+<div>objectCount: pointer to a value that will receive the number of retrieved handles</div>
+<div>objectHandles: pointer to a pointer that will receive an object handle array. The array remains valid until next remote API function is called.</div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_blocking
 </div>
 </td> 
 </tr> 
@@ -3063,10 +3063,10 @@ C/C++<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>C/C++<br>parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>objectHandles</strong>: pointer to a pointer that will receive an object handle array. The array remains valid until next remote API function is called.</div>
-<div><strong>objectCount</strong>: pointer to a value that will receive the number of elements in above's array.</div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation modes for this function are simx_opmode_streaming (the first call) and simx_opmode_buffer (the following calls), or simx_opmode_blocking depending on the intent.
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>objectHandles: pointer to a pointer that will receive an object handle array. The array remains valid until next remote API function is called.</div>
+<div>objectCount: pointer to a value that will receive the number of elements in above's array.</div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation modes for this function are simx_opmode_streaming (the first call) and simx_opmode_buffer (the following calls), or simx_opmode_blocking depending on the intent.
 </div>
 </td> 
 </tr> 
@@ -3121,11 +3121,11 @@ C/C++<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>C/C++<br>parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>objectHandle</strong>: handle of the object</div>
-<div><strong>linearVelocity</strong>: pointer to 3 values receiving the linearVelocity (vx, vy, vz). Can be nullptr.</div>
-<div><strong>angularVelocity</strong>: pointer to 3 values receiving the angularVelocity (dAlpha, dBeta, dGamma). Can be nullptr.</div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation modes for this function are simx_opmode_streaming (the first call) and simx_opmode_buffer (the following calls)
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>objectHandle: handle of the object</div>
+<div>linearVelocity: pointer to 3 values receiving the linearVelocity (vx, vy, vz). Can be nullptr.</div>
+<div>angularVelocity: pointer to 3 values receiving the angularVelocity (dAlpha, dBeta, dGamma). Can be nullptr.</div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation modes for this function are simx_opmode_streaming (the first call) and simx_opmode_buffer (the following calls)
 </div>
 </td> 
 </tr> 
@@ -3176,9 +3176,9 @@ C/C++<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>C/C++<br>parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>infoType</strong>: an <a href="remoteApiConstants.htm#outboxMessageInfoType">outbox message info type</a></div>
-<div><strong>info</strong>: pointer to a simxInt value receiving the requested information
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>infoType: an <a href="remoteApiConstants.htm#outboxMessageInfoType">outbox message info type</a></div>
+<div>info: pointer to a simxInt value receiving the requested information
 </div>
 </td> 
 </tr> 
@@ -3229,8 +3229,8 @@ C/C++<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>C/C++<br>parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>pingTime</strong>: a pointer to a simxInt value accepting the ping time in milliseconds.</div>
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>pingTime: a pointer to a simxInt value accepting the ping time in milliseconds.</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -3284,10 +3284,10 @@ C/C++<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>C/C++<br>parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>paramIdentifier</strong>: a <a href="apiConstants.htm#stringParameters">string parameter identifier</a></div>
-<div><strong>paramValue</strong>: a pointer to a pointer that will receive the string. The string pointer is valid until next remote API function is called.</div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_blocking (if not called on a regular basis)
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>paramIdentifier: a <a href="apiConstants.htm#stringParameters">string parameter identifier</a></div>
+<div>paramValue: a pointer to a pointer that will receive the string. The string pointer is valid until next remote API function is called.</div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_blocking (if not called on a regular basis)
 </div>
 </td> 
 </tr> 
@@ -3342,11 +3342,11 @@ C/C++<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>C/C++<br>parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>signalName</strong>: name of the signal</div>
-<div><strong>signalValue</strong>: pointer to a pointer receiving the value of the signal. The signal value will remain valid until next remote API call</div>
-<div><strong>signalLength</strong>: pointer to a location receiving the value of the signal length, since it may contain any data (also embedded zeros). </div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation modes for this function are simx_opmode_streaming (the first call) and simx_opmode_buffer (the following calls)
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>signalName: name of the signal</div>
+<div>signalValue: pointer to a pointer receiving the value of the signal. The signal value will remain valid until next remote API call</div>
+<div>signalLength: pointer to a location receiving the value of the signal length, since it may contain any data (also embedded zeros). </div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation modes for this function are simx_opmode_streaming (the first call) and simx_opmode_buffer (the following calls)
 </div>
 </td> 
 </tr> 
@@ -3483,11 +3483,11 @@ C/C++<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>C/C++<br>parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>sensorHandle</strong>: handle of the vision sensor</div>
-<div><strong>resolution</strong>: pointer to 2 simxInt values receiving the resolution of the image</div>
-<div><strong>buffer</strong>: pointer to a pointer to the depth buffer data. The data remains valid until next remote API function is called (i.e. the data is automatically released). Values are in the range of 0-1 (0=closest to sensor, 1=farthest from sensor).</div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation modes for this function are simx_opmode_streaming (the first call) and simx_opmode_buffer (the following calls)
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>sensorHandle: handle of the vision sensor</div>
+<div>resolution: pointer to 2 simxInt values receiving the resolution of the image</div>
+<div>buffer: pointer to a pointer to the depth buffer data. The data remains valid until next remote API function is called (i.e. the data is automatically released). Values are in the range of 0-1 (0=closest to sensor, 1=farthest from sensor).</div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation modes for this function are simx_opmode_streaming (the first call) and simx_opmode_buffer (the following calls)
 </div>
 </td> 
 </tr> 
@@ -3542,13 +3542,13 @@ C/C++<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>C/C++<br>parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>sensorHandle</strong>: handle of the vision sensor</div>
-<div><strong>resolution</strong>: pointer to 2 simxInt values receiving the resolution of the image</div>
-<div><strong>image</strong>: pointer to a pointer to the image data. The data remains valid until next remote API function is called (i.e. the data is automatically released)</div>
-<div><strong>options</strong>: image options, bit-coded:</div>
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>sensorHandle: handle of the vision sensor</div>
+<div>resolution: pointer to 2 simxInt values receiving the resolution of the image</div>
+<div>image: pointer to a pointer to the image data. The data remains valid until next remote API function is called (i.e. the data is automatically released)</div>
+<div>options: image options, bit-coded:</div>
 <div class=tab>bit0 set: each image pixel is a byte (greyscale image), otherwise each image pixel is a rgb byte-triplet</div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation modes for this function are simx_opmode_streaming (the first call) and simx_opmode_buffer (the following calls)
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation modes for this function are simx_opmode_streaming (the first call) and simx_opmode_buffer (the following calls)
 </div>
 </td> 
 </tr> 
@@ -3600,11 +3600,11 @@ C/C++<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>C/C++<br>parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>jointHandle</strong>: handle of the joint</div>
-<div><strong>force</strong>: the force or the torque applied to the joint  along/about its z-axis
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>jointHandle: handle of the joint</div>
+<div>force: the force or the torque applied to the joint  along/about its z-axis
 </div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation modes for this function are simx_opmode_streaming (the first call) and simx_opmode_buffer (the following calls)
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation modes for this function are simx_opmode_streaming (the first call) and simx_opmode_buffer (the following calls)
 </div>
 </td> 
 </tr> 
@@ -3662,12 +3662,12 @@ C/C++<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>C/C++<br>parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>modelPathAndName</strong>: the model filename, including the path and extension ("ttm"). The file is relative to the client or server system depending on the <strong>options</strong> value (see next argument)</div>
-<div><strong>options</strong>: options, bit-coded:</div>
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>modelPathAndName: the model filename, including the path and extension ("ttm"). The file is relative to the client or server system depending on the options value (see next argument)</div>
+<div>options: options, bit-coded:</div>
 <div class=tab>bit0 set: the specified file is located on the client side (in that case the function will be blocking since the model first has to be transferred to the server). Otherwise it is located on the server side</div>
-<div><strong>baseHandle</strong>: the loaded model base. Can be nullptr.</div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_blocking
+<div>baseHandle: the loaded model base. Can be nullptr.</div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_blocking
 </div>
 </td> 
 </tr> 
@@ -3722,11 +3722,11 @@ C/C++<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>C/C++<br>parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>scenePathAndName</strong>: the scene filename, including the path and extension ("ttt"). The file is relative to the client or server system depending on the <strong>options</strong> value (see next argument)</div>
-<div><strong>options</strong>: options, bit-coded:</div>
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>scenePathAndName: the scene filename, including the path and extension ("ttt"). The file is relative to the client or server system depending on the options value (see next argument)</div>
+<div>options: options, bit-coded:</div>
 <div class=tab>bit0 set: the specified file is located on the client side (in that case the function will be blocking since the scene first has to be transferred to the server). Otherwise it is located on the server side</div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_blocking
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_blocking
 </div>
 </td> 
 </tr> 
@@ -3804,8 +3804,8 @@ C/C++<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>C/C++<br>parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>pause</strong>: whether the communication thread should pause or run normally.
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>pause: whether the communication thread should pause or run normally.
 </div>
 
 <br>
@@ -3817,7 +3817,7 @@ simxSetJointPosition(clientID,joint2Handle,joint2Value,simx_opmode_oneshot);
 simxSetJointPosition(clientID,joint3Handle,joint3Value,simx_opmode_oneshot);
 simxPauseCommunication(clientID,0);
 
-// Above's 3 joints will be received and set on the CoppeliaSim side at the same time</code>
+// Above's 3 joints will be received and set on the CoppeliaSim side at the same time</pre>
 
 
 
@@ -3874,8 +3874,8 @@ C/C++<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>C/C++<br>parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation modes for this function is simx_opmode_oneshot.
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation modes for this function is simx_opmode_oneshot.
 </div>
 </td> 
 </tr> 
@@ -3927,7 +3927,7 @@ Description
 simxUChar* replyData;
 simxInt replySize;
 if (simxQuery(clientID,"request","send me a 42",12,"reply",&replyData,&replySize,5000)==0)
-    printf("The reply is: %s\n",replyData</code>
+    printf("The reply is: %s\n",replyData</pre>
 
 <br>
 <code class="hljs language-lua simple">
@@ -3940,7 +3940,7 @@ if (req) then
         sim.setStringSignal("reply","42\0") -- will be automatically cleared by the client
     end
 end
-</code>
+</pre>
 
 
 </td>
@@ -3954,15 +3954,15 @@ C/C++<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>C/C++<br>parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>signalName</strong>: name of the signal that contains the request string</div>
-<div><strong>signalValue</strong>: pointer to the request string. </div>
-<div><strong>signalLength</strong>: the size of the request string, since it may contain any data (also embedded zeros). </div>
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>signalName: name of the signal that contains the request string</div>
+<div>signalValue: pointer to the request string. </div>
+<div>signalLength: the size of the request string, since it may contain any data (also embedded zeros). </div>
 
-<div><strong>retSignalName</strong>: name of the signal that contains the reply string</div>
-<div><strong>retSignalValue</strong>: pointer to a pointer receiving the value of the reply string. The string pointer will remain valid until next remote API call</div>
-<div><strong>retSignalLength</strong>: pointer to a location receiving the value of the reply string length, since it may contain any data (also embedded zeros). </div>
-<div><strong>timeOutInMs</strong>: the maximum time in milliseconds that the function will wait for a reply.
+<div>retSignalName: name of the signal that contains the reply string</div>
+<div>retSignalValue: pointer to a pointer receiving the value of the reply string. The string pointer will remain valid until next remote API call</div>
+<div>retSignalLength: pointer to a location receiving the value of the reply string length, since it may contain any data (also embedded zeros). </div>
+<div>timeOutInMs: the maximum time in milliseconds that the function will wait for a reply.
 </div>
 </td> 
 </tr> 
@@ -4016,10 +4016,10 @@ C/C++<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>C/C++<br>parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>collisionObjectHandle</strong>: handle of the collision object</div>
-<div><strong>collisionState</strong>: a pointer to a value receiving the collision state (0: not colliding)</div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation modes for this function are simx_opmode_streaming (the first call) and simx_opmode_buffer (the following calls)
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>collisionObjectHandle: handle of the collision object</div>
+<div>collisionState: a pointer to a value receiving the collision state (0: not colliding)</div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation modes for this function are simx_opmode_streaming (the first call) and simx_opmode_buffer (the following calls)
 </div>
 </td> 
 </tr> 
@@ -4073,10 +4073,10 @@ C/C++<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>C/C++<br>parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>distanceObjectHandle</strong>: handle of the distance object</div>
-<div><strong>minimumDistance</strong>: a pointer to a value receiving the minimum distance. If the distance object wasn't handled yet, the distance value will be larger than 1e36.</div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation modes for this function are simx_opmode_streaming (the first call) and simx_opmode_buffer (the following calls)
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>distanceObjectHandle: handle of the distance object</div>
+<div>minimumDistance: a pointer to a value receiving the minimum distance. If the distance object wasn't handled yet, the distance value will be larger than 1e36.</div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation modes for this function are simx_opmode_streaming (the first call) and simx_opmode_buffer (the following calls)
 </div>
 </td> 
 </tr> 
@@ -4131,14 +4131,14 @@ C/C++<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>C/C++<br>parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>forceSensorHandle</strong>: handle of the force sensor</div>
-<div><strong>state</strong>: pointer to a byte value receiving the state of the force sensor. Can be nullptr</div>
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>forceSensorHandle: handle of the force sensor</div>
+<div>state: pointer to a byte value receiving the state of the force sensor. Can be nullptr</div>
 <div class=tab>bit 0 set: force and torque data is available, otherwise it is not (yet) available (e.g. when not enough values are present for the filter)</div>
 <div class=tab>bit 1 set: force sensor is broken, otherwise it is still intact ('unbroken')</div>
-<div><strong>forceVector</strong>: pointer to 3 float values receiving the force vector. Can be nullptr</div>
-<div><strong>torqueVector</strong>: pointer to 3 float values receiving the torque vector. Can be nullptr</div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation modes for this function are simx_opmode_streaming (the first call) and simx_opmode_buffer (the following calls)
+<div>forceVector: pointer to 3 float values receiving the force vector. Can be nullptr</div>
+<div>torqueVector: pointer to 3 float values receiving the torque vector. Can be nullptr</div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation modes for this function are simx_opmode_streaming (the first call) and simx_opmode_buffer (the following calls)
 </div>
 </td> 
 </tr> 
@@ -4193,13 +4193,13 @@ C/C++<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>C/C++<br>parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>sensorHandle</strong>: handle of the proximity sensor</div>
-<div><strong>detectionState</strong>: pointer to a value receiving the detection state (0=no detection). Can be nullptr.</div>
-<div><strong>detectedPoint</strong>: pointer to 3 values receiving the detected point coordinates (relative to the sensor reference frame). Can be nullptr.</div>
-<div><strong>detectedObjectHandle</strong>: pointer to a value receiving the handle of the detected object. Can be nullptr.</div>
-<div><strong>detectedSurfaceNormalVector</strong>: pointer to 3 values receiving the normal vector (normalized) of the detected surface. Relative to the sensor reference frame. Can be nullptr</div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation modes for this function are simx_opmode_streaming (the first call) and simx_opmode_buffer (the following calls)
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>sensorHandle: handle of the proximity sensor</div>
+<div>detectionState: pointer to a value receiving the detection state (0=no detection). Can be nullptr.</div>
+<div>detectedPoint: pointer to 3 values receiving the detected point coordinates (relative to the sensor reference frame). Can be nullptr.</div>
+<div>detectedObjectHandle: pointer to a value receiving the handle of the detected object. Can be nullptr.</div>
+<div>detectedSurfaceNormalVector: pointer to 3 values receiving the normal vector (normalized) of the detected surface. Relative to the sensor reference frame. Can be nullptr</div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation modes for this function are simx_opmode_streaming (the first call) and simx_opmode_buffer (the following calls)
 </div>
 </td> 
 </tr> 
@@ -4252,11 +4252,11 @@ C/C++<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>C/C++<br>parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>signalName</strong>: name of the signal</div>
-<div><strong>signalValue</strong>: pointer to a pointer receiving the value of the signal. The signal value will remain valid until next remote API call</div>
-<div><strong>signalLength</strong>: pointer to a location receiving the value of the signal length, since it may contain any data (also embedded zeros). </div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation modes for this function are simx_opmode_streaming (the first call) and simx_opmode_buffer (the following calls). simx_opmode_blocking is forbidden. Use a construction like following in order to continuously exchange data with CoppeliaSim:</div>
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>signalName: name of the signal</div>
+<div>signalValue: pointer to a pointer receiving the value of the signal. The signal value will remain valid until next remote API call</div>
+<div>signalLength: pointer to a location receiving the value of the signal length, since it may contain any data (also embedded zeros). </div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation modes for this function are simx_opmode_streaming (the first call) and simx_opmode_buffer (the following calls). simx_opmode_blocking is forbidden. Use a construction like following in order to continuously exchange data with CoppeliaSim:</div>
 
 <br>
 Remote API client side:
@@ -4275,7 +4275,7 @@ while (simxGetConnectionId(cid)!=-1)
     // Data produced by the child script was retrieved! Send it back to the child script:
     simxWriteStringStream(cid,"fromClient",signal,sLength,simx_opmode_oneshot);
   }
-}</code>
+}</pre>
 
 <br>
 Server side (CoppeliaSim), from a child script:
@@ -4310,7 +4310,7 @@ function sysCall_actuation()
             end
         end
     end
-end</code>
+end</pre>
 
 
 
@@ -4367,12 +4367,12 @@ C/C++<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>C/C++<br>parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>sensorHandle</strong>: handle of the vision sensor</div>
-<div><strong>detectionState</strong>: pointer to a byte that receives the detection state (i.e. the trigger state). Can be nullptr</div>
-<div><strong>auxValues</strong>: by default CoppeliaSim returns one packet of 15 auxiliary values:the minimum of {intensity, red, green, blue, depth value}, the maximum of {intensity, red, green, blue, depth value}, and the average of {intensity, red, green, blue, depth value}. Additional packets can be appended in the <a href="visionCallbackFunctions.htm">vision callback function</a>. AuxValues can be nullptr if auxValuesCount is also nullptr. The user is in charge of releasing the auxValues buffer with <a href="#simxReleaseBuffer">simxReleaseBuffer</a>(*auxValues).</div>
-<div><strong>auxValuesCount</strong>: contains information about the number of auxiliary value packets and packet sizes returned in auxValues. The first value is the number of packets, the second is the size of packet1, the third is the size of packet2, etc. Can be nullptr if auxValues is also nullptr. The user is in charge of releasing the auxValuesCount buffer with <a href="#simxReleaseBuffer">simxReleaseBuffer</a>(*auxValuesCount).</div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation modes for this function are simx_opmode_streaming (the first call) and simx_opmode_buffer (the following calls)
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>sensorHandle: handle of the vision sensor</div>
+<div>detectionState: pointer to a byte that receives the detection state (i.e. the trigger state). Can be nullptr</div>
+<div>auxValues: by default CoppeliaSim returns one packet of 15 auxiliary values:the minimum of {intensity, red, green, blue, depth value}, the maximum of {intensity, red, green, blue, depth value}, and the average of {intensity, red, green, blue, depth value}. Additional packets can be appended in the <a href="visionCallbackFunctions.htm">vision callback function</a>. AuxValues can be nullptr if auxValuesCount is also nullptr. The user is in charge of releasing the auxValues buffer with <a href="#simxReleaseBuffer">simxReleaseBuffer</a>(*auxValues).</div>
+<div>auxValuesCount: contains information about the number of auxiliary value packets and packet sizes returned in auxValues. The first value is the number of packets, the second is the size of packet1, the third is the size of packet2, etc. Can be nullptr if auxValues is also nullptr. The user is in charge of releasing the auxValuesCount buffer with <a href="#simxReleaseBuffer">simxReleaseBuffer</a>(*auxValuesCount).</div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation modes for this function are simx_opmode_streaming (the first call) and simx_opmode_buffer (the following calls)
 </div>
 </td> 
 </tr> 
@@ -4423,7 +4423,7 @@ C/C++<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>C/C++<br>parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>buffer</strong>: buffer to be released</div>
+<div>buffer: buffer to be released</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -4477,9 +4477,9 @@ C/C++<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>C/C++<br>parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>objectHandle</strong>: handle of the model to remove (object should be flagged as <em>model base</em>).</div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_oneshot (or simx_opmode_blocking)
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>objectHandle: handle of the model to remove (object should be flagged as <em>model base</em>).</div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_oneshot (or simx_opmode_blocking)
 </div>
 </td> 
 </tr> 
@@ -4536,9 +4536,9 @@ C/C++<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>C/C++<br>parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>objectHandle</strong>: handle of the object to remove</div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_oneshot (or simx_opmode_blocking)
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>objectHandle: handle of the object to remove</div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_oneshot (or simx_opmode_blocking)
 </div>
 </td> 
 </tr> 
@@ -4617,10 +4617,10 @@ C/C++<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>C/C++<br>parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>paramIdentifier</strong>: an <a href="apiConstants.htm#arrayParameters">array parameter identifier</a></div>
-<div><strong>paramValues</strong>: the array containing the 3 values to set</div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_oneshot
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>paramIdentifier: an <a href="apiConstants.htm#arrayParameters">array parameter identifier</a></div>
+<div>paramValues: the array containing the 3 values to set</div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_oneshot
 </div>
 </td> 
 </tr> 
@@ -4675,10 +4675,10 @@ C/C++<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>C/C++<br>parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>paramIdentifier</strong>: a <a href="apiConstants.htm#booleanParameters">bool parameter identifier</a></div>
-<div><strong>paramValue</strong>: the parameter value</div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_oneshot
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>paramIdentifier: a <a href="apiConstants.htm#booleanParameters">bool parameter identifier</a></div>
+<div>paramValue: the parameter value</div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_oneshot
 </div>
 </td> 
 </tr> 
@@ -4733,10 +4733,10 @@ C/C++<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>C/C++<br>parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>paramIdentifier</strong>: a <a href="apiConstants.htm#floatingParameters">floating parameter identifier</a></div>
-<div><strong>paramValue</strong>: the parameter value</div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_oneshot
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>paramIdentifier: a <a href="apiConstants.htm#floatingParameters">floating parameter identifier</a></div>
+<div>paramValue: the parameter value</div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_oneshot
 </div>
 </td> 
 </tr> 
@@ -4791,10 +4791,10 @@ C/C++<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>C/C++<br>parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>signalName</strong>: name of the signal</div>
-<div><strong>signalValue</strong>: value of the signal</div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_oneshot
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>signalName: name of the signal</div>
+<div>signalValue: value of the signal</div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_oneshot
 </div>
 </td> 
 </tr> 
@@ -4849,10 +4849,10 @@ C/C++<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>C/C++<br>parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>paramIdentifier</strong>: an <a href="apiConstants.htm#integerParameters">integer parameter identifier</a></div>
-<div><strong>paramValue</strong>: the parameter value</div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_oneshot
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>paramIdentifier: an <a href="apiConstants.htm#integerParameters">integer parameter identifier</a></div>
+<div>paramValue: the parameter value</div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_oneshot
 </div>
 </td> 
 </tr> 
@@ -4907,10 +4907,10 @@ C/C++<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>C/C++<br>parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>signalName</strong>: name of the signal</div>
-<div><strong>signalValue</strong>: value of the signal</div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_oneshot
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>signalName: name of the signal</div>
+<div>signalValue: value of the signal</div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_oneshot
 </div>
 </td> 
 </tr> 
@@ -4965,11 +4965,11 @@ C/C++<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>C/C++<br>parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>jointHandle</strong>: handle of the joint</div>
-<div><strong>force</strong>: the maximum force or torque that the joint can exert
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>jointHandle: handle of the joint</div>
+<div>force: the maximum force or torque that the joint can exert
 </div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_oneshot</div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_oneshot</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -5033,11 +5033,11 @@ C/C++<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>C/C++<br>parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>jointHandle</strong>: handle of the joint</div>
-<div><strong>position</strong>: position of the joint (angular or linear value depending on the joint type)
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>jointHandle: handle of the joint</div>
+<div>position: position of the joint (angular or linear value depending on the joint type)
 </div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation modes for this function are simx_opmode_oneshot or 
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation modes for this function are simx_opmode_oneshot or 
 simx_opmode_streaming</div>
 </td> 
 </tr> 
@@ -5090,10 +5090,10 @@ C/C++<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>C/C++<br>parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>jointHandle</strong>: handle of the joint</div>
-<div><strong>targetPosition</strong>: target position of the joint (angular or linear value depending on the joint type)</div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation modes for this function are simx_opmode_oneshot or 
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>jointHandle: handle of the joint</div>
+<div>targetPosition: target position of the joint (angular or linear value depending on the joint type)</div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation modes for this function are simx_opmode_oneshot or 
 simx_opmode_streaming
 </div>
 </td> 
@@ -5149,10 +5149,10 @@ C/C++<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>C/C++<br>parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>jointHandle</strong>: handle of the joint</div>
-<div><strong>targetVelocity</strong>: target velocity of the joint (linear or angular velocity depending on the joint-type)</div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation modes for this function are simx_opmode_oneshot or 
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>jointHandle: handle of the joint</div>
+<div>targetVelocity: target velocity of the joint (linear or angular velocity depending on the joint-type)</div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation modes for this function are simx_opmode_oneshot or 
 simx_opmode_streaming
 </div>
 </td> 
@@ -5209,10 +5209,10 @@ C/C++<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>C/C++<br>parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>objectHandle</strong>: handle of the object</div>
-<div><strong>prop</strong>: a <a href="apiConstants.htm#modelProperties">model property value</a></div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_oneshot
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>objectHandle: handle of the object</div>
+<div>prop: a <a href="apiConstants.htm#modelProperties">model property value</a></div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_oneshot
 </div>
 </td> 
 </tr> 
@@ -5267,11 +5267,11 @@ C/C++<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>C/C++<br>parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>objectHandle</strong>: handle of the object</div>
-<div><strong>parameterID</strong>: identifier of the parameter to set. See the <a href="objectParameterIDs.htm">list of all possible object parameter identifiers</a></div>
-<div><strong>parameterValue</strong>: the desired value of the parameter</div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_oneshot
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>objectHandle: handle of the object</div>
+<div>parameterID: identifier of the parameter to set. See the <a href="objectParameterIDs.htm">list of all possible object parameter identifiers</a></div>
+<div>parameterValue: the desired value of the parameter</div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_oneshot
 </div>
 </td> 
 </tr> 
@@ -5326,11 +5326,11 @@ C/C++<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>C/C++<br>parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>objectHandle</strong>: handle of the object</div>
-<div><strong>parameterID</strong>: identifier of the parameter to set. See the <a href="objectParameterIDs.htm">list of all possible object parameter identifiers</a></div>
-<div><strong>parameterValue</strong>: the desired value of the parameter</div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_oneshot
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>objectHandle: handle of the object</div>
+<div>parameterID: identifier of the parameter to set. See the <a href="objectParameterIDs.htm">list of all possible object parameter identifiers</a></div>
+<div>parameterValue: the desired value of the parameter</div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_oneshot
 </div>
 </td> 
 </tr> 
@@ -5385,11 +5385,11 @@ C/C++<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>C/C++<br>parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>objectHandle</strong>: handle of the object</div>
-<div><strong>relativeToObjectHandle</strong>: indicates relative to which reference frame the orientation is specified. Specify -1 to set the absolute orientation, sim_handle_parent to set the orientation relative to the object's parent, or an object handle relative to whose reference frame the orientation is specified.</div>
-<div><strong>eulerAngles</strong>: Euler angles (alpha, beta and gamma)</div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_oneshot
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>objectHandle: handle of the object</div>
+<div>relativeToObjectHandle: indicates relative to which reference frame the orientation is specified. Specify -1 to set the absolute orientation, sim_handle_parent to set the orientation relative to the object's parent, or an object handle relative to whose reference frame the orientation is specified.</div>
+<div>eulerAngles: Euler angles (alpha, beta and gamma)</div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_oneshot
 </div>
 </td> 
 </tr> 
@@ -5444,11 +5444,11 @@ C/C++<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>C/C++<br>parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>objectHandle</strong>: handle of the object that will become child of the parent object.  Can be combined with <a href="apiConstants.htm#specialHandleFlags">sim_handleflag_assembly</a>, if the two objects can be assembled via a predefined assembly transformation (refer to the <strong>assembling</strong> option in the <a href="commonPropertiesDialog.htm">object common properties</a>). In that case, <strong>parentObject</strong> can't be -1, and <strong>keepInPlace</strong> should be set to false.</div>
-<div><strong>parentObject</strong>: handle of the object that will become parent, or -1 if the object should become parentless</div>
-<div><strong>keepInPlace</strong>: indicates whether the object's absolute position and orientation should stay same</div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_oneshot or simx_opmode_blocking depending on the intent
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>objectHandle: handle of the object that will become child of the parent object.  Can be combined with <a href="apiConstants.htm#specialHandleFlags">sim_handleflag_assembly</a>, if the two objects can be assembled via a predefined assembly transformation (refer to the assembling option in the <a href="commonPropertiesDialog.htm">object common properties</a>). In that case, parentObject can't be -1, and keepInPlace should be set to false.</div>
+<div>parentObject: handle of the object that will become parent, or -1 if the object should become parentless</div>
+<div>keepInPlace: indicates whether the object's absolute position and orientation should stay same</div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_oneshot or simx_opmode_blocking depending on the intent
 </div>
 </td> 
 </tr> 
@@ -5503,11 +5503,11 @@ C/C++<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>C/C++<br>parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>objectHandle</strong>: handle of the object</div>
-<div><strong>relativeToObjectHandle</strong>: indicates relative to which reference frame the position is specified. Specify -1 to set the absolute position, sim_handle_parent to set the position relative to the object's parent, or an object handle relative to whose reference frame the position is specified.</div>
-<div><strong>position</strong>: the position values (x, y and z)</div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_oneshot
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>objectHandle: handle of the object</div>
+<div>relativeToObjectHandle: indicates relative to which reference frame the position is specified. Specify -1 to set the absolute position, sim_handle_parent to set the position relative to the object's parent, or an object handle relative to whose reference frame the position is specified.</div>
+<div>position: the position values (x, y and z)</div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_oneshot
 </div>
 </td> 
 </tr> 
@@ -5562,11 +5562,11 @@ C/C++<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>C/C++<br>parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>objectHandle</strong>: handle of the object</div>
-<div><strong>relativeToObjectHandle</strong>: indicates relative to which reference frame the quaternion is specified. Specify -1 to set the absolute quaternion, sim_handle_parent to set the quaternion relative to the object's parent, or an object handle relative to whose reference frame the quaternion is specified.</div>
-<div><strong>quat</strong>: the quaternion values (x, y, z, w)</div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_oneshot
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>objectHandle: handle of the object</div>
+<div>relativeToObjectHandle: indicates relative to which reference frame the quaternion is specified. Specify -1 to set the absolute quaternion, sim_handle_parent to set the quaternion relative to the object's parent, or an object handle relative to whose reference frame the quaternion is specified.</div>
+<div>quat: the quaternion values (x, y, z, w)</div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_oneshot
 </div>
 </td> 
 </tr> 
@@ -5617,10 +5617,10 @@ C/C++<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>C/C++<br>parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>objectHandles</strong>: an array of object handles</div>
-<div><strong>objectCount</strong>: the number of elements in the array</div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_oneshot or simx_opmode_blocking depending on the intent.
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>objectHandles: an array of object handles</div>
+<div>objectCount: the number of elements in the array</div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_oneshot or simx_opmode_blocking depending on the intent.
 </div>
 </td> 
 </tr> 
@@ -5675,10 +5675,10 @@ C/C++<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>C/C++<br>parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>jointHandle</strong>: handle of the joint</div>
-<div><strong>matrix</strong>: pointer to 12 simxFloat values. See the regular API equivalent function for details</div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation modes for this function are simx_opmode_oneshot or 
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>jointHandle: handle of the joint</div>
+<div>matrix: pointer to 12 simxFloat values. See the regular API equivalent function for details</div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation modes for this function are simx_opmode_oneshot or 
 simx_opmode_streaming
 </div>
 </td> 
@@ -5732,11 +5732,11 @@ C/C++<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>C/C++<br>parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>signalName</strong>: name of the signal</div>
-<div><strong>signalValue</strong>: value of the signal (which may contain any value, including embedded zeros)</div>
-<div><strong>signalLength</strong>: size of the signalValue string. </div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_oneshot
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>signalName: name of the signal</div>
+<div>signalValue: value of the signal (which may contain any value, including embedded zeros)</div>
+<div>signalLength: size of the signalValue string. </div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_oneshot
 </div>
 </td> 
 </tr> 
@@ -5855,7 +5855,7 @@ Description
 <td class=apiTableLeftDescr>
 Description 
 </td> 
-<td class=apiTableRightDescr>Sets the image of a vision sensor (and applies any image processing, if enabled). Make sure the vision sensor is flagged as <strong>use external image</strong>.</td>
+<td class=apiTableRightDescr>Sets the image of a vision sensor (and applies any image processing, if enabled). Make sure the vision sensor is flagged as use external image.</td>
 </tr> 
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCSyn>
@@ -5866,13 +5866,13 @@ C/C++<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>C/C++<br>parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>sensorHandle</strong>: handle of the vision sensor</div>
-<div><strong>image</strong>: pointer tothe image data</div>
-<div><strong>bufferSize</strong>: size of the image data</div>
-<div><strong>options</strong>: image options, bit-coded:</div>
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>sensorHandle: handle of the vision sensor</div>
+<div>image: pointer tothe image data</div>
+<div>bufferSize: size of the image data</div>
+<div>options: image options, bit-coded:</div>
 <div class=tab>bit0 set: each image pixel is a byte (greyscale image), otherwise each image pixel is a rgb byte-triplet</div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_oneshot
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_oneshot
 </div>
 </td> 
 </tr> 
@@ -5923,14 +5923,14 @@ C/C++<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>C/C++<br>parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>connectionAddress</strong>: the ip address where the server is located (i.e. CoppeliaSim)</div>
-<div><strong>connectionPort</strong>: the port number where to connect. Specify a negative port number in order to use shared memory, instead of socket communication.</div>
-<div><strong>waitUntilConnected</strong>: if different from zero, then the function blocks until connected (or timed out).</div>
-<div><strong>doNotReconnectOnceDisconnected</strong>: if different from zero, then the communication thread will not attempt a second connection if a connection was lost.</div>
-<div><strong>timeOutInMs</strong>:</div>
+<div>connectionAddress: the ip address where the server is located (i.e. CoppeliaSim)</div>
+<div>connectionPort: the port number where to connect. Specify a negative port number in order to use shared memory, instead of socket communication.</div>
+<div>waitUntilConnected: if different from zero, then the function blocks until connected (or timed out).</div>
+<div>doNotReconnectOnceDisconnected: if different from zero, then the communication thread will not attempt a second connection if a connection was lost.</div>
+<div>timeOutInMs:</div>
 <div class=tab> if positive: the connection time-out in milliseconds for the first connection attempt. In that case, the time-out for blocking function calls is 5000 milliseconds.</div>
 <div class=tab> if negative: its positive value is the time-out for blocking function calls. In that case, the connection time-out for the first connection attempt is 5000 milliseconds.</div>
-<div><strong>commThreadCycleInMs</strong>: indicates how often data packets are sent back and forth. Reducing this number improves responsiveness, and a default value of 5 is recommended.</div>
+<div>commThreadCycleInMs: indicates how often data packets are sent back and forth. Reducing this number improves responsiveness, and a default value of 5 is recommended.</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -5984,8 +5984,8 @@ C/C++<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>C/C++<br>parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_oneshot.
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_oneshot.
 </div>
 </td> 
 </tr> 
@@ -6040,8 +6040,8 @@ C/C++<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>C/C++<br>parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation modes for this function is simx_opmode_oneshot.
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation modes for this function is simx_opmode_oneshot.
 </div>
 </td> 
 </tr> 
@@ -6092,8 +6092,8 @@ C/C++<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>C/C++<br>parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>enable</strong>: the enable state of the stepped mode</div>
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>enable: the enable state of the stepped mode</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -6143,7 +6143,7 @@ C/C++<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>C/C++<br>parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -6193,11 +6193,11 @@ C/C++<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>C/C++<br>parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>filePathAndName</strong>: the local file name and path (i.e. on the client side)</div>
-<div><strong>fileName_serverSide</strong>: a file name under which the transferred file will be saved on the server side. For now, do not specify a path (the file will be saved in the remote API plugin directory)</div>
-<div><strong>timeOut</strong>: a timeout value in milliseconds</div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_blocking
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>filePathAndName: the local file name and path (i.e. on the client side)</div>
+<div>fileName_serverSide: a file name under which the transferred file will be saved on the server side. For now, do not specify a path (the file will be saved in the remote API plugin directory)</div>
+<div>timeOut: a timeout value in milliseconds</div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_blocking
 </div>
 </td> 
 </tr> 
@@ -6246,11 +6246,11 @@ C/C++<br>synopsis
 <tr class=apiTableTr> 
 <td class=remApiTableLeftCParam>C/C++<br>parameters</td> 
 <td class=remApiTableRightCParam>
-<div><strong>clientID</strong>: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
-<div><strong>signalName</strong>: name of the signal</div>
-<div><strong>signalValueToAppend</strong>: value to append to the signal. That value may contain any value, including embedded zeros.</div>
-<div><strong>signalLength</strong>: size of the signalValueToAppend string. </div>
-<div><strong>operationMode</strong>: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_oneshot
+<div>clientID: the client ID. refer to <a href="#simxStart">simxStart</a>.</div>
+<div>signalName: name of the signal</div>
+<div>signalValueToAppend: value to append to the signal. That value may contain any value, including embedded zeros.</div>
+<div>signalLength: size of the signalValueToAppend string. </div>
+<div>operationMode: a <a href="remoteApiConstants.htm#operationModes">remote API function operation mode</a>. Recommended operation mode for this function is simx_opmode_oneshot
 </div>
 </td> 
 </tr> 

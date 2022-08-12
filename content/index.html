@@ -207,9 +207,9 @@ Refer also to CoppeliaSim's overview description in other languages: <a href="ov
 <div>Simulator and simulations are fully customizable, with 5 programming approaches that are mutually compatible and that can even work hand-in-hand. 6 supported programming languages.</div> </span></td>
 <td colspan="3" height="126" width="95"></td>
 <td align="left" colspan="2" content="" csheight="100" height="126" valign="top" width="232" xpos="386"><span class="tablerunningtext">
-<div><strong>Regular API</strong>: Python, Lua and C/C++</div>
-<div><strong>Remote API</strong>: C/C++, Python, Java, JavaScript, Matlab &amp; Octave</div>
-<div><strong>ROS interfaces</strong>: publishers, subscribers &amp; service calls. Support all standard messages, extendable.</div>
+<div>Regular API: Python, Lua and C/C++</div>
+<div>Remote API: C/C++, Python, Java, JavaScript, Matlab &amp; Octave</div>
+<div>ROS interfaces: publishers, subscribers &amp; service calls. Support all standard messages, extendable.</div>
 </span>
 </td>
 <td colspan="3" height="126" width="92"></td>
@@ -737,7 +737,7 @@ Version history:
 <li>Added following API functions: <a href="regularApi/simIsDynamicallyEnabled.html">sim.isDynamicallyEnabled</a>, <a href="regularApi/simGetJointDependency.html">sim.getJointDependency</a>, <a href="regularApi/simChangeEntityColor.html">sim.changeEntityColor</a> and <a href="regularApi/simRestoreEntityColor.html">sim.restoreEntityColor</a>.</li>
 <li>Following Docker image is available for running CoppeliaSim in a container: <a href="https://github.com/CoppeliaRobotics/docker-image-coppeliasim" target="_blank">docker-image-coppeliasim</a></li>
 <li>The default scene will now pause simulation when a script error is raised.</li>
-<li>Added an additional <a href="dynamicsEngineDialog.html#configurationMode">dynamics configuration mode</a> that performs smaller dynamics steps and/or does more calculation iterations. Went from [<strong>very accurate</strong>, <strong>accurate (default)</strong>, <strong>fast</strong>, <strong>very fast</strong>, <strong>custom</strong>] to: [<strong>very accurate</strong>, <strong>accurate</strong>, <strong>balanced (default), fast</strong>, <strong>very fast</strong>, <strong>custom</strong>].</li>
+<li>Added an additional <a href="dynamicsEngineDialog.html#configurationMode">dynamics configuration mode</a> that performs smaller dynamics steps and/or does more calculation iterations. Went from [very accurate, accurate (default), fast, very fast, custom] to: [very accurate, accurate, balanced (default), fast, very fast, custom].</li>
 <li>The Windows installer/uninstaller can now silently operate by invoking it with following command-line arguments:<em> /silent /hide /[silent]=true</em></li>
 <br/>
 <br/>
@@ -1042,14 +1042,14 @@ Version history:
 <li>Fixed several bugs. Thanks to Renaud Detry, Daniel Lechner, Ulrich Schwesinger, Sven Knüppel, Steve Nguyen, Jonas Sperling, James Besancon, Andrew Vardy, Rodrigo Moreno Garcia, Thomas Estier, Matthias Imle, Daniel Kuhner, José Rosado, Eric Rohmer and Soner Ulun for noticing them or helping to resolve them.</li>
 <li>Improved the embedded <a href="scriptEditor.html">script editor</a> with following new features: highlighting of all occurrences of selected word, source folding/unfolding, simple word search via the &lt;ctrl+f&gt; key.</li>
 <li>External script editors can now be customized with the data in file <em>v-rep_notepad++.zip</em>: this allows for keyword highlighting, auto-completion and call tip display.</li>
-<li>Improved the shape serialization routines, effectively reducing generated file sizes, mainly if they contain duplicate geometric content. <strong>The generated file format cannot be read by previous V-REP versions (prior to V-REP 3.1.3), so make sure to make backup copies</strong>.</li>
+<li>Improved the shape serialization routines, effectively reducing generated file sizes, mainly if they contain duplicate geometric content. The generated file format cannot be read by previous V-REP versions (prior to V-REP 3.1.3), so make sure to make backup copies.</li>
 <li>Added a new type of <a href="scripts.html">embedded script</a>: <a href="customizationScripts.html">customization scripts</a>. They are associated with <a href="objects.html">scene objects</a> (same as <a href="childScripts.html">child scripts</a>) and can be used to customize a simulation scene to a great extent. The main difference with child scripts is that customization scripts are running all the time, also when simulation is not running.</li>
 <li>Added several models that demonstrate the new <a href="customizationScripts.html">customization script</a> functionality: <em>Models/nature/terrain bump.ttm</em>, <em>Models/nature/Terrain.ttm</em>, <em>Models/nature/Tree.ttm</em>, <em>Models/infrastructure/other/resizable concret block.ttm</em>, <em>Models/infrastructure/floors/resizable floor*.ttm</em>, <em>Models/tools/playback tool.ttm</em>, <em>Models/tools/isometric scaling tool.ttm</em>, <em>Models/tools/name change tool.ttm</em>, <em>Models/tools/custom data viewer tool.ttm</em>, <em>Models/equipment/conveyor belts/customizable conveyor belt.ttm</em>, <em>Models/furniture/tables/customizable table.ttm</em>.</li>
 <li>Modified  the way <a href="childScripts.html">child scripts</a> are handled in order to make them operate in a more coherent manner:</li>
 <li class="tabTab"> <a href="childScripts.html">child scripts</a> execution is now automatically cascaded (i.e. no need to explicitely call simHandleChildScript anymore).</li>
 <li class="tabTab"> child scripts are now executed in the<em> actuation</em> phase as well as in the <em>sensing</em> phase of a given simulation step: there is no distinction anymore with what previously used to be <em>sensing child scripts</em>.</li>
-<li class="tabTab"> script compatibility with previous file versions is guaranteed by <strong>1)</strong> automatic child script code modification (clearly marked as such), <strong>2)</strong> automatic <a href="mainScript.html">main script</a> replacement. This covers 99% of all situations, but it can happen that this automatic modification partly fails (e.g. when the main script was customized, or when explicitely executing a specific child script (previously marked as <em>explicit handling</em>)). In that case,<a href="http://coppeliarobotics.com/contact.html"> contact us</a> for assistance.</li>
-<li>Improved the rendering speed. If compatibility issues arise, please <a href="http://coppeliarobotics.com/contact.html">contact us</a>, and try to disable <strong>VBO operation</strong> <a href="settings.html#openGl">here</a>.</li>
+<li class="tabTab"> script compatibility with previous file versions is guaranteed by 1) automatic child script code modification (clearly marked as such), 2) automatic <a href="mainScript.html">main script</a> replacement. This covers 99% of all situations, but it can happen that this automatic modification partly fails (e.g. when the main script was customized, or when explicitely executing a specific child script (previously marked as <em>explicit handling</em>)). In that case,<a href="http://coppeliarobotics.com/contact.html"> contact us</a> for assistance.</li>
+<li>Improved the rendering speed. If compatibility issues arise, please <a href="http://coppeliarobotics.com/contact.html">contact us</a>, and try to disable VBO operation <a href="settings.html#openGl">here</a>.</li>
 <li>Improved the start-up time of certain simulation scenes, by adding a broad mode for collision detection, minimum distance calculation and proximity sensor detection: Oriented Bounding Box (i.e. OBB) data structures are now only computed on-the-fly and only when absolutely necessary. This can be visualized via [Menu bar --&gt; Help --&gt; Debug --&gt; Visualize prepared OBB calculation structures].</li>
 <li>Added 3 new API functions: <a href="regularApi/simCopyPasteObjects.html">sim.copyPasteObjects</a>, <a href="regularApi/simScaleObjects.html">sim.scaleObjects</a> and <a href="regularApi/simRemoveModel.html">sim.removeModel</a>. simCopyPasteSelectedObjects, simScaleSelectedObjects and simDeleteSelectedObjects are declared deprecated.</li>
 <li>Added project files for custom ROS plugins for V-REP (i.e. in order to support specific ROS messages of a specific robot). </li>
@@ -1196,7 +1196,7 @@ Version history:
 <li>The <a href="urdfPlugin.html">URDF importer</a> is now in an advanced beta stage.</li>
 <br/>
 <br/><h4>V-REP V3.0.0 (January 10th 2013)</h4>
-<li>V-REP is now <strong>open source</strong>! All source code of V-REP or any related item can be downloaded, modified and compiled. Make sure to read the <a href="licensing.html">licensing conditions</a>.</li>
+<li>V-REP is now open source! All source code of V-REP or any related item can be downloaded, modified and compiled. Make sure to read the <a href="licensing.html">licensing conditions</a>.</li>
 <li>V-REP comes now is several flavours:</li>
 <li class="tabTab"> V-REP PRO EDU (educational version. No limitation and Free). Can be used by hobbyists, students, teachers, professors, schools and Universities. Make sure to read the <a href="licensing.html">licensing conditions</a>.</li>
 <li class="tabTab"> V-REP PRO (commercial version)</li>
@@ -1759,11 +1759,11 @@ CoppeliaSim Player, CoppeliaSim Edu, CoppeliaSim Pro and other components (e.g. 
 <div class="licenseBox">
 <p>CoppeliaSim Edu educational license:</p>
 <p>-------------------------------------------------------------------</p>
-<p>The CoppeliaSim Edu educational license applies ONLY to <strong>educational entities</strong> composed by following people and institutions:</p>
+<p>The CoppeliaSim Edu educational license applies ONLY to educational entities composed by following people and institutions:</p>
 <p>1. Hobbyists, students, teachers and professors</p>
 <p>2. Schools and Universities</p>
-<p><strong>Educational entities</strong> do NOT include companies, research institutions, non-profit organisations, foundations, etc.</p>
-<p>An <strong>educational entity</strong> may use CoppeliaSim Edu under following conditions:</p>
+<p>Educational entities do NOT include companies, research institutions, non-profit organisations, foundations, etc.</p>
+<p>An educational entity may use CoppeliaSim Edu under following conditions:</p>
 <p>1. Usage should be non-commercial.</p>
 <p>CoppeliaSim Edu is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
 without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
@@ -1787,16 +1787,16 @@ death, data loss, damages, loss of profits or any other loss while using or misu
 <div class="licenseBox">
 <p>Geometric/kinematics plugin educational license:</p>
 <p>-------------------------------------------------------------------</p>
-<p>The Geometric/kinematics plugin educational license applies ONLY to <strong>educational entities</strong> composed by
+<p>The Geometric/kinematics plugin educational license applies ONLY to educational entities composed by
 following people and institutions:</p>
 <p>1. Hobbyists, students, teachers and professors</p>
 <p>2. Schools and Universities</p>
 <p><string>Educational entities do NOT include companies, research institutions,
 non-profit organisations, foundations, etc.</string></p>
-<p>An <strong>educational entitiy</strong> may use, modify, compile and distribute the
+<p>An educational entitiy may use, modify, compile and distribute the
 modified/unmodified plugin under following conditions:</p>
 <p>1. Distribution should be free of charge.</p>
-<p>2. Distribution should be to <strong>educational entities</strong> only.</p>
+<p>2. Distribution should be to educational entities only.</p>
 <p>3. Usage should be non-commercial.</p>
 <p>4. Altered source versions must be plainly marked as such and distributed along
    with any compiled code.</p>
@@ -2250,8 +2250,8 @@ appreciated but is not required.</p>
 <div class="licenseBox">
 <p>ZeroMQ Free Software Licenses</p>
 <p>The libzmq library is licensed under the <a href="http://www.gnu.org/licenses/lgpl.html">GNU Lesser General Public License</a> V3 plus a static linking exception.</p>
-<p>- <strong>You get the full source code</strong>. You can examine the code, modify it, and share your modified code under the terms of the LGPL.</p>
-<p>- <strong>Static linking exception</strong>. The copyright holders give you permission to link this library with independent modules to produce an executable, regardless of the license terms of these independent modules, and to copy and distribute the resulting executable under terms of your choice, provided that you also meet, for each linked independent module, the terms and conditions of the license of that module. An independent module is a module which is not derived from or based on this library. If you modify this library, you must extend this exception to your version of the library.</p>
+<p>- You get the full source code. You can examine the code, modify it, and share your modified code under the terms of the LGPL.</p>
+<p>- Static linking exception. The copyright holders give you permission to link this library with independent modules to produce an executable, regardless of the license terms of these independent modules, and to copy and distribute the resulting executable under terms of your choice, provided that you also meet, for each linked independent module, the terms and conditions of the license of that module. An independent module is a module which is not derived from or based on this library. If you modify this library, you must extend this exception to your version of the library.</p>
 </div>
 <br/>
 <h4><a id="WS" name="WS"></a>License of WebSocket++</h4>

@@ -91,10 +91,10 @@ td.section { margin: 0; padding: 0; }
 <td class="apiTableLeftLParam">Lua parameters</td>
 <td class="apiTableRightLParam">
 <div>
-<strong>taskHandle</strong> (string): a handle to a task object created with <a href="#createTask">simOMPL.createTask</a>
+taskHandle (string): a handle to a task object created with <a href="#createTask">simOMPL.createTask</a>
 </div>
 <div>
-<strong>state</strong> (table of float): a table of numbers, whose size must be consistent with the robot's state space specified in this task object</div>
+state (table of float): a table of numbers, whose size must be consistent with the robot's state space specified in this task object</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -130,7 +130,7 @@ if simOMPL.solve(task, maxTime) then
     simOMPL.interpolatePath(task, stateCnt)
     path = simOMPL.getPath(task)
 end
-            </code>
+            </pre>
         </td>
 </tr>
 <tr class="apiTableTr">
@@ -142,23 +142,23 @@ end
 <td class="apiTableLeftLParam">Lua parameters</td>
 <td class="apiTableRightLParam">
 <div>
-<strong>taskHandle</strong> (string): a handle to a task object created with <a href="#createTask">simOMPL.createTask</a>
+taskHandle (string): a handle to a task object created with <a href="#createTask">simOMPL.createTask</a>
 </div>
 <div>
-<strong>maxTime</strong> (float): maximum time used for the path searching procedure, in seconds.</div>
+maxTime (float): maximum time used for the path searching procedure, in seconds.</div>
 <div>
-<strong>maxSimplificationTime</strong> (float, default: -1.0): maximum time used for the path simplification procedure, in seconds. -1 for a default simplification procedure.</div>
+maxSimplificationTime (float, default: -1.0): maximum time used for the path simplification procedure, in seconds. -1 for a default simplification procedure.</div>
 <div>
-<strong>stateCnt</strong> (int, default: 0): minimum number of states to be returned. 0 for a default behaviour.</div>
+stateCnt (int, default: 0): minimum number of states to be returned. 0 for a default behaviour.</div>
 </td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftLRet">Lua return values</td>
 <td class="apiTableRightLRet">
 <div>
-<strong>solved</strong> (bool): true if a solution has been found.</div>
+solved (bool): true if a solution has been found.</div>
 <div>
-<strong>states</strong> (table of float): a table of states, representing the solution, from start to goal. States are specified linearly.</div>
+states (table of float): a table of states, representing the solution, from start to goal. States are specified linearly.</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -195,27 +195,27 @@ end
 <td class="apiTableLeftLParam">Lua parameters</td>
 <td class="apiTableRightLParam">
 <div>
-<strong>name</strong> (string): a name for this state space</div>
+name (string): a name for this state space</div>
 <div>
-<strong>type</strong> (int): type of this state space component (see <a href="#enum:StateSpaceType">simOMPL.StateSpaceType</a>)</div>
+type (int): type of this state space component (see <a href="#enum:StateSpaceType">simOMPL.StateSpaceType</a>)</div>
 <div>
-<strong>objectHandle</strong> (int): the object handle (a joint object if type is simOMPL.StateSpaceType.joint_position or .cyclic_joint_position, otherwise a shape)</div>
+objectHandle (int): the object handle (a joint object if type is simOMPL.StateSpaceType.joint_position or .cyclic_joint_position, otherwise a shape)</div>
 <div>
-<strong>boundsLow</strong> (table of float): lower bounds (if type is pose, specify only the 3 position components)</div>
+boundsLow (table of float): lower bounds (if type is pose, specify only the 3 position components)</div>
 <div>
-<strong>boundsHigh</strong> (table of float): upper bounds (if type is pose, specify only the 3 position components)</div>
+boundsHigh (table of float): upper bounds (if type is pose, specify only the 3 position components)</div>
 <div>
-<strong>useForProjection</strong> (int): if true, this object position or joint value will be used for computing a default projection</div>
+useForProjection (int): if true, this object position or joint value will be used for computing a default projection</div>
 <div>
-<strong>weight</strong> (float, default: 1.0): the weight of this state space component, used for computing distance between states. Default value is 1.0</div>
+weight (float, default: 1.0): the weight of this state space component, used for computing distance between states. Default value is 1.0</div>
 <div>
-<strong>refObjectHandle</strong> (int, default: -1): an object handle relative to which reference frame position/orientations will be evaluated. Default value is -1, for the absolute reference frame</div>
+refObjectHandle (int, default: -1): an object handle relative to which reference frame position/orientations will be evaluated. Default value is -1, for the absolute reference frame</div>
 </td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftLRet">Lua return values</td>
 <td class="apiTableRightLRet"><div>
-<strong>stateSpaceHandle</strong> (string): a handle to the created state space component</div></td>
+stateSpaceHandle (string): a handle to the created state space component</div></td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftPSyn">Python synopsis</td>
@@ -257,12 +257,12 @@ end
 <tr class="apiTableTr">
 <td class="apiTableLeftLParam">Lua parameters</td>
 <td class="apiTableRightLParam"><div>
-<strong>name</strong> (string): a name for this task object</div></td>
+name (string): a name for this task object</div></td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftLRet">Lua return values</td>
 <td class="apiTableRightLRet"><div>
-<strong>taskHandle</strong> (string): a handle to the created task object</div></td>
+taskHandle (string): a handle to the created task object</div></td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftPSyn">Python synopsis</td>
@@ -298,7 +298,7 @@ end
 <tr class="apiTableTr">
 <td class="apiTableLeftLParam">Lua parameters</td>
 <td class="apiTableRightLParam"><div>
-<strong>stateSpaceHandle</strong> (string): handle to state space component</div></td>
+stateSpaceHandle (string): handle to state space component</div></td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftLRet">Lua return values</td>
@@ -338,7 +338,7 @@ end
 <tr class="apiTableTr">
 <td class="apiTableLeftLParam">Lua parameters</td>
 <td class="apiTableRightLParam"><div>
-<strong>taskHandle</strong> (string): a handle to a task object created with <a href="#createTask">simOMPL.createTask</a>
+taskHandle (string): a handle to a task object created with <a href="#createTask">simOMPL.createTask</a>
 </div></td>
 </tr>
 <tr class="apiTableTr">
@@ -376,21 +376,21 @@ end
 <td class="apiTableLeftLParam">Lua parameters</td>
 <td class="apiTableRightLParam">
 <div>
-<strong>taskHandle</strong> (string): the handle of the task</div>
+taskHandle (string): the handle of the task</div>
 <div>
-<strong>path</strong> (table of float): the path, as returned by simOMPL.getPath</div>
+path (table of float): the path, as returned by simOMPL.getPath</div>
 <div>
-<strong>lineSize</strong> (float): size of the line (in pixels)</div>
+lineSize (float): size of the line (in pixels)</div>
 <div>
-<strong>color</strong> (table of float, size 3): color of the lines</div>
+color (table of float, size 3): color of the lines</div>
 <div>
-<strong>extraAttributes</strong> (int): extra attributes to pass to sim.addDrawingObject</div>
+extraAttributes (int): extra attributes to pass to sim.addDrawingObject</div>
 </td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftLRet">Lua return values</td>
 <td class="apiTableRightLRet"><div>
-<strong>dwos</strong> (table of int): a table of handles of new drawing objects</div></td>
+dwos (table of int): a table of handles of new drawing objects</div></td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftPSyn">Python synopsis</td>
@@ -423,23 +423,23 @@ end
 <td class="apiTableLeftLParam">Lua parameters</td>
 <td class="apiTableRightLParam">
 <div>
-<strong>taskHandle</strong> (string): handle of the task</div>
+taskHandle (string): handle of the task</div>
 <div>
-<strong>pointSize</strong> (float): size of nodes (in meters)</div>
+pointSize (float): size of nodes (in meters)</div>
 <div>
-<strong>lineSize</strong> (float): size of lines (in pixels)</div>
+lineSize (float): size of lines (in pixels)</div>
 <div>
-<strong>color</strong> (table of float, size 3): color of nodes and lines</div>
+color (table of float, size 3): color of nodes and lines</div>
 <div>
-<strong>startColor</strong> (table of float, size 3): color of start nodes</div>
+startColor (table of float, size 3): color of start nodes</div>
 <div>
-<strong>goalColor</strong> (table of float, size 3): color of goal nodes</div>
+goalColor (table of float, size 3): color of goal nodes</div>
 </td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftLRet">Lua return values</td>
 <td class="apiTableRightLRet"><div>
-<strong>dwos</strong> (table of int): a table of handles of new drawing objects</div></td>
+dwos (table of int): a table of handles of new drawing objects</div></td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftPSyn">Python synopsis</td>
@@ -472,16 +472,16 @@ end
 <td class="apiTableLeftLParam">Lua parameters</td>
 <td class="apiTableRightLParam">
 <div>
-<strong>taskHandle</strong> (string): a handle to a task object created with <a href="#createTask">simOMPL.createTask</a>
+taskHandle (string): a handle to a task object created with <a href="#createTask">simOMPL.createTask</a>
 </div>
 <div>
-<strong>state</strong> (table of float): state vector</div>
+state (table of float): state vector</div>
 </td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftLRet">Lua return values</td>
 <td class="apiTableRightLRet"><div>
-<strong>state</strong> (table of float): state vector</div></td>
+state (table of float): state vector</div></td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftPSyn">Python synopsis</td>
@@ -513,13 +513,13 @@ end
 <tr class="apiTableTr">
 <td class="apiTableLeftLParam">Lua parameters</td>
 <td class="apiTableRightLParam"><div>
-<strong>taskHandle</strong> (string): a handle to a task object created with <a href="#createTask">simOMPL.createTask</a>
+taskHandle (string): a handle to a task object created with <a href="#createTask">simOMPL.createTask</a>
 </div></td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftLRet">Lua return values</td>
 <td class="apiTableRightLRet"><div>
-<strong>distance</strong> (float): distance to the desired goal for the top solution, or -1.0 if there are no solutions available</div></td>
+distance (float): distance to the desired goal for the top solution, or -1.0 if there are no solutions available</div></td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftPSyn">Python synopsis</td>
@@ -554,13 +554,13 @@ end
 <tr class="apiTableTr">
 <td class="apiTableLeftLParam">Lua parameters</td>
 <td class="apiTableRightLParam"><div>
-<strong>taskHandle</strong> (string): a handle to a task object created with <a href="#createTask">simOMPL.createTask</a>
+taskHandle (string): a handle to a task object created with <a href="#createTask">simOMPL.createTask</a>
 </div></td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftLRet">Lua return values</td>
 <td class="apiTableRightLRet"><div>
-<strong>states</strong> (table of float): a table of states, representing the solution, from start to goal. States are specified linearly.</div></td>
+states (table of float): a table of states, representing the solution, from start to goal. States are specified linearly.</div></td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftPSyn">Python synopsis</td>
@@ -593,17 +593,17 @@ end
 <td class="apiTableLeftLParam">Lua parameters</td>
 <td class="apiTableRightLParam">
 <div>
-<strong>taskHandle</strong> (string): the handle of the task</div>
+taskHandle (string): the handle of the task</div>
 <div>
-<strong>path</strong> (table of float): the path, as returned by simOMPL.getPath</div>
+path (table of float): the path, as returned by simOMPL.getPath</div>
 <div>
-<strong>index</strong> (int): the index, starting from 1</div>
+index (int): the index, starting from 1</div>
 </td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftLRet">Lua return values</td>
 <td class="apiTableRightLRet"><div>
-<strong>state</strong> (table of float): a state extracted from the path</div></td>
+state (table of float): a state extracted from the path</div></td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftPSyn">Python synopsis</td>
@@ -636,15 +636,15 @@ end
 <td class="apiTableLeftLParam">Lua parameters</td>
 <td class="apiTableRightLParam">
 <div>
-<strong>taskHandle</strong> (string): the handle of the task</div>
+taskHandle (string): the handle of the task</div>
 <div>
-<strong>path</strong> (table of float): the path, as returned by simOMPL.getPath</div>
+path (table of float): the path, as returned by simOMPL.getPath</div>
 </td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftLRet">Lua return values</td>
 <td class="apiTableRightLRet"><div>
-<strong>count</strong> (int): the number of states in the path</div></td>
+count (int): the number of states in the path</div></td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftPSyn">Python synopsis</td>
@@ -679,25 +679,25 @@ end
 <tr class="apiTableTr">
 <td class="apiTableLeftLParam">Lua parameters</td>
 <td class="apiTableRightLParam"><div>
-<strong>taskHandle</strong> (string): a handle to a task object created with <a href="#createTask">simOMPL.createTask</a>.</div></td>
+taskHandle (string): a handle to a task object created with <a href="#createTask">simOMPL.createTask</a>.</div></td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftLRet">Lua return values</td>
 <td class="apiTableRightLRet">
 <div>
-<strong>states</strong> (table of float): a table of states, representing the configurations in the constructed search graph. States are specified linearly.</div>
+states (table of float): a table of states, representing the configurations in the constructed search graph. States are specified linearly.</div>
 <div>
-<strong>tags</strong> (table of int): a table of tags (one integer for every vertex)</div>
+tags (table of int): a table of tags (one integer for every vertex)</div>
 <div>
-<strong>tagsReal</strong> (table of float): a table of tags (one float for every vertex)</div>
+tagsReal (table of float): a table of tags (one float for every vertex)</div>
 <div>
-<strong>edges</strong> (table of int): the pairs of vertex indices describing vertex connectivity</div>
+edges (table of int): the pairs of vertex indices describing vertex connectivity</div>
 <div>
-<strong>edgeWeights</strong> (table of float): the weight (cost) associated to each edge</div>
+edgeWeights (table of float): the weight (cost) associated to each edge</div>
 <div>
-<strong>startVertices</strong> (table of int): the indices of vertices marked 'start'</div>
+startVertices (table of int): the indices of vertices marked 'start'</div>
 <div>
-<strong>goalVertices</strong> (table of int): the indices of vertices marked 'goal'</div>
+goalVertices (table of int): the indices of vertices marked 'goal'</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -731,9 +731,9 @@ end
 <td class="apiTableLeftLParam">Lua parameters</td>
 <td class="apiTableRightLParam">
 <div>
-<strong>taskHandle</strong> (string): the handle of the task</div>
+taskHandle (string): the handle of the task</div>
 <div>
-<strong>path</strong> (table of float): the path, as returned by simOMPL.getPath</div>
+path (table of float): the path, as returned by simOMPL.getPath</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -771,15 +771,15 @@ end
 <td class="apiTableLeftLParam">Lua parameters</td>
 <td class="apiTableRightLParam">
 <div>
-<strong>taskHandle</strong> (string): the handle of the task</div>
+taskHandle (string): the handle of the task</div>
 <div>
-<strong>path</strong> (table of float): the path, as returned by simOMPL.getPath</div>
+path (table of float): the path, as returned by simOMPL.getPath</div>
 </td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftLRet">Lua return values</td>
 <td class="apiTableRightLRet"><div>
-<strong>reversedPath</strong> (table of float): the reversed path</div></td>
+reversedPath (table of float): the reversed path</div></td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftPSyn">Python synopsis</td>
@@ -811,13 +811,13 @@ end
 <tr class="apiTableTr">
 <td class="apiTableLeftLParam">Lua parameters</td>
 <td class="apiTableRightLParam"><div>
-<strong>taskHandle</strong> (string): a handle to a task object created with <a href="#createTask">simOMPL.createTask</a>
+taskHandle (string): a handle to a task object created with <a href="#createTask">simOMPL.createTask</a>
 </div></td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftLRet">Lua return values</td>
 <td class="apiTableRightLRet"><div>
-<strong>dim</strong> (int): dimension of the state space</div></td>
+dim (int): dimension of the state space</div></td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftPSyn">Python synopsis</td>
@@ -852,13 +852,13 @@ end
 <tr class="apiTableTr">
 <td class="apiTableLeftLParam">Lua parameters</td>
 <td class="apiTableRightLParam"><div>
-<strong>taskHandle</strong> (string): a handle to a task object created with <a href="#createTask">simOMPL.createTask</a>
+taskHandle (string): a handle to a task object created with <a href="#createTask">simOMPL.createTask</a>
 </div></td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftLRet">Lua return values</td>
 <td class="apiTableRightLRet"><div>
-<strong>result</strong> (bool): true if the top found solution is approximate</div></td>
+result (bool): true if the top found solution is approximate</div></td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftPSyn">Python synopsis</td>
@@ -893,13 +893,13 @@ end
 <tr class="apiTableTr">
 <td class="apiTableLeftLParam">Lua parameters</td>
 <td class="apiTableRightLParam"><div>
-<strong>taskHandle</strong> (string): a handle to a task object created with <a href="#createTask">simOMPL.createTask</a>
+taskHandle (string): a handle to a task object created with <a href="#createTask">simOMPL.createTask</a>
 </div></td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftLRet">Lua return values</td>
 <td class="apiTableRightLRet"><div>
-<strong>result</strong> (bool): true if an exact solution path has been found</div></td>
+result (bool): true if an exact solution path has been found</div></td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftPSyn">Python synopsis</td>
@@ -931,13 +931,13 @@ end
 <tr class="apiTableTr">
 <td class="apiTableLeftLParam">Lua parameters</td>
 <td class="apiTableRightLParam"><div>
-<strong>taskHandle</strong> (string): a handle to a task object created with <a href="#createTask">simOMPL.createTask</a>
+taskHandle (string): a handle to a task object created with <a href="#createTask">simOMPL.createTask</a>
 </div></td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftLRet">Lua return values</td>
 <td class="apiTableRightLRet"><div>
-<strong>result</strong> (bool): true if a solution path has been found (could be approximate)</div></td>
+result (bool): true if a solution path has been found (could be approximate)</div></td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftPSyn">Python synopsis</td>
@@ -970,10 +970,10 @@ end
 <td class="apiTableLeftLParam">Lua parameters</td>
 <td class="apiTableRightLParam">
 <div>
-<strong>taskHandle</strong> (string): a handle to a task object created with <a href="#createTask">simOMPL.createTask</a>
+taskHandle (string): a handle to a task object created with <a href="#createTask">simOMPL.createTask</a>
 </div>
 <div>
-<strong>stateCnt</strong> (int, default: 0): minimum number of states to be returned. 0 for a default behaviour.</div>
+stateCnt (int, default: 0): minimum number of states to be returned. 0 for a default behaviour.</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -1014,16 +1014,16 @@ end
 <td class="apiTableLeftLParam">Lua parameters</td>
 <td class="apiTableRightLParam">
 <div>
-<strong>taskHandle</strong> (string): a handle to a task object created with <a href="#createTask">simOMPL.createTask</a>
+taskHandle (string): a handle to a task object created with <a href="#createTask">simOMPL.createTask</a>
 </div>
 <div>
-<strong>state</strong> (table of float): state vector</div>
+state (table of float): state vector</div>
 </td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftLRet">Lua return values</td>
 <td class="apiTableRightLRet"><div>
-<strong>valid</strong> (bool): true if the state is valid</div></td>
+valid (bool): true if the state is valid</div></td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftPSyn">Python synopsis</td>
@@ -1056,16 +1056,16 @@ end
 <td class="apiTableLeftLParam">Lua parameters</td>
 <td class="apiTableRightLParam">
 <div>
-<strong>taskHandle</strong> (string): a handle to a task object created with <a href="#createTask">simOMPL.createTask</a>
+taskHandle (string): a handle to a task object created with <a href="#createTask">simOMPL.createTask</a>
 </div>
 <div>
-<strong>state</strong> (table of float): state vector</div>
+state (table of float): state vector</div>
 </td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftLRet">Lua return values</td>
 <td class="apiTableRightLRet"><div>
-<strong>valid</strong> (bool): true if the state is within the bounding box</div></td>
+valid (bool): true if the state is within the bounding box</div></td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftPSyn">Python synopsis</td>
@@ -1100,7 +1100,7 @@ end
 <tr class="apiTableTr">
 <td class="apiTableLeftLParam">Lua parameters</td>
 <td class="apiTableRightLParam"><div>
-<strong>taskHandle</strong> (string): a handle to a task object created with <a href="#createTask">simOMPL.createTask</a>
+taskHandle (string): a handle to a task object created with <a href="#createTask">simOMPL.createTask</a>
 </div></td>
 </tr>
 <tr class="apiTableTr">
@@ -1141,16 +1141,16 @@ end
 <td class="apiTableLeftLParam">Lua parameters</td>
 <td class="apiTableRightLParam">
 <div>
-<strong>taskHandle</strong> (string): a handle to a task object created with <a href="#createTask">simOMPL.createTask</a>
+taskHandle (string): a handle to a task object created with <a href="#createTask">simOMPL.createTask</a>
 </div>
 <div>
-<strong>state</strong> (table of float): state vector(s)</div>
+state (table of float): state vector(s)</div>
 </td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftLRet">Lua return values</td>
 <td class="apiTableRightLRet"><div>
-<strong>projection</strong> (table of float): state projection vector(s)</div></td>
+projection (table of float): state projection vector(s)</div></td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftPSyn">Python synopsis</td>
@@ -1182,12 +1182,12 @@ end
 <tr class="apiTableTr">
 <td class="apiTableLeftLParam">Lua parameters</td>
 <td class="apiTableRightLParam"><div>
-<strong>taskHandle</strong> (string): the handle of the task</div></td>
+taskHandle (string): the handle of the task</div></td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftLRet">Lua return values</td>
 <td class="apiTableRightLRet"><div>
-<strong>size</strong> (int): of the projection</div></td>
+size (int): of the projection</div></td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftPSyn">Python synopsis</td>
@@ -1219,13 +1219,13 @@ end
 <tr class="apiTableTr">
 <td class="apiTableLeftLParam">Lua parameters</td>
 <td class="apiTableRightLParam"><div>
-<strong>taskHandle</strong> (string): a handle to a task object created with <a href="#createTask">simOMPL.createTask</a>
+taskHandle (string): a handle to a task object created with <a href="#createTask">simOMPL.createTask</a>
 </div></td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftLRet">Lua return values</td>
 <td class="apiTableRightLRet"><div>
-<strong>state</strong> (table of float): state vector</div></td>
+state (table of float): state vector</div></td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftPSyn">Python synopsis</td>
@@ -1258,9 +1258,9 @@ end
 <td class="apiTableLeftLParam">Lua parameters</td>
 <td class="apiTableRightLParam">
 <div>
-<strong>taskHandle</strong> (string): handle of the task</div>
+taskHandle (string): handle of the task</div>
 <div>
-<strong>dwos</strong> (table of int): table of handles to drawing objects, as returned by the functions</div>
+dwos (table of int): table of handles to drawing objects, as returned by the functions</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -1298,10 +1298,10 @@ end
 <td class="apiTableLeftLParam">Lua parameters</td>
 <td class="apiTableRightLParam">
 <div>
-<strong>taskHandle</strong> (string): a handle to a task object created with <a href="#createTask">simOMPL.createTask</a>
+taskHandle (string): a handle to a task object created with <a href="#createTask">simOMPL.createTask</a>
 </div>
 <div>
-<strong>algorithm</strong> (int): see <a href="#enum:Algorithm">simOMPL.Algorithm</a>
+algorithm (int): see <a href="#enum:Algorithm">simOMPL.Algorithm</a>
 </div>
 </td>
 </tr>
@@ -1340,10 +1340,10 @@ end
 <td class="apiTableLeftLParam">Lua parameters</td>
 <td class="apiTableRightLParam">
 <div>
-<strong>taskHandle</strong> (string): a handle to a task object created with <a href="#createTask">simOMPL.createTask</a>
+taskHandle (string): a handle to a task object created with <a href="#createTask">simOMPL.createTask</a>
 </div>
 <div>
-<strong>collisionPairHandles</strong> (table of int): a table containing 2 entity handles for each collision pair. A collision pair is represented by a collider and a collidee, that will be tested against each other. The collider can be an object or a collection handle. The collidee can be an object or collection handle, or sim_handle_all, in which case the collider will be checked agains all other collidable objects in the scene.</div>
+collisionPairHandles (table of int): a table containing 2 entity handles for each collision pair. A collision pair is represented by a collider and a collidee, that will be tested against each other. The collider can be an object or a collection handle. The collidee can be an object or collection handle, or sim_handle_all, in which case the collider will be checked agains all other collidable objects in the scene.</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -1381,11 +1381,11 @@ end
 <td class="apiTableLeftLParam">Lua parameters</td>
 <td class="apiTableRightLParam">
 <div>
-<strong>stateSpaceHandle</strong> (string): handle to state space component</div>
+stateSpaceHandle (string): handle to state space component</div>
 <div>
-<strong>turningRadius</strong> (float): turning radius</div>
+turningRadius (float): turning radius</div>
 <div>
-<strong>isSymmetric</strong> (bool): true if it is symmetric, otherwise false</div>
+isSymmetric (bool): true if it is symmetric, otherwise false</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -1426,18 +1426,18 @@ end
 <td class="apiTableLeftLParam">Lua parameters</td>
 <td class="apiTableRightLParam">
 <div>
-<strong>taskHandle</strong> (string): a handle to a task object created with <a href="#createTask">simOMPL.createTask</a>
+taskHandle (string): a handle to a task object created with <a href="#createTask">simOMPL.createTask</a>
 </div>
 <div>
-<strong>robotDummy</strong> (int): a dummy attached to the robot</div>
+robotDummy (int): a dummy attached to the robot</div>
 <div>
-<strong>goalDummy</strong> (int): a dummy fixed in the environment, representing the goal pose/position</div>
+goalDummy (int): a dummy fixed in the environment, representing the goal pose/position</div>
 <div>
-<strong>tolerance</strong> (float, default: 0.001f): tolerated dummy-dummy distance</div>
+tolerance (float, default: 0.001f): tolerated dummy-dummy distance</div>
 <div>
-<strong>metric</strong> (table of float, default: {1.0, 1.0, 1.0, 0.1}): a metric (x,y,z,angle) used to evaluate the dummy-dummy distance</div>
+metric (table of float, default: {1.0, 1.0, 1.0, 0.1}): a metric (x,y,z,angle) used to evaluate the dummy-dummy distance</div>
 <div>
-<strong>refDummy</strong> (int, default: -1): an reference dummy, relative to which the metric will be used</div>
+refDummy (int, default: -1): an reference dummy, relative to which the metric will be used</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -1479,10 +1479,10 @@ end
 <td class="apiTableLeftLParam">Lua parameters</td>
 <td class="apiTableRightLParam">
 <div>
-<strong>taskHandle</strong> (string): a handle to a task object created with <a href="#createTask">simOMPL.createTask</a>
+taskHandle (string): a handle to a task object created with <a href="#createTask">simOMPL.createTask</a>
 </div>
 <div>
-<strong>callback</strong> (string): name of the Lua callback</div>
+callback (string): name of the Lua callback</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -1520,10 +1520,10 @@ end
 <td class="apiTableLeftLParam">Lua parameters</td>
 <td class="apiTableRightLParam">
 <div>
-<strong>taskHandle</strong> (string): a handle to a task object created with <a href="#createTask">simOMPL.createTask</a>
+taskHandle (string): a handle to a task object created with <a href="#createTask">simOMPL.createTask</a>
 </div>
 <div>
-<strong>state</strong> (table of float): a table of numbers, whose size must be consistent with the robot's state space specified in this task object</div>
+state (table of float): a table of numbers, whose size must be consistent with the robot's state space specified in this task object</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -1561,9 +1561,9 @@ end
 <td class="apiTableLeftLParam">Lua parameters</td>
 <td class="apiTableRightLParam">
 <div>
-<strong>taskHandle</strong> (string): the handle of the task</div>
+taskHandle (string): the handle of the task</div>
 <div>
-<strong>states</strong> (table, size 1..*): a table of tables, one element for each goal state</div>
+states (table, size 1..*): a table of tables, one element for each goal state</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -1603,12 +1603,12 @@ end
 <td class="apiTableLeftLParam">Lua parameters</td>
 <td class="apiTableRightLParam">
 <div>
-<strong>taskHandle</strong> (string): a handle to a task object created with <a href="#createTask">simOMPL.createTask</a>
+taskHandle (string): a handle to a task object created with <a href="#createTask">simOMPL.createTask</a>
 </div>
 <div>
-<strong>callback</strong> (string): name of the Lua callback</div>
+callback (string): name of the Lua callback</div>
 <div>
-<strong>projectionSize</strong> (int): size of the projection (usually 2 or 3)</div>
+projectionSize (int): size of the projection (usually 2 or 3)</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -1646,10 +1646,10 @@ end
 <td class="apiTableLeftLParam">Lua parameters</td>
 <td class="apiTableRightLParam">
 <div>
-<strong>taskHandle</strong> (string): a handle to a task object created with <a href="#createTask">simOMPL.createTask</a>
+taskHandle (string): a handle to a task object created with <a href="#createTask">simOMPL.createTask</a>
 </div>
 <div>
-<strong>state</strong> (table of float): a table of numbers, whose size must be consistent with the robot's state space specified in this task object</div>
+state (table of float): a table of numbers, whose size must be consistent with the robot's state space specified in this task object</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -1687,10 +1687,10 @@ end
 <td class="apiTableLeftLParam">Lua parameters</td>
 <td class="apiTableRightLParam">
 <div>
-<strong>taskHandle</strong> (string): a handle to a task object created with <a href="#createTask">simOMPL.createTask</a>
+taskHandle (string): a handle to a task object created with <a href="#createTask">simOMPL.createTask</a>
 </div>
 <div>
-<strong>stateSpaceHandles</strong> (table of string): a table of handles to state space components, created with <a href="#createStateSpace">simOMPL.createStateSpace</a>
+stateSpaceHandles (table of string): a table of handles to state space components, created with <a href="#createStateSpace">simOMPL.createStateSpace</a>
 </div>
 </td>
 </tr>
@@ -1733,10 +1733,10 @@ end
 <td class="apiTableLeftLParam">Lua parameters</td>
 <td class="apiTableRightLParam">
 <div>
-<strong>taskHandle</strong> (string): a handle to a task object created with <a href="#createTask">simOMPL.createTask</a>
+taskHandle (string): a handle to a task object created with <a href="#createTask">simOMPL.createTask</a>
 </div>
 <div>
-<strong>callback</strong> (string): name of the Lua callback</div>
+callback (string): name of the Lua callback</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -1777,10 +1777,10 @@ end
 <td class="apiTableLeftLParam">Lua parameters</td>
 <td class="apiTableRightLParam">
 <div>
-<strong>taskHandle</strong> (string): a handle to a task object created with <a href="#createTask">simOMPL.createTask</a>
+taskHandle (string): a handle to a task object created with <a href="#createTask">simOMPL.createTask</a>
 </div>
 <div>
-<strong>resolution</strong> (float): resolution of state validity checking, expressed as fraction of state space's extent</div>
+resolution (float): resolution of state validity checking, expressed as fraction of state space's extent</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -1822,12 +1822,12 @@ end
 <td class="apiTableLeftLParam">Lua parameters</td>
 <td class="apiTableRightLParam">
 <div>
-<strong>taskHandle</strong> (string): a handle to a task object created with <a href="#createTask">simOMPL.createTask</a>
+taskHandle (string): a handle to a task object created with <a href="#createTask">simOMPL.createTask</a>
 </div>
 <div>
-<strong>callback</strong> (string): the name of the Lua callback for sampling a state</div>
+callback (string): the name of the Lua callback for sampling a state</div>
 <div>
-<strong>callbackNear</strong> (string): the name of the Lua callback for sampling near a given state within the given distance</div>
+callbackNear (string): the name of the Lua callback for sampling near a given state within the given distance</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -1865,10 +1865,10 @@ end
 <td class="apiTableLeftLParam">Lua parameters</td>
 <td class="apiTableRightLParam">
 <div>
-<strong>taskHandle</strong> (string): a handle to a task object created with <a href="#createTask">simOMPL.createTask</a>
+taskHandle (string): a handle to a task object created with <a href="#createTask">simOMPL.createTask</a>
 </div>
 <div>
-<strong>verboseLevel</strong> (int): level of verbosity (positive integer), 0 to suppress any message</div>
+verboseLevel (int): level of verbosity (positive integer), 0 to suppress any message</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -1905,7 +1905,7 @@ end
 <tr class="apiTableTr">
 <td class="apiTableLeftLParam">Lua parameters</td>
 <td class="apiTableRightLParam"><div>
-<strong>taskHandle</strong> (string): a handle to a task object created with <a href="#createTask">simOMPL.createTask</a>
+taskHandle (string): a handle to a task object created with <a href="#createTask">simOMPL.createTask</a>
 </div></td>
 </tr>
 <tr class="apiTableTr">
@@ -1943,10 +1943,10 @@ end
 <td class="apiTableLeftLParam">Lua parameters</td>
 <td class="apiTableRightLParam">
 <div>
-<strong>taskHandle</strong> (string): a handle to a task object created with <a href="#createTask">simOMPL.createTask</a>
+taskHandle (string): a handle to a task object created with <a href="#createTask">simOMPL.createTask</a>
 </div>
 <div>
-<strong>maxSimplificationTime</strong> (float, default: -1.0): maximum time used for the path simplification procedure, in seconds. -1 for a default simplification procedure.</div>
+maxSimplificationTime (float, default: -1.0): maximum time used for the path simplification procedure, in seconds. -1 for a default simplification procedure.</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -1984,16 +1984,16 @@ end
 <td class="apiTableLeftLParam">Lua parameters</td>
 <td class="apiTableRightLParam">
 <div>
-<strong>taskHandle</strong> (string): a handle to a task object created with <a href="#createTask">simOMPL.createTask</a>
+taskHandle (string): a handle to a task object created with <a href="#createTask">simOMPL.createTask</a>
 </div>
 <div>
-<strong>maxTime</strong> (float): maximum time used for the path searching procedure, in seconds.</div>
+maxTime (float): maximum time used for the path searching procedure, in seconds.</div>
 </td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftLRet">Lua return values</td>
 <td class="apiTableRightLRet"><div>
-<strong>solved</strong> (bool): true if a solution is found.</div></td>
+solved (bool): true if a solution is found.</div></td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftPSyn">Python synopsis</td>
@@ -2026,18 +2026,18 @@ end
 <td class="apiTableLeftLParam">Lua parameters</td>
 <td class="apiTableRightLParam">
 <div>
-<strong>taskHandle</strong> (string): a handle to a task object created with <a href="#createTask">simOMPL.createTask</a>
+taskHandle (string): a handle to a task object created with <a href="#createTask">simOMPL.createTask</a>
 </div>
 <div>
-<strong>a</strong> (table of float): state vector</div>
+a (table of float): state vector</div>
 <div>
-<strong>b</strong> (table of float): state vector</div>
+b (table of float): state vector</div>
 </td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftLRet">Lua return values</td>
 <td class="apiTableRightLRet"><div>
-<strong>distance</strong> (float): computed distance</div></td>
+distance (float): computed distance</div></td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftPSyn">Python synopsis</td>
@@ -2070,10 +2070,10 @@ end
 <td class="apiTableLeftLParam">Lua parameters</td>
 <td class="apiTableRightLParam">
 <div>
-<strong>taskHandle</strong> (string): a handle to a task object created with <a href="#createTask">simOMPL.createTask</a>
+taskHandle (string): a handle to a task object created with <a href="#createTask">simOMPL.createTask</a>
 </div>
 <div>
-<strong>state</strong> (table of float): state vector</div>
+state (table of float): state vector</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -2101,40 +2101,40 @@ end
 <h3 class="subsectionBar">
 <a name="enum:Algorithm" id="enum:Algorithm"></a>simOMPL.Algorithm</h3>
 <table class="apiConstantsTable"><tbody><tr><td>
-<div><strong>BiTRRT</strong></div>
-<div><strong>BITstar</strong></div>
-<div><strong>BKPIECE1</strong></div>
-<div><strong>CForest</strong></div>
-<div><strong>EST</strong></div>
-<div><strong>FMT</strong></div>
-<div><strong>KPIECE1</strong></div>
-<div><strong>LazyPRM</strong></div>
-<div><strong>LazyPRMstar</strong></div>
-<div><strong>LazyRRT</strong></div>
-<div><strong>LBKPIECE1</strong></div>
-<div><strong>LBTRRT</strong></div>
-<div><strong>PDST</strong></div>
-<div><strong>PRM</strong></div>
-<div><strong>PRMstar</strong></div>
-<div><strong>RRT</strong></div>
-<div><strong>RRTConnect</strong></div>
-<div><strong>RRTstar</strong></div>
-<div><strong>SBL</strong></div>
-<div><strong>SPARS</strong></div>
-<div><strong>SPARStwo</strong></div>
-<div><strong>STRIDE</strong></div>
-<div><strong>TRRT</strong></div>
+<div>BiTRRT</div>
+<div>BITstar</div>
+<div>BKPIECE1</div>
+<div>CForest</div>
+<div>EST</div>
+<div>FMT</div>
+<div>KPIECE1</div>
+<div>LazyPRM</div>
+<div>LazyPRMstar</div>
+<div>LazyRRT</div>
+<div>LBKPIECE1</div>
+<div>LBTRRT</div>
+<div>PDST</div>
+<div>PRM</div>
+<div>PRMstar</div>
+<div>RRT</div>
+<div>RRTConnect</div>
+<div>RRTstar</div>
+<div>SBL</div>
+<div>SPARS</div>
+<div>SPARStwo</div>
+<div>STRIDE</div>
+<div>TRRT</div>
 </td></tr></tbody></table>
 <h3 class="subsectionBar">
 <a name="enum:StateSpaceType" id="enum:StateSpaceType"></a>simOMPL.StateSpaceType</h3>
 <table class="apiConstantsTable"><tbody><tr><td>
-<div><strong>position2d</strong></div>
-<div><strong>pose2d</strong></div>
-<div><strong>position3d</strong></div>
-<div><strong>pose3d</strong></div>
-<div><strong>joint_position</strong></div>
-<div><strong>dubins</strong></div>
-<div><strong>cyclic_joint_position</strong></div>
+<div>position2d</div>
+<div>pose2d</div>
+<div>position3d</div>
+<div>pose3d</div>
+<div>joint_position</div>
+<div>dubins</div>
+<div>cyclic_joint_position</div>
 </td></tr></tbody></table>
 </td></tr>
 <tr><td id="structs" class="section"></td></tr>
@@ -2158,15 +2158,15 @@ end
 <tr class="apiTableTr">
 <td class="apiTableLeftLParam">Lua parameters</td>
 <td class="apiTableRightLParam"><div>
-<strong>state</strong> (table of float): the state to test for goal satisfaction</div></td>
+state (table of float): the state to test for goal satisfaction</div></td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftLRet">Lua return values</td>
 <td class="apiTableRightLRet">
 <div>
-<strong>satisfied</strong> (bool): true if satisfied, false otherwise</div>
+satisfied (bool): true if satisfied, false otherwise</div>
 <div>
-<strong>distance</strong> (float): distance to goal, if it is known. A constant value can be returned otherwise, but the performance of the algorithm will be worse.</div>
+distance (float): distance to goal, if it is known. A constant value can be returned otherwise, but the performance of the algorithm will be worse.</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -2198,12 +2198,12 @@ end
 <tr class="apiTableTr">
 <td class="apiTableLeftLParam">Lua parameters</td>
 <td class="apiTableRightLParam"><div>
-<strong>state</strong> (table of float): the state to compute the projection for</div></td>
+state (table of float): the state to compute the projection for</div></td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftLRet">Lua return values</td>
 <td class="apiTableRightLRet"><div>
-<strong>projection</strong> (table of float): projected state, usualy of size 2 or 3, representing a point in plane or space.</div></td>
+projection (table of float): projected state, usualy of size 2 or 3, representing a point in plane or space.</div></td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftPSyn">Python synopsis</td>
@@ -2234,12 +2234,12 @@ end
 <tr class="apiTableTr">
 <td class="apiTableLeftLParam">Lua parameters</td>
 <td class="apiTableRightLParam"><div>
-<strong>state</strong> (table of float): the state to compute the projection for</div></td>
+state (table of float): the state to compute the projection for</div></td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftLRet">Lua return values</td>
 <td class="apiTableRightLRet"><div>
-<strong>valid</strong> (bool): true if valid, false otherwise</div></td>
+valid (bool): true if valid, false otherwise</div></td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftPSyn">Python synopsis</td>
@@ -2274,7 +2274,7 @@ end
 <tr class="apiTableTr">
 <td class="apiTableLeftLRet">Lua return values</td>
 <td class="apiTableRightLRet"><div>
-<strong>sampledState</strong> (table of float): a valid state</div></td>
+sampledState (table of float): a valid state</div></td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftPSyn">Python synopsis</td>
@@ -2306,15 +2306,15 @@ end
 <td class="apiTableLeftLParam">Lua parameters</td>
 <td class="apiTableRightLParam">
 <div>
-<strong>state</strong> (table of float): the center state</div>
+state (table of float): the center state</div>
 <div>
-<strong>distance</strong> (float): distance bound</div>
+distance (float): distance bound</div>
 </td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftLRet">Lua return values</td>
 <td class="apiTableRightLRet"><div>
-<strong>sampledState</strong> (table of float): a valid state</div></td>
+sampledState (table of float): a valid state</div></td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftPSyn">Python synopsis</td>

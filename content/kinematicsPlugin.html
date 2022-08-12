@@ -149,7 +149,7 @@ img.add_border {
 <h4>Kinematics Plugin</h4>
 <p>The kinematics plugin for CoppeliaSim (<em>simExtIK.dll</em> or similar) wraps the <a href="coppeliaKinematicsRoutines.html">Coppelia Kinematics Routines</a>. It exports <a href="simIK.html?view=category">several API functions</a> that can be recognized from their simIK-prefix; they allow to create, handle and solve forward/inverse kinematics tasks for any type of mechanism (redundant/non-redundant, containing nested loops, etc.) fully programmatically.</p>
 <p>Kinematics tasks can very easily be set up from the scene's content like in following example:</p>
-<code class="hljs language-lua coppelia-coppeliasim-script">
+<pre class="brush:lua;auto-links:false;toolbar:false" contenteditable="false">
 -- set-up:
 function sysCall_init()
     simBase=sim.getObject('/base')
@@ -163,9 +163,9 @@ end
 -- IK calculation, and application to the scene:
 function sysCall_actuation()
     simIK.applyIkEnvironmentToScene(ikEnv,ikGroup)
-end</code>
+end</pre>
 <p><a href="simIK.html#simIK.addIkElementFromScene">simIK.addIkElementFromScene</a> will parse the scene given a base, tip and target object, and generate an IK element appropriately, with the given constraints. <a href="simIK.html#simIK.applyIkEnvironmentToScene">simIK.applyIkEnvironmentToScene</a> on the other hand will compute IK, then apply the calculation results to the corresponding scene joints. One can of course also manually build the kinematic environment, for full control, as in following example:</p>
-<code class="hljs language-lua coppelia-coppeliasim-script">
+<pre class="brush:lua;auto-links:false;toolbar:false" contenteditable="false">
 -- set-up:
 function sysCall_init()
     simJoints={sim.getObject('/j1'),sim.getObject('/j2')}
@@ -216,7 +216,7 @@ function sysCall_actuation()
     -- apply the calculated joint values:
     sim.setJointPosition(simJoints[1],simIK.getJointPosition(ikEnv,ikJoints[1])) 
     sim.setJointPosition(simJoints[2],simIK.getJointPosition(ikEnv,ikJoints[2]))
-end</code>
+end</pre>
 <p>For examples on how to use above API functions, refer to the scenes in <em>scenes/kinematics/</em>, and make sure to inspect the attached scripts.</p>
 <br/>
 <br/>

@@ -33,10 +33,10 @@ C/C++<br>synopsis
 <tr class=apiTableTr> 
 <td class=apiTableLeftCParam>C/C++<br>parameters</td> 
 <td class=apiTableRightCParam>
-<div><strong>portHandle</strong>: the handle returned by the <a href="simSerialOpen.html">simSerialOpen</a> function</div>
-<div><strong>buffer</strong>: a buffer that will be filled with read data<br>
+<div>portHandle: the handle returned by the <a href="simSerialOpen.html">simSerialOpen</a> function</div>
+<div>buffer: a buffer that will be filled with read data<br>
 </div>
-<div><strong>dataLengthToRead</strong>: the maximum data length that should be read<br>
+<div>dataLengthToRead: the maximum data length that should be read<br>
 </div>
 <div></div></td> 
 </tr> 
@@ -58,13 +58,13 @@ Lua<br>synopsis
 <tr class=apiTableTr> 
 <td class=apiTableLeftLParam>Lua<br>parameters</td> 
 <td class=apiTableRightLParam>
-<div><strong>portHandle</strong>: the handle returned by the <a href="simSerialOpen.html">sim.serialOpen</a> function</div>
-<div><strong>dataLengthToRead</strong>: the maximum data length that should be read</div>
-<div><strong>blockingOperation</strong>: if true and the calling script is running in a thread, then the function only returns when the desired data length was read (or if the closingString was met, or if there was a timeout (see next arguments)<br>
+<div>portHandle: the handle returned by the <a href="simSerialOpen.html">sim.serialOpen</a> function</div>
+<div>dataLengthToRead: the maximum data length that should be read</div>
+<div>blockingOperation: if true and the calling script is running in a thread, then the function only returns when the desired data length was read (or if the closingString was met, or if there was a timeout (see next arguments)<br>
 </div>
-<div><strong>closingString</strong>: a string (containing any byte value) can be specified, that will break from the blocking operation if a match was found in the incoming data. Useful when you know that a data packet is always ended with a given signature. Can be an empty string for default operation.<br>
+<div>closingString: a string (containing any byte value) can be specified, that will break from the blocking operation if a match was found in the incoming data. Useful when you know that a data packet is always ended with a given signature. Can be an empty string for default operation.<br>
 </div>
-<div><strong>timeout</strong>: duration after which the blocking operation will be aborted, or 0 if the timeout is infinite.</div>
+<div>timeout: duration after which the blocking operation will be aborted, or 0 if the timeout is infinite.</div>
 <div></div>
 </td> 
 </tr> 
@@ -73,7 +73,7 @@ Lua<br>synopsis
 Lua<br>return values
 </td> 
 <td class=apiTableRightLRet>
-<div><strong>data</strong>: a string containing read data (excluding the closingString if it was specified and found)</div>
+<div>data: a string containing read data (excluding the closingString if it was specified and found)</div>
 </td> 
 </tr> 
 

@@ -181,11 +181,11 @@ Real-time simulation is supported by trying to keep the simulation time synchron
 <p>The simulation speed is adjusted in a way so that the initial simulation time step is never increased (because this might have as consequence the breaking of a mechanism for example). Following two figures illustrate the simulation speed adjustment mechanisms:<br/>
 </p>
 <p align="center"><img src="./../images/simulation6.jpg"/></p>
-<p class="imageLabel">[Simulation speed adjustment mechanism for <strong>non real-time simulations</strong>]</p>
+<p class="imageLabel">[Simulation speed adjustment mechanism for non real-time simulations]</p>
 <br/>
 <p align="center"><img src="./../images/simulation7.jpg"/></p>
-<p class="imageLabel">[Simulation speed adjustment mechanism for <strong>real-time simulations</strong>]</p>
-<p>By default, each simulation cycle is composed by following <strong>sequential</strong> operations:</p>
+<p class="imageLabel">[Simulation speed adjustment mechanism for real-time simulations]</p>
+<p>By default, each simulation cycle is composed by following sequential operations:</p>
 <li>Executing the <a href="mainScript.html">main script</a></li>
 <li>Rendering the scene</li>
 <br/>
@@ -209,7 +209,7 @@ while (t := sim.getSimulationTime()) &lt; 3:
     s = f'Simulation time: {t:.2f} [s]'
     print(s)
     client.step()
-sim.stopSimulation()</code>
+sim.stopSimulation()</pre>
 <br/>
 <br/>
 </td></tr>

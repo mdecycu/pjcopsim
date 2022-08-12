@@ -33,14 +33,14 @@ C/C++<br>synopsis
 <tr class=apiTableTr> 
 <td class=apiTableLeftCParam>C/C++<br>parameters</td> 
 <td class=apiTableRightCParam>
-<div><strong>sensorHandle</strong>: handle of the vision sensor</div>
-<div><strong>options</strong>: options, bit-coded:</div>
+<div>sensorHandle: handle of the vision sensor</div>
+<div>options: options, bit-coded:</div>
 <div class=tab>bit0 set (1): the returned image will by a greyscale image (1 byte per pixel), otherwise an RGB image</div>
 <div class=tab>bit1 set (2): the returned image will have one additional byte per pixel, as alpha channel (RGBA or greyscale+A)</div>
-<div><strong>rgbaCutOff</strong>: when an RGBA image is returned, the alpha component will be 255 for all depth values below <em>rgbaCutOff</em>, and 0 for all depth values above <em>rgbaCutOff</em>. 0 corresponds to the near clipping plane, 1 to the far clipping plane</div>
-<div><strong>pos</strong>: position of the image portion to retrieve. Can be nullptr, which defaults to {0,0}</div>
-<div><strong>size</strong>: size of the image portion to retrieve. Can be nullptr which defaults to {0,0}, which corresponds to {resolutionX,resolutionY}</div>
-<div><strong>resolution</strong>: the returned vision sensor resolution. Can be nullptr</div>
+<div>rgbaCutOff: when an RGBA image is returned, the alpha component will be 255 for all depth values below <em>rgbaCutOff</em>, and 0 for all depth values above <em>rgbaCutOff</em>. 0 corresponds to the near clipping plane, 1 to the far clipping plane</div>
+<div>pos: position of the image portion to retrieve. Can be nullptr, which defaults to {0,0}</div>
+<div>size: size of the image portion to retrieve. Can be nullptr which defaults to {0,0}, which corresponds to {resolutionX,resolutionY}</div>
+<div>resolution: the returned vision sensor resolution. Can be nullptr</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -60,13 +60,13 @@ Lua<br>synopsis
 <tr class=apiTableTr> 
 <td class=apiTableLeftLParam>Lua<br>parameters</td> 
 <td class=apiTableRightLParam>
-<div><strong>sensorHandle</strong>: handle of the vision sensor</div>
-<div><strong>options</strong>: options, bit-coded:</div>
+<div>sensorHandle: handle of the vision sensor</div>
+<div>options: options, bit-coded:</div>
 <div class=tab>bit0 set (1): the returned image will by a greyscale image (1 byte per pixel), otherwise an RGB image</div>
 <div class=tab>bit1 set (2): the returned image will have one additional byte per pixel, as alpha channel (RGBA or greyscale+A)</div>
-<div><strong>rgbaCutOff</strong>: when an RGBA image is returned, the alpha component will be 255 for all depth values below <em>rgbaCutOff</em>, and 0 for all depth values above <em>rgbaCutOff</em>. 0 corresponds to the near clipping plane, 1 to the far clipping plane</div>
-<div><strong>pos</strong>: position of the image portion to retrieve. Default is {0,0}</div>
-<div><strong>size</strong>: size of the image portion to retrieve. Default is {0,0}, which corresponds to {resolutionX,resolutionY}</div>
+<div>rgbaCutOff: when an RGBA image is returned, the alpha component will be 255 for all depth values below <em>rgbaCutOff</em>, and 0 for all depth values above <em>rgbaCutOff</em>. 0 corresponds to the near clipping plane, 1 to the far clipping plane</div>
+<div>pos: position of the image portion to retrieve. Default is {0,0}</div>
+<div>size: size of the image portion to retrieve. Default is {0,0}, which corresponds to {resolutionX,resolutionY}</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -74,8 +74,8 @@ Lua<br>synopsis
 Lua<br>return values
 </td> 
 <td class=apiTableRightLRet>
-<div><strong>image</strong>:the image buffer. Use <a href="simUnpackUInt8Table.html">sim.unpackUInt8Table</a> to obtain a table of integer values.</div>
-<div><strong>resolution</strong>: the vision sensor resolution</div>
+<div>image:the image buffer. Use <a href="simUnpackUInt8Table.html">sim.unpackUInt8Table</a> to obtain a table of integer values.</div>
+<div>resolution: the vision sensor resolution</div>
 </tr> 
 
  

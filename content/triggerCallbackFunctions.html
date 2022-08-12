@@ -151,8 +151,8 @@ img.add_border {
 <p>Some conditions apply as to the location of the trigger callback function: if a trigger callback function is present in a child script as well as in a customization script, both attached to the object triggering, then the child script will be called first, and the customization script second.</p>
 <p>A vision sensor can generate the trigger signal inside of the <a href="visionCallbackFunctions.html">vision callback function</a>. The trigger callback (if present) is then called as in following example:<br/>
 </p>
-<code class="hljs language-lua coppelia-coppeliasim-script">
-function <strong>sysCall_trigger</strong>(inData)
+<pre class="brush:lua;auto-links:false;toolbar:false" contenteditable="false">
+function sysCall_trigger(inData)
     -- We have:
     -- inData.handle : the handle of the vision sensor.
     -- inData.packedPackets : an array of data packets, packed (use sim.unpackFloatTable to unpack)
@@ -165,11 +165,11 @@ function <strong>sysCall_trigger</strong>(inData)
     outData.trigger=true
     return outData
 end
-</code>
+</pre>
 <br/>
 <p>A proximity sensor generates the trigger signal when an object is detected. The trigger callback (if present) is then called as in following example:</p>
-<code class="hljs language-lua coppelia-coppeliasim-script">
-function <strong>sysCall_trigger</strong>(inData)
+<pre class="brush:lua;auto-links:false;toolbar:false" contenteditable="false">
+function sysCall_trigger(inData)
     -- We have:
     -- inData.handle : the handle of the proximity sensor.
     -- inData.detectedObjectHandle : handle of detected object
@@ -180,15 +180,15 @@ function <strong>sysCall_trigger</strong>(inData)
     outData.trigger=true
     return outData
 end
-</code>
+</pre>
 <br/>
 <p>In Python, a trigger callback function can only be implemented via a non-threaded script, and it should be explicitly activated with a luaExec command:</p>
-<code class="hljs language-python coppelia-coppeliasim-script">
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">
 #python
 #luaExec additionalFuncs={'sysCall_trigger'}
 
-def <strong>sysCall_trigger</strong>(inData):
-    pass</code>
+def sysCall_trigger(inData):
+    pass</pre>
 <br/>
 <br/>
 </td></tr>

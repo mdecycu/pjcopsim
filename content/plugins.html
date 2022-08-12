@@ -155,7 +155,7 @@ img.add_border {
 </p>
 <code class="hljs language-c++ coppelia-coppeliasim-plugin">
 extern "C" __declspec(dllexport) unsigned char simStart(void* reserved,int reservedInt);<br/>extern "C" __declspec(dllexport) void simEnd();<br/>extern "C" __declspec(dllexport) void* simMessage(int message,int* auxiliaryData,void* customData,int* replyData);
-</code>
+</pre>
 <p>If one procedure is missing then the plugin will be unloaded and won't be operational. Refer to the <a href="userInterface.html#ConsoleWindow">console window</a> at start-up for the loading status of plugins. Following briefly describes above three entry point purpose:<br/>
 </p>
 <br/>
@@ -181,7 +181,7 @@ register custom script variables (if required) .
 <h4>
 <a name="simEnd"></a>simEnd
 </h4>
-<p>This procedure will be called one time just before the simulation loop exits. The procedure should release all resources reserved since <strong>simStart</strong> was called.<br/>
+<p>This procedure will be called one time just before the simulation loop exits. The procedure should release all resources reserved since simStart was called.<br/>
 </p>
 <br/>
 <h4>

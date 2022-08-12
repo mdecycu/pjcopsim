@@ -33,12 +33,12 @@ C/C++<br>synopsis
 <tr class=apiTableTr> 
 <td class=apiTableLeftCParam>C/C++<br>parameters</td> 
 <td class=apiTableRightCParam>
-<div><strong>path</strong>: the path, specified in row-major order, with x/y/z/qx/qy/qz/qw values for each path point.  The orientation parts for each path point are ignored if the two first bits of <strong>options</strong> are zero.</div>
-<div><strong>pathSize</strong>: the size/length of the path pointer</div>
-<div><strong>section</strong>: the extrusion profile, with x/y pairs, e.g. x1,y1,x2,y2,..,xn,yn. If the first and last pair overlap, the section is closed</div>
-<div><strong>sectionSize</strong>: the size/length of the section pointer</div>
-<div><strong>options</strong>: bit-coded: bit0-bit1: 0=upVector is <strong>upVector</strong>, 1=upVector is the x-axis of the path point frame, 2=upVector is the y-axis of the path point frame, 3=upVector is the z-axis of the path point frame. If bit2 is set (4), the path is closed.</div>
-<div><strong>upVector</strong>: a vector that identifies the up-side of the extrusion shape. Can be nullptr if the two first bits of <strong>options</strong> are non-zero.</div>
+<div>path: the path, specified in row-major order, with x/y/z/qx/qy/qz/qw values for each path point.  The orientation parts for each path point are ignored if the two first bits of options are zero.</div>
+<div>pathSize: the size/length of the path pointer</div>
+<div>section: the extrusion profile, with x/y pairs, e.g. x1,y1,x2,y2,..,xn,yn. If the first and last pair overlap, the section is closed</div>
+<div>sectionSize: the size/length of the section pointer</div>
+<div>options: bit-coded: bit0-bit1: 0=upVector is upVector, 1=upVector is the x-axis of the path point frame, 2=upVector is the y-axis of the path point frame, 3=upVector is the z-axis of the path point frame. If bit2 is set (4), the path is closed.</div>
+<div>upVector: a vector that identifies the up-side of the extrusion shape. Can be nullptr if the two first bits of options are non-zero.</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -46,7 +46,7 @@ C/C++<br>synopsis
 C/C++<br>return value
 </td> 
 <td class=apiTableRightCRet>
-<div><strong>shapeHandle</strong>: the handle of the generated shape</div>
+<div>shapeHandle: the handle of the generated shape</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 

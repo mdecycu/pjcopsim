@@ -33,16 +33,16 @@ C/C++<br>synopsis
 <tr class=apiTableTr> 
 <td class=apiTableLeftCParam>C/C++<br>parameters</td> 
 <td class=apiTableRightCParam>
-<div><strong>shapeHandle</strong>: handle of the shape</div>
-<div><strong>vertices</strong>: receives the vertices. The user is in charge of destroying the array with <a href="simReleaseBuffer.html">simReleaseBuffer</a>. See <a href="simExportMesh.html">simExportMesh</a> for a usage example.<br>
+<div>shapeHandle: handle of the shape</div>
+<div>vertices: receives the vertices. The user is in charge of destroying the array with <a href="simReleaseBuffer.html">simReleaseBuffer</a>. See <a href="simExportMesh.html">simExportMesh</a> for a usage example.<br>
 </div>
-<div><strong>verticesSize</strong>: receives the size of the vertices array. See <a href="simExportMesh.html">simExportMesh</a> for a usage example.<br>
+<div>verticesSize: receives the size of the vertices array. See <a href="simExportMesh.html">simExportMesh</a> for a usage example.<br>
 </div>
-<div><strong>indices</strong>: receives the indices. The user is in charge of destroying the array with <a href="simReleaseBuffer.html">simReleaseBuffer</a>. See <a href="simExportMesh.html">simExportMesh</a> for a usage example.<br>
+<div>indices: receives the indices. The user is in charge of destroying the array with <a href="simReleaseBuffer.html">simReleaseBuffer</a>. See <a href="simExportMesh.html">simExportMesh</a> for a usage example.<br>
 </div>
-<div><strong>indicesSize</strong>: receives the size of the indice array. See <a href="simExportMesh.html">simExportMesh</a> for a usage example.<br>
+<div>indicesSize: receives the size of the indice array. See <a href="simExportMesh.html">simExportMesh</a> for a usage example.<br>
 </div>
-<div><strong>normals</strong>: receives the normals (3 times the size of indicesSize). The user is in charge of destroying the array with <a href="simReleaseBuffer.html">simReleaseBuffer</a>. Can be nullptr.</div>
+<div>normals: receives the normals (3 times the size of indicesSize). The user is in charge of destroying the array with <a href="simReleaseBuffer.html">simReleaseBuffer</a>. Can be nullptr.</div>
 <div></div>
 </td> 
 </tr> 
@@ -64,7 +64,7 @@ Lua<br>synopsis
 <tr class=apiTableTr> 
 <td class=apiTableLeftLParam>Lua<br>parameters</td> 
 <td class=apiTableRightLParam>
-<div><strong>shapeHandle</strong>: handle of the shape. See <a href="simExportMesh.html">sim.exportMesh</a> for a usage example.</div>
+<div>shapeHandle: handle of the shape. See <a href="simExportMesh.html">sim.exportMesh</a> for a usage example.</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -72,9 +72,9 @@ Lua<br>synopsis
 Lua<br>return values
 </td> 
 <td class=apiTableRightLRet>
-<div><strong>vertices</strong>: table of vertices</div>
-<div><strong>indices</strong>: table of indices</div>
-<div><strong>normals</strong>: table of normals</div>
+<div>vertices: table of vertices</div>
+<div>indices: table of indices</div>
+<div>normals: table of normals</div>
 </td> 
 </tr> 
 

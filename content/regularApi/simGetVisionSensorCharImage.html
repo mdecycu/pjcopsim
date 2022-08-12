@@ -33,8 +33,8 @@ C/C++<br>synopsis
 <tr class=apiTableTr> 
 <td class=apiTableLeftCParam>C/C++<br>parameters</td> 
 <td class=apiTableRightCParam>
-<div><strong>sensorHandle</strong>: handle of the vision sensor.  Can be combined with <a href="../apiConstants.html#specialHandleFlags">sim.handleflag_greyscale</a> (simply add sim.handleflag_greyscale to sensorHandle), if you wish to retrieve the grey scale equivalent.</div>
-<div><strong>resolutionX/resolutionY</strong>: the returned vision sensor resolution</div>
+<div>sensorHandle: handle of the vision sensor.  Can be combined with <a href="../apiConstants.html#specialHandleFlags">sim.handleflag_greyscale</a> (simply add sim.handleflag_greyscale to sensorHandle), if you wish to retrieve the grey scale equivalent.</div>
+<div>resolutionX/resolutionY: the returned vision sensor resolution</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -55,10 +55,10 @@ Lua<br>synopsis
 <tr class=apiTableTr> 
 <td class=apiTableLeftLParam>Lua<br>parameters</td> 
 <td class=apiTableRightLParam>
-<div><strong>sensorHandle</strong>: handle of the vision sensor.   Can be combined with <a href="../apiConstants.html#specialHandleFlags">sim.handleflag_greyscale</a> (simply add sim.handleflag_greyscale to sensorHandle), if you wish to retrieve the grey scale equivalent.</div>
-<div><strong>posX / posY</strong>: position of the image portion to retrieve. Zero by default.</div>
-<div><strong>sizeX / sizeY</strong>: size of the image portion to retrieve. Zero by default, which means that the full image should be retrieved</div>
-<div><strong>rgbaCutOff</strong>: when different from zero, then an RGBA image is returned, where the alpha component will be 255 for all depth values below <em>rgbaCutOff</em>, and 0 for all depth values above <em>rgbaCutOff</em>. 0 corresponds to the near clipping plane, 1 to the far clipping plane. Zero by default.</div>
+<div>sensorHandle: handle of the vision sensor.   Can be combined with <a href="../apiConstants.html#specialHandleFlags">sim.handleflag_greyscale</a> (simply add sim.handleflag_greyscale to sensorHandle), if you wish to retrieve the grey scale equivalent.</div>
+<div>posX / posY: position of the image portion to retrieve. Zero by default.</div>
+<div>sizeX / sizeY: size of the image portion to retrieve. Zero by default, which means that the full image should be retrieved</div>
+<div>rgbaCutOff: when different from zero, then an RGBA image is returned, where the alpha component will be 255 for all depth values below <em>rgbaCutOff</em>, and 0 for all depth values above <em>rgbaCutOff</em>. 0 corresponds to the near clipping plane, 1 to the far clipping plane. Zero by default.</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -66,7 +66,7 @@ Lua<br>synopsis
 Lua<br>return values
 </td> 
 <td class=apiTableRightLRet>
-<div><strong>imageBuffer</strong>: a string containing rgb (or rgba) values (sizeX*sizeY*3 (or sizeX*sizeY*4 in case of rgba), rgb(a) values in the range 0-255). In case of a grey scale image retrieval, the image buffer will contain grey values or grey+alpha values in the range 0-255.</div></td> 
+<div>imageBuffer: a string containing rgb (or rgba) values (sizeX*sizeY*3 (or sizeX*sizeY*4 in case of rgba), rgb(a) values in the range 0-255). In case of a grey scale image retrieval, the image buffer will contain grey values or grey+alpha values in the range 0-255.</div></td> 
 </tr> 
 
  

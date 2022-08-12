@@ -140,7 +140,7 @@ Version history:
 <li>Added following API functions: <a href="regularApi/simIsDynamicallyEnabled.htm">sim.isDynamicallyEnabled</a>, <a href="regularApi/simGetJointDependency.htm">sim.getJointDependency</a>, <a href="regularApi/simChangeEntityColor.htm">sim.changeEntityColor</a> and <a href="regularApi/simRestoreEntityColor.htm">sim.restoreEntityColor</a>.</li>
 <li>Following Docker image is available for running CoppeliaSim in a container: <a href="https://github.com/CoppeliaRobotics/docker-image-coppeliasim" target="_blank">docker-image-coppeliasim</a></li>
 <li>The default scene will now pause simulation when a script error is raised.</li>
-<li>Added an additional <a href="dynamicsEngineDialog.htm#configurationMode">dynamics configuration mode</a> that performs smaller dynamics steps and/or does more calculation iterations. Went from [<strong>very accurate</strong>, <strong>accurate (default)</strong>, <strong>fast</strong>, <strong>very fast</strong>, <strong>custom</strong>] to: [<strong>very accurate</strong>, <strong>accurate</strong>, <strong>balanced (default), fast</strong>, <strong>very fast</strong>, <strong>custom</strong>].</li>
+<li>Added an additional <a href="dynamicsEngineDialog.htm#configurationMode">dynamics configuration mode</a> that performs smaller dynamics steps and/or does more calculation iterations. Went from [very accurate, accurate (default), fast, very fast, custom] to: [very accurate, accurate, balanced (default), fast, very fast, custom].</li>
 <li>The Windows installer/uninstaller can now silently operate by invoking it with following command-line arguments:<em> /silent /hide /[silent]=true</em></li>
 <br>
 <br>
@@ -499,7 +499,7 @@ Version history:
 <li>Fixed several bugs. Thanks to Renaud Detry, Daniel Lechner, Ulrich Schwesinger, Sven Knüppel, Steve Nguyen, Jonas Sperling, James Besancon, Andrew Vardy, Rodrigo Moreno Garcia, Thomas Estier, Matthias Imle, Daniel Kuhner, José Rosado, Eric Rohmer and Soner Ulun for noticing them or helping to resolve them.</li>
 <li>Improved the embedded <a href="scriptEditor.htm">script editor</a> with following new features: highlighting of all occurrences of selected word, source folding/unfolding, simple word search via the &lt;ctrl+f&gt; key.</li>
 <li>External script editors can now be customized with the data in file <em>v-rep_notepad++.zip</em>: this allows for keyword highlighting, auto-completion and call tip display.</li>
-<li>Improved the shape serialization routines, effectively reducing generated file sizes, mainly if they contain duplicate geometric content. <strong>The generated file format cannot be read by previous V-REP versions (prior to V-REP 3.1.3), so make sure to make backup copies</strong>.</li>
+<li>Improved the shape serialization routines, effectively reducing generated file sizes, mainly if they contain duplicate geometric content. The generated file format cannot be read by previous V-REP versions (prior to V-REP 3.1.3), so make sure to make backup copies.</li>
 
 <li>Added a new type of <a href="scripts.htm">embedded script</a>: <a href="customizationScripts.htm">customization scripts</a>. They are associated with <a href="objects.htm">scene objects</a> (same as <a href="childScripts.htm">child scripts</a>) and can be used to customize a simulation scene to a great extent. The main difference with child scripts is that customization scripts are running all the time, also when simulation is not running.</li>
 
@@ -508,10 +508,10 @@ Version history:
 <li>Modified  the way <a href="childScripts.htm">child scripts</a> are handled in order to make them operate in a more coherent manner:</li>
 <li class=tabTab> <a href="childScripts.htm">child scripts</a> execution is now automatically cascaded (i.e. no need to explicitely call simHandleChildScript anymore).</li>
 <li class=tabTab> child scripts are now executed in the<em> actuation</em> phase as well as in the <em>sensing</em> phase of a given simulation step: there is no distinction anymore with what previously used to be <em>sensing child scripts</em>.</li>
-<li class=tabTab> script compatibility with previous file versions is guaranteed by <strong>1)</strong> automatic child script code modification (clearly marked as such), <strong>2)</strong> automatic <a href="mainScript.htm">main script</a> replacement. This covers 99% of all situations, but it can happen that this automatic modification partly fails (e.g. when the main script was customized, or when explicitely executing a specific child script (previously marked as <em>explicit handling</em>)). In that case,<a href="http://coppeliarobotics.com/contact.html"> contact us</a> for assistance.</li>
+<li class=tabTab> script compatibility with previous file versions is guaranteed by 1) automatic child script code modification (clearly marked as such), 2) automatic <a href="mainScript.htm">main script</a> replacement. This covers 99% of all situations, but it can happen that this automatic modification partly fails (e.g. when the main script was customized, or when explicitely executing a specific child script (previously marked as <em>explicit handling</em>)). In that case,<a href="http://coppeliarobotics.com/contact.html"> contact us</a> for assistance.</li>
 
 
-<li>Improved the rendering speed. If compatibility issues arise, please <a href="http://coppeliarobotics.com/contact.html">contact us</a>, and try to disable <strong>VBO operation</strong> <a href="settings.htm#openGl">here</a>.</li>
+<li>Improved the rendering speed. If compatibility issues arise, please <a href="http://coppeliarobotics.com/contact.html">contact us</a>, and try to disable VBO operation <a href="settings.htm#openGl">here</a>.</li>
 <li>Improved the start-up time of certain simulation scenes, by adding a broad mode for collision detection, minimum distance calculation and proximity sensor detection: Oriented Bounding Box (i.e. OBB) data structures are now only computed on-the-fly and only when absolutely necessary. This can be visualized via [Menu bar --> Help --> Debug --> Visualize prepared OBB calculation structures].</li>
 <li>Added 3 new API functions: <a href="regularApi/simCopyPasteObjects.htm">sim.copyPasteObjects</a>, <a href="regularApi/simScaleObjects.htm">sim.scaleObjects</a> and <a href="regularApi/simRemoveModel.htm">sim.removeModel</a>. simCopyPasteSelectedObjects, simScaleSelectedObjects and simDeleteSelectedObjects are declared deprecated.</li>
 
@@ -725,7 +725,7 @@ Version history:
 
 
 <br><h2>V-REP V3.0.0 (January 10th 2013)</h2> 
-<li>V-REP is now <strong>open source</strong>! All source code of V-REP or any related item can be downloaded, modified and compiled. Make sure to read the <a href="licensing.htm">licensing conditions</a>.</li>
+<li>V-REP is now open source! All source code of V-REP or any related item can be downloaded, modified and compiled. Make sure to read the <a href="licensing.htm">licensing conditions</a>.</li>
 <li>V-REP comes now is several flavours:</li>
 <li class=tabTab> V-REP PRO EDU (educational version. No limitation and Free). Can be used by hobbyists, students, teachers, professors, schools and Universities. Make sure to read the <a href="licensing.htm">licensing conditions</a>.</li>
 <li class=tabTab> V-REP PRO (commercial version)</li>

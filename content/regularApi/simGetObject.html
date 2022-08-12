@@ -33,10 +33,10 @@ C/C++<br>synopsis
 <tr class=apiTableTr> 
 <td class=apiTableLeftCParam>C/C++<br>parameters</td> 
 <td class=apiTableRightCParam>
-<div><strong>objectPath</strong>: the path and alias of the object to find. See the section on <a href="../accessingSceneObjects.html">accessing scene objects</a> for details.</div>
-<div><strong>index</strong>: fetches the n-th object (zero based index) that satisfies the object path. -1 returns the first object that satisfies the object path.</div>
-<div><strong>proxy</strong>: if different from -1, specifies an object handle that identifies a hierarchy tree to search in.</div>
-<div><strong>options</strong>: bit-coded. bit0 set (i.e. 1): errors are silent.</div>
+<div>objectPath: the path and alias of the object to find. See the section on <a href="../accessingSceneObjects.html">accessing scene objects</a> for details.</div>
+<div>index: fetches the n-th object (zero based index) that satisfies the object path. -1 returns the first object that satisfies the object path.</div>
+<div>proxy: if different from -1, specifies an object handle that identifies a hierarchy tree to search in.</div>
+<div>options: bit-coded. bit0 set (i.e. 1): errors are silent.</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -56,8 +56,8 @@ Lua<br>synopsis
 <tr class=apiTableTr> 
 <td class=apiTableLeftLParam>Lua<br>parameters</td> 
 <td class=apiTableRightLParam>
-<div><strong>objectPath</strong>: the path and alias of the object to find. See the section on <a href="../accessingSceneObjects.html">accessing scene objects</a> for details.</div>
-<div><strong>options</strong>: optional table indicating how the object should be searched. {<strong>noError</strong>=true} will generate a silent error if an object was not found. {<strong>index</strong>=n} will fetch the n-th object (zero based index) that satisfies the specified objectPath. {<strong>proxy</strong>=proxyObjectHandle} allows to search the hierarchy tree of the specified proxy object.</div>
+<div>objectPath: the path and alias of the object to find. See the section on <a href="../accessingSceneObjects.html">accessing scene objects</a> for details.</div>
+<div>options: optional table indicating how the object should be searched. {noError=true} will generate a silent error if an object was not found. {index=n} will fetch the n-th object (zero based index) that satisfies the specified objectPath. {proxy=proxyObjectHandle} allows to search the hierarchy tree of the specified proxy object.</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 

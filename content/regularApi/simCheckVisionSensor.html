@@ -33,12 +33,12 @@ C/C++<br>synopsis
 <tr class=apiTableTr> 
 <td class=apiTableLeftCParam>C/C++<br>parameters</td> 
 <td class=apiTableRightCParam>
-<div><strong>sensorHandle</strong>: handle of the vision sensor object</div>
-<div><strong>entityHandle</strong>: handle of entity to detect (object or collection), or sim.handle_all to detect all detectable objects<br>
+<div>sensorHandle: handle of the vision sensor object</div>
+<div>entityHandle: handle of entity to detect (object or collection), or sim.handle_all to detect all detectable objects<br>
 </div>
-<div><strong>auxValues</strong>: by default CoppeliaSim returns one packet of 15 auxiliary values:the minimum of intensity, red, green, blue, depth value, the maximum of intensity, red, green, blue, depth value, and the average of intensity, red, green, blue, depth value. Additional packets can be appended in the <a href="../visionCallbackFunctions.html">vision callback functions</a>. AuxValues can be nullptr. The user is in charge of releasing the auxValues buffer with <a href="simReleaseBuffer.html">simReleaseBuffer</a>(*auxValues).<br>
+<div>auxValues: by default CoppeliaSim returns one packet of 15 auxiliary values:the minimum of intensity, red, green, blue, depth value, the maximum of intensity, red, green, blue, depth value, and the average of intensity, red, green, blue, depth value. Additional packets can be appended in the <a href="../visionCallbackFunctions.html">vision callback functions</a>. AuxValues can be nullptr. The user is in charge of releasing the auxValues buffer with <a href="simReleaseBuffer.html">simReleaseBuffer</a>(*auxValues).<br>
 </div>
-<div><strong>auxValuesCount</strong>: contains information about the number of auxiliary value packets and packet sizes returned in auxValues. The first value is the number of packets, the second is the size of packet1, the third is the size of packet2, etc. Can be nullptr if auxValues is also nullptr. The user is in charge of releasing the auxValuesCount buffer with <a href="simReleaseBuffer.html">simReleaseBuffer</a>(*auxValuesCount).<br>
+<div>auxValuesCount: contains information about the number of auxiliary value packets and packet sizes returned in auxValues. The first value is the number of packets, the second is the size of packet1, the third is the size of packet2, etc. Can be nullptr if auxValues is also nullptr. The user is in charge of releasing the auxValuesCount buffer with <a href="simReleaseBuffer.html">simReleaseBuffer</a>(*auxValuesCount).<br>
 </div>
 <br>
 <div>Usage example:</div>
@@ -57,7 +57,7 @@ if (simCheckVisionSensor(sensorHandle,entityHandle,&auxValues,&auxValuesCount)>=
     }
     simReleaseBuffer((char*)auxValues);
     simReleaseBuffer((char*)auxValuesCount);
-}</code>
+}</pre>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -78,8 +78,8 @@ Lua<br>synopsis
 <tr class=apiTableTr> 
 <td class=apiTableLeftLParam>Lua<br>parameters</td> 
 <td class=apiTableRightLParam>
-<div><strong>sensorHandle</strong>: handle of the vision sensor object</div>
-<div><strong>entityHandle</strong>: handle of entity to detect (object or collection), or sim.handle_all to detect all detectable objects
+<div>sensorHandle: handle of the vision sensor object</div>
+<div>entityHandle: handle of entity to detect (object or collection), or sim.handle_all to detect all detectable objects
 </div></td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -87,10 +87,10 @@ Lua<br>synopsis
 Lua<br>return values
 </td> 
 <td class=apiTableRightLRet>
-<div><strong>result</strong>: 0 (no detection) or 1 (detection)</div>
-<div><strong>auxiliaryValuePacket1</strong>: default auxiliary value packet (same as for the C-function) (values in Lua are indexed from 1, not 0!)</div>
-<div><strong>auxiliaryValuePacket2</strong>: additional auxiliary value packet (e.g. from an image processing component)</div>
-<div><strong>auxiliaryValuePacket3</strong>: etc. (the function returns as many tables as there are auxiliary value packets)</div>
+<div>result: 0 (no detection) or 1 (detection)</div>
+<div>auxiliaryValuePacket1: default auxiliary value packet (same as for the C-function) (values in Lua are indexed from 1, not 0!)</div>
+<div>auxiliaryValuePacket2: additional auxiliary value packet (e.g. from an image processing component)</div>
+<div>auxiliaryValuePacket3: etc. (the function returns as many tables as there are auxiliary value packets)</div>
 </td> 
 </tr> 
 

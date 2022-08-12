@@ -155,17 +155,17 @@ img.add_border {
 <p>We first create the  first of 3 <a href="visionSensors.html">vision sensors</a> that we will attach to the <em>bubbleRob</em> object. Select [Menu bar --&gt; Add --&gt; Vision sensor --&gt; Orthographic type]. Edit its properties, by double-clicking on the newly created vision sensor icon in the <a href="userInterface.html#SceneHierarchy">scene hierarchy</a>, and change the parameters to reflect following dialog:</p>
 <p align="center"><img src="./../images/lbubbleRobTut2.jpg"/></p>
 <br/>
-<p>The vision sensor has to be facing the ground, so select it, and in the <a href="orientationDialog.html">orientation dialog</a>, on the <strong>orientation</strong> tab,  set [180;0;0] for the <em>Alpha</em>-<em>Beta</em>-<em>Gamma</em> items.</p>
+<p>The vision sensor has to be facing the ground, so select it, and in the <a href="orientationDialog.html">orientation dialog</a>, on the orientation tab,  set [180;0;0] for the <em>Alpha</em>-<em>Beta</em>-<em>Gamma</em> items.</p>
 <p>We have several possibilities to read a vision sensor. Since our vision sensor has just one pixel and operates in an easy way, we will simply query the average intensity value of the image read by our vision sensor. For more complex cases, we could have set-up a <a href="visionCallbackFunctions.html">vision callback function</a>. Now copy and paste the vision sensor twice, and adjust its aliases to <em>eftSensor</em>, <em>middleSensor</em> and <em>rightSensor</em>. Make <em>bubbleRob</em> their parent (i.e. attach them to the<em> bubbleRob</em> object). Your sensors should now look like this in the scene hierarchy:</p>
 <p align="center"><img src="./../images/lbubbleRobTut4.jpg"/></p>
 <br/>
-<p>Let's position the sensors correctly. For that use the <a href="positionDialog.html">position dialog</a>, on the <strong>position</strong> tab, and set following absolute coordinates:</p>
+<p>Let's position the sensors correctly. For that use the <a href="positionDialog.html">position dialog</a>, on the position tab, and set following absolute coordinates:</p>
 <li>left sensor: [0.2;0.042;0.018]</li>
 <li>middle sensor: [0.2;0;0.018]</li>
 <li>right sensor: [0.2;-0.042;0.018]</li>
 <p>Now let's modify the environment. We can remove a few cylinders in front of BubbleRob. Next, we will build the <a href="paths.html">path</a> that the robot will try to follow: click [Menu bar --&gt; Add --&gt; Path --&gt; Closed]. You have several possibilities to adjust the shape of the path, by manipulating its control points: you can delete or duplicate them, and you can shift/reorient them.  Enable the <a href="objectMovement.html">object movement with the mouse</a>, and adjust the path to your liking.</p>
 <p>Once you are satisfied with the geometry of the path (you can always modify it at a later stage), open the<a href="customizationScripts.html"> customization script</a> attached to it and replace its content with:</p>
-<code class="hljs language-lua coppelia-coppeliasim-script">
+<pre class="brush:lua;auto-links:false;toolbar:false" contenteditable="false">
 path=require('path_customization')
 
 function path.shaping(path,pathIsClosed,upVector)
@@ -178,11 +178,11 @@ function path.shaping(path,pathIsClosed,upVector)
     local shape=sim.generateShapeFromPath(path,section,options,upVector)
     sim.setShapeColor(shape,nil,sim.colorcomponent_ambient_diffuse,color)
     return shape
-end</code>
-<p> Restart the customization script for the changes to take effect, then open the path's <a href="userConfigCallbackFunctions.html">user configuration dialog</a> and check the <strong>Generate extruded shape</strong> checkbox.<br/>
+end</pre>
+<p> Restart the customization script for the changes to take effect, then open the path's <a href="userConfigCallbackFunctions.html">user configuration dialog</a> and check the Generate extruded shape checkbox.<br/>
 </p>
 <p>The last step is to adjust the controller of BubbleRob, so that it will also follow the black path. Open the <a href="childScripts.html">child script</a> attached to <em>bubbleRob</em>, and replace it with following code:</p>
-<code class="hljs language-lua coppelia-coppeliasim-script">
+<pre class="brush:lua;auto-links:false;toolbar:false" contenteditable="false">
 function sysCall_init()
     bubbleRobBase=sim.getObject('.')
     leftMotor=sim.getObject("./leftMotor")
@@ -257,7 +257,7 @@ function sysCall_cleanup()
     simUI.destroy(ui)
 end 
 
-</code>
+</pre>
 <p>You can easily debug your line following vision sensors: select one, then in the scene view select [Right-click --&gt; Add --&gt; Floating view], then in the newly added floating view select [Right click --&gt; View --&gt; Associate view with selected vision sensor].
 </p>
 <br/>

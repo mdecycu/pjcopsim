@@ -153,17 +153,17 @@ img.add_border {
 <li>Reference frame: also referred to as simply <em>transformation</em> or <em>frame</em>, it represents a position and orientation in 3D space. It can be specified as a <a href="#transformation">transformation matrix</a>, a <a href="#pose">pose</a>, or as a position and orientation. A reference frame can be absolute (i.e. relative to the world frame), or relative to another reference frame.</li>
 <br/>
 <h4><a name="euler"></a>Euler angles</h4>
-<p> The <a href="http://en.wikipedia.org/wiki/Euler_angles" target="_blank">Euler angles</a> are three angles that describe a rotation, the orientation of a rigid body, or the orientation of a frame. There are twelve different conventions when talking about Euler angles. They can be grouped into <strong>Proper Euler angles</strong>, and <strong>Tait-Bryan angles</strong> where the latter represents rotations about three distinct axes. In CoppeliaSim, <strong>Tait-Bryan angles</strong> <em>alpha</em>, <em>beta</em> and <em>gamma</em> (or (a,b,g)) are used, describing a rotation composed by three elemental rotations:</p>
+<p> The <a href="http://en.wikipedia.org/wiki/Euler_angles" target="_blank">Euler angles</a> are three angles that describe a rotation, the orientation of a rigid body, or the orientation of a frame. There are twelve different conventions when talking about Euler angles. They can be grouped into Proper Euler angles, and Tait-Bryan angles where the latter represents rotations about three distinct axes. In CoppeliaSim, Tait-Bryan angles <em>alpha</em>, <em>beta</em> and <em>gamma</em> (or (a,b,g)) are used, describing a rotation composed by three elemental rotations:</p>
 <p align="center"><img src="./../images/eulerAngles.jpg"/></p>
 <p class="imageLabel">[Euler angles convention in CoppeliaSim]</p>
 <br/>
-<p>where Rz, Ry and Rx represent elemental rotations about axes Z, Y and X respectively (in that order), of the <strong>absolute</strong> reference frame.</p>
-<p>For a rigid body, or <a href="objects.html">scene object</a>, you can obtain the same transformation if you rotate it in following order about its <strong>own</strong> reference frame: rotation of <em>alpha</em> about own x, followed by a rotation of <em>beta</em> about own y, followed by a rotation of <em>gamma</em> about own z.</p>
-<p><strong>Yaw-Pitch-Roll</strong> are also <strong>Tait-Bryan angles</strong> describing a rotation composed by three elemental rotations:</p>
+<p>where Rz, Ry and Rx represent elemental rotations about axes Z, Y and X respectively (in that order), of the absolute reference frame.</p>
+<p>For a rigid body, or <a href="objects.html">scene object</a>, you can obtain the same transformation if you rotate it in following order about its own reference frame: rotation of <em>alpha</em> about own x, followed by a rotation of <em>beta</em> about own y, followed by a rotation of <em>gamma</em> about own z.</p>
+<p>Yaw-Pitch-Roll are also Tait-Bryan angles describing a rotation composed by three elemental rotations:</p>
 <p align="center"><img src="./../images/yawPitchRollAngles.jpg"/></p>
 <p class="imageLabel">[Yaw-Pitch-Roll rotations]</p>
 <br/>
-<p>where Rx, Ry and Rz represent elemental rotations about axes X, Y and Z respectively (in that order), of the <strong>absolute</strong> reference frame.</p>
+<p>where Rx, Ry and Rz represent elemental rotations about axes X, Y and Z respectively (in that order), of the absolute reference frame.</p>
 <p>Use following API functions to convert between <em>alpha-beta-gamma</em> angles and <em>yaw-pitch-roll</em> angles:</p>
 <li><a href="regularApi/simYawPitchRollToAlphaBetaGamma.html">sim.yawPitchRollToAlphaBetaGamma</a></li>
 <li><a href="regularApi/simAlphaBetaGammaToYawPitchRoll.html">sim.alphaBetaGammaToYawPitchRoll</a></li>

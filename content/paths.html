@@ -156,7 +156,7 @@ img.add_border {
 <p class="imageLabel">[User parameter icon]</p>
 <br/>
 <p>A path can also automatically generate extruded <a href="shapes.html">shapes</a>; this functionality is enabled via its user parameters, and the shape profile, color and other details can be adjusted in its <a href="customizationScripts.html">customization script</a>, which uses the API function <a href="regularApi/simGenerateShapeFromPath.html">sim.generateShapefromPath</a>: </p>
-<code class="hljs language-lua coppelia-coppeliasim-script">
+<pre class="brush:lua;auto-links:false;toolbar:false" contenteditable="false">
 function path.shaping(path,pathIsClosed,upVector)
     -- following section generates a square extrusion shape:
     local section={0.02,-0.02,0.02,0.02,-0.02,0.02,-0.02,-0.02,0.02,-0.02}
@@ -168,12 +168,12 @@ function path.shaping(path,pathIsClosed,upVector)
     local shape=sim.generateShapeFromPath(path,section,options,upVector)
     sim.setShapeColor(shape,nil,sim.colorcomponent_ambient_diffuse,color)
     return shape
-end</code>
+end</pre>
 <p align="center"><img src="./../images/squarePath.jpg"/></p>
 <p class="imageLabel">[Simple path generating an extruded square shape]</p>
 <br/>
 <p>To generate an extruded circular shape, use following code to create the section data:</p>
-<code class="hljs language-lua coppelia-coppeliasim-script">
+<pre class="brush:lua;auto-links:false;toolbar:false" contenteditable="false">
 local section={}
 local radius=0.02
 local sides=32
@@ -184,20 +184,20 @@ for i=0,sides-1,1 do
 end
 -- the section shoujld be closed (first and last points perfect overlap):
 section[#section+1]=section[1]
-section[#section+1]=section[2]</code>
+section[#section+1]=section[2]</pre>
 <p align="center"><img src="./../images/circularPath.jpg"/></p>
 <p class="imageLabel">[Simple path generating an extruded circular shape]</p>
 <br/>
 <p>Path data is stored inside of the path object, as <a href="apiFunctions.html#customDataBlocks">custom object data</a>. It can be accessed with:</p>
-<code class="hljs language-lua coppelia-coppeliasim-script">
+<pre class="brush:lua;auto-links:false;toolbar:false" contenteditable="false">
 -- control point data (each one has x,y,z,qx,qy,qz,qw (position and quaternion)):
 local ctrlPts=sim.unpackDoubleTable(sim.readCustomDataBlock(pathHandle,'PATHCTRLPTS'))
 
 -- path data (each one has x,y,z,qx,qy,qz,qw (position and quaternion)):
-local pathData=sim.unpackDoubleTable(sim.readCustomDataBlock(pathHandle,'PATH')</code>
+local pathData=sim.unpackDoubleTable(sim.readCustomDataBlock(pathHandle,'PATH')</pre>
 <br/>
 <p>Various <a href="apiFunctions.html#paths">API functions related to paths</a> are available, e.g. in order to have an object follow a path in position and orientation, one could use following script:</p>
-<code class="hljs language-lua coppelia-coppeliasim-script">
+<pre class="brush:lua;auto-links:false;toolbar:false" contenteditable="false">
 function sysCall_init()
     objectToFollowPath=sim.getObject('.')
     path=sim.getObject('/Path')
@@ -235,7 +235,7 @@ function coroutineMain()
         previousSimulationTime=t
         sim.switchThread()
     end
-end</code>
+end</pre>
 <br/>
 <br/>
 </td></tr>

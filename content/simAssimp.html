@@ -52,19 +52,19 @@ td.section { margin: 0; padding: 0; }
 <td class="apiTableLeftLParam">Lua parameters</td>
 <td class="apiTableRightLParam">
 <div>
-<strong>allVertices</strong> (table): A table containing tables of vertices (one table entry per mesh)</div>
+allVertices (table): A table containing tables of vertices (one table entry per mesh)</div>
 <div>
-<strong>allIndices</strong> (table): A table containing tables of indices (one table entry per mesh)</div>
+allIndices (table): A table containing tables of indices (one table entry per mesh)</div>
 <div>
-<strong>filename</strong> (string): The filename including its extension</div>
+filename (string): The filename including its extension</div>
 <div>
-<strong>formatId</strong> (string): see simAssimp.getExportFormat</div>
+formatId (string): see simAssimp.getExportFormat</div>
 <div>
-<strong>scaling</strong> (float, default: 1.0): The desired mesh scaling.</div>
+scaling (float, default: 1.0): The desired mesh scaling.</div>
 <div>
-<strong>upVector</strong> (int, default: sim_assimp_upvect_z): The desired up-vector (see <a href="#enum:upVector">simAssimp.upVector</a>)</div>
+upVector (int, default: sim_assimp_upvect_z): The desired up-vector (see <a href="#enum:upVector">simAssimp.upVector</a>)</div>
 <div>
-<strong>options</strong> (int, default: 0): Export flags (256=silent)</div>
+options (int, default: 0): Export flags (256=silent)</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -101,17 +101,17 @@ td.section { margin: 0; padding: 0; }
 <td class="apiTableLeftLParam">Lua parameters</td>
 <td class="apiTableRightLParam">
 <div>
-<strong>shapeHandles</strong> (table of int): The handles of the shapes to export</div>
+shapeHandles (table of int): The handles of the shapes to export</div>
 <div>
-<strong>filename</strong> (string): The filename including its extension</div>
+filename (string): The filename including its extension</div>
 <div>
-<strong>formatId</strong> (string): see simAssimp.getExportFormat</div>
+formatId (string): see simAssimp.getExportFormat</div>
 <div>
-<strong>scaling</strong> (float, default: 1.0): The desired mesh scaling.</div>
+scaling (float, default: 1.0): The desired mesh scaling.</div>
 <div>
-<strong>upVector</strong> (int, default: sim_assimp_upvect_z): The desired up-vector (see <a href="#enum:upVector">simAssimp.upVector</a>)</div>
+upVector (int, default: sim_assimp_upvect_z): The desired up-vector (see <a href="#enum:upVector">simAssimp.upVector</a>)</div>
 <div>
-<strong>options</strong> (int, default: 0): Export flags (1=drop textures, 2=ignore colors, 4=drop normals, 8=export only visible, 256=silent, 512=coordinates relative to first shape's frame)</div>
+options (int, default: 0): Export flags (1=drop textures, 2=ignore colors, 4=drop normals, 8=export only visible, 256=silent, 512=coordinates relative to first shape's frame)</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -148,9 +148,9 @@ td.section { margin: 0; padding: 0; }
 <td class="apiTableLeftLParam">Lua parameters</td>
 <td class="apiTableRightLParam">
 <div>
-<strong>filename</strong> (string): The filename (including extension) of the CAD data</div>
+filename (string): The filename (including extension) of the CAD data</div>
 <div>
-<strong>shapeHandles</strong> (table of int): The handles of the shapes to export</div>
+shapeHandles (table of int): The handles of the shapes to export</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -186,17 +186,17 @@ td.section { margin: 0; padding: 0; }
 <tr class="apiTableTr">
 <td class="apiTableLeftLParam">Lua parameters</td>
 <td class="apiTableRightLParam"><div>
-<strong>index</strong> (int): Zero-based index</div></td>
+index (int): Zero-based index</div></td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftLRet">Lua return values</td>
 <td class="apiTableRightLRet">
 <div>
-<strong>formatDescription</strong> (string): The description of the file format at the specified index, or an empty string</div>
+formatDescription (string): The description of the file format at the specified index, or an empty string</div>
 <div>
-<strong>formatExtension</strong> (string): The file extension of the file format at the specified index, or an empty string</div>
+formatExtension (string): The file extension of the file format at the specified index, or an empty string</div>
 <div>
-<strong>formatId</strong> (string): The file format ID at the specified index (needed when exporting), or an empty string</div>
+formatId (string): The file format ID at the specified index (needed when exporting), or an empty string</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -228,15 +228,15 @@ td.section { margin: 0; padding: 0; }
 <tr class="apiTableTr">
 <td class="apiTableLeftLParam">Lua parameters</td>
 <td class="apiTableRightLParam"><div>
-<strong>index</strong> (int): Zero-based index</div></td>
+index (int): Zero-based index</div></td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftLRet">Lua return values</td>
 <td class="apiTableRightLRet">
 <div>
-<strong>formatDescription</strong> (string): The description of the file format at the specified index, or an empty string</div>
+formatDescription (string): The description of the file format at the specified index, or an empty string</div>
 <div>
-<strong>formatExtension</strong> (string): The file extension of the file format at the specified index, or an empty string</div>
+formatExtension (string): The file extension of the file format at the specified index, or an empty string</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -269,22 +269,22 @@ td.section { margin: 0; padding: 0; }
 <td class="apiTableLeftLParam">Lua parameters</td>
 <td class="apiTableRightLParam">
 <div>
-<strong>filenames</strong> (string): The filenames (semicolon-separated), including their extensions</div>
+filenames (string): The filenames (semicolon-separated), including their extensions</div>
 <div>
-<strong>scaling</strong> (float, default: 0.0): The desired mesh scaling. 0.0 for automatic scaling</div>
+scaling (float, default: 0.0): The desired mesh scaling. 0.0 for automatic scaling</div>
 <div>
-<strong>upVector</strong> (int, default: sim_assimp_upvect_auto): The desired up-vector (see <a href="#enum:upVector">simAssimp.upVector</a>)</div>
+upVector (int, default: sim_assimp_upvect_auto): The desired up-vector (see <a href="#enum:upVector">simAssimp.upVector</a>)</div>
 <div>
-<strong>options</strong> (int, default: 0): Import flags (8=do not optimize meshes, 16=keep inditical vertices, 32=one mesh per file, 128=ignore up vector coded in fileformat (e.g. Collada), 256=silent)</div>
+options (int, default: 0): Import flags (8=do not optimize meshes, 16=keep inditical vertices, 32=one mesh per file, 128=ignore up vector coded in fileformat (e.g. Collada), 256=silent)</div>
 </td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftLRet">Lua return values</td>
 <td class="apiTableRightLRet">
 <div>
-<strong>allVertices</strong> (table): A table containing tables of vertices (one table entry per mesh)</div>
+allVertices (table): A table containing tables of vertices (one table entry per mesh)</div>
 <div>
-<strong>allIndices</strong> (table): A table containing tables of indices (one table entry per mesh)</div>
+allIndices (table): A table containing tables of indices (one table entry per mesh)</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -317,21 +317,21 @@ td.section { margin: 0; padding: 0; }
 <td class="apiTableLeftLParam">Lua parameters</td>
 <td class="apiTableRightLParam">
 <div>
-<strong>filenames</strong> (string): The filenames (semicolon-separated), including their extensions</div>
+filenames (string): The filenames (semicolon-separated), including their extensions</div>
 <div>
-<strong>maxTextureSize</strong> (int, default: 512): The desired maximum texture size (textures will be scaled)</div>
+maxTextureSize (int, default: 512): The desired maximum texture size (textures will be scaled)</div>
 <div>
-<strong>scaling</strong> (float, default: 0.0): The desired mesh scaling. 0.0 for automatic scaling</div>
+scaling (float, default: 0.0): The desired mesh scaling. 0.0 for automatic scaling</div>
 <div>
-<strong>upVector</strong> (int, default: sim_assimp_upvect_auto): The desired up-vector (see <a href="#enum:upVector">simAssimp.upVector</a>)</div>
+upVector (int, default: sim_assimp_upvect_auto): The desired up-vector (see <a href="#enum:upVector">simAssimp.upVector</a>)</div>
 <div>
-<strong>options</strong> (int, default: 0): Import flags (1=drop textures, 2=ignore colors, 4=ignore transparency, 8=do not optimize meshes, 16=keep identical vertices, 32=generate one shape per file, 64=shapes have aligned orientations, 128=ignore up vector coded in fileformat (e.g. Collada), 256=silent)</div>
+options (int, default: 0): Import flags (1=drop textures, 2=ignore colors, 4=ignore transparency, 8=do not optimize meshes, 16=keep identical vertices, 32=generate one shape per file, 64=shapes have aligned orientations, 128=ignore up vector coded in fileformat (e.g. Collada), 256=silent)</div>
 </td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftLRet">Lua return values</td>
 <td class="apiTableRightLRet"><div>
-<strong>shapeHandles</strong> (table of int): Handles of imported shapes</div></td>
+shapeHandles (table of int): Handles of imported shapes</div></td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftPSyn">Python synopsis</td>
@@ -362,12 +362,12 @@ td.section { margin: 0; padding: 0; }
 <tr class="apiTableTr">
 <td class="apiTableLeftLParam">Lua parameters</td>
 <td class="apiTableRightLParam"><div>
-<strong>filename</strong> (string): The filename (including extension) of the CAD data</div></td>
+filename (string): The filename (including extension) of the CAD data</div></td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftLRet">Lua return values</td>
 <td class="apiTableRightLRet"><div>
-<strong>handles</strong> (table of int): The handles of the imported shapes</div></td>
+handles (table of int): The handles of the imported shapes</div></td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftPSyn">Python synopsis</td>
@@ -390,11 +390,11 @@ td.section { margin: 0; padding: 0; }
 <a name="enum:upVector" id="enum:upVector"></a>simAssimp.upVector</h3>
 <table class="apiConstantsTable"><tbody><tr><td>
 <div>
-<strong>auto</strong>: The up vector is automatically picked</div>
+auto: The up vector is automatically picked</div>
 <div>
-<strong>z</strong>: The up vector is along the file's Z-coordinate</div>
+z: The up vector is along the file's Z-coordinate</div>
 <div>
-<strong>y</strong>: The up vector is along the file's Y-coordinate</div>
+y: The up vector is along the file's Y-coordinate</div>
 </td></tr></tbody></table>
 </td></tr>
 <tr><td id="structs" class="section"></td></tr>

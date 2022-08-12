@@ -52,16 +52,16 @@ Lua<br>synopsis
 <tr class=apiTableTr> 
 <td class=apiTableLeftLParam>Lua<br>parameters</td> 
 <td class=apiTableRightLParam>
-<div><strong>jointHandles</strong>: handles of the joints to actuate</div>
-<div><strong>flags</strong>: <a href="../apiConstants.html#RMLFunctions">RML flags</a>. -1 for default flags.</div>
-<div><strong>currentVel</strong>: the current velocity of the joints. Can be nil in which case a velocity vector of 0 is used.</div>
-<div><strong>currentAccel</strong>: the current acceleration of the joints. Can be nil in which case an acceleration vector of 0 is used.</div>
-<div><strong>maxVel</strong>: the maximum allowed velocity  of the joints</div>
-<div><strong>maxAccel</strong>: the maximum allowed acceleration  of the joints</div>
-<div><strong>maxJerk</strong>: the maximum allowed jerk  of the joints. With the RML type II plugin, the max. jerk will however always be infinite.</div>
-<div><strong>targetPos</strong>: the desired target positions of the joints</div>
-<div><strong>targetVel</strong>: the desired velocity of the joints at the target. Can be nil in which case a velocity vector of 0 is used.</div>
-<div><strong>direction</strong>: the desired rotation direction for cyclic revolute joints: 0 for the shortest distance, -x for a movement towards negative values, +x for a movement towards positive values (n=(x-1) represents the number of additional turns). Can be nil or omitted, in which case a value of 0 is used for all joints.</div>
+<div>jointHandles: handles of the joints to actuate</div>
+<div>flags: <a href="../apiConstants.html#RMLFunctions">RML flags</a>. -1 for default flags.</div>
+<div>currentVel: the current velocity of the joints. Can be nil in which case a velocity vector of 0 is used.</div>
+<div>currentAccel: the current acceleration of the joints. Can be nil in which case an acceleration vector of 0 is used.</div>
+<div>maxVel: the maximum allowed velocity  of the joints</div>
+<div>maxAccel: the maximum allowed acceleration  of the joints</div>
+<div>maxJerk: the maximum allowed jerk  of the joints. With the RML type II plugin, the max. jerk will however always be infinite.</div>
+<div>targetPos: the desired target positions of the joints</div>
+<div>targetVel: the desired velocity of the joints at the target. Can be nil in which case a velocity vector of 0 is used.</div>
+<div>direction: the desired rotation direction for cyclic revolute joints: 0 for the shortest distance, -x for a movement towards negative values, +x for a movement towards positive values (n=(x-1) represents the number of additional turns). Can be nil or omitted, in which case a value of 0 is used for all joints.</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -69,11 +69,11 @@ Lua<br>synopsis
 Lua<br>return values
 </td> 
 <td class=apiTableRightLRet>
-<div><strong>result</strong>: 1 if the function call was successful</div>
-<div><strong>newPos</strong>: the new positions of the joints</div>
-<div><strong>newVel</strong>: the new velocities of the joints</div>
-<div><strong>newAccel</strong>: the new accelerations of the joints</div>
-<div><strong>timeLeft</strong>: the time left for additional calculations in current simulation time step</div>
+<div>result: 1 if the function call was successful</div>
+<div>newPos: the new positions of the joints</div>
+<div>newVel: the new velocities of the joints</div>
+<div>newAccel: the new accelerations of the joints</div>
+<div>timeLeft: the time left for additional calculations in current simulation time step</div>
 </td> 
 </tr> 
 </table> 

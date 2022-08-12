@@ -149,23 +149,23 @@ img.add_border {
 <h4>The main script <img src="./../images/mainScript1.jpg"/></h4>
 <p>A main script is a <a href="simulationScripts.html">simulation script</a>. By default, each <a href="scenes.html">scene</a> in CoppeliaSim will have one main script. It contains the basic code that allows a <a href="simulation.html">simulation</a> to run. Without main script, a running simulation won't do anything.</p>
 <p>The main script contains a collection of <a href="callbackFunctions.html">callbacks functions</a> that are appropriately called by the system. Except for the initialization callback, all other callbacks are optional. The default main script is typically segmented in 4  callback functions: </p>
-<li>the initialization function: <strong>sysCall_init</strong>. This callback function is not optional. It will be executed one time just at the beginning of a simulation. The code is in charge of preparing a simulation, etc.<br/>
+<li>the initialization function: sysCall_init. This callback function is not optional. It will be executed one time just at the beginning of a simulation. The code is in charge of preparing a simulation, etc.<br/>
 </li>
-<li>the actuation function: <strong>sysCall_actuation</strong>. This callback function will be executed in each simulation pass. The code is in charge of handling all the actuation functionality of the simulation. One command is of particular interest: <a href="regularApi/simHandleChildScripts.html">sim.handleChildScripts</a>, which calls <a href="childScripts.html">child scripts'</a> <em>sysCall_actuation</em> callback functions. Without that commands, <a href="childScripts.html">child scripts</a> won't execute, or won't execute their actuation function, and specific <a href="models.html">model</a> functionality or behavior won't operate as intended.  <br/>
+<li>the actuation function: sysCall_actuation. This callback function will be executed in each simulation pass. The code is in charge of handling all the actuation functionality of the simulation. One command is of particular interest: <a href="regularApi/simHandleChildScripts.html">sim.handleChildScripts</a>, which calls <a href="childScripts.html">child scripts'</a> <em>sysCall_actuation</em> callback functions. Without that commands, <a href="childScripts.html">child scripts</a> won't execute, or won't execute their actuation function, and specific <a href="models.html">model</a> functionality or behavior won't operate as intended.  <br/>
 </li>
-<li>the sensing function: <strong>sysCall_sensing</strong>. This callback function will be executed in each simulation pass. The code is in charge of handling all the sensing functionality of the simulation (<a href="proximitySensors.html">proximity sensors</a>, etc.) in a generic way. One command is of particular interest:<a href="regularApi/simHandleChildScripts.html"> sim.handleChildScripts</a>, which  calls <a href="childScripts.html">child scripts'</a> <em>sysCall_sensing</em> callback functions. Without that commands, <a href="childScripts.html">child scripts</a> won't  execute their sensing function, and specific <a href="models.html">model</a> functionality or behavior won't operate as intended.<br/>
+<li>the sensing function: sysCall_sensing. This callback function will be executed in each simulation pass. The code is in charge of handling all the sensing functionality of the simulation (<a href="proximitySensors.html">proximity sensors</a>, etc.) in a generic way. One command is of particular interest:<a href="regularApi/simHandleChildScripts.html"> sim.handleChildScripts</a>, which  calls <a href="childScripts.html">child scripts'</a> <em>sysCall_sensing</em> callback functions. Without that commands, <a href="childScripts.html">child scripts</a> won't  execute their sensing function, and specific <a href="models.html">model</a> functionality or behavior won't operate as intended.<br/>
 </li>
-<li>the restoration function: <strong>sysCall_cleanup</strong>. This function will be executed one time just before a simulation ends. The code is in charge of restoring <a href="objects.html">object's</a> initial configuration, clearing sensor states, etc.<br/>
+<li>the restoration function: sysCall_cleanup. This function will be executed one time just before a simulation ends. The code is in charge of restoring <a href="objects.html">object's</a> initial configuration, clearing sensor states, etc.<br/>
 </li>
 <p>
 Following is the typical main script, slightly simplified:
 </p>
-<code class="hljs language-lua coppelia-coppeliasim-script">
-function <strong>sysCall_init</strong>()
+<pre class="brush:lua;auto-links:false;toolbar:false" contenteditable="false">
+function sysCall_init()
     -- Initialization part:
 end
 
-function <strong>sysCall_actuation</strong>()
+function sysCall_actuation()
     -- Actuation part:
     sim.handleChildScripts(sim.syscb_actuation)
     sim.handleCustomizationScripts(sim.syscb_actuation)
@@ -175,7 +175,7 @@ function <strong>sysCall_actuation</strong>()
     sim.handleDynamics(sim.getSimulationTimeStep())
 end
 
-function <strong>sysCall_sensing</strong>()
+function sysCall_sensing()
     -- Sensing part:
     sim.handleSensingStart()
     sim.handleProximitySensor(sim.handle_all_except_explicit)
@@ -186,33 +186,33 @@ function <strong>sysCall_sensing</strong>()
     sim.handleSandboxScript(sim.syscb_sensing)
 end
 
-function <strong>sysCall_cleanup</strong>()
+function sysCall_cleanup()
     -- Clean-up part:
     sim.handleChildScripts(sim.syscb_cleanup)
     sim.resetProximitySensor(sim.handle_all_except_explicit)
     sim.resetVisionSensor(sim.handle_all_except_explicit)
 end
 
-function <strong>sysCall_suspend</strong>()
+function sysCall_suspend()
     sim.handleChildScripts(sim.syscb_suspend)
     sim.handleCustomizationScripts(sim.syscb_suspend)
     sim.handleAddOnScripts(sim.syscb_suspend)
     sim.handleSandboxScript(sim.syscb_suspend)
 end
 
-function <strong>sysCall_suspended</strong>()
+function sysCall_suspended()
     sim.handleChildScripts(sim.syscb_suspended)
     sim.handleCustomizationScripts(sim.syscb_suspended)
     sim.handleAddOnScripts(sim.syscb_suspended)
     sim.handleSandboxScript(sim.syscb_suspended)
 end
 
-function <strong>sysCall_resume</strong>()
+function sysCall_resume()
     sim.handleChildScripts(sim.syscb_resume)
     sim.handleCustomizationScripts(sim.syscb_resume)
     sim.handleAddOnScripts(sim.syscb_resume)
     sim.handleSandboxScript(sim.syscb_resume)
-end</code>
+end</pre>
 <p>There are however many more <a href="callbackFunctions.html#systemCallbacks">system callback functions</a> the main script can use to react to various events.</p>
 <p>The main script is not supposed to be modified. The reason for this is following: one of CoppeliaSim's strength is that any <a href="models.html">model</a> (robot, actuator, sensor, etc) can be copied into a <a href="scenes.html">scene</a> and is immediately operational. When modifying the main script, you run the risk that models won't perform as expected anymore (e.g. if your main script lacks the command sim.handleChildScripts then all models copied into the scene won't operate at all). Another reason is that keeping a default main script allows old scenes to easily adjust for new functionality (e.g. if a new CoppeliaSim version introduces a neat command sim.doMagic(), then old scenes will automatically be updated to have that command also called in their main script).<br/>
 </p>

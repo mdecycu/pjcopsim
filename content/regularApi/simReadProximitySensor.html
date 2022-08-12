@@ -33,12 +33,12 @@ C/C++<br>synopsis
 <tr class=apiTableTr> 
 <td class=apiTableLeftCParam>C/C++<br>parameters</td> 
 <td class=apiTableRightCParam>
-<div><strong>sensorHandle</strong>: handle of a proximity sensor object</div>
-<div><strong>detectedPoint</strong>: coordinates of the closest detected point (x, y and z: detectedPoint[0]-detectedPoint[2]) relative to the sensor reference frame, and distance to the detected point (1 value: detectedPoint[3]). Can be nullptr<br>
+<div>sensorHandle: handle of a proximity sensor object</div>
+<div>detectedPoint: coordinates of the closest detected point (x, y and z: detectedPoint[0]-detectedPoint[2]) relative to the sensor reference frame, and distance to the detected point (1 value: detectedPoint[3]). Can be nullptr<br>
 </div>
-<div><strong>detectedObjectHandle</strong>: handle of the object that was detected. Can be nullptr<br>
+<div>detectedObjectHandle: handle of the object that was detected. Can be nullptr<br>
 </div>
-<div><strong>detectedSurfaceNormalVector</strong>: normal vector (normalized) of the detected surface. Relative to the sensor reference frame. Can be nullptr<br>
+<div>detectedSurfaceNormalVector: normal vector (normalized) of the detected surface. Relative to the sensor reference frame. Can be nullptr<br>
 </div>
 <div></div></td> 
 </tr> 
@@ -68,15 +68,15 @@ Lua<br>synopsis
 Lua<br>return values
 </td> 
 <td class=apiTableRightLRet>
-<div><strong>result</strong>: detection state (0 or 1), or -1 if <a href="simHandleProximitySensor.html">sim.handleProximitySensor</a> was never called, or if <a href="simResetProximitySensor.html">sim.resetProximitySensor</a> was previously called.<br>
+<div>result: detection state (0 or 1), or -1 if <a href="simHandleProximitySensor.html">sim.handleProximitySensor</a> was never called, or if <a href="simResetProximitySensor.html">sim.resetProximitySensor</a> was previously called.<br>
 </div>
-<div><strong>distance</strong>: distance to the detected point<br>
+<div>distance: distance to the detected point<br>
 </div>
-<div><strong>detectedPoint</strong>: table of 3 numbers indicating the relative coordinates of the detected point<br>
+<div>detectedPoint: table of 3 numbers indicating the relative coordinates of the detected point<br>
 </div>
-<div><strong>detectedObjectHandle</strong>: handle of the object that was detected<br>
+<div>detectedObjectHandle: handle of the object that was detected<br>
 </div>
-<div><strong>detectedSurfaceNormalVector</strong>: normal vector (normalized) of the detected surface. Relative to the sensor reference frame.<br>
+<div>detectedSurfaceNormalVector: normal vector (normalized) of the detected surface. Relative to the sensor reference frame.<br>
 </div>
 </td> 
 </tr> 

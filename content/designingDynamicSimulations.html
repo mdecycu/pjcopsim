@@ -209,18 +209,18 @@ img.add_border {
 <h4>
 <a name="pureShapes"></a>Design consideration 1
 </h4>
-<p><strong>Use pure shapes. </strong>Whenever possible, try using <a href="shapes.html">pure shapes</a> as respondable shapes: pure shapes are much more stable and faster during dynamic simulation. Instead of using the complicated triangular mesh of a robot model as respondable shape, or its slightly better convex representation, try approximating the triangular mesh with several pure shapes, then grouping them [Menu bar --&gt; Edit --&gt; Grouping/Merging --&gt; Group selected shapes] (beware that if you merge pure shapes instead of grouping them, the resulting shape will not be a pure shape anymore). Following figure illustrates a robot's hidden respondable pure shapes:<br/>
+<p>Use pure shapes. Whenever possible, try using <a href="shapes.html">pure shapes</a> as respondable shapes: pure shapes are much more stable and faster during dynamic simulation. Instead of using the complicated triangular mesh of a robot model as respondable shape, or its slightly better convex representation, try approximating the triangular mesh with several pure shapes, then grouping them [Menu bar --&gt; Edit --&gt; Grouping/Merging --&gt; Group selected shapes] (beware that if you merge pure shapes instead of grouping them, the resulting shape will not be a pure shape anymore). Following figure illustrates a robot's hidden respondable pure shapes:<br/>
 </p>
 <p align="center"><img src="./../images/dynamicsDesign10.jpg"/></p>
 <p class="imageLabel">[Dynamic robot model (left) and underlying pure non-static shapes used for dynamic simulation (right)]</p>
 <br/>
-<p>A convenient way to extract pure shapes from complex non-pure shapes, is to enter the <a href="triangleEditMode.html">triangle edit mode</a> for the complex shape, then selecting regions of interest and extracting rectangular, spherical or cylindrical pure shapes. Refer to the <strong>Extract cuboid</strong>, <strong>Extract cylinder</strong>, and <strong>Extract sphere</strong> buttons in the triangle edit mode. It is also always good practice to visualize and verify a scene's dynamic content using the dynamic content visualization toolbar button (see the <a href="#dynamicContentVisualization">design consideration 3</a>). </p>
+<p>A convenient way to extract pure shapes from complex non-pure shapes, is to enter the <a href="triangleEditMode.html">triangle edit mode</a> for the complex shape, then selecting regions of interest and extracting rectangular, spherical or cylindrical pure shapes. Refer to the Extract cuboid, Extract cylinder, and Extract sphere buttons in the triangle edit mode. It is also always good practice to visualize and verify a scene's dynamic content using the dynamic content visualization toolbar button (see the <a href="#dynamicContentVisualization">design consideration 3</a>). </p>
 <p>When a body can collide, but not constantly, or does not play a important role in the stability of a mechanism/robot, then it is not absolutely necessary to use pure shapes, and convex shapes could be a viable alternative too:</p>
 <br/>
 <h4>
 <a name="convexShapes"></a>Design consideration 2
 </h4>
-<p><strong>Use convex shapes instead of random shapes. </strong>Whenever possible, try using <a href="shapes.html">pure shapes</a> as respondable shapes (see <a href="#pureShapes">design consideration 1</a>). This is however not always easy to do, or practical (think of a torus for instance). In that case, you can generate a convex shape, or a convex decomposed shape (i.e. a simple/compound shape containing only convex meshes). Convex shapes perform faster and are more stable than random shapes (but they are still not as fast and stable as pure shapes!).</p>
+<p>Use convex shapes instead of random shapes. Whenever possible, try using <a href="shapes.html">pure shapes</a> as respondable shapes (see <a href="#pureShapes">design consideration 1</a>). This is however not always easy to do, or practical (think of a torus for instance). In that case, you can generate a convex shape, or a convex decomposed shape (i.e. a simple/compound shape containing only convex meshes). Convex shapes perform faster and are more stable than random shapes (but they are still not as fast and stable as pure shapes!).</p>
 <p>Select the shapes you wish to simplify as convex shapes, then select [Menu bar --&gt; Edit --&gt; Morph selected shapes into convex shapes...].  Refer also to the item [Menu bar --&gt; Add --&gt; Convex decomposition of selected shapes...]. Following figure illustrates a convex decomposition:<br/>
 </p>
 <p align="center"><img src="./../images/dynamicsDesign15.jpg"/></p>
@@ -229,7 +229,7 @@ img.add_border {
 <h4>
 <a name="dynamicContentVisualization"></a>Design consideration 3
 </h4>
-<p><strong>Carefully inspect the dynamic content of a scene</strong>. It can sometimes be a little bit confusing to work with hidden shapes meant to play an active role in the simulation. This is often the case with dynamically enabled shapes, joints or force sensors: indeed, they are most of the time hidden to the viewer's eye. The dynamic content can however always be inspected DURING a simulation, by activating the dynamic content visualization button: </p>
+<p>Carefully inspect the dynamic content of a scene. It can sometimes be a little bit confusing to work with hidden shapes meant to play an active role in the simulation. This is often the case with dynamically enabled shapes, joints or force sensors: indeed, they are most of the time hidden to the viewer's eye. The dynamic content can however always be inspected DURING a simulation, by activating the dynamic content visualization button: </p>
 <p align="center"><img src="./../images/dynamicContentButton.jpg"/></p>
 <p class="imageLabel">[Dynamic content visualization button]</p>
 <br/>
@@ -246,7 +246,7 @@ img.add_border {
 <h4>
 <a name="hierarchy"></a>Design consideration 4
 </h4>
-<p><strong>Use a simple hierarchical structure</strong>. When building a model that is meant to be simulated dynamically, attach all non-dynamic objects to the dynamic objects (non-static shapes and dynamically enabled joints). Above's wheeled robot model is illustrated in following figure:<br/>
+<p>Use a simple hierarchical structure. When building a model that is meant to be simulated dynamically, attach all non-dynamic objects to the dynamic objects (non-static shapes and dynamically enabled joints). Above's wheeled robot model is illustrated in following figure:<br/>
 </p>
 <p align="center"><img src="./../images/dynamicsDesign11.jpg"/></p>
 <p class="imageLabel">[Dynamic elements in a robot model]</p>
@@ -255,7 +255,7 @@ img.add_border {
 <h4>
 <a name="modelBaseSelection"></a>Design consideration 5
 </h4>
-<p><strong>Carefully chose the model base object</strong>. When building a dynamic <a href="models.html">model</a>, actually also when building a static model, always carefulls consider what role the model will be playing. Will it be used on its own? Can it be built on top of another model or object? Or can it accept other models or objects to be built on top of it? Consider following example:</p>
+<p>Carefully chose the model base object. When building a dynamic <a href="models.html">model</a>, actually also when building a static model, always carefulls consider what role the model will be playing. Will it be used on its own? Can it be built on top of another model or object? Or can it accept other models or objects to be built on top of it? Consider following example:</p>
 <p>You have created a model of a mobile robot. You have also created a model of a gripper. Clearly you want to be able to easily attach the gripper model on top of the robot model. The other way round will never make sense (attaching the robot model on top of the gripper model). You might also want to use the robot model and the gripper model on their own. Following is the view of the <a href="userInterface.html#SceneHierarchy">scene hierarchy</a> of a possible model definition:</p>
 <p align="center"><img src="./../images/dynamicsDesign12.jpg"/></p>
 <p class="imageLabel">[Example model definition of a robot and a gripper]</p>
@@ -277,46 +277,46 @@ The attachment point is a simple force sensor. Assembling the gripper model with
 <p align="center"><img src="./../images/dynamicsDesign14b.jpg"/></p>
 <p class="imageLabel">[Functional robot-gripper model assembly]</p>
 <br/>
-<p> To simplify the assembly procedure even more, you can customize the behaviour of the <a href="userInterface.html#toolbars"><em>assembling</em> toolbar button</a>, in order to automatically put the gripper onto the attachment point, with the correct relative position/orientation. For further details refer to the <a href="models.html">section on models</a> and the dialog item <strong>Assembling</strong> in the <a href="commonPropertiesDialog.html">object common properties</a>.</p>
+<p> To simplify the assembly procedure even more, you can customize the behaviour of the <a href="userInterface.html#toolbars"><em>assembling</em> toolbar button</a>, in order to automatically put the gripper onto the attachment point, with the correct relative position/orientation. For further details refer to the <a href="models.html">section on models</a> and the dialog item Assembling in the <a href="commonPropertiesDialog.html">object common properties</a>.</p>
 <br/>
 <h4>
 <a name="sizes"></a>Design consideration 6
 </h4>
-<p><strong>Use reasonable sizes</strong>. Shapes that are very long and thin, or that are too small might behave strangely (jittering, jumping). Try keeping sizes above 3 centimeters if possible. Otherwise you can adjust the internal scaling parameter in the <a href="dynamicsEngineDialog.html">dynamics engines general properties</a> dialog.</p>
+<p>Use reasonable sizes. Shapes that are very long and thin, or that are too small might behave strangely (jittering, jumping). Try keeping sizes above 3 centimeters if possible. Otherwise you can adjust the internal scaling parameter in the <a href="dynamicsEngineDialog.html">dynamics engines general properties</a> dialog.</p>
 <p>This requirement can be loosened by using a different engine, or by selecting a more precise <a href="dynamicsEngineDialog.html#configurationMode">dynamics configuration mode</a>.<br/>
 </p>
 <br/>
 <h4>
 <a name="masses"></a>Design consideration 7
 </h4>
-<p><strong>Keep masses similar and not too light</strong>. When linking two shapes with a dynamically enabled joint or a dynamically enabled force sensor, make sure the two shape's masses are not too different (m1&lt;10*m2 and m2&lt;10*m1), otherwise the joint or force sensor might be very <em>soft</em> and <em>wobbly</em> and present large positional/orientational errors (this effect can however also be used as a <em>natural damping</em> sometimes). Additionally, very low mass shapes should be avoided since they won't be able to exert very large forces onto other shapes (even if propelled by high force actuators!).</p>
+<p>Keep masses similar and not too light. When linking two shapes with a dynamically enabled joint or a dynamically enabled force sensor, make sure the two shape's masses are not too different (m1&lt;10*m2 and m2&lt;10*m1), otherwise the joint or force sensor might be very <em>soft</em> and <em>wobbly</em> and present large positional/orientational errors (this effect can however also be used as a <em>natural damping</em> sometimes). Additionally, very low mass shapes should be avoided since they won't be able to exert very large forces onto other shapes (even if propelled by high force actuators!).</p>
 <p>This requirement can be loosened by using a different engine, or by selecting a more precise <a href="dynamicsEngineDialog.html#configurationMode">dynamics configuration mode</a>.<br/>
 </p>
 <br/>
 <h4>
 <a name="inertias"></a>Design consideration 8
 </h4>
-<p><strong>Keep principal moments of inertia* relatively large</strong>. Try keeping the <em>principal moments of inertia / mass</em> (*refer to the <a href="shapeDynamicsProperties.html">shape dynamics properties</a> dialog) relatively large, otherwise mechanical chains might be difficult to control and/or might behave in a strange way.</p>
+<p>Keep principal moments of inertia* relatively large. Try keeping the <em>principal moments of inertia / mass</em> (*refer to the <a href="shapeDynamicsProperties.html">shape dynamics properties</a> dialog) relatively large, otherwise mechanical chains might be difficult to control and/or might behave in a strange way.</p>
 <p>This requirement can be loosened by using a different engine, or by selecting a more precise <a href="dynamicsEngineDialog.html#configurationMode">dynamics configuration mode</a>.<br/>
 </p>
 <br/>
 <h4>
 <a name="layers"></a>Design consideration 9
 </h4>
-<p><strong>Assign dynamic shapes to layer 9</strong>. Assign all dynamic shapes which are supposed to be hidden to layer 9 (refer to the <a href="commonPropertiesDialog.html">object common properties</a>): in CoppeliaSim, by default, all layers are visible, except for layers 9-16. When editing or testing a <a href="scenes.html">scene</a>, you can then quickly visualize all hidden  shapes in the scene by temporarily enabling layer 9 (refer also to the <a href="layerSelectionDialog.html">layer selection dialog</a>).<br/>
+<p>Assign dynamic shapes to layer 9. Assign all dynamic shapes which are supposed to be hidden to layer 9 (refer to the <a href="commonPropertiesDialog.html">object common properties</a>): in CoppeliaSim, by default, all layers are visible, except for layers 9-16. When editing or testing a <a href="scenes.html">scene</a>, you can then quickly visualize all hidden  shapes in the scene by temporarily enabling layer 9 (refer also to the <a href="layerSelectionDialog.html">layer selection dialog</a>).<br/>
 </p>
 <br/>
 <h4>
 <a name="dynamicStaticDynamic"></a>Design consideration 10
 </h4>
-<p><strong>Never have a static shape between two dynamic items</strong>. The static shape will interrupt the logical behaviour of the dynamic chain:</p>
+<p>Never have a static shape between two dynamic items. The static shape will interrupt the logical behaviour of the dynamic chain:</p>
 <p align="center"><img src="./../images/dynamicsDesign16.jpg"/></p>
 <p class="imageLabel">[Wrong and correct construction]</p>
 <br/>
 <h4>
 <a name="dynamicStaticRespondable"></a>Design consideration 11
 </h4>
-<p><strong>Never have a static respondable shape on top of a dynamic item</strong>. Static means the shape's trajectory cannot be influenced by any collision, but if at the same time it is respondable, this means that it can itself influence other shapes' trajectories via collision. The simulation result would be unpredictable.<br/>
+<p>Never have a static respondable shape on top of a dynamic item. Static means the shape's trajectory cannot be influenced by any collision, but if at the same time it is respondable, this means that it can itself influence other shapes' trajectories via collision. The simulation result would be unpredictable.<br/>
 </p>
 <br/>
 <br/>

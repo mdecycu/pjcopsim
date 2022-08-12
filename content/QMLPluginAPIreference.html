@@ -176,7 +176,7 @@ img.add_border {
 <tr class="apiTableTr">
 <td class="apiTableLeftLRet">Lua return values</td>
 <td class="apiTableRightLRet"><div>
-<strong>handle</strong> (string): qml engine handle</div></td>
+handle (string): qml engine handle</div></td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftPSyn">Python synopsis</td>
@@ -207,7 +207,7 @@ img.add_border {
 <tr class="apiTableTr">
 <td class="apiTableLeftLParam">Lua parameters</td>
 <td class="apiTableRightLParam"><div>
-<strong>handle</strong> (string): qml engine handle</div></td>
+handle (string): qml engine handle</div></td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftLRet">Lua return values</td>
@@ -245,21 +245,21 @@ data_format=sim_qml_image_data_format_rgb888)<br/>
 <td class="apiTableLeftLParam">Lua parameters</td>
 <td class="apiTableRightLParam">
 <div>
-<strong>data</strong> (string): raw image data</div>
+data (string): raw image data</div>
 <div>
-<strong>width</strong> (int): image width</div>
+width (int): image width</div>
 <div>
-<strong>height</strong> (int): image height</div>
+height (int): image height</div>
 <div>
-<strong>format</strong> (string, default: "BMP"): encoding format (must be "PNG", "JPG" or "BMP")</div>
+format (string, default: "BMP"): encoding format (must be "PNG", "JPG" or "BMP")</div>
 <div>
-<strong>data_format</strong> (int, default: sim_qml_image_data_format_rgb888): image data format (see <a href="#enum:image_data_format">simQML.image_data_format</a>)</div>
+data_format (int, default: sim_qml_image_data_format_rgb888): image data format (see <a href="#enum:image_data_format">simQML.image_data_format</a>)</div>
 </td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftLRet">Lua return values</td>
 <td class="apiTableRightLRet"><div>
-<strong>dataURL</strong> (string): data URL</div></td>
+dataURL (string): data URL</div></td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftPSyn">Python synopsis</td>
@@ -293,9 +293,9 @@ data_format=sim_qml_image_data_format_rgb888)<br/>
 <td class="apiTableLeftLParam">Lua parameters</td>
 <td class="apiTableRightLParam">
 <div>
-<strong>engineHandle</strong> (string): qml engine handle</div>
+engineHandle (string): qml engine handle</div>
 <div>
-<strong>filename</strong> (string): qml file path</div>
+filename (string): qml file path</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -332,11 +332,11 @@ data_format=sim_qml_image_data_format_rgb888)<br/>
 <td class="apiTableLeftLParam">Lua parameters</td>
 <td class="apiTableRightLParam">
 <div>
-<strong>engineHandle</strong> (string): qml engine handle</div>
+engineHandle (string): qml engine handle</div>
 <div>
-<strong>data</strong> (string): qml data</div>
+data (string): qml data</div>
 <div>
-<strong>basepath</strong> (string, default: ""): base path for imports</div>
+basepath (string, default: ""): base path for imports</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -373,11 +373,11 @@ data_format=sim_qml_image_data_format_rgb888)<br/>
 <td class="apiTableLeftLParam">Lua parameters</td>
 <td class="apiTableRightLParam">
 <div>
-<strong>engine</strong> (string): the handle of the QML engine</div>
+engine (string): the handle of the QML engine</div>
 <div>
-<strong>name</strong> (string): the name of the event</div>
+name (string): the name of the event</div>
 <div>
-<strong>data</strong> (table): the object payload</div>
+data (table): the object payload</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -403,7 +403,7 @@ data_format=sim_qml_image_data_format_rgb888)<br/>
 <td class="apiTableLeftDescr">
                                                     Description
                                                 </td>
-<td class="apiTableRightDescr">Send an event to QML. In order to receive events in QML, a <code class="code-inline hljs lua">CoppeliaSimBridge</code> object must be created, and its <code class="code-inline hljs lua">onEventReceived(name, data)</code> handler must be implemented.<br/><br/><strong>Predefined events sent by the plugin:</strong> when the scene is switched, an event with name <code class="code-inline hljs lua"><span class="hljs-string">"onInstanceSwitch"</span></code> and data consisting of a single boolean JSON-serialized value, which will be <code class="code-inline hljs lua"><span class="hljs-literal">true</span></code> when the QML component's scene becomes active, and <code class="code-inline hljs lua"><span class="hljs-literal">false</span></code> when it becomes inactive.</td>
+<td class="apiTableRightDescr">Send an event to QML. In order to receive events in QML, a <code class="code-inline hljs lua">CoppeliaSimBridge</pre> object must be created, and its <code class="code-inline hljs lua">onEventReceived(name, data)</pre> handler must be implemented.<br/><br/>Predefined events sent by the plugin: when the scene is switched, an event with name <code class="code-inline hljs lua"><span class="hljs-string">"onInstanceSwitch"</span></pre> and data consisting of a single boolean JSON-serialized value, which will be <code class="code-inline hljs lua"><span class="hljs-literal">true</span></pre> when the QML component's scene becomes active, and <code class="code-inline hljs lua"><span class="hljs-literal">false</span></pre> when it becomes inactive.</td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftLSyn">Lua synopsis</td>
@@ -414,11 +414,11 @@ data_format=sim_qml_image_data_format_rgb888)<br/>
 <td class="apiTableLeftLParam">Lua parameters</td>
 <td class="apiTableRightLParam">
 <div>
-<strong>engineHandle</strong> (string): qml engine handle</div>
+engineHandle (string): qml engine handle</div>
 <div>
-<strong>eventName</strong> (string): event name</div>
+eventName (string): event name</div>
 <div>
-<strong>eventData</strong> (string): event data</div>
+eventData (string): event data</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -455,9 +455,9 @@ data_format=sim_qml_image_data_format_rgb888)<br/>
 <td class="apiTableLeftLParam">Lua parameters</td>
 <td class="apiTableRightLParam">
 <div>
-<strong>engine</strong> (string): the handle of the QML engine</div>
+engine (string): the handle of the QML engine</div>
 <div>
-<strong>funcName</strong> (string): the name of the function, called with args (engineHandle,eventName,eventData)</div>
+funcName (string): the name of the function, called with args (engineHandle,eventName,eventData)</div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -483,7 +483,7 @@ data_format=sim_qml_image_data_format_rgb888)<br/>
 <td class="apiTableLeftDescr">
                                                     Description
                                                 </td>
-<td class="apiTableRightDescr">Set the event handler to receive events from QML. In order to send events in QML, a <code class="code-inline hljs lua">CoppeliaSimBridge</code> object must be created, and its <code class="code-inline hljs lua">sendEvent(name, data)</code> method must be called.<br/><br/>For information about receiving events in QML, see <a href="#sendEvent">simQML.sendEvent</a>.</td>
+<td class="apiTableRightDescr">Set the event handler to receive events from QML. In order to send events in QML, a <code class="code-inline hljs lua">CoppeliaSimBridge</pre> object must be created, and its <code class="code-inline hljs lua">sendEvent(name, data)</pre> method must be called.<br/><br/>For information about receiving events in QML, see <a href="#sendEvent">simQML.sendEvent</a>.</td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftLSyn">Lua synopsis</td>
@@ -494,9 +494,9 @@ data_format=sim_qml_image_data_format_rgb888)<br/>
 <td class="apiTableLeftLParam">Lua parameters</td>
 <td class="apiTableRightLParam">
 <div>
-<strong>engineHandle</strong> (string): qml engine handle</div>
+engineHandle (string): qml engine handle</div>
 <div>
-<strong>functionName</strong> (string): function name to be called when event is received: see <a href="#scriptfun:onEventReceived">onEventReceived</a>
+functionName (string): function name to be called when event is received: see <a href="#scriptfun:onEventReceived">onEventReceived</a>
 </div>
 </td>
 </tr>
@@ -524,12 +524,12 @@ data_format=sim_qml_image_data_format_rgb888)<br/>
 <br/>
 <a id="enum:image_data_format" name="enum:image_data_format"></a>simQML.image_data_format
 <table class="apiConstantsTable"><tbody><tr><td>
-<div><strong>gray8</strong></div>
-<div><strong>rgb888</strong></div>
-<div><strong>bgr888</strong></div>
-<div><strong>rgbx8888</strong></div>
-<div><strong>rgb32</strong></div>
-<div><strong>argb32</strong></div>
+<div>gray8</div>
+<div>rgb888</div>
+<div>bgr888</div>
+<div>rgbx8888</div>
+<div>rgb32</div>
+<div>argb32</div>
 </td></tr></tbody></table>
 </td></tr>
 <tr><td class="section" id="structs" style="display: none;"></td></tr>
@@ -554,11 +554,11 @@ data_format=sim_qml_image_data_format_rgb888)<br/>
 <td class="apiTableLeftLParam">Lua parameters</td>
 <td class="apiTableRightLParam">
 <div>
-<strong>engineHandle</strong> (string): qml engine handle</div>
+engineHandle (string): qml engine handle</div>
 <div>
-<strong>eventName</strong> (string): event name</div>
+eventName (string): event name</div>
 <div>
-<strong>eventData</strong> (string): event data</div>
+eventData (string): event data</div>
 </td>
 </tr>
 <tr class="apiTableTr">

@@ -31,7 +31,7 @@
 
 <p>As an example, a <a href="visionSensors.htm">vision sensor</a> publisher could look like:</p>
 
-<code class="hljs language-lua coppelia-coppeliasim-script">
+<pre class="brush:lua;auto-links:false;toolbar:false" contenteditable="false">
 function sysCall_init()
     visionSensor=sim.getObject('/Vision_sensor')
 
@@ -53,11 +53,11 @@ function sysCall_cleanup()
         simB0.publisherDestroy(pub)
         simB0.nodeDestroy(b0Node)
     end
-end</code>
+end</pre>
 
 <p>The subscriber on the other hand could look like:</p>
 
-<code class="hljs language-lua coppelia-coppeliasim-script">
+<pre class="brush:lua;auto-links:false;toolbar:false" contenteditable="false">
 function sysCall_init()
     -- Enable an image subscriber:
     b0Node=simB0.nodeCreate('b0Node')
@@ -79,7 +79,7 @@ function sysCall_cleanup()
         simB0.subscriberDestroy(sub)
         simB0.nodeDestroy(b0Node)
     end
-end</code>
+end</pre>
 
 
 <p>Have a look at following simulation scene for a quick start with the BlueZero interface:</p>

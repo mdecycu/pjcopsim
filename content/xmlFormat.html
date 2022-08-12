@@ -148,11 +148,11 @@ img.add_border {
 <p><a href="../index.html" target="_top"><img src="./../images/homeImg.png"/></a></p>
 <h4>XML formats</h4>
 <p>CoppeliaSim supports two different XML formats, where each follow a different goal:</p>
-<li>an <strong>exhaustive format</strong>: the exhaustive format is a  lossless format, which means that all scene or model information will be same between a save and load operation. The drawback is however that the file should not be manually modified, since the risk of corrupting it is high. This format is ideal for version control for example.</li>
-<li>a <strong>simple format</strong>: the simple format is a  lossy format, which means that not all information contained in a scene or model will be saved, only a subset of it. The advantage is however that it can be manually created and/or modified. This format is ideal for creating initial models, or for creating CoppeliaSim exporters in different applications.</li>
+<li>an exhaustive format: the exhaustive format is a  lossless format, which means that all scene or model information will be same between a save and load operation. The drawback is however that the file should not be manually modified, since the risk of corrupting it is high. This format is ideal for version control for example.</li>
+<li>a simple format: the simple format is a  lossy format, which means that not all information contained in a scene or model will be saved, only a subset of it. The advantage is however that it can be manually created and/or modified. This format is ideal for creating initial models, or for creating CoppeliaSim exporters in different applications.</li>
 <p>Both formats have two variables (defined in file <em>system/usrset.txt</em>) allowing to control the output XML file:</p>
-<li><em><strong>xmlExportSplitSize</strong></em>: represents the subset data size threshold where data will be referenced and written to a separate file. Set to 0 if you wish to create a single file.</li>
-<li><em><strong>xmlExportKnownFormats</strong></em>: if <em>true</em>, and the export generates several files, then the <em>png</em> format for images, and the <em>dae</em> format for meshs are used. The <em>dae</em> format is however only supported with the simple xml format.</li>
+<li><em>xmlExportSplitSize</em>: represents the subset data size threshold where data will be referenced and written to a separate file. Set to 0 if you wish to create a single file.</li>
+<li><em>xmlExportKnownFormats</em>: if <em>true</em>, and the export generates several files, then the <em>png</em> format for images, and the <em>dae</em> format for meshs are used. The <em>dae</em> format is however only supported with the simple xml format.</li>
 <p>The exhaustive format will not be discussed further here. Refer to the generated files for additional information.</p>
 <h4>
 <a name="simpleFormat"></a>Simple XML format
@@ -178,7 +178,7 @@ img.add_border {
   &lt;/common&gt;
   &lt;childScript&gt;<br/>    ... <font color="green">(refer to generated files for details)</font><br/>    &lt;scriptText&gt;&lt;![CDATA[<br/>      function sysCall_init()<br/>        print('From child script: Hello world!')<br/>      end<br/>    ]]&gt;&lt;/scriptText&gt;<br/>  &lt;/childScript&gt;<br/>  &lt;customizationScript&gt;<br/>    ... <font color="green">(refer to generated files for details)</font><br/>    &lt;scriptText&gt;&lt;![CDATA[<br/>      function sysCall_init()<br/>        print('From customization script: Hello world!')<br/>      end<br/>    ]]&gt;&lt;/scriptText&gt;<br/>  &lt;/customizationScript&gt;<br/>  ... <font color="green">(refer to generated files for details)</font>
 &lt;/camera&gt;<br/>...</pre>
-<p>Shapes require a bit more explanations. Here a <strong>pure cuboid</strong>, i.e. a primitive shape:</p>
+<p>Shapes require a bit more explanations. Here a pure cuboid, i.e. a primitive shape:</p>
 <pre class="lightGreyBox">
 &lt;shape&gt;<br/>  &lt;common&gt;<br/>    ... <font color="green">(refer to generated files for details)</font>
   &lt;/common&gt;<br/>  <font color="red">&lt;primitive&gt;</font> <font color="green">(should be compound, primitive, heightfield or mesh)</font><br/>    <font color="red">&lt;type&gt;cuboid&lt;/type&gt;</font> <font color="green">(should be cuboid, sphere, cylinder, cone, plane or disc)</font><br/>    &lt;size&gt;0.100000 0.100000 0.100000&lt;/size&gt;
@@ -186,7 +186,7 @@ img.add_border {
     ... <font color="green">(refer to generated files for details)</font>
   <font color="red">&lt;/primitive&gt;</font><br/>  &lt;dynamics&gt;<br/>    ... <font color="green">(see further below for details)</font>
   &lt;/dynamics&gt;<br/>&lt;/shape&gt;</pre>
-<p>Here a <strong>mesh</strong>, referencing an external file:</p>
+<p>Here a mesh, referencing an external file:</p>
 <pre class="lightGreyBox">
 &lt;shape&gt;<br/>  &lt;common&gt;<br/>    ... <font color="green">(refer to generated files for details)</font>
   &lt;/common&gt;<br/>  <font color="red">&lt;mesh&gt;</font> <font color="green">(should be compound, primitive, heightfield or mesh)</font><br/>    <font color="red">&lt;fileName&gt;test.simscene_mesh_Cuboid0.dae&lt;/fileName&gt;</font> <font color="green">(or vertices and indices)</font>
@@ -194,7 +194,7 @@ img.add_border {
     ... <font color="green">(refer to generated files for details)</font>
   <font color="red">&lt;/mesh&gt;</font><br/>  &lt;dynamics&gt;<br/>    ... <font color="green">(see further below for details)</font>
   &lt;/dynamics&gt;<br/>&lt;/shape&gt;</pre>
-<p>Here a <strong>mesh</strong>, with inlined mesh data:</p>
+<p>Here a mesh, with inlined mesh data:</p>
 <pre class="lightGreyBox">
 &lt;shape&gt;<br/>  &lt;common&gt;<br/>    ... <font color="green">(refer to generated files for details)</font>
   &lt;/common&gt;<br/>  <font color="red">&lt;mesh&gt;</font> <font color="green">(should be compound, primitive, heightfield or mesh)</font>
@@ -204,7 +204,7 @@ img.add_border {
     ... <font color="green">(refer to generated files for details)</font>
   <font color="red">&lt;/mesh&gt;</font><br/>  &lt;dynamics&gt;<br/>    ... <font color="green">(see further below for details)</font>
   &lt;/dynamics&gt;<br/>&lt;/shape&gt;</pre>
-<p>Here a <strong>heightfield</strong>:</p>
+<p>Here a heightfield:</p>
 <pre class="lightGreyBox">
 &lt;shape&gt;<br/>  &lt;common&gt;<br/>    ... <font color="green">(refer to generated files for details)</font>
   &lt;/common&gt;<br/>  <font color="red">&lt;heightfield&gt;</font> <font color="green">(should be compound, primitive, heightfield or mesh)</font>
@@ -215,7 +215,7 @@ img.add_border {
     ... <font color="green">(refer to generated files for details)</font>
   <font color="red">&lt;/heightfield&gt;</font><br/>  &lt;dynamics&gt;<br/>    ... <font color="green">(see further below for details)</font>
   &lt;/dynamics&gt;<br/>&lt;/shape&gt;</pre>
-<p>And here a <strong>compound</strong>:</p>
+<p>And here a compound:</p>
 <pre class="lightGreyBox">
 &lt;shape&gt;<br/>  &lt;common&gt;<br/>    ... <font color="green">(refer to generated files for details)</font>
   &lt;/common&gt;<br/>  <font color="red">&lt;compound&gt;</font> <font color="green">(should contain at least 2 of any of compound, primitive or mesh)</font>

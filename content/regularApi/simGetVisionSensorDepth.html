@@ -33,12 +33,12 @@ C/C++<br>synopsis
 <tr class=apiTableTr> 
 <td class=apiTableLeftCParam>C/C++<br>parameters</td> 
 <td class=apiTableRightCParam>
-<div><strong>sensorHandle</strong>: handle of the vision sensor</div>
-<div><strong>options</strong>: options, bit-coded:</div>
+<div>sensorHandle: handle of the vision sensor</div>
+<div>options: options, bit-coded:</div>
 <div class=tab>bit0 set (1): the returned values indicate distances in meters, otherwise return values are in the range of 0-1 (0=closest to sensor (i.e. close clipping plane), 1=farthest from sensor (i.e. far clipping plane))</div>
-<div><strong>pos</strong>: position of the depth buffer portion to retrieve. Can be nullptr, which defaults to {0,0}</div>
-<div><strong>size</strong>: size of the depth buffer portion to retrieve. Can be nullptr, which defaults to {0,0}, which corresponds to {resolutionX,resolutionY}</div>
-<div><strong>resolution</strong>: the returned vision sensor resolution. Can be nullptr</div>
+<div>pos: position of the depth buffer portion to retrieve. Can be nullptr, which defaults to {0,0}</div>
+<div>size: size of the depth buffer portion to retrieve. Can be nullptr, which defaults to {0,0}, which corresponds to {resolutionX,resolutionY}</div>
+<div>resolution: the returned vision sensor resolution. Can be nullptr</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -59,11 +59,11 @@ Lua<br>synopsis
 <tr class=apiTableTr> 
 <td class=apiTableLeftLParam>Lua<br>parameters</td> 
 <td class=apiTableRightLParam>
-<div><strong>sensorHandle</strong>: handle of the vision sensor</div>
-<div><strong>options</strong>: options, bit-coded:</div>
+<div>sensorHandle: handle of the vision sensor</div>
+<div>options: options, bit-coded:</div>
 <div class=tab>bit0 set (1): the returned values indicate distances in meters, otherwise return values are in the range of 0-1 (0=closest to sensor (i.e. close clipping plane), 1=farthest from sensor (i.e. far clipping plane))</div>
-<div><strong>pos</strong>: position of the depth buffer portion to retrieve. Defaults to {0,0}</div>
-<div><strong>size</strong>: size of the depth buffer portion to retrieve. Defaults to {0,0}, which corresponds to {resolutionX,resolutionY}</div>
+<div>pos: position of the depth buffer portion to retrieve. Defaults to {0,0}</div>
+<div>size: size of the depth buffer portion to retrieve. Defaults to {0,0}, which corresponds to {resolutionX,resolutionY}</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -71,7 +71,7 @@ Lua<br>synopsis
 Lua<br>return values
 </td> 
 <td class=apiTableRightLRet>
-<div><strong>depth</strong>: the depth buffer. Use <a href="simUnpackFloatTable.html">sim.unpackFloatTable</a> to obtain a table of float values</div></td> 
+<div>depth: the depth buffer. Use <a href="simUnpackFloatTable.html">sim.unpackFloatTable</a> to obtain a table of float values</div></td> 
 </tr> 
 
  

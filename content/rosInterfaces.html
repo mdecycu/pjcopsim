@@ -153,7 +153,7 @@ img.add_border {
 <li>ROS interfaces developed by others: those are not directly supported by us. For instance, the <a href="http://wiki.ros.org/vrep_ros_bridge">CoppeliaSim ROS bridge</a>.</li>
 <p>All ROS interfaces can normally operate side-by-side, but we highly recommend you to first try your hands on the <a href="rosInterf.html">ROS Interface</a>, since this is the most flexible and natural approach. The packages to the first two above listed ROS interfaces are located <a href="https://github.com/CoppeliaRobotics/simExtROS" target="_blank">here</a> and <a href="https://github.com/CoppeliaRobotics/sim_plugin_skeleton" target="_blank">here</a>. Use the <a href="http://catkin-tools.readthedocs.io/en/latest/">catkin tools</a> to build those packages, otherwise you might run into difficulties.</p>
 <p>As an example, a <a href="visionSensors.html">vision sensor</a> ROS2 publisher could look like:</p>
-<code class="hljs language-lua coppelia-coppeliasim-script">
+<pre class="brush:lua;auto-links:false;toolbar:false" contenteditable="false">
 function sysCall_init()
     visionSensor=sim.getObject('/Vision_sensor')
 
@@ -178,9 +178,9 @@ end
 
 function sysCall_cleanup()
     simROS2.shutdownPublisher(pub)
-end</code>
+end</pre>
 <p>The subscriber on the other hand could look like:</p>
-<code class="hljs language-lua coppelia-coppeliasim-script">
+<pre class="brush:lua;auto-links:false;toolbar:false" contenteditable="false">
 function sysCall_init()
     -- Enable an image subscriber:
     sub=simROS2.createSubscription('/image', 'sensor_msgs/msg/Image', 'image_callback')
@@ -193,7 +193,7 @@ end
 
 function sysCall_cleanup()
     simROS2.shutdownSubscription(sub)
-end</code>
+end</pre>
 <br/>
 <p>Also have a look at the <a href="rosTutorial.html">ROS tutorial</a> and the <a href="externalControllerTutorial.html">external controller tutorial</a>.</p>
 <br/>

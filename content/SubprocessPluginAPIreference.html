@@ -169,13 +169,13 @@ img.add_border {
 <td class="apiTableLeftLParam">Lua parameters</td>
 <td class="apiTableRightLParam">
 <div>
-<strong>programPath</strong> (string): Program path.</div>
+programPath (string): Program path.</div>
 <div>
-<strong>args</strong> (table of string): Program arguments.</div>
+args (table of string): Program arguments.</div>
 <div>
-<strong>input</strong> (string, default: ""): Data passed to stdin.</div>
+input (string, default: ""): Data passed to stdin.</div>
 <div>
-<strong>opts</strong> (exec_opts, default: {}): Options. see <a href="#struct:exec_opts">exec_opts</a>
+opts (exec_opts, default: {}): Options. see <a href="#struct:exec_opts">exec_opts</a>
 </div>
 </td>
 </tr>
@@ -183,9 +183,9 @@ img.add_border {
 <td class="apiTableLeftLRet">Lua return values</td>
 <td class="apiTableRightLRet">
 <div>
-<strong>exitCode</strong> (int): </div>
+exitCode (int): </div>
 <div>
-<strong>output</strong> (string): </div>
+output (string): </div>
 </td>
 </tr>
 <tr class="apiTableTr">
@@ -218,18 +218,18 @@ img.add_border {
 <td class="apiTableLeftLParam">Lua parameters</td>
 <td class="apiTableRightLParam">
 <div>
-<strong>programPath</strong> (string): Program path.</div>
+programPath (string): Program path.</div>
 <div>
-<strong>args</strong> (table of string): Program arguments.</div>
+args (table of string): Program arguments.</div>
 <div>
-<strong>opts</strong> (exec_opts, default: {}): Options. see <a href="#struct:exec_opts">exec_opts</a>
+opts (exec_opts, default: {}): Options. see <a href="#struct:exec_opts">exec_opts</a>
 </div>
 </td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftLRet">Lua return values</td>
 <td class="apiTableRightLRet"><div>
-<strong>handle</strong> (string): </div></td>
+handle (string): </div></td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftPSyn">Python synopsis</td>
@@ -260,12 +260,12 @@ img.add_border {
 <tr class="apiTableTr">
 <td class="apiTableLeftLParam">Lua parameters</td>
 <td class="apiTableRightLParam"><div>
-<strong>handle</strong> (string): </div></td>
+handle (string): </div></td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftLRet">Lua return values</td>
 <td class="apiTableRightLRet"><div>
-<strong>running</strong> (bool): </div></td>
+running (bool): </div></td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftPSyn">Python synopsis</td>
@@ -296,12 +296,12 @@ img.add_border {
 <tr class="apiTableTr">
 <td class="apiTableLeftLParam">Lua parameters</td>
 <td class="apiTableRightLParam"><div>
-<strong>handle</strong> (string): </div></td>
+handle (string): </div></td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftLRet">Lua return values</td>
 <td class="apiTableRightLRet"><div>
-<strong>exitCode</strong> (int): </div></td>
+exitCode (int): </div></td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftPSyn">Python synopsis</td>
@@ -333,15 +333,15 @@ img.add_border {
 <td class="apiTableLeftLParam">Lua parameters</td>
 <td class="apiTableRightLParam">
 <div>
-<strong>handle</strong> (string): </div>
+handle (string): </div>
 <div>
-<strong>timeout</strong> (float, default: 5): </div>
+timeout (float, default: 5): </div>
 </td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftLRet">Lua return values</td>
 <td class="apiTableRightLRet"><div>
-<strong>exitCode</strong> (int): </div></td>
+exitCode (int): </div></td>
 </tr>
 <tr class="apiTableTr">
 <td class="apiTableLeftPSyn">Python synopsis</td>
@@ -360,7 +360,7 @@ img.add_border {
 <tr><td class="section" id="enums" style="display: none;"></td></tr>
 <tr><td class="section" id="structs" style="display: none;">
 <br/><br/><h4>Data structures</h4>
-<p>Data structures are used to pass complex data around. Create data structures in Lua in the form of a map, e.g.: <code>{line_size=3, add_to_legend=false, selectable=true}</code></p>
+<p>Data structures are used to pass complex data around. Create data structures in Lua in the form of a map, e.g.: <code>{line_size=3, add_to_legend=false, selectable=true}</pre></p>
 <br/>
 <a id="struct:exec_opts" name="struct:exec_opts"></a>exec_opts
 <table class="apiTable">
@@ -374,9 +374,9 @@ img.add_border {
 <td class="apiTableLeftLParam">Fields</td>
 <td class="apiTableRightLParam">
 <div>
-<strong>useSearchPath</strong> (bool, default: true): Resolve program name searching in PATH entries.</div>
+useSearchPath (bool, default: true): Resolve program name searching in PATH entries.</div>
 <div>
-<strong>openNewConsole</strong> (bool, default: false): Win32-specific flag.</div>
+openNewConsole (bool, default: false): Win32-specific flag.</div>
 </td>
 </tr>
 <tr class="apiTableTr">

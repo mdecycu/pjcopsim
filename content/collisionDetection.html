@@ -153,7 +153,7 @@ img.add_border {
 <p class="imageLabel">[Collision detection between two manipulators]</p>
 <br/>
 <p>Using the API function <a href="regularApi/simCheckCollision.html">sim.checkCollision</a>, one can easily detect collision between entities, for instance collision detection between a robot and its environment, from within a <a href="childScripts.html">child script</a>, in each simulation step:</p>
-<code class="hljs language-lua coppelia-coppeliasim-script">
+<pre class="brush:lua;auto-links:false;toolbar:false" contenteditable="false">
 function sysCall_init()
     local robotBase=sim.getObject('/robotModelAlias')
     robotCollection=sim.createCollection(0)
@@ -165,9 +165,9 @@ function sysCall_sensing()
     if result&gt;0 then
         print('Robot is colliding. Colliding pair is '..getAsString(pairHandles))
     end
-end</code>
+end</pre>
 <p>One can also temporarily modify the color of <a href="objects.html">objects</a> or whole <a href="collections.html">collections</a>, in order to visually indicate a collision:</p>
-<code class="hljs language-lua coppelia-coppeliasim-script">
+<pre class="brush:lua;auto-links:false;toolbar:false" contenteditable="false">
 function changePairColor(entityPair,colorPair)
     originalColorData={}
     originalColorData[1]=sim.changeEntityColor(entityPair[1],colorPair[1])
@@ -202,7 +202,7 @@ end
 
 function sysCall_cleanup()
     restorePairColor()
-end</code>
+end</pre>
 <p>CoppeliaSim's collision detection functionality is also available as stand-alone routines via the <a href="coppeliaGeometricRoutines.html">Coppelia geometric routines</a>.</p>
 <p>See also the <a href="addOns.html">add-on</a> <em>Collision check</em> that allows to quickly check for self-collision, collision with the environment, or collision between two entities.</p>
 <br/>

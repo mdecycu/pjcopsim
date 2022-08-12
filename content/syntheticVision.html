@@ -153,7 +153,7 @@ img.add_border {
 <li><a href="regularApi/simTransformImage.html">sim.transformImage</a></li>
 <li><a href="regularApi/simTransformBuffer.html">sim.transformBuffer</a></li>
 <p>Following shows a vision callback function that illustrates 3 different ways to modify an acquired image:</p>
-<code class="hljs language-lua coppelia-coppeliasim-script">
+<pre class="brush:lua;auto-links:false;toolbar:false" contenteditable="false">
 function sysCall_vision(inData)
     -- inData.handle: handle of the vision sensor
     -- inData.resolution: resolution of the vision sensor
@@ -191,7 +191,7 @@ function sysCall_vision(inData)
     -- filters may append packets (in packed form, use sim.packFloatTable to pack) to this table:
     outData.packedPackets={sim.packFloatTable({1,42,57})} 
     return outData
-end</code>
+end</pre>
 <br/>
 <br/>
 </td></tr>

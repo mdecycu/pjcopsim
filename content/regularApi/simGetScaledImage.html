@@ -33,15 +33,15 @@ C/C++<br>synopsis
 <tr class=apiTableTr> 
 <td class=apiTableLeftCParam>C/C++<br>parameters</td> 
 <td class=apiTableRightCParam>
-<div><strong>imageIn</strong>: a pointer to rgb or rgba values of the input image.</div>
-<div><strong>resolutionIn</strong>: the resolution of the input image.</div>
-<div><strong>resolutionOut</strong>: the desired resolution of the output image. The values will be replaced by the effective resolution of the output image</div>
-<div><strong>options</strong>: bit-coded:</div>
+<div>imageIn: a pointer to rgb or rgba values of the input image.</div>
+<div>resolutionIn: the resolution of the input image.</div>
+<div>resolutionOut: the desired resolution of the output image. The values will be replaced by the effective resolution of the output image</div>
+<div>options: bit-coded:</div>
 <div class=tab>bit0 set (1): the input image is rgba, otherwise it is rgb</div>
 <div class=tab>bit1 set (2): the returned image is rgba, otherwise it is rgb</div>
 <div class=tab>bit2-3: 0:ignore aspect ratio, 4:keep aspect ratio (the effective resolution of the returned image will be different), 8:keep aspect ratio by expanding (the effective resolution of the returned image will be different)</div>
 <div class=tab>bit4 set (16): no smooth transformation</div>
-<div><strong>reserved</strong>: Reserved for future extension. Set to nullptr.</div>
+<div>reserved: Reserved for future extension. Set to nullptr.</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 

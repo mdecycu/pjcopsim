@@ -53,11 +53,11 @@ Lua<br>synopsis
 <tr class=apiTableTr> 
 <td class=apiTableLeftLParam>Lua<br>parameters</td> 
 <td class=apiTableRightLParam>
-<div><strong>path</strong>: the path, specified in row-major order, e.g. a path containing two 3D poses (position+quaternion) would be {x1,y1,z1,qx1,qy1,qz1,qw1,x2,y2,z2,qx2,qy2,qz2,qw2}</div>
-<div><strong>pathLengths</strong>: the lengths of a path. Each path point should have a corresponding length value (as the distance from the path's first point, along the path). See also <a href="simGetPathLengths.html">sim.getPathLengths</a>.</div>
-<div><strong>finalConfigCnt</strong>: the number of points or configurations the resampled path should contain</div>
-<div><strong>method</strong>: an optional table specifying the type of interpolation (linear or quadraticBezier), and whether the path should be considered as open, even if the first and last path points overlap, and the bezier strength (0.05-1.0)</div>
-<div><strong>types</strong>: an optional table specifying the type of each configuration value/dimension: 0=cartesian value, 1=2pi-cyclic value, 2=quaternion value. e.g. a configuration representing 3D poses should use a types argument {0,0,0,2,2,2,2}, a configuration representing revolute and cyclic joints should use a types argument {1,1,1,...}</div>
+<div>path: the path, specified in row-major order, e.g. a path containing two 3D poses (position+quaternion) would be {x1,y1,z1,qx1,qy1,qz1,qw1,x2,y2,z2,qx2,qy2,qz2,qw2}</div>
+<div>pathLengths: the lengths of a path. Each path point should have a corresponding length value (as the distance from the path's first point, along the path). See also <a href="simGetPathLengths.html">sim.getPathLengths</a>.</div>
+<div>finalConfigCnt: the number of points or configurations the resampled path should contain</div>
+<div>method: an optional table specifying the type of interpolation (linear or quadraticBezier), and whether the path should be considered as open, even if the first and last path points overlap, and the bezier strength (0.05-1.0)</div>
+<div>types: an optional table specifying the type of each configuration value/dimension: 0=cartesian value, 1=2pi-cyclic value, 2=quaternion value. e.g. a configuration representing 3D poses should use a types argument {0,0,0,2,2,2,2}, a configuration representing revolute and cyclic joints should use a types argument {1,1,1,...}</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 
@@ -65,7 +65,7 @@ Lua<br>synopsis
 Lua<br>return values
 </td> 
 <td class=apiTableRightLRet>
-<div><strong>outputPath</strong>: the resampled path</div>
+<div>outputPath: the resampled path</div>
 </td> 
 </tr> 
 

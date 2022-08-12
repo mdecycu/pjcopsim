@@ -33,13 +33,13 @@ C/C++<br>synopsis
 <tr class=apiTableTr> 
 <td class=apiTableLeftCParam>C/C++<br>parameters</td> 
 <td class=apiTableRightCParam>
-<div><strong>sensorHandle</strong>: handle of a proximity sensor object or sim.handle_all or sim.handle_all_except_explicit. (sim.handle_all will handle all proximity sensor objects, while sim.handle_all_except_explicit will only handle those that are not marked as &quot;explicit handling&quot;)<br>
+<div>sensorHandle: handle of a proximity sensor object or sim.handle_all or sim.handle_all_except_explicit. (sim.handle_all will handle all proximity sensor objects, while sim.handle_all_except_explicit will only handle those that are not marked as &quot;explicit handling&quot;)<br>
 </div>
-<div><strong>detectedPoint</strong>: coordinates of the closest detected point (x, y and z: detectedPoint[0]-detectedPoint[2]) relative to the sensor reference frame, and distance to the detected point (1 value: detectedPoint[3]). Can be nullptr<br>
+<div>detectedPoint: coordinates of the closest detected point (x, y and z: detectedPoint[0]-detectedPoint[2]) relative to the sensor reference frame, and distance to the detected point (1 value: detectedPoint[3]). Can be nullptr<br>
 </div>
-<div><strong>detectedObjectHandle</strong>: handle of the object that was detected. Can be nullptr<br>
+<div>detectedObjectHandle: handle of the object that was detected. Can be nullptr<br>
 </div>
-<div><strong>detectedSurfaceNormalVector</strong>: normal vector (normalized) of the detected surface. Relative to the sensor reference frame. Can be nullptr<br>
+<div>detectedSurfaceNormalVector: normal vector (normalized) of the detected surface. Relative to the sensor reference frame. Can be nullptr<br>
 </div>
 <br>
 <div>When several proximity sensors are handled at the same time (e.g. with the sim.handle_all argument), then the output values are relative to the closest detection distance</div>
@@ -63,22 +63,22 @@ Lua<br>synopsis
 <tr class=apiTableTr> 
 <td class=apiTableLeftLParam>Lua<br>parameters</td> 
 <td class=apiTableRightLParam>
-<div><strong>sensorHandle</strong>: handle of a proximity sensor object or sim.handle_all or sim.handle_all_except_explicit. (sim.handle_all will handle all proximity sensor objects, while sim.handle_all_except_explicit will only handle those that are not marked as &quot;explicit handling&quot;)</div></td> 
+<div>sensorHandle: handle of a proximity sensor object or sim.handle_all or sim.handle_all_except_explicit. (sim.handle_all will handle all proximity sensor objects, while sim.handle_all_except_explicit will only handle those that are not marked as &quot;explicit handling&quot;)</div></td> 
 </tr> 
 <tr class=apiTableTr> 
 <td class=apiTableLeftLRet>
 Lua<br>return values
 </td> 
 <td class=apiTableRightLRet>
-<div><strong>result</strong>: 0 if nothing was detected<br>
+<div>result: 0 if nothing was detected<br>
 </div>
-<div><strong>distance</strong>: distance to the detected point<br>
+<div>distance: distance to the detected point<br>
 </div>
-<div><strong>detectedPoint</strong>: table of 3 numbers indicating the relative coordinates of the detected point<br>
+<div>detectedPoint: table of 3 numbers indicating the relative coordinates of the detected point<br>
 </div>
-<div><strong>detectedObjectHandle</strong>: handle of the object that was detected<br>
+<div>detectedObjectHandle: handle of the object that was detected<br>
 </div>
-<div><strong>detectedSurfaceNormalVector</strong>: normal vector (normalized) of the detected surface. Relative to the sensor reference frame.<br>
+<div>detectedSurfaceNormalVector: normal vector (normalized) of the detected surface. Relative to the sensor reference frame.<br>
 </div>
 <br>
 <div>When several proximity sensors are handled at the same time (e.g. with the sim.handle_all argument), then the return values are relative to the closest detection distance</div>

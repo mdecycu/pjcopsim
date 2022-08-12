@@ -33,11 +33,11 @@ C/C++<br>synopsis
 <tr class=apiTableTr> 
 <td class=apiTableLeftCParam>C/C++<br>parameters</td> 
 <td class=apiTableRightCParam>
-<div><strong>ikGroupHandle</strong>: handle of an IK group</div>
-<div><strong>options</strong>: a value indicating what kind of information to retrieve:</div>
+<div>ikGroupHandle: handle of an IK group</div>
+<div>options: a value indicating what kind of information to retrieve:</div>
 <div class=tab>0: to retrieve the last calculated Jacobian. matrixSize[0] is the number of rows (the number of DoFs), matrixSize[1] is the number of columns. See further down how to extract the Jacobian.</div>
 <div class=tab>1: to retrieve the manipulability value, i.e. sqrt(det(J*JT)), where J is the Jacobian, and JT the Jacobian transpose. The returned pointer points onto a single value.</div>
-<div><strong>matrixSize</strong>: the dimensions of the returned matrix (x=rows, y=columns)</div>
+<div>matrixSize: the dimensions of the returned matrix (x=rows, y=columns)</div>
 
 <br>
 <div>USAGE EXAMPLE (to correctly interpret the Jacobian):</div>
@@ -66,7 +66,7 @@ for (int i=0;i&lt;jacobianSize[0];i++)
         str+=boost::str(boost::format("%.1e") % jacobian[j*jacobianSize[0]+i]);
     }
     printf(str.c_str());
-}</code>
+}</pre>
 
 </td> 
 </tr> 
@@ -114,7 +114,7 @@ for i=1,jacobianSize[1],1 do
         str=str..string.format("%.1e",jacobian[(j-1)*jacobianSize[1]+i])
     end
     print(str)
-end</code>
+end</pre>
 
 </td> 
 </tr> 

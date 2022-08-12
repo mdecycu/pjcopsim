@@ -33,19 +33,19 @@ C/C++<br>synopsis
 <tr class=apiTableTr> 
 <td class=apiTableLeftCParam>C/C++<br>parameters</td> 
 <td class=apiTableRightCParam>
-<div><strong>fileName</strong>: the filename of the texure to import, or an empty string if you wish to create a new texture.</div>
-<div><strong>options</strong>: bit-coded:</div>
-<div class=tab><strong>bit0</strong> set (1) =do not interpolate adjacent color patches.</div>
-<div class=tab><strong>bit1</strong> set (2) =apply the texture in decal-mode.</div>
-<div class=tab><strong>bit2</strong> set (4) =repeat the texture along the U direction.</div>
-<div class=tab><strong>bit3</strong> set (8) =repeat the texture along the V direction.</div>
-<div><strong>planeSizes</strong>: a pointer to 2 values: the dimensions of the planar shape that will be generated. Can be nullptr for default dimensions.</div>
-<div><strong>scalingUV</strong>: a pointer to 2 values: the desired scaling of the texture, along the U and V directions. Can be nullptr for default scalings.</div>
-<div><strong>xy_g</strong>: a pointer to 3 values: the texture x/y shift, and the texture gamma-rotation. Can be nullptr for default shift/rotation values.</div>
-<div><strong>fixedResolution</strong>: 0 to import the shape with its original resolution. Otherwise, specify a power of 2 value which will be the maximum texture resolution (the texture will also be applied a power of 2 resolution).</div>
-<div><strong>resolution</strong>: a pointer to 2 values representing the desired texture resolution when creating a new texture. The same pointer is used to return the effective resolution of the created/imported texture.</div>
-<div><strong>textureId</strong>: a pointer to an integer that will be used to return the new texture ID. If a same texture is already present, the old texture ID will be returned. Can be nullptr.</div>
-<div><strong>reserved</strong>: reserved. Set to nullptr.</div>
+<div>fileName: the filename of the texure to import, or an empty string if you wish to create a new texture.</div>
+<div>options: bit-coded:</div>
+<div class=tab>bit0 set (1) =do not interpolate adjacent color patches.</div>
+<div class=tab>bit1 set (2) =apply the texture in decal-mode.</div>
+<div class=tab>bit2 set (4) =repeat the texture along the U direction.</div>
+<div class=tab>bit3 set (8) =repeat the texture along the V direction.</div>
+<div>planeSizes: a pointer to 2 values: the dimensions of the planar shape that will be generated. Can be nullptr for default dimensions.</div>
+<div>scalingUV: a pointer to 2 values: the desired scaling of the texture, along the U and V directions. Can be nullptr for default scalings.</div>
+<div>xy_g: a pointer to 3 values: the texture x/y shift, and the texture gamma-rotation. Can be nullptr for default shift/rotation values.</div>
+<div>fixedResolution: 0 to import the shape with its original resolution. Otherwise, specify a power of 2 value which will be the maximum texture resolution (the texture will also be applied a power of 2 resolution).</div>
+<div>resolution: a pointer to 2 values representing the desired texture resolution when creating a new texture. The same pointer is used to return the effective resolution of the created/imported texture.</div>
+<div>textureId: a pointer to an integer that will be used to return the new texture ID. If a same texture is already present, the old texture ID will be returned. Can be nullptr.</div>
+<div>reserved: reserved. Set to nullptr.</div>
 </td> 
 </tr> 
 <tr class=apiTableTr> 

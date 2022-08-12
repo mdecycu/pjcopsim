@@ -54,16 +54,16 @@ Lua<br>synopsis
 <tr class=apiTableTr> 
 <td class=apiTableLeftLParam>Lua<br>parameters</td> 
 <td class=apiTableRightLParam>
-<div><strong>uint32Numbers</strong>: a table containing uint32 numbers. Non-numbers will be packed as zero values</div>
-<div><strong>startUint32Index</strong>: the zero-based index from which on data should be packed. Can be omitted in which case 0 is used</div>
-<div><strong>uint32Count</strong>: the amount of uint32s that should be packed. Can be omitted in which case 0 is used (which indicates that the maximum available uint32s should be packed from the indicated startUint32Index)</div></td> 
+<div>uint32Numbers: a table containing uint32 numbers. Non-numbers will be packed as zero values</div>
+<div>startUint32Index: the zero-based index from which on data should be packed. Can be omitted in which case 0 is used</div>
+<div>uint32Count: the amount of uint32s that should be packed. Can be omitted in which case 0 is used (which indicates that the maximum available uint32s should be packed from the indicated startUint32Index)</div></td> 
 </tr> 
 <tr class=apiTableTr> 
 <td class=apiTableLeftLRet>
 Lua<br>return values
 </td> 
 <td class=apiTableRightLRet>
-<div><strong>data</strong>: a string (values between 0 and 255) that contains packed uint32 numbers from the table
+<div>data: a string (values between 0 and 255) that contains packed uint32 numbers from the table
 </div>
 </td> 
 </tr> 
