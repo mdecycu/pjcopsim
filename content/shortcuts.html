@@ -1,0 +1,225 @@
+<!DOCTYPE html><html>
+        <head>
+        <title>cmsite</title>
+        <meta charset="utf-8">
+<meta property="head" content="H2">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/icomoon/style.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/magnific-popup.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/jquery-ui.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap-datepicker.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/flaticon/font/flaticon.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/aos.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/style.css">
+        <link rel="shortcut icon" href="./../cmsimde/static/favicons.png">
+        
+        <style type='text/css'>
+            .site-section {
+            background-color: #FFFF;
+            padding: 40px 40px;
+            }
+            body > div > div.dropdown.open {
+                display: block;
+            }
+        </style>
+    
+        <!-- <script src="./../cmsimde/static/jquery.js"></script> -->
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+        <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/normalize.min.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch_set.js"></script>
+        <script src="tipuesearch_content.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/tipuesearch.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch.js"></script>
+        <!-- for Wink3 客製化關閉 -->
+        <!--
+        <link rel="stylesheet" type="text/css" href="./../cmsimde/static/winkPlayer.css" />
+        <script type="text/javascript" src="./../cmsimde/static/winkPlayer.js"></script>
+        -->
+        <script>
+            /* original tipuesearch
+            $(document).ready(function() {
+                 $('#tipue_search_input').tipuesearch();
+            });
+            */
+            // customed doSearch
+            function doSearch() {
+                $('#tipue_search_input').tipuesearch({
+                    newWindow: true, 
+                    minimumLength: 2,
+                    wholeWords: false, // for search 中文
+                });
+            }
+            $(document).ready(doSearch);
+        </script>
+        
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shCore.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushBash.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDiff.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJScript.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJava.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPython.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushSql.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushHaxe.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushXml.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPhp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPowerShell.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushLua.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCpp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCss.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCSharp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDart.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushRust.js"></script>
+<link type="text/css" rel="stylesheet" href="./../cmsimde/static/syntaxhighlighter/css/shCoreDefault.css"/>
+<script type="text/javascript">SyntaxHighlighter.all();</script>
+<!-- 暫時不用
+<script src="./../cmsimde/static/fengari-web.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/Cango-13v08-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/CangoAxes-4v01-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/gearUtils-05.js"></script>
+-->
+<!-- for Brython 暫時不用
+<script src="https://scrum-3.github.io/web/brython/brython.js"></script>
+<script src="https://scrum-3.github.io/web/brython/brython_stdlib.js"></script>
+-->
+<style>
+img.add_border {
+    border: 3px solid blue;
+}
+</style>
+
+</head>
+<body>
+<div class='container'><nav>
+        
+    <div class="site-wrap">
+
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+    
+            <header class="site-navbar py-4 bg-white" role="banner">
+              <div class="container">
+                <div class="row align-items-center">
+                <h1>cmsite</h1>
+                <div class="pl-4">
+                    <form>
+                    <input type="text" placeholder="Search" name="q" id="tipue_search_input" pattern=".{2,}" title="At least 2 characters" required>
+                    </form>
+                </div>
+                  <!-- <div class="col-11 col-xl-2">
+                    <h1 class="mb-0 site-logo"><a href="index.html" class="text-black h2 mb-0">cmsite</a></h1> 
+                  </div>
+                  -->
+                  <div class="col-12 col-md-10 d-none d-xl-block">
+                    <nav class="site-navigation position-relative text-right" role="navigation">
+    <ul class='site-menu js-clone-nav mr-auto d-none d-lg-block'>
+                        <li class="active has-children"><a href="index.html">Home</a>
+                        <ul class="dropdown">
+                            <li><a href="sitemap.html">Site Map</a></li>
+                            <li><a href="./../reveal/index.html">reveal</a></li>
+                            <li><a href="./../blog/index.html">blog</a></li>
+                        </ul>
+                      </li>
+                     <li><a href='welcome.html'>welcome</a><li class='has-children'><a href='userInterface.html'>userInterface</a><ul class='dropdown'><li><a href='pagesAndViews.html'>pagesAndViews</a><li><a href='coordinateDialog.html'>coordinateDialog</a><li><a href='positionDialog.html'>positionDialog</a><li><a href='orientationDialog.html'>orientationDialog</a><li><a href='objectMovement.html'>objectMovement</a><li><a href='positionOrientationTransformation.html'>positionOrientationTransformation</a><li><a href='settings.html'>settings</a><li><a href='shortcuts.html'>shortcuts</a></li></ul><li class='has-children'><a href='scenesAndModels.html'>scenesAndModels</a><ul class='dropdown'><li><a href='scenes.html'>scenes</a><li><a href='models.html'>models</a><li><a href='modelDialog.html'>modelDialog</a></li></ul><li class='has-children'><a href='environment.html'>environment</a><ul class='dropdown'><li><a href='environmentPropertiesDialog.html'>environmentPropertiesDialog</a><li><a href='textureDialog.html'>textureDialog</a></li></ul><li class='has-children'><a href='entities.html'>entities</a><ul class='dropdown'><li><a href='collections.html'>collections</a><li class='has-children'><a href='objects.html'>objects</a><ul class='dropdown'><li><a href='sceneObjectPropertiesDialog.html'>sceneObjectPropertiesDialog</a><li><a href='commonPropertiesDialog.html'>commonPropertiesDialog</a></li></ul><li><a href='collidableObjects.html'>collidableObjects</a><li><a href='measurableObjects.html'>measurableObjects</a><li><a href='detectableObjects.html'>detectableObjects</a><li><a href='viewableObjects.html'>viewableObjects</a><li><a href='convexHull.html'>convexHull</a><li class='has-children'><a href='layerSelectionDialog.html'>layerSelectionDialog</a><ul class='dropdown'><li><a href='cameras.html'>cameras</a><li><a href='cameraPropertiesDialog.html'>cameraPropertiesDialog</a><li><a href='lights.html'>lights</a><li><a href='lightPropertiesDialog.html'>lightPropertiesDialog</a><li><a href='shapes.html'>shapes</a><li><a href='shapeReferenceFrames.html'>shapeReferenceFrames</a><li><a href='primitiveShapes.html'>primitiveShapes</a><li><a href='convexDecomposition.html'>convexDecomposition</a><li><a href='shapeProperties.html'>shapeProperties</a><li><a href='shapeDynamicsProperties.html'>shapeDynamicsProperties</a><li><a href='shapeDynamicEngineProperties.html'>shapeDynamicEngineProperties</a><li><a href='geometryDialog.html'>geometryDialog</a><li><a href='shapeEditModes.html'>shapeEditModes</a><li><a href='triangleEditMode.html'>triangleEditMode</a><li><a href='vertexEditMode.html'>vertexEditMode</a><li><a href='edgeEditMode.html'>edgeEditMode</a><li><a href='groupedShapeEditMode.html'>groupedShapeEditMode</a><li><a href='joints.html'>joints</a><li><a href='jointModes.html'>jointModes</a><li><a href='jointProperties.html'>jointProperties</a><li><a href='jointDynamicsProperties.html'>jointDynamicsProperties</a><li><a href='jointDynamicEngineProperties.html'>jointDynamicEngineProperties</a><li><a href='dummies.html'>dummies</a><li><a href='dummyPropertiesDialog.html'>dummyPropertiesDialog</a><li><a href='graphs.html'>graphs</a><li><a href='graphPropertiesDialog.html'>graphPropertiesDialog</a><li><a href='proximitySensors.html'>proximitySensors</a><li><a href='proximitySensorDescription.html'>proximitySensorDescription</a><li><a href='proximitySensorPropertiesDialog.html'>proximitySensorPropertiesDialog</a><li><a href='proximitySensorVolumeDialog.html'>proximitySensorVolumeDialog</a><li><a href='proximitySensorDetectionParameterDialog.html'>proximitySensorDetectionParameterDialog</a><li><a href='visionSensors.html'>visionSensors</a><li><a href='visionSensorDescription.html'>visionSensorDescription</a><li><a href='visionSensorPropertiesDialog.html'>visionSensorPropertiesDialog</a><li><a href='forceSensors.html'>forceSensors</a><li><a href='forceSensorPropertiesDialog.html'>forceSensorPropertiesDialog</a><li><a href='octrees.html'>octrees</a><li><a href='octreePropertiesDialog.html'>octreePropertiesDialog</a><li><a href='pointClouds.html'>pointClouds</a><li><a href='pointCloudPropertiesDialog.html'>pointCloudPropertiesDialog</a></li></ul><li><a href='paths.html'>paths</a></li></ul><li class='has-children'><a href='functionality.html'>functionality</a><ul class='dropdown'><li><a href='geometricCalculations.html'>geometricCalculations</a><li><a href='collisionDetection.html'>collisionDetection</a><li class='has-children'><a href='distanceCalculation.html'>distanceCalculation</a><ul class='dropdown'><li><a href='geometricPlugin.html'>geometricPlugin</a><li><a href='simGeom API.html'>simGeom API</a><li><a href='coppeliaGeometricRoutines.html'>coppeliaGeometricRoutines</a><li><a href='CoppeliaGeometricRoutinesAPI.html'>CoppeliaGeometricRoutinesAPI</a></li></ul><li><a href='IGLPluginAPIreference.html'>IGLPluginAPIreference</a><li><a href='kinematics.html'>kinematics</a><li><a href='basicsOnIkGroupsAndIkElements.html'>basicsOnIkGroupsAndIkElements</a><li class='has-children'><a href='solvingIkAndFk.html'>solvingIkAndFk</a><ul class='dropdown'><li><a href='kinematicsPlugin.html'>kinematicsPlugin</a><li><a href='simIKAPI.html'>simIKAPI</a><li><a href='coppeliaKinematicsRoutines.html'>coppeliaKinematicsRoutines</a><li><a href='CoppeliaKinematicsRoutinesAPI.html'>CoppeliaKinematicsRoutinesAPI</a></li></ul><li><a href='dynamicsModule.html'>dynamicsModule</a><li class='has-children'><a href='designingDynamicSimulations.html'>designingDynamicSimulations</a><ul class='dropdown'><li><a href='dynamicsDialog.html'>dynamicsDialog</a><li><a href='dynamicsEngineDialog.html'>dynamicsEngineDialog</a></li></ul><li><a href='dataVisualizationAndOutput.html'>dataVisualizationAndOutput</a><li><a href='externalFrontEnd.html'>externalFrontEnd</a><li><a href='dataTransformation.html'>dataTransformation</a><li class='has-children'><a href='meansOfCommunication.html'>meansOfCommunication</a><ul class='dropdown'><li><a href='remoteApiOverview.html'>remoteApiOverview</a><li><a href='zmqRemoteApiOverview.html'>zmqRemoteApiOverview</a><li><a href='wsRemoteApiOverview.html'>wsRemoteApiOverview</a><li><a href='rosInterfaces.html'>rosInterfaces</a><li><a href='rosInterf.html'>rosInterf</a><li><a href='ROSPluginAPIreference.html'>ROSPluginAPIreference</a><li><a href='ros2Interface.html'>ros2Interface</a><li><a href='ROS2PluginAPIreference.html'>ROS2PluginAPIreference</a></li></ul><li><a href='ZMQPluginAPIreference.html'>ZMQPluginAPIreference</a><li><a href='WSPluginAPIreference.html'>WSPluginAPIreference</a><li><a href='pathsAndTrajectories.html'>pathsAndTrajectories</a><li><a href='pathAndMotionPlanningModules.html'>pathAndMotionPlanningModules</a><li><a href='OMPLPluginAPIreference.html'>OMPLPluginAPIreference</a><li><a href='syntheticVision.html'>syntheticVision</a><li><a href='IMPluginAPIreference.html'>IMPluginAPIreference</a><li><a href='simVisionAPI.html'>simVisionAPI</a><li><a href='customUIPlugin.html'>customUIPlugin</a><li><a href='UIPluginAPIreference.html'>UIPluginAPIreference</a><li><a href='simUI-widgets.html'>simUI-widgets</a><li><a href='QMLPluginAPIreference.html'>QMLPluginAPIreference</a><li><a href='importExport.html'>importExport</a><li class='has-children'><a href='xmlFormat.html'>xmlFormat</a><ul class='dropdown'><li><a href='urdfPlugin.html'>urdfPlugin</a><li><a href='APIFunctions.html'>APIFunctions</a><li><a href='sdfPlugin.html'>sdfPlugin</a><li><a href='SDFPluginAPIreference.html'>SDFPluginAPIreference</a></li></ul><li><a href='aviRecorder.html'>aviRecorder</a><li><a href='AssimpPluginAPIreference.html'>AssimpPluginAPIreference</a><li class='has-children'><a href='GLTFPluginAPIreference.html'>GLTFPluginAPIreference</a><ul class='dropdown'><li><a href='commandLine.html'>commandLine</a><li><a href='LuaCmdPluginAPIreference.html'>LuaCmdPluginAPIreference</a><li><a href='miscellaneousFunctionality.html'>miscellaneousFunctionality</a><li><a href='SurfRecPluginAPIreference.html'>SurfRecPluginAPIreference</a><li><a href='ICPPluginAPIreference.html'>ICPPluginAPIreference</a><li><a href='SubprocessPluginAPIreference.html'>SubprocessPluginAPIreference</a></li></li></ul></ul><li class='has-children'><a href='writingCode.html'>writingCode</a><ul class='dropdown'><li class='has-children'><a href='scripts.html'>scripts</a><ul class='dropdown'><li><a href='embeddedScripts.html'>embeddedScripts</a><li><a href='simulationScripts.html'>simulationScripts</a><li><a href='mainScript.html'>mainScript</a><li><a href='childScripts.html'>childScripts</a><li><a href='customizationScripts.html'>customizationScripts</a><li><a href='scriptProperties.html'>scriptProperties</a><li><a href='scriptEditor.html'>scriptEditor</a></li></ul><li><a href='addOns.html'>addOns</a><li><a href='sandboxScript.html'>sandboxScript</a><li><a href='scriptExecution.html'>scriptExecution</a><li class='has-children'><a href='threadedAndNonThreadedCode.html'>threadedAndNonThreadedCode</a><ul class='dropdown'><li><a href='callbackFunctions.html'>callbackFunctions</a><li><a href='dynCallbackFunctions.html'>dynCallbackFunctions</a><li><a href='jointCallbackFunctions.html'>jointCallbackFunctions</a><li><a href='contactCallbackFunction.html'>contactCallbackFunction</a><li><a href='visionCallbackFunctions.html'>visionCallbackFunctions</a><li><a href='triggerCallbackFunctions.html'>triggerCallbackFunctions</a><li><a href='userConfigCallbackFunctions.html'>userConfigCallbackFunctions</a></li></ul><li><a href='luaPythonDifferences.html'>luaPythonDifferences</a><li><a href='luaCrashCourse.html'>luaCrashCourse</a><li><a href='plugins.html'>plugins</a><li><a href='mainClientApplication.html'>mainClientApplication</a><li><a href='accessingSceneObjects.html'>accessingSceneObjects</a><li><a href='explicitHandling.html'>explicitHandling</a><li class='has-children'><a href='apisOverview.html'>apisOverview</a><ul class='dropdown'><li><a href='apiFunctions.html'>apiFunctions</a><li><a href='apiConstants.html'>apiConstants</a><li><a href='objectParameterIDs.html'>objectParameterIDs</a></li></li></ul></ul><li class='has-children'><a href='simulation.html'>simulation</a><ul class='dropdown'><li><a href='simulationPropertiesDialog.html'>simulationPropertiesDialog</a></li></ul><li class='has-children'><a href='tutorials.html'>tutorials</a><ul class='dropdown'><li><a href='bubbleRobTutorial.html'>bubbleRobTutorial</a><li><a href='buildingAModelTutorial.html'>buildingAModelTutorial</a><li><a href='lineFollowingBubbleRobTutorial.html'>lineFollowingBubbleRobTutorial</a><li><a href='inverseKinematicsTutorial.html'>inverseKinematicsTutorial</a><li><a href='externalControllerTutorial.html'>externalControllerTutorial</a><li><a href='pluginTutorial.html'>pluginTutorial</a><li><a href='robotLanguageIntegrationTutorial.html'>robotLanguageIntegrationTutorial</a><li class='has-children'><a href='rosTutorial.html'>rosTutorial</a><ul class='dropdown'><li><a href='ros1Tutorial.html'>ros1Tutorial</a><li><a href='ros2Tutorial.html'>ros2Tutorial</a></li></ul><li><a href='compilingCoppeliaSim.html'>compilingCoppeliaSim</a></li>
+                      </ul>
+                </nav>
+              </div>
+              <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
+              </div>
+
+            </div>
+          </div>
+          
+        </header>
+    <div id="tipue_search_content">settings << <a href='settings.html'>Previous</a> <a href='scenesAndModels.html'>Next</a> >> scenesAndModels<br /><h1>shortcuts</h1><div align="center">
+<table class="allEncompassingTable">
+<tr>
+<td>
+<p><a href="../index.htmll" target="_top"><img src="./../images/homeImg.png"/></a></p>
+<h4>Shortcuts</h4>
+<p>When the focus is on the <a href="userInterface.html#SceneHierarchy">scene hierarchy</a> or a <a href="pagesAndViews.html">page</a>, following shortcut keys are supported: </p>
+<li><strong>CTRL+A</strong>: select all</li>
+<li><strong>&lt;esc&gt;</strong>: clear the selection</li>
+<li><strong>CTRL+C</strong>: copy the selection</li>
+<li><strong>CTRL+V</strong>: paste the copy buffer</li>
+<li><strong>CTRL+X</strong>: cut the selection</li>
+<li><strong>&lt;delete&gt;</strong>: delete the selection</li>
+<li><strong>&lt;backspace&gt;</strong>: delete the selection</li>
+<li><strong>CTRL+O</strong>: open a scene</li>
+<li><strong>CTRL+N</strong>: open a new scene</li>
+<li><strong>CTRL+S</strong>: save the scene</li>
+<li><strong>CTRL+W</strong>: close a scene</li>
+<li><strong>CTRL+Q</strong>: quit the application</li>
+<li><strong>CTRL+&lt;space&gt;</strong>: start/stop the simulation</li>
+<li><strong>CTRL+E</strong>: toggle between 1) normal, 2) object translation and 3) object rotation mouse mode</li>
+<li><strong>CTRL+D</strong>: open the object property dialog</li>
+<li><strong>CTRL+G</strong>: open the calculation module dialog</li>
+<li><strong>CTRL+B</strong>: adjust the view to fit selected objects, or the whole scene if no object is selected. The focus needs to be on a view.</li>
+<li><strong>CTRL+ALT+C</strong>: set focus on the Lua commander</li>
+<li><strong>CTRL+L</strong>: clear status bar (when focus is on the Lua commander)</li>
+<br/>
+<br/>
+</td>
+</tr>
+</table>
+</div><br />settings << <a href='settings.html'>Previous</a> <a href='scenesAndModels.html'>Next</a> >> scenesAndModels</div>
+        
+    <!-- footer -->
+      <div class="container">
+        <div class="row pt-3 mx-auto">
+            <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+        </div>
+      </div>
+    <!-- for footer -->
+    
+        </div> <!-- for site wrap -->
+            <!-- <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script> -->
+            <script src="../cmsimde/static/chimper/js/jquery-migrate-3.0.1.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery-ui.js"></script>
+            <script src="../cmsimde/static/chimper/js/popper.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/owl.carousel.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.stellar.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.countdown.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.magnific-popup.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap-datepicker.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/aos.js"></script>
+            <!--
+            <script src="../cmsimde/static/chimper/js/typed.js"></script>
+                    <script>
+                    var typed = new Typed('.typed-words', {
+                    strings: ["Web Apps"," WordPress"," Mobile Apps"],
+                    typeSpeed: 80,
+                    backSpeed: 80,
+                    backDelay: 4000,
+                    startDelay: 1000,
+                    loop: true,
+                    showCursor: true
+                    });
+                    </script>
+            -->
+            <script src="../cmsimde/static/chimper/js/main.js"></script>
+        
+<!-- 啟用 LaTeX equations 編輯 -->
+  <!-- <script>
+  MathJax = {
+    tex: {inlineMath: [['$', '$'], ['\(', '\)']]}
+  };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>-->
+    </body></html>
+        

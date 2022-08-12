@@ -1,0 +1,240 @@
+<!DOCTYPE html><html>
+        <head>
+        <title>cmsite</title>
+        <meta charset="utf-8">
+<meta property="head" content="H3">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/icomoon/style.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/magnific-popup.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/jquery-ui.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap-datepicker.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/flaticon/font/flaticon.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/aos.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/style.css">
+        <link rel="shortcut icon" href="./../cmsimde/static/favicons.png">
+        
+        <style type='text/css'>
+            .site-section {
+            background-color: #FFFF;
+            padding: 40px 40px;
+            }
+            body > div > div.dropdown.open {
+                display: block;
+            }
+        </style>
+    
+        <!-- <script src="./../cmsimde/static/jquery.js"></script> -->
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+        <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/normalize.min.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch_set.js"></script>
+        <script src="tipuesearch_content.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/tipuesearch.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch.js"></script>
+        <!-- for Wink3 客製化關閉 -->
+        <!--
+        <link rel="stylesheet" type="text/css" href="./../cmsimde/static/winkPlayer.css" />
+        <script type="text/javascript" src="./../cmsimde/static/winkPlayer.js"></script>
+        -->
+        <script>
+            /* original tipuesearch
+            $(document).ready(function() {
+                 $('#tipue_search_input').tipuesearch();
+            });
+            */
+            // customed doSearch
+            function doSearch() {
+                $('#tipue_search_input').tipuesearch({
+                    newWindow: true, 
+                    minimumLength: 2,
+                    wholeWords: false, // for search 中文
+                });
+            }
+            $(document).ready(doSearch);
+        </script>
+        
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shCore.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushBash.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDiff.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJScript.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJava.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPython.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushSql.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushHaxe.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushXml.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPhp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPowerShell.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushLua.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCpp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCss.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCSharp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDart.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushRust.js"></script>
+<link type="text/css" rel="stylesheet" href="./../cmsimde/static/syntaxhighlighter/css/shCoreDefault.css"/>
+<script type="text/javascript">SyntaxHighlighter.all();</script>
+<!-- 暫時不用
+<script src="./../cmsimde/static/fengari-web.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/Cango-13v08-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/CangoAxes-4v01-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/gearUtils-05.js"></script>
+-->
+<!-- for Brython 暫時不用
+<script src="https://scrum-3.github.io/web/brython/brython.js"></script>
+<script src="https://scrum-3.github.io/web/brython/brython_stdlib.js"></script>
+-->
+<style>
+img.add_border {
+    border: 3px solid blue;
+}
+</style>
+
+</head>
+<body>
+<div class='container'><nav>
+        
+    <div class="site-wrap">
+
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+    
+            <header class="site-navbar py-4 bg-white" role="banner">
+              <div class="container">
+                <div class="row align-items-center">
+                <h1>cmsite</h1>
+                <div class="pl-4">
+                    <form>
+                    <input type="text" placeholder="Search" name="q" id="tipue_search_input" pattern=".{2,}" title="At least 2 characters" required>
+                    </form>
+                </div>
+                  <!-- <div class="col-11 col-xl-2">
+                    <h1 class="mb-0 site-logo"><a href="index.html" class="text-black h2 mb-0">cmsite</a></h1> 
+                  </div>
+                  -->
+                  <div class="col-12 col-md-10 d-none d-xl-block">
+                    <nav class="site-navigation position-relative text-right" role="navigation">
+    <ul class='site-menu js-clone-nav mr-auto d-none d-lg-block'>
+                        <li class="active has-children"><a href="index.html">Home</a>
+                        <ul class="dropdown">
+                            <li><a href="sitemap.html">Site Map</a></li>
+                            <li><a href="./../reveal/index.html">reveal</a></li>
+                            <li><a href="./../blog/index.html">blog</a></li>
+                        </ul>
+                      </li>
+                     <li><a href='welcome.html'>welcome</a><li class='has-children'><a href='userInterface.html'>userInterface</a><ul class='dropdown'><li><a href='pagesAndViews.html'>pagesAndViews</a><li><a href='coordinateDialog.html'>coordinateDialog</a><li><a href='positionDialog.html'>positionDialog</a><li><a href='orientationDialog.html'>orientationDialog</a><li><a href='objectMovement.html'>objectMovement</a><li><a href='positionOrientationTransformation.html'>positionOrientationTransformation</a><li><a href='settings.html'>settings</a><li><a href='shortcuts.html'>shortcuts</a></li></ul><li class='has-children'><a href='scenesAndModels.html'>scenesAndModels</a><ul class='dropdown'><li><a href='scenes.html'>scenes</a><li><a href='models.html'>models</a><li><a href='modelDialog.html'>modelDialog</a></li></ul><li class='has-children'><a href='environment.html'>environment</a><ul class='dropdown'><li><a href='environmentPropertiesDialog.html'>environmentPropertiesDialog</a><li><a href='textureDialog.html'>textureDialog</a></li></ul><li class='has-children'><a href='entities.html'>entities</a><ul class='dropdown'><li><a href='collections.html'>collections</a><li class='has-children'><a href='objects.html'>objects</a><ul class='dropdown'><li><a href='sceneObjectPropertiesDialog.html'>sceneObjectPropertiesDialog</a><li><a href='commonPropertiesDialog.html'>commonPropertiesDialog</a></li></ul><li><a href='collidableObjects.html'>collidableObjects</a><li><a href='measurableObjects.html'>measurableObjects</a><li><a href='detectableObjects.html'>detectableObjects</a><li><a href='viewableObjects.html'>viewableObjects</a><li><a href='convexHull.html'>convexHull</a><li class='has-children'><a href='layerSelectionDialog.html'>layerSelectionDialog</a><ul class='dropdown'><li><a href='cameras.html'>cameras</a><li><a href='cameraPropertiesDialog.html'>cameraPropertiesDialog</a><li><a href='lights.html'>lights</a><li><a href='lightPropertiesDialog.html'>lightPropertiesDialog</a><li><a href='shapes.html'>shapes</a><li><a href='shapeReferenceFrames.html'>shapeReferenceFrames</a><li><a href='primitiveShapes.html'>primitiveShapes</a><li><a href='convexDecomposition.html'>convexDecomposition</a><li><a href='shapeProperties.html'>shapeProperties</a><li><a href='shapeDynamicsProperties.html'>shapeDynamicsProperties</a><li><a href='shapeDynamicEngineProperties.html'>shapeDynamicEngineProperties</a><li><a href='geometryDialog.html'>geometryDialog</a><li><a href='shapeEditModes.html'>shapeEditModes</a><li><a href='triangleEditMode.html'>triangleEditMode</a><li><a href='vertexEditMode.html'>vertexEditMode</a><li><a href='edgeEditMode.html'>edgeEditMode</a><li><a href='groupedShapeEditMode.html'>groupedShapeEditMode</a><li><a href='joints.html'>joints</a><li><a href='jointModes.html'>jointModes</a><li><a href='jointProperties.html'>jointProperties</a><li><a href='jointDynamicsProperties.html'>jointDynamicsProperties</a><li><a href='jointDynamicEngineProperties.html'>jointDynamicEngineProperties</a><li><a href='dummies.html'>dummies</a><li><a href='dummyPropertiesDialog.html'>dummyPropertiesDialog</a><li><a href='graphs.html'>graphs</a><li><a href='graphPropertiesDialog.html'>graphPropertiesDialog</a><li><a href='proximitySensors.html'>proximitySensors</a><li><a href='proximitySensorDescription.html'>proximitySensorDescription</a><li><a href='proximitySensorPropertiesDialog.html'>proximitySensorPropertiesDialog</a><li><a href='proximitySensorVolumeDialog.html'>proximitySensorVolumeDialog</a><li><a href='proximitySensorDetectionParameterDialog.html'>proximitySensorDetectionParameterDialog</a><li><a href='visionSensors.html'>visionSensors</a><li><a href='visionSensorDescription.html'>visionSensorDescription</a><li><a href='visionSensorPropertiesDialog.html'>visionSensorPropertiesDialog</a><li><a href='forceSensors.html'>forceSensors</a><li><a href='forceSensorPropertiesDialog.html'>forceSensorPropertiesDialog</a><li><a href='octrees.html'>octrees</a><li><a href='octreePropertiesDialog.html'>octreePropertiesDialog</a><li><a href='pointClouds.html'>pointClouds</a><li><a href='pointCloudPropertiesDialog.html'>pointCloudPropertiesDialog</a></li></ul><li><a href='paths.html'>paths</a></li></ul><li class='has-children'><a href='functionality.html'>functionality</a><ul class='dropdown'><li><a href='geometricCalculations.html'>geometricCalculations</a><li><a href='collisionDetection.html'>collisionDetection</a><li class='has-children'><a href='distanceCalculation.html'>distanceCalculation</a><ul class='dropdown'><li><a href='geometricPlugin.html'>geometricPlugin</a><li><a href='simGeom API.html'>simGeom API</a><li><a href='coppeliaGeometricRoutines.html'>coppeliaGeometricRoutines</a><li><a href='CoppeliaGeometricRoutinesAPI.html'>CoppeliaGeometricRoutinesAPI</a></li></ul><li><a href='IGLPluginAPIreference.html'>IGLPluginAPIreference</a><li><a href='kinematics.html'>kinematics</a><li><a href='basicsOnIkGroupsAndIkElements.html'>basicsOnIkGroupsAndIkElements</a><li class='has-children'><a href='solvingIkAndFk.html'>solvingIkAndFk</a><ul class='dropdown'><li><a href='kinematicsPlugin.html'>kinematicsPlugin</a><li><a href='simIKAPI.html'>simIKAPI</a><li><a href='coppeliaKinematicsRoutines.html'>coppeliaKinematicsRoutines</a><li><a href='CoppeliaKinematicsRoutinesAPI.html'>CoppeliaKinematicsRoutinesAPI</a></li></ul><li><a href='dynamicsModule.html'>dynamicsModule</a><li class='has-children'><a href='designingDynamicSimulations.html'>designingDynamicSimulations</a><ul class='dropdown'><li><a href='dynamicsDialog.html'>dynamicsDialog</a><li><a href='dynamicsEngineDialog.html'>dynamicsEngineDialog</a></li></ul><li><a href='dataVisualizationAndOutput.html'>dataVisualizationAndOutput</a><li><a href='externalFrontEnd.html'>externalFrontEnd</a><li><a href='dataTransformation.html'>dataTransformation</a><li class='has-children'><a href='meansOfCommunication.html'>meansOfCommunication</a><ul class='dropdown'><li><a href='remoteApiOverview.html'>remoteApiOverview</a><li><a href='zmqRemoteApiOverview.html'>zmqRemoteApiOverview</a><li><a href='wsRemoteApiOverview.html'>wsRemoteApiOverview</a><li><a href='rosInterfaces.html'>rosInterfaces</a><li><a href='rosInterf.html'>rosInterf</a><li><a href='ROSPluginAPIreference.html'>ROSPluginAPIreference</a><li><a href='ros2Interface.html'>ros2Interface</a><li><a href='ROS2PluginAPIreference.html'>ROS2PluginAPIreference</a></li></ul><li><a href='ZMQPluginAPIreference.html'>ZMQPluginAPIreference</a><li><a href='WSPluginAPIreference.html'>WSPluginAPIreference</a><li><a href='pathsAndTrajectories.html'>pathsAndTrajectories</a><li><a href='pathAndMotionPlanningModules.html'>pathAndMotionPlanningModules</a><li><a href='OMPLPluginAPIreference.html'>OMPLPluginAPIreference</a><li><a href='syntheticVision.html'>syntheticVision</a><li><a href='IMPluginAPIreference.html'>IMPluginAPIreference</a><li><a href='simVisionAPI.html'>simVisionAPI</a><li><a href='customUIPlugin.html'>customUIPlugin</a><li><a href='UIPluginAPIreference.html'>UIPluginAPIreference</a><li><a href='simUI-widgets.html'>simUI-widgets</a><li><a href='QMLPluginAPIreference.html'>QMLPluginAPIreference</a><li><a href='importExport.html'>importExport</a><li class='has-children'><a href='xmlFormat.html'>xmlFormat</a><ul class='dropdown'><li><a href='urdfPlugin.html'>urdfPlugin</a><li><a href='APIFunctions.html'>APIFunctions</a><li><a href='sdfPlugin.html'>sdfPlugin</a><li><a href='SDFPluginAPIreference.html'>SDFPluginAPIreference</a></li></ul><li><a href='aviRecorder.html'>aviRecorder</a><li><a href='AssimpPluginAPIreference.html'>AssimpPluginAPIreference</a><li class='has-children'><a href='GLTFPluginAPIreference.html'>GLTFPluginAPIreference</a><ul class='dropdown'><li><a href='commandLine.html'>commandLine</a><li><a href='LuaCmdPluginAPIreference.html'>LuaCmdPluginAPIreference</a><li><a href='miscellaneousFunctionality.html'>miscellaneousFunctionality</a><li><a href='SurfRecPluginAPIreference.html'>SurfRecPluginAPIreference</a><li><a href='ICPPluginAPIreference.html'>ICPPluginAPIreference</a><li><a href='SubprocessPluginAPIreference.html'>SubprocessPluginAPIreference</a></li></li></ul></ul><li class='has-children'><a href='writingCode.html'>writingCode</a><ul class='dropdown'><li class='has-children'><a href='scripts.html'>scripts</a><ul class='dropdown'><li><a href='embeddedScripts.html'>embeddedScripts</a><li><a href='simulationScripts.html'>simulationScripts</a><li><a href='mainScript.html'>mainScript</a><li><a href='childScripts.html'>childScripts</a><li><a href='customizationScripts.html'>customizationScripts</a><li><a href='scriptProperties.html'>scriptProperties</a><li><a href='scriptEditor.html'>scriptEditor</a></li></ul><li><a href='addOns.html'>addOns</a><li><a href='sandboxScript.html'>sandboxScript</a><li><a href='scriptExecution.html'>scriptExecution</a><li class='has-children'><a href='threadedAndNonThreadedCode.html'>threadedAndNonThreadedCode</a><ul class='dropdown'><li><a href='callbackFunctions.html'>callbackFunctions</a><li><a href='dynCallbackFunctions.html'>dynCallbackFunctions</a><li><a href='jointCallbackFunctions.html'>jointCallbackFunctions</a><li><a href='contactCallbackFunction.html'>contactCallbackFunction</a><li><a href='visionCallbackFunctions.html'>visionCallbackFunctions</a><li><a href='triggerCallbackFunctions.html'>triggerCallbackFunctions</a><li><a href='userConfigCallbackFunctions.html'>userConfigCallbackFunctions</a></li></ul><li><a href='luaPythonDifferences.html'>luaPythonDifferences</a><li><a href='luaCrashCourse.html'>luaCrashCourse</a><li><a href='plugins.html'>plugins</a><li><a href='mainClientApplication.html'>mainClientApplication</a><li><a href='accessingSceneObjects.html'>accessingSceneObjects</a><li><a href='explicitHandling.html'>explicitHandling</a><li class='has-children'><a href='apisOverview.html'>apisOverview</a><ul class='dropdown'><li><a href='apiFunctions.html'>apiFunctions</a><li><a href='apiConstants.html'>apiConstants</a><li><a href='objectParameterIDs.html'>objectParameterIDs</a></li></li></ul></ul><li class='has-children'><a href='simulation.html'>simulation</a><ul class='dropdown'><li><a href='simulationPropertiesDialog.html'>simulationPropertiesDialog</a></li></ul><li class='has-children'><a href='tutorials.html'>tutorials</a><ul class='dropdown'><li><a href='bubbleRobTutorial.html'>bubbleRobTutorial</a><li><a href='buildingAModelTutorial.html'>buildingAModelTutorial</a><li><a href='lineFollowingBubbleRobTutorial.html'>lineFollowingBubbleRobTutorial</a><li><a href='inverseKinematicsTutorial.html'>inverseKinematicsTutorial</a><li><a href='externalControllerTutorial.html'>externalControllerTutorial</a><li><a href='pluginTutorial.html'>pluginTutorial</a><li><a href='robotLanguageIntegrationTutorial.html'>robotLanguageIntegrationTutorial</a><li class='has-children'><a href='rosTutorial.html'>rosTutorial</a><ul class='dropdown'><li><a href='ros1Tutorial.html'>ros1Tutorial</a><li><a href='ros2Tutorial.html'>ros2Tutorial</a></li></ul><li><a href='compilingCoppeliaSim.html'>compilingCoppeliaSim</a></li>
+                      </ul>
+                </nav>
+              </div>
+              <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
+              </div>
+
+            </div>
+          </div>
+          
+        </header>
+    <div id="tipue_search_content">layerSelectionDialog << <a href='layerSelectionDialog.html'>Previous</a> <a href='cameraPropertiesDialog.html'>Next</a> >> cameraPropertiesDialog<br /><h1>cameras</h1><div align="center">
+<table class="allEncompassingTable">
+<tr>
+<td>
+<p><a href="../index.htmll" target="_top"><img src="./../images/homeImg.png"/></a></p>
+<h4>Cameras <img src="./../images/cameras1.jpg"/></h4>
+<p>Cameras are <a href="viewableObjects.html">viewable objects</a>, which means that you can <em>look through</em> them and display a view of what they are <em>looking at</em>. You can have as many cameras as needed in your <a href="scenes.html">scene</a>, each one of them offering a different <a href="pagesAndViews.html">view</a> of the scene. Following shows an example of a scene containing several cameras:<br/>
+</p>
+<p align="center"><img src="./../images/cameras2.jpg"/></p>
+<p class="imageLabel">[Scene displaying views of three different cameras]</p>
+<br/>
+<p>Make sure not to mix-up cameras with <a href="visionSensors.html">vision sensors</a>. Following are the main differences: </p>
+<li>A camera has no specific resolution (i.e. it adjusts automatically to the view size). A vision sensor has a fixed resolution.</li>
+<li>A camera's image content is not directly available via the <a href="apisOverview.html">API</a> (but via a callback mechanism), and image processing not directly supported. A vision sensor's image content can be accessed via the API, and processed via the <a href="visionCallbackFunctions.html">vision callback functions</a>.</li>
+<li>A camera generally requires less CPU time and operates faster than vision sensors. </li>
+<li>A camera can display all <a href="objects.html">object types</a>. A vision sensor mainly displays <a href="shapes.html">shapes</a>.</li>
+<p>A camera can be added to the scene with [Menu bar --&gt; Add --&gt; Camera]. However adding a camera in this way will add the <a href="objects.html">object</a> in a default position and orientation. It is a better practice to add cameras by right-clicking on a specific view of a scene and selecting [Popup menu --&gt; Add --&gt; Camera]. This will add the object just in front of the current view. The added camera is automatically selected and you can then <em>look through it</em> with [Popup menu --&gt; View --&gt; Associate view with selected camera]. For this to work you will have to make sure the popup menu is activated on a view. When a view is created but not yet associated with a viewable object, the [Popup menu --&gt; Add --&gt; Camera] command will add a camera and directly associate it with the view (i.e. <em>look through it</em>). A camera can be associated with any number of views.<br/>
+</p>
+<p>Alternatively you can also associate a view with a camera by activating following popup in a view: [Popup menu --&gt; View --&gt; View selector..]. This will allow you to select the desired camera view from a preview window. When a camera is associated with a view, it can be manipulated with the mouse with following toolbar buttons:<br/>
+</p>
+<p align="center"><img src="./../images/cameras4.jpg"/></p>
+<p class="imageLabel">[Camera navigation toolbar buttons: pan, rotate, shift, zoom, and fit-to-view]</p>
+<br/>
+<li><strong>Pan button</strong>: allows shifting the camera in a perpendicular plane to the view direction. The clicked point in the scene will shift at the same rate as the mouse movement. If no specific point is clicked (i.e. when the background is clicked), the shift operation will be performed for an invisible point close to the camera.<br/>
+</li>
+<li><strong>Rotate button</strong>: allows rotating the camera about the clicked point in the scene. If no specific point is clicked (i.e. when the background is clicked), the rotate operation will be performed about an invisible point close to the camera.<br/>
+</li>
+<li><strong>Shift button</strong>: allows shifting the camera along the view direction. This has a zoom effect on camera views that are in perspective projection mode, but camera views in orthogonal projection mode might not see any effect (the cameras will however be shifted along their view direction).<br/>
+</li>
+<li><strong>Camera angle button</strong>: allows adjusting the perspective projection angle of a camera view (when in perspective projection mode), or allows adjusting the view size of a camera view (when in orthogonal projection mode).<br/>
+</li>
+<li><strong>Fit-to-view button</strong>: adjusts the camera of the view that has the focus in order to nicely frame all selected objects, or the entire scene if no object is selected.<br/>
+</li>
+<p>While the left mouse button allows above operations, the wheel of the mouse allows shifting the camera along the view direction (if the camera view is in perspective projection mode) or allows adjusting the view size of the camera view (if the camera view is in orthogonal projection mode). The right button, when clicked without a mouse movement will activate a popup menu, however, if the right button is kept pressed while moving the mouse, a camera rotation about the clicked point can be achieved.<br/>
+</p>
+<p>When the camera shift button is activated, it is very easy to navigate in the scene to any desired position and orientation using: (1) the left mouse button for shifting perpendicular to the view direction, (2) the mouse wheel for shifting along the view direction, and (3) the right mouse button for rotating about the clicked point:<br/>
+</p>
+<p align="center"><img src="./../images/cameras5.jpg"/></p>
+<p class="imageLabel">[Default camera navigation: (1) pan with left mouse button, (2) shift with mouse wheel, (3) rotate with right mouse button]</p>
+<br/>
+<p>Cameras can automatically track objects (i.e. follow them as they move) by selecting the object to track, then selecting in the appropriate view [Popup menu --&gt; View --&gt; Track selected object]. A tracking camera will keep its position, but automatically adjust its viewing direction in order to always keep the object to track in its view field. This is different from having a camera attached to that object through a parent-child relationship.
+</p>
+<br/>
+<br/>
+</td></tr>
+</table>
+</div><br />layerSelectionDialog << <a href='layerSelectionDialog.html'>Previous</a> <a href='cameraPropertiesDialog.html'>Next</a> >> cameraPropertiesDialog</div>
+        
+    <!-- footer -->
+      <div class="container">
+        <div class="row pt-3 mx-auto">
+            <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+        </div>
+      </div>
+    <!-- for footer -->
+    
+        </div> <!-- for site wrap -->
+            <!-- <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script> -->
+            <script src="../cmsimde/static/chimper/js/jquery-migrate-3.0.1.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery-ui.js"></script>
+            <script src="../cmsimde/static/chimper/js/popper.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/owl.carousel.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.stellar.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.countdown.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.magnific-popup.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap-datepicker.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/aos.js"></script>
+            <!--
+            <script src="../cmsimde/static/chimper/js/typed.js"></script>
+                    <script>
+                    var typed = new Typed('.typed-words', {
+                    strings: ["Web Apps"," WordPress"," Mobile Apps"],
+                    typeSpeed: 80,
+                    backSpeed: 80,
+                    backDelay: 4000,
+                    startDelay: 1000,
+                    loop: true,
+                    showCursor: true
+                    });
+                    </script>
+            -->
+            <script src="../cmsimde/static/chimper/js/main.js"></script>
+        
+<!-- 啟用 LaTeX equations 編輯 -->
+  <!-- <script>
+  MathJax = {
+    tex: {inlineMath: [['$', '$'], ['\(', '\)']]}
+  };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>-->
+    </body></html>
+        
